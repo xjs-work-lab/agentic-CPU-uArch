@@ -9,7 +9,7 @@ score_context = 72.0
 evidence_maturity = "STRUCTURAL_SIGNAL"
 maturity_scope = "direct smartphone generic control/QoE tax is established; EdgeAgent shows Agent-aware incremental value on Apple M4; target-phone Agent-specific residual beyond strong generic tuning remains unestablished"
 strongest_baseline = "G1_GENERIC_OPTIMIZED"
-related_claims = ["CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-EXP-001"]
+related_claims = ["CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-006", "CLM-C-EXP-001"]
 related_capabilities = ["CAP-HUAWEI-GENERIC-RESOURCE-CONTROL"]
 +++
 
@@ -41,16 +41,20 @@ Strong runtime/system mechanisms must be applied before C receives differentiate
 - elastic verification/batching;
 - throughput guardrails;
 - existing Huawei public generic QoS/resource/inference-control primitives;
-- interaction-critical scenario annotation, bounded semantic scheduling classes and IPC/lock dependency-priority propagation (MUSched-like control).
+- interaction-critical scenario annotation, bounded semantic scheduling classes and IPC/lock dependency-priority propagation (MUSched-like control);
+- portable application-defined cross-layer scheduling/control policies and shared control state across system layers (Syrup-like control).
 
-SERENO-like control and MUSched-like semantic-aware CPU scheduling are explicitly part of **G1**, not differentiated C value.
+SERENO-like control, MUSched-like semantic-aware CPU scheduling, and Syrup-like portable cross-layer policy mechanisms are explicitly part of **G1**, not differentiated C value.
 
 ### 3. Agent-aware residual
 Only incremental value tied to Agent blocked/ready/concurrency/criticality state beyond G1 counts toward differentiated C value.
 
 PAPER-051 supplies pressure for this layer on Apple M4; target-phone transfer remains open.
 
-PAPER-060 / CLM-MOBILE-002 further raises the bar: generic interaction semantics can already be converted into deployable scheduler-visible priority/dependency state on commercial phones. C only earns differentiated credit for Agent-specific residual beyond that.
+PAPER-060 / CLM-MOBILE-002 further raises the bar: generic interaction semantics can already be converted into deployable scheduler-visible priority/dependency state on commercial phones.
+PAPER-061 / CLM-C-006 additionally shows that portable application-defined policy and cross-layer scheduling coordination are mature prior-art patterns in server systems.
+
+C only earns differentiated credit for **Agent-specific mobile residual beyond both patterns**.
 
 ## Current lane
 Keep as **Strategic Enabler / second-Bet watch**.
@@ -72,5 +76,5 @@ EXP-C-001 must show:
 ## Hardware boundary
 No uArch promotion unless:
 1. target-phone C reaches SYSTEM_VALUE;
-2. SERENO-like, MUSched-like + other best software/runtime controls are exhausted;
+2. SERENO-like, MUSched-like, Syrup-like + other best software/runtime controls are exhausted;
 3. a causal hardware-timescale/visibility/control residual remains.
