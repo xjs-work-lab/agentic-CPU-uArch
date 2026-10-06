@@ -28,9 +28,9 @@ should be maintained here.
 The V1 repository remains frozen historical provenance and is not deleted or rewritten.
 
 ## Current graph
-- **226 canonical nodes**
-- **381 canonical semantic edges**
-- **381 generated reverse edges**
+- **238 canonical nodes**
+- **396 canonical semantic edges**
+- **396 generated reverse edges**
 
 ## Current portfolio
 
