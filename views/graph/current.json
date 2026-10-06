@@ -92,6 +92,14 @@
       "claim_kind": "OBSERVATION"
     },
     {
+      "id": "CLM-AGENT-005",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AGENT-005.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
       "id": "CLM-BR-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-BR-001.md",
@@ -194,6 +202,14 @@
       "record_state": "CURRENT",
       "status": "SUPPORTED",
       "claim_kind": "BOUNDARY"
+    },
+    {
+      "id": "CLM-C-006",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-C-006.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
     },
     {
       "id": "CLM-C-EXP-001",
@@ -343,6 +359,14 @@
       "id": "CLM-MOBILE-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-MOBILE-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-MOBILE-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-MOBILE-002.md",
       "record_state": "CURRENT",
       "status": "SUPPORTED",
       "claim_kind": "OBSERVATION"
@@ -582,6 +606,16 @@
       "path": "08-decisions/events/DEC-A-002.md"
     },
     {
+      "id": "DEC-A-003",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-A-003.md"
+    },
+    {
+      "id": "DEC-A-004",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-A-004.md"
+    },
+    {
       "id": "DEC-BR-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-BR-001.md"
@@ -597,6 +631,16 @@
       "path": "08-decisions/events/DEC-C-002.md"
     },
     {
+      "id": "DEC-C-003",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-C-003.md"
+    },
+    {
+      "id": "DEC-C-004",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-C-004.md"
+    },
+    {
       "id": "DEC-CG01-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-CG01-001.md"
@@ -610,6 +654,11 @@
       "id": "DEC-CG06-002",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-CG06-002.md"
+    },
+    {
+      "id": "DEC-CG06-003",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-CG06-003.md"
     },
     {
       "id": "DEC-CG07-001",
@@ -829,6 +878,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-A-006-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-A-006-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-BR-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-BR-001-A.md",
@@ -907,6 +962,18 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-C-006-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-C-006-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-C-007-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-C-007-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-CG01-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-CG01-001-A.md",
@@ -958,6 +1025,12 @@
       "id": "EC-CG06-004-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-CG06-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG06-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG06-004-B.md",
       "record_state": "CURRENT"
     },
     {
@@ -1445,6 +1518,30 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "PAPER-058",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-058/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-059",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-059/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-060",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-060/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-061",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-061/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "PATENT-005",
       "type": "SOURCE",
       "path": "01-evidence/patents/PATENT-005/README.md",
@@ -1604,6 +1701,18 @@
     },
     {
       "source": "A",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-A-003",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "A",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-A-004",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "A",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
@@ -1641,7 +1750,19 @@
     {
       "source": "A",
       "relation": "RELATED_CLAIM",
+      "target": "CLM-AGENT-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "A",
+      "relation": "RELATED_CLAIM",
       "target": "CLM-MOBILE-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "A",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-MOBILE-002",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -1814,6 +1935,18 @@
     },
     {
       "source": "C",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-C-003",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-C-004",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-C-001",
       "provenance": "GENERATED_REVERSE"
@@ -1857,6 +1990,12 @@
     {
       "source": "C",
       "relation": "RELATED_CLAIM",
+      "target": "CLM-C-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "C",
+      "relation": "RELATED_CLAIM",
       "target": "CLM-C-EXP-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -1864,6 +2003,12 @@
       "source": "C",
       "relation": "RELATED_CLAIM",
       "target": "CLM-MOBILE-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "C",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-MOBILE-002",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -2026,6 +2171,12 @@
       "source": "CG-06",
       "relation": "HAS_DECISION_EVENT",
       "target": "DEC-CG06-002",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-06",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-CG06-003",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -2240,6 +2391,24 @@
     },
     {
       "source": "CLM-AGENT-004",
+      "relation": "USED_BY_DIRECTION",
+      "target": "A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-005",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-A-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-005",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-003",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-005",
       "relation": "USED_BY_DIRECTION",
       "target": "A",
       "provenance": "GENERATED_REVERSE"
@@ -2480,6 +2649,24 @@
     },
     {
       "source": "CLM-C-005",
+      "relation": "USED_BY_DIRECTION",
+      "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-006",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-C-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-006",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-C-004",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-006",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
       "provenance": "GENERATED_REVERSE"
@@ -2792,8 +2979,20 @@
     },
     {
       "source": "CLM-CPU-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG06-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-004",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG06-002",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-004",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG06-003",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -2852,6 +3051,36 @@
     },
     {
       "source": "CLM-MOBILE-001",
+      "relation": "USED_BY_DIRECTION",
+      "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MOBILE-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-C-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MOBILE-002",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-004",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MOBILE-002",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-C-003",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MOBILE-002",
+      "relation": "USED_BY_DIRECTION",
+      "target": "A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MOBILE-002",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
       "provenance": "GENERATED_REVERSE"
@@ -3463,6 +3692,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-A-003",
+      "relation": "SUBJECT",
+      "target": "A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-003",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-AGENT-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-004",
+      "relation": "SUBJECT",
+      "target": "A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-004",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-MOBILE-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-BR-001",
       "relation": "SUBJECT",
       "target": "B-residual",
@@ -3565,6 +3818,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-C-003",
+      "relation": "SUBJECT",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-C-003",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-MOBILE-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-C-004",
+      "relation": "SUBJECT",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-C-004",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-C-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-CG01-001",
       "relation": "SUBJECT",
       "target": "CG-01",
@@ -3638,6 +3915,24 @@
     },
     {
       "source": "DEC-CG06-002",
+      "relation": "TRIGGER_EXPERIMENT",
+      "target": "EXP-CG06-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG06-003",
+      "relation": "SUBJECT",
+      "target": "CG-06",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG06-003",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CPU-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG06-003",
       "relation": "TRIGGER_EXPERIMENT",
       "target": "EXP-CG06-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -4039,6 +4334,18 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-A-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-058",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-A-006-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AGENT-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-BR-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-030",
@@ -4213,6 +4520,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-C-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-060",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-C-006-A",
+      "relation": "SUPPORT",
+      "target": "CLM-MOBILE-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-C-007-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-061",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-C-007-A",
+      "relation": "SUPPORT",
+      "target": "CLM-C-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-CG01-001-A",
       "relation": "HAS_PREMISE",
       "target": "VENDOR-001",
@@ -4316,6 +4647,18 @@
     },
     {
       "source": "EC-CG06-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CPU-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG06-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-059",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG06-004-B",
       "relation": "SUPPORT",
       "target": "CLM-CPU-004",
       "provenance": "CANONICAL_SEMANTIC"
@@ -5055,6 +5398,12 @@
     {
       "source": "EXP-CG06-001",
       "relation": "INPUT_SOURCE",
+      "target": "PAPER-059",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG06-001",
+      "relation": "INPUT_SOURCE",
       "target": "TOOL-012",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -5080,6 +5429,12 @@
       "source": "EXP-CG06-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG06-002",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EXP-CG06-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG06-003",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5704,6 +6059,36 @@
       "source": "PAPER-057",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-058",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-A-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-CG06-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG06-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-060",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-C-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-061",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-C-007-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -6344,8 +6729,8 @@
     }
   ],
   "counts": {
-    "nodes": 238,
-    "canonical_semantic_edges": 396,
-    "generated_reverse_edges": 396
+    "nodes": 254,
+    "canonical_semantic_edges": 420,
+    "generated_reverse_edges": 420
   }
 }
