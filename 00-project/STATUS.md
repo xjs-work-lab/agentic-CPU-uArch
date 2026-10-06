@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: RESERVE_WAVE_COMPLETE_FINAL_REVIEW_SELECTED
+migration_phase: HUMAN_GATE_PENDING
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -19,56 +19,41 @@ completed_slices:
   - R1
   - R2
   - R3
-next_phase: FINAL_PRE_CUTOVER_REVIEW
-cutover_state: NOT_STARTED
+final_review_state: GO_TO_HUMAN_GATE
+cutover_state: HUMAN_GATE_PENDING
 ```
 
-## Closed slices
-- A + CG-06: CLOSED / GO
-- PT-A: CLOSED / GO
-- C: CLOSED / GO
-- CG-07: CLOSED / GO
-- CG-01: CLOSED / GO
-- B-residual: CLOSED / GO
-- R1: CLOSED / GO
-- R2: CLOSED / GO
-- R3: CLOSED / GO / merged via PR #9
-  - merge commit: `004224df996e9863f1751d535d8ce804b76d68bd`
-  - final machine QA: PASS
-  - final QA run: `37472729203`
-  - final QA job: `112300133726`
-  - semantic fidelity: PASS
-  - independent review: GO
-  - unresolved MIGRATION_AMBIGUITY: none
-  - initial boundary-provenance QA defect repaired before merge
-  - temporary migration branch deleted successfully after merge
+## Migration wave
+All 9 planned slices: **CLOSED / GO**
 
 ## Current cumulative graph
 - 226 canonical nodes
 - 381 canonical semantic edges
 - 381 generated reverse edges
-- 0 hard graph errors
 
-## Reserve wave
-- B-residual — CLOSED / GO
-- R1 — CLOSED / GO
-- R2 — CLOSED / GO
-- R3 — CLOSED / GO / BLOCKED lineage preserved
+## Final review findings
+- frozen-V1 score/lane parity: PASS
+- exactly one Primary Bet: A
+- uArch candidate directions: none
+- all Migration Receipts: unresolved MIGRATION_AMBIGUITY = NONE
+- V1 main remains frozen at migration baseline
+- roadmap / graph direction set reconciled
+- authority remains V1
 
-## Next phase
-**FINAL_PRE_CUTOVER_REVIEW**
+## Final machine gate
+- run: `37473833106`
+- job: `112303956293`
+- candidate write boundary: PASS
+- deterministic graph projection: PASS
+- graph health: PASS
+- hard graph errors: 0
 
-Required before Human Gate:
-1. full-graph machine QA;
-2. cross-slice semantic-fidelity review;
-3. frozen-V1 parity / intentional-normalization review;
-4. roadmap / generated-view reconciliation;
-5. unresolved-ambiguity audit;
-6. authority/cutover preflight.
+## Current gate
+**HUMAN_GATE_PENDING**
 
-## Branch policy
-`main` is the only long-lived branch.
+Final pre-cutover review verdict:
+**GO_TO_HUMAN_GATE**
 
 ## Authority
-V1 remains authoritative.
 No cutover.
+Human Gate approval is mandatory.
