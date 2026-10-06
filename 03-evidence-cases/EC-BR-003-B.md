@@ -4,8 +4,8 @@ type = "EVIDENCE_CASE"
 record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
-target_id = "CLM-BR-003"
-warrant = "These systems jointly occupy provenance-bound artifacts and dependency-aware invalidation, further narrowing broad B novelty."
+target_id = "CLM-BR-007"
+warrant = "These systems jointly occupy provenance-bound artifacts and dependency-aware invalidation, narrowing provenance/dependency invalidation novelty."
 scope = "provenance/dependency baseline"
 boundary = "Early/server/application-layer evidence."
 [[premises]]
@@ -21,7 +21,7 @@ locator = "dependency vectors + scoped invalidation"
 # EC-BR-003-B
 
 ## Inference
-`PAPER-034` **AND** `PAPER-035` → **SUPPORT** → `CLM-BR-003`
+`PAPER-034` **AND** `PAPER-035` → **SUPPORT** → `CLM-BR-007`
 
 ## Warrant
 These systems jointly occupy provenance-bound artifacts and dependency-aware invalidation, further narrowing broad B novelty.
