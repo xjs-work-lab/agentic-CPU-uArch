@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: WAVE_0_BOOTSTRAP
+migration_phase: WAVE_0_PASS_READY_FOR_PILOT_SLICE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -28,5 +28,16 @@ cutover_state: NOT_STARTED
 - semantic-fidelity QA.
 - authority cutover.
 
+## Wave 0 audit
+PASS.
+
+Validated:
+- authority marker;
+- baseline marker;
+- empty graph projection;
+- candidate-root write guard;
+- graph builder execution;
+- Wave 0 health check execution.
+
 ## Next
-Audit Wave 0. Only after PASS begin A + CG-06.
+Begin the A + CG-06 dependency-closed migration slice under MIG-20261006-02.
