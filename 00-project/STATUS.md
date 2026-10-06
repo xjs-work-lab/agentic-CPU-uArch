@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 254 canonical nodes
-- 420 canonical semantic edges
-- 420 generated reverse edges
-- projection refreshed after Frontier Round 2 prior-art pressure test
+- 258 canonical nodes
+- 425 canonical semantic edges
+- 425 generated reverse edges
+- projection refreshed after Frontier Round 2B / H-SCL convergence
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
