@@ -1,62 +1,43 @@
 # V2.2 Graph Health — Current Candidate
 
 Updated: 2026-10-06  
-Source: GitHub Actions run `37455555156` / job `112242160296`
+Source: GitHub Actions run `37459438555` / job `112255029805`
 
 ## Result
 
 **PASS**
 
-```text
-candidate write boundary       PASS
-graph projection deterministic PASS
-graph health                   PASS
-```
-
-## Counts
-- canonical nodes: 85
-- canonical semantic edges: 132
-- generated reverse edges: 132
+- canonical nodes: 103
+- canonical semantic edges: 162
+- generated reverse edges: 162
 - hard errors: 0
 
 ## Warnings
 
-19 Source objects remain:
+20 Sources:
 `INDEPENDENCE_UNKNOWN`
 
-This is correct by design.
+Accepted by design.
 
-## C-specific validation
+## CG-07 checks
 
 PASS:
-- PAPER-051 resolves;
-- VENDOR-006 resolves and links to ACT-HUAWEI;
-- CAP-HUAWEI-GENERIC-RESOURCE-CONTROL resolves Actor + Claim;
-- DR-C-STAGE16A-GAP resolves;
-- all C Evidence Cases resolve;
-- C resolves all six Claims and one Capability;
-- EXP-C-001 resolves C, tested Claim and three Source inputs;
-- DEC-C-001 resolves;
-- Roadmap includes C;
-- no justification cycle;
-- no Actor hierarchy cycle;
-- no strategy leakage into Capability.
+- VENDOR-019 resolves;
+- ACT-MEDIATEK resolves;
+- MediaTek Capability resolves Actor + evidence Claim;
+- DR-CG07-STAGE16A-GAP resolves;
+- all five Evidence Cases resolve;
+- EXP-CG07-001 can be a premise for a model-only Claim;
+- CG-07 resolves six Claims + one Capability;
+- Decision Event resolves;
+- Roadmap includes CG-07;
+- no cycles;
+- no strategic-state leakage into Actor/Capability.
 
-## Many-to-many Source reuse
+## Epistemic boundary
 
-PAPER-009 is now reused by:
-- CG-06 evidence;
-- C evidence;
-- CG-06 Experiment input;
-- C Experiment input.
-
-This is valid N:M structure.
-
-## Boundary
-
-Graph health validates structural correctness.
-It does not:
-- infer phone transfer;
-- assign evidence independence;
-- promote C;
-- infer uArch necessity.
+Graph health does not:
+- validate the MediaTek 40% number independently;
+- convert simulation to product truth;
+- infer Huawei internal absence;
+- promote CG-07.
