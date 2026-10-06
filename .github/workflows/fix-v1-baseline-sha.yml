@@ -1,0 +1,42 @@
+name: One-time V1 baseline SHA repair
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-v1-baseline-sha.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Replace mistyped frozen baseline SHA
+        shell: bash
+        run: |
+          set -euo pipefail
+          BAD='960abb4ef50a8f5b0bd357c067f08346025d'
+          GOOD='960abb4ef50f050da3c6784d30826053d42e5c5d'
+          mapfile -t files < <(git grep -l "$BAD" || true)
+          printf 'Files to repair: %s\n' "${#files[@]}"
+          printf '%s\n' "${files[@]}"
+          if [ "${#files[@]}" -eq 0 ]; then
+            exit 0
+          fi
+          for f in "${files[@]}"; do
+            sed -i "s/$BAD/$GOOD/g" "$f"
+          done
+          if git grep -n "$BAD"; then
+            echo "ERROR: bad SHA remains"
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "fix: correct frozen V1 baseline SHA references"
+          git push origin HEAD:main
