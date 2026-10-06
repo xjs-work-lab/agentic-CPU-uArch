@@ -3,10 +3,10 @@
 Updated: 2026-10-06
 
 ## Current projection
-- canonical nodes: **279**
-- canonical semantic edges: **478**
-- generated reverse edges: **478**
-- graph projection: refreshed after Frontier Round 4 H-FIB falsification
+- canonical nodes: **290**
+- canonical semantic edges: **486**
+- generated reverse edges: **486**
+- graph projection: refreshed after Frontier Round 5 persistent-memory seed round
 
 ## Validation status
 
@@ -16,28 +16,29 @@ Updated: 2026-10-06
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Post-cutover Round-4 delta check
+### Post-cutover Round-5 delta check
 **PASS — structural delta consistency**
 
 Checked:
-- PAPER-066 / 067 / 068 resolve;
-- CLM-AGENT-008, CLM-MOBILE-003 and CLM-C-008 resolve;
-- EC-C-009-A / 010-A / 011-A ground the new Claims;
-- A/C related-Claim edges resolve;
-- EXP-A-001 and EXP-C-001 include new strongest-baseline inputs;
-- DEC-A-006 and DEC-C-006 resolve;
+- PAPER-069 / 070 / 071 / 072 resolve as canonical Sources;
+- CLM-AGENT-009, CLM-MOBILE-004 and CLM-MEM-001 resolve;
+- EC-MEM-001-A / 002-A / 003-A / 003-B ground the new Claims;
+- MUSE is the sole canonical AME→MUSE lineage Source;
 - generated reverse edges were refreshed.
+
+## Important boundary
+The Round-5 delta check is not a replacement for the last full repository-wide CI/cutover QA.
 
 ## Research-state boundary
 Graph health does not:
+- promote H-PAM to a Direction;
 - establish a second differentiated Primary Bet;
-- promote H-FIB;
-- promote C;
-- establish target-phone Agent semantic SYSTEM_VALUE;
+- establish direct smartphone Agent-memory SYSTEM_VALUE;
 - establish SOFTWARE_INSUFFICIENCY;
-- unblock R3 or create a uArch candidate.
+- establish a CPU/uArch memory mechanism;
+- unblock R3.
 
 Current state:
-- H-FIB — A→C bridge question / not a Direction;
-- C — Strategic Enabler; second-Bet watch closed;
-- second-Bet search pivots outside generic system-control/utility scheduling.
+- H-PAM — analysis hypothesis / active structural frontier;
+- second differentiated Primary Bet — unfilled;
+- hardware gate unchanged.
