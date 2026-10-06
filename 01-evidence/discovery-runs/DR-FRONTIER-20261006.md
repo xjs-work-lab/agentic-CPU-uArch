@@ -5,7 +5,7 @@ lifecycle = "OPEN"
 as_of = "2026-10-06"
 coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "First authority-guided seed set has completed decision-level 10Q review. Snowball, competing-route and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
+limitations = "Seed and Round-2 prior-art Sources have completed decision-level 10Q review. Automatic semantic-context inference and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
 +++
 
 # DR-FRONTIER-20261006
@@ -115,3 +115,37 @@ Close only after:
 - architecture/systems/mobile/compiler venue coverage is checked;
 - at least one negative/strong-baseline route is included for each second-Bet candidate;
 - portfolio impact is classified KEEP / UPGRADE / DOWNGRADE / NARROW / KILL.
+
+
+## Round 2 — Prior-art pressure test
+
+Full 10Q completed:
+- PAPER-058 — AutoDroid-V2 (MobiSys 2025)
+- PAPER-059 — llm.npu (ASPLOS 2025)
+- PAPER-060 — MUSched (OSDI 2026)
+- PAPER-061 — Syrup (SOSP 2021)
+
+Decision-grade effect:
+- task-level semantic→code lowering is already a strong mobile-Agent software baseline;
+- generic semantic→mobile-CPU scheduling is already demonstrated;
+- portable application-defined cross-layer scheduling/policy is established prior art;
+- optimized NPU software is a sustained moving frontier.
+
+H-SCL is therefore narrowed to:
+> automatic extraction of genuinely Agent-specific cross-framework facts with incremental smartphone cross-resource value beyond B4-TX/G1.
+
+No portfolio lane/score changed.
+
+See:
+- `analysis/frontier-2026/round2-synthesis-2026-10-06.md`
+- `analysis/frontier-2026/h-scl-hypothesis.md`
+
+### Next P0 prior-art candidate — PENDING FULL 10Q
+**Interactive Context for Mobile OS Resource Management (IEEE TMC 2020)**
+
+Its abstract indicates application-transparent mobile semantic-context inference/propagation into CPU scheduling and power control.
+
+It is **not decision-grade** until full-text review and 10Q are complete.
+
+Secondary candidate:
+WASH / Portable Performance on Asymmetric Multicore Processors (CGO 2016).
