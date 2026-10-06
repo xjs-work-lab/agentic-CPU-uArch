@@ -5,7 +5,7 @@ lifecycle = "OPEN"
 as_of = "2026-10-06"
 coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "Seed, Round-2/3 prior art and Round-4 H-FIB falsification Sources have completed decision-level 10Q review. Generic system-control/utility-scheduling search is converged; second-Bet search now moves to other structural workload changes."
+limitations = "Rounds 1-5 have completed decision-level 10Q review for their selected Sources. Generic system-control/utility-scheduling search is converged; persistent Agent memory is open only as H-PAM analysis hypothesis pending direct mobile-Agent operation-mix evidence."
 +++
 
 # DR-FRONTIER-20261006
@@ -102,7 +102,7 @@ Impact:
 
 ## Current portfolio boundary
 - A remains the only differentiated Primary Bet.
-- C remains Strategic Enabler / second-Bet watch.
+- C remains Strategic Enabler; its second-Bet watch was closed in Round 4.
 - CG-06 remains INVEST.
 - R1 remains Conditional Reserve.
 - R3 remains BLOCKED.
@@ -224,3 +224,54 @@ See:
 ### Search pivot
 Stop generic semantic-control / utility-scheduling second-Bet search.
 Next candidate families must come from other structural Agent workload changes, starting with persistent Agent memory/state and CPU-visible memory/retrieval/update behavior.
+
+
+## Round 5 — Persistent Agent memory seed round
+
+Full 10Q completed:
+- PAPER-069 — MUSE — ACM Multimedia 2026 / P0
+- PAPER-070 — LEANN — MLSys 2026 Best Paper / P0
+- PAPER-071 — M3-Agent — ICLR 2026 / P0
+- PAPER-072 — CD-ANN — Journal of Systems Architecture 2026 / P1
+
+### Provenance correction
+AME v1 and MUSE v2 share arXiv:2511.19192 and a direct mechanism/result lineage.
+
+Canonical handling:
+- **PAPER-069 = MUSE**
+- AME is retained as source-evolution provenance only
+- do not count AME and MUSE as independent corroboration
+
+### Decision-grade result
+- M3-Agent establishes persistent episodic + semantic + multimodal memory as a real Agent-native workload.
+- MUSE establishes direct smartphone systems pressure from dynamic high-dimensional retrieval + continuous ingestion/index maintenance.
+- LEANN establishes a strong compute-for-storage / compact-index software baseline.
+- CD-ANN establishes a strong generic dynamic-index / segmented-residency baseline.
+
+Therefore:
+> persistent Agent memory is a credible new structural frontier, but **not yet a Direction or second Bet**.
+
+Opened:
+- `analysis/frontier-2026/h-pam-hypothesis.md`
+- status: **ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+
+H-PAM asks only whether Agent-specific memory-lifecycle operations (acquire, consolidate, retrieve, revise, forget, replace) create a recurring smartphone systems control point that generic vector-search/index systems cannot already capture.
+
+### Current authoritative portfolio status
+This supersedes earlier intermediate snapshots in this Discovery Run:
+- A — PRIMARY_BET / 82.5
+- PT-A — PLATFORM_TRACK / 80.0
+- C — STRATEGIC_ENABLER / 72.0; second-Bet watch closed
+- CG-06 — INVEST / 86.5
+- second differentiated Primary Bet — unfilled
+- current second-Bet frontier — **H-PAM analysis hypothesis only**
+- uArch Primary Bet — none
+
+### Round-6 gate
+Before H-PAM can become a Direction:
+1. review direct mobile-Agent memory architecture evidence;
+2. establish actual memory-operation mix and duty cycle rather than assume it;
+3. review Agent-native memory systems with explicit store/update/consolidate/forget/retrieve actions;
+4. pressure-test against MUSE/LEANN/CD-ANN and ordinary HNSW/IVF/PQ;
+5. audit overlap with B-residual, C, R2, CG-01 and CG-07;
+6. require a distinct target-phone SYSTEM_VALUE path before any hardware discussion.
