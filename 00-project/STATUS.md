@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: CG07_CLOSED_GO_CG01_SELECTED
+migration_phase: CG01_SLICE_QA_PENDING
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -14,35 +14,37 @@ completed_slices:
   - PT-A
   - C
   - CG-07
-next_slice: CG-01
+active_slice: CG-01
+active_branch: migration/MIG-20261006-02-CG01
 cutover_state: NOT_STARTED
 ```
 
-## Closed slices
-- A + CG-06: CLOSED / GO / merged via PR #1
-- PT-A: CLOSED / GO / merged via PR #2
-- C: CLOSED / GO / merged via PR #3
-- CG-07: CLOSED / GO / merged via PR #4
-  - merge commit: `eb1f5f18aa774f2aa849b21e9fc30df27f430648`
-  - machine QA: PASS
-  - semantic fidelity: PASS
-  - independent review: GO
-  - temporary migration branch: deleted after merge
+## Closed
+- A + CG-06: CLOSED / GO / merged
+- PT-A: CLOSED / GO / merged
+- C: CLOSED / GO / merged
+- CG-07: CLOSED / GO / merged
 
-## Current cumulative graph
-- 103 canonical nodes
-- 162 canonical semantic edges
-- 162 generated reverse edges
-- 0 hard graph errors
+## CG-01 slice written
+- 1 new Source
+- 1 Discovery Run
+- 5 Claims
+- 4 Evidence Cases
+- 1 Actor
+- 1 Capability
+- 1 Direction
+- 1 Experiment
+- 1 Decision Event
+- Roadmap expanded to include CG-01
+
+## State
+Canonical CG-01 objects written on migration branch.
+
+Graph CI, semantic-fidelity review, receipt and independent review are required before merge.
 
 ## Branch policy
-`main` is the only long-lived branch.
-
-Temporary migration branches are deleted immediately after successful merge.
-
-## Next
-**CG-01 — Flex Cache / heterogeneous shared-cache handoff**
+`main` remains the only long-lived branch.
+The current migration branch is temporary and must be deleted after merge.
 
 ## Authority
 V1 remains authoritative.
-No cutover.
