@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 258 canonical nodes
-- 425 canonical semantic edges
-- 425 generated reverse edges
-- projection refreshed after Frontier Round 2B / H-SCL convergence
+- 268 canonical nodes
+- 446 canonical semantic edges
+- 446 generated reverse edges
+- projection refreshed after Frontier Round 3 Agent-specific residual audit
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
@@ -73,6 +73,7 @@ Explicit approval:
 - R2 — Conditional Reserve
 - R3 — BLOCKED
 - second differentiated Primary Bet — intentionally unfilled
+- current second-Bet probe — H-FIB Agent Foreground-Impact Budget (analysis hypothesis only)
 - uArch Primary Bet — none
 
 ## Hardware gate
