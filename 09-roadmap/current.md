@@ -57,14 +57,28 @@ Second differentiated Primary Bet: **UNFILLED**.
 System-control/H-FIB search is converged and did not produce a standalone second Bet.
 
 ## Current research frontier
-Re-open the second-Bet search outside generic scheduling/QoS.
+**H-PAM — Persistent Agent Memory Execution Substrate** is the active structural frontier.
 
-Priority structural workload changes:
-1. persistent Agent memory/state substrate;
-2. on-device retrieval/update/index-maintenance behavior;
-3. memory hierarchy / data-structure pressure from long-lived Agent memory;
-4. always-on/event-driven execution only where distinct from CG-07;
-5. other 2025–2026 mobile/architecture mechanisms with a clear CPU control point.
+Status:
+**ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+
+Round-5 seed evidence now establishes:
+- persistent episodic/semantic/multimodal memory is a real Agent workload (M3-Agent);
+- dynamic semantic retrieval + continuous ingestion/index maintenance creates direct smartphone SoC pressure (MUSE);
+- capacity/index residency has a strong compute-for-storage baseline (LEANN);
+- dynamic insertion/growth has a strong segmented/on-demand ANN baseline (CD-ANN).
+
+Missing gate:
+> direct evidence that Agent-specific memory-lifecycle operation semantics create a recurring mobile systems residual beyond generic vector/index software.
+
+Round-6 priorities:
+1. MobiSys 2026 mobile-Agent memory-architecture benchmark;
+2. Agent-native memory systems with explicit store/update/consolidate/forget/retrieve operations;
+3. actual operation mix / duty cycle / concurrency;
+4. direct phone evidence;
+5. overlap audit against B-residual, C, R2, CG-01 and CG-07.
+
+Do not create a Direction before this gate survives.
 
 ## Hardware boundary
 No silicon/ISA/uArch commitment is locked.
@@ -73,4 +87,8 @@ Required progression:
 `STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
 ## Next
-Run authority-guided seed search for the new structural frontier, starting with persistent Agent memory/state while explicitly checking overlap with B-residual, R2, CG-01 and CG-07.
+Run Round-6 H-PAM falsification:
+- complete the direct mobile-Agent memory benchmark 10Q;
+- identify recurring Agent-memory lifecycle operations;
+- pressure-test against MUSE / LEANN / CD-ANN;
+- decide KEEP / NARROW / KILL before any Direction proposal.
