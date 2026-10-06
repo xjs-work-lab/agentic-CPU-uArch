@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: PTA_SLICE_QA_PENDING
+migration_phase: PTA_SLICE_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -13,26 +13,39 @@ completed_slices:
   - A + CG-06
 active_slice: PT-A
 active_branch: migration/MIG-20261006-02-PTA
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
 ## Closed
-- A + CG-06 Pilot: CLOSED / GO / merged.
+- A + CG-06: CLOSED / GO / merged.
 
-## PT-A slice written
-- 5 new Sources;
-- 1 Discovery Run;
-- 5 new Claims;
-- 9 Evidence Cases;
-- 1 Direction;
-- 1 Experiment;
-- 1 Decision Event;
-- Roadmap expanded to A + PT-A + CG-06.
+## PT-A
+- 5 new Sources
+- 1 Discovery Run
+- 5 new Claims
+- 9 Evidence Cases
+- 1 Direction
+- 1 Experiment
+- 1 Decision Event
+- Roadmap expanded to A + PT-A + CG-06
 
-## State
-PT-A canonical objects written on migration branch.
+## Current cumulative graph
+- 67 canonical nodes
+- 100 canonical semantic edges
+- 100 generated reverse edges
+- 0 hard errors
 
-Graph CI, semantic-fidelity review, receipt and independent review are required before merge.
+## PT-A decision
+**GO**
+
+PR #2 is ready for final closeout CI and merge.
+
+## Next after merge
+C — Efficient System-Control Substrate.
 
 ## Authority
 V1 remains authoritative.
+No cutover.
