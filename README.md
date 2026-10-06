@@ -28,9 +28,9 @@ should be maintained here.
 The V1 repository remains frozen historical provenance and is not deleted or rewritten.
 
 ## Current graph
-- **268 canonical nodes**
-- **446 canonical semantic edges**
-- **446 generated reverse edges**
+- **279 canonical nodes**
+- **478 canonical semantic edges**
+- **478 generated reverse edges**
 
 ## Current portfolio
 
@@ -57,8 +57,8 @@ The V1 repository remains frozen historical provenance and is not deleted or rew
 Second differentiated Primary Bet:
 **INTENTIONALLY UNFILLED**
 
-Current second-Bet probe:
-**H-FIB — Agent Foreground-Impact Budget (ANALYSIS HYPOTHESIS / NOT A DIRECTION)**
+System-control second-Bet search:
+**CONVERGED — H-FIB folded into A→C transfer; C second-Bet watch closed**
 
 uArch Primary Bet:
 **NONE**
