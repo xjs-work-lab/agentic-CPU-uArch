@@ -1,6 +1,6 @@
 # H-SCL — Semantic Control Lowering
 
-Status: **ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+Status: **RESIDUAL QUESTION SET / DO NOT PROMOTE TO SEPARATE DIRECTION**
 Updated: 2026-10-06
 
 ## Why this hypothesis exists
@@ -96,3 +96,35 @@ Search older/non-Agent vocabulary in ASPLOS/OSDI/SOSP/PLDI/CGO:
 - semantic information flow into schedulers.
 
 The goal is to **kill or sharply delimit H-SCL**, not to validate it by keyword matching.
+
+
+## Round-2B conclusion after PAPER-062 / WASH
+
+WASH removes another broad novelty claim:
+> automatic extraction of scheduling criticality / placement facts from rich runtime state.
+
+At this point, the architectural-pattern components of H-SCL are all strongly occupied:
+- semantic → executable program: AutoDroid-V2;
+- semantic → mobile CPU scheduling class/dependency: MUSched;
+- portable application-defined cross-layer policy: Syrup;
+- automatic runtime criticality inference + asymmetric placement: WASH.
+
+### Decision
+**Do not create H-SCL as a separate Direction.**
+
+The remaining questions should be folded into existing Directions:
+
+#### Fold into A
+Information-value question:
+> Does a genuinely Agent-specific fact remain non-reconstructible from strong runtime/application state and preserve >=~5% RequiredProgress/end outcome beyond B4-TX?
+
+#### Fold into C
+System-control question:
+> Does that surviving Agent-specific fact produce incremental smartphone cross-resource value beyond G1 controls across CPU/NPU/memory/thermal?
+
+Only if later evidence reveals a distinct reusable mechanism that cannot be cleanly owned by A or C should H-SCL be reopened as a separate Direction.
+
+### Pending corroboration
+Interactive Context for Mobile OS Resource Management (IEEE TMC 2020) remains a high-value **pending full-text** mobile corroboration target.
+
+Its abstract is suggestive but is not used here as decision-grade evidence.
