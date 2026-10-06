@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: R1_CLOSED_GO_R2_SELECTED
+migration_phase: R2_CLOSED_GO_R3_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -17,7 +17,8 @@ completed_slices:
   - CG-01
   - B-residual
   - R1
-next_slice: R2
+  - R2
+next_slice: R3
 cutover_state: NOT_STARTED
 ```
 
@@ -28,37 +29,40 @@ cutover_state: NOT_STARTED
 - CG-07: CLOSED / GO
 - CG-01: CLOSED / GO
 - B-residual: CLOSED / GO
-- R1: CLOSED / GO / merged via PR #7
-  - merge commit: `37f0e495619684a5a02b58c4c08016692b0228b9`
+- R1: CLOSED / GO
+- R2: CLOSED / GO / merged via PR #8
+  - merge commit: `1e96a12e14673d75357a02157c26321078c3e772`
   - final machine QA: PASS
-  - final QA run: `37467244344`
-  - final QA job: `112281271491`
+  - final QA run: `37469731343`
+  - final QA job: `112289769944`
   - semantic fidelity: PASS
   - independent review: GO
   - unresolved MIGRATION_AMBIGUITY: none
-  - temporary migration branch removed after merge; cleanup workflow required one retry after a transient GitHub Internal Server Error
+  - temporary migration branch deleted successfully after merge
 
 ## Current cumulative graph
-- 177 canonical nodes
-- 288 canonical semantic edges
-- 288 generated reverse edges
+- 206 canonical nodes
+- 342 canonical semantic edges
+- 342 generated reverse edges
 - 0 hard graph errors
 
 ## Reserve wave
 - B-residual — CLOSED / GO
 - R1 — CLOSED / GO
-- R2 — NEXT
-- R3 — queued / blocked lineage
+- R2 — CLOSED / GO
+- R3 — NEXT / blocked lineage
 
 ## Next
-**R2 — CPU Continuation Locality**
+**R3 — uArch Semantic Hints**
 
 Frozen V1 state:
-- score 54.5
-- Conditional Strategic Reserve
-- phone-PMU measurement hypothesis
-- broad generic locality mechanisms killed as novelty
-- no hardware/uArch promotion without target-phone residual
+- score 48.5
+- BLOCKED
+- no independent hardware program
+- D0 remains SIMULATION_SUPPORT
+- D1 is software-sufficiency gated
+- no stable hardware consumer has SYSTEM_VALUE
+- R1/R2 hardware-specific parents remain measurement-only
 
 ## Branch policy
 `main` is the only long-lived branch.

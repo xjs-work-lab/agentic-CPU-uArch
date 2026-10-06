@@ -13,47 +13,40 @@ Authority: planning record only
 5. CG-01 — CLOSED / GO
 6. B-residual — CLOSED / GO
 7. R1 — CLOSED / GO
+8. R2 — CLOSED / GO
 
-R1 closeout:
-- score preserved at 55.5;
-- remains Conditional Strategic Reserve / measurement hypothesis;
-- broad ready/release decoupling remains killed as differentiated novelty;
-- target-phone >=~5% semantic residual remains unproven;
-- no uArch promotion;
-- merged via PR #7 after graph QA, semantic-fidelity review and independent GO.
+R2 closeout:
+- score preserved at 54.5;
+- remains Conditional Strategic Reserve / phone-PMU measurement hypothesis;
+- broad generic locality novelty remains killed;
+- target-phone >=~5% causal CPU-local residual remains unproven;
+- CG-01 BENCHMARK state did not propagate into R2;
+- no hardware/uArch promotion;
+- merged via PR #8 after graph QA, semantic-fidelity review and independent GO.
 
 ## Reserve wave — active
 
-### 1. R2 — NEXT
-
-**CPU Continuation Locality**
-
-Frozen V1 state:
-- score: 54.5
-- Conditional Strategic Reserve
-- phone-PMU measurement hypothesis
-- broad generic locality mechanisms killed as novelty
-- no hardware/uArch promotion without target-phone residual
-
-Migration intent:
-- preserve strong software-locality and generic shared/coherent-cache baselines;
-- preserve the missing direct phone-PMU residual;
-- reuse canonical CG-01 objects only where semantically valid;
-- do not inherit CG-01 BENCHMARK state into R2;
-- do not convert competitor-product evidence into proof of R2 SYSTEM_VALUE.
-
-Canonical CG-01 objects available for reuse where justified:
-- VENDOR-001;
-- ACT-QUALCOMM;
-- CAP-QUALCOMM-ORYON-FLEX-CACHE.
-
-### 2. R3 — queued / blocked lineage
+### 1. R3 — NEXT / blocked lineage
 
 **uArch Semantic Hints**
 
-Migrate blocked lineage last because it depends on lower-layer consumers already proving SYSTEM_VALUE.
+Frozen V1 state:
+- score: 48.5
+- BLOCKED
+- no independent mechanism program
+- D0 only SIMULATION_SUPPORT
+- D1 strongly gated by software sufficiency
+- R1/R2 hardware-specific parents are measurement-only
+- no stable lower-layer consumer has SYSTEM_VALUE
 
-## After reserve-wave completion
+Migration intent:
+- preserve R3 as blocked lineage rather than accidentally reviving it as a candidate;
+- preserve D0 / D1 / D2 separation;
+- preserve the rule that hardware hints need a proven software-visible consumer first;
+- preserve the dependency on SYSTEM_VALUE + SOFTWARE_INSUFFICIENCY;
+- do not invent a new uArch mechanism merely to complete the migration.
+
+## After R3
 
 Before authority cutover:
 1. run full-graph machine QA;

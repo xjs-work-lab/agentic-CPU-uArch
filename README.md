@@ -8,7 +8,7 @@
 
 ## Current migration state
 
-Seven dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
+Eight dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
 
 1. A + CG-06
 2. PT-A
@@ -17,11 +17,16 @@ Seven dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
 5. CG-01
 6. B-residual
 7. R1
+8. R2
 
-The active next slice is **R2 — CPU Continuation Locality**.
+The active final reserve slice is **R3 — uArch Semantic Hints / blocked lineage**.
 
-Queued after R2:
-- R3 — uArch Semantic Hints / blocked lineage
+After R3:
+- full-graph QA;
+- cross-slice semantic-fidelity review;
+- roadmap/view reconciliation;
+- frozen-V1 parity review;
+- separate Human Gate before authority cutover.
 
 Nothing in this repository is research authority before explicit cutover. V1 remains authoritative until the separate Human Gate is passed.
 
@@ -56,7 +61,5 @@ Premises within one Evidence Case are conjunctive; alternative Evidence Cases re
 Migration/feature branches are temporary transaction workspaces:
 
 PR → CI/review → merge → automatic branch deletion.
-
-Automatic cleanup is enforced by `.github/workflows/delete-merged-work-branch.yml`; it does not depend on GitHub's repository-level `delete_branch_on_merge` setting.
 
 Repository history is preserved through commits, PRs, Migration Receipts and review records—not by retaining merged branches.
