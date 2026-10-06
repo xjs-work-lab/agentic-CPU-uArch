@@ -11,13 +11,13 @@ supersedes = []
 # CLM-BR-003
 
 ## Proposition
-Version/validity/provenance/dependency-aware invalidation and compatible-state preservation are already active Agent-systems mechanisms, so those primitives alone are not B-residual novelty.
+Versioned execution, version-aware validity and compatible-state inheritance are already active Agent-systems mechanisms, so those primitives alone are not B-residual novelty.
 
 ## Current interpretation
-PAPER-032/033/034/035 independently occupy versioned authority, KV validity, provenance-bound artifacts and dependency-scoped invalidation.
+PAPER-032 and PAPER-033 occupy versioned authority, version-aware KV validity and compatible-state inheritance.
 
 ## Boundary
-Most evidence is server/GPU/application-layer; smartphone cross-tier transfer remains open.
+Evidence is server/GPU/local-runtime oriented; smartphone S0/S1→S2/S3 transfer remains open.
 
 ## Migration
 - frozen V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
