@@ -2,19 +2,22 @@
 id = "ROADMAP-CURRENT"
 type = "ROADMAP"
 record_state = "CURRENT"
-direction_ids = ["A", "CG-06"]
-scope = "PILOT_MINIMAL_PROJECTION"
+direction_ids = ["A", "PT-A", "CG-06"]
+scope = "MIGRATED_CORE_P0_PROJECTION"
 +++
 
-# Pilot Roadmap Projection
+# Migrated Core Roadmap Projection
 
-This is a **minimal V2.2 Pilot projection**, not a replacement for the full V1 roadmap before cutover.
+This is a partial V2.2 projection. V1 remains authoritative for unmigrated lanes.
 
 ## A
-Next gate: execute `EXP-A-001` when representative target-system data becomes available.
+Execute `EXP-A-001` when representative target-system data becomes available.
+
+## PT-A
+Build/measure the 2027 heterogeneous actuation baseline through `EXP-PTA-001`.
 
 ## CG-06
-Next gate: execute `EXP-CG06-001` to establish representative CPU↔NPU crossover including dispatch/communication/fallback/layout costs.
+Execute `EXP-CG06-001` to establish representative CPU↔NPU crossover.
 
 ## Boundary
-Broader V1 roadmap Directions remain authoritative in V1 and are intentionally not migrated in this slice.
+C, CG-07, CG-01 and reserves remain authoritative in V1 until migrated.
