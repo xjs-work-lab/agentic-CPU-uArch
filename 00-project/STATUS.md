@@ -3,11 +3,11 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: CG01_SLICE_QA_PENDING
+migration_phase: CG01_SLICE_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
-source_commit: 960abb4ef50f050da3c6784d30826053d42e5c5d
+source_commit: 960abb4ef50a8f5b0bd357c067f08346025d
 research_content_migrated: true
 completed_slices:
   - A + CG-06
@@ -16,35 +16,36 @@ completed_slices:
   - CG-07
 active_slice: CG-01
 active_branch: migration/MIG-20261006-02-CG01
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
-## Closed
-- A + CG-06: CLOSED / GO / merged
-- PT-A: CLOSED / GO / merged
-- C: CLOSED / GO / merged
-- CG-07: CLOSED / GO / merged
+## Current cumulative graph
+- 119 canonical nodes
+- 190 canonical semantic edges
+- 190 generated reverse edges
+- 0 hard errors
 
-## CG-01 slice written
-- 1 new Source
-- 1 Discovery Run
-- 5 Claims
-- 4 Evidence Cases
-- 1 Actor
-- 1 Capability
-- 1 Direction
-- 1 Experiment
-- 1 Decision Event
-- Roadmap expanded to include CG-01
+## CG-01
+**GO**
 
-## State
-Canonical CG-01 objects written on migration branch.
+PR #5 is ready for final closeout CI and merge.
 
-Graph CI, semantic-fidelity review, receipt and independent review are required before merge.
+## Next after merge
+Begin reserve migration planning:
+- B-residual
+- R1
+- R2
+- R3 blocked lineage
+
+R2 should reuse VENDOR-001 / Flex Cache Capability.
 
 ## Branch policy
 `main` remains the only long-lived branch.
-The current migration branch is temporary and must be deleted after merge.
+The temporary CG-01 branch must be deleted after merge.
 
 ## Authority
 V1 remains authoritative.
+No cutover.
