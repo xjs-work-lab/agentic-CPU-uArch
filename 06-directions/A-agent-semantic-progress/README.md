@@ -9,7 +9,7 @@ score_context = 82.5
 evidence_maturity = "SIMULATION_SUPPORT"
 maturity_scope = "device-free semantic/workload simulation; real target-system value not yet established"
 strongest_baseline = "B4-TX"
-related_claims = ["CLM-AGENT-001", "CLM-AGENT-002", "CLM-AGENT-003", "CLM-AGENT-004", "CLM-AGENT-005", "CLM-MOBILE-001", "CLM-A-001"]
+related_claims = ["CLM-AGENT-001", "CLM-AGENT-002", "CLM-AGENT-003", "CLM-AGENT-004", "CLM-AGENT-005", "CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-A-001"]
 related_capabilities = []
 +++
 
@@ -34,10 +34,12 @@ B4-TX includes all information and transformations a strong software/runtime sta
 - environment/belief state and step-specific history where reconstructible;
 - task-level script/code lowering when app/task structure is predictable;
 - reusable static app knowledge / prompt-prefix / KV state where available;
-- exception-triggered replanning instead of mandatory per-step reasoning where supported.
+- exception-triggered replanning instead of mandatory per-step reasoning where supported;
+- generic interaction-semantic scheduling, critical-path annotation and IPC/lock priority propagation where available.
 
 PAPER-056 / CLM-AGENT-004 shows semantic execution-state information can have material value in software.
 PAPER-058 / CLM-AGENT-005 further shows stable mobile-GUI task semantics can be compiled into executable scripts and reusable static state, sharply reducing on-device step-wise inference overhead.
+PAPER-060 / CLM-MOBILE-002 shows that generic mobile interaction semantics can already be lowered into scheduler-visible VIP/dependency state with measurable phone QoE value.
 
 A receives differentiated credit only for information/value that survives beyond this stronger B4-TX.
 
