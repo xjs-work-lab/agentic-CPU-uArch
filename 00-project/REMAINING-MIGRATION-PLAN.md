@@ -11,47 +11,61 @@ Authority: planning record only
 3. C — CLOSED / GO
 4. CG-07 — CLOSED / GO
 5. CG-01 — CLOSED / GO
+6. B-residual — CLOSED / GO
+
+B-residual closeout:
+- score preserved at 63.0;
+- remains Conditional Strategic Reserve;
+- not promoted to an active second Bet;
+- no CPU/uArch promotion;
+- merged via PR #6 after machine QA, semantic-fidelity review and independent GO;
+- temporary migration branch deleted after merge.
 
 ## Reserve wave — active
 
-### 1. B-residual — NEXT
+### 1. R1 — NEXT
 
-**Mobile Agent Semantic-to-Physical State Coherence**
+**Post-ready Continuation Timing**
 
 Frozen V1 state:
-- score: 63.0
-- conditional Strategic Reserve
+- score: 55.5
+- Conditional Strategic Reserve
 - measurement hypothesis
-- not an active second-Bet challenger
-- no CPU-uArch promotion
+- broad ready/release decoupling novelty killed
+- no uArch promotion
 
-Why first:
-- highest-scored unmigrated reserve;
-- conceptually distinct from locality timing;
-- preserves semantic-to-physical correctness/reconstruction-cost evidence before lower CPU-local reserves.
+Migration intent:
+- preserve the narrow continuation-timing residual;
+- preserve killed broad novelty;
+- keep measurement evidence separate from strategic promotion;
+- do not infer SYSTEM_VALUE without target-device evidence.
 
-### 2. R1
+### 2. R2 — queued
 
-Post-ready Continuation Timing.
+**CPU Continuation Locality**
 
-Keep as conditional measurement reserve.
-
-### 3. R2
-
-CPU Continuation Locality.
-
-Reuse canonical CG-01 objects:
+Reuse canonical CG-01 objects where semantically valid:
 - VENDOR-001;
 - ACT-QUALCOMM;
 - CAP-QUALCOMM-ORYON-FLEX-CACHE.
 
 Do not inherit CG-01 BENCHMARK state.
 
-### 4. R3
+### 3. R3 — queued / blocked lineage
 
-uArch Semantic Hints.
+**uArch Semantic Hints**
 
 Migrate blocked lineage last because it depends on lower-layer consumers already proving SYSTEM_VALUE.
+
+## After reserve-wave completion
+
+Before authority cutover:
+1. run full-graph machine QA;
+2. perform cross-slice semantic-fidelity review;
+3. reconcile generated views and roadmap;
+4. verify V1 frozen-baseline parity / intentional structural normalization;
+5. record unresolved migration ambiguities, if any;
+6. pass a separate Human Gate for authority cutover.
 
 ## Rule
 
