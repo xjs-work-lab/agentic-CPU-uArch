@@ -2,25 +2,40 @@
 id = "ROADMAP-CURRENT"
 type = "ROADMAP"
 record_state = "CURRENT"
-direction_ids = ["A", "PT-A", "C", "CG-06", "CG-07", "CG-01", "B-residual", "R1", "R2"]
-scope = "MIGRATED_CORE_COMPETITIVE_PLUS_BRES_R1_R2_RESERVE_PROJECTION"
+direction_ids = ["A", "PT-A", "C", "CG-06", "CG-07", "CG-01", "B-residual", "R1", "R2", "R3"]
+scope = "FULL_MIGRATED_PRE_CUTOVER_PORTFOLIO_PROJECTION"
 +++
 
 # Migrated Current Roadmap Projection
 
-This remains a partial V2.2 projection. V1 is authoritative for unmigrated reserve lanes.
+All planned migration slices are now represented in the V2.2 candidate graph.
 
-A, PT-A, C, CG-06, CG-07, CG-01, B-residual, R1 and R2 retain their migrated gates.
+This remains **CANDIDATE / NOT RESEARCH AUTHORITY** until final cross-slice review and Human Gate.
 
-## R2
-Phone-PMU measurement first:
-- quantify raw CPU-local penalty;
-- measure SoftwareLocalityCapture;
-- measure GenericHardwareCapture;
-- establish causal cache/TLB/branch residual;
-- require >=~5% Agent-specific matched-outcome value before any hardware promotion.
+## Active innovation / platform lanes
+- A — Primary Bet
+- PT-A — Platform Track
+- C — Strategic Enabler / second-Bet watch
+- CG-06 — competitive-gap Invest
+- CG-07 — competitive-gap Explore
+- CG-01 — competitive-gap Benchmark
 
-CG-01 remains a separate BENCHMARK lane; R2 remains a CONDITIONAL_RESERVE.
+## Conditional reserves
+- B-residual — semantic-to-physical coherence
+- R1 — post-ready continuation timing
+- R2 — CPU continuation locality
 
-## Boundary
-R3 remains V1-authoritative until migrated.
+## Blocked lineage
+### R3 — uArch Semantic Hints
+No dedicated implementation.
+
+R3 reopens only after:
+`SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause`
+
+and a stable D1/lower-layer consumer exists.
+
+## Global hardware boundary
+No silicon/ISA/uArch commitment is created by migration.
+
+## Next
+Full-graph QA, cross-slice semantic-fidelity review, frozen-V1 parity review, then separate Human Gate for authority cutover.
