@@ -3,8 +3,8 @@ id = "PAPER-053"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-review_depth = "SEED_SCREENING_ONLY"
-decision_use = "PENDING_10Q"
+review_depth = "FULL_10Q"
+decision_use = "DECISION_GRADE_WITH_SCOPE_BOUNDARY"
 independence_assessment = "UNKNOWN"
 title = "Agent-X: Full Pipeline Acceleration of On-device AI Agents"
 primary_url = "https://doi.org/10.1145/3745756.3809195"
@@ -26,8 +26,13 @@ venue = "ACM MobiSys 2026"
 
 
 ## Decision-use gate
-This Source is currently **SEED SCREENING ONLY**.
+**FULL 10Q COMPLETE — decision-grade only within the evaluated scope.**
 
-Do not use it to change Direction lane/score, promote/demote a Bet, or assert a new project conclusion until a full Paper Insight 10Q review is completed.
+Decision use:
+- valid as a strong **software-baseline / workload-characterization** input;
+- valid evidence that Agent-specific prompt/output structure can yield material software-only latency value on the evaluated M4 Pro + TinyAgent system;
+- **not** valid as smartphone SYSTEM_VALUE;
+- **not** evidence of DemandState value;
+- **not** evidence of CPU/uArch necessity.
 
-The existing 30-second read / portfolio-pressure notes are retrieval and triage hypotheses only, not decision-grade conclusions.
+See [deep.md](deep.md) for the full Paper Insight 10Q.
