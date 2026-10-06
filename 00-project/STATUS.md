@@ -49,7 +49,14 @@ No research-state promotion is implied.
 - 226 canonical nodes
 - 381 canonical semantic edges
 - 381 generated reverse edges
-- pre-cutover hard graph errors: 0
+
+## Cutover QA
+- run: `37478941158`
+- job: `112321684288`
+- authority/write boundary: PASS
+- deterministic graph projection: PASS
+- graph health: PASS
+- hard graph errors: 0
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
