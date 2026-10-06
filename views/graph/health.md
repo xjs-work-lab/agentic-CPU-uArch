@@ -3,10 +3,10 @@
 Updated: 2026-10-06
 
 ## Current projection
-- canonical nodes: **254**
-- canonical semantic edges: **420**
-- generated reverse edges: **420**
-- graph projection: refreshed after Frontier Round 2 prior-art pressure test
+- canonical nodes: **258**
+- canonical semantic edges: **425**
+- generated reverse edges: **425**
+- graph projection: refreshed after Frontier Round 2B / H-SCL convergence
 
 ## Validation status
 
@@ -18,31 +18,24 @@ Cutover QA:
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Post-cutover Round-2 delta check
+### Post-cutover Round-2B delta check
 **PASS — structural delta consistency**
 
 Checked:
-- PAPER-058, PAPER-059, PAPER-060 and PAPER-061 resolve as canonical Sources;
-- CLM-AGENT-005, CLM-MOBILE-002 and CLM-C-006 resolve;
-- EC-A-006-A, EC-CG06-004-B, EC-C-006-A and EC-C-007-A ground their supported Claims;
-- A → CLM-AGENT-005 and CLM-MOBILE-002 resolve;
-- C → CLM-MOBILE-002 and CLM-C-006 resolve;
-- EXP-CG06-001 → PAPER-059 resolves;
-- DEC-A-003, DEC-A-004, DEC-C-003, DEC-C-004 and DEC-CG06-003 resolve;
-- generated reverse edges were refreshed with the canonical projection.
-
-## Important boundary
-The Round-2 recovery did **not** execute the full repository-wide `health.py` CI job in a local clone.
-
-Therefore:
-- current projection and changed dependency closure were checked directly against the canonical delta;
-- last full repository-wide health run remains the cutover QA above;
-- graph structure does not promote research conclusions.
+- PAPER-058, PAPER-059, PAPER-060, PAPER-061 and PAPER-062 resolve;
+- CLM-AGENT-005, CLM-MOBILE-002, CLM-C-006 and CLM-C-007 resolve;
+- their Evidence Cases ground the supported Claims;
+- A/C/CG-06 related-Claim edges resolve;
+- EXP-CG06-001 includes PAPER-059;
+- DEC-A-003, DEC-A-004, DEC-C-003, DEC-C-004, DEC-C-005 and DEC-CG06-003 resolve;
+- generated reverse edges were refreshed.
 
 ## Research-state boundary
 Graph health does not:
 - establish a second differentiated Primary Bet;
-- infer target-phone Agent-specific residual;
+- promote H-SCL to a Direction;
+- establish target-phone Agent-specific SYSTEM_VALUE;
 - establish SOFTWARE_INSUFFICIENCY;
-- promote C or CG-06;
 - unblock R3 or create a uArch candidate.
+
+H-SCL is currently a **residual question set folded into A/C**, not a canonical Direction.
