@@ -6,16 +6,31 @@
 >
 > Migration baseline: `MIG-20261006-02`
 
-## Current branch state
-The first dependency-closed **A + CG-06** migration slice has been objectized on the Pilot branch and is **QA PENDING**.
+## Current migration state
 
-Nothing in this repository is research authority before explicit cutover.
+Six dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
+
+1. A + CG-06
+2. PT-A
+3. C
+4. CG-07
+5. CG-01
+6. B-residual
+
+The active next slice is **R1 — Post-ready Continuation Timing**.
+
+Queued after R1:
+- R2 — CPU Continuation Locality
+- R3 — uArch Semantic Hints / blocked lineage
+
+Nothing in this repository is research authority before explicit cutover. V1 remains authoritative until the separate Human Gate is passed.
 
 ## Start here
 1. [00-project/AUTHORITY.md](00-project/AUTHORITY.md)
 2. [00-project/STATUS.md](00-project/STATUS.md)
-3. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
-4. [views/graph/current.json](views/graph/current.json)
+3. [00-project/REMAINING-MIGRATION-PLAN.md](00-project/REMAINING-MIGRATION-PLAN.md)
+4. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
+5. [views/graph/current.json](views/graph/current.json)
 
 ## Reasoning model
 ```text
@@ -34,12 +49,14 @@ SOURCE / DISCOVERY_RUN / upstream CLAIM / EXPERIMENT
 
 Premises within one Evidence Case are conjunctive; alternative Evidence Cases remain separate routes.
 
-
 ## Branch policy
 
 `main` is the only long-lived branch.
 
 Migration/feature branches are temporary transaction workspaces:
+
 PR → CI/review → merge → automatic branch deletion.
+
+Automatic cleanup is enforced by `.github/workflows/delete-merged-work-branch.yml`; it does not depend on GitHub's repository-level `delete_branch_on_merge` setting.
 
 Repository history is preserved through commits, PRs, Migration Receipts and review records—not by retaining merged branches.
