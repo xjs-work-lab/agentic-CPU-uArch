@@ -9,48 +9,54 @@ Authority: planning record only
 1. A + CG-06 — CLOSED / GO
 2. PT-A — CLOSED / GO
 3. C — CLOSED / GO
+4. CG-07 — CLOSED / GO
+5. CG-01 — CLOSED / GO
 
-## Next — CG-07
+## Reserve wave — active
 
-**Dedicated Always-On Agent AI Domain**
+### 1. B-residual — NEXT
 
-Current V1 state:
-- score: 75.0
-- action: EXPLORE / Architecture benchmark
-- class: competitive-gap adaptation/differentiation candidate
+**Mobile Agent Semantic-to-Physical State Coherence**
 
-Why next:
-- strongest current action among unmigrated lanes;
-- higher priority than CG-01 benchmark and strategic reserves;
-- distinct power/wake/duty-cycle evidence boundary should remain separate from locality/reserve evidence.
+Frozen V1 state:
+- score: 63.0
+- conditional Strategic Reserve
+- measurement hypothesis
+- not an active second-Bet challenger
+- no CPU-uArch promotion
 
-## Then — CG-01
+Why first:
+- highest-scored unmigrated reserve;
+- conceptually distinct from locality timing;
+- preserves semantic-to-physical correctness/reconstruction-cost evidence before lower CPU-local reserves.
 
-**Flex Cache / heterogeneous shared-cache handoff**
+### 2. R1
 
-Current V1 state:
-- score: 71.0
-- action: BENCHMARK / targeted adaptation study
+Post-ready Continuation Timing.
 
-Migration value:
-- establishes Qualcomm Flex Cache vendor/capability evidence;
-- creates reusable locality baseline for later R2 migration;
-- do not merge CG-01 and R2 strategic state merely because they share evidence.
+Keep as conditional measurement reserve.
 
-## Reserve wave
+### 3. R2
 
-After competitive-gap watches:
-- B-residual
-- R1
-- R2
-- R3 blocked lineage
+CPU Continuation Locality.
 
-Exact reserve order may be optimized by dependency reuse after CG-01, but each Direction remains a separate semantic owner.
+Reuse canonical CG-01 objects:
+- VENDOR-001;
+- ACT-QUALCOMM;
+- CAP-QUALCOMM-ORYON-FLEX-CACHE.
+
+Do not inherit CG-01 BENCHMARK state.
+
+### 4. R3
+
+uArch Semantic Hints.
+
+Migrate blocked lineage last because it depends on lower-layer consumers already proving SYSTEM_VALUE.
 
 ## Rule
 
 Migration order is not strategic promotion.
 
-A lane migrating earlier does not receive a higher score/action because of migration sequence.
+Each Direction owns its own state even when evidence is shared.
 
 V1 remains authoritative until explicit cutover.
