@@ -1,0 +1,38 @@
+name: V2.2 Graph QA
+
+on:
+  pull_request:
+    paths:
+      - '00-project/**'
+      - '01-evidence/**'
+      - '02-claims/**'
+      - '03-evidence-cases/**'
+      - '04-actors/**'
+      - '05-capabilities/**'
+      - '06-directions/**'
+      - '07-validation/**'
+      - '08-decisions/**'
+      - '09-roadmap/**'
+      - 'analysis/graph/**'
+      - 'views/graph/**'
+      - '.github/workflows/v2.2-graph-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  graph-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout candidate
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify candidate write boundary
+        run: python analysis/graph/write_guard.py .
+      - name: Verify graph projection
+        run: python analysis/graph/build_graph.py --check
+      - name: Run graph health
+        run: python analysis/graph/health.py
