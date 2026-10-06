@@ -5,7 +5,7 @@ lifecycle = "OPEN"
 as_of = "2026-10-06"
 coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "Seed, Round-2 prior art and Round-3 Agent-specific residual Sources have completed decision-level 10Q review. H-FIB foreground-impact-budget evidence and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
+limitations = "Seed, Round-2/3 prior art and Round-4 H-FIB falsification Sources have completed decision-level 10Q review. Generic system-control/utility-scheduling search is converged; second-Bet search now moves to other structural workload changes."
 +++
 
 # DR-FRONTIER-20261006
@@ -190,3 +190,37 @@ The target is whether **Agent-specific marginal value / tolerance state** change
 - Role: strongest adjacent Agent-aware resource-orchestration comparator for H-FIB.
 - Current use: screening only; no portfolio/Claim impact before full 10Q.
 - Boundary: cloud Agent workflows, not smartphone foreground/background resource control.
+
+
+## Round 4 — H-FIB falsification and convergence
+
+Full 10Q completed:
+- PAPER-066 — Murakkab — OSDI 2026
+- PAPER-067 — HUSH / Smartphone Background Activities in the Wild — MobiCom 2015
+- PAPER-068 — ReUA / Utility-Accrual Scheduling — EMSOFT 2004 / TECS lineage
+
+Decision:
+- Agent-aware workflow/SLO/resource orchestration is already strong software prior art (Murakkab).
+- personalized smartphone background-work usefulness → suppress/allow is direct mobile prior art (HUSH).
+- graded task utility / delay tolerance / low-value abort is foundational scheduling prior art (TUF/ReUA).
+
+Therefore:
+> **H-FIB is not promoted to a Direction.**
+
+It is now an **A→C bridge question**:
+- A must prove non-reconstructible Agent semantic RequiredProgress/value beyond SLO/TUF/history/topology/legality/reuse proxies.
+- C may later test whether that proven information improves target-phone control.
+
+Portfolio change:
+- C remains STRATEGIC_ENABLER / 72.0.
+- **C second-Bet watch is closed on current evidence.**
+- A remains PRIMARY_BET / 82.5.
+- second differentiated Primary Bet remains unfilled.
+
+See:
+- `analysis/frontier-2026/round4-h-fib-convergence-2026-10-06.md`
+- `analysis/frontier-2026/h-fib-hypothesis.md`
+
+### Search pivot
+Stop generic semantic-control / utility-scheduling second-Bet search.
+Next candidate families must come from other structural Agent workload changes, starting with persistent Agent memory/state and CPU-visible memory/retrieval/update behavior.
