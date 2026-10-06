@@ -3,9 +3,9 @@ id = "DR-FRONTIER-20261006"
 type = "DISCOVERY_RUN"
 lifecycle = "OPEN"
 as_of = "2026-10-06"
-coverage_quality = "AUTHORITY_SEED_PLUS_PARTIAL_10Q"
+coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "Coverage is still incomplete. No Direction promotion is authorized from this Discovery Run until the remaining seeds and competing routes complete decision-level review."
+limitations = "First authority-guided seed set has completed decision-level 10Q review. Snowball, competing-route and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
 +++
 
 # DR-FRONTIER-20261006
@@ -51,10 +51,10 @@ The duplicate was removed; PAPER-003 remains the sole canonical Source identity.
 - PAPER-053 — **FULL_10Q COMPLETE**
 - PAPER-054 — **FULL_10Q COMPLETE**
 - PAPER-003 — **FULL_10Q REFRESH COMPLETE**
-- PAPER-056 — PENDING_10Q
-- PAPER-057 — PENDING_10Q
+- PAPER-056 — **FULL_10Q COMPLETE**
+- PAPER-057 — **FULL_10Q COMPLETE**
 
-No pending seed may affect portfolio state before full 10Q.
+All five canonical seeds are now decision-grade within explicit scope boundaries. Cross-paper synthesis is recorded in `analysis/frontier-2026/cross-seed-synthesis-2026-10-06.md`.
 
 ## Current decision-grade observations
 
@@ -79,11 +79,19 @@ Impact:
 - C G1 baseline strengthened;
 - no software-insufficiency or uArch promotion.
 
-## Provisional observations still awaiting 10Q
-- AgentProg may clarify long-horizon semantic execution-state value.
-- ShadowNPU may clarify fine-grained heterogeneous stage/operator/precision placement.
+### PAPER-056 AgentProg
+Long-horizon mobile GUI Agent success depends materially on explicit control-flow context, persistent variables and belief state in the evaluated system.
+Impact:
+- CLM-AGENT-004 added;
+- A's B4-TX baseline strengthened;
+- no A/R3 promotion.
 
-These are screening hypotheses only.
+### PAPER-057 ShadowNPU
+Optimized NPU-centric sub-operator placement can reclaim substantial CPU/GPU fallback work on evaluated Snapdragon phones.
+Impact:
+- CLM-CPU-004 added;
+- CG-06 strongest baseline strengthened to NPU-OPT/HETERO-OPT;
+- CG-06 remains INVEST / 86.5.
 
 ## Candidate blind spots for next pass
 - Agent-specific residual beyond upper-layer time-utility scheduling;
