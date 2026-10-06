@@ -212,6 +212,14 @@
       "claim_kind": "OBSERVATION"
     },
     {
+      "id": "CLM-C-007",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-C-007.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
       "id": "CLM-C-EXP-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-C-EXP-001.md",
@@ -641,6 +649,11 @@
       "path": "08-decisions/events/DEC-C-004.md"
     },
     {
+      "id": "DEC-C-005",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-C-005.md"
+    },
+    {
       "id": "DEC-CG01-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-CG01-001.md"
@@ -971,6 +984,12 @@
       "id": "EC-C-007-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-C-007-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-C-008-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-C-008-A.md",
       "record_state": "CURRENT"
     },
     {
@@ -1542,6 +1561,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "PAPER-062",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-062/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "PATENT-005",
       "type": "SOURCE",
       "path": "01-evidence/patents/PATENT-005/README.md",
@@ -1947,6 +1972,12 @@
     },
     {
       "source": "C",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-C-005",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-C-001",
       "provenance": "GENERATED_REVERSE"
@@ -1991,6 +2022,12 @@
       "source": "C",
       "relation": "RELATED_CLAIM",
       "target": "CLM-C-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "C",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-C-007",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -2667,6 +2704,24 @@
     },
     {
       "source": "CLM-C-006",
+      "relation": "USED_BY_DIRECTION",
+      "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-007",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-C-008-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-007",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-C-005",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-007",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
       "provenance": "GENERATED_REVERSE"
@@ -3842,6 +3897,18 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-C-005",
+      "relation": "SUBJECT",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-C-005",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-C-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-CG01-001",
       "relation": "SUBJECT",
       "target": "CG-01",
@@ -4541,6 +4608,18 @@
       "source": "EC-C-007-A",
       "relation": "SUPPORT",
       "target": "CLM-C-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-C-008-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-062",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-C-008-A",
+      "relation": "SUPPORT",
+      "target": "CLM-C-007",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -6092,6 +6171,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-062",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-C-008-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -6729,8 +6814,8 @@
     }
   ],
   "counts": {
-    "nodes": 254,
-    "canonical_semantic_edges": 420,
-    "generated_reverse_edges": 420
+    "nodes": 258,
+    "canonical_semantic_edges": 425,
+    "generated_reverse_edges": 425
   }
 }
