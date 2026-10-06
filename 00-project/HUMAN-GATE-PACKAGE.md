@@ -83,3 +83,9 @@ uArch Primary Bet:
 **HUMAN GATE APPROVED**
 
 Authority cutover is authorized through the reviewed cutover PR.
+
+## Cutover transaction
+
+- PR: `#11`
+- branch: `migration/MIG-20261006-02-CUTOVER`
+- authority becomes effective only after reviewed merge.
