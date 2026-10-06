@@ -21,6 +21,8 @@ After V2.2 cutover, are we missing a structural second differentiated Bet for 20
 ## Decision changes
 None.
 
+**Method correction:** PAPER-053..057 were added as seed-screening Sources only. Their early portfolio-pressure notes are not decision-grade. No Keep/Upgrade/Downgrade/Kill conclusion may use them until full 10Q review is complete.
+
 A remains the only differentiated Primary Bet.
 C remains Strategic Enabler / second-Bet watch.
 CG-06 remains INVEST.
