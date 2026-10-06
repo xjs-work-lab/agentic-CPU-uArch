@@ -13,6 +13,10 @@ migration_id: MIG-20261006-02
 human_gate: APPROVED
 human_gate_date: 2026-10-06
 cutover_state: COMPLETE
+cutover_pr: 11
+cutover_merge_commit: 68698fd4b4bc6767c480d200fd3483bdc32eaf1b
+post_cutover_verification: PASS
+cutover_branch_cleanup: PASS
 research_content_migrated: true
 completed_slices:
   - A + CG-06
@@ -28,7 +32,7 @@ completed_slices:
 
 ## Authority
 
-**V2.2 is now the active Research SSOT.**
+**V2.2 is the active Research SSOT.**
 
 Repository:
 `xjs-work-lab/agentic-CPU-uArch`
@@ -38,25 +42,23 @@ Frozen historical source:
 
 ## Human Gate
 
-Explicit approval received:
+Explicit approval:
 **APPROVED — 2026-10-06**
 
-The approval authorizes authority-location cutover only.
+## Cutover transaction
 
-No research-state promotion is implied.
+- PR: `#11`
+- merge commit: `68698fd4b4bc6767c480d200fd3483bdc32eaf1b`
+- final QA run: `37479121798`
+- final QA job: `112322303675`
+- branch cleanup run: `37479223624`
+- post-cutover verification: **PASS**
 
 ## Current graph
 - 226 canonical nodes
 - 381 canonical semantic edges
 - 381 generated reverse edges
-
-## Cutover QA
-- run: `37478941158`
-- job: `112321684288`
-- authority/write boundary: PASS
-- deterministic graph projection: PASS
-- graph health: PASS
-- hard graph errors: 0
+- hard graph errors at final cutover QA: 0
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
@@ -78,8 +80,11 @@ Still mandatory:
 
 `STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
-## Next operating rule
+## Operating rule
 
-Future research resumes from this repository, not from V1.
+Future research resumes from this repository.
 
 V1 remains frozen for provenance and historical reference.
+
+See:
+[Authority Cutover Closeout](CUTOVER-CLOSEOUT.md)
