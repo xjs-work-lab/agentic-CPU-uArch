@@ -6,7 +6,7 @@ status = "READY"
 title = "CG-06 strong-baseline CPU↔NPU crossover experiment"
 direction_ids = ["CG-06"]
 tests_claim_ids = ["CLM-CG06-EXP-001"]
-input_source_ids = ["PAPER-009", "PAPER-052", "PAPER-057", "TOOL-012", "TOOL-013"]
+input_source_ids = ["PAPER-009", "PAPER-052", "PAPER-057", "PAPER-059", "TOOL-012", "TOOL-013"]
 evidence_target = "SYSTEM_VALUE"
 +++
 
@@ -28,10 +28,11 @@ Conventional NPU execution with realistic launch/communication/fallback costs.
 
 ### NPU-OPT
 Strongest feasible optimized NPU-centric path, including where applicable:
+- prompt chunking/static-graph reconstruction;
 - quantization-aware operator/sub-operator placement;
-- sparse residual CPU/GPU work;
-- static-graph bucketing/specialization;
-- cross-engine pipeline/fusion;
+- sparse float residual CPU/GPU work;
+- graph bucketing/specialization;
+- out-of-order/cross-engine pipeline/fusion;
 - minimized transfer and fallback.
 
 ### HETERO-OPT
@@ -49,7 +50,7 @@ Selective mixed CPU/NPU execution if neither monolithic path is strongest.
 - full Agent critical-path contribution, not kernel-only speed.
 
 ## Pass condition
-A CPU-fast-path region only counts if it survives the **NPU-OPT/HETERO-OPT** baseline on meaningful end outcome, not merely against NPU-BASE.
+A CPU-fast-path region only counts if it survives the NPU-OPT/HETERO-OPT baseline on meaningful end outcome, not merely against NPU-BASE.
 
 ## State
 READY / WAITING-FOR-DATA.
@@ -57,6 +58,6 @@ READY / WAITING-FOR-DATA.
 ## Boundary
 Existing hardware + compiler/runtime paths first.
 This is not a new-ISA experiment.
-`PAPER-057` strengthens the comparator; it does not pre-decide the winner.
+PAPER-059 and PAPER-057 strengthen the comparator; they do not pre-decide the winner.
 
-The frozen V1 matrix remains preserved in [deep.md](deep.md).
+The frozen V1 matrix remains preserved in deep.md.
