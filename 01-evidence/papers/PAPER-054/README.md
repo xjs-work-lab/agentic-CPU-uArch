@@ -3,6 +3,8 @@ id = "PAPER-054"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
+review_depth = "SEED_SCREENING_ONLY"
+decision_use = "PENDING_10Q"
 independence_assessment = "UNKNOWN"
 title = "TimelyLLM: Time-sensitive LLM Serving System for Physical-I/O Limited Agents"
 primary_url = "https://doi.org/10.1145/3745756.3809203"
@@ -21,3 +23,11 @@ venue = "ACM MobiSys 2026"
 - **Portfolio pressure:** Strongly reinforces the need to distinguish ready work from useful-now work, but also raises the baseline for A/R1 because substantial value can be obtained from execution-aware software scheduling without new semantic-to-hardware mechanisms.
 - **Boundary:** Evaluated on physical-I/O-limited agents, not yet smartphone persistent-agent SYSTEM_VALUE.
 - **Primary source:** https://doi.org/10.1145/3745756.3809203
+
+
+## Decision-use gate
+This Source is currently **SEED SCREENING ONLY**.
+
+Do not use it to change Direction lane/score, promote/demote a Bet, or assert a new project conclusion until a full Paper Insight 10Q review is completed.
+
+The existing 30-second read / portfolio-pressure notes are retrieval and triage hypotheses only, not decision-grade conclusions.
