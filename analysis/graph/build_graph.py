@@ -10,7 +10,7 @@ ROOTS = [
     "05-capabilities","06-directions","07-validation","08-decisions","09-roadmap"
 ]
 
-def parse_frontmatter(path: Path):
+def parse_frontmatter(path: Path, root: Path):
     text = path.read_text(encoding="utf-8")
     if not text.startswith("+++\n"):
         return None
@@ -18,7 +18,7 @@ def parse_frontmatter(path: Path):
     if end < 0:
         raise ValueError(f"unterminated TOML front matter: {path}")
     meta = tomllib.loads(text[4:end])
-    meta["_path"] = path.as_posix()
+    meta["_path"] = path.relative_to(root).as_posix()
     return meta
 
 def load_nodes(root: Path):
@@ -28,7 +28,7 @@ def load_nodes(root: Path):
         if not base.exists():
             continue
         for path in sorted(base.rglob("*.md")):
-            meta=parse_frontmatter(path)
+            meta=parse_frontmatter(path, root)
             if meta:
                 nodes.append(meta)
     return nodes
