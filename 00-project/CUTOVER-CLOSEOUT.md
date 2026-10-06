@@ -94,6 +94,12 @@ Active Research SSOT:
 Historical frozen source:
 `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 
+## Closeout PR
+
+- PR: `#12`
+- branch: `maintenance/MIG-20261006-02-CUTOVER-CLOSEOUT`
+- scope: post-cutover verification record only
+
 ## Next
 
 Migration work is finished.
