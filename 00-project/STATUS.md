@@ -3,41 +3,57 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: WAVE_0_PASS_READY_FOR_PILOT_SLICE
+migration_phase: A_CG06_PILOT_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
 source_commit: 960abb4ef50a8f5b0bd357c067f08346025d
-research_content_migrated: false
+research_content_migrated: true
 pilot_slice: A + CG-06
+pilot_branch: migration/MIG-20261006-02-A-CG06
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
-## Completed
-- V2.2 architecture approved.
-- Authority boundary established.
-- Typed target skeleton established.
-- Migration receipt area established.
-- Graph-tooling scaffold established.
+## Migrated Pilot graph
+- 12 Sources
+- 1 Discovery Run
+- 10 Claims
+- 11 Evidence Cases
+- 2 Actors
+- 1 Capability
+- 2 Directions
+- 2 Experiments
+- 2 Decision Events
+- 1 minimal Roadmap
 
-## Not started
-- A + CG-06 Source migration.
-- Claim / Evidence Case objectization.
-- Actor / Capability migration.
-- Experiment / Decision migration.
-- semantic-fidelity QA.
-- authority cutover.
+Graph:
+- 44 canonical nodes
+- 60 canonical semantic edges
+- 60 generated reverse edges
 
-## Wave 0 audit
-PASS.
+## QA
+GitHub Actions run `37450211533`:
+**PASS**
 
-Validated:
-- authority marker;
-- baseline marker;
-- empty graph projection;
-- candidate-root write guard;
-- graph builder execution;
-- Wave 0 health check execution.
+Hard errors:
+0
 
-## Next
-Begin the A + CG-06 dependency-closed migration slice under MIG-20261006-02.
+Warnings:
+12 source-independence `UNKNOWN` warnings, accepted by design.
+
+## Semantic fidelity
+**PASS**
+
+## Independent review
+**GO**
+
+## Current state
+PR #1 is ready for final CI after receipt/review closeout and then merge.
+
+## Authority
+V1 remains authoritative.
+
+No authority cutover is part of this Pilot.
