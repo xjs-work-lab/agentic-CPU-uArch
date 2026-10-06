@@ -3,13 +3,13 @@ id = "PAPER-056"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-review_depth = "SEED_SCREENING_ONLY"
-decision_use = "PENDING_10Q"
+review_depth = "FULL_10Q"
+decision_use = "DECISION_GRADE_WITH_SCOPE_BOUNDARY"
 independence_assessment = "UNKNOWN"
 title = "AgentProg: Empowering Long-Horizon GUI Agents with Program-Guided Context Management"
 primary_url = "https://doi.org/10.1145/3745756.3809245"
 priority = "P0"
-evidence_role = "direct long-horizon mobile GUI Agent workload and explicit semantic execution-state/context-management evidence"
+evidence_role = "long-horizon mobile GUI Agent semantic execution-state/context-management evidence; strong software semantic-state baseline for A/R3"
 authors = ["Shizuo Tian", "Hao Wen", "Yuxuan Chen", "Jiacheng Liu", "Shanhui Zhao", "Guohong Liu", "Ju Ren", "Yunxin Liu", "Yuanchun Li"]
 venue = "ACM MobiSys 2026"
 +++
@@ -17,17 +17,25 @@ venue = "ACM MobiSys 2026"
 # PAPER-056 — AgentProg
 
 ## 30-second read
-- **Why it matters:** Long-horizon mobile GUI Agents expose context/state-management behavior that ordinary chat-style LLM workloads do not.
-- **What it establishes:** Program-like control/data-flow structure, explicit variables and an execution tree can improve long-horizon mobile Agent task completion in the evaluated benchmarks.
-- **Reported anchors:** 78.0% success on AndroidWorld and 68.4% on AW-Extend; removal of the execution tree was reported to reduce AW-Extend performance to 39.5%.
-- **Portfolio pressure:** Strengthens the thesis that Agent execution carries useful semantic state, while also showing that much of the value can live in software/runtime representations.
-- **Boundary:** High inference cost remains a practical concern; does not establish CPU/uArch residual.
+- **Why it matters:** Directly studies long-horizon mobile GUI Agents, where control-flow, task-critical variables and hidden environment state become first-class execution state.
+- **What it establishes:** Explicit program/control/data-flow structure plus a global belief state materially improves task completion and prevents history interference on AndroidWorld/AW-Extend.
+- **Reported anchors:** 78.0% AndroidWorld; 68.4% AW-Extend; removing execution tree drops AW-Extend to 39.5%; removing explicit variables drops it to 50.0%.
+- **Critical cost:** the evaluated AgentProg configuration is cloud-model/prompt-engineering heavy and substantially slower/more token-expensive than UI-TARS and Mobile-Agent-v3.
+- **Portfolio meaning:** supports semantic-state information value, but simultaneously strengthens the application/runtime software baseline. It does not establish DemandState residual or CPU/uArch need.
 - **Primary source:** https://doi.org/10.1145/3745756.3809245
 
-
 ## Decision-use gate
-This Source is currently **SEED SCREENING ONLY**.
+**FULL 10Q COMPLETE — decision-grade only within the evaluated functional scope.**
 
-Do not use it to change Direction lane/score, promote/demote a Bet, or assert a new project conclusion until a full Paper Insight 10Q review is completed.
+Use as:
+- direct evidence that long-horizon mobile GUI Agents benefit from explicit control/data-flow, persistent variables and belief state;
+- strong software/runtime baseline for any claim that Agent semantics must be pushed lower in the stack;
+- workload evidence for long-horizon context correctness.
 
-The existing 30-second read / portfolio-pressure notes are retrieval and triage hypotheses only, not decision-grade conclusions.
+Do **not** use as:
+- on-device LLM performance/energy evidence (the evaluated implementation uses cloud/API models);
+- proof of DemandState / RequiredProgress incremental value;
+- proof of CPU/uArch insufficiency;
+- proof that semantic state should be exposed directly to hardware.
+
+See [deep.md](deep.md) for the full Paper Insight 10Q.
