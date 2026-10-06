@@ -3,27 +3,60 @@ id = "EXP-CG06-001"
 type = "EXPERIMENT"
 record_state = "CURRENT"
 status = "READY"
-title = "CG-06 CPU↔NPU crossover experiment"
+title = "CG-06 strong-baseline CPU↔NPU crossover experiment"
 direction_ids = ["CG-06"]
 tests_claim_ids = ["CLM-CG06-EXP-001"]
-input_source_ids = ["PAPER-009", "PAPER-052", "TOOL-012", "TOOL-013"]
+input_source_ids = ["PAPER-009", "PAPER-052", "PAPER-057", "TOOL-012", "TOOL-013"]
 evidence_target = "SYSTEM_VALUE"
 +++
 
-# EXP-CG06-001 — CPU↔NPU crossover
+# EXP-CG06-001 — Strong-baseline CPU↔NPU crossover
 
 ## Decision question
-Where does CPU-resident execution beat NPU offload for latency-critical Agent-relevant AI stages after dispatch, communication, fallback and layout costs are counted?
+Where, if anywhere, does CPU-resident execution beat a **strong optimized NPU-centric path** for latency-critical Agent-relevant AI stages after dispatch, communication, fallback, layout, precision, graph-specialization and state-reuse costs are counted?
 
-## Paths
-- CPU-VECTOR
-- CPU-MATRIX
-- NPU
+## Required paths
+
+### CPU-VECTOR
+Best available CPU vector/SIMD implementation.
+
+### CPU-MATRIX
+Best available CPU matrix implementation using existing ISA/compiler/runtime capability.
+
+### NPU-BASE
+Conventional NPU execution with realistic launch/communication/fallback costs.
+
+### NPU-OPT
+Strongest feasible optimized NPU-centric path, including where applicable:
+- quantization-aware operator/sub-operator placement;
+- sparse residual CPU/GPU work;
+- static-graph bucketing/specialization;
+- cross-engine pipeline/fusion;
+- minimized transfer and fallback.
+
+### HETERO-OPT
+Selective mixed CPU/NPU execution if neither monolithic path is strongest.
+
+## Required accounting
+- stage/operator/sub-operator shape;
+- precision / accuracy constraint;
+- dispatch and synchronization;
+- layout/data movement;
+- CPU/NPU resource occupancy;
+- foreground QoE externality;
+- energy / thermal;
+- state reuse / cacheability;
+- full Agent critical-path contribution, not kernel-only speed.
+
+## Pass condition
+A CPU-fast-path region only counts if it survives the **NPU-OPT/HETERO-OPT** baseline on meaningful end outcome, not merely against NPU-BASE.
 
 ## State
 READY / WAITING-FOR-DATA.
 
 ## Boundary
-Existing hardware + compiler/runtime paths first. This is not a new-ISA experiment.
+Existing hardware + compiler/runtime paths first.
+This is not a new-ISA experiment.
+`PAPER-057` strengthens the comparator; it does not pre-decide the winner.
 
-The exact V1 matrix is preserved in [deep.md](deep.md).
+The frozen V1 matrix remains preserved in [deep.md](deep.md).
