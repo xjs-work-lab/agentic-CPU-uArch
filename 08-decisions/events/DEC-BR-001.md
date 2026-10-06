@@ -6,7 +6,7 @@ subject_id = "B-residual"
 event_type = "DOWNGRADE_TO_CONDITIONAL_RESERVE"
 effective_date = "2026-10-05"
 transaction_id = "TXN-STAGE15D-FREEZE"
-trigger_claims = ["CLM-BR-001", "CLM-BR-002", "CLM-BR-003", "CLM-BR-004", "CLM-BR-005", "CLM-BR-006"]
+trigger_claims = ["CLM-BR-001", "CLM-BR-002", "CLM-BR-003", "CLM-BR-004", "CLM-BR-005", "CLM-BR-006", "CLM-BR-007"]
 trigger_experiments = ["EXP-BR-001"]
 +++
 
