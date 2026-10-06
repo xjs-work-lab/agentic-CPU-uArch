@@ -3,10 +3,10 @@
 Updated: 2026-10-06
 
 ## Current projection
-- canonical nodes: **258**
-- canonical semantic edges: **425**
-- generated reverse edges: **425**
-- graph projection: refreshed after Frontier Round 2B / H-SCL convergence
+- canonical nodes: **268**
+- canonical semantic edges: **446**
+- generated reverse edges: **446**
+- graph projection: refreshed after Frontier Round 3 Agent-specific residual audit
 
 ## Validation status
 
@@ -18,24 +18,29 @@ Cutover QA:
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Post-cutover Round-2B delta check
+### Post-cutover Round-3 delta check
 **PASS — structural delta consistency**
 
 Checked:
-- PAPER-058, PAPER-059, PAPER-060, PAPER-061 and PAPER-062 resolve;
-- CLM-AGENT-005, CLM-MOBILE-002, CLM-C-006 and CLM-C-007 resolve;
-- their Evidence Cases ground the supported Claims;
-- A/C/CG-06 related-Claim edges resolve;
-- EXP-CG06-001 includes PAPER-059;
-- DEC-A-003, DEC-A-004, DEC-C-003, DEC-C-004, DEC-C-005 and DEC-CG06-003 resolve;
+- PAPER-063, PAPER-064 and PAPER-065 resolve as canonical Sources;
+- CLM-AGENT-006 and CLM-AGENT-007 resolve;
+- EC-PTA-005-A / B and EC-A-007-A ground the new Claims;
+- PT-A → CLM-AGENT-006 resolves;
+- A → CLM-AGENT-006 / 007 resolves;
+- EXP-A-001 includes the strengthened evidence inputs;
+- DEC-PTA-002 and DEC-A-005 resolve;
 - generated reverse edges were refreshed.
 
 ## Research-state boundary
 Graph health does not:
+- promote H-FIB to a Direction;
 - establish a second differentiated Primary Bet;
-- promote H-SCL to a Direction;
-- establish target-phone Agent-specific SYSTEM_VALUE;
+- establish target-phone Agent-specific SYSTEM_VALUE for H-FIB;
 - establish SOFTWARE_INSUFFICIENCY;
 - unblock R3 or create a uArch candidate.
 
-H-SCL is currently a **residual question set folded into A/C**, not a canonical Direction.
+Current frontier:
+- cancel/discard legality — narrowed into PT-A/A baseline;
+- state-reuse identity — narrowed into A baseline;
+- RequiredProgress — remains A residual;
+- H-FIB — analysis hypothesis / next second-Bet probe.
