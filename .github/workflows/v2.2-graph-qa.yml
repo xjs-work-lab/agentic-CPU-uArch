@@ -15,6 +15,7 @@ on:
       - '09-roadmap/**'
       - 'analysis/graph/**'
       - 'views/graph/**'
+      - 'history/migrations/receipts/**'
       - '.github/workflows/v2.2-graph-qa.yml'
 
 permissions:
@@ -24,13 +25,13 @@ jobs:
   graph-qa:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout candidate
+      - name: Checkout repository state
         uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Verify candidate write boundary
+      - name: Verify authority and write boundary
         run: python analysis/graph/write_guard.py .
       - name: Verify graph projection
         run: python analysis/graph/build_graph.py --check
