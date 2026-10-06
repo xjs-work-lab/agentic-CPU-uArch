@@ -132,6 +132,14 @@
       "claim_kind": "BOUNDARY"
     },
     {
+      "id": "CLM-BR-007",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-BR-007.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-BR-EXP-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-BR-EXP-001.md",
@@ -1145,6 +1153,12 @@
     {
       "source": "B-residual",
       "relation": "RELATED_CLAIM",
+      "target": "CLM-BR-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "B-residual",
+      "relation": "RELATED_CLAIM",
       "target": "CLM-BR-EXP-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -1600,12 +1614,6 @@
     },
     {
       "source": "CLM-BR-003",
-      "relation": "SUPPORTED_BY_CASE",
-      "target": "EC-BR-003-B",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "CLM-BR-003",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-BR-001",
       "provenance": "GENERATED_REVERSE"
@@ -1666,6 +1674,24 @@
     },
     {
       "source": "CLM-BR-006",
+      "relation": "USED_BY_DIRECTION",
+      "target": "B-residual",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-007",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-BR-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-007",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-BR-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-007",
       "relation": "USED_BY_DIRECTION",
       "target": "B-residual",
       "provenance": "GENERATED_REVERSE"
@@ -2314,6 +2340,12 @@
     },
     {
       "source": "DEC-BR-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-BR-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-BR-001",
       "relation": "TRIGGER_EXPERIMENT",
       "target": "EXP-BR-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -2681,7 +2713,7 @@
     {
       "source": "EC-BR-003-B",
       "relation": "SUPPORT",
-      "target": "CLM-BR-003",
+      "target": "CLM-BR-007",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -3820,8 +3852,8 @@
     }
   ],
   "counts": {
-    "nodes": 147,
-    "canonical_semantic_edges": 236,
-    "generated_reverse_edges": 236
+    "nodes": 148,
+    "canonical_semantic_edges": 238,
+    "generated_reverse_edges": 238
   }
 }
