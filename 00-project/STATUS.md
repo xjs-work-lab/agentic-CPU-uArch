@@ -55,16 +55,16 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 268 canonical nodes
-- 446 canonical semantic edges
-- 446 generated reverse edges
-- projection refreshed after Frontier Round 3 Agent-specific residual audit
+- 279 canonical nodes
+- 478 canonical semantic edges
+- 478 generated reverse edges
+- projection refreshed after Frontier Round 4 H-FIB falsification
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
 - PT-A — Platform Track
-- C — Strategic Enabler / second-Bet watch
+- C — Strategic Enabler
 - CG-06 — INVEST
 - CG-07 — EXPLORE
 - CG-01 — BENCHMARK
@@ -73,7 +73,7 @@ Explicit approval:
 - R2 — Conditional Reserve
 - R3 — BLOCKED
 - second differentiated Primary Bet — intentionally unfilled
-- current second-Bet probe — H-FIB Agent Foreground-Impact Budget (analysis hypothesis only)
+- system-control second-Bet search — converged / no standalone Bet found
 - uArch Primary Bet — none
 
 ## Hardware gate
