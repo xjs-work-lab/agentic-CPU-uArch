@@ -21,42 +21,46 @@ Strategic control point:
 **stage/operator/sub-operator placement + numerical precision role + dispatch/fallback/layout/state reuse across CPU and NPU paths.**
 
 ## Evidence synthesis
-- `CLM-CPU-001`: CPU↔NPU winner is workload-stage/operator dependent in direct phone evidence.
-- `CLM-CPU-002`: CPU matrix acceleration materially expands the CPU-local region under evaluated settings.
-- `CLM-CPU-003`: Arm publicly productizes CPU+SME2 for responsive Agentic/local AI.
-- `CLM-CPU-004`: strong NPU-centric co-design can reclaim CPU/GPU fallback work by splitting quantization-tolerant estimation from high-precision residual computation.
-- `CLM-HUAWEI-001`: equivalent Huawei smartphone CPU matrix-AI fast path is not publicly established in the reviewed source set.
+- CLM-CPU-001: CPU↔NPU winner is workload-stage/operator dependent in direct phone evidence.
+- CLM-CPU-002: CPU matrix acceleration materially expands the CPU-local region under evaluated settings.
+- CLM-CPU-003: Arm publicly productizes CPU+SME2 for responsive Agentic/local AI.
+- CLM-CPU-004: strong NPU-centric co-design can reclaim CPU/GPU fallback work through prompt/tensor/block and sub-operator numerical-role decomposition.
+- CLM-HUAWEI-001: equivalent Huawei smartphone CPU matrix-AI fast path is not publicly established in the reviewed source set.
 
 ## Strongest baseline update
-`PAPER-057 / ShadowNPU` changes the comparator.
+PAPER-059 / llm.npu (ASPLOS 2025) and PAPER-057 / ShadowNPU (MobiSys 2026) form a sustained optimized-NPU lineage.
 
-CG-06 must **not** compare CPU paths only against a naive/full NPU offload.
+llm.npu shows that prompt shape, quantization residuals and block scheduling are movable software boundaries.
+ShadowNPU extends that trajectory into attention using low-precision NPU importance estimation plus sparse high-precision CPU/GPU residual work.
+
+Because the two papers share an author/group lineage, they are used as **trajectory/mechanism evidence**, not counted as independent replications.
+
+CG-06 must not compare CPU paths only against naive/full NPU offload.
 A strong NPU baseline must include, where applicable:
+- prompt/static-graph reconstruction;
 - operator/sub-operator partition;
 - mixed precision / quantization-aware placement;
-- sparsity;
-- static-graph bucketing / specialization;
-- cross-engine pipelining;
+- sparse residual CPU/GPU work;
+- graph bucketing / specialization;
+- out-of-order or pipelined cross-engine execution;
 - minimized CPU/GPU residual resource use.
 
-Therefore ShadowNPU both:
-- strengthens the heterogeneous-control-point thesis;
-- **narrows the CPU-resident whitespace**.
+This strengthens the heterogeneous-control-point thesis while **narrowing the CPU-resident whitespace**.
 
 ## Boundary
-- Strategic gap / adaptation route, **not global novelty**.
+- Strategic gap / adaptation route, not global novelty.
 - Agent-specific value is not established by generic LLM/operator placement.
 - No inference of Huawei internal absence.
 - No new ISA/uArch conclusion.
 - Exhaust existing compiler/runtime/ISA and optimized-NPU paths first.
 
 ## Next discriminating gate
-`EXP-CG06-001` now asks whether a representative CPU-fast-path region remains after **both**:
+EXP-CG06-001 asks whether a representative CPU-fast-path region remains after both:
 1. all CPU-side matrix/layout/state optimizations;
-2. a strong optimized NPU-centric baseline including ShadowNPU-like techniques where applicable.
+2. strong NPU-OPT/HETERO-OPT techniques including llm.npu/ShadowNPU-class software reconstruction where applicable.
 
 ## Portfolio state
-No lane/score change from PAPER-057:
+No lane/score change:
 - INVEST;
 - 86.5;
 - STRUCTURAL_SIGNAL.
