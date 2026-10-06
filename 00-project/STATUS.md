@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: BRES_SLICE_QA_PENDING
+migration_phase: BRES_SLICE_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -17,24 +17,30 @@ completed_slices:
   - CG-01
 active_slice: B-residual
 active_branch: migration/MIG-20261006-02-BRES
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
-## B-residual slice written
-- 8 paper Sources
-- 1 patent Source
-- 1 Discovery Run
-- 7 Claims
-- 8 Evidence Cases
-- 1 Direction
-- 1 Experiment
-- 1 Decision Event
-- roadmap expanded to include B-residual
+## Current cumulative graph
+- 148 canonical nodes
+- 238 canonical semantic edges
+- 238 generated reverse edges
+- 0 hard errors
 
-## State
-Canonical B-residual objects written on migration branch.
+## B-residual
+**GO**
 
-Graph CI, semantic-fidelity review, receipt and independent review are required before merge.
+PR #6 is ready for final closeout CI and merge.
+
+## Next after merge
+R1 — Post-ready Continuation Timing.
+
+## Branch policy
+`main` remains the only long-lived branch.
+The temporary B-residual branch must be deleted after merge.
 
 ## Authority
 V1 remains authoritative.
+No cutover.
