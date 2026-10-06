@@ -55,10 +55,11 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 226 canonical nodes
-- 381 canonical semantic edges
-- 381 generated reverse edges
-- hard graph errors at final cutover QA: 0
+- 238 canonical nodes
+- 396 canonical semantic edges
+- 396 generated reverse edges
+- projection refreshed after the 2026-10-06 frontier 10Q round
+- last full cutover QA hard errors: 0
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
