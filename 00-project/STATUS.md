@@ -3,45 +3,48 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: CG07_CLOSED_GO_CG01_SELECTED
+migration_phase: CG01_SLICE_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
-source_commit: 960abb4ef50f050da3c6784d30826053d42e5c5d
+source_commit: 960abb4ef50a8f5b0bd357c067f08346025d
 research_content_migrated: true
 completed_slices:
   - A + CG-06
   - PT-A
   - C
   - CG-07
-next_slice: CG-01
+active_slice: CG-01
+active_branch: migration/MIG-20261006-02-CG01
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
-## Closed slices
-- A + CG-06: CLOSED / GO / merged via PR #1
-- PT-A: CLOSED / GO / merged via PR #2
-- C: CLOSED / GO / merged via PR #3
-- CG-07: CLOSED / GO / merged via PR #4
-  - merge commit: `eb1f5f18aa774f2aa849b21e9fc30df27f430648`
-  - machine QA: PASS
-  - semantic fidelity: PASS
-  - independent review: GO
-  - temporary migration branch: deleted after merge
-
 ## Current cumulative graph
-- 103 canonical nodes
-- 162 canonical semantic edges
-- 162 generated reverse edges
-- 0 hard graph errors
+- 119 canonical nodes
+- 190 canonical semantic edges
+- 190 generated reverse edges
+- 0 hard errors
+
+## CG-01
+**GO**
+
+PR #5 is ready for final closeout CI and merge.
+
+## Next after merge
+Begin reserve migration planning:
+- B-residual
+- R1
+- R2
+- R3 blocked lineage
+
+R2 should reuse VENDOR-001 / Flex Cache Capability.
 
 ## Branch policy
-`main` is the only long-lived branch.
-
-Temporary migration branches are deleted immediately after successful merge.
-
-## Next
-**CG-01 — Flex Cache / heterogeneous shared-cache handoff**
+`main` remains the only long-lived branch.
+The temporary CG-01 branch must be deleted after merge.
 
 ## Authority
 V1 remains authoritative.

@@ -1,43 +1,43 @@
 # V2.2 Graph Health — Current Candidate
 
 Updated: 2026-10-06  
-Source: GitHub Actions run `37459438555` / job `112255029805`
+Source: GitHub Actions run `37460975903` / job `112260161412`
 
 ## Result
 
 **PASS**
 
-- canonical nodes: 103
-- canonical semantic edges: 162
-- generated reverse edges: 162
+## Counts
+- canonical nodes: 119
+- canonical semantic edges: 190
+- generated reverse edges: 190
 - hard errors: 0
 
 ## Warnings
-
-20 Sources:
+21 Source objects:
 `INDEPENDENCE_UNKNOWN`
 
 Accepted by design.
 
-## CG-07 checks
+## CG-01 checks
 
 PASS:
-- VENDOR-019 resolves;
-- ACT-MEDIATEK resolves;
-- MediaTek Capability resolves Actor + evidence Claim;
-- DR-CG07-STAGE16A-GAP resolves;
-- all five Evidence Cases resolve;
-- EXP-CG07-001 can be a premise for a model-only Claim;
-- CG-07 resolves six Claims + one Capability;
-- Decision Event resolves;
-- Roadmap includes CG-07;
-- no cycles;
+- VENDOR-001 resolves to ACT-QUALCOMM;
+- Flex Cache Capability resolves Actor + two evidence Claims;
+- DR-CG01-STAGE15D-GAP resolves;
+- all four Evidence Cases resolve;
+- Huawei BOUNDARY Claim has Discovery Run grounding;
+- CG-01 resolves five Claims + Capability;
+- EXP-CG01-001 resolves Direction, tested Claim and Source;
+- DEC-CG01-001 resolves;
+- roadmap includes CG-01;
+- no justification cycle;
 - no strategic-state leakage into Actor/Capability.
 
-## Epistemic boundary
-
-Graph health does not:
-- validate the MediaTek 40% number independently;
-- convert simulation to product truth;
-- infer Huawei internal absence;
-- promote CG-07.
+## Boundary
+Graph health is structural.
+It does not infer:
+- vendor positioning as independent fact;
+- Huawei internal absence;
+- phone SYSTEM_VALUE;
+- hardware necessity.

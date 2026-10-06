@@ -22,6 +22,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "ACT-QUALCOMM",
+      "type": "ACTOR",
+      "path": "04-actors/companies/ACT-QUALCOMM/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "CAP-ARM-C2-SME2-CPU-AI",
       "type": "CAPABILITY",
       "path": "05-capabilities/CAP-ARM-C2-SME2-CPU-AI.md",
@@ -37,6 +43,12 @@
       "id": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
       "type": "CAPABILITY",
       "path": "05-capabilities/CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "type": "CAPABILITY",
+      "path": "05-capabilities/CAP-QUALCOMM-ORYON-FLEX-CACHE.md",
       "record_state": "CURRENT"
     },
     {
@@ -115,6 +127,46 @@
       "id": "CLM-C-EXP-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-C-EXP-001.md",
+      "record_state": "CURRENT",
+      "status": "OPEN",
+      "claim_kind": "HYPOTHESIS"
+    },
+    {
+      "id": "CLM-CG01-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG01-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CG01-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG01-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CG01-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG01-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "BOUNDARY"
+    },
+    {
+      "id": "CLM-CG01-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG01-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-CG01-EXP-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG01-EXP-001.md",
       "record_state": "CURRENT",
       "status": "OPEN",
       "claim_kind": "HYPOTHESIS"
@@ -266,6 +318,11 @@
       "path": "08-decisions/events/DEC-C-001.md"
     },
     {
+      "id": "DEC-CG01-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-CG01-001.md"
+    },
+    {
       "id": "DEC-CG06-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-CG06-001.md"
@@ -299,6 +356,15 @@
       "evidence_maturity": "STRUCTURAL_SIGNAL"
     },
     {
+      "id": "CG-01",
+      "type": "DIRECTION",
+      "path": "06-directions/competitive/CG-01-flex-cache/README.md",
+      "record_state": "CURRENT",
+      "direction_class": "COMPETITIVE_GAP",
+      "competitive_action": "BENCHMARK",
+      "evidence_maturity": "PRODUCT_SIGNAL"
+    },
+    {
       "id": "CG-06",
       "type": "DIRECTION",
       "path": "06-directions/competitive/CG-06-cpu-ai-fast-path/README.md",
@@ -329,6 +395,12 @@
       "id": "DR-C-STAGE16A-GAP",
       "type": "DISCOVERY_RUN",
       "path": "01-evidence/discovery-runs/DR-C-STAGE16A-GAP.md",
+      "lifecycle": "CLOSED"
+    },
+    {
+      "id": "DR-CG01-STAGE15D-GAP",
+      "type": "DISCOVERY_RUN",
+      "path": "01-evidence/discovery-runs/DR-CG01-STAGE15D-GAP.md",
       "lifecycle": "CLOSED"
     },
     {
@@ -413,6 +485,30 @@
       "id": "EC-C-005-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-C-005-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG01-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG01-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG01-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG01-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG01-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG01-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG01-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG01-004-A.md",
       "record_state": "CURRENT"
     },
     {
@@ -540,6 +636,13 @@
       "id": "EXP-C-001",
       "type": "EXPERIMENT",
       "path": "07-validation/C/EXP-C-001/README.md",
+      "record_state": "CURRENT",
+      "status": "READY"
+    },
+    {
+      "id": "EXP-CG01-001",
+      "type": "EXPERIMENT",
+      "path": "07-validation/CG-01/EXP-CG01-001/README.md",
       "record_state": "CURRENT",
       "status": "READY"
     },
@@ -673,6 +776,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "VENDOR-001",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-001/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "VENDOR-006",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-006/README.md",
@@ -767,6 +876,12 @@
     {
       "source": "ACT-HUAWEI",
       "relation": "SUBJECT_OF_CLAIM",
+      "target": "CLM-CG01-003",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-HUAWEI",
+      "relation": "SUBJECT_OF_CLAIM",
       "target": "CLM-HUAWEI-001",
       "provenance": "GENERATED_REVERSE"
     },
@@ -780,6 +895,18 @@
       "source": "ACT-MEDIATEK",
       "relation": "PUBLISHES",
       "target": "VENDOR-019",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-QUALCOMM",
+      "relation": "HAS_CAPABILITY_LINK",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-QUALCOMM",
+      "relation": "PUBLISHES",
+      "target": "VENDOR-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -900,6 +1027,84 @@
       "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "ACTOR_LINK",
+      "target": "ACT-QUALCOMM",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "EVIDENCED_BY_CLAIM",
+      "target": "CLM-CG01-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "EVIDENCED_BY_CLAIM",
+      "target": "CLM-CG01-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
+      "relation": "HAS_EXPERIMENT",
+      "target": "EXP-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CAPABILITY",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG01-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG01-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG01-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG01-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG01-EXP-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-01",
+      "relation": "SCHEDULED_BY",
+      "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -1206,6 +1411,108 @@
       "source": "CLM-C-EXP-001",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-001",
+      "relation": "EVIDENCES_CAPABILITY",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG01-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-001",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-002",
+      "relation": "EVIDENCES_CAPABILITY",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG01-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-002",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-002",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-003",
+      "relation": "SUBJECT_ACTOR",
+      "target": "ACT-HUAWEI",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CLM-CG01-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG01-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-003",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-003",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG01-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-004",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-004",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-EXP-001",
+      "relation": "TESTED_BY_EXPERIMENT",
+      "target": "EXP-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-EXP-001",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-01",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -1623,6 +1930,36 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-CG01-001",
+      "relation": "SUBJECT",
+      "target": "CG-01",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG01-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG01-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG01-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG01-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG01-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG01-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG01-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG01-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-CG06-001",
       "relation": "SUBJECT",
       "target": "CG-06",
@@ -1722,6 +2059,18 @@
       "source": "DR-C-STAGE16A-GAP",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-C-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-CG01-STAGE15D-GAP",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG01-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-CG01-STAGE15D-GAP",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG01-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -1884,6 +2233,54 @@
       "source": "EC-C-005-A",
       "relation": "SUPPORT",
       "target": "CLM-C-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG01-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG01-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-CG01-STAGE15D-GAP",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG01-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-CG01-STAGE15D-GAP",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG01-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG01-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -2178,6 +2575,24 @@
       "source": "EXP-C-001",
       "relation": "TESTS_FOR_DIRECTION",
       "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG01-001",
+      "relation": "INPUT_SOURCE",
+      "target": "VENDOR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG01-001",
+      "relation": "TESTS_CLAIM",
+      "target": "CLM-CG01-EXP-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG01-001",
+      "relation": "TESTS_FOR_DIRECTION",
+      "target": "CG-01",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -2549,6 +2964,12 @@
     {
       "source": "ROADMAP-CURRENT",
       "relation": "SCHEDULES",
+      "target": "CG-01",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-CURRENT",
+      "relation": "SCHEDULES",
       "target": "CG-06",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -2581,6 +3002,30 @@
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
       "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG01-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG01-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PUBLISHED_BY",
+      "target": "ACT-QUALCOMM",
+      "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "VENDOR-006",
@@ -2638,8 +3083,8 @@
     }
   ],
   "counts": {
-    "nodes": 103,
-    "canonical_semantic_edges": 162,
-    "generated_reverse_edges": 162
+    "nodes": 119,
+    "canonical_semantic_edges": 190,
+    "generated_reverse_edges": 190
   }
 }
