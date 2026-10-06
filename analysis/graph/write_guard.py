@@ -45,6 +45,11 @@ def assert_allowed_root(root: Path) -> str:
         "target has neither valid candidate authority nor approved active authority state"
     )
 
+# Backward-compatible entry point used by build_graph.py / health.py.
+# Semantics are broader than the legacy function name after authority cutover.
+def assert_candidate_root(root: Path) -> None:
+    assert_allowed_root(root)
+
 def main() -> int:
     root = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
     state = assert_allowed_root(root)
