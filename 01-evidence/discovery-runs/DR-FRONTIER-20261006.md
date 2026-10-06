@@ -183,3 +183,10 @@ Pressure-test **H-FIB — Agent Foreground-Impact Budget** against:
 
 The target claim is not "foreground protection is valuable"; that is already established.
 The target is whether **Agent-specific marginal value / tolerance state** changes the resource-control decision beyond generic QoS.
+
+
+### Adjacent comparator discovered after Round 3 — PENDING FULL 10Q
+- **Murakkab — Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms — OSDI 2026**
+- Role: strongest adjacent Agent-aware resource-orchestration comparator for H-FIB.
+- Current use: screening only; no portfolio/Claim impact before full 10Q.
+- Boundary: cloud Agent workflows, not smartphone foreground/background resource control.
