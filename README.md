@@ -33,3 +33,13 @@ SOURCE / DISCOVERY_RUN / upstream CLAIM / EXPERIMENT
 ```
 
 Premises within one Evidence Case are conjunctive; alternative Evidence Cases remain separate routes.
+
+
+## Branch policy
+
+`main` is the only long-lived branch.
+
+Migration/feature branches are temporary transaction workspaces:
+PR → CI/review → merge → automatic branch deletion.
+
+Repository history is preserved through commits, PRs, Migration Receipts and review records—not by retaining merged branches.
