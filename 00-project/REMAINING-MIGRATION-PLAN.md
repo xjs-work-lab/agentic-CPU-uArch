@@ -4,7 +4,7 @@ Updated: 2026-10-06
 Baseline: MIG-20261006-02  
 Authority: planning record only
 
-## Completed
+## Completed migration slices
 
 1. A + CG-06 — CLOSED / GO
 2. PT-A — CLOSED / GO
@@ -14,52 +14,43 @@ Authority: planning record only
 6. B-residual — CLOSED / GO
 7. R1 — CLOSED / GO
 8. R2 — CLOSED / GO
+9. R3 — CLOSED / GO
 
-R2 closeout:
-- score preserved at 54.5;
-- remains Conditional Strategic Reserve / phone-PMU measurement hypothesis;
-- broad generic locality novelty remains killed;
-- target-phone >=~5% causal CPU-local residual remains unproven;
-- CG-01 BENCHMARK state did not propagate into R2;
-- no hardware/uArch promotion;
-- merged via PR #8 after graph QA, semantic-fidelity review and independent GO.
+## R3 closeout
 
-## Reserve wave — active
+R3 preserves:
+- score: 48.5;
+- lane: BLOCKED;
+- no dedicated hardware program;
+- D0 pre-SYSTEM_VALUE parent state;
+- D1 software-sufficiency gate;
+- R1/R2 measurement-only parent state;
+- mandatory SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific-cause progression.
 
-### 1. R3 — NEXT / blocked lineage
+The first R3 QA detected one negative-evidence provenance defect:
+`CLM-R3-004` lacked an explicit Discovery Run premise.
 
-**uArch Semantic Hints**
+It was repaired before merge and the final graph QA passed.
 
-Frozen V1 state:
-- score: 48.5
-- BLOCKED
-- no independent mechanism program
-- D0 only SIMULATION_SUPPORT
-- D1 strongly gated by software sufficiency
-- R1/R2 hardware-specific parents are measurement-only
-- no stable lower-layer consumer has SYSTEM_VALUE
+## Migration wave result
 
-Migration intent:
-- preserve R3 as blocked lineage rather than accidentally reviving it as a candidate;
-- preserve D0 / D1 / D2 separation;
-- preserve the rule that hardware hints need a proven software-visible consumer first;
-- preserve the dependency on SYSTEM_VALUE + SOFTWARE_INSUFFICIENCY;
-- do not invent a new uArch mechanism merely to complete the migration.
+All planned dependency-closed migration slices are now represented in V2.2.
 
-## After R3
+This does **not** authorize cutover.
+
+## Final pre-cutover review — NEXT
 
 Before authority cutover:
 1. run full-graph machine QA;
 2. perform cross-slice semantic-fidelity review;
 3. reconcile generated views and roadmap;
-4. verify V1 frozen-baseline parity / intentional structural normalization;
-5. record unresolved migration ambiguities, if any;
-6. pass a separate Human Gate for authority cutover.
+4. verify frozen-V1 parity / intentional structural normalization;
+5. audit unresolved migration ambiguities;
+6. verify branch/workflow/repository governance;
+7. prepare a Human Gate decision package.
 
 ## Rule
 
-Migration order is not strategic promotion.
+Migration completion is not authority cutover.
 
-Each Direction owns its own state even when evidence is shared.
-
-V1 remains authoritative until explicit cutover.
+V1 remains authoritative until explicit Human Gate approval and authority switch.

@@ -6,9 +6,9 @@
 >
 > Migration baseline: `MIG-20261006-02`
 
-## Current migration state
+## Migration state
 
-Eight dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
+All nine planned V2.2 migration slices are **CLOSED / GO** and merged into `main`:
 
 1. A + CG-06
 2. PT-A
@@ -18,17 +18,27 @@ Eight dependency-closed V2.2 slices are **CLOSED / GO** and merged into `main`:
 6. B-residual
 7. R1
 8. R2
+9. R3
 
-The active final reserve slice is **R3 — uArch Semantic Hints / blocked lineage**.
+Current cumulative graph:
+- **226 canonical nodes**
+- **381 canonical semantic edges**
+- **381 generated reverse edges**
+- **0 hard graph errors**
 
-After R3:
+## Current phase
+
+**FINAL PRE-CUTOVER REVIEW**
+
+Migration completion does not make this repository authoritative.
+
+Before cutover:
 - full-graph QA;
-- cross-slice semantic-fidelity review;
-- roadmap/view reconciliation;
+- cross-slice semantic review;
 - frozen-V1 parity review;
-- separate Human Gate before authority cutover.
-
-Nothing in this repository is research authority before explicit cutover. V1 remains authoritative until the separate Human Gate is passed.
+- roadmap/view reconciliation;
+- unresolved-ambiguity audit;
+- separate Human Gate.
 
 ## Start here
 1. [00-project/AUTHORITY.md](00-project/AUTHORITY.md)
@@ -36,6 +46,7 @@ Nothing in this repository is research authority before explicit cutover. V1 rem
 3. [00-project/REMAINING-MIGRATION-PLAN.md](00-project/REMAINING-MIGRATION-PLAN.md)
 4. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
 5. [views/graph/current.json](views/graph/current.json)
+6. [09-roadmap/current.md](09-roadmap/current.md)
 
 ## Reasoning model
 ```text

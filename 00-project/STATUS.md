@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: R2_CLOSED_GO_R3_SELECTED
+migration_phase: RESERVE_WAVE_COMPLETE_FINAL_REVIEW_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -18,7 +18,8 @@ completed_slices:
   - B-residual
   - R1
   - R2
-next_slice: R3
+  - R3
+next_phase: FINAL_PRE_CUTOVER_REVIEW
 cutover_state: NOT_STARTED
 ```
 
@@ -30,39 +31,40 @@ cutover_state: NOT_STARTED
 - CG-01: CLOSED / GO
 - B-residual: CLOSED / GO
 - R1: CLOSED / GO
-- R2: CLOSED / GO / merged via PR #8
-  - merge commit: `1e96a12e14673d75357a02157c26321078c3e772`
+- R2: CLOSED / GO
+- R3: CLOSED / GO / merged via PR #9
+  - merge commit: `004224df996e9863f1751d535d8ce804b76d68bd`
   - final machine QA: PASS
-  - final QA run: `37469731343`
-  - final QA job: `112289769944`
+  - final QA run: `37472729203`
+  - final QA job: `112300133726`
   - semantic fidelity: PASS
   - independent review: GO
   - unresolved MIGRATION_AMBIGUITY: none
+  - initial boundary-provenance QA defect repaired before merge
   - temporary migration branch deleted successfully after merge
 
 ## Current cumulative graph
-- 206 canonical nodes
-- 342 canonical semantic edges
-- 342 generated reverse edges
+- 226 canonical nodes
+- 381 canonical semantic edges
+- 381 generated reverse edges
 - 0 hard graph errors
 
 ## Reserve wave
 - B-residual — CLOSED / GO
 - R1 — CLOSED / GO
 - R2 — CLOSED / GO
-- R3 — NEXT / blocked lineage
+- R3 — CLOSED / GO / BLOCKED lineage preserved
 
-## Next
-**R3 — uArch Semantic Hints**
+## Next phase
+**FINAL_PRE_CUTOVER_REVIEW**
 
-Frozen V1 state:
-- score 48.5
-- BLOCKED
-- no independent hardware program
-- D0 remains SIMULATION_SUPPORT
-- D1 is software-sufficiency gated
-- no stable hardware consumer has SYSTEM_VALUE
-- R1/R2 hardware-specific parents remain measurement-only
+Required before Human Gate:
+1. full-graph machine QA;
+2. cross-slice semantic-fidelity review;
+3. frozen-V1 parity / intentional-normalization review;
+4. roadmap / generated-view reconciliation;
+5. unresolved-ambiguity audit;
+6. authority/cutover preflight.
 
 ## Branch policy
 `main` is the only long-lived branch.
