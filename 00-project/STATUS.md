@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: BRES_CLOSED_GO_R1_SELECTED
+migration_phase: R1_CLOSED_GO_R2_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -16,7 +16,8 @@ completed_slices:
   - CG-07
   - CG-01
   - B-residual
-next_slice: R1
+  - R1
+next_slice: R2
 cutover_state: NOT_STARTED
 ```
 
@@ -26,35 +27,38 @@ cutover_state: NOT_STARTED
 - C: CLOSED / GO
 - CG-07: CLOSED / GO
 - CG-01: CLOSED / GO
-- B-residual: CLOSED / GO / merged via PR #6
-  - merge commit: `556c74117aacbd5afe353caf8dc3fae1236c0add`
-  - machine QA: PASS
+- B-residual: CLOSED / GO
+- R1: CLOSED / GO / merged via PR #7
+  - merge commit: `37f0e495619684a5a02b58c4c08016692b0228b9`
+  - final machine QA: PASS
+  - final QA run: `37467244344`
+  - final QA job: `112281271491`
   - semantic fidelity: PASS
   - independent review: GO
-  - semantic-cardinality repair completed before merge
-  - temporary migration branch deleted after merge
+  - unresolved MIGRATION_AMBIGUITY: none
+  - temporary migration branch removed after merge; cleanup workflow required one retry after a transient GitHub Internal Server Error
 
 ## Current cumulative graph
-- 148 canonical nodes
-- 238 canonical semantic edges
-- 238 generated reverse edges
+- 177 canonical nodes
+- 288 canonical semantic edges
+- 288 generated reverse edges
 - 0 hard graph errors
 
 ## Reserve wave
 - B-residual — CLOSED / GO
-- R1 — NEXT
-- R2 — queued
+- R1 — CLOSED / GO
+- R2 — NEXT
 - R3 — queued / blocked lineage
 
 ## Next
-**R1 — Post-ready Continuation Timing**
+**R2 — CPU Continuation Locality**
 
 Frozen V1 state:
-- score 55.5
+- score 54.5
 - Conditional Strategic Reserve
-- measurement hypothesis
-- broad ready/release decoupling novelty killed
-- no uArch promotion
+- phone-PMU measurement hypothesis
+- broad generic locality mechanisms killed as novelty
+- no hardware/uArch promotion without target-phone residual
 
 ## Branch policy
 `main` is the only long-lived branch.

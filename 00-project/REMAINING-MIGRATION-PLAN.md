@@ -12,46 +12,42 @@ Authority: planning record only
 4. CG-07 — CLOSED / GO
 5. CG-01 — CLOSED / GO
 6. B-residual — CLOSED / GO
+7. R1 — CLOSED / GO
 
-B-residual closeout:
-- score preserved at 63.0;
-- remains Conditional Strategic Reserve;
-- not promoted to an active second Bet;
-- no CPU/uArch promotion;
-- merged via PR #6 after machine QA, semantic-fidelity review and independent GO;
-- temporary migration branch deleted after merge.
+R1 closeout:
+- score preserved at 55.5;
+- remains Conditional Strategic Reserve / measurement hypothesis;
+- broad ready/release decoupling remains killed as differentiated novelty;
+- target-phone >=~5% semantic residual remains unproven;
+- no uArch promotion;
+- merged via PR #7 after graph QA, semantic-fidelity review and independent GO.
 
 ## Reserve wave — active
 
-### 1. R1 — NEXT
-
-**Post-ready Continuation Timing**
-
-Frozen V1 state:
-- score: 55.5
-- Conditional Strategic Reserve
-- measurement hypothesis
-- broad ready/release decoupling novelty killed
-- no uArch promotion
-
-Migration intent:
-- preserve the narrow continuation-timing residual;
-- preserve killed broad novelty;
-- keep measurement evidence separate from strategic promotion;
-- do not infer SYSTEM_VALUE without target-device evidence.
-
-### 2. R2 — queued
+### 1. R2 — NEXT
 
 **CPU Continuation Locality**
 
-Reuse canonical CG-01 objects where semantically valid:
+Frozen V1 state:
+- score: 54.5
+- Conditional Strategic Reserve
+- phone-PMU measurement hypothesis
+- broad generic locality mechanisms killed as novelty
+- no hardware/uArch promotion without target-phone residual
+
+Migration intent:
+- preserve strong software-locality and generic shared/coherent-cache baselines;
+- preserve the missing direct phone-PMU residual;
+- reuse canonical CG-01 objects only where semantically valid;
+- do not inherit CG-01 BENCHMARK state into R2;
+- do not convert competitor-product evidence into proof of R2 SYSTEM_VALUE.
+
+Canonical CG-01 objects available for reuse where justified:
 - VENDOR-001;
 - ACT-QUALCOMM;
 - CAP-QUALCOMM-ORYON-FLEX-CACHE.
 
-Do not inherit CG-01 BENCHMARK state.
-
-### 3. R3 — queued / blocked lineage
+### 2. R3 — queued / blocked lineage
 
 **uArch Semantic Hints**
 
