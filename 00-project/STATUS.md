@@ -1,13 +1,18 @@
-# Candidate Status
+# Research Authority Status
 
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: HUMAN_GATE_PENDING
-candidate_authority: NOT_AUTHORITY
-source_authority: V1
+migration_phase: CUTOVER_COMPLETE
+research_authority: V2_2
+authority_repository: xjs-work-lab/agentic-CPU-uArch
+historical_source_authority: V1_FROZEN
+historical_source_repository: xiejinsen/agentic-CPU-uArch
+historical_source_commit: 960abb4ef50f050da3c6784d30826053d42e5c5d
 migration_id: MIG-20261006-02
-source_commit: 960abb4ef50f050da3c6784d30826053d42e5c5d
+human_gate: APPROVED
+human_gate_date: 2026-10-06
+cutover_state: COMPLETE
 research_content_migrated: true
 completed_slices:
   - A + CG-06
@@ -19,41 +24,62 @@ completed_slices:
   - R1
   - R2
   - R3
-final_review_state: GO_TO_HUMAN_GATE
-cutover_state: HUMAN_GATE_PENDING
 ```
 
-## Migration wave
-All 9 planned slices: **CLOSED / GO**
+## Authority
 
-## Current cumulative graph
+**V2.2 is now the active Research SSOT.**
+
+Repository:
+`xjs-work-lab/agentic-CPU-uArch`
+
+Frozen historical source:
+`xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
+
+## Human Gate
+
+Explicit approval received:
+**APPROVED — 2026-10-06**
+
+The approval authorizes authority-location cutover only.
+
+No research-state promotion is implied.
+
+## Current graph
 - 226 canonical nodes
 - 381 canonical semantic edges
 - 381 generated reverse edges
 
-## Final review findings
-- frozen-V1 score/lane parity: PASS
-- exactly one Primary Bet: A
-- uArch candidate directions: none
-- all Migration Receipts: unresolved MIGRATION_AMBIGUITY = NONE
-- V1 main remains frozen at migration baseline
-- roadmap / graph direction set reconciled
-- authority remains V1
-
-## Final machine gate
-- run: `37473833106`
-- job: `112303956293`
-- candidate write boundary: PASS
+## Cutover QA
+- run: `37478941158`
+- job: `112321684288`
+- authority/write boundary: PASS
 - deterministic graph projection: PASS
 - graph health: PASS
 - hard graph errors: 0
 
-## Current gate
-**HUMAN_GATE_PENDING**
+## Portfolio invariant
+- A — only differentiated Primary Bet
+- PT-A — Platform Track
+- C — Strategic Enabler / second-Bet watch
+- CG-06 — INVEST
+- CG-07 — EXPLORE
+- CG-01 — BENCHMARK
+- B-residual — Conditional Reserve
+- R1 — Conditional Reserve
+- R2 — Conditional Reserve
+- R3 — BLOCKED
+- second differentiated Primary Bet — intentionally unfilled
+- uArch Primary Bet — none
 
-Final pre-cutover review verdict:
-**GO_TO_HUMAN_GATE**
+## Hardware gate
 
-## Authority
-No cutover.
-Human Gate approval is mandatory.
+Still mandatory:
+
+`STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
+
+## Next operating rule
+
+Future research resumes from this repository, not from V1.
+
+V1 remains frozen for provenance and historical reference.

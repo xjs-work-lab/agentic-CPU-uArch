@@ -1,59 +1,83 @@
-# Agentic CPU-uArch — V2.2 Candidate
+# Agentic CPU-uArch — V2.2 Research SSOT
 
-> **CANDIDATE / NOT RESEARCH AUTHORITY**
+> **ACTIVE RESEARCH AUTHORITY / SSOT**
 >
-> Authoritative research SSOT: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
+> Historical frozen source:
+> `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 >
-> Migration baseline: `MIG-20261006-02`
+> Migration: `MIG-20261006-02`
+>
+> Human Gate: **APPROVED — 2026-10-06**
 
-## Migration state
+## Authority
 
-All nine planned V2.2 migration slices are **CLOSED / GO**.
+This repository is the active research Single Source of Truth.
 
-Current graph:
+Future:
+- evidence updates;
+- Claims;
+- Evidence Cases;
+- Actors / Capabilities;
+- Directions;
+- Experiments;
+- Decision Events;
+- roadmap changes
+
+should be maintained here.
+
+The V1 repository remains frozen historical provenance and is not deleted or rewritten.
+
+## Current graph
 - **226 canonical nodes**
 - **381 canonical semantic edges**
 - **381 generated reverse edges**
 
-## Current phase
+## Current portfolio
 
-**HUMAN GATE PENDING**
+### Differentiated research
+- **A — Agent Semantic Progress Control** — PRIMARY_BET / 82.5
 
-The semantic/portfolio parity audit and final graph QA are complete.
+### Platform / enabling
+- **PT-A — Heterogeneous Verified Agent Actuation Runtime** — PLATFORM_TRACK / 80.0
+- **C — Efficient System-Control Substrate** — STRATEGIC_ENABLER / 72.0
 
-Final migration-validation verdict:
-**GO_TO_HUMAN_GATE**
+### Competitive-gap lane
+- **CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path** — INVEST / 86.5
+- **CG-07 — Dedicated Always-On Agent AI Domain** — EXPLORE / 75.0
+- **CG-01 — Flex Cache / heterogeneous shared-cache handoff** — BENCHMARK / 71.0
 
-Final graph QA:
-- run `37473833106`
-- job `112303956293`
-- PASS.
+### Conditional reserves
+- **B-residual** — 63.0
+- **R1** — 55.5
+- **R2** — 54.5
 
-This does **not** authorize cutover.
+### Blocked
+- **R3 — uArch Semantic Hints** — 48.5
+
+Second differentiated Primary Bet:
+**INTENTIONALLY UNFILLED**
+
+uArch Primary Bet:
+**NONE**
 
 ## Start here
 1. [00-project/AUTHORITY.md](00-project/AUTHORITY.md)
 2. [00-project/STATUS.md](00-project/STATUS.md)
-3. [00-project/FINAL-PRE-CUTOVER-REVIEW.md](00-project/FINAL-PRE-CUTOVER-REVIEW.md)
-4. [00-project/HUMAN-GATE-PACKAGE.md](00-project/HUMAN-GATE-PACKAGE.md)
-5. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
-6. [views/graph/current.json](views/graph/current.json)
-7. [09-roadmap/current.md](09-roadmap/current.md)
+3. [09-roadmap/current.md](09-roadmap/current.md)
+4. [views/graph/current.json](views/graph/current.json)
+5. [00-project/FINAL-PRE-CUTOVER-REVIEW.md](00-project/FINAL-PRE-CUTOVER-REVIEW.md)
+6. [00-project/HUMAN-GATE-PACKAGE.md](00-project/HUMAN-GATE-PACKAGE.md)
 
-## Portfolio invariant
-- one differentiated Primary Bet: A
-- second Primary Bet intentionally unfilled
-- no uArch Primary Bet
-- competitive-gap actions remain a separate axis
+## Hardware boundary
 
-## Authority rule
+No uArch Primary Bet is locked.
 
-Migration completion is not authority cutover.
+Required progression:
 
-Only explicit Human Gate approval may authorize a separate cutover transaction.
+`STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
 ## Branch policy
 
 `main` is the only long-lived branch.
 
-Temporary work branches are deleted after reviewed merge.
+Feature/migration branches remain temporary reviewed transaction workspaces.

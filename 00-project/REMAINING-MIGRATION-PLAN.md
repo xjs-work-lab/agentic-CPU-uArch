@@ -1,11 +1,10 @@
-# Remaining Migration Wave Plan
+# Migration Plan — COMPLETE
 
 Updated: 2026-10-06  
-Baseline: MIG-20261006-02  
-Authority: planning record only
+Migration: MIG-20261006-02  
+State: **COMPLETE / CUTOVER AUTHORIZED**
 
-## Completed migration slices
-
+## Completed slices
 1. A + CG-06 — CLOSED / GO
 2. PT-A — CLOSED / GO
 3. C — CLOSED / GO
@@ -16,41 +15,21 @@ Authority: planning record only
 8. R2 — CLOSED / GO
 9. R3 — CLOSED / GO
 
-## R3 closeout
+## Final validation
+- full-graph QA: PASS
+- cross-slice semantic fidelity: PASS
+- frozen-V1 portfolio parity: PASS
+- unresolved MIGRATION_AMBIGUITY: NONE
+- Human Gate: APPROVED
 
-R3 preserves:
-- score: 48.5;
-- lane: BLOCKED;
-- no dedicated hardware program;
-- D0 pre-SYSTEM_VALUE parent state;
-- D1 software-sufficiency gate;
-- R1/R2 measurement-only parent state;
-- mandatory SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific-cause progression.
+## Authority transition
+On merge of the cutover transaction:
+- V2.2 becomes active Research SSOT;
+- V1 remains frozen historical source authority at:
+  `960abb4ef50f050da3c6784d30826053d42e5c5d`.
 
-The first R3 QA detected one negative-evidence provenance defect:
-`CLM-R3-004` lacked an explicit Discovery Run premise.
+## No remaining migration wave
 
-It was repaired before merge and the final graph QA passed.
+Migration work is complete.
 
-## Migration wave result
-
-All planned dependency-closed migration slices are now represented in V2.2.
-
-This does **not** authorize cutover.
-
-## Final pre-cutover review — NEXT
-
-Before authority cutover:
-1. run full-graph machine QA;
-2. perform cross-slice semantic-fidelity review;
-3. reconcile generated views and roadmap;
-4. verify frozen-V1 parity / intentional structural normalization;
-5. audit unresolved migration ambiguities;
-6. verify branch/workflow/repository governance;
-7. prepare a Human Gate decision package.
-
-## Rule
-
-Migration completion is not authority cutover.
-
-V1 remains authoritative until explicit Human Gate approval and authority switch.
+Future work is ordinary research / evidence / experiment / roadmap maintenance in V2.2.
