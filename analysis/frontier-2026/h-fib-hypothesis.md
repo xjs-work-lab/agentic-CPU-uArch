@@ -68,3 +68,25 @@ Any hardware discussion requires:
 - progress-aware background AI;
 - mobile Agent thermal / memory bandwidth interference;
 - Agent utility under foreground QoE constraints.
+
+## Newly discovered strongest adjacent comparator — PENDING FULL 10Q
+
+### Murakkab — OSDI 2026
+**Status:** PENDING_FULL_10Q / not decision-grade for H-FIB yet.
+
+Why it matters:
+- explicitly exposes Agent workflow structure to a resource optimizer;
+- maps workflow components to models and hardware;
+- optimizes accuracy / latency / energy / cost under user-defined SLOs;
+- reports large cloud resource/energy/cost reductions.
+
+Why it does not yet answer H-FIB:
+- cloud GPU scope, not smartphone foreground/background QoE;
+- SLO/resource optimization is not yet shown to encode Agent marginal-value / pause / discard tolerance;
+- full paper must be reviewed before any decision impact.
+
+Primary page:
+https://www.usenix.org/conference/osdi26/presentation/chaudhry
+
+### Search boundary
+Murakkab is now a mandatory strongest-baseline review before H-FIB can be promoted.
