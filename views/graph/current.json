@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.2",
+  "authority": "GENERATED_NOT_AUTHORITY",
+  "migration_id": "MIG-20261006-02",
+  "nodes": [],
+  "edges": [],
+  "edge_provenance_types": ["CANONICAL_SEMANTIC", "GENERATED_REVERSE", "GENERATED_TRANSITIVE"]
+}
