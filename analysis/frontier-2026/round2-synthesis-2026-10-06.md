@@ -112,3 +112,32 @@ Secondary candidate:
 
 Round 2 reduces false whitespace further. The remaining research gap is increasingly specific:
 > not whether semantic context can drive resource management, but whether there is a **genuinely Agent-specific, automatically derivable, cross-framework, cross-resource fact** with smartphone SYSTEM_VALUE beyond strong generic semantic controls.
+
+
+## Round-2B — automatic semantic inference pressure test
+
+### PAPER-062 — WASH (CGO 2016)
+Full 10Q completed.
+
+Decision-grade effect:
+- automatic runtime extraction of critical/bottleneck work from synchronization/progress/runtime state is established prior art;
+- heterogeneous big/small-core placement driven by those inferred facts is established prior art;
+- no programmer hints or new hardware are required in the evaluated system.
+
+### H-SCL convergence
+**Do not promote H-SCL to a separate Direction.**
+
+Its broad architectural components are already occupied:
+- semantic→program lowering — AutoDroid-V2;
+- semantic→mobile CPU scheduling — MUSched;
+- portable application-defined cross-layer policy — Syrup;
+- automatic runtime criticality inference — WASH.
+
+The only surviving questions are folded into:
+- **A** — does genuinely Agent-specific information retain measurable value beyond B4-TX?
+- **C** — does that surviving information create target-phone cross-resource SYSTEM_VALUE beyond G1?
+
+H-SCL may only be reopened as a separate Direction if later evidence reveals a distinct reusable mechanism not cleanly owned by A or C.
+
+### Pending mobile corroboration
+Interactive Context for Mobile OS Resource Management (IEEE TMC 2020) remains PENDING_FULLTEXT and is not decision-grade.
