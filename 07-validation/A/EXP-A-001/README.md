@@ -6,7 +6,7 @@ status = "READY"
 title = "A strong-baseline DemandState residual test"
 direction_ids = ["A"]
 tests_claim_ids = ["CLM-A-001"]
-input_source_ids = ["PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065"]
+input_source_ids = ["PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065", "PAPER-066", "PAPER-067", "PAPER-068"]
 evidence_target = "SYSTEM_VALUE"
 +++
 
@@ -22,9 +22,14 @@ B4-TX, including reconstructible upper-layer proxies for:
 - interaction criticality / dependency propagation;
 - effect/commit legality and rollback scope;
 - verification vulnerability / provisional work state;
-- Agent workflow topology, future invocation distance / STE and reuse identity.
+- Agent workflow topology, future invocation distance / STE and reuse identity;
+- ordinary quality/latency/cost SLOs and profile-derived resource demand;
+- user/app-history-derived background usefulness;
+- explicit TUF/utility curves and low-value abort.
 
 The test must credit DemandState/RequiredProgress only for value not reproduced by these proxies.
+
+A passing result must therefore show **semantic information value**, not merely that utility-aware scheduling is better than utility-oblivious scheduling.
 
 ## State
 READY / WAITING-FOR-DATA.
