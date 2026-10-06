@@ -1,6 +1,6 @@
 # H-FIB — Agent Foreground-Impact Budget
 
-Status: **ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+Status: **A→C BRIDGE QUESTION / DO NOT PROMOTE TO SEPARATE DIRECTION**
 Opened: 2026-10-06
 
 ## Hypothesis
@@ -90,3 +90,46 @@ https://www.usenix.org/conference/osdi26/presentation/chaudhry
 
 ### Search boundary
 Murakkab is now a mandatory strongest-baseline review before H-FIB can be promoted.
+
+
+## Round-4 conclusion after Murakkab + HUSH + ReUA
+
+Three independent prior-art lines remove the broad H-FIB opportunity:
+
+1. **Agent-aware cross-layer orchestration — PAPER-066 Murakkab**
+   - workflow graph + quality/latency/cost SLO + profiles;
+   - model/tool/hardware/provisioning/routing optimization;
+   - therefore 'Agent-aware resource orchestration' is not white space.
+
+2. **Personalized mobile background usefulness — PAPER-067 HUSH**
+   - mobile OS estimates whether background work is useful to the user;
+   - allow/suppress policy trades energy against staleness;
+   - therefore 'background work has different value and should be throttled accordingly' is not white space.
+
+3. **Explicit task utility/tolerance scheduling — PAPER-068 ReUA/TUF**
+   - application-specific graded utility vs completion time;
+   - utility/energy-aware scheduling and low-value/infeasible-task abort;
+   - therefore 'task marginal value/tolerance should guide resource allocation' is foundational prior art.
+
+### Decision
+**Do not create H-FIB as a separate Direction.**
+
+The only surviving question is an A→C transfer gate:
+
+> Can Agent semantic execution state **automatically derive** a dynamic RequiredProgress/value signal that is not reconstructible from ordinary SLOs, time/utility functions, app/user history, deadlines/slack, topology, legality or reuse proxies—and if so, does that signal improve target-phone foreground-QoE/resource decisions?
+
+This is not a distinct scheduler architecture.
+It is:
+- **A** owns the information-value hypothesis;
+- **C** owns the target-phone control/usefulness test.
+
+### Reopen condition
+Only reopen H-FIB as a separate Direction if later evidence reveals a reusable Agent-specific control abstraction that:
+1. is distinct from A's semantic information itself;
+2. is not equivalent to SLO/TUF/history/utility functions;
+3. is not cleanly owned by C's generic control substrate;
+4. recurs across multiple Agent workloads;
+5. produces target-phone SYSTEM_VALUE.
+
+### Portfolio consequence
+C remains a Strategic Enabler, but its **second-Bet watch is closed on current evidence**.
