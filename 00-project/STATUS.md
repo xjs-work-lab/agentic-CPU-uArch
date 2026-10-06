@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: BRES_SLICE_GO_PR_PENDING_MERGE
+migration_phase: BRES_CLOSED_GO_R1_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -15,31 +15,49 @@ completed_slices:
   - C
   - CG-07
   - CG-01
-active_slice: B-residual
-active_branch: migration/MIG-20261006-02-BRES
-machine_qa: PASS
-semantic_fidelity: PASS
-independent_review: GO
+  - B-residual
+next_slice: R1
 cutover_state: NOT_STARTED
 ```
+
+## Closed slices
+- A + CG-06: CLOSED / GO
+- PT-A: CLOSED / GO
+- C: CLOSED / GO
+- CG-07: CLOSED / GO
+- CG-01: CLOSED / GO
+- B-residual: CLOSED / GO / merged via PR #6
+  - merge commit: `556c74117aacbd5afe353caf8dc3fae1236c0add`
+  - machine QA: PASS
+  - semantic fidelity: PASS
+  - independent review: GO
+  - semantic-cardinality repair completed before merge
+  - temporary migration branch deleted after merge
 
 ## Current cumulative graph
 - 148 canonical nodes
 - 238 canonical semantic edges
 - 238 generated reverse edges
-- 0 hard errors
+- 0 hard graph errors
 
-## B-residual
-**GO**
+## Reserve wave
+- B-residual — CLOSED / GO
+- R1 — NEXT
+- R2 — queued
+- R3 — queued / blocked lineage
 
-PR #6 is ready for final closeout CI and merge.
+## Next
+**R1 — Post-ready Continuation Timing**
 
-## Next after merge
-R1 — Post-ready Continuation Timing.
+Frozen V1 state:
+- score 55.5
+- Conditional Strategic Reserve
+- measurement hypothesis
+- broad ready/release decoupling novelty killed
+- no uArch promotion
 
 ## Branch policy
-`main` remains the only long-lived branch.
-The temporary B-residual branch must be deleted after merge.
+`main` is the only long-lived branch.
 
 ## Authority
 V1 remains authoritative.
