@@ -16,6 +16,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "ACT-MEDIATEK",
+      "type": "ACTOR",
+      "path": "04-actors/companies/ACT-MEDIATEK/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "CAP-ARM-C2-SME2-CPU-AI",
       "type": "CAPABILITY",
       "path": "05-capabilities/CAP-ARM-C2-SME2-CPU-AI.md",
@@ -25,6 +31,12 @@
       "id": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
       "type": "CAPABILITY",
       "path": "05-capabilities/CAP-HUAWEI-GENERIC-RESOURCE-CONTROL.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "type": "CAPABILITY",
+      "path": "05-capabilities/CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN.md",
       "record_state": "CURRENT"
     },
     {
@@ -111,6 +123,54 @@
       "id": "CLM-CG06-EXP-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-CG06-EXP-001.md",
+      "record_state": "CURRENT",
+      "status": "OPEN",
+      "claim_kind": "HYPOTHESIS"
+    },
+    {
+      "id": "CLM-CG07-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CG07-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CG07-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-CG07-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "BOUNDARY"
+    },
+    {
+      "id": "CLM-CG07-005",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-005.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "BOUNDARY"
+    },
+    {
+      "id": "CLM-CG07-EXP-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CG07-EXP-001.md",
       "record_state": "CURRENT",
       "status": "OPEN",
       "claim_kind": "HYPOTHESIS"
@@ -211,6 +271,11 @@
       "path": "08-decisions/events/DEC-CG06-001.md"
     },
     {
+      "id": "DEC-CG07-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-CG07-001.md"
+    },
+    {
       "id": "DEC-PTA-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-PTA-001.md"
@@ -243,6 +308,15 @@
       "evidence_maturity": "STRUCTURAL_SIGNAL"
     },
     {
+      "id": "CG-07",
+      "type": "DIRECTION",
+      "path": "06-directions/competitive/CG-07-always-on-agent-ai/README.md",
+      "record_state": "CURRENT",
+      "direction_class": "COMPETITIVE_GAP",
+      "competitive_action": "EXPLORE",
+      "evidence_maturity": "PRODUCT_SIGNAL_PLUS_SYNTHETIC_MODEL"
+    },
+    {
       "id": "PT-A",
       "type": "DIRECTION",
       "path": "06-directions/PT-A-verified-actuation-runtime/README.md",
@@ -255,6 +329,12 @@
       "id": "DR-C-STAGE16A-GAP",
       "type": "DISCOVERY_RUN",
       "path": "01-evidence/discovery-runs/DR-C-STAGE16A-GAP.md",
+      "lifecycle": "CLOSED"
+    },
+    {
+      "id": "DR-CG07-STAGE16A-GAP",
+      "type": "DISCOVERY_RUN",
+      "path": "01-evidence/discovery-runs/DR-CG07-STAGE16A-GAP.md",
       "lifecycle": "CLOSED"
     },
     {
@@ -366,6 +446,36 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-CG07-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG07-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG07-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG07-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG07-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG07-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG07-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG07-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CG07-005-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CG07-005-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-PTA-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-PTA-001-A.md",
@@ -439,6 +549,13 @@
       "path": "07-validation/CG-06/EXP-CG06-001/README.md",
       "record_state": "CURRENT",
       "status": "READY"
+    },
+    {
+      "id": "EXP-CG07-001",
+      "type": "EXPERIMENT",
+      "path": "07-validation/CG-07/EXP-CG07-001/README.md",
+      "record_state": "CURRENT",
+      "status": "SIMULATION_SUPPORT"
     },
     {
       "id": "EXP-PTA-001",
@@ -566,6 +683,12 @@
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-018/README.md",
       "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-019",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-019/README.md",
+      "record_state": "CURRENT"
     }
   ],
   "edges": [
@@ -645,6 +768,18 @@
       "source": "ACT-HUAWEI",
       "relation": "SUBJECT_OF_CLAIM",
       "target": "CLM-HUAWEI-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-MEDIATEK",
+      "relation": "HAS_CAPABILITY_LINK",
+      "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-MEDIATEK",
+      "relation": "PUBLISHES",
+      "target": "VENDOR-019",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -750,6 +885,24 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "relation": "ACTOR_LINK",
+      "target": "ACT-MEDIATEK",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "relation": "EVIDENCED_BY_CLAIM",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "CG-06",
       "relation": "HAS_DECISION_EVENT",
       "target": "DEC-CG06-001",
@@ -799,6 +952,66 @@
     },
     {
       "source": "CG-06",
+      "relation": "SCHEDULED_BY",
+      "target": "ROADMAP-CURRENT",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-07",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-07",
+      "relation": "HAS_EXPERIMENT",
+      "target": "EXP-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CAPABILITY",
+      "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
+      "relation": "RELATED_CLAIM",
+      "target": "CLM-CG07-EXP-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-07",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
@@ -1005,6 +1218,108 @@
       "source": "CLM-CG06-EXP-001",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-06",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
+      "relation": "EVIDENCES_CAPABILITY",
+      "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG07-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG07-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-002",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG07-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-003",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-003",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG07-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-004",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-004",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-005",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CG07-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-005",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-005",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-EXP-001",
+      "relation": "TESTED_BY_EXPERIMENT",
+      "target": "EXP-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-EXP-001",
+      "relation": "USED_BY_DIRECTION",
+      "target": "CG-07",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -1338,6 +1653,42 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-CG07-001",
+      "relation": "SUBJECT",
+      "target": "CG-07",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG07-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG07-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG07-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG07-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG07-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG07-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CG07-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-CG07-001",
+      "relation": "TRIGGER_EXPERIMENT",
+      "target": "EXP-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-PTA-001",
       "relation": "SUBJECT",
       "target": "PT-A",
@@ -1371,6 +1722,18 @@
       "source": "DR-C-STAGE16A-GAP",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-C-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-CG07-STAGE16A-GAP",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG07-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-CG07-STAGE16A-GAP",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG07-005-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -1584,6 +1947,66 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-CG07-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-019",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-019",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG07-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "EXP-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG07-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-CG07-STAGE16A-GAP",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG07-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-005-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-CG07-STAGE16A-GAP",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CG07-005-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CG07-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-PTA-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-038",
@@ -1792,6 +2215,36 @@
       "relation": "TESTS_FOR_DIRECTION",
       "target": "CG-06",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG07-001",
+      "relation": "INPUT_SOURCE",
+      "target": "VENDOR-019",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG07-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG07-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EXP-CG07-001",
+      "relation": "TESTS_CLAIM",
+      "target": "CLM-CG07-EXP-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG07-001",
+      "relation": "TESTS_FOR_DIRECTION",
+      "target": "CG-07",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-CG07-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-CG07-001",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "EXP-PTA-001",
@@ -2102,6 +2555,12 @@
     {
       "source": "ROADMAP-CURRENT",
       "relation": "SCHEDULES",
+      "target": "CG-07",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-CURRENT",
+      "relation": "SCHEDULES",
       "target": "PT-A",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -2152,11 +2611,35 @@
       "relation": "PUBLISHED_BY",
       "target": "ACT-ARM",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "VENDOR-019",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-CG07-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-019",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG07-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-019",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CG07-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-019",
+      "relation": "PUBLISHED_BY",
+      "target": "ACT-MEDIATEK",
+      "provenance": "CANONICAL_SEMANTIC"
     }
   ],
   "counts": {
-    "nodes": 85,
-    "canonical_semantic_edges": 132,
-    "generated_reverse_edges": 132
+    "nodes": 103,
+    "canonical_semantic_edges": 162,
+    "generated_reverse_edges": 162
   }
 }
