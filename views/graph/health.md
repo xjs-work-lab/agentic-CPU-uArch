@@ -1,51 +1,55 @@
-# V2.2 Graph Health — Current Candidate
+# V2.2 Graph Health — Current Research State
 
-Updated: 2026-10-06  
-Source: GitHub Actions run `37462894570` / job `112266611377`
+Updated: 2026-10-06
 
-## Result
+## Current projection
 
+- canonical nodes: **238**
+- canonical semantic edges: **396**
+- generated reverse edges: **396**
+- graph projection: refreshed after the 2026-10-06 frontier 10Q round
+
+## Validation status
+
+### Last full CI / cutover QA
 **PASS**
 
-## Counts
-- canonical nodes: 148
-- canonical semantic edges: 238
-- generated reverse edges: 238
-- hard errors: 0
+Cutover QA:
+- run: `37479121798`
+- job: `112322303675`
+- hard graph errors: **0**
 
-## Warnings
-30 Source objects:
-`INDEPENDENCE_UNKNOWN`
+### Post-cutover frontier delta check
+**PASS — structural delta consistency**
 
-Accepted by design.
+Checked after the frontier 10Q round:
+- PAPER-053, PAPER-054, PAPER-056, PAPER-057 resolve as canonical Sources;
+- PAPER-003 remains the sole Sereno identity; duplicate PAPER-055 is removed;
+- CLM-AGENT-004 and CLM-CPU-004 resolve;
+- EC-A-005-A and EC-CG06-004-A ground the new supported Claims;
+- A → CLM-AGENT-004 resolves;
+- C → CLM-MOBILE-001 resolves;
+- CG-06 → CLM-CPU-004 resolves;
+- EXP-CG06-001 → PAPER-057 resolves;
+- DEC-A-002, DEC-C-002 and DEC-CG06-002 resolve;
+- generated reverse edges were refreshed with the canonical projection.
 
-## B-residual checks
+## Important boundary
 
-PASS:
-- 9 new Source IDs resolve;
-- DR-BRES-STAGE15-GAP resolves;
-- all B-residual Evidence Cases resolve;
-- supported Claims are grounded;
-- OPEN hypothesis has no fabricated SUPPORT case;
-- EXP-BR-001 resolves Direction, tested Claim and all input Sources;
-- DEC-BR-001 resolves;
-- Roadmap includes B-residual;
-- no justification cycle;
-- no strategic-state leakage.
+The post-cutover frontier recovery did **not** execute the full `health.py` CI job in a local clone because the execution environment has no outbound GitHub network access.
 
-## Semantic-cardinality repair
+Therefore:
+- the current graph projection and changed dependency closure were checked directly against the canonical delta;
+- the last full repository-wide health run remains the cutover QA above;
+- no research conclusion is promoted on the basis of graph structure alone.
 
-The initial broad Claim was split before closeout:
-- CLM-BR-003 = versioned validity/inheritance;
-- CLM-BR-007 = provenance/dependency invalidation.
+## Research-state boundary
 
-This removes an incorrect OR interpretation across two partial evidence routes.
+Graph health validates structure only.
 
-## Boundary
-
-Graph health validates structure.
 It does not:
-- infer phone SYSTEM_VALUE;
-- convert synthetic model results into measurements;
-- infer patent claims beyond reviewed scope;
-- promote B-residual.
+- infer target-phone SYSTEM_VALUE;
+- infer Agent-specific residual beyond strong software/runtime baselines;
+- establish SOFTWARE_INSUFFICIENCY;
+- promote C or CG-06 to a differentiated Primary Bet;
+- unblock R3 or create a uArch candidate.
