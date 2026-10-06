@@ -11,7 +11,7 @@ This review does **not** perform authority cutover.
 
 ## Verdict
 
-**GO_TO_HUMAN_GATE — pending final PR graph QA**
+**GO_TO_HUMAN_GATE**
 
 Current authority remains:
 `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
@@ -198,19 +198,21 @@ Authority contract still states:
 
 ## 11. Final machine gate
 
-A final PR-level V2.2 Graph QA will run against this review package.
+Final PR-level V2.2 Graph QA:
 
-Required:
-- candidate write boundary PASS;
-- deterministic graph projection PASS;
-- graph health PASS;
-- zero hard graph errors.
+- run: `37473833106`
+- job: `112303956293`
+- conclusion: **SUCCESS**
+- candidate write boundary: PASS
+- deterministic graph projection: PASS
+- graph health: PASS
+- hard graph errors: 0
 
-Final run IDs will be recorded before merge.
+The final machine gate is closed.
 
 ## Decision
 
-If the final PR QA passes:
+Final decision:
 
 **GO_TO_HUMAN_GATE**
 

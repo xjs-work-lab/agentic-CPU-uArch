@@ -17,10 +17,17 @@ Current graph:
 
 ## Current phase
 
-**FINAL PRE-CUTOVER REVIEW**
+**HUMAN GATE PENDING**
 
-The semantic/portfolio parity audit is complete and currently supports:
-**GO_TO_HUMAN_GATE**, subject to final PR graph QA.
+The semantic/portfolio parity audit and final graph QA are complete.
+
+Final migration-validation verdict:
+**GO_TO_HUMAN_GATE**
+
+Final graph QA:
+- run `37473833106`
+- job `112303956293`
+- PASS.
 
 This does **not** authorize cutover.
 

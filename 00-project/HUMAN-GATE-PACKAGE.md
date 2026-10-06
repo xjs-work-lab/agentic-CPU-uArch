@@ -1,7 +1,7 @@
 # Human Gate Package — V2.2 Authority Cutover
 
 Updated: 2026-10-06  
-State: PREPARED / NOT APPROVED
+State: READY_FOR_DECISION / NOT APPROVED
 
 ## What the Human Gate decides
 
@@ -27,7 +27,7 @@ Frozen source authority:
 The Human Gate should approve only if all remain true:
 
 - all 9 migration slices CLOSED / GO;
-- final full-graph QA PASS;
+- final full-graph QA PASS — run `37473833106`, job `112303956293`;
 - final cross-slice semantic review PASS;
 - frozen-V1 decision parity PASS;
 - no unresolved MIGRATION_AMBIGUITY;

@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: FINAL_PRE_CUTOVER_REVIEW
+migration_phase: HUMAN_GATE_PENDING
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -19,8 +19,8 @@ completed_slices:
   - R1
   - R2
   - R3
-final_review_state: CANDIDATE_GO_TO_HUMAN_GATE_PENDING_QA
-cutover_state: NOT_STARTED
+final_review_state: GO_TO_HUMAN_GATE
+cutover_state: HUMAN_GATE_PENDING
 ```
 
 ## Migration wave
@@ -40,8 +40,18 @@ All 9 planned slices: **CLOSED / GO**
 - roadmap / graph direction set reconciled
 - authority remains V1
 
+## Final machine gate
+- run: `37473833106`
+- job: `112303956293`
+- candidate write boundary: PASS
+- deterministic graph projection: PASS
+- graph health: PASS
+- hard graph errors: 0
+
 ## Current gate
-Final PR graph QA is required before:
+**HUMAN_GATE_PENDING**
+
+Final pre-cutover review verdict:
 **GO_TO_HUMAN_GATE**
 
 ## Authority
