@@ -9,7 +9,7 @@ score_context = 63.0
 evidence_maturity = "SIMULATION_SUPPORT"
 maturity_scope = "strong negative/prior-art baselines and device-free break-even are established; target-phone >=5% cross-tier residual is not established"
 strongest_baseline = "B4-safe-generic"
-related_claims = ["CLM-BR-001", "CLM-BR-002", "CLM-BR-003", "CLM-BR-004", "CLM-BR-005", "CLM-BR-006", "CLM-BR-EXP-001"]
+related_claims = ["CLM-BR-001", "CLM-BR-002", "CLM-BR-003", "CLM-BR-004", "CLM-BR-005", "CLM-BR-006", "CLM-BR-007", "CLM-BR-EXP-001"]
 related_capabilities = []
 +++
 
