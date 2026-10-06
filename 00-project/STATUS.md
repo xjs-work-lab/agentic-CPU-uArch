@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: C_CLOSED_GO_CG07_SELECTED
+migration_phase: CG07_SLICE_GO_PR_PENDING_MERGE
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -13,54 +13,27 @@ completed_slices:
   - A + CG-06
   - PT-A
   - C
+active_slice: CG-07
+active_branch: migration/MIG-20261006-02-CG07
+machine_qa: PASS
+semantic_fidelity: PASS
+independent_review: GO
 cutover_state: NOT_STARTED
 ```
 
-## Closed slices
-
-### A + CG-06
-- CLOSED / GO
-- merged via PR #1
-
-### PT-A
-- CLOSED / GO
-- merged via PR #2
-- merge commit: `555528aaf14af20d5eaa5bf0bab1b2c8169c79df`
-
-### C
-- CLOSED / GO
-- merged via PR #3
-- merge commit: `3063acedae78388f400ebb0faa8701e951338a96`
-- machine QA: PASS
-- semantic fidelity: PASS
-- independent review: GO
-
 ## Current cumulative graph
-- 85 canonical nodes
-- 132 canonical semantic edges
-- 132 generated reverse edges
-- 0 hard graph errors
+- 103 canonical nodes
+- 162 canonical semantic edges
+- 162 generated reverse edges
+- 0 hard errors
 
-## Migrated core
-- A — Primary Bet
-- PT-A — Platform Track
-- C — Strategic Enabler
-- CG-06 — Competitive Gap / INVEST
+## CG-07
+**GO**
 
-## Next
-**CG-07 — Dedicated Always-On Agent AI Domain**
+PR #4 is ready for final closeout CI and merge.
 
-Selection basis:
-- score 75.0;
-- current action EXPLORE;
-- highest-action/score unmigrated lane;
-- independent evidence boundary suitable for a separate slice.
-
-Planned following order:
-1. CG-07
-2. CG-01
-3. remaining reserves, with R2 able to reuse CG-01 locality evidence
-4. R3 blocked lineage last.
+## Next after merge
+CG-01 — Flex Cache / heterogeneous shared-cache handoff.
 
 ## Authority
 V1 remains authoritative.
