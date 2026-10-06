@@ -7,7 +7,7 @@ migration_phase: C_CLOSED_GO_CG07_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
-source_commit: 960abb4ef50a8f5b0bd357c067f08346025d
+source_commit: 960abb4ef50f050da3c6784d30826053d42e5c5d
 research_content_migrated: true
 completed_slices:
   - A + CG-06

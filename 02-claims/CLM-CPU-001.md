@@ -20,5 +20,5 @@ PAPER-009 directly measures CPU/NPU reversal between Prefill and Decode and quan
 Device/software-stack/model specific; not a universal CPU-over-NPU rule.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

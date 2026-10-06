@@ -2,7 +2,7 @@
 
 > **CANDIDATE / NOT RESEARCH AUTHORITY**
 >
-> Authoritative research SSOT: `xiejinsen/agentic-CPU-uArch@960abb4ef50a8f5b0bd357c067f08346025d`
+> Authoritative research SSOT: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 >
 > Migration baseline: `MIG-20261006-02`
 

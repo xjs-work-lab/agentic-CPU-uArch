@@ -5,7 +5,7 @@ Updated: 2026-10-06
 ## Baseline
 
 - migration: `MIG-20261006-02`
-- V1 source: `xiejinsen/agentic-CPU-uArch@960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 - target bootstrap commit: `eb2166352767c6495e411f4ba356634f3ee40188`
 
 ## Static checks

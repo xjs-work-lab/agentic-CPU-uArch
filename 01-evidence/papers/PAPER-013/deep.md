@@ -1,4 +1,4 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50a8f5b0bd357c067f08346025d`.
+> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
 > Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
 
 ## PAPER-013 — [Speculative Interaction Agents: Building Real-Time Agents with Asynchronous I/O and Speculative Tool Calling](https://arxiv.org/abs/2605.13360)

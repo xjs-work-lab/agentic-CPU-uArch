@@ -20,5 +20,5 @@ The current public evidence occupies deterministic hybrid routing, learned GUI/C
 This does not reduce platform importance; it constrains novelty claims.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

@@ -20,5 +20,5 @@ This is the surviving differentiating question for A after strong-baseline narro
 No SUPPORT Evidence Case is created from literature. It must be tested by EXP-A-001 on appropriate system evidence.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

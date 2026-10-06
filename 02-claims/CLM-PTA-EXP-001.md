@@ -20,5 +20,5 @@ This structurally objectizes the Stage15 PT-A success criteria and baseline ladd
 Not an established result; requires execution of EXP-PTA-001.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK / EXPLICIT_HYPOTHESIS_OBJECTIZATION`

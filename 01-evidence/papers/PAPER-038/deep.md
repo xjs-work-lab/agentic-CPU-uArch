@@ -1,4 +1,4 @@
-> V1 semantic source copied from frozen baseline `960abb4ef50a8f5b0bd357c067f08346025d`.
+> V1 semantic source copied from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
 > The compact README owns the V2.2 Source metadata.
 
 # PAPER-038 — Beyond the GUI Paradigm: Do Mobile Agents Need the Phone Screen?

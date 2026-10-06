@@ -20,5 +20,5 @@ PAPER-052 and TOOL-012 provide separate supporting routes: SMEPilot shows matrix
 Does not establish universal CPU superiority over NPU or end-to-end Agent system value.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

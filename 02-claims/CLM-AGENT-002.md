@@ -20,5 +20,5 @@ PAPER-043 and PAPER-044 independently show that observed behavioral history can 
 Primarily desktop/workstation workflow evidence; not phone CPU/NPU active-cost ground truth.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

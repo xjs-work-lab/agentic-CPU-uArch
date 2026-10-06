@@ -20,5 +20,5 @@ VENDOR-018 is the official Arm source for this positioning/capability statement.
 Vendor-origin claim/positioning. Independent performance evidence is separate and this Claim is intentionally Arm-specific rather than generalized to all mobile CPU vendors.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

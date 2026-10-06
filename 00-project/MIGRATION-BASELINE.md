@@ -3,7 +3,7 @@
 ## Source
 - repository: `xiejinsen/agentic-CPU-uArch`
 - branch: `main`
-- commit: `960abb4ef50a8f5b0bd357c067f08346025d`
+- commit: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - authority: AUTHORITATIVE V1 RESEARCH SSOT
 
 ## Destination

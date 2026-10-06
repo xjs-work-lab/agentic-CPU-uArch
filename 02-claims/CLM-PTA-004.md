@@ -20,5 +20,5 @@ The Stage14 structural-gap audit found platform/runtime value but no independent
 Bounded to the reviewed evidence set; does not prove a future residual cannot emerge.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

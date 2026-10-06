@@ -20,5 +20,5 @@ PAPER-013 establishes speculative work that may execute before commitment; PAPER
 Does not establish smartphone CPU system value or the magnitude of discardable work.
 
 ## Migration
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`

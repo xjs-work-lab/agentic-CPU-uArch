@@ -21,7 +21,7 @@ origin_blobs = ["21c60cd65c7148b97792a62e7570100ff5657f1e"]
 - **Primary source:** https://pytorch.org/blog/accelerating-on-device-ml-inference-with-executorch-and-arm-sme2/
 
 ## Migration fidelity
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`
 - Detailed V1 interpretation is preserved in [deep.md](deep.md).
 - Source independence remains `UNKNOWN` unless explicitly assessed later.

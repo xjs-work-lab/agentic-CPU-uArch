@@ -23,7 +23,7 @@ venue = "arXiv preprint · 2024"
 - **Primary source:** https://arxiv.org/abs/2410.12361
 
 ## Migration fidelity
-- V1 baseline: `960abb4ef50a8f5b0bd357c067f08346025d`
+- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
 - Transform: `STRUCTURAL_REPACK`
 - Detailed V1 interpretation is preserved in [deep.md](deep.md).
 - Source independence remains `UNKNOWN` unless explicitly assessed later.
