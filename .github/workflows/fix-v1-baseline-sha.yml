@@ -22,7 +22,7 @@ jobs:
           set -euo pipefail
           BAD='960abb4ef50a8f5b0bd357c067f08346025d'
           GOOD='960abb4ef50f050da3c6784d30826053d42e5c5d'
-          mapfile -t files < <(git grep -l "$BAD" || true)
+          mapfile -t files < <(git grep -l "$BAD" -- ':!.github/workflows/*' || true)
           printf 'Files to repair: %s\n' "${#files[@]}"
           printf '%s\n' "${files[@]}"
           if [ "${#files[@]}" -eq 0 ]; then
@@ -31,7 +31,7 @@ jobs:
           for f in "${files[@]}"; do
             sed -i "s/$BAD/$GOOD/g" "$f"
           done
-          if git grep -n "$BAD"; then
+          if git grep -n "$BAD" -- ':!.github/workflows/*'; then
             echo "ERROR: bad SHA remains"
             exit 1
           fi
