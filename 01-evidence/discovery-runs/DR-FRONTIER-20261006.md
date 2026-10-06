@@ -39,6 +39,13 @@ Primary journals:
 - PAPER-056 — AgentProg
 - PAPER-057 — ShadowNPU
 
+## Decision-use gate
+Seed papers PAPER-053..057 are **not decision-grade yet**.
+
+Before any portfolio conclusion, each must complete a full Paper Insight 10Q review covering problem mapping, novelty/new-regime relevance, falsifiable hypothesis, research lineage/competing route, mechanism/control point, experiment design, reproducibility, evidence-vs-hypothesis, decision contribution and next action.
+
+All current portfolio effects in this Discovery Run are provisional screening hypotheses only.
+
 ## Early observations
 1. Mobile Agents are now a first-class MobiSys systems topic.
 2. Direct mobile-Agent optimization is expanding beyond model kernels into pipeline structure, context/state, execution timing and foreground QoS.
