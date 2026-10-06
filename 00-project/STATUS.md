@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: C_SLICE_GO_PR_PENDING_MERGE
+migration_phase: C_CLOSED_GO_NEXT_WAVE_SELECTION
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -12,38 +12,46 @@ research_content_migrated: true
 completed_slices:
   - A + CG-06
   - PT-A
-active_slice: C
-active_branch: migration/MIG-20261006-02-C
-machine_qa: PASS
-semantic_fidelity: PASS
-independent_review: GO
+  - C
 cutover_state: NOT_STARTED
 ```
 
-## Closed
-- A + CG-06: CLOSED / GO / merged.
-- PT-A: CLOSED / GO / merged.
+## Closed slices
 
-## C
-- 2 new Sources
-- 1 Discovery Run
-- 6 Claims
-- 5 Evidence Cases
-- 1 Capability
-- 1 Direction
-- 1 Experiment
-- 1 Decision Event
+### A + CG-06
+- CLOSED / GO
+- merged via PR #1
+
+### PT-A
+- CLOSED / GO
+- merged via PR #2
+- merge commit: `555528aaf14af20d5eaa5bf0bab1b2c8169c79df`
+
+### C
+- CLOSED / GO
+- merged via PR #3
+- merge commit: `3063acedae78388f400ebb0faa8701e951338a96`
+- machine QA: PASS
+- semantic fidelity: PASS
+- independent review: GO
 
 ## Current cumulative graph
 - 85 canonical nodes
 - 132 canonical semantic edges
 - 132 generated reverse edges
-- 0 hard errors
+- 0 hard graph errors
 
-## C decision
-**GO**
+## Migrated core
+- A — Primary Bet
+- PT-A — Platform Track
+- C — Strategic Enabler
+- CG-06 — Competitive Gap / INVEST
 
-PR #3 is ready for final closeout CI and merge.
+## Next
+Select next dependency-closed wave from:
+- CG-07 / CG-01 competitive-gap watches;
+- B-residual / R1 / R2 reserves;
+- R3 blocked lineage.
 
 ## Authority
 V1 remains authoritative.
