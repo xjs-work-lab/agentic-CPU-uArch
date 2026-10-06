@@ -8,69 +8,45 @@
 
 ## Migration state
 
-All nine planned V2.2 migration slices are **CLOSED / GO** and merged into `main`:
+All nine planned V2.2 migration slices are **CLOSED / GO**.
 
-1. A + CG-06
-2. PT-A
-3. C
-4. CG-07
-5. CG-01
-6. B-residual
-7. R1
-8. R2
-9. R3
-
-Current cumulative graph:
+Current graph:
 - **226 canonical nodes**
 - **381 canonical semantic edges**
 - **381 generated reverse edges**
-- **0 hard graph errors**
 
 ## Current phase
 
 **FINAL PRE-CUTOVER REVIEW**
 
-Migration completion does not make this repository authoritative.
+The semantic/portfolio parity audit is complete and currently supports:
+**GO_TO_HUMAN_GATE**, subject to final PR graph QA.
 
-Before cutover:
-- full-graph QA;
-- cross-slice semantic review;
-- frozen-V1 parity review;
-- roadmap/view reconciliation;
-- unresolved-ambiguity audit;
-- separate Human Gate.
+This does **not** authorize cutover.
 
 ## Start here
 1. [00-project/AUTHORITY.md](00-project/AUTHORITY.md)
 2. [00-project/STATUS.md](00-project/STATUS.md)
-3. [00-project/REMAINING-MIGRATION-PLAN.md](00-project/REMAINING-MIGRATION-PLAN.md)
-4. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
-5. [views/graph/current.json](views/graph/current.json)
-6. [09-roadmap/current.md](09-roadmap/current.md)
+3. [00-project/FINAL-PRE-CUTOVER-REVIEW.md](00-project/FINAL-PRE-CUTOVER-REVIEW.md)
+4. [00-project/HUMAN-GATE-PACKAGE.md](00-project/HUMAN-GATE-PACKAGE.md)
+5. [00-project/MIGRATION-BASELINE.md](00-project/MIGRATION-BASELINE.md)
+6. [views/graph/current.json](views/graph/current.json)
+7. [09-roadmap/current.md](09-roadmap/current.md)
 
-## Reasoning model
-```text
-SOURCE / DISCOVERY_RUN / upstream CLAIM / EXPERIMENT
-                         ↓
-                    EVIDENCE_CASE
-                         ↓
-                       CLAIM
-                   ↙           ↘
-            CAPABILITY       DIRECTION
-                ↑               ↓
-              ACTOR         EXPERIMENT
-                                ↓
-                         DECISION_EVENT
-```
+## Portfolio invariant
+- one differentiated Primary Bet: A
+- second Primary Bet intentionally unfilled
+- no uArch Primary Bet
+- competitive-gap actions remain a separate axis
 
-Premises within one Evidence Case are conjunctive; alternative Evidence Cases remain separate routes.
+## Authority rule
+
+Migration completion is not authority cutover.
+
+Only explicit Human Gate approval may authorize a separate cutover transaction.
 
 ## Branch policy
 
 `main` is the only long-lived branch.
 
-Migration/feature branches are temporary transaction workspaces:
-
-PR → CI/review → merge → automatic branch deletion.
-
-Repository history is preserved through commits, PRs, Migration Receipts and review records—not by retaining merged branches.
+Temporary work branches are deleted after reviewed merge.
