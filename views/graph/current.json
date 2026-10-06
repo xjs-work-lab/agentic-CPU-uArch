@@ -3740,6 +3740,12 @@
     {
       "source": "DR-R3-BLOCKED-LINEAGE",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-R3-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-R3-BLOCKED-LINEAGE",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-R3-005-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -4605,6 +4611,12 @@
       "source": "EC-R3-004-A",
       "relation": "HAS_PREMISE",
       "target": "CLM-R2-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R3-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-R3-BLOCKED-LINEAGE",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -6080,7 +6092,7 @@
   ],
   "counts": {
     "nodes": 226,
-    "canonical_semantic_edges": 380,
-    "generated_reverse_edges": 380
+    "canonical_semantic_edges": 381,
+    "generated_reverse_edges": 381
   }
 }
