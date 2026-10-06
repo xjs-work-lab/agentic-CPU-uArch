@@ -7,9 +7,9 @@ direction_class = "STRATEGIC_ENABLER"
 investment_lane = "STRATEGIC_ENABLER"
 score_context = 72.0
 evidence_maturity = "STRUCTURAL_SIGNAL"
-maturity_scope = "generic phone control tax is direct; EdgeAgent shows Agent-aware incremental value on Apple M4; target-phone Agent-specific residual beyond strong generic tuning is not yet established"
+maturity_scope = "direct smartphone generic control/QoE tax is established; EdgeAgent shows Agent-aware incremental value on Apple M4; target-phone Agent-specific residual beyond strong generic tuning remains unestablished"
 strongest_baseline = "G1_GENERIC_OPTIMIZED"
-related_claims = ["CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-EXP-001"]
+related_claims = ["CLM-MOBILE-001", "CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-EXP-001"]
 related_capabilities = ["CAP-HUAWEI-GENERIC-RESOURCE-CONTROL"]
 +++
 
@@ -22,32 +22,52 @@ C is the runtime/OS/system-control seam around Agent execution and heterogeneous
 
 ## Three-layer evidence model
 
-### 1. Generic control tax
-Real phone CPU↔NPU communication/scheduling/fallback overhead can be material.
+### 1. Generic control / QoE tax
+Real smartphone evidence establishes two distinct generic costs:
+- CPU↔NPU communication/scheduling/fallback overhead can materially change execution economics;
+- background NPU LLM inference can severely harm foreground QoE through shared-memory-bandwidth contention.
 
-### 2. Generic capture
-Strong runtime/system mechanisms—persistent sessions, RPC reuse, zero-copy/shared buffers, async dispatch, batching, affinity/topology, serialization/fallback removal—must be applied before C receives credit.
+PAPER-003 / CLM-MOBILE-001 is direct commercial-phone evidence for the second problem.
 
-Huawei's public generic QoS/resource/inference-control surface is part of this baseline.
+### 2. Generic capture — G1
+Strong runtime/system mechanisms must be applied before C receives differentiated credit:
+- persistent sessions / RPC reuse;
+- zero-copy/shared buffers;
+- async dispatch / batching;
+- affinity/topology;
+- serialization/fallback removal;
+- foreground-QoE-aware contention sensing;
+- fine-grained inference yielding/preemption;
+- elastic verification/batching;
+- throughput guardrails;
+- existing Huawei public generic QoS/resource/inference-control primitives.
+
+SERENO-like control is explicitly part of **G1**, not differentiated C value.
 
 ### 3. Agent-aware residual
-Only incremental value tied to Agent blocked/ready/concurrency state beyond G1 counts toward differentiated C value.
+Only incremental value tied to Agent blocked/ready/concurrency/criticality state beyond G1 counts toward differentiated C value.
 
-PAPER-051 supplies pressure for this layer on Apple M4; phone transfer remains open.
+PAPER-051 supplies pressure for this layer on Apple M4; target-phone transfer remains open.
 
 ## Current lane
 Keep as **Strategic Enabler / second-Bet watch**.
 
-Do not promote to Primary Bet from generic G0→G1 improvement.
+The direct phone foreground-QoE evidence strengthens the problem, but the effectiveness of software-only SERENO-like control also raises the baseline.
+
+Therefore:
+**no Primary-Bet promotion from PAPER-003.**
 
 ## Promotion gate
-`EXP-C-001` must show:
+EXP-C-001 must show:
 - A1 vs G1 >=~5% meaningful end-outcome residual;
 - >1 representative Agent workload regime;
-- mechanism tied to Agent blocked/ready/concurrency;
+- mechanism tied to Agent blocked/ready/concurrency/criticality;
 - same benefit not reproduced in inference-only C0;
 - target-phone transfer;
 - distinct reusable control point.
 
 ## Hardware boundary
-No uArch promotion unless software/runtime sufficiency is exhausted and a hardware-timescale residual remains.
+No uArch promotion unless:
+1. target-phone C reaches SYSTEM_VALUE;
+2. SERENO-like + other best software/runtime controls are exhausted;
+3. a causal hardware-timescale/visibility/control residual remains.
