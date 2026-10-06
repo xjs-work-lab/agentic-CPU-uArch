@@ -3,7 +3,7 @@
 Updated: 2026-10-06
 
 ```yaml
-migration_phase: C_CLOSED_GO_NEXT_WAVE_SELECTION
+migration_phase: C_CLOSED_GO_CG07_SELECTED
 candidate_authority: NOT_AUTHORITY
 source_authority: V1
 migration_id: MIG-20261006-02
@@ -48,10 +48,19 @@ cutover_state: NOT_STARTED
 - CG-06 — Competitive Gap / INVEST
 
 ## Next
-Select next dependency-closed wave from:
-- CG-07 / CG-01 competitive-gap watches;
-- B-residual / R1 / R2 reserves;
-- R3 blocked lineage.
+**CG-07 — Dedicated Always-On Agent AI Domain**
+
+Selection basis:
+- score 75.0;
+- current action EXPLORE;
+- highest-action/score unmigrated lane;
+- independent evidence boundary suitable for a separate slice.
+
+Planned following order:
+1. CG-07
+2. CG-01
+3. remaining reserves, with R2 able to reuse CG-01 locality evidence
+4. R3 blocked lineage last.
 
 ## Authority
 V1 remains authoritative.
