@@ -5,7 +5,7 @@ lifecycle = "OPEN"
 as_of = "2026-10-06"
 coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "Seed and Round-2 prior-art Sources have completed decision-level 10Q review. Automatic semantic-context inference and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
+limitations = "Seed, Round-2 prior art and Round-3 Agent-specific residual Sources have completed decision-level 10Q review. H-FIB foreground-impact-budget evidence and broader venue coverage remain incomplete; no second-Bet promotion is authorized yet."
 +++
 
 # DR-FRONTIER-20261006
@@ -149,3 +149,37 @@ It is **not decision-grade** until full-text review and 10Q are complete.
 
 Secondary candidate:
 WASH / Portable Performance on Asymmetric Multicore Processors (CGO 2016).
+
+
+## Round 3 — Agent-specific residual audit
+
+Full 10Q completed:
+- PAPER-063 — Speculative Actions — ICLR 2026 / P0
+- PAPER-064 — Sherlock — arXiv 2025 preprint / P1
+- PAPER-065 — KVFlow — NeurIPS 2025 / P0
+
+Residual decisions:
+- **cancel/discard/commit legality — NARROW**: Agent-native, but strong Agent/workflow runtimes already use commit guards, reversible/idempotent/sandboxed effects, verification state, rollback and discard.
+- **state-reuse identity — NARROW**: KVFlow reconstructs future reuse from Agent Step Graph / STE and uses it for KV retention/prefetch.
+- **RequiredProgress — KEEP inside A**: exact residual remains open only beyond topology/criticality/verification/legality/reuse proxies.
+- **foreground-impact budget — OPEN HYPOTHESIS / highest-priority next probe**: no equivalent decision-grade Agent-aware smartphone resource-budget contract is publicly established in the reviewed source set.
+
+Canonical synthesis:
+- `analysis/frontier-2026/round3-residual-synthesis-2026-10-06.md`
+- `analysis/frontier-2026/h-fib-hypothesis.md`
+
+Portfolio:
+- no lane/score changes;
+- no second Primary Bet;
+- no uArch promotion.
+
+### Next search gate
+Pressure-test **H-FIB — Agent Foreground-Impact Budget** against:
+- persistent/background mobile-Agent workloads;
+- Sereno/MUSched generic foreground protection;
+- TimelyLLM deadline/slack control;
+- simple Agent self-throttling;
+- mobile CPU/NPU/memory/thermal interference.
+
+The target claim is not "foreground protection is valuable"; that is already established.
+The target is whether **Agent-specific marginal value / tolerance state** changes the resource-control decision beyond generic QoS.
