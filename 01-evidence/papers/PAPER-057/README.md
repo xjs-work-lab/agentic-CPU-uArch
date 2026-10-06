@@ -3,6 +3,8 @@ id = "PAPER-057"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
+review_depth = "SEED_SCREENING_ONLY"
+decision_use = "PENDING_10Q"
 independence_assessment = "UNKNOWN"
 title = "ShadowNPU: System and Algorithm Co-design for NPU-Centric On-Device LLM Inference"
 primary_url = "https://doi.org/10.1145/3745756.3809205"
@@ -21,3 +23,11 @@ venue = "ACM MobiSys 2026"
 - **Portfolio pressure:** Strongly reinforces CG-06's stage/operator-placement framing and argues against a simple NPU-first policy.
 - **Boundary:** Evaluated on Qualcomm Hexagon NPUs; generality across other NPU families and real Agent workloads remains open.
 - **Primary source:** https://doi.org/10.1145/3745756.3809205
+
+
+## Decision-use gate
+This Source is currently **SEED SCREENING ONLY**.
+
+Do not use it to change Direction lane/score, promote/demote a Bet, or assert a new project conclusion until a full Paper Insight 10Q review is completed.
+
+The existing 30-second read / portfolio-pressure notes are retrieval and triage hypotheses only, not decision-grade conclusions.
