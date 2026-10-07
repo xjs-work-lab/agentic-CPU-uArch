@@ -140,7 +140,15 @@ No SYSTEM_VALUE or hardware/uArch promotion.
 
 ## Evidence-depth state
 Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
-The remaining **12** current-roadmap paper warnings are all in B-residual / R1 / R2.
+The remaining **8** current-roadmap paper warnings are all in B-residual / R1 / R2.
+
+Reserve Rescue Batch 1 removes four warnings:
+- PAPER-030 AgentProg — FULL_10Q;
+- PAPER-029 Libra — FULL_10Q;
+- PAPER-032 Versioned Execution — FULL_10Q;
+- PAPER-033 LOCAL — duplicate-primary review reused from PAPER-104 FULL_10Q.
+
+Decision impact: B-residual remains 63.0 / CONDITIONAL_RESERVE / SIMULATION_SUPPORT; evidence pressure strengthens the generic/software baseline rather than the residual.
 
 ## T7 seed-triage result
 Initial seeds:
@@ -347,4 +355,4 @@ T6/T7/T8 frontier coverage is complete. No new differentiated Primary Bet surviv
 ## Next
 **Reserve-lane evidence rescue: B-residual / R1 / R2.**
 
-The known current-roadmap debt is 12 decision-critical papers that still need FULL_10Q, followed by the separate R3/patent direct-claim audit before final portfolio convergence.
+The known current-roadmap debt is now **8** decision-critical papers after Reserve Rescue Batch 1, followed by the separate R3/patent direct-claim audit before final portfolio convergence.

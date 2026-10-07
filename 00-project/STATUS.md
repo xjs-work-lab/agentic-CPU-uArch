@@ -87,8 +87,17 @@ Material corrections:
 ## Evidence-depth debt
 After Rescue-1B, validated Graph-QA paper-depth warnings:
 - primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
-- current reserve lanes B-residual / R1 / R2: **12**
-- whole current ROADMAP: **12**
+- current reserve lanes B-residual / R1 / R2: **8**
+- whole current ROADMAP: **8**
+
+Reserve Rescue Batch 1 complete:
+- PAPER-030 AgentProg → FULL_10Q;
+- PAPER-029 Libra / on-device LLMaaS → FULL_10Q;
+- PAPER-032 Versioned Execution → FULL_10Q;
+- PAPER-033 LOCAL → FULL_10Q reused from identical primary source PAPER-104.
+
+B-residual remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT**.
+The rescue raises the strongest software/runtime baseline and does not establish target-phone cross-tier residual SYSTEM_VALUE.
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 

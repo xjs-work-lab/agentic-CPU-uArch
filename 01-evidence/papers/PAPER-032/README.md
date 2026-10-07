@@ -3,26 +3,29 @@ id = "PAPER-032"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+decision_use = "B_RESIDUAL_VERSIONED_AUTHORITY_AND_COMPATIBLE_STATE_INHERITANCE_BASELINE"
+independence_assessment = "PREPRINT_SERVER_VLLM_NO_TARGET_PHONE"
 title = "Serving a Revisable World: Versioned Execution for Interruptible Agents"
 primary_url = "https://arxiv.org/abs/2610.01160"
 priority = "P0"
 evidence_role = "versioned execution + certified compatible-state inheritance baseline"
-origin_paths = ["03-academic/paper-10q/PAPER-032.md"]
-origin_blobs = ["4b976c9612c587f9369f2a6d2ea29f4c1366cddb"]
 authors = ["Yanxin Zhang", "Rahul Sharma", "Nitin Vegesna", "Zheyu Fu", "Chang Liu", "Trivikram Krishnamurthy"]
 venue = "arXiv preprint · 2026-10-01"
 +++
 
-# PAPER-032 — Serving a Revisable World: Versioned Execution for Interruptible Agents
+# PAPER-032 — Serving a Revisable World
 
 ## 30-second read
-- **Why it matters:** Directly demonstrates invalidating obsolete authority while preserving compatible completed state.
-- **What it establishes:** Generic versioned Agent execution plus selective compatible-state inheritance is already implementable and useful.
-- **Boundary:** Server/vLLM, not smartphone NPU/DRAM/UFS.
+- Direct Agent revision/interrupt serving system built in vLLM.
+- Separates request resource ownership from execution-version authority.
+- Revokes obsolete work and certifies completed state that a successor may inherit.
+- Covers output publication, GPU execution, KV handoff, tiered recovery and distributed/multi-tenant serving.
+- Reports median 17.1% reduction in revision→successor TTFT versus abort/cold restart.
+- Strong negative pressure on broad B-residual novelty.
+- Server/GPU evidence only; target-phone cross-tier residual remains open.
 
-## Migration fidelity
-- frozen V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- transform: `STRUCTURAL_REPACK`
-- detailed V1 interpretation is preserved in [deep.md](deep.md).
-- source independence remains `UNKNOWN`.
+See [deep.md](deep.md).

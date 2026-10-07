@@ -50,3 +50,22 @@ Requires `EXP-BR-001` target-phone evidence showing >=~5% meaningful residual, z
 ## Hardware boundary
 No CPU/uArch program.
 No CPU PMU requirement at this stage.
+
+
+## Reserve Rescue Batch 1 — 2026-10-07
+
+Deep-read / normalized:
+- **PAPER-030 AgentProg** — direct mobile proof that semantic/program state matters, but the mechanism remains S0/S1 context management and carries significant inference/latency cost.
+- **PAPER-029 Libra** — direct COTS phone evidence that persistent KV/context switching is a real physical-memory problem, while generic chunk compression/swapping/lifecycle control captures large value without Agent semantic lineage.
+- **PAPER-032 Versioned Execution** — strong server evidence that revision authority, obsolete-work invalidation and selective compatible-state inheritance can already be handled by a versioned software control plane.
+- **PAPER-033 LOCAL** — same primary source as PAPER-104; FULL_10Q evidence is reused rather than duplicated.
+
+### Decision effect
+No promotion and no score change.
+
+The surviving B-residual is narrowed further to:
+> does S0/S1 semantic/workflow revision contain information about S2/S3 physical artifact validity/preservation that remains unavailable to the strongest version/hash/provenance + generic context-lifecycle baseline on a representative phone?
+
+This batch strengthens the **baseline**, not the residual.
+
+Promotion still requires EXP-BR-001 target-phone evidence.
