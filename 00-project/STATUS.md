@@ -19,6 +19,7 @@ evidence_rescue: ACTIVE
 evidence_depth_protocol: EDP_V1
 frontier_round14: ACTIVE_T7
 product_trend_framework: V1
+shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
 
 ## Authority
@@ -90,6 +91,16 @@ After Rescue-1B, validated Graph-QA paper-depth warnings:
 - whole current ROADMAP: **12**
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
+
+## Shared strategic-model harmonization
+CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.
+
+Core semantic chain:
+`SOURCE → EVIDENCE_CASE → CLAIM → TREND → PRODUCT_EVOLUTION ROADMAP`
+with the parallel differentiated path:
+`CLAIM → DIRECTION → DIFFERENTIATION_PORTFOLIO ROADMAP`.
+
+No Trend, Direction, score, maturity or portfolio conclusion changed in this harmonization.
 
 ## Data-model 2.3
 Canonical **TREND** objects now separate product evolution from differentiated research.
