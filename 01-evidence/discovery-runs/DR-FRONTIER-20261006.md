@@ -342,3 +342,36 @@ Next search gate:
 - lifecycle-phase-specific CPU/NPU/data-placement.
 
 Stop generic Agent-memory algorithm expansion unless a new lifecycle operation appears.
+## Round 8 — H-PAM final systems-residual decision
+
+FULL_10Q completed:
+- PAPER-076 — Modality-Aware Long-Term Memory Acquisition — MobiSys Companion 2026 / P0
+- PAPER-077 — MemArena — arXiv 2026 / P0
+- PAPER-078 — SeeMon — MobiSys 2008 / P0 prior-art baseline
+- PAPER-079 — MMEdge — SenSys 2026 / P0 prior-art baseline
+
+Decision-grade synthesis:
+- direct mobile memory acquisition has modality-dependent cost/coverage;
+- memory query search is often relatively light vs reader inference on the evaluated edge system;
+- structured memory ingest can be energy-heavy;
+- semantic/value-vs-cost adaptive acquisition is mature mobile-systems prior art;
+- sensing→encoding pipeline coupling and modality-aware runtime adaptation are current generic edge-systems prior art.
+
+Decision:
+**H-PAM is KILLED as a standalone second-Bet / Direction candidate.**
+
+Persistent Agent memory remains an important workload and evaluation dimension.
+
+Merge map:
+- acquisition / background maintenance workload → C experiments;
+- verified replay / rollback / stale action handling → PT-A;
+- semantic invalidation / coherence → B-residual;
+- progress/task-driving state → A strongest baseline;
+- cache/locality → R2 / CG-01 only after direct phone residual;
+- heterogeneous extractor/embedding work → existing heterogeneous execution baselines.
+
+Decision Event:
+- DEC-H-PAM-001
+
+Overall second differentiated Primary Bet remains unfilled.
+Next frontier status: **UNASSIGNED — perform frontier reset outside memory and generic system-control families**.
