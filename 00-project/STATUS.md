@@ -28,9 +28,9 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 420 canonical nodes
-- 725 canonical semantic edges
-- 725 generated reverse edges
+- 426 canonical nodes
+- 735 canonical semantic edges
+- 735 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -128,8 +128,8 @@ Current trend map:
 - T7 Local multi-Agent concurrency & shared model/state
 - T8 Cross-device Agent fabric & continuation
 
-T1–T5 are already product-relevant/owned to different degrees.
-T6–T8 are frontier signals only.
+T1–T6 are now product-relevant/owned to different degrees.
+T7–T8 remain frontier signals.
 
 ## Operating rule
 **Frontier Round 14 is ACTIVE.**
@@ -156,17 +156,20 @@ Initial pressure set:
 
 SkillDroid FULL_10Q: **COMPLETE**.
 
+Android AppFunctions deep vendor card: **COMPLETE**.
+
 Current T6 result:
-- trend = **FRONTIER_SIGNAL / WATCH unchanged**;
-- PAPER-106 strengthens the product signal that repeated mobile Agent behavior can become a persistent executable procedural skill;
-- PAPER-106 simultaneously narrows CPU/uArch interpretation because its "compiled" artifact is a typed GUI-action template, not native/JIT/WASM code;
-- evaluation = Windows 11 host + Pixel 9a/API 35 emulator + ADB, not a physical phone;
+- trend maturity = **EMERGING_PRODUCT_TREND**;
+- product posture = **BENCHMARK_AND_PREPARE**;
+- VENDOR-020 confirms an Android 16+ OS/Jetpack substrate for locally discoverable/executable Agent-callable functions;
+- AndroidX 1.0.0-alpha12 (2026-09-23) adds experimental runtime registration APIs, strengthening the lifecycle signal beyond static build-time declarations;
+- broad "local Agent tool execution is novel" differentiation is further narrowed because registry, typed schema, permissions, enabled state, discovery and execution are becoming platform software;
 - new Direction = **none**;
 - second differentiated Primary Bet = **UNFILLED**;
 - uArch candidate = **none**;
-- direct phone CPU/JIT/code-cache/sandbox-transition residual = **not established**.
+- direct phone CPU/JIT/code-cache/dynamic-sandbox residual = **not established**.
 
-Next: **Android AppFunctions deep vendor card**, then pressure-test only the sandbox/runtime baselines needed to decide whether any T6 residual survives C + T5 + PT-A + native Android function/action execution.
+Next: pressure-test **MCP-SandboxScan / SpecBox** only to determine whether a residual remains for genuinely dynamic executable artifacts such as WASM/DSL/bytecode beyond AppFunctions + C + T5 + PT-A.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.

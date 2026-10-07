@@ -892,6 +892,22 @@
       "claim_kind": "INFERENCE"
     },
     {
+      "id": "CLM-T6-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T6-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-T6-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T6-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-T7-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-T7-001.md",
@@ -1081,6 +1097,11 @@
       "id": "DEC-T5-002",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-T5-002.md"
+    },
+    {
+      "id": "DEC-T6-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-T6-001.md"
     },
     {
       "id": "DEC-T7-001",
@@ -1969,6 +1990,18 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-T6-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T6-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-T6-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T6-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-T7-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-T7-001-A.md",
@@ -2712,6 +2745,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "VENDOR-020",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-020/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "T1",
       "type": "TREND",
       "path": "06-trends/T1-semantic-aware-progress-control/README.md",
@@ -2819,9 +2858,9 @@
       "type": "TREND",
       "path": "06-trends/T6-local-programmable-agent-execution/README.md",
       "record_state": "CURRENT",
-      "trend_maturity": "FRONTIER_SIGNAL",
-      "product_posture": "WATCH",
-      "coverage_state": "SEED_TRIAGE_COMPLETE",
+      "trend_maturity": "EMERGING_PRODUCT_TREND",
+      "product_posture": "BENCHMARK_AND_PREPARE",
+      "coverage_state": "PRODUCT_TREND_CONFIRMED_RESIDUAL_AUDIT",
       "direction_links": []
     },
     {
@@ -5932,6 +5971,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CLM-T6-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T6-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "CLM-T6-002",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-T6-002-A",
@@ -5941,6 +5986,42 @@
       "source": "CLM-T6-002",
       "relation": "SUPPORTS_TREND",
       "target": "T6",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T6-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-003",
+      "relation": "SUPPORTS_TREND",
+      "target": "T6",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-003",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T6-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T6-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-004",
+      "relation": "SUPPORTS_TREND",
+      "target": "T6",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-004",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T6-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -6925,6 +7006,30 @@
       "source": "DEC-T5-002",
       "relation": "TRIGGER_CLAIM",
       "target": "CLM-T5-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T6-001",
+      "relation": "SUBJECT",
+      "target": "T6",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T6-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T6-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T6-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T6-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T6-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T6-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -8713,6 +8818,30 @@
       "source": "EC-T6-002-A",
       "relation": "SUPPORT",
       "target": "CLM-T6-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-020",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T6-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-020",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T6-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -11297,6 +11426,12 @@
     },
     {
       "source": "T6",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-T6-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T6",
       "relation": "TREND_EVIDENCE_CLAIM",
       "target": "CLM-T6-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -11305,6 +11440,18 @@
       "source": "T6",
       "relation": "TREND_EVIDENCE_CLAIM",
       "target": "CLM-T6-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T6",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T6-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T6",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T6-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -11558,11 +11705,23 @@
       "relation": "PUBLISHED_BY",
       "target": "ACT-MEDIATEK",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "VENDOR-020",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T6-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-020",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T6-004-A",
+      "provenance": "GENERATED_REVERSE"
     }
   ],
   "counts": {
-    "nodes": 420,
-    "canonical_semantic_edges": 725,
-    "generated_reverse_edges": 725
+    "nodes": 426,
+    "canonical_semantic_edges": 735,
+    "generated_reverse_edges": 735
   }
 }

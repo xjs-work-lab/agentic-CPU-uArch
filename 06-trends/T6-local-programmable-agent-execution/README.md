@@ -5,10 +5,10 @@ record_state = "CURRENT"
 title = "Local programmable Agent execution & sandboxed skills"
 time_horizon = "2027-2029"
 scope = "SMARTPHONE_AGENTIC_CPU_SYSTEM_UARCH"
-trend_maturity = "FRONTIER_SIGNAL"
-product_posture = "WATCH"
-coverage_state = "SEED_TRIAGE_COMPLETE"
-related_claims = ["CLM-T6-001", "CLM-T6-002"]
+trend_maturity = "EMERGING_PRODUCT_TREND"
+product_posture = "BENCHMARK_AND_PREPARE"
+coverage_state = "PRODUCT_TREND_CONFIRMED_RESIDUAL_AUDIT"
+related_claims = ["CLM-T6-001", "CLM-T6-002", "CLM-T6-003", "CLM-T6-004"]
 related_capabilities = []
 direction_links = []
 +++
@@ -95,3 +95,47 @@ Current ownership pressure:
 
 ## Next
 Deep-read Android AppFunctions as the strongest current native Android product baseline, then test whether any dynamic executable-artifact residual remains.
+
+
+## Android AppFunctions deep vendor baseline — VENDOR-020
+
+### Product signal
+Android AppFunctions is a direct OS/platform signal that local Agent-callable functions are moving into the Android product stack.
+
+Official documentation establishes:
+- Android 16+ platform and Jetpack AppFunctions APIs;
+- Android as a registry for app-defined functions;
+- local discovery and execution by authorized/system-privileged Agent callers;
+- type-safe function/tool metadata generated from app declarations;
+- enabled-state and permission/access-level control;
+- AndroidX 1.0.0-alpha12 runtime registration APIs for callback-backed functions.
+
+This is stronger than a static “tool schema” seed because Android now exposes function lifecycle/discovery/execution as explicit platform state.
+
+### Important boundary
+AppFunctions does **not** establish arbitrary Agent-generated native code, JIT compilation or a new CPU instruction stream.
+
+Build-time generated tool definitions are metadata/bindings.
+Runtime registration registers callback implementations/signatures whose lifetime is tied to the registering app process/context.
+
+### Product decision
+T6 is promoted:
+- **FRONTIER_SIGNAL → EMERGING_PRODUCT_TREND**
+- **WATCH → BENCHMARK_AND_PREPARE**
+
+Reason:
+PAPER-106 supplies direct mobile procedural-skill evidence and VENDOR-020 supplies an official Android product/platform path.
+
+Why no higher:
+AppFunctions remains experimental/limited-access and representative target-phone cost/energy/QoE data are missing.
+
+### Differentiation decision
+- New Direction: **none**
+- Direction links: **none**
+- Second differentiated Primary Bet: **unfilled**
+- uArch candidate: **none**
+
+AppFunctions raises the strongest software baseline. A T6 Direction now requires evidence for **genuinely dynamic executable artifacts** whose phone-local compile/validate/instantiate/interpreter/JIT/code-cache/sandbox costs remain material after AppFunctions + T5 + PT-A + C baselines.
+
+## Next
+Pressure-test MCP-SandboxScan and SpecBox only to the depth needed to close or preserve that narrow residual.

@@ -88,12 +88,12 @@ Current product-trend families:
 - **T3** Verified / transactional Agent actuation — PT-A
 - **T4** Always-on proactive Agent front-end — CG-07
 - **T5** Agent state lifecycle, reuse & locality — B-residual / CG-01 / R2
-- **T6** Local programmable Agent execution & sandboxed skills — frontier audit
+- **T6** Local programmable Agent execution & sandboxed skills — EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE; no Direction
 - **T7** Local multi-Agent concurrency & shared model/state — frontier audit
 - **T8** Cross-device Agent fabric & continuation — frontier audit
 
-T1–T5 can remain important product programs even when broad novelty is crowded.
-T6–T8 are not Directions until they survive structural-residual testing.
+T1–T6 can remain important product programs even when broad novelty is crowded.
+T6 is now an emerging Product Trend but still has no Direction; T7–T8 remain frontier signals until they survive structural-residual testing.
 
 Detailed view: `09-roadmap/product-evolution-map.md`.
 
@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 SkillDroid FULL_10Q complete; Android AppFunctions baseline next.**
+**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 product trend promoted after SkillDroid + Android AppFunctions; residual sandbox/runtime audit next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -239,13 +239,35 @@ Ownership pressure after FULL_10Q:
 
 Therefore T6 remains **FRONTIER_SIGNAL / WATCH** with no new Direction, no score/lane change and no uArch candidate.
 
-## Next
-1. **Deep vendor card: Android AppFunctions** — strongest current Android product baseline for local typed Agent tools.
-2. Compare SkillDroid-style procedural artifacts against native AppFunctions/Accessibility execution.
-3. Deep-read **MCP-SandboxScan** and **SpecBox** only if needed to define strongest isolation/lifecycle baselines.
-4. Then decide: NEW DIRECTION / MERGE INTO C-T5-PT-A / WATCH / KILL_DIFFERENTIATED_BET.
+## Android AppFunctions deep vendor baseline
+VENDOR-020 changes the **product** conclusion but not the differentiated portfolio.
 
-No Trend maturity, lane, score or uArch change after SkillDroid FULL_10Q.
+Official Android documentation now establishes:
+- Android 16+ platform + Jetpack AppFunctions for exposing app capabilities to Agent callers;
+- an OS-managed registry for discovery and local execution;
+- typed schemas/tool definitions generated from app declarations;
+- explicit enabled state and permission/access-level control;
+- experimental runtime registration in AndroidX 1.0.0-alpha12 / API 37, with callback lifetime tied to the registering process/context.
+
+Combined with PAPER-106 / SkillDroid, this is enough to promote T6 from **FRONTIER_SIGNAL / WATCH** to:
+- **EMERGING_PRODUCT_TREND**
+- **BENCHMARK_AND_PREPARE**
+
+Why not PRODUCTIZE / ESTABLISHED_PRODUCT_TREND:
+- AppFunctions remains an experimental preview / limited end-to-end access path;
+- SkillDroid is emulator/ADB evidence rather than target-phone native execution;
+- representative phone frequency, cost, energy and QoE are still missing.
+
+Differentiation remains conservative:
+- AppFunctions raises the strongest platform baseline for function discovery, typed execution, permissions and lifecycle;
+- runtime registration registers callbacks/functions; it is not evidence of arbitrary Agent-generated native/JIT code;
+- T6 still has **no Direction**, no score/lane change and no uArch candidate.
+
+## Next
+Pressure-test **MCP-SandboxScan** and **SpecBox** only as strongest runtime baselines for truly dynamic executable artifacts (WASM/DSL/bytecode/sandbox instances).
+
+The remaining discriminator is:
+> after AppFunctions + T5 state/version reuse + PT-A authority/verification + C lifecycle/resource control, is there a material target-phone compile/validate/instantiate/JIT/code-cache/sandbox-transition residual?
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 

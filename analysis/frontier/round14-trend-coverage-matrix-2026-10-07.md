@@ -13,7 +13,7 @@ Decision question: which 2027–2029 Agentic smartphone workload trends are alre
 | T3 Verified/transactional actuation | PT-A | HIGH | platform residual | OWNED / PRODUCTIZE |
 | T4 Always-on proactive front-end | CG-07 | MEDIUM-HIGH | architecture residual open | OWNED / BENCHMARK |
 | T5 State lifecycle/reuse/locality | B-residual + CG-01 + R2 + H-CAL lineage | MEDIUM-HIGH | fragmented residuals | PARTIALLY OWNED |
-| T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + generic sandbox baselines | MEDIUM-HIGH signal | residual unproven | **SEED TRIAGE COMPLETE** |
+| T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + generic sandbox baselines | HIGH product signal | dynamic-executable residual unproven | **EMERGING_PRODUCT_TREND / RESIDUAL AUDIT** |
 | T7 Local multi-Agent concurrency/shared state | C + T5/B-residual + PT-A | HIGH product signal | standalone residual closed | WATCH / KILL_DIFFERENTIATED_BET |
 | T8 Cross-device Agent fabric/continuation | partial PT-A/C overlap | UNKNOWN-MEDIUM | high generic-distributed-systems risk | AUDIT LATER |
 
@@ -109,3 +109,21 @@ Only after that decide:
 - MERGE INTO C/T5/PT-A;
 - WATCH;
 - KILL_DIFFERENTIATED_BET.
+
+
+## Round 14-B AppFunctions update
+T6 is no longer only a frontier product signal.
+
+PAPER-106 / SkillDroid shows procedural mobile-Agent skill materialization and replay.
+VENDOR-020 / Android AppFunctions shows that Android 16+ is productizing local typed Agent-callable function discovery/execution, including experimental runtime registration in AndroidX 1.0.0-alpha12.
+
+Product decision:
+- T6 → **EMERGING_PRODUCT_TREND**
+- posture → **BENCHMARK_AND_PREPARE**
+
+Differentiation decision:
+- no Direction;
+- no new Bet;
+- no uArch candidate.
+
+Residual audit is now deliberately restricted to dynamic executable artifacts that cannot be reduced to Android function registration/execution, T5 state/version lifecycle, PT-A authority/verification or C lifecycle/resource control.

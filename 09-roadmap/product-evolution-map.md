@@ -15,7 +15,7 @@ Purpose: separate likely product evolution from originality/whitespace.
 
 ## Executive view
 
-The current evidence supports **five product-relevant trend families already represented in the portfolio**, plus **three frontier families that deserve Round 14 coverage audit**.
+The current evidence supports **six product-relevant trend families**, while **two frontier families remain under Round 14 coverage audit**.
 
 A trend can remain important even when its broad novelty is crowded.
 
@@ -26,7 +26,7 @@ A trend can remain important even when its broad novelty is crowded.
 | T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | PT-A=RESIDUAL_RESEARCH | PT-A |
 | T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | CG-07=RESIDUAL_RESEARCH | CG-07 |
 | T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | B-residual/CG-01/R2=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | B-residual, CG-01, R2, R3 |
-| T6 Local programmable Agent execution & sandboxed skills | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
+| T6 Local programmable Agent execution & sandboxed skills | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | — (product trend confirmed; no Direction) | — |
 | T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | C/B-residual/PT-A=RESIDUAL_RESEARCH | C, B-residual, PT-A |
 | T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
 
@@ -185,8 +185,33 @@ Other baselines remain Android AppFunctions, MCP-SandboxScan and SpecBox.
 
 The missing evidence is still decisive: no reviewed source yet shows a representative phone where dynamic executable artifacts create material interpreter/JIT/code-cache/sandbox-transition cost after native Android function/action execution and existing C/T5/PT-A controls.
 
+### Android AppFunctions baseline + product decision
+Official Android AppFunctions materially changes the product-side confidence:
+- Android 16+ exposes an OS/Jetpack path for Agent discovery and local execution of app capabilities;
+- the OS acts as a registry;
+- declarations produce typed tool/function metadata;
+- access is controlled by permissions, enabled state and access level;
+- AndroidX 1.0.0-alpha12 (2026-09-23) adds experimental runtime function registration/callback APIs.
+
+Together with SkillDroid, T6 now clears the **product-trend** threshold.
+
+### Product posture
+**BENCHMARK_AND_PREPARE**
+
+T6 is promoted to **EMERGING_PRODUCT_TREND**, not ESTABLISHED_PRODUCT_TREND:
+AppFunctions is still experimental/limited-access and target-phone workload economics are missing.
+
+### Research boundary
+No Direction is created.
+
+AppFunctions is strong negative pressure on broad differentiation:
+ordinary local Agent-tool discovery, schema, authority, enablement and function execution are becoming platform features.
+
+The open residual is narrower:
+genuinely dynamic executable artifacts whose compile/validate/instantiate/interpreter/JIT/code-cache/sandbox costs remain material on representative phones after native platform baselines.
+
 ### Round 14 action
-**AUDIT — SkillDroid deep-read complete; Android AppFunctions strongest-baseline card next**
+**PRODUCT TREND CONFIRMED — residual runtime/sandbox audit continues**
 
 ---
 
@@ -242,9 +267,9 @@ Current portfolio should not be read as:
 “only A is worth doing.”
 
 It should be read as:
-- **T1–T5 are already meaningful product-evolution trends** with different originality levels.
+- **T1–T6 are meaningful product-evolution trends** with different maturity/originality levels.
 - **A is currently the only differentiated Primary Bet.**
 - C / PT-A / CG-06 / CG-07 / CG-01 can remain important product programs without being original Primary Bets.
-- T6–T8 are frontier trend candidates, not yet Directions.
+- T6 is an emerging Product Trend with no Direction; T7–T8 remain frontier trend candidates.
 
 The final leadership roadmap should show both product importance and differentiation separately.
