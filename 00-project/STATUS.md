@@ -33,6 +33,8 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - 568 generated reverse edges
 - projection refreshed after Frontier Round 12 H-CAL closure
 - last full cutover QA hard errors: 0
+- Round 12 Graph QA: **PASS** — run `37599649724`, job `112720612564`
+- Round 12 QA squash merge: `7fa99ba2ae56a997e6d35bd68b508623dd2d577a`
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
