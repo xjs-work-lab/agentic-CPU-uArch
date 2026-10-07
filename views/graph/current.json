@@ -428,6 +428,14 @@
       "claim_kind": "OBSERVATION"
     },
     {
+      "id": "CLM-MEM-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-MEM-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
       "id": "CLM-MOBILE-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-MOBILE-001.md",
@@ -1249,6 +1257,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-MEM-006-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-MEM-006-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-PTA-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-PTA-001-A.md",
@@ -1808,6 +1822,12 @@
       "id": "PAPER-074",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-074/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-075",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-075/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -3532,6 +3552,12 @@
       "source": "CLM-MEM-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-MEM-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-MEM-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-MEM-006-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5521,6 +5547,18 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-MEM-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-075",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-006-A",
+      "relation": "SUPPORT",
+      "target": "CLM-MEM-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-PTA-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-038",
@@ -7189,6 +7227,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-075",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -7838,8 +7882,8 @@
     }
   ],
   "counts": {
-    "nodes": 296,
-    "canonical_semantic_edges": 490,
-    "generated_reverse_edges": 490
+    "nodes": 299,
+    "canonical_semantic_edges": 492,
+    "generated_reverse_edges": 492
   }
 }
