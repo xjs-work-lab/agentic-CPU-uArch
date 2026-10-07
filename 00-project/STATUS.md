@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 296 canonical nodes
-- 490 canonical semantic edges
-- 490 generated reverse edges
-- projection refreshed after Frontier Round 6 H-PAM recurrence test
+- 299 canonical nodes
+- 492 canonical semantic edges
+- 492 generated reverse edges
+- projection refreshed after Frontier Round 7 H-PAM software-baseline pressure
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
