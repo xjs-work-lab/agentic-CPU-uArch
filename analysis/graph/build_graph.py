@@ -100,7 +100,7 @@ def build_projection(root: Path):
     node_view=[]
     for n in nodes:
         v={"id":n["id"],"type":n["type"],"path":n["_path"]}
-        for k in ("record_state","status","claim_kind","lifecycle","direction_class","investment_lane","competitive_action","evidence_maturity","trend_maturity","product_posture","coverage_state","roadmap_kind"):
+        for k in ("record_state","status","claim_kind","lifecycle","direction_class","investment_lane","competitive_action","evidence_maturity","trend_maturity","product_posture","coverage_state","roadmap_kind","kill_scope"):
             if k in n: v[k]=n[k]
         if "trend_ids" in n: v["trend_ids"]=n["trend_ids"]
         if "direction_links" in n: v["direction_links"]=n["direction_links"]
