@@ -4,6 +4,7 @@ type = "DECISION_EVENT"
 subject_kind = "ROADMAP"
 subject_id = "ROADMAP-CURRENT"
 event_type = "KILL_STANDALONE_HYPOTHESIS_MERGE_WORKLOAD_EVIDENCE"
+kill_scope = "KILL_DIFFERENTIATED_BET"
 effective_date = "2026-10-07"
 transaction_id = "TXN-20261007-FRONTIER-ROUND12-01"
 trigger_claims = ["CLM-CAL-001", "CLM-CAL-002", "CLM-CAL-003", "CLM-CAL-004", "CLM-CAL-005"]
@@ -17,6 +18,8 @@ H-CAL — narrow analysis hypothesis awaiting direct mobile residual pressure.
 
 ## New state
 **H-CAL — KILLED AS STANDALONE DIRECTION / SECOND-BET CANDIDATE.**
+
+Canonical Kill scope: **KILL_DIFFERENTIATED_BET**.
 
 Contiguous Agent learning remains an important workload and evaluation scenario.
 

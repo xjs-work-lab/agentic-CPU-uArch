@@ -4,6 +4,7 @@ type = "DECISION_EVENT"
 subject_kind = "ROADMAP"
 subject_id = "ROADMAP-CURRENT"
 event_type = "KILL_STANDALONE_HYPOTHESIS_MERGE_WORKLOAD_EVIDENCE"
+kill_scope = "KILL_DIFFERENTIATED_BET"
 effective_date = "2026-10-07"
 transaction_id = "TXN-20261007-FRONTIER-ROUND8-01"
 trigger_claims = ["CLM-MOBILE-004", "CLM-MEM-001", "CLM-AGENT-010", "CLM-AGENT-011", "CLM-MEM-002", "CLM-MOBILE-005", "CLM-MEM-003", "CLM-MOBILE-006", "CLM-MOBILE-007"]
@@ -17,6 +18,8 @@ H-PAM — KEEP / NARROW analysis hypothesis; recurrence PASS; lower-level mobile
 
 ## New state
 H-PAM — **KILLED AS STANDALONE SECOND-BET / DIRECTION CANDIDATE**.
+
+Canonical Kill scope: **KILL_DIFFERENTIATED_BET**.
 
 Persistent Agent memory remains an important workload and evaluation scenario.
 

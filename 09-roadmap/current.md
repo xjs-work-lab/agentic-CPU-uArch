@@ -74,9 +74,11 @@ The reviewed public source set still lacks a direct commercial-phone experiment 
 Second differentiated Primary Bet remains **UNFILLED**.
 
 
-## Product Evolution Map — new governing view
+## Product Evolution Map — cross-reference only
 
-Round 14 now separates **product value** from **research novelty**.
+This file is the canonical **Differentiation Portfolio**. The canonical Product Evolution management view is `09-roadmap/product-evolution-map.md`.
+
+Round 14 separates **product value** from **research novelty**.
 
 > **Prior art constrains novelty, not product relevance.**
 
@@ -110,7 +112,7 @@ Possible outcomes:
 - MERGE INTO C
 - MERGE INTO T5/B
 - WATCH
-- KILL differentiated novelty
+- KILL_DIFFERENTIATED_BET
 
 No product trend is killed merely because prior art exists.
 
@@ -171,7 +173,7 @@ FULL_10Q in order:
 2. EcoAgent
 
 Then issue an ownership/residual decision:
-NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL differentiated novelty.
+NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL_DIFFERENTIATED_BET.
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 
