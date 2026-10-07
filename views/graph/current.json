@@ -7143,6 +7143,12 @@
     },
     {
       "source": "EC-PTA-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-102",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-PTA-003-B",
       "relation": "SUPPORT",
       "target": "CLM-PTA-003",
       "provenance": "CANONICAL_SEMANTIC"
@@ -9122,6 +9128,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-102",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-PTA-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -9826,7 +9838,7 @@
   ],
   "counts": {
     "nodes": 383,
-    "canonical_semantic_edges": 609,
-    "generated_reverse_edges": 609
+    "canonical_semantic_edges": 610,
+    "generated_reverse_edges": 610
   }
 }
