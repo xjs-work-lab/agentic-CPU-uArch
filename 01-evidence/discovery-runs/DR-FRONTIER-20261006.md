@@ -375,3 +375,26 @@ Decision Event:
 
 Overall second differentiated Primary Bet remains unfilled.
 Next frontier status: **UNASSIGNED — perform frontier reset outside memory and generic system-control families**.
+## Round 9 — Confidential Agent execution / isolation coverage
+
+FULL_10Q completed:
+- PAPER-080 AgenTEE — EuroMLSys 2026
+- PAPER-081 Aster — MobiSys 2026
+- PAPER-082 CAEC — EuroS&P 2026
+- PAPER-083 PORTAL — IEEE S&P 2025
+- PAPER-084 IsolateGPT — NDSS 2025
+- PAPER-085 CaMeL — IEEE SaTML 2026
+- PAPER-086 multi-CaMeL — arXiv preprint 2026-10-05
+
+Result:
+- Agent trust-domain / third-party tool / provenance security is a real workload requirement;
+- app/tool/Agent identity, permissions, provenance and capabilities have strong runtime/software capture;
+- Android pVM lifecycle, attestation, confidential inter-realm sharing and secure device I/O have strong generic Arm CCA substrate.
+
+Decision:
+**SECURITY / CONFIDENTIAL EXECUTION = PLATFORM REQUIREMENT + RESEARCH RADAR; NOT A HYPOTHESIS OR DIRECTION.**
+
+No portfolio score/lane changes.
+Second differentiated Primary Bet remains unfilled.
+
+Reopen only on direct smartphone evidence of software/CCA insufficiency or material secure-execution QoE/energy/memory overhead.
