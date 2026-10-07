@@ -5,22 +5,14 @@ record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
 target_id = "CLM-PTA-002"
-warrant = "PhoneHarness independently supports verification by actual side effects rather than plausible textual completion."
-scope = "mobile outcome verification"
-boundary = "Does not establish one universal verification implementation."
+warrant = "PhoneHarness demonstrates value for trace-backed, observable side-effect completion in mixed phone workflows."
+scope = "outcome-receipt / benchmark verification"
+boundary = "Many verifiers are benchmark/task-side; the study does not isolate runtime verification as the sole cause of the overall pass-rate gain."
 [[premises]]
 ref_kind = "SOURCE"
 ref_id = "PAPER-040"
-locator = "side-effect-based execution verification"
+locator = "trace-backed verifier protocol and task pass-rate evaluation"
 +++
 
 # EC-PTA-002-C
-
-## Inference
-`PAPER-040` → **SUPPORT** → `CLM-PTA-002`
-
-## Warrant
-PhoneHarness independently supports verification by actual side effects rather than plausible textual completion.
-
-## Boundary
-Does not establish one universal verification implementation.
+PAPER-040 → SUPPORT → CLM-PTA-002.

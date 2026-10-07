@@ -3,27 +3,26 @@ id = "PAPER-037"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+independence_assessment = "INDEPENDENT_GROUP"
 title = "ClawMobile: Rethinking Smartphone-Native Agentic Systems"
 primary_url = "https://arxiv.org/abs/2602.22942"
 priority = "P0"
-evidence_role = "direct mobile hybrid actuation + verification/recovery evidence"
-origin_paths = ["03-academic/paper-10q/PAPER-037.md"]
-origin_blobs = ["d35d7905769e8647180303fa13e57ca23f018926"]
-authors = ["Hongchao Du", "Shangyu Wu", "Qiao Li", "Riwei Pan", "Jinheng Li", "Youcheng Sun", "et al."]
-venue = "arXiv preprint · 2026"
+evidence_role = "real-phone heterogeneous actuation + verify/recover runtime evidence"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+authors = ["Hongchao Du", "Shangyu Wu", "Qiao Li", "Riwei Pan", "Jinheng Li", "Youcheng Sun", "Chun Jason Xue"]
+venue = "ACM EuroMLSys 2026"
 +++
 
-# PAPER-037 — ClawMobile: Rethinking Smartphone-Native Agentic Systems
+# PAPER-037 — ClawMobile
 
 ## 30-second read
-- **Why it matters:** Pixel 9 / Android 16 evidence directly shows heterogeneous backends plus explicit verification/recovery as a practical smartphone-Agent substrate.
-- **What it establishes:** Hybrid structured/UI execution with verification can improve robustness on evaluated tasks.
-- **Boundary:** Small six-task evaluation; does not establish a universally optimal routing policy or CPU/uArch residual.
-- **Primary source:** https://arxiv.org/abs/2602.22942
+- Real Google Pixel 9 / Android 16 evidence for a phone-resident Agent runtime coordinating deterministic backends and GUI automation.
+- Six real-life tasks show reliability value from backend selection plus explicit progress verification/recovery.
+- The runtime executes on the phone, but the paper explicitly states **model inference is remote**; this is not on-device-LLM compute evidence.
+- Evaluation is small and the DroidRun comparator is host-tethered, so do not overgeneralize the 100% completion result.
+- Primary source: https://arxiv.org/abs/2602.22942
 
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN`.
+See [deep.md](deep.md) for EDP v1 FULL_10Q.

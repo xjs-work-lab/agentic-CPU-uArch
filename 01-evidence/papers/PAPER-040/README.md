@@ -3,27 +3,26 @@ id = "PAPER-040"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+independence_assessment = "INDEPENDENT_GROUP"
 title = "PhoneHarness: Harnessing Phone-Use Agents through Mixed GUI, CLI, and Tool Actions"
 primary_url = "https://arxiv.org/abs/2606.14832"
 priority = "P0"
-evidence_role = "direct phone mixed-action + side-effect verification evidence"
-origin_paths = ["03-academic/paper-10q/PAPER-040.md"]
-origin_blobs = ["38ecd3d66bbbf0a15d0887eb320c08990c3b8179"]
-authors = ["Chenxin Li", "Zhengyao Fang", "Zhengyang Tang", "Pengyuan Lyu", "Xingran Zhou"]
+evidence_role = "mixed phone-action harness + trace/verifier platform evidence"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+authors = ["Chenxin Li", "Zhengyao Fang", "Zhengyang Tang", "Pengyuan Lyu", "Xingran Zhou", "Xin Lai", "Fei Tang", "Liang Wu", "Yiduo Guo", "Weinong Wang", "Junyi Li", "Yi Zhang", "Yang Ding", "Huawen Shen", "Sunqi Fan", "Shangpin Peng", "Zheng Ruan", "Anran Zhang", "Benyou Wang", "Chengquan Zhang", "Han Hu"]
 venue = "arXiv preprint · 2026"
 +++
 
-# PAPER-040 — PhoneHarness: Harnessing Phone-Use Agents through Mixed GUI, CLI, and Tool Actions
+# PAPER-040 — PhoneHarness
 
 ## 30-second read
-- **Why it matters:** Direct mobile evidence that mixed action surfaces and effect-based verification materially improve important phone task classes.
-- **What it establishes:** Mixed GUI/CLI/tool execution is a must-have platform direction and side-effect verification is valuable.
-- **Boundary:** Deterministic-first routing is not proven globally optimal.
-- **Primary source:** https://arxiv.org/abs/2606.14832
+- A phone-agent harness combining device-side CLI, delegated GUI control and host-side MCP-style tools, with trace-backed task verification.
+- 124-task scored split: 75.0% overall vs 62.1% Seed2.0-Pro and 62.1% MobileClaw; strongest gains are device/system and tool-assisted tasks, not single-app GUI.
+- Current reproducible reference uses Android emulator + Termux/ADB and remote/host proxies; some capabilities are not purely on-device.
+- The paper supports mixed-action orchestration and verifiable outcomes, but does **not isolate verification as the sole cause** of the gain.
+- Primary source: https://arxiv.org/abs/2606.14832
 
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN`.
+See [deep.md](deep.md) for EDP v1 FULL_10Q.

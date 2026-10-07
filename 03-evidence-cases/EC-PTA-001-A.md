@@ -5,22 +5,14 @@ record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
 target_id = "CLM-PTA-001"
-warrant = "PAPER-038 directly shows that action modality changes mobile benchmark success, steps and accessible state."
-scope = "mobile action modality"
-boundary = "Does not prove dynamic routing optimality."
+warrant = "PAPER-038 shows that structured CLI/ADB action surfaces change benchmark reachability, success and step count relative to GUI-only execution."
+scope = "mobile benchmark action-surface capability"
+boundary = "ADB and benchmark/backend observability can exceed retail-app authority; supports capability heterogeneity, not universal CLI superiority."
 [[premises]]
 ref_kind = "SOURCE"
 ref_id = "PAPER-038"
-locator = "CLI vs GUI mobile benchmark"
+locator = "AndroidWorld/MobileWorld, CLI-Advantage Suite, oracle CLI solvability"
 +++
 
 # EC-PTA-001-A
-
-## Inference
-`PAPER-038` → **SUPPORT** → `CLM-PTA-001`
-
-## Warrant
-PAPER-038 directly shows that action modality changes mobile benchmark success, steps and accessible state.
-
-## Boundary
-Does not prove dynamic routing optimality.
+PAPER-038 → SUPPORT → CLM-PTA-001.

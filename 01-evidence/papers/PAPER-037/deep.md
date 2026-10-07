@@ -1,92 +1,104 @@
-> V1 semantic source copied from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> The compact README owns the V2.2 Source metadata.
+# PAPER-037 — ClawMobile — EDP v1 FULL_10Q
 
-# PAPER-037 — ClawMobile: Rethinking Smartphone-Native Agentic Systems
-
-## Source
-- Paper: https://arxiv.org/abs/2602.22942
-- Authors: Hongchao Du, Shangyu Wu, Qiao Li, Riwei Pan, Jinheng Li, Youcheng Sun, et al.
-- Venue/status: arXiv preprint, 2026
-- Target: Google Pixel 9 / Android 16
-- Project relevance: second-Bet structural-gap audit; hybrid actuation; verification/recovery
-- Priority: P0
+Re-reviewed: 2026-10-07
 
 ## Q1 — Problem + target mapping
-Real smartphone Agents fail not only because of planning quality, but because device execution is heterogeneous and unstable:
-- API/command paths are deterministic but incomplete;
-- GUI/UI-Agent paths are flexible but uncertain;
-- asynchronous launches, permissions and transient UI changes create silent/partial failures.
+Smartphone Agents must execute across fragmented interfaces whose reliability differs: structured device/system APIs are deterministic but incomplete, while GUI automation is broad but brittle to timing, UI drift, prompts and app state.
+
+ClawMobile makes this an explicit runtime problem: a high-level orchestrator selects among deterministic backends and semantic UI control, then checks progress and recovers.
+
+Project mapping: direct PT-A smartphone runtime evidence.
 
 ## Q2 — Novelty / new-regime relevance
-ClawMobile makes multiple smartphone action backends explicit and dynamically selects among them, with a deterministic-first policy and explicit verification/recovery.
+The architecture separates probabilistic planning from bounded control backends and makes backend selection iterative rather than one-shot.
 
-Classification: **Agentic-native mobile runtime problem**, but the broad hybrid-backend idea is not unique after 2026.
+Classification: **Agent-native mobile runtime integration**, but the individual mechanisms—tool routing, ADB/Termux APIs, GUI agents, verification—are not globally novel.
 
 ## Q3 — Falsifiable hypothesis
-A smartphone Agent runtime that prefers deterministic backends when possible and verifies outcomes after execution can improve real-task reliability versus a single GUI-centric backend.
+A hierarchical phone runtime that preferentially uses structured backends and explicitly verifies progress should complete heterogeneous mobile tasks more reliably than a single GUI backend or a naive hybrid runtime.
 
-## Q4 — Competing routes
-- pure GUI Agents;
-- CLI/ADB Agents;
-- typed/lightweight executors;
-- mixed GUI/CLI/tool harnesses;
-- learned hybrid orchestration.
+## Q4 — Research lineage / competing route
+Relevant routes:
+- pure GUI/mobile agents such as DroidRun;
+- tool/API-first mobile control;
+- later mixed-action systems such as PhoneHarness;
+- learned routing such as HybridCUA.
+
+ClawMobile is an independent MBZUAI-led line relative to the other PT-A core sources.
 
 ## Q5 — Mechanism / control point
-Inputs:
-- task intent;
-- available backend/capability;
-- current device state;
-- execution result.
+`task → orchestrator → capability lookup/backend choice → bounded backend result → device-state re-observation → completion test → retry/replan/reselect`
 
-Decision:
-- structured API/command first;
-- semantic UI Agent when needed;
-- direct UI fallback.
+Backends include:
+- ADB/system commands;
+- Termux API;
+- DroidRun semantic UI backend.
 
-Feedback:
-- re-observe device state;
-- verify progress;
-- retry/replan/reselect backend on failure.
+The maintained implementation exposes progressive capabilities, so availability/authority is part of the effective action surface.
 
-Layer:
-Agent runtime / mobile control framework.
+## Q6 — Experiment design + quantitative results
+Device: Google Pixel 9, Android 16.
 
-## Q6 — Experiment
-Pixel 9 / Android 16, six real-life tasks, same GPT-5.2 model.
+Agents:
+- DR = DroidRun;
+- CM-w/o-DR = ClawMobile without advanced UI backend;
+- CM = full ClawMobile.
 
-Reported table:
-- ClawMobile reaches 100% completion on all six listed tasks;
-- DroidRun varies from 33–100%;
-- ClawMobile is, on average, 57.5 s slower than DroidRun.
+All use GPT-5.2 as the underlying model.
 
-This is evidence of a reliability/latency tradeoff, not a blanket efficiency win.
+Six tasks:
+1. Settings dark theme: completion 100/100/100%; 26/22/21 s.
+2. Chrome gold price: 73/100/100%; 26/67/67 s.
+3. Install RedNote: 33/100/100%; 29/232/117 s.
+4. YouTube play video / skip ad: 100/80/100%; 66/600/88 s.
+5. YouTube comment: 85/50/100%; 121/600/235 s.
+6. Cross-app Premier League summary: 73/100/100%; 60/219/145 s.
 
-## Q7 — Artifact
-Official repository:
-https://github.com/clawmobile/clawmobile
+Full ClawMobile reaches 100% reported completion on this small set but is on average slower than DroidRun.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** Hybrid control + explicit verification improves robustness on the small evaluated task set.
+## Q7 — Artifact / reproducibility
+Strengths:
+- real retail-class Android device;
+- open-source implementation;
+- explicit phone-side runtime;
+- action backend outputs are machine-readable.
 
-**Boundary:** six tasks are insufficient to prove an optimal general scheduling policy.
+Important deployment correction:
+the paper states: **ClawMobile runs locally, while model inference is performed remotely**.
+The runtime asks for model-provider/API credentials. Therefore “on-device runtime” must not be interpreted as “on-device GPT-5.2 inference.”
 
-## Q9 — Project contribution
-This is strong evidence that hybrid actuation and verification are **good platform directions**.
+Comparator asymmetry:
+DroidRun runs on a host machine connected over USB, while ClawMobile runs on the phone.
 
-It also weakens novelty of a broad second Bet based on:
-> API/UI backend selection + verify/recover.
+## Q8 — Evidence vs alternative explanations
+Demonstrated:
+- heterogeneous backend coordination is practical on a real phone;
+- explicit state re-observation/recovery is part of a successful runtime.
 
-ClawMobile itself states that formal hybrid scheduling under cost/reliability remains open.
+Not isolated:
+- exact causal contribution of verification vs backend capability vs orchestration;
+- energy/power benefit;
+- local-model benefit.
+
+The six-task set is too small to establish a universal reliability gain.
+
+## Q9 — Decision contribution
+Supports PT-A as a **platform/runtime track**.
+
+It does not support:
+- a CPU/uArch mechanism;
+- on-device model execution;
+- universal deterministic-first optimality.
+
+The strongest reusable lesson is a capability-aware actuation contract with bounded results and explicit progress checks.
 
 ## Q10 — Next action
-- KEEP as P0 industry-direction evidence.
-- Treat hybrid actuation as Platform Track candidate, not automatically a Primary Bet.
-- Any differentiated project proposal must beat deterministic-first + explicit verification.
+KEEP P0.
+Use in PT-A as real-phone feasibility evidence.
+Compare future PT-A against learned routing and adversarial context mutation, not only GUI-only.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for evaluated mobile tasks; broader policy remains STRUCTURAL_SIGNAL
-- Decision impact: supports Platform Track; narrows second-Bet whitespace
-- Open questions: scale, backend-selection policy, energy/system cost
+- Evidence maturity: **SYSTEM_VALUE for phone runtime integration**
+- Decision impact: KEEP PT-A; narrow deployment interpretation
+- Open questions: larger task set, local-model overhead, permission/authority semantics, security under state mutation
 - Primary source: https://arxiv.org/abs/2602.22942
-- Artifact: https://github.com/clawmobile/clawmobile

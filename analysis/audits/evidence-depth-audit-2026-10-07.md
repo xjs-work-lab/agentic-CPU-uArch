@@ -2,89 +2,93 @@
 
 Date: 2026-10-07
 Audit mode: EDP v1 rescue
-Primary scope: paper sources directly grounding A / PT-A / C / CG-06 / CG-07
-Full current-ROADMAP warning scope: also includes B-residual / R1 / R2 / R3
-Historical closed-lane Kill audit: pending later phase
 
-## Executive result
-The five active/differentiated/platform lanes A / PT-A / C / CG-06 / CG-07 are grounded by **33 unique paper Sources**.
+## Baseline at Rescue start
+The five primary active/platform lanes A / PT-A / C / CG-06 / CG-07 were grounded by **33 unique paper Sources**.
 
 At audit start:
-- **19 / 33** already carried FULL_10Q-class review metadata;
-- **14 / 33** had no `review_depth` metadata;
-- **13 of those 14** are P0 sources.
+- 19 / 33 carried FULL_10Q-class metadata;
+- 14 / 33 lacked `review_depth`;
+- 13 / 14 were P0.
 
-This is material historical evidence debt.
+## Rescue progress
 
-After Rescue Round 1 re-reads PAPER-009 / 041 / 051 / 052, the five-lane debt falls to **10 papers**.
+### Rescue-0 complete
+PAPER-009 / 041 / 051 / 052 revalidated.
 
-## Full current-ROADMAP QA result
-The new warning-only EDP graph check follows every Direction scheduled by the current ROADMAP, not only the five primary lanes.
+### Rescue-1A complete — PT-A
+PAPER-037 / 038 / 039 / 040 / 042 revalidated under EDP v1.
 
-After Round 1, Graph QA reports **22 decision-critical paper warnings**:
-- **10** in A / PT-A;
-- **12 additional** in current conditional-reserve lanes B-residual / R1 / R2;
-- **0 paper-depth warnings** in C / CG-06 / CG-07 after Rescue-0;
-- R3 currently relies on patents rather than paper Sources, so it is outside this paper-only warning count.
+Two new decision-critical FULL_10Q sources were added:
+- PAPER-101 — Action Rebinding / CCS 2026
+- PAPER-102 — VeriGUI / ACL 2026
 
-Additional current-roadmap paper debt:
+These additions expand the current five-lane paper set from 33 to **35**, but create no new depth debt because both enter as EDP v1 FULL_10Q.
+
+## Current primary-lane debt
+Only **5 papers** remain:
+- PAPER-013 — A
+- PAPER-015 — A
+- PAPER-043 — A
+- PAPER-044 — A
+- PAPER-050 — A
+
+PT-A now has **zero current paper-depth warnings**.
+
+## Whole current-ROADMAP debt
+Reserve-lane paper debt remains:
 - PAPER-008 — R2
 - PAPER-028 / 029 / 030 / 031 / 032 / 033 / 034 / 035 — B-residual
 - PAPER-047 / 048 — R1
 - PAPER-049 — R2
 
-This distinction matters:
-> **10 is the remaining debt in the five primary active lanes; 22 is the remaining paper-depth warning backlog across the whole current ROADMAP.**
+Expected warning state after Rescue-1A:
+- primary lanes: **5**
+- reserve lanes: **12**
+- whole current ROADMAP: **17**
 
-## Risk tiers
+R3 remains patent-heavy and must be audited through the patent direct-claim gate separately.
 
-| Tier | Sources | Why |
-|---|---|---|
-| Rescue-0 | PAPER-009, PAPER-051, PAPER-052 | direct C / CG-06 CPU↔NPU / heterogeneous-execution / CPU-matrix boundary |
-| Rescue-0 | PAPER-041 | affects both A and PT-A Effect/Commit strongest-baseline semantics |
-| Rescue-1A | PAPER-037, 038, 039, 040, 042 | core PT-A mobile action-modality / execution-substrate evidence |
-| Rescue-1B | PAPER-013, 015, 043, 044, 050 | early A workload/proactive/speculation evidence |
-| Rescue-2 | PAPER-008, 028–035, 047–049 | current conditional-reserve decision evidence |
+## Rescue-1A findings that materially change interpretation
 
-PAPER-009 / 041 / 051 / 052 are handled in Evidence Rescue Round 1.
+### PAPER-037
+Real Pixel 9 runtime, but **remote model inference**. Do not treat as local-LLM compute/energy evidence.
 
-## Direction-level audit
+### PAPER-038
+CLI/ADB strongly changes task reachability and steps, but benchmark/rooted-emulator/backend access can exceed retail-phone authority.
 
-| Lane | Depth risk | Current assessment |
-|---|---|---|
-| A | MEDIUM-HIGH | early workload / transaction / speculation sources need rescue; later strongest-baseline sources 056/058/063–068/100 are FULL_10Q |
-| PT-A | HIGH | several direct mobile/hybrid execution sources 037–042 are not yet EDP v1 deep-read |
-| C | LOW-MEDIUM after Round 1 | PAPER-009/051 rescued; later 060–068 and direct-phone HeRo 098 provide strong depth |
-| CG-06 | MEDIUM after Round 1 | PAPER-009/052 rescued; later 057/059/097/098 provide strong baseline pressure |
-| CG-07 | LOW for papers | PAPER-087/088 are FULL_10Q; vendor/source-type audit remains pending |
-| B-residual | HIGH | eight paper Sources currently trigger EDP warnings |
-| R1 | MEDIUM-HIGH | PAPER-047/048 trigger EDP warnings |
-| R2 | MEDIUM-HIGH | PAPER-008/049 trigger EDP warnings |
-| R3 | N/A for paper gate | current evidence is patent-heavy; patent deep-review gate must be audited separately |
+### PAPER-039
+More action surfaces are not automatically beneficial.
+Untrained GUI+CLI drops OSWorld accuracy from 38.8% to 18.4%; selective SFT/RL is required.
 
-## Important interpretation
-A missing `review_depth` field does not prove the source was unread. Several Sources have migrated V1 `deep.md` files.
+### PAPER-040
+Mixed-action/trace-verifier harness is valuable, but headline 75.0% pass rate combines capabilities, routing, controller quality and verifier stack. Verification is not isolated causally.
 
-However, the Round-1 sample shows those older deep files often lack today's required:
-- causal/ablation reconstruction;
-- alternative explanation analysis;
-- explicit external-validity boundary;
-- exact distinction between generic software value and Agent/uArch residual.
+### PAPER-042
+UIAnchor is strong peer-reviewed mobile system evidence, but current audited primary material does not support attributing its 75.5% latency / 52.4% energy improvements specifically to verification/recovery.
 
-Therefore migration-era `deep.md` is not automatically accepted as EDP v1 FULL_10Q.
+### PAPER-101
+Adds decisive negative evidence: observation and action recipient can diverge. Recovery/confirmation alone can be insufficient.
 
-## Rescue-0 status
-- PAPER-009 — reread complete / wording narrowed
-- PAPER-041 — reread complete / runtime-legality boundary narrowed
-- PAPER-051 — reread complete / Agent-aware gain decomposition clarified
-- PAPER-052 — reread complete / CPU-vs-NPU inference boundary strengthened
+### PAPER-102
+Adds causal evidence that action-effect verification training improves recovery, while raising the software baseline.
 
-## Next audit waves
-1. **Rescue-1A:** PT-A PAPER-037/038/039/040/042.
-2. **Rescue-1B:** A PAPER-013/015/043/044/050.
-3. Re-run active-lane decision backtrace.
-4. **Rescue-2:** B-residual / R1 / R2 paper debt.
-5. Audit R3 and other decision-critical patents using direct claim review.
-6. Only then audit historical closed/Kill lanes H-FIB / H-PAM / H-CAL / security under EDP v1.
+## Current risk by lane
 
-Frontier Round 14 remains paused until the primary active lanes are evidence-depth clean; final portfolio convergence should wait until the full current-roadmap audit is also complete.
+| Lane | Current paper-depth risk |
+|---|---|
+| A | HIGH — five early sources remain |
+| PT-A | LOW for paper depth — Rescue-1A complete |
+| C | LOW |
+| CG-06 | MEDIUM for final target-phone residual, but paper-depth debt cleared |
+| CG-07 | LOW for papers; vendor audit pending |
+| B-residual | HIGH |
+| R1 | MEDIUM-HIGH |
+| R2 | MEDIUM-HIGH |
+| R3 | patent audit required |
+
+## Next
+1. Rescue-1B: PAPER-013 / 015 / 043 / 044 / 050.
+2. Rerun five-lane decision backtrace.
+3. Then Rescue-2 reserves and patent evidence.
+4. Frontier Round 14 only after the five primary lanes are depth-clean.

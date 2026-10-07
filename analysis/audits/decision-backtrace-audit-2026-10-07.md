@@ -1,98 +1,72 @@
-# Decision Backtrace Audit — Round 1
+# Decision Backtrace Audit — Rescue state
 
 Date: 2026-10-07
 Method: roadmap → direction → claim → evidence case → source → mechanism/experiment
-Scope in this file: A / PT-A / C / CG-06 / CG-07
-Reserve-lane backtrace: scheduled after primary-lane rescue
 
 ## A — Agent Semantic Progress Control
 Current decision: PRIMARY_BET / 82.5 / SIMULATION_SUPPORT.
 
-Depth risk:
-- early proactive/speculation sources are not all EDP v1 reviewed;
-- PAPER-041 previously risked being read too broadly as proving generic runtime derivability of Effect/Commit legality.
+Outstanding depth risk:
+PAPER-013 / 015 / 043 / 044 / 050 remain pre-EDP-depth sources.
 
-Round-1 correction:
-Cordon supports **conditional runtime construction/enforcement** of substantial commit/effect legality when tools/effects are mediated and observable and policy/authority metadata are available.
-It does not establish universal derivability of semantic legality.
+Therefore A is **not yet depth-clean**.
 
-Impact:
-- A remains PRIMARY_BET;
-- B4-TX remains valid but the legality baseline is explicitly conditional;
-- differentiated burden remains DemandState / RequiredProgress beyond reconstructible/runtime-supplied facts.
-
-## PT-A — Verified Actuation Runtime
+## PT-A — Heterogeneous Verified Agent Actuation Runtime
 Current decision: PLATFORM_TRACK / 80.0 / SYSTEM_VALUE.
 
-Depth risk: HIGH.
-PAPER-037/038/039/040/042 still require rescue.
+### Rescue-1A backtrace result
+PT-A survives, but its control contract is reframed.
 
-Round-1 correction from Cordon:
-transactional containment is strong but bounded by mediation/observability; opaque/bypassing tools remain outside full containment.
+Previous shorthand:
+> heterogeneous GUI/API/CLI/tool routing + verification/recovery
 
-Impact:
-No lane/score change. PT-A still owns the practical substrate for explicit effect metadata, verification and bounded recovery.
+Current evidence-supported formulation:
+> **capability/authority-aware routing → bounded actuation → fresh target/context binding → OutcomeReceipt → action-effect verification → bounded recovery**
+
+### Why this changed
+- PAPER-038: structured surfaces matter, but ADB/benchmark privileges make authority/entitlement part of the real control point.
+- PAPER-039: naive GUI+CLI access can materially worsen accuracy; selective routing is a learned/software baseline.
+- PAPER-040: mixed-action value is real but not attributable solely to verification.
+- PAPER-042: complete UIAnchor system is strong; component attribution remains bounded.
+- PAPER-102: verification/recovery has causal software value.
+- PAPER-101: observation→action TOCTOU shows post-action verification alone does not prove intended-target delivery.
+
+### PT-A decision
+KEEP:
+- PLATFORM_TRACK
+- 80.0
+- SYSTEM_VALUE
+
+No promotion:
+- SOFTWARE_INSUFFICIENCY not passed.
+- context-bound actuation is first an OS/runtime hypothesis.
+- no CPU/uArch candidate.
+
+New discriminating test:
+- `EXP-PTA-002` compares post-action-only verification with fresh-context and stronger target-bound execution.
 
 ## C — Efficient System-Control Substrate
-Current decision: STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE.
-
-PAPER-009 correction:
-the observed Prefill CPU win is not an architecture-general property. It is partly explained by current Hexagon backend maturity, 8 MiB VTCM pressure and unsupported-op fallback. The robust fact is **stage/operator/implementation-dependent crossover and non-trivial boundary overhead**.
-
-PAPER-051 correction:
-separate three effects:
-1. UMA-aware SME + zero-copy execution layer;
-2. HAL-based draft-budget allocation;
-3. suspend-and-yield under injected tool stalls.
-
-The 1.05–1.17× increment is HAL over the corresponding UMA-aware configuration; the headline 1.77× extreme-stall result additionally depends on suspend-and-yield and synthetic [1,100] s tool stalls.
-
-Impact:
-No lane/score/maturity reversal.
-C remains SYSTEM_VALUE because HeRo independently supplies direct commercial-phone Agent-aware evidence.
+STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE.
+Round-1 revalidation unchanged.
 
 ## CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path
-Current decision: INVEST / 86.5 / STRUCTURAL_SIGNAL.
-
-PAPER-009 correction:
-do not translate “CPU faster in evaluated Prefill” into “Prefill structurally belongs on CPU.” The paper is strong evidence for current-stack crossover, dispatch tax and fallback cost.
-
-PAPER-052 correction:
-SMEPilot proves a strong **CPU-vs-CPU-baseline** SME/runtime result across phone/PC/server platforms.
-It does not establish smartphone CPU superiority over NPU.
-Its reported energy experiment is on Apple M4 Pro; GPU comparison is also on M4 Pro.
-
-Impact:
-CG-06 remains INVEST because it rests on combined evidence:
-- direct current-stack phone crossover (PAPER-009);
-- CPU matrix viability (PAPER-052 + TOOL-012);
-- Arm productization;
-- optimized NPU counter-baselines (PAPER-057/059);
-- dynamic xPU baselines (PAPER-097/098).
-
-But SOFTWARE_INSUFFICIENCY remains unpassed and the next experiment must compare against optimized NPU/HETERO paths.
+INVEST / 86.5 / STRUCTURAL_SIGNAL.
+Round-1 revalidation unchanged; strongest NPU/HETERO baseline remains mandatory.
 
 ## CG-07 — Always-On Agent AI
-Current decision: EXPLORE / 75.0.
+EXPLORE / 75.0.
+Paper-depth clean for PAPER-087/088; vendor/source-type audit later.
 
-Round-1 paper-depth risk is low: PAPER-087 and PAPER-088 are already FULL_10Q.
-Vendor evidence and dedicated-domain assumptions still require source-type audit later.
+## Current portfolio result
+No lane or score changes from Rescue-1A.
 
-## Portfolio result
-**NO PORTFOLIO CHANGE in Rescue Round 1.**
-
-The rescue does produce wording corrections and stronger boundaries.
-The absence of a portfolio change is an audit result, not a presumption.
+The meaningful change is **PT-A REFRAME**, recorded by `DEC-PTA-RESCUE-001`.
 
 ## Whole-roadmap caveat
-Graph QA found 12 additional paper-depth warnings in B-residual / R1 / R2 beyond the 10 remaining primary-lane warnings.
+Five primary-lane paper warnings remain, all in A.
+Twelve reserve-lane paper warnings remain.
 
-Therefore this Round-1 backtrace validates only the five primary lanes. It must not be presented as a completed audit of the entire current roadmap.
+Do not claim the entire portfolio is evidence-depth clean yet.
 
 ## Next
-1. Finish Rescue-1A PT-A debt.
-2. Finish Rescue-1B A debt.
-3. Re-run primary-lane backtrace.
-4. Audit B-residual / R1 / R2 and patent-heavy current lanes.
-5. Only then audit historical Kill decisions.
-6. Resume Frontier Round 14 after primary active conclusions are evidence-depth clean.
+Rescue-1B A, then rerun this backtrace before Frontier Round 14.
