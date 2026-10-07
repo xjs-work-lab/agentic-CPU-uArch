@@ -8,7 +8,7 @@ competitive_action = "INVEST"
 score_context = 86.5
 evidence_maturity = "STRUCTURAL_SIGNAL"
 maturity_scope = "direct phone evidence supports stage/operator/numerical-role dependent heterogeneous execution; representative Agent crossover and Huawei target-system value remain unproven"
-related_claims = ["CLM-CPU-001", "CLM-CPU-002", "CLM-CPU-003", "CLM-CPU-004", "CLM-HUAWEI-001", "CLM-CG06-EXP-001"]
+related_claims = ["CLM-CPU-001", "CLM-CPU-002", "CLM-CPU-003", "CLM-CPU-004", "CLM-CPU-005", "CLM-HUAWEI-001", "CLM-CG06-EXP-001"]
 related_capabilities = ["CAP-ARM-C2-SME2-CPU-AI"]
 +++
 
@@ -35,6 +35,12 @@ ShadowNPU extends that trajectory into attention using low-precision NPU importa
 
 Because the two papers share an author/group lineage, they are used as **trajectory/mechanism evidence**, not counted as independent replications.
 
+Round 13 raises the baseline again:
+- PAPER-097 / Agent.xpu adds dynamic reactive/proactive flow scheduling, stage elasticity, preemption and bandwidth-aware NPU/iGPU coordination;
+- PAPER-098 / HeRo transfers workflow-level orchestration to commercial Snapdragon phones with partial/evolving Agentic-RAG DAGs.
+
+Agent.xpu and HeRo also share a PKU research lineage, so they establish a sustained mechanism trajectory rather than independent replication.
+
 CG-06 must not compare CPU paths only against naive/full NPU offload.
 A strong NPU baseline must include, where applicable:
 - prompt/static-graph reconstruction;
@@ -43,7 +49,12 @@ A strong NPU baseline must include, where applicable:
 - sparse residual CPU/GPU work;
 - graph bucketing / specialization;
 - out-of-order or pipelined cross-engine execution;
-- minimized CPU/GPU residual resource use.
+- minimized CPU/GPU residual resource use;
+- dynamic flow/stage criticality and partial-DAG scheduling;
+- shape-aware sub-stage partitioning;
+- stage–accelerator affinity;
+- shared-memory-bandwidth-aware concurrency;
+- reactive/proactive priority and fine-grained preemption where applicable.
 
 This strengthens the heterogeneous-control-point thesis while **narrowing the CPU-resident whitespace**.
 
@@ -57,7 +68,7 @@ This strengthens the heterogeneous-control-point thesis while **narrowing the CP
 ## Next discriminating gate
 EXP-CG06-001 asks whether a representative CPU-fast-path region remains after both:
 1. all CPU-side matrix/layout/state optimizations;
-2. strong NPU-OPT/HETERO-OPT techniques including llm.npu/ShadowNPU-class software reconstruction where applicable.
+2. strong NPU-OPT/HETERO-OPT techniques including llm.npu/ShadowNPU plus Agent.xpu/HeRo-class dynamic flow/stage orchestration where applicable.
 
 ## Portfolio state
 No lane/score change:

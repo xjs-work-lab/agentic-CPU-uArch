@@ -28,10 +28,10 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 
 ## Current graph
-- 360 canonical nodes
-- 568 canonical semantic edges
-- 568 generated reverse edges
-- projection refreshed after Frontier Round 12 H-CAL closure
+- 374 canonical nodes
+- 587 canonical semantic edges
+- 587 generated reverse edges
+- projection refreshed after Frontier Round 13 Agent-flow heterogeneous SoC orchestration
 - last full cutover QA hard errors: 0
 - Round 12 Graph QA: **PASS** — run `37599649724`, job `112720612564`
 - Round 12 QA squash merge: `7fa99ba2ae56a997e6d35bd68b508623dd2d577a`
@@ -39,7 +39,7 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 ## Portfolio invariant
 - A — only differentiated Primary Bet
 - PT-A — Platform Track
-- C — Strategic Enabler
+- C — Strategic Enabler / SYSTEM_VALUE
 - CG-06 — INVEST
 - CG-07 — EXPLORE; proactive workload strengthened, PRPF-class strongest baseline added
 - CG-01 — BENCHMARK
@@ -53,7 +53,7 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - security / confidential execution — platform requirement + research radar
 - proactive / always-on intervention gating — covered inside CG-07; not standalone
 - H-CAL — CLOSED / killed as standalone candidate; contiguous learning retained as workload/evaluation scenario
-- current second-Bet frontier — NONE / UNASSIGNED
+- current second-Bet frontier — NONE / UNASSIGNED after Round 13; dynamic Agent orchestration is now an owned C/CG-06 baseline
 - uArch Primary Bet — none
 
 ## Hardware gate
@@ -63,3 +63,11 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 Future research resumes from this repository. V1 remains frozen for provenance and historical reference.
 
 Current next step: resume frontier reset outside all closed/owned families; direct smartphone serving+learning evidence remains a reopen condition for H-CAL, not an active lane.
+
+
+## Round 13 decision
+- HeRo establishes direct commercial-phone Agent-aware heterogeneous orchestration SYSTEM_VALUE.
+- C evidence maturity upgrades to **SYSTEM_VALUE**; lane/score remain STRATEGIC_ENABLER / 72.0.
+- Agent.xpu + HeRo raise the C/CG-06 strongest software baseline.
+- MobileExplorer maps to PT-A; Jev-Mobile maps to A/PT-A baseline.
+- no new Direction, no second Primary Bet, no uArch candidate.

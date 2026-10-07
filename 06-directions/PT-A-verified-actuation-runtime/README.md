@@ -8,7 +8,7 @@ investment_lane = "PLATFORM_TRACK"
 score_context = 80.0
 evidence_maturity = "SYSTEM_VALUE"
 maturity_scope = "direct mobile task/action-modality/verification value is established for evaluated systems; differentiated PT-A residual and CPU/uArch control point are not established"
-related_claims = ["CLM-PTA-001", "CLM-PTA-002", "CLM-PTA-003", "CLM-PTA-004", "CLM-AGENT-006", "CLM-PTA-EXP-001"]
+related_claims = ["CLM-PTA-001", "CLM-PTA-002", "CLM-PTA-003", "CLM-PTA-004", "CLM-PTA-005", "CLM-AGENT-006", "CLM-PTA-EXP-001"]
 related_capabilities = []
 +++
 
@@ -23,6 +23,7 @@ Build/consume a common smartphone Agent actuation substrate across API/CLI/MCP/t
 - heterogeneous action surfaces have direct mobile value;
 - verification/recovery has direct mobile reliability value;
 - Agent-native speculation evidence shows that idempotence/reversibility/sandboxability and rollback scope materially change what work may execute provisionally;
+- PAPER-099 / MobileExplorer shows a mobile GUI Agent can use long reasoning windows for speculative UI exploration when rollback restores the original state, making effect classification/recovery directly relevant to latency hiding;
 - this is a platform prerequisite for robust Agents and an execution substrate for A.
 
 ## Why not a Primary Bet
