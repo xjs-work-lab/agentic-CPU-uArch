@@ -1,6 +1,6 @@
 # Research Authority Status
 
-Updated: 2026-10-07
+Updated: 2026-10-08
 
 ```yaml
 migration_phase: CUTOVER_COMPLETE
@@ -23,6 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
 next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
+round15a_progress: AO1_EVIDENCE_MAPPED_1_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -33,10 +34,10 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 453 canonical nodes
-- 837 canonical semantic edges
-- 837 generated reverse edges
-- 787 derived single-direction dependency edges
+- 476 canonical nodes
+- 878 canonical semantic edges
+- 878 generated reverse edges
+- 826 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -329,7 +330,7 @@ No second differentiated Primary Bet emerged from T6/T7/T8. This is an evidence 
 
 Reserve-lane evidence rescue and patent direct-claim audit: **COMPLETE**.
 
-Next program: **2027 discriminating experiment execution** using the shared instrumentation and wave plan in 09-roadmap/2027-execution-plan.md.
+Historical note: the former 2027 experiment-execution plan is retained only as future validation reference after the 2026-10-08 research-premise realignment.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
@@ -375,3 +376,31 @@ Graph projections:
 - views/graph/dependency.json — single-direction inference/dependency projection for graph algorithms.
 
 Round 15A must upgrade each AO from SEED_MAPPED to EVIDENCE_MAPPED using explicit claim roles and real SUPPORT / REBUT / UNDERCUT / SCOPE_LIMIT tension where decision-critical.
+
+
+## Round 15A — AO-1 Evidence Closure
+AO-1 Agent Execution Fabric: **EVIDENCE_MAPPED / KEEP / HIGH-PRIORITY CO-DESIGN OPPORTUNITY**.
+
+New FULL_10Q anchors:
+- PAPER-113 Agent.xpu;
+- PAPER-114 MARS;
+- PAPER-115 CPU-Centric Agentic AI.
+
+New product-signal cards:
+- VENDOR-022 Qualcomm Oryon Flex Cache;
+- VENDOR-023 Qualcomm Hexagon Agentic NPU.
+
+Canonical AO-1 evidence roles now include:
+PROBLEM_SIGNAL / PRODUCT_SIGNAL / STRONG_BASELINE / PRIOR_ART_BOUNDARY / OPEN_GAP / ARCH_HYPOTHESIS.
+
+AO-1 is explicitly narrowed away from:
+- CPU-vs-NPU as the thesis;
+- generic Agent-aware scheduling;
+- premature new-ISA/new-cache claims.
+
+Surviving opportunity:
+cross-xPU execution/state/control fabric under mixed-criticality Agent flows.
+
+Round 15A progress: **1 / 5 Opportunities evidence-mapped**.
+
+Next: **AO-2 Revisable / Transactional Agent Execution**.
