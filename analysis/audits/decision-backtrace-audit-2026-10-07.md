@@ -2,6 +2,8 @@
 
 Date: 2026-10-07
 Method: roadmap → direction → claim → evidence case → source → mechanism/experiment
+Scope in this file: A / PT-A / C / CG-06 / CG-07
+Reserve-lane backtrace: scheduled after primary-lane rescue
 
 ## A — Agent Semantic Progress Control
 Current decision: PRIMARY_BET / 82.5 / SIMULATION_SUPPORT.
@@ -82,8 +84,15 @@ Vendor evidence and dedicated-domain assumptions still require source-type audit
 The rescue does produce wording corrections and stronger boundaries.
 The absence of a portfolio change is an audit result, not a presumption.
 
+## Whole-roadmap caveat
+Graph QA found 12 additional paper-depth warnings in B-residual / R1 / R2 beyond the 10 remaining primary-lane warnings.
+
+Therefore this Round-1 backtrace validates only the five primary lanes. It must not be presented as a completed audit of the entire current roadmap.
+
 ## Next
-1. Finish Rescue-1 active paper debt.
-2. Re-run decision backtrace.
-3. Only then audit historical Kill decisions.
-4. Resume Frontier Round 14 after current active conclusions are evidence-depth clean.
+1. Finish Rescue-1A PT-A debt.
+2. Finish Rescue-1B A debt.
+3. Re-run primary-lane backtrace.
+4. Audit B-residual / R1 / R2 and patent-heavy current lanes.
+5. Only then audit historical Kill decisions.
+6. Resume Frontier Round 14 after primary active conclusions are evidence-depth clean.
