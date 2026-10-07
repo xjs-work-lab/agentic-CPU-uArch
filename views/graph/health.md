@@ -3,10 +3,10 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **312**
-- canonical semantic edges: **510**
-- generated reverse edges: **510**
-- graph projection: refreshed after Frontier Round 8 H-PAM final closure
+- canonical nodes: **330**
+- canonical semantic edges: **526**
+- generated reverse edges: **526**
+- graph projection: refreshed after Frontier Round 9 confidential Agent isolation coverage
 
 ## Validation status
 
@@ -16,26 +16,26 @@ Updated: 2026-10-07
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Post-cutover Round-8 delta check
+### Post-cutover Round-9 delta check
 **PASS — structural delta consistency**
 
 Checked:
-- PAPER-076 / 077 / 078 / 079 resolve;
-- CLM-MOBILE-005 / CLM-MEM-003 / CLM-MOBILE-006 / CLM-MOBILE-007 resolve;
-- EC-MEM-007-A / 008-A / 009-A / 010-A ground the new Claims;
-- DEC-H-PAM-001 is connected to ROADMAP-CURRENT and all nine trigger Claims;
+- PAPER-080 through PAPER-086 resolve;
+- CLM-SEC-001 / 002 / 003 resolve;
+- eight EC-SEC cases ground all security Claims;
 - generated reverse edges were refreshed.
 
 ## Research-state boundary
 Graph health does not:
-- create a new second differentiated Primary Bet;
-- establish SOFTWARE_INSUFFICIENCY;
-- establish a CPU/uArch memory mechanism;
-- unblock R3.
+- create a security Direction;
+- create a second differentiated Primary Bet;
+- establish smartphone security SYSTEM_VALUE;
+- establish software/CCA insufficiency;
+- create a CPU/uArch confidential-execution candidate.
 
 Current state:
-- H-PAM standalone candidate — **CLOSED / KILLED**;
-- persistent Agent memory — retained as workload/evidence dimension;
-- current second-Bet frontier — **NONE / UNASSIGNED**;
-- next stage — frontier reset / coverage audit;
-- hardware gate — unchanged.
+- confidential Agent workload — real;
+- runtime/software capture — strong;
+- generic CCA/mobile secure-I/O baseline — strong;
+- security frontier — platform requirement / research radar;
+- current second-Bet frontier — NONE / frontier reset ongoing.
