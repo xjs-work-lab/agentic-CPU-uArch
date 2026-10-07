@@ -1428,9 +1428,9 @@
       "record_state": "CURRENT"
     },
     {
-      "id": "EC-CAL-004-B",
+      "id": "EC-CAL-004-C",
       "type": "EVIDENCE_CASE",
-      "path": "03-evidence-cases/EC-CAL-004-B.md",
+      "path": "03-evidence-cases/EC-CAL-004-C.md",
       "record_state": "CURRENT"
     },
     {
@@ -4312,7 +4312,7 @@
     {
       "source": "CLM-CAL-004",
       "relation": "SUPPORTED_BY_CASE",
-      "target": "EC-CAL-004-B",
+      "target": "EC-CAL-004-C",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -7341,18 +7341,18 @@
     },
     {
       "source": "EC-CAL-004-B",
-      "relation": "HAS_PREMISE",
-      "target": "PAPER-104",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
-      "source": "EC-CAL-004-B",
       "relation": "SUPPORT",
       "target": "CLM-CAL-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
-      "source": "EC-CAL-004-B",
+      "source": "EC-CAL-004-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-104",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-004-C",
       "relation": "SUPPORT",
       "target": "CLM-CAL-004",
       "provenance": "CANONICAL_SEMANTIC"
@@ -10024,7 +10024,7 @@
     {
       "source": "PAPER-104",
       "relation": "PREMISE_OF_CASE",
-      "target": "EC-CAL-004-B",
+      "target": "EC-CAL-004-C",
       "provenance": "GENERATED_REVERSE"
     },
     {
