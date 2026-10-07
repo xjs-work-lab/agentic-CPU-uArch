@@ -16,7 +16,7 @@ cutover_state: COMPLETE
 research_content_migrated: true
 evidence_rescue: ACTIVE
 evidence_depth_protocol: EDP_V1
-frontier_round14: ACTIVE_TREND_RESET
+frontier_round14: ACTIVE_T7
 product_trend_framework: V1
 ```
 
@@ -113,7 +113,9 @@ T6–T8 are frontier signals only.
 ## Operating rule
 **Frontier Round 14 is ACTIVE.**
 
-Next: **Round 14-A — T7 Local Multi-Agent Concurrency pressure test.**
+Round 14-A seed triage is complete.
+
+Next: **FULL_10Q MobiMem → LOCAL → EcoAgent**, then decide whether T7 is a new Direction or merges into C/T5/PT-A.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
