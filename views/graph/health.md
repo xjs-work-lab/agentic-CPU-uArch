@@ -3,10 +3,10 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **335**
-- canonical semantic edges: **538**
-- generated reverse edges: **538**
-- graph projection: refreshed after Frontier Round 10 proactive mobile gating / CG-07 integration
+- canonical nodes: **349**
+- canonical semantic edges: **552**
+- generated reverse edges: **552**
+- graph projection: refreshed after Frontier Round 11 Contiguous Agent Learning
 
 ## Validation status
 ### Last full CI / cutover QA
@@ -15,22 +15,22 @@ Updated: 2026-10-07
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Post-cutover Round-10 delta check
-**PASS — structural delta consistency**
+### Round-11 structural delta check
+**PASS — expected structural delta is internally consistent**
 
 Checked:
-- PAPER-087 and PAPER-088 resolve;
-- CLM-CG07-006 / 007 are grounded by dedicated Evidence Cases;
-- CG-07 references both new Claims;
-- EXP-CG07-001 consumes PAPER-087 / PAPER-088 as input sources;
-- DEC-CG07-002 records the no-score-change / raised-baseline decision;
-- generated reverse edges were refreshed.
+- PAPER-089 through PAPER-093 resolve as SOURCE nodes;
+- CLM-CAL-001 / 002 / 003 are grounded;
+- five EC-CAL cases connect all five new sources;
+- DEC-H-CAL-001 records the roadmap-level hypothesis decision;
+- no H-CAL DIRECTION node exists;
+- generated reverse edges are refreshed.
 
 ## Research-state boundary
-Graph health does not create a new proactive-Agent Direction, a second differentiated Primary Bet, smartphone CG-07 SYSTEM_VALUE or dedicated-domain necessity.
+Graph health does not make H-CAL a Direction, change portfolio scores, establish CPU/uArch insufficiency, or turn generic mobile training into Agent-specific differentiation.
 
 Current state:
-- proactive mobile workload — directly evidenced;
-- lightweight gating/software capture — strong baseline;
-- CG-07 — EXPLORE / 75.0 / post-gating residual required;
-- current second-Bet frontier — NONE / frontier reset ongoing.
+- training workload SYSTEM_VALUE — direct phone evidence exists;
+- generic software capture — strong;
+- Agent-specific version/coherence/concurrency residual — open;
+- H-CAL — narrow analysis hypothesis only.
