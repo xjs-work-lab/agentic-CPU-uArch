@@ -1,65 +1,57 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
+# PAPER-031 — CacheScout — FULL_10Q
 
-# PAPER-031 — CacheScout: Learning Agent Execution for KV-Cache Management in Agentic Serving
+## Q1 — Problem
+Reactive recency policies evict reusable fixed Agent prefixes between dynamic Agent invocations.
 
-## Source
-- Paper: https://arxiv.org/abs/2608.14624
-- Authors: Rui Zhang, Chaeeun Kim, Shaoting Feng, Kuntai Du, Yuhan Liu, Yi Zhong, Cheng-Wei Ching, Junchen Jiang, Liting Hu
-- Venue/status: arXiv preprint, 2026
-- Target: server multi-Agent LLM serving
-- Project relevance: Candidate B strongest history-only baseline
-- Priority: P0
+## Q2 — New-regime relevance
+Agent execution has repeated transition structure that can be learned online.
 
-## Q1 — Problem + target mapping
-Agent KV anchors are often evicted between dynamic Agent invocations because generic recency policies do not predict future Agent reuse.
+## Q3 — Hypothesis
+A lightweight online execution model can predict enough reuse to beat reactive cache policies without a predefined DAG or semantic contract.
 
-## Q2 — Novelty / new-regime relevance
-CacheScout learns Agent execution online using a first-order transition model rather than requiring explicit workflow DAGs or semantic annotations.
-
-## Q3 — Falsifiable hypothesis
-A lightweight history-only execution model is sufficient to predict enough near-term Agent reuse to outperform reactive cache policies.
-
-## Q4 — Competing route
-This is a direct competitor to Candidate B's explicit semantic StateAffinity/ReuseHint story and pressures richer PBKV-style predictors.
+## Q4 — Baseline
+Standard prefix caching with recency-based replacement and other reactive Agent-serving cache policies.
 
 ## Q5 — Mechanism
 - identify current Agent from prompt-prefix fingerprint;
-- update first-order transition counts online;
-- derive survival probability;
-- combine with recency/reconstruction cost;
-- predictive eviction + background prefetch.
+- update first-order Agent transition counts online;
+- derive reuse/survival probability;
+- combine prediction with recency/reconstruction cost;
+- predictive eviction;
+- asynchronous/background prefetch.
 
-No explicit Agent semantic state contract is required.
+No semantic ABI or offline workflow graph is required.
 
 ## Q6 — Experiment
-The paper reports across representative real-world multi-Agent workloads:
-- +10–18 percentage points KV hit rate;
-- 18–45% lower mean TTFT;
-- 29–38% lower mean per-turn latency;
-- up to 57% higher peak throughput.
+Implemented on vLLM across representative real-world multi-Agent workloads.
 
-Mechanism ablation reports predictive eviction as the dominant source of gain.
+Reported:
+- KV hit rate +10–18 percentage points;
+- mean TTFT -18–45%;
+- mean per-turn latency -29–38%;
+- peak throughput up to +57%;
+- larger-model experiments report TTFT reduction up to 54% with 37% higher throughput.
 
-## Q7 — Artifact
-Public paper; artifact status should be verified before reproduction.
+Mechanism ablation identifies predictive eviction as a major contributor.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** History-only online transition learning captures substantial Agent state-reuse value.
+## Q7 — Artifact / limitations
+Public paper; no official code artifact was verified in this review.
+Server/vLLM setting; no phone energy/thermal/QoE or mobile memory-tier measurement.
 
-**[INFERENCE]** Explicit S0/S1 semantic reuse hints face a high B4 bar. They need to beat CacheScout-like learned execution structure, not LRU.
+## Q8 — Evidence
+FACT: history-only online transition learning captures substantial Agent reuse value.
+INFERENCE: semantic ReuseHint must show incremental value above a learned history baseline.
+NOT ESTABLISHED: learned transitions capture correctness/validity after semantic revision.
 
-## Q9 — Project contribution
-This materially weakens Candidate B's previous StateAffinity / ReuseHorizon thesis.
+## Q9 — Project decision
+This materially weakens the reuse-prediction portion of B-residual.
 
-Future-reuse prediction alone is not a strong differentiated control point.
+The remaining B residual shifts toward correctness/validity information not inferable from reuse history.
 
-## Q10 — Next action
-- Promote to P0 baseline.
-- Put CacheScout-like online predictor into B4.
-- Kill explicit ReuseHint if it cannot add >=~5% meaningful value above this baseline.
+## Q10 — Next
+Pair this baseline with explicit version/provenance/invalidation systems before testing phone residual.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for server Agent KV management; STRUCTURAL_SIGNAL for mobile transfer
-- Decision impact: DOWNGRADE reuse-prediction part of B
-- Open questions: smartphone transfer; artifact
-- Primary source: https://arxiv.org/abs/2608.14624
+- SYSTEM_VALUE for server Agent KV management
+- no target-phone SYSTEM_VALUE
+- no B-residual promotion

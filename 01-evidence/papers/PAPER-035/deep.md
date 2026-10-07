@@ -1,22 +1,56 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
+# PAPER-035 — Invalidation Contracts for Cross-Episode Agent Memory — FULL_10Q
 
-## PAPER-035 — [Invalidation Contracts for Cross-Episode Agent Memory](https://arxiv.org/abs/2609.00243)
+## Q1 — Problem
+Agents may reuse recovery suggestions learned in prior episodes, but server-side schema/data drift can silently make those memories stale.
 
-**Background**  
-Agents reuse learned fixes across episodes, but server-side data drift can silently make those memories wrong.
+## Q2 — New-regime relevance
+Persistent cross-episode Agent memory needs explicit validity semantics when external dependencies evolve.
 
-**Method**  
-The protocol attaches cacheability hints, version stamps, dependency vectors and subgraph invalidation information.
+## Q3 — Hypothesis
+Version and dependency contracts can invalidate only stale memories while preserving valid reuse.
 
-**Conclusion**  
-Across ~9,400 episodes, the paper reports deterministic version-validity behavior; row-level invalidation recovers 29–33% of baseline token cost on four of seven models and avoids broad over-eviction.
+## Q4 — Baseline
+Re-derive on every episode, broad/table-level invalidation, or reuse without fine-grained validity metadata.
 
-**What we learn**  
-Validity/version/dependency is a real Agent-memory control plane, but the broad idea is already emerging rapidly.
+## Q5 — Mechanism
+Protocol attaches:
+- version stamps;
+- cacheability hints;
+- dependency vectors/scopes;
+- fine-grained invalidation information.
 
-**Boundary**  
-Application/protocol memory, not smartphone S2/S3 physical state.
+The paper separates:
+- validity — whether cached information remains correct;
+- compliance — whether the planner applies it.
 
----
+## Q6 — Experiment
+Across seven models, three serving paths, two domains and ~9,400 episodes:
+- row-level invalidation raises compliance by 0–66.7 percentage points depending on model;
+- gains of 55.6–66.7 points appear on three models;
+- 29–33% of baseline token cost is recovered on four of seven models;
+- table-level invalidation can destroy useful co-located entries;
+- row-level oracle eviction precision is 1.00;
+- contract payload adds 15%;
+- version-stamp validity is deterministic and reports zero contract failures across the evaluation.
 
----
+## Q7 — Limitations
+Application/protocol memory, not smartphone physical artifacts.
+No phone KV/NPU/DRAM/UFS experiment.
+Planner compliance varies strongly by model, so protocol correctness does not guarantee behavioral adoption.
+
+## Q8 — Evidence
+FACT: version/dependency validity can be made deterministic in a software protocol.
+FACT: finer invalidation can preserve useful reuse versus broad eviction.
+INFERENCE: broad semantic/version invalidation is not B-residual novelty.
+NOT ESTABLISHED: phone-derived artifacts are fully expressible by this protocol state.
+
+## Q9 — Project decision
+Raises B4-safe-generic for correctness/validity and further narrows B-residual.
+
+## Q10 — Next
+Only target-phone evidence for unmodeled physical-artifact lineage can justify keeping/promoting the residual.
+
+## Decision footer
+- strong protocol-level validity evidence
+- no target-phone SYSTEM_VALUE
+- no score or maturity promotion

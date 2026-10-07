@@ -3,26 +3,29 @@ id = "PAPER-031"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+decision_use = "B_RESIDUAL_HISTORY_ONLY_REUSE_PREDICTION_STRONG_BASELINE"
+independence_assessment = "PREPRINT_SERVER_VLLM_NO_TARGET_PHONE"
 title = "Learning Agent Execution for KV-Cache Management in Agentic Serving"
 primary_url = "https://arxiv.org/abs/2608.14624"
 priority = "P0"
 evidence_role = "strong history-only reuse baseline"
-origin_paths = ["03-academic/paper-10q/PAPER-031.md"]
-origin_blobs = ["801122351161cec63a5725b3c075d0ed0c33c530"]
 authors = ["Rui Zhang", "Chaeeun Kim", "Shaoting Feng", "Kuntai Du", "Yuhan Liu", "Yi Zhong", "Cheng-Wei Ching", "Junchen Jiang", "Liting Hu"]
 venue = "arXiv preprint · 2026"
 +++
 
-# PAPER-031 — Learning Agent Execution for KV-Cache Management in Agentic Serving
+# PAPER-031 — CacheScout
 
 ## 30-second read
-- **Why it matters:** A lightweight first-order Agent transition model already captures substantial KV reuse without explicit semantic ABI fields.
-- **What it establishes:** History-only prediction can materially improve Agent KV retention/prefetch.
-- **Boundary:** Server/GPU serving; mobile transfer unproven.
+- Learns Agent execution transitions online from observed requests.
+- Requires neither predefined workflow DAGs nor explicit semantic annotations.
+- Uses learned survival/reuse probability for predictive eviction and background prefetch.
+- Implemented on vLLM.
+- Reports +10–18 pp KV hit rate, 18–45% lower mean TTFT, 29–38% lower mean per-turn latency and up to 57% higher peak throughput.
+- Strongest direct pressure on semantic ReuseHint/StateAffinity necessity.
+- Server evidence, not smartphone evidence.
 
-## Migration fidelity
-- frozen V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- transform: `STRUCTURAL_REPACK`
-- detailed V1 interpretation is preserved in [deep.md](deep.md).
-- source independence remains `UNKNOWN`.
+See [deep.md](deep.md).

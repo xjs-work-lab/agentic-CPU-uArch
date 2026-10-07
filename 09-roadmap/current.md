@@ -140,7 +140,7 @@ No SYSTEM_VALUE or hardware/uArch promotion.
 
 ## Evidence-depth state
 Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
-The remaining **8** current-roadmap paper warnings are all in B-residual / R1 / R2.
+The remaining **4** current-roadmap paper warnings are now only in R1 / R2. B-residual paper-depth debt is cleared.
 
 Reserve Rescue Batch 1 removes four warnings:
 - PAPER-030 AgentProg — FULL_10Q;
@@ -355,4 +355,29 @@ T6/T7/T8 frontier coverage is complete. No new differentiated Primary Bet surviv
 ## Next
 **Reserve-lane evidence rescue: B-residual / R1 / R2.**
 
-The known current-roadmap debt is now **8** decision-critical papers after Reserve Rescue Batch 1, followed by the separate R3/patent direct-claim audit before final portfolio convergence.
+The known current-roadmap debt is now **4** decision-critical papers: R1 PAPER-047/048 and R2 PAPER-008/049. After those, the separate R3/patent direct-claim audit remains before final portfolio convergence.
+
+
+## Reserve Rescue Batch 2 — B-residual complete
+
+FULL_10Q:
+- PAPER-028 PBKV
+- PAPER-031 CacheScout
+- PAPER-034 PLACEMEM
+- PAPER-035 Invalidation Contracts
+
+Decision impact:
+- PBKV shows topology + workflow history + prefill-derived semantic signal can predict future Agent KV reuse and drive retention/prefetch in software.
+- CacheScout raises the bar further: an online first-order execution-transition model, without a predefined DAG or explicit semantic contract, already produces material KV-hit/TTFT/throughput gains.
+- PLACEMEM makes semantics/provenance/validity/runtime-artifact identity explicit in a typed software capsule/control plane.
+- Invalidation Contracts makes version/dependency/cacheability state explicit and achieves deterministic version-validity behavior across models/serving paths.
+
+Therefore broad semantic StateAffinity / ReuseHint / versioned-validity novelty is closed.
+
+B-residual remains only:
+> on a representative phone, is there a semantic/workflow fact about derived S2/S3 physical artifact validity or preservation that cannot be reconstructed from strong workflow/history prediction + version/hash/provenance/dependency/runtime state and that creates >=~5% end-outcome value?
+
+No score change. No maturity promotion. No uArch promotion.
+
+## Next reserve rescue
+**R1 PAPER-047 / PAPER-048**, then **R2 PAPER-008 / PAPER-049**.

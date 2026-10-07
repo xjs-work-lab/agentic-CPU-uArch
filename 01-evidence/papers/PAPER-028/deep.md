@@ -1,132 +1,67 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
+# PAPER-028 — PBKV — FULL_10Q
 
-# PAPER-028 — Efficient Serving for Dynamic Agent Workflows with Prediction-based KV-Cache Management
+## Q1 — Problem
+Dynamic Agent workflows create KV reuse, but future Agent invocation order depends on runtime branches/loops, so LRU and static-DAG policies evict useful state.
 
-## Source
-- Paper: [Efficient Serving for Dynamic Agent Workflows with Prediction-based KV-Cache Management](https://arxiv.org/abs/2605.06472)
-- Authors: Haoyu Zheng, Fangcheng Fu, Jia Wu, Binhang Yuan, Yongqiang Zhang, Hao Wang, Yuanyuan Zhu, Xiao Yan, Jiawei Jiang
-- Affiliations: Wuhan University; Dameng Database; Shanghai Jiao Tong University; Macquarie University; HKUST
-- Venue/status: arXiv preprint
-- Year: 2026
-- Artifact: Unknown / Not yet verified
-- Target platform: server/GPU Agent workflow serving
-- Project relevance: M3 Persistent Agent State Fabric; C1 StateAffinity/future-reuse semantics
-- Priority: P0
+## Q2 — Agent-specific relevance
+The useful information is future workflow structure, not a new cache primitive.
 
-## Q1 — What problem is the paper solving, and how does it map to smartphones?
-**Answer:**  
-**[FACT]** Dynamic Agent workflows share substantial context, but the future sequence of Agent invocations depends on runtime branches/loops, so LRU or static workflow cache management can evict KV entries that will be needed later.  
-**[INFERENCE]** This maps to smartphones as a state-tiering problem: persistent Agents will also create state that is temporarily idle but likely to be reused after tools/UI/NPU phases.  
-**Boundary:** the evaluated state is GPU KV cache, not phone CPU cache/TLB/predictor state.
+## Q3 — Hypothesis
+Multi-step prediction of future Agent calls should improve KV residency and prefetch under memory pressure.
 
-## Q2 — Is the problem/new mechanism actually new?
-**Answer:**  
-**[OBSERVATION]** Prediction-guided cache management is not new generically. The Agent-specific contribution is combining dynamic workflow topology/history/semantic signals to forecast several future Agent invocations and translate that forecast into KV retention/prefetch policy.  
-Classification: **Agentic-amplified**, not a new cache primitive.
+## Q4 — Baselines
+LRU on SGLang+HiCache and workflow-aware KVFlow.
 
-## Q3 — What falsifiable hypothesis is being tested?
-**Answer:**  
-**[HYPOTHESIS]** Future Agent-workflow information predicts reuse better than recency/static-DAG baselines, and this additional information can improve end-to-end serving performance despite prediction error.  
-A falsifier would be that LRU/KVFlow performs equivalently once memory pressure and overhead are controlled, or that prediction overhead/error cancels the benefit.
-
-## Q4 — What is the research lineage / competing route?
-**Answer:**  
-Closest competing routes include:
-- LRU / recency-based KV eviction;
-- static workflow-aware KV management such as KVFlow;
-- application-semantic/context reuse systems such as Parrot;
-- runtime policy layers such as CacheSage / policy-driven Agent runtime;
-- mobile KV tiering/reuse systems such as mzCache and Dynamic Flow, Static Graph.
-
-**[INFERENCE]** For our project, PBKV is especially important because it occupies part of the semantic-future-reuse space that an early M3 formulation implicitly treated as whitespace.
-
-## Q5 — What is the key technical mechanism / control point?
-**Answer:**  
-Information inputs:
-- workflow transition structure;
-- current workflow history;
-- semantic/context signal;
-- prediction confidence / future-step probability.
-
-Decision:
-- estimate reuse value of KV cache entries.
-
-Actuators:
-- retain;
-- evict;
-- prefetch.
-
-Likely layer:
-- Agent-serving runtime / memory manager, not CPU microarchitecture.
-
-## Q6 — How is the experiment designed?
-**Answer:**  
-**[FACT]** The paper evaluates three workflow benchmarks and compares against LRU and the workflow-aware KVFlow baseline.  
-**[FACT]** It reports up to 1.85× speedup over LRU on dynamic workflows and up to 1.26× over KVFlow on static workflows.
-
-The workflow predictor fuses:
-- topology-aware Agent embedding;
+## Q5 — Mechanism
+Predictor fuses:
+- topology-aware Agent embedding from a global call graph;
 - attention over workflow-prefix history;
-- a semantic signal from the served LLM's prefill hidden state.
+- semantic signal from the last prefill-token hidden state.
 
-On HoVer + LangChain with 1K training traces, the full predictor reports top-1 next-Agent accuracy:
-- step 1: **0.935**;
-- step 2: **0.848**;
-- step 3: **0.771**.
+It emits multi-step future-Agent probabilities.
+The runtime converts them into:
+- retired-cache-first hierarchical eviction;
+- reuse scoring;
+- conservative prefetch using otherwise-idle GPU space/PCIe bandwidth.
 
-A first-order Markov predictor reports:
-- step 1: **0.752**;
-- step 2: **0.555**;
-- step 3: **0.295**.
+## Q6 — Experiment
+Server:
+- 8× NVIDIA A6000 48 GB;
+- NVLink;
+- 128 virtual CPUs;
+- 512 GB host memory;
+- Qwen3-14B and Qwen3-32B.
 
-The full system's predictor overhead is reported as ~1.56 ms for a batch of 1,024 predictions.
+Workloads:
+- HoVer + LangChain;
+- SWE-bench + AutoGen;
+- FinanceBench + CrewAI.
 
-## Q7 — What data/artifact/reproducibility support exists?
-**Answer:**  
-Artifact/code: **Unknown / Not yet verified**.  
-The paper is publicly available on arXiv.  
-Reproducibility maturity: incomplete until artifact/configuration is verified.
+Reported:
+- up to 1.85× speedup over LRU on dynamic workflows;
+- up to 1.26× over KVFlow on static workflow;
+- up to 2.55× / 1.39× hit-rate improvement respectively;
+- predictor ~350K parameters, batch-1024 prediction in ~1.56 ms;
+- HoVer/LangChain 1K-trace training gives about 0.94 one-step and 0.77 three-step accuracy.
 
-## Q8 — Do the results actually support the hypothesis?
-**Answer:**  
-**[FACT]** Reported results support the claim that richer future-workflow prediction can improve KV management over selected baselines in the evaluated server environment.
+## Q7 — Artifact / limitations
+Public arXiv paper; no official code repository was verified in this review.
+No smartphone, battery, thermal or mobile-memory-tier experiment.
+Predictor is workload-trained.
+The paper does not cleanly isolate how much incremental value comes from semantic hidden state versus topology/history.
 
-However, an important Stage 14 limitation is now explicit:
+## Q8 — Evidence
+FACT: rich software-visible workflow signals predict future reuse well enough to improve KV management.
+INFERENCE: explicit semantic reuse hints must beat topology/history prediction, not LRU.
+NOT ESTABLISHED: semantic hidden state is necessary, or that a phone cross-tier semantic contract adds residual value.
 
-**the paper does not provide a clean ablation isolating the incremental value of the semantic prefill signal from topology + workflow-history representation.**
+## Q9 — Project decision
+PBKV materially raises the B4 baseline and closes broad future-reuse-prediction novelty.
 
-The full predictor strongly beats first-order Markov, especially at longer horizons, but the gain cannot be attributed solely to semantic state.
-
-**[INFERENCE]** PBKV therefore proves that rich workflow representation is useful, not that an explicit Agent semantic ABI is necessary.
-
-## Q9 — What is the real contribution / technology control point for us?
-**Answer:**  
-**NARROW M3.**
-
-This paper kills the broad novelty interpretation:
-> Agent future semantics → identify future reusable state → retain/prefetch it.
-
-That control pattern already exists for Agent KV cache.
-
-It simultaneously strengthens the **Persistent Agent State Fabric** parent problem because it shows that Agent execution has future-reuse structure worth exploiting.
-
-Residual M3/B questions become:
-1. what information remains unavailable to a strong online workflow/history predictor;
-2. can semantic validity/version/dependency prevent unsafe stale-state reuse;
-3. does that semantic correctness information need to cross into smartphone S2/S3 physical-state management;
-4. does any CPU-local state remain material after strong system/runtime baselines.
-
-## Q10 — What should we do next?
-**Answer:**  
-- **KEEP** as a strong M3/C1 baseline.
-- **NARROW** M3 from broad future-state retention to cross-tier/mobile + CPU-local residual.
-- Include a predictor-only baseline in B4/B6-style StateAffinity experiments.
-- Do not promote CPU-local retention to uArch candidate without direct mobile evidence.
-- Revisit artifact/system details if PBKV materially enters Stage 14 scoring.
+## Q10 — Next
+EXP-BR-001 must compare against a PBKV/CacheScout-class predictor before giving credit to semantic StateAffinity/ReuseHint.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for server Agent KV management; STRUCTURAL_SIGNAL for mobile M3 transfer
-- Decision impact: NARROW / REFRAME M3; strengthen Persistent Agent State Fabric parent problem
-- Open questions: artifact; exact system configuration; mobile transfer; explicit semantics vs learned predictor
-- Primary source: https://arxiv.org/abs/2605.06472
-- Artifact: Unknown / Not yet verified
+- SYSTEM_VALUE for server Agent KV management
+- STRUCTURAL_SIGNAL only for phone transfer
+- no B-residual promotion

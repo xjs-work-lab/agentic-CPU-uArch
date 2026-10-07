@@ -87,8 +87,8 @@ Material corrections:
 ## Evidence-depth debt
 After Rescue-1B, validated Graph-QA paper-depth warnings:
 - primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
-- current reserve lanes B-residual / R1 / R2: **8**
-- whole current ROADMAP: **8**
+- current reserve lanes B-residual / R1 / R2: **4**
+- whole current ROADMAP: **4**
 
 Reserve Rescue Batch 1 complete:
 - PAPER-030 AgentProg → FULL_10Q;
@@ -98,6 +98,21 @@ Reserve Rescue Batch 1 complete:
 
 B-residual remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT**.
 The rescue raises the strongest software/runtime baseline and does not establish target-phone cross-tier residual SYSTEM_VALUE.
+
+Reserve Rescue Batch 2 complete:
+- PAPER-028 PBKV → FULL_10Q;
+- PAPER-031 CacheScout → FULL_10Q;
+- PAPER-034 PLACEMEM → FULL_10Q;
+- PAPER-035 Invalidation Contracts → FULL_10Q.
+
+B-residual paper-depth debt is now **0**.
+
+Batch-2 decision:
+- future reuse can be predicted from workflow/history/runtime signals without a semantic ABI;
+- semantic/provenance/validity/invalidation can already be represented as typed software control-plane state;
+- no target-phone evidence establishes additional S2/S3 physical-artifact value beyond that strong baseline.
+
+B-residual therefore remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT** with no score/maturity/uArch change.
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 
@@ -141,7 +156,7 @@ T1–T6 and T8 are now product-relevant/owned to different degrees.
 T7 remains FRONTIER_SIGNAL / WATCH, with standalone differentiation closed.
 
 ## Operating rule
-**Frontier Round 14 is ACTIVE.**
+**Frontier Round 14 is COMPLETE.**
 
 Round 14-A seed triage is complete.
 

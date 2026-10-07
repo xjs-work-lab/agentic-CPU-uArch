@@ -69,3 +69,25 @@ The surviving B-residual is narrowed further to:
 This batch strengthens the **baseline**, not the residual.
 
 Promotion still requires EXP-BR-001 target-phone evidence.
+
+
+## Reserve Rescue Batch 2 — 2026-10-07
+
+Deep-read:
+- **PAPER-028 PBKV** — server Agent KV residency uses global call-graph structure, workflow-prefix history and a prefill hidden-state signal to predict several future Agent invocations; gains are realized entirely in a serving/runtime control plane.
+- **PAPER-031 CacheScout** — online first-order Agent transition learning, without predefined workflow graphs or semantic annotations, materially improves cache hit rate, TTFT, per-turn latency and peak throughput.
+- **PAPER-034 PLACEMEM** — versioned capsules explicitly bind semantics, provenance, validity, dependencies and reusable runtime state; current implementation is a vLLM-first control-plane prototype.
+- **PAPER-035 Invalidation Contracts** — version stamps, cacheability hints and dependency-scoped invalidation make stale cross-episode memory control explicit and deterministic at protocol level.
+
+### Batch-2 decision
+The broad B thesis is now crowded at both major axes:
+1. **reuse prediction** can be learned from software-visible execution history/topology;
+2. **correctness/validity** can be represented through software-visible version/provenance/dependency contracts.
+
+B-residual survives only as a target-phone measurement hypothesis:
+> does S0/S1 semantic revision expose additional validity/preservation information about derived S2/S3 artifacts that the strengthened B4-safe-generic baseline cannot reconstruct?
+
+No score, lane, maturity or hardware change.
+
+### Evidence-depth state
+B-residual paper-depth debt: **0**.
