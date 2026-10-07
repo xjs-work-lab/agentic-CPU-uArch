@@ -42,6 +42,7 @@ def validate(root: Path):
     allowed_trend_maturity={"ESTABLISHED_PRODUCT_TREND","EMERGING_PRODUCT_TREND","FRONTIER_SIGNAL","UNSUPPORTED"}
     allowed_product_posture={"PRODUCTIZE","ADAPT_AND_DIFFERENTIATE","BENCHMARK_AND_PREPARE","WATCH","DROP_PRODUCT_ROUTE"}
     allowed_diff={"DIFFERENTIATED_BET","RESIDUAL_RESEARCH","CROWDED_BUT_VALUABLE","FRONTIER_UNPROVEN","CLOSED_DIFFERENTIATION"}
+    allowed_kill_scope={"KILL_BROAD_NOVELTY","KILL_DIFFERENTIATED_BET","KILL_MECHANISM","KILL_ARCHITECTURE_NECESSITY","KILL_PRODUCT_ROUTE","KILL_WORDING_ONLY"}
     for n in nodes:
         t=n["type"]; i=n["id"]
         if t=="SOURCE":
@@ -102,6 +103,11 @@ def validate(root: Path):
             req(n["subject_id"],n["subject_kind"],f"{i}.subject")
             for c in n.get("trigger_claims",[]): req(c,"CLAIM",f"{i}.trigger_claims")
             for e in n.get("trigger_experiments",[]): req(e,"EXPERIMENT",f"{i}.trigger_experiments")
+            kill_scope=n.get("kill_scope")
+            if kill_scope and kill_scope not in allowed_kill_scope:
+                errors.append(f"DECISION_BAD_KILL_SCOPE:{i}:{kill_scope}")
+            if str(n.get("event_type","")).startswith("KILL_") and not kill_scope:
+                errors.append(f"KILL_DECISION_WITHOUT_SCOPE:{i}")
         elif t=="ROADMAP":
             kind=n.get("roadmap_kind")
             if kind not in {"PRODUCT_EVOLUTION","DIFFERENTIATION_PORTFOLIO","INTEGRATED"}:
