@@ -13,7 +13,7 @@ Decision question: which 2027–2029 Agentic smartphone workload trends are alre
 | T3 Verified/transactional actuation | PT-A | HIGH | platform residual | OWNED / PRODUCTIZE |
 | T4 Always-on proactive front-end | CG-07 | MEDIUM-HIGH | architecture residual open | OWNED / BENCHMARK |
 | T5 State lifecycle/reuse/locality | B-residual + CG-01 + R2 + H-CAL lineage | MEDIUM-HIGH | fragmented residuals | PARTIALLY OWNED |
-| T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + generic sandbox baselines | HIGH product signal | dynamic-executable residual unproven | **EMERGING_PRODUCT_TREND / RESIDUAL AUDIT** |
+| T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + SandScope + SpecBox | HIGH product signal | standalone residual closed | **EMERGING_PRODUCT_TREND / KILL_DIFFERENTIATED_BET** |
 | T7 Local multi-Agent concurrency/shared state | C + T5/B-residual + PT-A | HIGH product signal | standalone residual closed | WATCH / KILL_DIFFERENTIATED_BET |
 | T8 Cross-device Agent fabric/continuation | partial PT-A/C overlap | UNKNOWN-MEDIUM | high generic-distributed-systems risk | AUDIT LATER |
 
@@ -127,3 +127,13 @@ Differentiation decision:
 - no uArch candidate.
 
 Residual audit is now deliberately restricted to dynamic executable artifacts that cannot be reduced to Android function registration/execution, T5 state/version lifecycle, PT-A authority/verification or C lifecycle/resource control.
+
+
+## Round 14-B final closeout
+T6 standalone differentiation is closed on current evidence.
+- Product Trend: KEEP / EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE
+- standalone T6 Direction: KILL_DIFFERENTIATED_BET
+- ownership: C + B-residual/T5 + PT-A
+- no uArch candidate
+
+Next smallest step: **Round 14-C — T8 Cross-device Agent fabric & continuation**.

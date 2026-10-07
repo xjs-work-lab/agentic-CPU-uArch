@@ -26,7 +26,7 @@ A trend can remain important even when its broad novelty is crowded.
 | T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | PT-A=RESIDUAL_RESEARCH | PT-A |
 | T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | CG-07=RESIDUAL_RESEARCH | CG-07 |
 | T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | B-residual/CG-01/R2=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | B-residual, CG-01, R2, R3 |
-| T6 Local programmable Agent execution & sandboxed skills | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | — (product trend confirmed; no Direction) | — |
+| T6 Local programmable Agent execution & sandboxed skills | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | C/B-residual/PT-A=RESIDUAL_RESEARCH; standalone T6-specific Bet closed | C, B-residual, PT-A |
 | T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | C/B-residual/PT-A=RESIDUAL_RESEARCH | C, B-residual, PT-A |
 | T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
 
@@ -210,8 +210,20 @@ ordinary local Agent-tool discovery, schema, authority, enablement and function 
 The open residual is narrower:
 genuinely dynamic executable artifacts whose compile/validate/instantiate/interpreter/JIT/code-cache/sandbox costs remain material on representative phones after native platform baselines.
 
-### Round 14 action
-**PRODUCT TREND CONFIRMED — residual runtime/sandbox audit continues**
+### Round 14-B final
+**PRODUCT TREND RETAINED — standalone differentiated Bet closed.**
+
+PAPER-107 / SandScope and PAPER-108 / SpecBox close the current standalone residual:
+- SandScope maps Agent-tool containment primarily to authority/provenance + platform security; WASI is not a unique CPU regime.
+- SpecBox maps sandbox lifecycle to prediction, prewarm/prefetch, reuse and data-path orchestration.
+
+### Differentiation action
+**KILL_DIFFERENTIATED_BET for a standalone T6-specific Direction.**
+
+Do not use KILL_PRODUCT_ROUTE.
+T6 remains **EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE** and routes residual mechanisms to C + B-residual/T5 + PT-A.
+
+Reopen only with physical-phone evidence for dynamic executable/JIT/code-cache/sandbox-transition costs that survive native Android/AppFunctions and existing software owners.
 
 ---
 
@@ -270,6 +282,6 @@ It should be read as:
 - **T1–T6 are meaningful product-evolution trends** with different maturity/originality levels.
 - **A is currently the only differentiated Primary Bet.**
 - C / PT-A / CG-06 / CG-07 / CG-01 can remain important product programs without being original Primary Bets.
-- T6 is an emerging Product Trend with no Direction; T7–T8 remain frontier trend candidates.
+- T6 is an emerging Product Trend with standalone differentiation closed and residual ownership routed to C/B-residual/PT-A; T7 is WATCH/owned by existing lanes; T8 remains the next frontier candidate.
 
 The final leadership roadmap should show both product importance and differentiation separately.

@@ -88,12 +88,12 @@ Current product-trend families:
 - **T3** Verified / transactional Agent actuation — PT-A
 - **T4** Always-on proactive Agent front-end — CG-07
 - **T5** Agent state lifecycle, reuse & locality — B-residual / CG-01 / R2
-- **T6** Local programmable Agent execution & sandboxed skills — EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE; no Direction
+- **T6** Local programmable Agent execution & sandboxed skills — EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE; standalone differentiation closed; owned by C + B-residual/T5 + PT-A
 - **T7** Local multi-Agent concurrency & shared model/state — frontier audit
 - **T8** Cross-device Agent fabric & continuation — frontier audit
 
 T1–T6 can remain important product programs even when broad novelty is crowded.
-T6 is now an emerging Product Trend but still has no Direction; T7–T8 remain frontier signals until they survive structural-residual testing.
+T6 is an emerging Product Trend whose standalone differentiated candidate is closed; T7 remains WATCH/owned by existing lanes and T8 is the next frontier audit.
 
 Detailed view: `09-roadmap/product-evolution-map.md`.
 
@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 product trend promoted after SkillDroid + Android AppFunctions; residual sandbox/runtime audit next.**
+**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 Round 14-B complete; T8 Round 14-C next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -294,3 +294,30 @@ HeRo establishes that dynamic Agent workflow state has real phone system value, 
 **NONE / UNASSIGNED after Round 13.**
 
 Continue frontier reset outside already-owned scheduling/orchestration, memory, security, proactive gating and continual-learning families.
+
+
+## T6 Round 14-B final — SandScope + SpecBox pressure closeout
+
+### PAPER-107 — MCP-SandboxScan / SandScope v2
+SandScope makes Agent-tool authority/provenance and runtime containment concrete, but its v2 evidence is negative pressure on a standalone T6 mechanism:
+- WASI is one optional backend for portable artifacts/shims;
+- real-world MCP coverage also uses native stdio and OS-level containment;
+- its contribution is not “WASM instead of OS sandboxing”;
+- no smartphone, JIT, code-cache, battery or thermal residual is measured.
+
+### PAPER-108 — SpecBox
+SpecBox demonstrates meaningful sandbox lifecycle cost, but in a 16-core / 256 GiB / Docker server regime. Its effective mechanisms are software-visible intent prediction, prewarm/prefetch, workflow-history state, semantic result reuse and shared-memory transport.
+
+### Final decision
+- T6 Product Trend: **KEEP EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE**
+- standalone T6-specific candidate: **KILL_DIFFERENTIATED_BET**
+- ownership: **C + B-residual/T5 + PT-A**
+- no T6-specific Direction
+- no second Primary Bet
+- no uArch candidate
+
+### Reopen gate
+Only reopen standalone T6 differentiation with representative physical-phone evidence showing residual dynamic-code/bytecode/WASM generation, interpreter/JIT cost, code-cache churn, sandbox-transition cost, or energy/thermal/QoE after native AppFunctions + C/T5/PT-A baselines.
+
+## Next
+**Round 14-C — T8 Cross-device Agent fabric & continuation.**

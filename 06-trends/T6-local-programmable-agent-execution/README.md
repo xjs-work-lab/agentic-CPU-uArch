@@ -7,10 +7,10 @@ time_horizon = "2027-2029"
 scope = "SMARTPHONE_AGENTIC_CPU_SYSTEM_UARCH"
 trend_maturity = "EMERGING_PRODUCT_TREND"
 product_posture = "BENCHMARK_AND_PREPARE"
-coverage_state = "PRODUCT_TREND_CONFIRMED_RESIDUAL_AUDIT"
-related_claims = ["CLM-T6-001", "CLM-T6-002", "CLM-T6-003", "CLM-T6-004"]
+coverage_state = "OWNED_BY_EXISTING_DIRECTIONS_AND_PLATFORM"
+related_claims = ["CLM-T6-001", "CLM-T6-002", "CLM-T6-003", "CLM-T6-004", "CLM-T6-005", "CLM-T6-006"]
 related_capabilities = []
-direction_links = []
+direction_links = [{ direction_id = "C", differentiation_posture = "RESIDUAL_RESEARCH" }, { direction_id = "B-residual", differentiation_posture = "RESIDUAL_RESEARCH" }, { direction_id = "PT-A", differentiation_posture = "RESIDUAL_RESEARCH" }]
 +++
 
 # T6 — Local programmable Agent execution & sandboxed skills
@@ -139,3 +139,24 @@ AppFunctions raises the strongest software baseline. A T6 Direction now requires
 
 ## Next
 Pressure-test MCP-SandboxScan and SpecBox only to the depth needed to close or preserve that narrow residual.
+
+
+## Round 14-B final pressure — PAPER-107 + PAPER-108
+
+### SandScope
+Current v2 expands the original MCP-SandboxScan seed to controlled cross-language subjects plus a 100-repository MCP corpus. WASI is useful for portable artifacts, but native protocol execution plus OS containment remain first-class paths. No target-phone executable-lifecycle cost is measured.
+
+### SpecBox
+SpecBox demonstrates large sandbox cold-start/lifecycle cost in server Agent serving and recovers value through prediction, prewarm/prefetch, result reuse and shared-memory transport. These are software-visible C/T5-class controls.
+
+## Final T6 decision
+- Product Trend: **KEEP EMERGING_PRODUCT_TREND**
+- Product posture: **BENCHMARK_AND_PREPARE**
+- standalone T6-specific candidate: **KILL_DIFFERENTIATED_BET**
+- ownership: **C + B-residual/T5 + PT-A**
+- no T6-specific Direction
+- no second Primary Bet
+- no uArch candidate
+
+## Reopen condition
+Require representative physical-phone evidence for residual dynamic executable generation/validation, interpreter/JIT cadence, code-cache/I-cache churn, sandbox transitions, or energy/thermal/QoE after AppFunctions + C/T5/PT-A.
