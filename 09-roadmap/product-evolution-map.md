@@ -1,0 +1,216 @@
+# 2027–2029 Agentic Smartphone Product Evolution Map
+
+Date: 2026-10-07
+State: Round 14 trend reset v1
+Purpose: separate likely product evolution from originality/whitespace.
+
+## Executive view
+
+The current evidence supports **five product-relevant trend families already represented in the portfolio**, plus **three frontier families that deserve Round 14 coverage audit**.
+
+A trend can remain important even when its broad novelty is crowded.
+
+| Trend | Product maturity | Product posture | Differentiation posture | Current owners |
+|---|---|---|---|---|
+| T1 Semantic-aware progress & resource control | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | DIFFERENTIATED_BET + RESIDUAL_RESEARCH | A, C |
+| T2 Heterogeneous Agent AI execution continuum | ESTABLISHED_PRODUCT_TREND | PRODUCTIZE / ADAPT_AND_DIFFERENTIATE | CROWDED_BUT_VALUABLE + RESIDUAL_RESEARCH | C, CG-06 |
+| T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | CROWDED_BUT_VALUABLE + RESIDUAL_RESEARCH | PT-A |
+| T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | FRONTIER_UNPROVEN / RESIDUAL_RESEARCH | CG-07 |
+| T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE / BENCHMARK | RESIDUAL_RESEARCH | B-residual, CG-01, R2, H-CAL lineage |
+| T6 Local programmable Agent execution & sandboxed skills | FRONTIER_SIGNAL | WATCH | FRONTIER_UNPROVEN | unassigned |
+| T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH → audit for upgrade | FRONTIER_UNPROVEN | partially overlaps C/B |
+| T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | FRONTIER_UNPROVEN | partially overlaps PT-A/C |
+
+---
+
+## T1 — Semantic-aware progress & resource control
+
+### Product thesis
+Future Agent systems increasingly expose work whose value depends on goal survival, user demand, confirmation, utility and progress state rather than simple runnable/not-runnable status.
+
+### Product action
+**ADAPT_AND_DIFFERENTIATE**
+
+Prepare runtime/OS contracts and measurement infrastructure even before any hardware conclusion.
+
+### Research boundary
+A remains the differentiated Bet only for **non-reconstructible DemandState / RequiredProgress**.
+C owns the software/system-control substrate.
+
+### What prior art changes
+Prior work kills broad claims like “semantic scheduling is new.”
+It does not remove the product need for semantic-aware control.
+
+---
+
+## T2 — Heterogeneous Agent AI execution continuum
+
+### Product thesis
+Agent workloads will not map cleanly to one engine.
+CPU, GPU and NPU roles vary by phase, operator, precision role, shape, responsiveness target and implementation quality.
+
+### Product action
+**PRODUCTIZE + ADAPT_AND_DIFFERENTIATE**
+
+Product roadmap should explicitly include:
+- CPU-resident latency-critical AI path;
+- matrix/vector fast path;
+- optimized NPU path;
+- operator/sub-operator partition;
+- dynamic CPU/GPU/NPU placement;
+- persistent sessions and dispatch reduction;
+- layout/state reuse;
+- memory-bandwidth-aware orchestration.
+
+### Research boundary
+The broad heterogeneous-execution idea is crowded.
+Whitespace is in target-specific crossover, low-overhead orchestration and CPU roles that remain after optimized NPU baselines.
+
+---
+
+## T3 — Verified / transactional Agent actuation
+
+### Product thesis
+Real agents need bounded execution, explicit authority/capability, target/context integrity, effect observability, verification and recovery.
+
+### Product action
+**PRODUCTIZE**
+
+This is a likely future platform capability even if broad academic novelty is already crowded.
+
+### Research boundary
+PT-A differentiation is now residual:
+- target/context binding;
+- common OutcomeReceipt contract;
+- authority-aware actuation;
+- low-overhead recovery under mobile conditions.
+
+No CPU/uArch implication today.
+
+---
+
+## T4 — Always-on proactive Agent front-end
+
+### Product thesis
+Persistent/proactive agents create a recurring “observe → gate → intervene or remain silent” workload that may justify a low-power front end.
+
+### Product action
+**BENCHMARK_AND_PREPARE**
+
+Prepare:
+- context-rate telemetry;
+- gating-cost measurement;
+- handoff/wake accounting;
+- idle/residency measurements;
+- CPU/shared-NPU/dedicated-domain comparisons.
+
+### Research boundary
+The trend is credible.
+Dedicated hardware architecture remains unproven after strong lightweight gating.
+
+---
+
+## T5 — Agent state lifecycle, reuse & locality
+
+### Product thesis
+Agent execution creates persistent and reusable state across:
+- context/KV;
+- action/experience memory;
+- adapter/version state;
+- execution traces;
+- CPU-local continuation state;
+- cross-task shared prefixes;
+- rollback/provisional artifacts.
+
+### Product action
+**ADAPT_AND_DIFFERENTIATE + BENCHMARK**
+
+Treat state lifecycle as a product trend even though several broad cache/state ideas are mature prior art.
+
+### Research boundary
+Keep distinct residuals:
+- semantic→physical validity/coherence;
+- phone CPU continuation locality;
+- reusable state under memory pressure;
+- version-aware state lifecycle.
+
+Do not infer new cache/uArch structures before phone residual evidence.
+
+---
+
+# Frontier families for Round 14
+
+## T6 — Local programmable Agent execution & sandboxed skills
+
+### Structural question
+Do mobile Agents increasingly generate, install, interpret or execute typed scripts, WASM/DSL/code bundles or dynamically composed skills locally enough to create a new CPU/runtime workload?
+
+### Why it may matter
+Potentially changes:
+- executable/code-cache churn;
+- JIT/interpreter cadence;
+- instruction footprint;
+- sandbox transitions;
+- authority/capability boundaries;
+- branch/frontend behavior;
+- code/data lifetime.
+
+### Current evidence state
+Early embedded/browser/mobile-runtime seeds exist, but direct representative smartphone CPU/system evidence is not yet sufficient.
+
+### Round 14 action
+**AUDIT**
+
+---
+
+## T7 — Local multi-Agent concurrency & shared model/state
+
+### Structural question
+When several specialized local Agents share one phone/model/runtime, does the system create a distinct regime of:
+- concurrent Agent queues;
+- shared model/KV/adapters;
+- agent identity/provenance;
+- cross-agent prefetch/pre-prefill;
+- synchronization/consistency;
+- foreground/background Agent priority?
+
+### Why it may matter
+This could become a real product trend while still collapsing into C/B if all control variables are ordinary software-visible state.
+
+### Current evidence state
+Initial scan finds stronger mobile/edge seeds than expected, including mobile multi-agent orchestration and state/memory systems. Direct smartphone SoC pressure and independent replication still require audit.
+
+### Round 14 action
+**AUDIT FIRST — highest frontier priority**
+
+---
+
+## T8 — Cross-device Agent fabric & continuation
+
+### Structural question
+Does phone↔PC↔watch↔edge continuation require persistent execution-state handoff, consistency or recovery semantics that create a new phone CPU/system control point?
+
+### Why it may matter
+Cross-device agents are emerging, but the risk of rebranding ordinary distributed orchestration is high.
+
+### Current evidence state
+Cross-device orchestration/replanning seeds exist.
+CPU/uArch relevance is unproven.
+
+### Round 14 action
+**AUDIT AFTER T7/T6**
+
+---
+
+## Portfolio interpretation
+
+Current portfolio should not be read as:
+“only A is worth doing.”
+
+It should be read as:
+- **T1–T5 are already meaningful product-evolution trends** with different originality levels.
+- **A is currently the only differentiated Primary Bet.**
+- C / PT-A / CG-06 / CG-07 / CG-01 can remain important product programs without being original Primary Bets.
+- T6–T8 are frontier trend candidates, not yet Directions.
+
+The final leadership roadmap should show both product importance and differentiation separately.

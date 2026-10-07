@@ -73,8 +73,48 @@ The reviewed public source set still lacks a direct commercial-phone experiment 
 Second differentiated Primary Bet remains **UNFILLED**.
 
 
+## Product Evolution Map — new governing view
+
+Round 14 now separates **product value** from **research novelty**.
+
+> **Prior art constrains novelty, not product relevance.**
+
+Current product-trend families:
+- **T1** Semantic-aware progress & resource control — A / C
+- **T2** Heterogeneous Agent AI execution continuum — C / CG-06
+- **T3** Verified / transactional Agent actuation — PT-A
+- **T4** Always-on proactive Agent front-end — CG-07
+- **T5** Agent state lifecycle, reuse & locality — B-residual / CG-01 / R2
+- **T6** Local programmable Agent execution & sandboxed skills — frontier audit
+- **T7** Local multi-Agent concurrency & shared model/state — frontier audit
+- **T8** Cross-device Agent fabric & continuation — frontier audit
+
+T1–T5 can remain important product programs even when broad novelty is crowded.
+T6–T8 are not Directions until they survive structural-residual testing.
+
+Detailed view: `09-roadmap/product-evolution-map.md`.
+
+## Round 14 trend reset
+
+Initial coverage audit prioritizes **T7 Local Multi-Agent Concurrency** first.
+
+Reason:
+the seed scan shows stronger mobile/multi-agent/state-sharing signals than expected, but it is unclear whether they create a new control point or simply strengthen C/T5.
+
+Round 14-A asks:
+> Does local multi-Agent execution create a repeated smartphone system/physical control problem beyond ordinary workflow scheduling/xPU orchestration and state/KV lifecycle?
+
+Possible outcomes:
+- NEW DIRECTION
+- MERGE INTO C
+- MERGE INTO T5/B
+- WATCH
+- KILL differentiated novelty
+
+No product trend is killed merely because prior art exists.
+
 ## Current research frontier
-**ROUND 14 UNLOCKED — frontier reset may resume.**
+**ROUND 14 ACTIVE — T7 pressure test is next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -100,9 +140,11 @@ Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-0
 The remaining **12** current-roadmap paper warnings are all in B-residual / R1 / R2.
 
 ## Next
-Resume **Frontier Round 14** outside already-owned/closed families and search for a genuinely new Agent workload structural break.
+**Round 14-A: T7 Local Multi-Agent Concurrency pressure test.**
 
-Do not treat the remaining reserve-lane/patent audit as optional: it remains required before final portfolio convergence.
+Deep-read the strongest mobile/system seeds, then decide whether T7 becomes a new Direction or is absorbed by C/T5.
+
+Reserve-lane/patent audit remains required before final portfolio convergence.
 
 ## Round 13 — Agent-flow heterogeneous SoC orchestration
 

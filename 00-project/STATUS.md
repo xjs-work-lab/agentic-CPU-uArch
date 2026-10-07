@@ -16,7 +16,8 @@ cutover_state: COMPLETE
 research_content_migrated: true
 evidence_rescue: ACTIVE
 evidence_depth_protocol: EDP_V1
-frontier_round14: UNLOCKED
+frontier_round14: ACTIVE_TREND_RESET
+product_trend_framework: V1
 ```
 
 ## Authority
@@ -89,9 +90,32 @@ After Rescue-1B, validated Graph-QA paper-depth warnings:
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 
-## Operating rule
-**Frontier Round 14 is UNLOCKED.**
+## Product-trend framework
+Round 14 now uses the two-axis rule:
 
-The five primary active/platform lanes are paper-depth clean under EDP v1. Resume frontier discovery from uncovered structural workload regimes; do not reopen already-owned/closed families without contradictory evidence.
+> **Prior art constrains novelty, not product relevance.**
+
+Product evolution posture and differentiation posture are judged independently.
+
+Current trend map:
+- T1 Semantic-aware progress & resource control
+- T2 Heterogeneous Agent AI execution continuum
+- T3 Verified / transactional Agent actuation
+- T4 Always-on proactive Agent front-end
+- T5 Agent state lifecycle, reuse & locality
+- T6 Local programmable Agent execution & sandboxed skills
+- T7 Local multi-Agent concurrency & shared model/state
+- T8 Cross-device Agent fabric & continuation
+
+T1–T5 are already product-relevant/owned to different degrees.
+T6–T8 are frontier signals only.
+
+## Operating rule
+**Frontier Round 14 is ACTIVE.**
+
+Next: **Round 14-A — T7 Local Multi-Agent Concurrency pressure test.**
+
+Do not create a new Direction until the frontier survives:
+product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
 
 Reserve-lane paper rescue and patent direct-claim audit remain mandatory before final portfolio convergence.
