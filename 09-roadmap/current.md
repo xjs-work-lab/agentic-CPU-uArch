@@ -81,11 +81,16 @@ Round-6 results:
 2. AgeMem FULL_10Q — independent ADD/UPDATE/DELETE/RETRIEVE/SUMMARY/FILTER recurrence confirmed;
 3. MobiSys 2026 memory-architecture benchmark — PENDING_FULLTEXT / excluded from decisions.
 
+Round-7 strongest-baseline update:
+- SwiftMem removes temporal/semantic query routing, semantic co-consolidation and locality-aware memory layout from H-PAM white space.
+
 Next priorities:
 1. systems-facing phone traces/profiling for Agent memory update/retrieve/consolidate/replay;
-2. operation-class-specific CPU/NPU/data-movement evidence;
-3. determine whether a lifecycle fact beyond API operation identity changes placement/maintenance policy;
-4. kill/merge H-PAM if no lower-level residual appears.
+2. foreground recall vs background maintenance interference;
+3. cross-representation movement among raw media / vector / graph / action state;
+4. suspend/resume rebuild cost;
+5. lifecycle-phase-specific CPU/NPU/data-placement evidence;
+6. kill/merge H-PAM if no lower-level residual appears.
 
 Do not create a Direction before this gate survives.
 
