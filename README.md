@@ -28,9 +28,11 @@ should be maintained here.
 The V1 repository remains frozen historical provenance and is not deleted or rewritten.
 
 ## Current graph
-- **330 canonical nodes**
-- **526 canonical semantic edges**
-- **526 generated reverse edges**
+- **515 canonical nodes**
+- **960 canonical semantic edges**
+- **960 generated reverse edges**
+- **908 single-direction dependency edges**
+- **Data Model V2.4** — Round 15A AO-1/AO-2/AO-3 EVIDENCE_MAPPED (3/5)
 
 ## Current portfolio
 

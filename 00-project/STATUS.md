@@ -23,7 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
 next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
-round15a_progress: AO2_EVIDENCE_MAPPED_2_OF_5
+round15a_progress: AO3_EVIDENCE_MAPPED_3_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 source_identity_gate: ACTIVE
@@ -35,10 +35,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 496 canonical nodes
-- 913 canonical semantic edges
-- 913 generated reverse edges
-- 861 derived single-direction dependency edges
+- 515 canonical nodes
+- 960 canonical semantic edges
+- 960 generated reverse edges
+- 908 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -449,3 +449,16 @@ QA now triggers on both pull requests and direct pushes to main.
 
 Policy: 00-project/source-identity-policy.md
 Validator: analysis/graph/source_identity.py
+
+
+## Round 15A — AO-3 Evidence Closure
+AO-3 Persistent Agent State / Context Fabric: **EVIDENCE_MAPPED / KEEP / PRODUCT-SIGNAL BACKED, SOFTWARE-PRESSURED CO-DESIGN OPPORTUNITY**.
+
+- Reused prior FULL_10Q anchors PAPER-103 / 104 / 032 / 028 / 031 / 034 / 035 and previously direct-claim-audited PATENT-024 / 032; MobiMem primary HTML Sections 4–7 cross-checked.
+- Repaired missing VENDOR-022 with official Qualcomm Oryon Flex Cache deep card; carefully separated CPU-core Flex Cache from VENDOR-023's NPU-local shared memory.
+- Connected CLM-AO3-001..007 through 12 evidence cases including explicit UNDERCUT and SCOPE_LIMIT against a hardware-necessity leap.
+- Strong software baseline rules out broad cache/semantic invalidation novelty. Cross-engine derived-state lifetime/validity/residency remains a public-evidence architecture hypothesis, **not** a committed uArch feature.
+- No differentiated Direction, score, portfolio lane or experiment requirement changed.
+
+Round 15A progress: **3 / 5 Opportunities EVIDENCE_MAPPED**.
+Next: **AO-4 Always-On Proactive Front-End** (then AO-5).
