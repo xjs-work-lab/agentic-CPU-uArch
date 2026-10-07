@@ -87,8 +87,8 @@ Material corrections:
 ## Evidence-depth debt
 After Rescue-1B, validated Graph-QA paper-depth warnings:
 - primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
-- current reserve lanes B-residual / R1 / R2: **4**
-- whole current ROADMAP: **4**
+- current reserve lanes B-residual / R1 / R2: **2**
+- whole current ROADMAP: **2**
 
 Reserve Rescue Batch 1 complete:
 - PAPER-030 AgentProg → FULL_10Q;
@@ -113,6 +113,19 @@ Batch-2 decision:
 - no target-phone evidence establishes additional S2/S3 physical-artifact value beyond that strong baseline.
 
 B-residual therefore remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT** with no score/maturity/uArch change.
+
+Reserve Rescue R1 complete:
+- PAPER-047 Tail-aware ready/release scheduling → FULL_10Q;
+- PAPER-048 Clarification Timing Windows → FULL_10Q.
+
+R1 paper-depth debt is now **0**.
+
+R1 remains **CONDITIONAL_RESERVE / 55.5 / SIMULATION_SUPPORT**:
+- generic Ready→Release decoupling is already demonstrated as useful software scheduling;
+- semantic timing windows are real at long-horizon Agent/user-interaction scale;
+- no target-phone evidence transfers those windows into a post-ready CPU/system control interval with >=5% incremental value.
+
+No score/maturity/uArch change.
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 

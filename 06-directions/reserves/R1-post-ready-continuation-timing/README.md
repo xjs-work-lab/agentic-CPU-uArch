@@ -46,3 +46,37 @@ Requires `EXP-R1-001` target-phone evidence showing frequent/actionable ResumeBu
 
 ## Hardware boundary
 Only reconsider lower-layer/hardware timing after phone SYSTEM_VALUE is proven and software timing is causally insufficient.
+
+
+## Reserve Rescue — 2026-10-07
+
+### PAPER-047
+Tail-risk-aware release scheduling makes release itself a software decision:
+- ready turns need not be released immediately;
+- mean-CVaR tail risk, online turn-work estimates and queue pressure drive priority/budget;
+- real software-engineering Agent traces show up to 3.50× P95 workflow flow-time improvement under contention.
+
+This closes broad Ready≠Release novelty.
+
+### PAPER-048
+Controlled forced-clarification experiments over 6,000+ runs / 84 task variants show:
+- goal clarification loses nearly all value after ~10% of execution;
+- input clarification retains value to roughly 50%;
+- clarification after mid-trajectory can be worse than never asking.
+
+This is direct evidence that Agent semantics have timing windows.
+
+But the timescale and actuator differ:
+- trajectory/user interaction;
+- not DependencyReady→LatestUsefulResume;
+- not phone CPU residency/wake/scheduling;
+- not energy/QoE.
+
+### Final R1 interpretation
+The surviving residual is deliberately narrow:
+> can an explicit Agent semantic timing bound outperform B4-release on a representative phone?
+
+No score, lane, maturity or hardware change.
+
+### Evidence-depth state
+R1 paper-depth debt: **0**.

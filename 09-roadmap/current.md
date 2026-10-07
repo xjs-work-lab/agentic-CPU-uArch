@@ -140,7 +140,7 @@ No SYSTEM_VALUE or hardware/uArch promotion.
 
 ## Evidence-depth state
 Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
-The remaining **4** current-roadmap paper warnings are now only in R1 / R2. B-residual paper-depth debt is cleared.
+The remaining **2** current-roadmap paper warnings are now only in R2. B-residual and R1 paper-depth debt are cleared.
 
 Reserve Rescue Batch 1 removes four warnings:
 - PAPER-030 AgentProg — FULL_10Q;
@@ -355,7 +355,7 @@ T6/T7/T8 frontier coverage is complete. No new differentiated Primary Bet surviv
 ## Next
 **Reserve-lane evidence rescue: B-residual / R1 / R2.**
 
-The known current-roadmap debt is now **4** decision-critical papers: R1 PAPER-047/048 and R2 PAPER-008/049. After those, the separate R3/patent direct-claim audit remains before final portfolio convergence.
+The known current-roadmap paper-depth debt is now **2** decision-critical papers: R2 PAPER-008/049. After those, the separate R3/patent direct-claim audit remains before final portfolio convergence.
 
 
 ## Reserve Rescue Batch 2 — B-residual complete
@@ -381,3 +381,23 @@ No score change. No maturity promotion. No uArch promotion.
 
 ## Next reserve rescue
 **R1 PAPER-047 / PAPER-048**, then **R2 PAPER-008 / PAPER-049**.
+
+
+## Reserve Rescue — R1 complete
+
+FULL_10Q:
+- PAPER-047 Decoupling Readiness from Release
+- PAPER-048 Ask Early, Ask Late, Ask Right
+
+Decision impact:
+- PAPER-047 directly kills broad novelty of Ready≠Release: software can choose which ready Agent turn to release and adapt released-work budget from tail-risk/work estimates/queue pressure, with up to 3.50× P95 workflow-flow-time improvement under contention.
+- PAPER-048 proves semantic information has task-dependent timing windows, but those windows are trajectory/user-interaction scale rather than CPU post-ready timing.
+
+R1 therefore remains only:
+> after DependencyReady, does explicit Agent ReleasePermission / LatestUsefulResume expose a safe delay interval that the strongest generic release scheduler cannot reconstruct and that creates >=~5% phone energy/QoE/useful-progress value?
+
+R1 remains 55.5 / CONDITIONAL_RESERVE / SIMULATION_SUPPORT.
+No uArch promotion.
+
+## Next
+**R2 PAPER-008 / PAPER-049**.
