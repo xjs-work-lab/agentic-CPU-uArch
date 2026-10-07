@@ -50,3 +50,18 @@ Residual M2:
 - Claim-review completeness: Partial
 - Open questions: exact claim-family boundaries
 - Primary patent source: link above
+
+
+## 2026-10-07 claim audit completion
+The prior V1 card marked claim review partial.
+
+Current re-audit verifies claim 26 directly:
+- initiate I/O transfer;
+- determine/update transfer rate;
+- predict time to completion;
+- compare predicted remaining time with known exit latency;
+- issue wake command once completion is close enough.
+
+Claim-review status for the project-relevant predictive-wake proposition is now **DIRECT / VERIFIED**.
+
+The narrow R1 post-ready semantic interval remains outside this claim.

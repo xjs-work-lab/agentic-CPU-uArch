@@ -442,6 +442,13 @@ PATENT-032 verifies the narrow claim-level boundary:
 
 It does **not** claim smartphone S2/S3 derived physical-state lineage.
 
-Patent audit progress: **4 / 13 complete; 9 remain**.
+R1 direct-claim audit is complete.
 
-Next: **R1 PATENT-005 / 017 / 018 / 019**.
+Important correction:
+PATENT-017 does not directly claim latest-start timing in its independent claims; that ancestry comes from its workload-scheduling specification/background. PATENT-005/018/019 provide the direct claim-level predictive-wake / earliest-latest-start / wake-and-migrate anchors.
+
+CLM-R1-004 remains supported at the broad mechanism-family level.
+
+Patent audit progress: **8 / 13 complete; 5 remain**.
+
+Next/final patent set: **R2 PATENT-020 / 021 / 022 / 023 / 024**.

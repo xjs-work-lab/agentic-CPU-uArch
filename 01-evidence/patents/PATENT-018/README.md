@@ -18,3 +18,21 @@ venue = "JP2007140710A"
 Derives earliest/latest start times from dependency/time constraints.
 
 **Boundary:** frozen V1 assignee/family metadata remained incomplete; migration does not strengthen it.
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 1 directly computes, for tasks under dependency/time constraints:
+- earliest start time;
+- latest start time that still satisfies the time constraint;
+- movable/slack range from their difference;
+- allocation order using that range.
+
+Safe conclusion:
+generic earliest/latest-start and slack-aware task allocation are direct claim-level prior art.
+
+Boundary:
+not Agent semantic post-ready timing.
+
+No FTO/legal conclusion is made.

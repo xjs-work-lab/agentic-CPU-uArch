@@ -162,9 +162,21 @@ B-residual patent audit complete:
 
 B-residual remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT**; no score/maturity/uArch change.
 
-Remaining patents:
-- R1: PATENT-005 / 017 / 018 / 019;
-- R2: PATENT-020 / 021 / 022 / 023 / 024.
+R1 patent audit complete:
+- PATENT-005 — claim 26 directly verifies completion-time prediction compared with known exit latency, followed by pre-completion wake command.
+- PATENT-018 — claim 1 directly verifies dependency/time-constraint earliest/latest-start computation and task movable range.
+- PATENT-019 — claim 1 directly verifies wake-before-migrate across heterogeneous running units.
+- PATENT-017 — **corrected**: independent claims center on scheduler→workload-manager resource attributes/resource allocation. The deadline-duration/latest-start material is in the specification/background, not the independent-claim core.
+
+CLM-R1-004 remains **SUPPORTED**, but the evidence model is now explicitly:
+**3 direct-claim anchors + 1 specification/background ancestry source.**
+
+R1 remains **CONDITIONAL_RESERVE / 55.5 / SIMULATION_SUPPORT**; no score/maturity/uArch change.
+
+Patent audit inventory: **8 / 13 complete; 5 remain**.
+
+Remaining patents are all R2:
+PATENT-020 / PATENT-021 / PATENT-022 / PATENT-023 / PATENT-024.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.

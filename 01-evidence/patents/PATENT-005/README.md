@@ -18,3 +18,18 @@ venue = "US20170168853A1"
 Predicting completion and waking a CPU in time for completion is old prior art.
 
 **Boundary:** pre-completion predictive wake, not intentional post-ready semantic release.
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 26 directly covers:
+predicted I/O completion time → comparison with known low-power exit latency → wake command before completion.
+
+Safe conclusion:
+generic pre-completion predictive wake is claim-level prior art.
+
+Boundary:
+not post-ready Agent semantic release timing.
+
+No FTO/legal conclusion is made.

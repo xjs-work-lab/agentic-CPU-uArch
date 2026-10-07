@@ -80,3 +80,59 @@ No score, lane, maturity or hardware change.
 
 ### Evidence-depth state
 R1 paper-depth debt: **0**.
+
+
+## Patent direct-claim audit — 2026-10-07
+
+### PATENT-005 — direct claim VERIFIED
+Claim 26 directly recites:
+- determine I/O transfer rate;
+- calculate/update predicted completion time;
+- compare completion time with known exit latency;
+- send wake command when completion time falls within exit latency.
+
+Boundary:
+this is **pre-completion predictive wake**, not intentional post-ready semantic release.
+
+### PATENT-018 — direct claim VERIFIED
+Claim 1 directly recites:
+- predecessor/dependency and time constraints;
+- earliest start;
+- latest start that still completes within time constraint;
+- task movable range = latest minus earliest start;
+- allocation order based on that movable range.
+
+Boundary:
+this is generic dependency/deadline slack scheduling, not Agent semantic LatestUsefulResume.
+
+### PATENT-019 — direct claim VERIFIED
+Claim 1 directly recites:
+- first thread on one running unit;
+- heterogeneous second unit asleep;
+- migration condition based on load;
+- wake second unit first;
+- then schedule/migrate the first thread's task to it.
+
+Boundary:
+generic wake-before-migrate / heterogeneous scheduling, not semantic post-ready timing.
+
+### PATENT-017 — evidence-role CORRECTION
+Current independent claims primarily recite:
+- workload scheduler;
+- workload manager;
+- work-unit resource attributes;
+- resource allocation/tuning according to those attributes and service class.
+
+Its description/background explicitly discusses deadlines, expected duration and latest-start-like intervention.
+
+Therefore:
+- keep PATENT-017 as **specification/background ancestry** for deadline/workload scheduling;
+- do not label it a direct-claim latest-start anchor.
+
+### R1 decision
+CLM-R1-004 remains SUPPORTED because the broad mechanism family is independently anchored by PATENT-005 / 018 / 019 and reinforced by PATENT-017's specification-level scheduling ancestry.
+
+This audit does not touch the surviving R1 residual:
+> post-ready Agent semantic ReleasePermission / LatestUsefulResume beyond strong generic release/slack/wake/migrate scheduling.
+
+No score, lane, maturity or hardware change.
