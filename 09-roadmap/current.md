@@ -16,9 +16,9 @@ Updated: 2026-10-07
 ## Active differentiated / platform lanes
 - **A — Agent Semantic Progress Control** — PRIMARY_BET / 82.5 / SIMULATION_SUPPORT
 - **PT-A — Heterogeneous Verified Agent Actuation Runtime** — PLATFORM_TRACK / 80.0 / SYSTEM_VALUE
-- **C — Efficient System-Control Substrate** — STRATEGIC_ENABLER / 72.0
+- **C — Efficient System-Control Substrate** — STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE
 
-C's previous second-Bet watch is closed on current evidence. Generic/Agent-aware system-control patterns are heavily occupied by strong existing baselines.
+C's previous second-Bet watch remains closed. Round 13 upgrades C's evidence maturity to **SYSTEM_VALUE** because HeRo demonstrates direct commercial-phone Agent-aware heterogeneous orchestration value; however, Agent.xpu/HeRo simultaneously raise the strongest software baseline, so differentiated residual remains unproven.
 
 ## Competitive-gap lanes
 - **CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path** — INVEST / 86.5
@@ -77,3 +77,28 @@ Second differentiated Primary Bet remains **UNFILLED**.
 
 ## Next
 Resume the frontier reset outside already-covered families. Do not reopen H-CAL unless direct target-phone evidence shows a material residual beyond LOCAL + MobiLoRA + strongest mobile-training/scheduling baselines that existing C/B/R2 software cannot represent.
+
+
+## Round 13 — Agent-flow heterogeneous SoC orchestration
+
+FULL_10Q:
+- **PAPER-097 Agent.xpu** — mixed reactive/proactive Agent-flow scheduling on commodity hetero-SoC;
+- **PAPER-098 HeRo** — direct commercial-phone dynamic Agentic-RAG orchestration across CPU/GPU/NPU;
+- **PAPER-099 MobileExplorer** — reasoning-window speculative GUI exploration + rollback;
+- **PAPER-100 Jev-Mobile** — low-frequency semantic planning + high-frequency typed GUI execution.
+
+### Portfolio decision
+- **C:** evidence maturity **STRUCTURAL_SIGNAL → SYSTEM_VALUE**; lane **STRATEGIC_ENABLER / 72.0 unchanged**.
+- **CG-06:** baseline raised to include Agent.xpu/HeRo-class dynamic xPU orchestration; **INVEST / 86.5 unchanged**.
+- **PT-A:** MobileExplorer strengthens speculative-effect/rollback workload; **80.0 unchanged**.
+- **A:** Jev-Mobile strengthens hierarchical software decomposition baseline; **82.5 unchanged**.
+- **new Direction:** none.
+- **second differentiated Primary Bet:** still **UNFILLED**.
+
+### Why no new Bet
+HeRo establishes that dynamic Agent workflow state has real phone system value, but the decisive control variables—partial DAG, stage criticality, accelerator affinity, shape and bandwidth—are already explicit software/runtime state. The same evidence that upgrades C's maturity also raises the baseline any differentiated C/CG-06 mechanism must beat.
+
+## Current frontier
+**NONE / UNASSIGNED after Round 13.**
+
+Continue frontier reset outside already-owned scheduling/orchestration, memory, security, proactive gating and continual-learning families.

@@ -6,10 +6,10 @@ title = "Efficient System-Control Substrate"
 direction_class = "STRATEGIC_ENABLER"
 investment_lane = "STRATEGIC_ENABLER"
 score_context = 72.0
-evidence_maturity = "STRUCTURAL_SIGNAL"
-maturity_scope = "direct smartphone generic control/QoE tax is established; EdgeAgent shows Agent-aware incremental value on Apple M4; target-phone Agent-specific residual beyond strong generic tuning remains unestablished"
-strongest_baseline = "G1_GENERIC_OPTIMIZED"
-related_claims = ["CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-MOBILE-003", "CLM-AGENT-008", "CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-006", "CLM-C-007", "CLM-C-008", "CLM-C-EXP-001"]
+evidence_maturity = "SYSTEM_VALUE"
+maturity_scope = "direct commercial-phone Agent-aware heterogeneous orchestration SYSTEM_VALUE is established by HeRo; differentiated residual beyond strongest generic/Agent-aware software orchestration and Huawei target transfer remain unestablished"
+strongest_baseline = "G2_AGENT_AWARE_HETERO_ORCHESTRATION"
+related_claims = ["CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-MOBILE-003", "CLM-AGENT-008", "CLM-C-001", "CLM-C-002", "CLM-C-003", "CLM-C-004", "CLM-C-005", "CLM-C-006", "CLM-C-007", "CLM-C-008", "CLM-C-009", "CLM-C-EXP-001"]
 related_capabilities = ["CAP-HUAWEI-GENERIC-RESOURCE-CONTROL"]
 +++
 
@@ -52,7 +52,13 @@ SERENO-like control, MUSched-like semantic-aware CPU scheduling, Syrup-like port
 ### 3. Agent-aware residual
 Only incremental value tied to Agent blocked/ready/concurrency/criticality state beyond G1 counts toward differentiated C value.
 
-PAPER-051 supplies pressure for this layer on Apple M4; target-phone transfer remains open.
+PAPER-051 supplies pressure for this layer on Apple M4.
+
+PAPER-097 / Agent.xpu then shows that reactive/proactive Agent flows can drive large software-only gains through stage-elastic NPU/iGPU coordination, bandwidth-aware dispatch and fine-grained preemption on a commodity shared-memory hetero-SoC.
+
+PAPER-098 / HeRo closes the **target-phone transfer gap**: on commercial Snapdragon phones, dynamic Agentic-RAG workflow state, stage–PU affinity, shape sensitivity and shared-memory contention support material online scheduling value.
+
+Therefore C now reaches **SYSTEM_VALUE**, but this is an evidence-maturity upgrade rather than differentiated-lane promotion.
 
 PAPER-060 / CLM-MOBILE-002 further raises the bar: generic interaction semantics can already be converted into deployable scheduler-visible priority/dependency state on commercial phones.
 PAPER-061 / CLM-C-006 additionally shows that portable application-defined policy and cross-layer scheduling coordination are mature prior-art patterns in server systems.
@@ -61,7 +67,17 @@ PAPER-066 / CLM-AGENT-008 shows Agent workflow structure and per-request SLOs ca
 PAPER-067 / CLM-MOBILE-003 shows personalized background usefulness can already drive smartphone allow/suppress decisions.
 PAPER-068 / CLM-C-008 shows graded task utility and low-value abort are foundational resource-scheduling concepts.
 
-C only earns differentiated credit for a target-phone Agent-specific residual that is not reproduced by these generic and Agent-aware upper-layer controls.
+### G2 — Agent-aware heterogeneous orchestration baseline
+The strongest baseline now also includes:
+- Agent.xpu-class reactive/proactive flow priority and preemption;
+- prefill/decode stage elasticity;
+- dynamic xPU binding under accelerator affinity;
+- partial/evolving workflow-DAG criticality;
+- shape-aware sub-stage partitioning;
+- shared-memory-bandwidth-aware concurrency control;
+- HeRo-class online stage-to-CPU/GPU/NPU mapping.
+
+C only earns differentiated credit for a target-phone Agent-specific residual **beyond G2** that is not reproduced by these generic and Agent-aware software controls.
 
 ## Current lane
 Keep as **Strategic Enabler**.
@@ -77,7 +93,7 @@ Therefore:
 
 ## Promotion gate
 EXP-C-001 must show:
-- A1 vs G1 >=~5% meaningful end-outcome residual;
+- A1 vs G2 >=~5% meaningful end-outcome residual;
 - >1 representative Agent workload regime;
 - mechanism tied to Agent blocked/ready/concurrency/criticality;
 - same benefit not reproduced in inference-only C0;
@@ -87,5 +103,5 @@ EXP-C-001 must show:
 ## Hardware boundary
 No uArch promotion unless:
 1. target-phone C reaches SYSTEM_VALUE;
-2. SERENO-like, MUSched-like, Syrup-like, WASH-like, HUSH-like, TUF/ReUA-like, Murakkab-class + other best software/runtime controls are exhausted;
+2. SERENO-like, MUSched-like, Syrup-like, WASH-like, HUSH-like, TUF/ReUA-like, Murakkab-class, Agent.xpu-class and HeRo-class controls are exhausted;
 3. a causal hardware-timescale/visibility/control residual remains.
