@@ -74,7 +74,7 @@ Second differentiated Primary Bet remains **UNFILLED**.
 
 
 ## Current research frontier
-**FRONTIER SEARCH PAUSED PENDING RESCUE-1B QA.**
+**ROUND 14 UNLOCKED — frontier reset may resume.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -96,13 +96,13 @@ If B4-TX reproduces nearly all B6-Demand value, A must be downgraded or killed a
 No SYSTEM_VALUE or hardware/uArch promotion.
 
 ## Evidence-depth state
-Pending QA, the five primary lanes are expected to have **0 paper-depth warnings**.
-The remaining **12** current-roadmap paper warnings are in B-residual / R1 / R2.
+Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
+The remaining **12** current-roadmap paper warnings are all in B-residual / R1 / R2.
 
 ## Next
-Run Rescue-1B Graph QA and primary-lane backtrace validation.
-If clean, unlock Frontier Round 14.
-Reserve-lane/patent rescue remains required before final portfolio convergence.
+Resume **Frontier Round 14** outside already-owned/closed families and search for a genuinely new Agent workload structural break.
+
+Do not treat the remaining reserve-lane/patent audit as optional: it remains required before final portfolio convergence.
 
 ## Round 13 — Agent-flow heterogeneous SoC orchestration
 
