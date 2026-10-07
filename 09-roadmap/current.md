@@ -427,4 +427,13 @@ No uArch promotion.
 This is a paper-depth milestone, not final portfolio convergence.
 
 ## Next
-**Patent direct-claim audit**, with R3/patent-heavy claims first.
+**Patent direct-claim audit — ACTIVE.**
+
+R3 core set PATENT-028/029/030 is complete and confirms the broad prior-art boundary without changing R3's blocked state.
+
+Remaining direct-claim set: **10 patents**:
+- B-residual: PATENT-032;
+- R1: PATENT-005 / 017 / 018 / 019;
+- R2: PATENT-020 / 021 / 022 / 023 / 024.
+
+Next: **PATENT-032** because it is the only patent premise directly constraining B-residual's semantic/version-aware invalidation claim.

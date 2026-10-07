@@ -84,3 +84,66 @@ No silicon/ISA/uArch commitment.
 Preserve instrumentation and parent-gate observability only.
 
 Exact frozen V1 lineage is preserved in [deep.md](deep.md).
+
+
+## Patent direct-claim re-audit — 2026-10-07
+
+### PATENT-028 — VERIFIED broad compiler/runtime hint boundary
+Current public claim text supports:
+- compiler-produced scheduling-hint information;
+- consumption by dynamic runtime scheduling;
+- user-space scheduler;
+- dependent locality/placement-related scheduling hints.
+
+Safe project conclusion:
+**generic compiler → runtime scheduling/locality hints are old/crowded prior art.**
+
+Do not infer:
+- Agent DemandState;
+- Effect/Commit legality;
+- a smartphone D2 interface;
+- a specific CPU/uArch semantic hint.
+
+### PATENT-029 — VERIFIED broad Agent workflow/resource-scheduling boundary
+Current claim 1 supports a chain containing:
+- implicit semantic processing;
+- user-demand Agent blueprint;
+- Agent workflow;
+- task execution scheduling;
+- explicit node topology / communication analysis;
+- node resource scheduling;
+- reinforcement-learning multi-Agent path optimization.
+
+Safe project conclusion:
+**broad Agent semantics/workflow/topology → resource scheduling is not whitespace.**
+
+Important boundary:
+specific implementation fields such as priority/resource type/duration/upstream/downstream IDs must not be presented as independent-claim language unless separately cited from the specification/dependent claim.
+
+### PATENT-030 — VERIFIED planner/executor/resource hierarchy boundary
+Current claim text supports:
+- upper planning Agent;
+- natural-language intent → workflow/DAG;
+- macro planning/constraints;
+- lower execution Agent;
+- micro resource scheduling;
+- resource-ready execution DAG;
+- execution feedback;
+- dependent CPU/GPU/I/O/memory resource labels and DRL/PPO scheduling details.
+
+Safe project conclusion:
+**planner Agent → execution Agent → resource scheduler hierarchy is crowded.**
+
+Do not infer target-phone D2/uArch value or prior coverage of a compact hardware-specific Agent hint.
+
+### R3 decision
+CLM-R3-003 remains SUPPORTED with a deliberately narrow scope:
+> generic compiler/runtime hints, broad Agent workflow semantics-to-resource scheduling, and planner/executor/resource hierarchy are established prior-art families.
+
+R3 remains BLOCKED for independent reasons:
+- D0 target-phone SYSTEM_VALUE is not established;
+- D1 software insufficiency is not established;
+- R1/R2 remain measurement-only;
+- no hardware-specific causal residual has survived.
+
+No score, lane, maturity or hardware change.

@@ -22,3 +22,16 @@ Direct claims cover upper planning Agent → lower execution Agent → resource 
 **Boundary:** does not establish a smartphone D2/uArch semantic-hint benefit; no legal/FTO conclusion.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED for project boundary use.**
+
+Current public claim text supports the broad hierarchical pattern:
+upper planning Agent → workflow/DAG and macro constraints → lower execution Agent / micro resource scheduling → execution feedback.
+
+Dependent claim material further describes CPU/GPU/I/O/memory resource labels and DRL/PPO-style lower scheduling.
+
+This supports a software/workflow prior-art boundary, not a finding that smartphone Agent-specific CPU/uArch hints are already solved or claimed.
+
+No FTO/legal conclusion is made.

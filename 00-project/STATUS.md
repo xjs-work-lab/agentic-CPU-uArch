@@ -141,7 +141,19 @@ R2 remains **CONDITIONAL_RESERVE / 54.5 / SIMULATION_SUPPORT**:
 
 **Current-roadmap paper-depth debt is now 0.**
 
-R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
+Patent direct-claim audit: **ACTIVE**.
+
+R3 core audit complete:
+- PATENT-028 — current public claim text verifies compiler scheduling hints consumed by a user-space runtime scheduler; locality-related dependent claims reinforce the generic hint baseline.
+- PATENT-029 — current public claim text verifies a broad implicit-semantics / Agent-workflow / topology-analysis / node-resource-scheduling / RL path-optimization chain.
+- PATENT-030 — current public claim text verifies a broad upper-planning-Agent → lower-execution-Agent → resource-scheduling hierarchy.
+
+R3 result:
+- CLM-R3-003 remains **SUPPORTED**, but only at the broad prior-art boundary;
+- these patents do **not** establish that Agent-native DemandState/Effect-Commit semantics, a target-phone D1 residual, or a compact D2 CPU/uArch hint are already claimed or technically sufficient;
+- R3 remains **BLOCKED / 48.5 / NOT_EVALUABLE** because its parent SYSTEM_VALUE/software-insufficiency gates remain unmet.
+
+Patent audit inventory: **3 / 13 complete; 10 remain** across B-residual, R1 and R2.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.

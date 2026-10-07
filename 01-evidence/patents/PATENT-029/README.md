@@ -22,3 +22,16 @@ Direct claims cover a broad Agent workflow/topology/resource-scheduling pipeline
 **Boundary:** does not directly claim the project's narrow D0 DemandState core or prove D2 hardware value; no legal/FTO conclusion.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED for project boundary use.**
+
+Current claim 1 directly supports a broad chain from implicit semantic analysis and Agent workflow construction into task/node-resource scheduling and reinforcement-learning decision-path optimization.
+
+Correction preserved:
+priority/resource type/operation duration/upstream-downstream identifiers are not treated as independent-claim wording merely because they appear in the specification.
+
+This source narrows broad Agent semantics/topology → resource-scheduling novelty only. It does not establish the project's narrow DemandState/Effect-Commit core or a phone D2/uArch mechanism.
+
+No FTO/legal conclusion is made.

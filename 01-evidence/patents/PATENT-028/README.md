@@ -22,3 +22,13 @@ Direct claim review in frozen V1 establishes the broad `compiler → scheduling/
 **Boundary:** does not directly claim Agent-native DemandState or Effect/Commit semantics; no legal/FTO conclusion.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED for project boundary use.**
+
+Current public claim text directly supports the broad compiler-generated scheduling-hint → user-space runtime scheduler pattern.
+
+The audit supports only the generic scheduling/locality-hint prior-art boundary. It does not establish Agent-native DemandState, Effect/Commit semantics, target-phone D1 value, or a D2 CPU/uArch mechanism.
+
+No FTO/legal conclusion is made.
