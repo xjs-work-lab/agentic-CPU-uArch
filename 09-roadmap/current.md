@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — MobiMem FULL_10Q complete; LOCAL next.**
+**ROUND 14 ACTIVE — MobiMem + LOCAL FULL_10Q complete; EcoAgent next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -167,10 +167,24 @@ Key corrections:
 
 No Trend maturity, portfolio lane, score or uArch promotion.
 
+## LOCAL FULL_10Q
+PAPER-104 strengthens T5's versioned-state lifecycle baseline and further narrows T7 standalone differentiation.
+
+Key findings:
+- one model instance serves foreground inference while judge/training/cache work compete for the same 24 GB GPU;
+- KV validity is keyed by token span + context namespace + adapter + adapter version;
+- Agent identity is provenance rather than an unconditional hard KV key;
+- cross-Agent pending-consumer state drives speculative pre-prefill and reduces reported TTFT p99 by 21.9%;
+- the useful signal maps to software-visible dependency/demand + state/version validity;
+- no smartphone SoC, battery, thermal or foreground-app QoE evidence.
+
+H-CAL's software baseline is strengthened but its standalone KILL_DIFFERENTIATED_BET remains unchanged.
+
+No Trend maturity, portfolio lane, score or uArch promotion.
+
 ## Next
-FULL_10Q in order:
-1. LOCAL
-2. EcoAgent
+FULL_10Q:
+1. EcoAgent
 
 Then issue an ownership/residual decision:
 NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL_DIFFERENTIATED_BET.

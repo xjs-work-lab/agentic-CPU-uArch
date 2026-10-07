@@ -14,7 +14,9 @@ supersedes = []
 On-device adapter evolution, adapter identity and LoRA-specific KV retention/reuse are explicitly representable and substantially optimizable in software under mobile resource constraints.
 
 ## Current interpretation
-PAPER-094 shows a software lifecycle for continually evolving adapter collections, while PAPER-095 directly exposes LoRA identity and mobile application lifecycle to KV-cache software and reports substantial TTFT improvement.
+PAPER-094 shows a software lifecycle for continually evolving adapter collections; PAPER-095 exposes LoRA identity and mobile application lifecycle to KV-cache software; PAPER-104 extends the baseline to **live foreground Agent inference plus local adapter training/publication** on one 24 GB consumer GPU with explicit adapter-version/KV validity.
+
+This materially strengthens the software-capture interpretation.
 
 ## Boundary
-Neither source evaluates live local gradient publication during a user-facing Agent session. They narrow, but do not individually eliminate, the adapter-version update residual.
+PAPER-104 is not a commercial-phone experiment. The remaining unresolved boundary is target-phone battery/thermal/foreground-QoE behavior and any residual after the LOCAL-class software runtime, not whether versioned adapter/KV state can be represented in software.
