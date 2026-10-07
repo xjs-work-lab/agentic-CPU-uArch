@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 290 canonical nodes
-- 486 canonical semantic edges
-- 486 generated reverse edges
-- projection refreshed after Frontier Round 5 persistent-memory seed round
+- 296 canonical nodes
+- 490 canonical semantic edges
+- 490 generated reverse edges
+- projection refreshed after Frontier Round 6 H-PAM recurrence test
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
@@ -74,7 +74,7 @@ Explicit approval:
 - R3 — BLOCKED
 - second differentiated Primary Bet — intentionally unfilled
 - system-control second-Bet search — converged / no standalone Bet found
-- current second-Bet frontier — H-PAM Persistent Agent Memory Execution Substrate (analysis hypothesis only; not a Direction)
+- current second-Bet frontier — H-PAM Persistent Agent Memory Execution Substrate (KEEP/NARROW analysis hypothesis; recurrence PASS; lower-level mobile residual OPEN)
 - uArch Primary Bet — none
 
 ## Hardware gate
