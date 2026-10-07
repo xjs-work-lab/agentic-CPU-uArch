@@ -3,10 +3,10 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **383**
-- canonical semantic edges: **610**
-- generated reverse edges: **610**
-- graph projection: validated after Evidence Rescue 1A PT-A deep audit
+- canonical nodes: **384**
+- canonical semantic edges: **622**
+- generated reverse edges: **622**
+- graph projection: validated after Evidence Rescue 1B A deep audit
 
 ## Round-13 full PR Graph QA
 **PASS**
@@ -85,3 +85,39 @@ It narrows canonical claim wording and introduces warning-only evidence-depth en
 ### QA correction note
 The first PR QA run (`37611716486`) failed deterministic projection because the updated EC-PTA-003-B added PAPER-102 as a canonical premise but the manually refreshed projection initially omitted that edge.
 The canonical Evidence Case was correct; the projection was repaired, regenerated and then passed.
+
+
+## Evidence Rescue 1B — A
+**PASS**
+- PR: #17
+- Graph QA run: `37617038459`
+- job: `112777774022`
+- validated head: `f18e2d5871599f714d88d12d4ff825809b1d3370`
+- squash merge: `95cb25d3899353206c39c29ebed69ed3d324b4d9`
+- work-branch cleanup: PASS / run `37617300996`
+- deterministic projection: PASS
+- graph hard errors: 0
+- current projection: **384 nodes / 622 canonical edges / 622 reverse edges**
+
+### Structural delta
+- PAPER-013 / 015 / 043 / 044 / 050 revalidated as EDP v1 FULL_10Q.
+- PAPER-043 venue corrected to ICLR 2025.
+- CLM-AGENT-001 / 002 / 003 boundaries tightened.
+- CLM-A-001 narrowed to conditional information value of non-reconstructible DemandState / RequiredProgress.
+- EXP-A-001 strengthened into a matched-observability residual test.
+- DEC-A-007 records revalidation/narrowing with no lane/score/maturity promotion.
+- six additional historical/strong-baseline Sources are explicitly connected to EXP-A-001.
+
+### EDP warning state
+- A / PT-A / C / CG-06 / CG-07 paper warnings: **0**.
+- B-residual / R1 / R2 paper warnings: **12**.
+- whole current ROADMAP paper warnings: **12**.
+
+### Portfolio boundary
+A remains PRIMARY_BET / 82.5 / SIMULATION_SUPPORT, provisionally.
+No source directly proves CLM-A-001.
+No SOFTWARE_INSUFFICIENCY pass.
+No hardware-specific cause.
+No uArch candidate.
+
+Frontier Round 14 is unlocked after this validation.
