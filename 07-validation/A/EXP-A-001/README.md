@@ -6,7 +6,7 @@ status = "READY"
 title = "A matched-observability DemandState residual test"
 direction_ids = ["A"]
 tests_claim_ids = ["CLM-A-001"]
-input_source_ids = ["PAPER-013", "PAPER-015", "PAPER-041", "PAPER-043", "PAPER-044", "PAPER-050", "PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065", "PAPER-066", "PAPER-067", "PAPER-068"]
+input_source_ids = ["PAPER-013", "PAPER-015", "PAPER-117", "PAPER-043", "PAPER-044", "PAPER-050", "PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065", "PAPER-066", "PAPER-067", "PAPER-068"]
 evidence_target = "SYSTEM_VALUE"
 +++
 

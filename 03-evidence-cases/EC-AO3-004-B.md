@@ -10,7 +10,7 @@ scope = "product signal versus demonstrated cross-engine state fabric"
 boundary = "Do not infer CPU-NPU coherence, an Agent-specific version ABI or measured end-to-end effect from either vendor page."
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "VENDOR-022"
+ref_id = "VENDOR-001"
 locator = "CPU heterogeneous-core cache pool only"
 [[premises]]
 ref_kind = "SOURCE"

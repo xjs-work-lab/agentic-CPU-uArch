@@ -54,7 +54,7 @@ Arm, MediaTek and Qualcomm publicly frame Agentic mobile compute at subsystem/fa
 Key sources:
 - VENDOR-017;
 - VENDOR-019;
-- VENDOR-022;
+- VENDOR-001;
 - VENDOR-023.
 
 Boundary: vendor product disclosures are strong direction signals; vendor performance numbers are not independent proof.

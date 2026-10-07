@@ -2,7 +2,8 @@
 id = "PAPER-097"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
+canonical_source_id = "PAPER-113"
 review_depth = "FULL_10Q"
 decision_use = "AGENT_FLOW_HETERO_SOC_BASELINE"
 independence_assessment = "PREPRINT_COMMODITY_HETERO_SOC"
@@ -13,6 +14,9 @@ evidence_role = "Agent-native mixed reactive/proactive flow baseline for NPU-iGP
 authors = ["Xinming Wei", "Jiahao Zhang", "Haoran Li", "Jiayu Chen", "Haoning Guan", "Rui Qu", "Maoliang Li", "Xiang Chen", "Guojie Luo"]
 venue = "arXiv preprint, v2 2026"
 +++
+
+
+> **Source identity note (2026-10-08):** Historical ID PAPER-097 is an ALIAS of PAPER-113 for the same original publication. Keep the archived review for provenance, but use the canonical source in active evidence. The two IDs are not independent confirmations.
 
 # PAPER-097 — Agent.xpu
 

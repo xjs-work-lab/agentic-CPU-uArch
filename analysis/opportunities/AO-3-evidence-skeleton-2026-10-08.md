@@ -11,7 +11,7 @@ Do persistent/reused/revised Agent state and heterogeneous SoC residency create 
 - PAPER-104 / LOCAL — existing FULL_10Q reused; versioning, staged publication and cross-Agent pre-prefill: https://arxiv.org/abs/2608.15241
 - PAPER-032 / Versioned Execution — previously FULL_10Q.
 - PAPER-028 / PBKV, PAPER-031 / CacheScout, PAPER-034 / PLACEMEM, PAPER-035 / Invalidation Contracts — existing FULL_10Q software pressure set.
-- VENDOR-022 / Oryon Flex Cache — **new official deep vendor card**, primary: https://www.qualcomm.com/news/onq/2026/08/oryon-cpu-5ghz-flexcache
+- VENDOR-001 / Oryon Flex Cache — existing canonical source with supplemental alias review, primary: https://www.qualcomm.com/news/onq/2026/08/oryon-cpu-5ghz-flexcache
 - VENDOR-023 / Hexagon Agentic NPU — existing deep vendor card, primary: https://www.qualcomm.com/news/onq/2026/09/hexagon-npu-agentic-ai-architecture
 - PATENT-024 / US9626295B2 and PATENT-032 / CN121960775A — **previous direct independent/dependent claim audits reused**, no new patent claim review claimed.
 

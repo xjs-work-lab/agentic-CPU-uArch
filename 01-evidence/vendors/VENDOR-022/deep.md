@@ -1,3 +1,5 @@
+> **Historical alias supplementary review:** This review is retained under VENDOR-022 for audit history. The original Qualcomm source is canonically **VENDOR-001**. It must not be counted as a second independent vendor source.
+
 # VENDOR-022 — Qualcomm Oryon Flex Cache — deep vendor card
 
 ## Q1 — Original technical disclosure

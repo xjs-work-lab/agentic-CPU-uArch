@@ -10,14 +10,14 @@ scope = "runtime-derived effect/commit legality"
 boundary = "Does not imply all legality is derivable or phone-specific."
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "PAPER-041"
+ref_id = "PAPER-117"
 locator = "semantic transactions, lineage, shadow state and staged effects"
 +++
 
 # EC-A-003-A
 
 ## Inference
-`PAPER-041` → **SUPPORT** → `CLM-AGENT-003`
+`PAPER-117` → **SUPPORT** → `CLM-AGENT-003`
 
 ## Warrant
 Cordon independently demonstrates substantial effect/commit legality constructed and enforced by runtime transaction state.

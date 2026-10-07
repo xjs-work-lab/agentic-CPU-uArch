@@ -2,7 +2,8 @@
 id = "PAPER-089"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
+canonical_source_id = "PAPER-104"
 review_depth = "FULL_10Q"
 decision_use = "AGENT_CONTIGUOUS_LEARNING_SEED"
 independence_assessment = "PREPRINT_AGENT_RUNTIME"
@@ -13,6 +14,9 @@ evidence_role = "Agent-native systems seed showing that continual local adaptati
 authors = ["Xinxin Liu", "Jiaxin Li", "Zibo Wang", "Yun Ji", "Zhangqi Zhu", "Qing Hu", "Zhibin Wang", "Rong Gu", "Sheng Zhong", "Chen Tian"]
 venue = "arXiv preprint 2026"
 +++
+
+
+> **Source identity note (2026-10-08):** Historical ID PAPER-089 is an ALIAS of PAPER-104 for the same original publication. Keep the archived review for provenance, but use the canonical source in active evidence. The two IDs are not independent confirmations.
 
 # PAPER-089 — LOCAL: Enabling Learning On-device Contiguously for Agent LLMs
 

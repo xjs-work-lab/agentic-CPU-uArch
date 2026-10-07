@@ -18,7 +18,7 @@ ref_id = "PAPER-039"
 locator = "learned GUI/CLI orchestration and ablations"
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "PAPER-041"
+ref_id = "PAPER-117"
 locator = "semantic transaction/commit safety"
 [[premises]]
 ref_kind = "SOURCE"
@@ -27,4 +27,4 @@ locator = "verification/recovery training and reward ablations"
 +++
 
 # EC-PTA-003-B
-PAPER-038 + PAPER-039 + PAPER-041 + PAPER-102 → SUPPORT → CLM-PTA-003.
+PAPER-038 + PAPER-039 + PAPER-117 + PAPER-102 → SUPPORT → CLM-PTA-003.

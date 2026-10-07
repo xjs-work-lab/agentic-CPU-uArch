@@ -2,7 +2,8 @@
 id = "PAPER-073"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
+canonical_source_id = "PAPER-103"
 review_depth = "FULL_10Q"
 decision_use = "DECISION_GRADE_WITH_SCOPE_BOUNDARY"
 independence_assessment = "PREPRINT_AGENT_NATIVE"
@@ -13,6 +14,9 @@ evidence_role = "direct mobile-Agent memory primitive and OS-integration evidenc
 authors = ["Zibin Liu", "Cheng Zhang", "Xi Zhao", "Yunfei Feng", "Bingyu Bai", "Dahu Feng", "Erhu Feng", "Yubin Xia", "Haibo Chen"]
 venue = "arXiv preprint 2025"
 +++
+
+
+> **Source identity note (2026-10-08):** Historical ID PAPER-073 is an ALIAS of PAPER-103 for the same original publication. Keep the archived review for provenance, but use the canonical source in active evidence. The two IDs are not independent confirmations.
 
 # PAPER-073 — MobiMem
 

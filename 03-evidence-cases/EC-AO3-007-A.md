@@ -14,7 +14,7 @@ ref_id = "PAPER-104"
 locator = "software versioned KV lifecycle"
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "VENDOR-022"
+ref_id = "VENDOR-001"
 locator = "mobile CPU Flex Cache architecture signal"
 +++
 

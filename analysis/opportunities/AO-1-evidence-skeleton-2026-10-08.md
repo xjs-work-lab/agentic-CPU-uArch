@@ -15,7 +15,7 @@ Is Agent Execution Fabric a defensible architecture opportunity under a public-e
 ## Product anchors
 - VENDOR-017 Arm CSS for Mobile 2
 - VENDOR-019 MediaTek dual-NPU Agent architecture
-- VENDOR-022 Qualcomm Oryon Flex Cache
+- VENDOR-001 Qualcomm Oryon Flex Cache
 - VENDOR-023 Qualcomm Hexagon Agentic NPU
 
 ## Patent boundary

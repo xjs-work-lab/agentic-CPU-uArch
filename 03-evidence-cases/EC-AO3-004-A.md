@@ -10,7 +10,7 @@ scope = "official mobile CPU and NPU product-architecture signals"
 boundary = "These are vendor product disclosures: Flex Cache is among CPU cores, whereas Hexagon shared memory is NPU-local. No unified CPU/NPU coherent Agent fabric is disclosed."
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "VENDOR-022"
+ref_id = "VENDOR-001"
 locator = "Oryon Flex Cache official Aug 25 2026 article: heterogeneous CPU cores share workload-adaptive cache pool"
 [[premises]]
 ref_kind = "SOURCE"

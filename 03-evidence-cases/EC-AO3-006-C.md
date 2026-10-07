@@ -10,7 +10,7 @@ scope = "product-to-hardware leap boundary"
 boundary = "Disclosed memory capacity/sharing are relevant but not equivalent to persistent logical-Agent state lifetime/validity contract."
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "VENDOR-022"
+ref_id = "VENDOR-001"
 locator = "shared CPU-core Flex Cache architectural boundary"
 [[premises]]
 ref_kind = "SOURCE"

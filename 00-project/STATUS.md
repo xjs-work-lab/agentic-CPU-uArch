@@ -388,7 +388,7 @@ New FULL_10Q anchors:
 - PAPER-115 CPU-Centric Agentic AI.
 
 New product-signal cards:
-- VENDOR-022 Qualcomm Oryon Flex Cache;
+- VENDOR-001 Qualcomm Oryon Flex Cache;
 - VENDOR-023 Qualcomm Hexagon Agentic NPU.
 
 Canonical AO-1 evidence roles now include:
@@ -455,10 +455,22 @@ Validator: analysis/graph/source_identity.py
 AO-3 Persistent Agent State / Context Fabric: **EVIDENCE_MAPPED / KEEP / PRODUCT-SIGNAL BACKED, SOFTWARE-PRESSURED CO-DESIGN OPPORTUNITY**.
 
 - Reused prior FULL_10Q anchors PAPER-103 / 104 / 032 / 028 / 031 / 034 / 035 and previously direct-claim-audited PATENT-024 / 032; MobiMem primary HTML Sections 4–7 cross-checked.
-- Repaired missing VENDOR-022 with official Qualcomm Oryon Flex Cache deep card; carefully separated CPU-core Flex Cache from VENDOR-023's NPU-local shared memory.
+- Reused canonical VENDOR-001 Qualcomm Oryon Flex Cache source and preserved VENDOR-022 supplemental review as an alias; carefully separated CPU-core Flex Cache from VENDOR-023's NPU-local shared memory.
 - Connected CLM-AO3-001..007 through 12 evidence cases including explicit UNDERCUT and SCOPE_LIMIT against a hardware-necessity leap.
 - Strong software baseline rules out broad cache/semantic invalidation novelty. Cross-engine derived-state lifetime/validity/residency remains a public-evidence architecture hypothesis, **not** a committed uArch feature.
 - No differentiated Direction, score, portfolio lane or experiment requirement changed.
 
 Round 15A progress: **3 / 5 Opportunities EVIDENCE_MAPPED**.
 Next: **AO-4 Always-On Proactive Front-End** (then AO-5).
+
+
+## Source identity correction — 2026-10-08
+GitHub QA identified pre-existing duplicate-source identity groups and the newly added Qualcomm duplicate. Canonicalization preserved historical records as aliases:
+- PAPER-097 → PAPER-113 (Agent.xpu)
+- PAPER-073 → PAPER-103 (MobiMem)
+- PAPER-041 → PAPER-117 (Cordon)
+- PAPER-089 → PAPER-104 (LOCAL)
+- PAPER-033 → PAPER-104 was already ALIAS
+- VENDOR-022 → VENDOR-001 (Qualcomm Oryon Flex Cache)
+
+Active Evidence Case premises and Experiment source inputs were migrated to canonical IDs. History and older reviews remain preserved, with no duplicate treated as independent evidence. **AO-3 result and portfolio are unchanged.**

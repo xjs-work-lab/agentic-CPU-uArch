@@ -34,7 +34,7 @@ Not a standalone new-cache thesis and **not** a silicon candidate. The surviving
 - **CLM-AO3-002**: LOCAL, Versioned Execution and Invalidation Contracts support explicit version/provenance/dependency validity and selective reuse.
 
 ### Product signal
-- **CLM-AO3-004**: [Qualcomm Oryon Flex Cache / VENDOR-022](../../../01-evidence/vendors/VENDOR-022/deep.md) is heterogeneous **CPU-core** cache sharing. [Hexagon Agentic NPU / VENDOR-023](../../../01-evidence/vendors/VENDOR-023/deep.md) increases **NPU-local** shared-memory capacity. They are separate pools, **not** public proof of a unified CPU↔NPU Agent-state coherence design.
+- **CLM-AO3-004**: [Qualcomm Oryon Flex Cache / VENDOR-001](../../../01-evidence/vendors/VENDOR-001/deep.md) is heterogeneous **CPU-core** cache sharing. [Hexagon Agentic NPU / VENDOR-023](../../../01-evidence/vendors/VENDOR-023/deep.md) increases **NPU-local** shared-memory capacity. They are separate pools, **not** public proof of a unified CPU↔NPU Agent-state coherence design.
 
 ### Software / prior-art pressure
 - **CLM-AO3-003**: MobiMem validated replay; PBKV/CacheScout software reuse prediction; PLACEMEM state capsules; Invalidation Contracts and LOCAL version checks comprise the strong baseline. The sources span non-comparable setups and do not form a single implementation.

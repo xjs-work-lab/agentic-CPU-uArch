@@ -2,7 +2,8 @@
 id = "PAPER-041"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
+canonical_source_id = "PAPER-117"
 independence_assessment = "UNKNOWN"
 title = "Cordon: Semantic Transactions for Tool-Using LLM Agents"
 primary_url = "https://arxiv.org/abs/2606.17573"
@@ -17,6 +18,9 @@ origin_blobs = ["91447aee130de6ac4f5eb45fd6b807803d4a207b"]
 authors = ["Zheng Chen", "Hanqing Liu", "Duling Xu", "Dong Dong", "Jialin Li", "Bangzheng Pu", "Jidong Zhai"]
 venue = "EuroSys 2027 / arXiv 2026"
 +++
+
+
+> **Source identity note (2026-10-08):** Historical ID PAPER-041 is an ALIAS of PAPER-117 for the same original publication. Keep the archived review for provenance, but use the canonical source in active evidence. The two IDs are not independent confirmations.
 
 # PAPER-041 — Cordon: Semantic Transactions for Tool-Using LLM Agents
 

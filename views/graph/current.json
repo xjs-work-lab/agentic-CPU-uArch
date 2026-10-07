@@ -2732,7 +2732,7 @@
       "id": "PAPER-041",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-041/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-042",
@@ -2906,7 +2906,7 @@
       "id": "PAPER-073",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-073/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-074",
@@ -3002,7 +3002,7 @@
       "id": "PAPER-089",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-089/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-090",
@@ -3050,7 +3050,7 @@
       "id": "PAPER-097",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-097/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-098",
@@ -3344,7 +3344,7 @@
       "id": "VENDOR-022",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-022/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "VENDOR-023",
@@ -9151,7 +9151,7 @@
     {
       "source": "EC-A-003-A",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-041",
+      "target": "PAPER-117",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9745,7 +9745,7 @@
     {
       "source": "EC-AO3-004-A",
       "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
+      "target": "VENDOR-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9763,7 +9763,7 @@
     {
       "source": "EC-AO3-004-B",
       "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
+      "target": "VENDOR-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9865,7 +9865,7 @@
     {
       "source": "EC-AO3-006-C",
       "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
+      "target": "VENDOR-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9889,7 +9889,7 @@
     {
       "source": "EC-AO3-007-A",
       "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
+      "target": "VENDOR-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -10159,7 +10159,7 @@
     {
       "source": "EC-CAL-001-A",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-089",
+      "target": "PAPER-104",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -10483,7 +10483,7 @@
     {
       "source": "EC-CPU-005-A",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-097",
+      "target": "PAPER-113",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -10555,7 +10555,7 @@
     {
       "source": "EC-MEM-004-A",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-073",
+      "target": "PAPER-103",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -10783,13 +10783,13 @@
     {
       "source": "EC-PTA-003-B",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-041",
+      "target": "PAPER-102",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "EC-PTA-003-B",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-102",
+      "target": "PAPER-117",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -11545,12 +11545,6 @@
     {
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
-      "target": "PAPER-041",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
-      "source": "EXP-A-001",
-      "relation": "INPUT_SOURCE",
       "target": "PAPER-043",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -11618,6 +11612,12 @@
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
       "target": "PAPER-068",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-117",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -12617,24 +12617,6 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
-      "source": "PAPER-041",
-      "relation": "INPUT_TO_EXPERIMENT",
-      "target": "EXP-A-001",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "PAPER-041",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-A-003-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "PAPER-041",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-PTA-003-B",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
       "source": "PAPER-042",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-PTA-001",
@@ -12971,12 +12953,6 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
-      "source": "PAPER-073",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-MEM-004-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
       "source": "PAPER-074",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-MEM-005-A",
@@ -13085,12 +13061,6 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
-      "source": "PAPER-089",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-CAL-001-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
       "source": "PAPER-090",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CAL-003-A",
@@ -13130,12 +13100,6 @@
       "source": "PAPER-096",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CAL-005-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "PAPER-097",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-CPU-005-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13219,6 +13183,12 @@
     {
       "source": "PAPER-103",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-103",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-T5-001-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -13280,6 +13250,12 @@
       "source": "PAPER-104",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-BR-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-104",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-001-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13385,6 +13361,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-113",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CPU-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-114",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO1-002-B",
@@ -13428,6 +13410,18 @@
     },
     {
       "source": "PAPER-117",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-117",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-A-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-117",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO2-002-A",
       "provenance": "GENERATED_REVERSE"
@@ -13448,6 +13442,12 @@
       "source": "PAPER-117",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO2-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-117",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-PTA-003-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -14839,6 +14839,30 @@
     {
       "source": "VENDOR-001",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO3-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO3-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO3-006-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO3-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-CG01-001-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -14978,30 +15002,6 @@
       "source": "VENDOR-021",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-T8-004-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO3-004-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO3-004-B",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO3-006-C",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO3-007-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
