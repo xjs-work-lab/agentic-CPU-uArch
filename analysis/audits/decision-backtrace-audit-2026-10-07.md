@@ -1,72 +1,77 @@
-# Decision Backtrace Audit — Rescue state
+# Decision Backtrace Audit — Primary lanes after Rescue-1B
 
 Date: 2026-10-07
 Method: roadmap → direction → claim → evidence case → source → mechanism/experiment
 
 ## A — Agent Semantic Progress Control
-Current decision: PRIMARY_BET / 82.5 / SIMULATION_SUPPORT.
+Decision: **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**.
 
-Outstanding depth risk:
-PAPER-013 / 015 / 043 / 044 / 050 remain pre-EDP-depth sources.
+Rescue-1B result:
+A is retained, but only as a **conditional-information hypothesis**.
 
-Therefore A is **not yet depth-clean**.
+Deep reading establishes:
+- ready/executable work can differ from required/authorized work;
+- proactive proposal/authorization state is real;
+- ordinary long behavioral history can infer a substantial fraction of assistance demand;
+- substantial speculative Effect/Commit legality can be enforced or derived by software/runtime mechanisms.
+
+Therefore A gets no differentiated credit for semantic state already available through:
+- long personalized history;
+- program/workflow state;
+- SLO/utility/deadline/slack;
+- topology/STE/reuse signals;
+- transaction/sandbox legality;
+- explicit confirmation/commit state;
+- speculative active/cancelled/verified state.
+
+Surviving proposition:
+`CLM-A-001` asks whether internal DemandState / RequiredProgress still yields >=~5% end-outcome value after those observables are matched.
+
+Discriminating gate:
+`EXP-A-001` now requires matched-observability pairs/groups.
+
+No source proves the residual; no SYSTEM_VALUE promotion.
 
 ## PT-A — Heterogeneous Verified Agent Actuation Runtime
-Current decision: PLATFORM_TRACK / 80.0 / SYSTEM_VALUE.
+Decision: **PLATFORM_TRACK / 80.0 / SYSTEM_VALUE**.
 
-### Rescue-1A backtrace result
-PT-A survives, but its control contract is reframed.
+Rescue-1A result remains:
+capability/authority-aware routing → bounded actuation → fresh target/context binding → OutcomeReceipt → verification → bounded recovery.
 
-Previous shorthand:
-> heterogeneous GUI/API/CLI/tool routing + verification/recovery
-
-Current evidence-supported formulation:
-> **capability/authority-aware routing → bounded actuation → fresh target/context binding → OutcomeReceipt → action-effect verification → bounded recovery**
-
-### Why this changed
-- PAPER-038: structured surfaces matter, but ADB/benchmark privileges make authority/entitlement part of the real control point.
-- PAPER-039: naive GUI+CLI access can materially worsen accuracy; selective routing is a learned/software baseline.
-- PAPER-040: mixed-action value is real but not attributable solely to verification.
-- PAPER-042: complete UIAnchor system is strong; component attribution remains bounded.
-- PAPER-102: verification/recovery has causal software value.
-- PAPER-101: observation→action TOCTOU shows post-action verification alone does not prove intended-target delivery.
-
-### PT-A decision
-KEEP:
-- PLATFORM_TRACK
-- 80.0
-- SYSTEM_VALUE
-
-No promotion:
-- SOFTWARE_INSUFFICIENCY not passed.
-- context-bound actuation is first an OS/runtime hypothesis.
-- no CPU/uArch candidate.
-
-New discriminating test:
-- `EXP-PTA-002` compares post-action-only verification with fresh-context and stronger target-bound execution.
+No software-insufficiency or uArch pass.
 
 ## C — Efficient System-Control Substrate
-STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE.
-Round-1 revalidation unchanged.
+Decision: **STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE**.
+
+Direct commercial-phone Agent-aware value comes from HeRo, but the decisive control variables remain software-visible.
+No differentiated Bet promotion.
 
 ## CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path
-INVEST / 86.5 / STRUCTURAL_SIGNAL.
-Round-1 revalidation unchanged; strongest NPU/HETERO baseline remains mandatory.
+Decision: **INVEST / 86.5**.
 
-## CG-07 — Always-On Agent AI
-EXPLORE / 75.0.
-Paper-depth clean for PAPER-087/088; vendor/source-type audit later.
+Current evidence supports a competitive gap and target-phone crossover study, but not software insufficiency.
+Strongest baseline must include optimized NPU and dynamic heterogeneous orchestration.
 
-## Current portfolio result
-No lane or score changes from Rescue-1A.
+## CG-07 — Dedicated Always-On Agent AI Domain
+Decision: **EXPLORE / 75.0**.
 
-The meaningful change is **PT-A REFRAME**, recorded by `DEC-PTA-RESCUE-001`.
+Proactive workload relevance is established, while PRPF-class gating raises the strongest software baseline.
+No dedicated-domain promotion without post-gating phone power/thermal/QoE residual.
 
-## Whole-roadmap caveat
-Five primary-lane paper warnings remain, all in A.
-Twelve reserve-lane paper warnings remain.
+## Primary-lane audit result
+After Rescue-1B source review, all five primary active/platform lanes are **paper-depth clean under EDP v1**, subject to Graph-QA validation.
 
-Do not claim the entire portfolio is evidence-depth clean yet.
+Portfolio outcome:
+- no lane change;
+- no score change;
+- no maturity promotion;
+- A remains the only differentiated Primary Bet, explicitly provisional;
+- second Primary Bet remains unfilled;
+- no uArch candidate.
+
+## Remaining caveat
+The full current ROADMAP is not yet depth-clean:
+12 reserve-lane paper warnings remain in B-residual / R1 / R2, and patent-heavy current claims require direct claim review.
 
 ## Next
-Rescue-1B A, then rerun this backtrace before Frontier Round 14.
+If Graph QA confirms the expected warning state, Frontier Round 14 may resume while reserve/patent rescue continues before final convergence.
