@@ -35,6 +35,9 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - last full cutover QA hard errors: 0
 - Round 12 Graph QA: **PASS** — run `37599649724`, job `112720612564`
 - Round 12 QA squash merge: `7fa99ba2ae56a997e6d35bd68b508623dd2d577a`
+- Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
+- Round 13 squash merge: `4e1515e8f09a8e288a343d220ba3c0ea17cd8e53`
+- Round 13 work-branch cleanup: **PASS** — run `37607556023`
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
