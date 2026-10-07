@@ -132,6 +132,22 @@
       "claim_kind": "OBSERVATION"
     },
     {
+      "id": "CLM-AGENT-010",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AGENT-010.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AGENT-011",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AGENT-011.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
       "id": "CLM-BR-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-BR-001.md",
@@ -1221,6 +1237,18 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-MEM-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-MEM-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-MEM-005-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-MEM-005-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-PTA-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-PTA-001-A.md",
@@ -1768,6 +1796,18 @@
       "id": "PAPER-072",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-072/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-073",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-073/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-074",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-074/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -2808,6 +2848,18 @@
       "source": "CLM-AGENT-009",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-MEM-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-010",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-MEM-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-011",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-MEM-005-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5445,6 +5497,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-MEM-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-073",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AGENT-010",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-005-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-074",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-005-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AGENT-011",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-PTA-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-038",
@@ -7101,6 +7177,18 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-073",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-074",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -7750,8 +7838,8 @@
     }
   ],
   "counts": {
-    "nodes": 290,
-    "canonical_semantic_edges": 486,
-    "generated_reverse_edges": 486
+    "nodes": 296,
+    "canonical_semantic_edges": 490,
+    "generated_reverse_edges": 490
   }
 }
