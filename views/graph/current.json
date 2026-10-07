@@ -990,7 +990,7 @@
       "record_state": "CURRENT",
       "direction_class": "COMPETITIVE_GAP",
       "competitive_action": "EXPLORE",
-      "evidence_maturity": "PRODUCT_SIGNAL_PLUS_SYNTHETIC_MODEL"
+      "evidence_maturity": "PRODUCT_SIGNAL_PLUS_AGENT_WORKLOAD_PLUS_SOFTWARE_BASELINE_PLUS_SYNTHETIC_MODEL"
     },
     {
       "id": "PT-A",
@@ -2158,6 +2158,18 @@
       "id": "PAPER-086",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-086/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-087",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-087/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-088",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-088/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -9124,7 +9136,7 @@
     }
   ],
   "counts": {
-    "nodes": 358,
+    "nodes": 360,
     "canonical_semantic_edges": 564,
     "generated_reverse_edges": 564
   }
