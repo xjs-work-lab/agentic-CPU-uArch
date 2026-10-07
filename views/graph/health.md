@@ -15,8 +15,14 @@ Updated: 2026-10-07
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Round-12 structural delta check
-**PASS — generator-exact projection prepared; PR CI validates deterministic build + health contract**
+### Round-12 full PR Graph QA
+**PASS**
+- run: `37599649724`
+- job: `112720612564`
+- validated head: `0da17e438bd8d708fe644aea079d640f44b47830`
+- squash merge to main: `7fa99ba2ae56a997e6d35bd68b508623dd2d577a`
+- deterministic projection: PASS
+- graph health: PASS
 
 Checked:
 - PAPER-094 through PAPER-096 resolve as SOURCE nodes;
