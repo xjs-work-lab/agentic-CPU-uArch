@@ -27,8 +27,8 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 
 ## Current graph
 - 383 canonical nodes
-- 609 canonical semantic edges
-- 609 generated reverse edges
+- 610 canonical semantic edges
+- 610 generated reverse edges
 - projection prepared after Evidence Rescue 1A PT-A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
