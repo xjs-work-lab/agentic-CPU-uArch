@@ -3,27 +3,26 @@ id = "PAPER-013"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+independence_assessment = "INDEPENDENT_GROUP"
 title = "Speculative Interaction Agents: Building Real-Time Agents with Asynchronous I/O and Speculative Tool Calling"
 primary_url = "https://arxiv.org/abs/2605.13360"
 priority = "P1"
-evidence_role = "speculative/discardable Agent work semantics"
-origin_paths = ["03-academic/paper-briefs/PAPER-001-020.md"]
-origin_blobs = ["71be54fd3d91d7c516a9dbaef224541b68e8a437"]
-authors = ["Coleman Hooper", "Minwoo Kang", "Suhong Moon", "Nicholas Lee", "Eric Wen"]
+evidence_role = "speculative/cancellable Agent work semantics and runtime-derived commit baseline"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+authors = ["Coleman Hooper", "Minwoo Kang", "Suhong Moon", "Nicholas Lee", "Eric Wen", "John Wawrzynek", "Michael W. Mahoney", "Yakun Sophia Shao", "Amir Gholami", "Kurt Keutzer"]
 venue = "arXiv preprint · 2026"
 +++
 
-# PAPER-013 — Speculative Interaction Agents: Building Real-Time Agents with Asynchronous I/O and Speculative Tool Calling
+# PAPER-013 — Speculative Interaction Agents
 
 ## 30-second read
-- **Why it matters:** Shows Agent runtimes can generate work before it is necessarily committed/required.
-- **What it establishes:** Speculative Agent execution creates ready work whose value/necessity can differ from mere executability.
-- **Boundary:** Agent-runtime semantics; indirect for smartphone CPU/system value.
-- **Primary source:** https://arxiv.org/abs/2605.13360
+- Runtime can start safe/read-only tool work before user input is complete, cancel invalidated calls, discard stale observations and hold unsafe effects until an explicit commit point.
+- On HotpotQA/TinyAgent, SI-SFT small models report 1.6–2.2× latency speedups with small benchmark accuracy loss.
+- Naturalistic Human Instructions is an important negative result: speculative streaming can become slower and less accurate because of repeated/degenerate actions.
+- This supports ready≠required and cancel/discard/commit semantics, but also shows much of that state is already maintained by the Agent runtime itself.
+- Primary source: https://arxiv.org/abs/2605.13360
 
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN` unless explicitly assessed later.
+See [deep.md](deep.md) for EDP v1 FULL_10Q.

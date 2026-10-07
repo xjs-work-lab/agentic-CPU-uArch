@@ -11,14 +11,19 @@ supersedes = []
 # CLM-A-001
 
 ## Proposition
-Explicit DemandState retains >=~5% RequiredProgress/end-outcome value over B4-TX at matched foreground QoE.
+Explicit Agent-internal DemandState / RequiredProgress retains >=~5% end-outcome value over B4-TX at matched foreground QoE and zero illegal cancellation.
 
 ## Current interpretation
-This is the surviving differentiating question for A after strong-baseline narrowing.
+After EDP v1 Rescue-1B, this is the **only** differentiated core left for A.
+
+It is specifically a conditional-information hypothesis:
+> among states that are similar under observable history, SLO/utility, workflow topology, program state, legality, verification state and reuse proxies, does explicit internal DemandState distinguish which work should make progress?
+
+## Strong falsifier
+If B4-TX with long personalized history + runtime semantics + utility/SLO/topology/legality can reproduce nearly all B6-Demand value, A should be downgraded or killed as a differentiated Direction.
 
 ## Boundary
-No SUPPORT Evidence Case is created from literature. It must be tested by EXP-A-001 on appropriate system evidence.
+Proactive “When-to-Assist” labels are not equivalent to RequiredProgress.
+Speculative/commit semantics already exposed by the Agent runtime are not new A information.
 
-## Migration
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
+No literature source directly proves this claim; it must be tested by EXP-A-001 on target-relevant system evidence.

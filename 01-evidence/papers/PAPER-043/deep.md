@@ -1,141 +1,110 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+# PAPER-043 — Proactive Agent — EDP v1 FULL_10Q
 
-# PAPER-043 — Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance
+Re-reviewed: 2026-10-07
 
-## Source
-- Paper: https://arxiv.org/abs/2410.12361
-- Authors: Yaxi Lu, Shenzhi Yang, Cheng Qian, Guirong Chen, Qinyu Luo, Yesai Wu, Huadong Wang, Xin Cong, Zhong Zhang, Yankai Lin, Weiwen Liu, Yasheng Wang, Zhiyuan Liu, Fangming Liu, Maosong Sun
-- Venue/status: arXiv preprint, 2024
-- Artifact: https://github.com/thunlp/ProactiveAgent
-- Project relevance: A / C1 semantic demand / B4 demand-prediction baseline
-- Priority: P0
+## Q1 — Problem + target mapping
+Can an Agent infer from human activity when assistance is appropriate before an explicit request?
 
-## Q1 — What problem is the paper solving, and how does it map to smartphones?
-Most LLM Agents are reactive. This work asks whether an Agent can infer from ongoing human activity when assistance is appropriate before an explicit request.
+For A this is the most direct early competing baseline:
+Demand can be partially inferred from observable history.
 
-For this project the relevance is direct at the **Agent semantic/control** layer:
-- useful intervention vs false alarm;
-- missed need vs correct rejection;
-- pre-decision observation history.
+## Q2 — Novelty / new-regime relevance
+The paper builds a data-driven proactive Agent and benchmark with human judgments of whether proposed help is needed/acceptable.
 
-The collected behavior is largely desktop/workstation activity, so it is not direct smartphone CPU evidence.
+Peer-reviewed at ICLR 2025.
 
-## Q2 — Is the problem/new mechanism actually new?
-Proactive intervention timing is Agentic-native relative to request-response inference.
+## Q3 — Falsifiable hypothesis
+Activity history should contain enough signal to predict useful proactive interventions, and fine-tuning on proactive examples should improve precision/F1 relative to base models.
 
-The broad idea of learned proactive prediction is now established prior work; our novelty cannot be “predict when the user needs help.”
+## Q4 — Research lineage / competing route
+Tsinghua / Renmin / Huawei Noah's Ark / Peng Cheng Laboratory.
 
-## Q3 — What falsifiable hypothesis is being tested?
-Author hypothesis:
-real human activity plus human accept/reject annotation can train/evaluate an Agent to decide when to proactively assist.
+Independent from PARE and ProAgentBench.
 
-Project hypothesis derived from it:
-a strong generic learned predictor may infer a substantial fraction of demand from observable history, reducing the residual information advantage of privileged Agent DemandState.
+This work is an early baseline for later long-history real-world proactive datasets.
 
-## Q4 — What is the research lineage / competing route?
-Competing routes:
-- always-reactive assistant;
-- heuristic proactive trigger;
-- LLM-as-trigger;
-- reward-model / classifier-based assistance prediction;
-- later long-history real-world approaches such as ProAgentBench.
+## Q5 — Mechanism / control point
+Data pipeline:
+- collect real human activity;
+- generate candidate proactive predictions;
+- human annotators accept/reject/reject-all;
+- train a reward model as evaluator;
+- synthesize/generate larger proactive training set;
+- SFT proactive models.
 
-## Q5 — What is the key technical mechanism / control point?
-Input:
-- observed human activity history.
+Hindsight categories include need/no-need and correct/false intervention states.
 
-Prediction:
-- candidate proactive task / whether it should be accepted.
+Control point remains Agent-side prediction.
 
-Human annotation is converted into four hindsight categories:
-- Missed-Need (MN);
-- Correct-Rejection (CR);
-- Correct-Detection (CD);
-- False-Alarm (FA).
+## Q6 — Experiment design + quantitative results
+ProactiveBench:
+- Agent training set: 6,790 events over 136 scenarios;
+- real-world test set: 233 events across 12 scenarios;
+- categories: coding, writing, daily life.
 
-Control point:
-Agent runtime / proactive trigger, not OS/uArch.
+Reward-model labels:
+- 1,760 human-annotated entries;
+- random split 1,640 train / 120 test;
+- three annotators per prediction, majority vote;
+- human agreement reported >91.67% on test;
+- trained reward model F1 91.80%.
 
-## Q6 — How is the experiment designed?
-The paper builds ProactiveBench with **6,790 events**, combining collected real-world activity and generated data.
+Agent table:
+Qwen2-7B-Proactive:
+- Recall 100.00%
+- Precision 49.78%
+- Accuracy 50.66%
+- False-Alarm 50.22%
+- F1 66.47%
 
-The public repository exposes:
-- test traces;
-- annotation pipeline;
-- reward-model train/test data;
-- evaluation scripts.
+LLaMA-3.1-8B-Proactive:
+- F1 66.25%
 
-Reported fine-tuned proactive model F1 reaches **66.47%**.
+GPT-4o:
+- F1 64.60%.
 
-The public evaluation table also shows high recall but substantial false-alarm pressure for multiple models, demonstrating that proactive triggering remains difficult.
+The paper itself notes a tendency to over-assist.
 
-## Q7 — What data/artifact/reproducibility support exists?
-Strong.
+## Q7 — Artifact / reproducibility
+Peer-reviewed paper and public repository exist.
 
-Public repository:
-https://github.com/thunlp/ProactiveAgent
+Important provenance:
+the large 6,790 Agent training set is generated through the gym/synthesis process; the 233-event test set is real-world.
 
-Decision-critical public artifact:
-- `dataset/reward_data/train_data.jsonl`
-- `dataset/reward_data/test_data.jsonl`
+The reward-model split is random at annotated-entry level.
+Earlier repository audit found repeated candidate rows per observation history; any new classifier replay must group by observation history to avoid leakage.
 
-Paper Table 1 reports the reward-model split as **1,640 train / 120 test labels**.
+## Q8 — Evidence vs alternatives
+Demonstrated:
+- assistance demand is learnable from ordinary behavior;
+- false alarm is a major failure mode;
+- proactive fine-tuning changes prediction behavior.
 
-Stage 15 direct audit of the current public repository artifact finds:
-- **1,629 rows** in the current train JSONL;
-- 120 rows in the current test JSONL;
+Not demonstrated:
+- these labels equal online phone RequiredProgress;
+- false-alarm row fractions equal wasted phone compute;
+- lower layers need Agent-private semantics.
 
-This 11-row train-count difference is treated as an artifact/version/filtering provenance difference, not silently normalized.
+## Q9 — Decision contribution
+Strengthens CLM-AGENT-002 and B4-TX.
 
-Current-artifact details:
-- 1,629 rows;
-- only 313 unique observation histories;
-- 1,387 candidate-task rows;
-- 474 valid candidates;
-- 913 invalid candidates.
+This is **negative pressure on A differentiation**:
+a history-based model can recover part of what A might otherwise call privileged demand knowledge.
 
-Important:
-multiple candidate rows share one observation history, so row-level random splitting creates leakage.
+But it does not kill A because RequiredProgress may encode active branch/task value not inferable from external behavior.
 
-## Q8 — Do the results actually support the hypothesis?
-**[FACT]** Human activity contains learnable proactive-assistance signals.
+## Q10 — Next action
+KEEP P0.
 
-**[FACT]** Public data includes explicit accepted/rejected-style candidate labels.
-
-**[OBSERVATION]** In the public training artifact, invalid candidate rows outnumber valid candidate rows.
-
-**Boundary:** that row ratio is **not** an online false-alarm prevalence because several candidate tasks are generated for the same observation history.
-
-**[INFERENCE]** The artifact is strong hindsight semantic evidence for A, but simultaneously strengthens B4 because it makes generic demand prediction trainable.
-
-## Q9 — What is the real contribution / technology control point for us?
-This paper changes A in two ways.
-
-### Positive for A
-Non-useful/premature proactive assistance is a real semantic category, not an invented scheduler label.
-
-### Negative pressure on A
-Demand is partly inferable from ordinary history.
-
-Therefore A's residual cannot be:
-> semantic demand exists.
-
-It must be:
-> explicit Agent-native DemandState / EffectCommit still changes outcomes after the strongest generic history predictor.
-
-## Q10 — What should we do next?
-- KEEP as P0 A/B4 evidence.
-- Group train/test by observation-history identity; never row-random split.
-- Use CD/FA only as hindsight proxy labels.
-- Build B4 from pre-decision features only.
-- Do not map false-alarm row fraction to phone non-required compute share.
-- Combine with ProAgentBench long-history evidence.
-- Require target-device traces for cost, foreground overlap and cancellation legality.
+EXP-A-001 must:
+- use grouped/user-aware splits;
+- include a long-history learned demand predictor;
+- measure cost-weighted false positives/false negatives;
+- compare against internal DemandState only after matching observable history.
 
 ## Decision footer
-- **Evidence maturity:** STRUCTURAL_SIGNAL for Agent demand semantics / public B4 training source
-- **Decision impact:** KEEP; hardens A baseline
-- **Open questions:** phone transfer; cost weighting; real cancellation boundaries
-- **Primary source:** https://arxiv.org/abs/2410.12361
-- **Artifact:** https://github.com/thunlp/ProactiveAgent
+- Evidence maturity: STRUCTURAL_SIGNAL
+- Decision impact: HARDEN B4-TX; A remains open
+- Open questions: phone transfer; intrinsic-state residual; cost-weighted utility
+- Primary source: https://arxiv.org/abs/2410.12361
+- Artifact: https://github.com/thunlp/ProactiveAgent

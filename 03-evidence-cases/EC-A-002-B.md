@@ -5,25 +5,14 @@ record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
 target_id = "CLM-AGENT-002"
-warrant = "This is an alternative supporting route showing demand can be learned from observable activity history."
-scope = "generic behavioral-history baseline"
-boundary = "Desktop/workstation-oriented data; artifact row ratios are not online prevalence."
+warrant = "ICLR 2025 Proactive Agent shows ordinary human activity contains learnable proactive-assistance signals and exposes strong false-alarm pressure."
+scope = "generic behavioral-history demand predictor"
+boundary = "Large Agent training set is generated/synthetic; 233-event test set is real; proactive labels do not equal phone RequiredProgress."
 [[premises]]
 ref_kind = "SOURCE"
 ref_id = "PAPER-043"
-locator = "human activity contains learnable proactive-assistance signals"
+locator = "ProactiveBench real test set, proactive fine-tuning and false-alarm/F1 results"
 +++
 
 # EC-A-002-B
-
-## Inference
-`PAPER-043` → **SUPPORT** → `CLM-AGENT-002`
-
-## Warrant
-This is an alternative supporting route showing demand can be learned from observable activity history.
-
-## Scope
-generic behavioral-history baseline
-
-## Boundary
-Desktop/workstation-oriented data; artifact row ratios are not online prevalence.
+PAPER-043 → SUPPORT → CLM-AGENT-002.

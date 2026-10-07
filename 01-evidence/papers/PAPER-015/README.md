@@ -3,27 +3,26 @@ id = "PAPER-015"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+independence_assessment = "INDEPENDENT_GROUP"
 title = "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants"
 primary_url = "https://arxiv.org/abs/2604.00842"
 priority = "P0"
-evidence_role = "proactive demand / authorization / effect semantic ground truth"
-origin_paths = ["03-academic/paper-10q/PAPER-015.md"]
-origin_blobs = ["7e2238c1476c9f5fa7d1b77bf3a29853411c9ad9"]
+evidence_role = "proactive demand / proposal / authorization semantic ground truth"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
 authors = ["Deepak Nathani", "Cheng Zhang", "Chang Huan", "Jiaming Shan", "Yinfei Yang", "Alkesh Patel", "Zhe Gan", "William Yang Wang", "Michael Saxon", "Xin Eric Wang"]
 venue = "arXiv preprint · 2026"
 +++
 
-# PAPER-015 — Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants
+# PAPER-015 — PARE
 
 ## 30-second read
-- **Why it matters:** Provides explicit proactive-assistance and authorization semantics that CPU traces alone cannot reveal.
-- **What it establishes:** Demand/authorization/effect boundaries are real Agent semantic states.
-- **Boundary:** Simulated stateful mobile-phone environment, not real phone CPU timing/energy/QoE.
-- **Primary source:** https://arxiv.org/abs/2604.00842
+- PARE explicitly separates Observe → Awaiting Confirmation → Execute in a 143-scenario stateful simulated phone environment.
+- Observe has read-only actions; effectful execution starts only after the simulated user accepts a proposal.
+- Frontier models still show premature proposals and limited end-to-end success, making intervention timing a real semantic problem.
+- Critical boundary: PARE does **not** execute effectful speculative work before authorization and is not real-phone timing/energy evidence.
+- Primary source: https://arxiv.org/abs/2604.00842
 
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN` unless explicitly assessed later.
+See [deep.md](deep.md) for EDP v1 FULL_10Q.

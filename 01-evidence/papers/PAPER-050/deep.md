@@ -1,99 +1,110 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+# PAPER-050 — TomasuLLM — EDP v1 FULL_10Q
 
-# PAPER-050 — TomasuLLM: Out-of-Order Speculative Execution for LLM Agents
-
-## Source
-- Paper: https://arxiv.org/abs/2609.38201
-- Authors: Jiangnan Yu, Ceyu Xu, Mengming Li, Shiyu Huang, Yiran Xia, Jian Weng, Hui Xue, Haohui Mai, Yuan Xie
-- Venue/status: arXiv preprint, 2026-09-22
-- Target: tool-using LLM Agent runtime
-- Project relevance: A / C1 Effect-Commit baseline; PT-A speculative execution
-- Priority: P0
+Re-reviewed: 2026-10-07
 
 ## Q1 — Problem + target mapping
-Long-running tool calls create large observation stalls. A runtime would like to execute future Agent actions early, but speculative work must not publish effects that diverge from serial committed execution.
+Coding Agents serialize on long tool observations.
+Can future tool actions execute early while preserving serial task semantics?
 
-This maps directly to Candidate A's Effect/Commit legality boundary.
+A mapping:
+tests whether Effect/Commit legality requires privileged Agent semantic truth or can be reconstructed/enforced by runtime tracing.
 
 ## Q2 — Novelty / new-regime relevance
-TomasuLLM applies out-of-order/speculative execution ideas to Agent tool trajectories:
-- draft future actions;
-- execute in private copy-on-write sandboxes;
-- trace dependencies and effects;
-- validate against committed state;
-- commit only in trajectory order.
+TomasuLLM combines:
+- action drafting;
+- observation drafting;
+- COW speculative sandboxes;
+- conservative dependency/effect tracing;
+- in-order validation/commit frontier.
 
-The Agent regime makes the mechanism relevant because actions can have stateful external consequences.
+Agent-specific because the main Agent remains canonical authority over actions.
 
 ## Q3 — Falsifiable hypothesis
-Dependency/effect-aware runtime validation can safely exploit tool-call latency without requiring speculative results to become visible before correctness is established.
+Out-of-order tool execution can be reused without outcome drift if the runtime validates action identity, dependency freshness, observation integrity and effect safety against committed state.
 
 ## Q4 — Research lineage / competing route
-Strong competing route for the project's previous assumption that Effect/Commit Safety must be an Agent-supplied semantic truth.
+HKUST-led systems line; independent from Cordon and PAPER-013.
 
-Related route:
-- Cordon semantic transactions;
-- speculative Agent action systems;
-- sandbox/transaction runtimes.
+Neighboring routes:
+- speculative action prediction;
+- shell/script speculative execution;
+- semantic transactions;
+- serial coding-agent runtime.
 
 ## Q5 — Mechanism / control point
-Inputs:
-- current committed trajectory;
-- drafted future action;
-- tool schema/wrapper;
-- read/version dependencies;
-- produced observations;
-- candidate effects.
+Each speculative execution leaves Trace IR.
 
-Actuators:
-- sandbox issue;
-- hold;
-- validate;
-- discard;
-- in-order commit.
+Reuse requires:
+- Vact — action identity;
+- Vdep — dependency freshness/lineage;
+- Vrecord — observation integrity/canonicalization;
+- Veffect — effect safety.
 
-Important boundary:
-the predictor proposes work, but **runtime validation**, not prediction, authorizes publication.
+Prediction itself is never commit evidence.
 
-## Q6 — Experiment
+Opaque bash is traced conservatively with Riker.
+If dependencies/effects cannot be proved complete, the call is a speculation barrier and executes serially.
+
+Irreversible or unsuitable effects are barriers.
+
+## Q6 — Experiment design + results
 Reported:
-- 100 SWE-bench Verified tasks: 1.31x;
-- 28 Terminal-Bench 2.0 tasks: 1.35x;
-- 18 SWE-Marathon sessions: 1.27x matched progress;
-- 4,010 audited commit-validation records with zero false accepts.
+- 100 SWE-bench Verified tasks: 1.31×;
+- 28 Terminal-Bench 2.0 tasks: 1.35×;
+- 18 SWE-Marathon sessions: 1.27× arithmetic-mean matched progress.
+
+SWE-bench outcome:
+both Serial Pi and TomasuLLM resolve mean 41.7%; difference 0.0 points, 95% CI [-4.3,+4.3].
+
+Validation audit:
+- one-in-ten sampling over paired SWE-Marathon executions;
+- 4,010 commit-validation records;
+- zero false accepts;
+- reads/writes 100% accepted when valid;
+- read-only bash ~99%;
+- tests ~98%;
+- invalid/stale cases are rejected and rerun serially;
+- 390 additional barrier records run serially.
+
+Primitive overhead:
+- read-only fork around 0.08 s;
+- tests needing private data copy ~3–5.5 s.
 
 ## Q7 — Artifact / reproducibility
-Public arXiv paper available.
-Artifact/code availability was not established in this round.
+Primary paper is public and implementation details are unusually explicit.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** A runtime can derive and verify substantial effect/dependency legality from execution artifacts and wrappers without treating model rationale as the safety oracle.
+Current audit does not establish a public code release suitable for direct reproduction.
 
-**[BOUNDARY]**
-Coding/tool Agents differ from phone proactive Agents, and the paper does not infer **DemandState** (required/optional/speculative goal value).
+The 4,010 validation records are a sampled audit, not exhaustive proof of zero-error semantics.
+
+## Q8 — Evidence vs alternatives
+Strongly demonstrated within the measured coding-tool scope:
+runtime can reconstruct substantial dependency/effect legality without trusting model rationale.
+
+Boundary is equally important:
+- untraceable effects;
+- irreversible external actions;
+- service restarts/checkpoints/final submissions;
+- dependencies outside traced process scope
+become barriers.
+
+Thus “all Effect/Commit legality is runtime-derived” would be false.
 
 ## Q9 — Decision contribution
-Materially narrows Candidate A / C1.
+Strong support for CLM-AGENT-003 and B4-TX.
 
-Old differentiated framing:
-> hard-to-infer DemandState + Effect/Commit legality.
+A loses differentiated credit for generic Effect/Commit legality wherever runtime mediation/tracing is sufficient.
 
-Updated pressure:
-- **DemandState remains Agent-native differentiated information.**
-- Effect/Commit legality should be treated as a **strong runtime-derived safety baseline** wherever transaction/sandbox/lineage machinery can expose it.
-- A may still consume Effect/Commit state, but should not claim that its existence must come from a new Agent semantic ABI.
-
-This strengthens the B4 legality baseline and makes A more dependent on proving residual DemandState value.
+A's core must remain DemandState / RequiredProgress residual.
 
 ## Q10 — Next action
-- KEEP as P0 negative/constraint evidence.
-- Add a B4-TX baseline with runtime-derived legality.
-- Re-score A based on DemandState residual, not joint Demand+Effect semantics.
-- Keep transactional speculation in PT-A/platform infrastructure, not as a new Primary Bet.
+KEEP P0.
+
+EXP-A-001 baseline should assume TomasuLLM/Cordon-class legality when feasible.
+Only opaque/irreversible/non-mediated residual semantics remain candidate privileged information.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for tool-Agent runtime; indirect for smartphone transfer
-- Decision impact: NARROW A/C1; strengthen generic legality baseline
-- Open questions: phone effect surfaces; cost of transactional containment; DemandState residual
+- Evidence maturity: SYSTEM_VALUE for coding/tool Agent runtime; indirect for smartphone
+- Decision impact: NARROW A; strengthen B4-TX
+- Open questions: phone effect surfaces; tracing cost; non-mediated semantics
 - Primary source: https://arxiv.org/abs/2609.38201
