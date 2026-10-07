@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 next.**
+**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 Round 14-B seed triage complete; deep-read next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -198,10 +198,33 @@ Round 14-A T7 final:
 
 This does not kill the product trend.
 
-## Next
-Round 14-B: **T6 Local programmable Agent execution & sandboxed skills**.
+## T6 Round 14-B seed-triage result
 
-T6 gets priority over T8 because it has a more direct chance of exposing CPU-visible interpreter/JIT/code-cache/sandbox/executable-lifetime behavior.
+Initial seeds:
+- **SkillDroid** — direct mobile GUI skill compilation/replay;
+- **Android AppFunctions** — official Android local Agent-tool product baseline;
+- **MCP-SandboxScan** — WASM/WASI sandbox security baseline;
+- **SpecBox** — sandbox lifecycle / prewarm / memory-latency systems baseline.
+
+Current pressure:
+- SkillDroid establishes that repeated mobile Agent behavior can become a persistent executable interaction artifact, but the artifact is a typed GUI action program interpreted/replayed through Android automation rather than native/JIT-generated CPU code.
+- Android AppFunctions establishes a real Android 16+ local tool/function substrate for privileged Agents, including type-safe sandboxed tool definitions and permission-controlled discovery/execution; its normal path is app-defined functionality, not Agent-generated executable code.
+- MCP-SandboxScan shows that untrusted Agent tools create real runtime capability/provenance problems and that WASM/WASI is a viable isolation baseline, but it provides no smartphone-system value evidence.
+- SpecBox shows that sandbox instantiation/residency can create latency-memory tradeoffs, but its multi-tenant server regime is a strongest generic systems baseline rather than evidence for a phone-specific Direction.
+
+Therefore T6 remains **FRONTIER_SIGNAL / WATCH** and no Direction is created.
+
+The surviving residual question is deliberately narrow:
+
+> On a representative phone, do frequently created or changing Agent-executable artifacts create material compile/validate/load/instantiate/interpreter/JIT/code-cache/sandbox-transition costs, with a control variable that cannot be reduced to ordinary AppFunction invocation, workflow scheduling (C), state/version lifecycle (T5) or authority/verification (PT-A)?
+
+## Next
+1. **FULL_10Q SkillDroid** — strongest direct mobile seed.
+2. **Deep vendor card: Android AppFunctions** — strongest current Android product baseline for local typed Agent tools.
+3. Pressure-test with **MCP-SandboxScan** and **SpecBox** only to the depth needed to define strongest software/runtime baselines.
+4. Then decide: NEW DIRECTION / MERGE INTO C-T5-PT-A / WATCH / KILL_DIFFERENTIATED_BET.
+
+No Trend maturity, lane, score or uArch change at seed-triage stage.
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 

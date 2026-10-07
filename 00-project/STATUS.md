@@ -146,7 +146,22 @@ T7 Round 14-A final:
 - ownership = C + T5/B-residual + PT-A;
 - no new Direction / no uArch candidate.
 
-Next frontier: **T6 Local programmable Agent execution & sandboxed skills**.
+Round 14-B T6 seed triage: **COMPLETE / NOT DECISION-COMPLETE**.
+
+Initial pressure set:
+- **SkillDroid** — direct mobile GUI evidence that successful LLM trajectories can be compiled into typed, executable interaction programs and replayed without per-step LLM inference.
+- **Android AppFunctions** — official Android 16+ product baseline for discoverable, permission-controlled, type-safe local Agent tools; this is app-defined capability exposure, not runtime Agent code generation.
+- **MCP-SandboxScan** — WASM/WASI runtime-isolation baseline for untrusted Agent tools; strong sandbox evidence but non-mobile.
+- **SpecBox** — strong sandbox-lifecycle latency/memory baseline; high-concurrency server setting, not phone evidence.
+
+Current T6 result:
+- trend = **FRONTIER_SIGNAL / WATCH unchanged**;
+- new Direction = **none**;
+- second differentiated Primary Bet = **UNFILLED**;
+- uArch candidate = **none**;
+- direct phone CPU/JIT/code-cache/sandbox-transition residual = **not established**.
+
+Next: **FULL_10Q SkillDroid first**, then an official Android AppFunctions deep vendor card, followed by the strongest sandbox/runtime baselines needed to test whether any T6 residual survives C + T5 + PT-A ownership.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.

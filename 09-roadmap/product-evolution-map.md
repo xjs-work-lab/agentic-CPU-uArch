@@ -169,10 +169,16 @@ Potentially changes:
 - code/data lifetime.
 
 ### Current evidence state
-Early embedded/browser/mobile-runtime seeds exist, but direct representative smartphone CPU/system evidence is not yet sufficient.
+Round 14-B seed triage finds a stronger product/runtime signal than the initial scan:
+- **SkillDroid** compiles successful Android GUI trajectories into parameterized executable interaction programs and replays them without per-step LLM calls;
+- **Android AppFunctions** provides an Android 16+ platform/Jetpack path for privileged Agents to discover and execute type-safe, sandboxed app functions locally;
+- **MCP-SandboxScan** demonstrates a WASM/WASI isolation baseline for untrusted Agent tools;
+- **SpecBox** demonstrates that sandbox lifecycle can create material latency/memory tradeoffs in a server setting.
+
+The missing evidence is still decisive: no reviewed source yet shows a representative phone where Agent-generated/frequently changing executable code creates material interpreter/JIT/code-cache/sandbox-transition cost that survives ordinary software/runtime baselines.
 
 ### Round 14 action
-**AUDIT**
+**AUDIT — seed triage complete; deep-read / residual test next**
 
 ---
 

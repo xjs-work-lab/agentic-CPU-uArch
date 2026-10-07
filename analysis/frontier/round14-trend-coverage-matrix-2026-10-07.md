@@ -13,25 +13,20 @@ Decision question: which 2027–2029 Agentic smartphone workload trends are alre
 | T3 Verified/transactional actuation | PT-A | HIGH | platform residual | OWNED / PRODUCTIZE |
 | T4 Always-on proactive front-end | CG-07 | MEDIUM-HIGH | architecture residual open | OWNED / BENCHMARK |
 | T5 State lifecycle/reuse/locality | B-residual + CG-01 + R2 + H-CAL lineage | MEDIUM-HIGH | fragmented residuals | PARTIALLY OWNED |
-| T6 Local programmable execution/sandbox | none | UNKNOWN-MEDIUM | potentially new | AUDIT |
-| T7 Local multi-Agent concurrency/shared state | partial C/B overlap | UNKNOWN-HIGH | potentially new but may collapse into C/B | **AUDIT FIRST** |
+| T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + generic sandbox baselines | MEDIUM-HIGH signal | residual unproven | **SEED TRIAGE COMPLETE** |
+| T7 Local multi-Agent concurrency/shared state | C + T5/B-residual + PT-A | HIGH product signal | standalone residual closed | WATCH / KILL_DIFFERENTIATED_BET |
 | T8 Cross-device Agent fabric/continuation | partial PT-A/C overlap | UNKNOWN-MEDIUM | high generic-distributed-systems risk | AUDIT LATER |
 
-## Why T7 moves to first priority
-The initial authority/open-web seed scan found stronger direct mobile signals than expected:
-- edge/cloud mobile multi-agent role decomposition;
-- mobile memory/state systems with specialized agents and parallel sub-task execution;
-- on-device multi-agent runtime signals;
-- model/KV/adapter identity and cross-agent state sharing in on-device/edge runtimes.
+## Round 14-A closeout and T6 handoff
+T7 pressure testing is complete:
+- product trend retained as FRONTIER_SIGNAL / WATCH;
+- standalone differentiated candidate closed with KILL_DIFFERENTIATED_BET;
+- ownership merged into C + T5/B-residual + PT-A;
+- no new Direction or uArch candidate.
 
-This raises the probability that multi-Agent concurrency is a **product trend**.
+Round 14-B therefore moves to **T6 Local programmable Agent execution & sandboxed skills**.
 
-But it does **not** yet establish a new Direction.
-The first pressure question is:
-
-> Does local multi-Agent execution create a control variable or physical bottleneck that is not already captured by C's Agent-aware orchestration or B/T5 state lifecycle?
-
-If no, T7 becomes a product trend owned by C/T5 rather than a new Bet.
+The key T6 distinction is not whether Agents can invoke tools. Android already provides a direct product baseline for local Agent-callable functions. The open question is whether **dynamic procedural artifacts themselves** create a repeated phone execution regime with a residual control point beyond existing platform owners.
 
 ## T7 authority-seed audit plan
 
@@ -67,17 +62,19 @@ For each serious seed:
 ## T6 pressure question
 Is local programmable execution an actual phone workload trend or mainly a portability/sandbox implementation detail?
 
-Early seeds:
-- embedded persistent Agent runtimes using WASM;
-- browser-native Agent runtimes using WASM/action bundles;
-- native mobile Agent runtimes with local tools/sandboxing.
+Seed-triage result:
+- **SkillDroid**: strongest direct mobile seed; executable typed GUI action programs are compiled from successful trajectories and replayed locally, but not as native/JIT code.
+- **Android AppFunctions**: strongest official mobile product baseline; Agents can discover and execute type-safe, permission-controlled app functions locally, but these are app-defined capabilities rather than runtime Agent codegen.
+- **MCP-SandboxScan**: strongest current WASM/WASI untrusted-tool isolation seed; non-mobile.
+- **SpecBox**: strongest sandbox lifecycle latency/memory seed in this set; server/multi-tenant rather than phone.
 
-Before FULL_10Q, require at least one strong mobile/phone seed showing:
-- recurring dynamic executable generation or interpretation;
-- measurable CPU/system cost;
-- product-relevant frequency.
+Before promotion, require representative phone evidence showing:
+- recurring dynamic executable/IR/bytecode/skill generation or interpretation;
+- measurable compile/validate/load/instantiate/interpreter/JIT/code-cache/sandbox-transition cost;
+- product-relevant frequency and end-to-end impact;
+- residual value after C + T5 + PT-A + ordinary AppFunctions baselines.
 
-Otherwise classify T6 as platform implementation technique rather than CPU trend.
+Otherwise keep T6 as WATCH or merge it into existing platform ownership rather than creating a new CPU/uArch Direction.
 
 ## T8 pressure question
 Does cross-device continuation preserve Agent execution state in a way that changes phone-local resource control?
@@ -103,12 +100,12 @@ A frontier advances only if:
 5. a discriminating residual can be written.
 
 ## Next smallest step
-**Round 14-A: T7 Local Multi-Agent Concurrency pressure test.**
+**Round 14-B: FULL_10Q SkillDroid.**
 
-Deep-read the strongest mobile/system seeds first.
-Only then decide:
+Then build the official Android AppFunctions product baseline and pressure-test T6 against the minimum necessary sandbox/runtime evidence.
+
+Only after that decide:
 - NEW DIRECTION;
-- MERGE INTO C;
-- MERGE INTO T5/B;
+- MERGE INTO C/T5/PT-A;
 - WATCH;
-- KILL differentiated novelty.
+- KILL_DIFFERENTIATED_BET.
