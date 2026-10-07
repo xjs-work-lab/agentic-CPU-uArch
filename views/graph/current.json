@@ -284,6 +284,30 @@
       "claim_kind": "HYPOTHESIS"
     },
     {
+      "id": "CLM-CAL-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CAL-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CAL-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CAL-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-CAL-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-CAL-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-CG01-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-CG01-001.md",
@@ -859,6 +883,11 @@
       "path": "08-decisions/events/DEC-CG07-002.md"
     },
     {
+      "id": "DEC-H-CAL-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-H-CAL-001.md"
+    },
+    {
       "id": "DEC-H-PAM-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-H-PAM-001.md"
@@ -1204,6 +1233,36 @@
       "id": "EC-C-011-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-C-011-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CAL-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CAL-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CAL-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CAL-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CAL-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CAL-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CAL-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CAL-003-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-CAL-003-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-CAL-003-C.md",
       "record_state": "CURRENT"
     },
     {
@@ -2060,6 +2119,36 @@
       "id": "PAPER-086",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-086/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-089",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-089/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-090",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-090/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-091",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-091/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-092",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-092/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-093",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-093/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -3460,6 +3549,54 @@
       "source": "CLM-C-EXP-001",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CAL-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-H-CAL-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CAL-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-002",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-H-CAL-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CAL-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CAL-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-CAL-003-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CAL-003",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-H-CAL-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5077,6 +5214,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "DEC-H-CAL-001",
+      "relation": "SUBJECT",
+      "target": "ROADMAP-CURRENT",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-H-CAL-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CAL-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-H-CAL-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CAL-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-H-CAL-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-CAL-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "DEC-H-PAM-001",
       "relation": "SUBJECT",
       "target": "ROADMAP-CURRENT",
@@ -5776,6 +5937,66 @@
       "source": "EC-C-011-A",
       "relation": "SUPPORT",
       "target": "CLM-C-008",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-089",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CAL-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-091",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CAL-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-090",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-CAL-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-092",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-B",
+      "relation": "SUPPORT",
+      "target": "CLM-CAL-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-093",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-CAL-003-C",
+      "relation": "SUPPORT",
+      "target": "CLM-CAL-003",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -8011,6 +8232,36 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-089",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-090",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-091",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-092",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-093",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-CAL-003-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -8421,6 +8672,12 @@
     {
       "source": "ROADMAP-CURRENT",
       "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-H-CAL-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ROADMAP-CURRENT",
+      "relation": "HAS_DECISION_EVENT",
       "target": "DEC-H-PAM-001",
       "provenance": "GENERATED_REVERSE"
     },
@@ -8666,8 +8923,8 @@
     }
   ],
   "counts": {
-    "nodes": 335,
-    "canonical_semantic_edges": 538,
-    "generated_reverse_edges": 538
+    "nodes": 349,
+    "canonical_semantic_edges": 552,
+    "generated_reverse_edges": 552
   }
 }
