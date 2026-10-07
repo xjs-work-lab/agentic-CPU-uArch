@@ -312,3 +312,33 @@ Portfolio:
 - no lane/score changes;
 - no second Primary Bet;
 - no uArch promotion.
+## Round 7 — H-PAM software-baseline pressure
+
+Full 10Q completed:
+- PAPER-075 — SwiftMem — arXiv 2026 preprint / P1
+
+Decision-grade effect:
+- temporal query indexing is software-capturable;
+- semantic DAG-tag routing is software-capturable;
+- semantic co-consolidation and locality-aware embedding layout are software-capturable;
+- HNSW-backed strong retrieval baselines are explicitly included.
+
+H-PAM result:
+> **KEEP / NARROW — no Direction promotion**.
+
+Removed from white space:
+- temporal/semantic indexing;
+- semantic-cluster locality/layout;
+- generic memory consolidation/reorganization.
+
+Surviving question:
+> whether memory lifecycle phase changes **runtime execution timing/placement on phones** under real coexistence constraints.
+
+Next search gate:
+- direct phone profiling;
+- foreground recall vs background maintenance interference;
+- cross-representation data movement;
+- suspend/resume rebuild cost;
+- lifecycle-phase-specific CPU/NPU/data-placement.
+
+Stop generic Agent-memory algorithm expansion unless a new lifecycle operation appears.
