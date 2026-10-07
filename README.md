@@ -28,9 +28,9 @@ should be maintained here.
 The V1 repository remains frozen historical provenance and is not deleted or rewritten.
 
 ## Current graph
-- **290 canonical nodes**
-- **486 canonical semantic edges**
-- **486 generated reverse edges**
+- **296 canonical nodes**
+- **490 canonical semantic edges**
+- **490 generated reverse edges**
 
 ## Current portfolio
 
@@ -61,7 +61,7 @@ System-control second-Bet search:
 **CONVERGED — H-FIB folded into A→C transfer; C second-Bet watch closed**
 
 Current structural second-Bet frontier:
-**H-PAM — Persistent Agent Memory Execution Substrate (ANALYSIS HYPOTHESIS / NOT A DIRECTION)**
+**H-PAM — Persistent Agent Memory Execution Substrate (KEEP/NARROW ANALYSIS HYPOTHESIS; recurrence PASS; lower-level mobile residual OPEN)**
 
 uArch Primary Bet:
 **NONE**
