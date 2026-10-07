@@ -1,6 +1,6 @@
 # Research Authority Status
 
-Updated: 2026-10-06
+Updated: 2026-10-07
 
 ```yaml
 migration_phase: CUTOVER_COMPLETE
@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 299 canonical nodes
-- 492 canonical semantic edges
-- 492 generated reverse edges
-- projection refreshed after Frontier Round 7 H-PAM software-baseline pressure
+- 312 canonical nodes
+- 510 canonical semantic edges
+- 510 generated reverse edges
+- projection refreshed after Frontier Round 8 H-PAM final closure
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
@@ -74,7 +74,8 @@ Explicit approval:
 - R3 — BLOCKED
 - second differentiated Primary Bet — intentionally unfilled
 - system-control second-Bet search — converged / no standalone Bet found
-- current second-Bet frontier — H-PAM Persistent Agent Memory Execution Substrate (KEEP/NARROW analysis hypothesis; recurrence PASS; lower-level mobile residual OPEN)
+- H-PAM — CLOSED / killed as standalone candidate; persistent Agent memory retained as workload/evidence dimension
+- current second-Bet frontier — NONE / UNASSIGNED; frontier reset required
 - uArch Primary Bet — none
 
 ## Hardware gate
