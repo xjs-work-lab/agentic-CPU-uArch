@@ -18,7 +18,7 @@ ref_id = "VENDOR-019"
 locator = "MediaTek dual-NPU / low-power always-on Agent domain and scheduling/fusion architecture"
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "VENDOR-022"
+ref_id = "VENDOR-001"
 locator = "Qualcomm Oryon Flex Cache and CPU orchestration framing for multi-step Agent work"
 [[premises]]
 ref_kind = "SOURCE"
@@ -29,7 +29,7 @@ locator = "Qualcomm Hexagon Agentic NPU: specialized execution, larger shared me
 # EC-AO1-004-A
 
 ## Inference
-VENDOR-017, VENDOR-019, VENDOR-022 and VENDOR-023 jointly support CLM-AO1-004.
+VENDOR-017, VENDOR-019, VENDOR-001 and VENDOR-023 jointly support CLM-AO1-004.
 
 ## Warrant
 Arm, MediaTek and Qualcomm independently publicize Agentic mobile subsystems that combine CPU orchestration, heterogeneous accelerators, shared/coherent state/memory or specialized low-power/local-memory domains.
