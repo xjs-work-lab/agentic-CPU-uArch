@@ -18,7 +18,7 @@ Does dynamic Agent execution structure on commercial mobile SoCs create a new di
 - EC-CPU-005-A
 - EC-CPU-005-B
 - EC-PTA-006-A
-- EC-AGENT-009-A
+- EC-AGENT-012-A
 - DEC-FRONTIER-013
 
 ## Canonical objects updated
