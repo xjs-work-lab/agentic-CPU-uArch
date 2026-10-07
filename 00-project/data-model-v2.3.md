@@ -47,12 +47,20 @@ Each direction link records a `differentiation_posture`:
 - CLOSED_DIFFERENTIATION
 
 ## Kill semantics
-Prior art can kill:
-- broad novelty;
-- a differentiated Bet;
-- architecture necessity.
+Use the shared strategic-model `kill_scope` vocabulary exactly:
 
-It does not kill the TREND unless product relevance itself fails.
+- `KILL_BROAD_NOVELTY`
+- `KILL_DIFFERENTIATED_BET`
+- `KILL_MECHANISM`
+- `KILL_ARCHITECTURE_NECESSITY`
+- `KILL_PRODUCT_ROUTE`
+- `KILL_WORDING_ONLY`
+
+Prior art may constrain broad novelty or a differentiated Bet without reducing product relevance.
+
+`KILL_PRODUCT_ROUTE` is the only Kill scope that directly says the product route itself should be dropped. A Trend may then move to product posture `DROP_PRODUCT_ROUTE` if that decision is supported.
+
+Historical prose may use natural-language terms such as “killed as standalone,” but new/current canonical Decision Events should carry the normalized `kill_scope` field when a Kill decision is made.
 
 ## Hardware gate
 Unchanged:
