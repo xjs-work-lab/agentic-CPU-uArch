@@ -219,3 +219,47 @@ Public metadata confirms peer-reviewed MobiSys Workshop publication and reports:
 - prompt size is a major latency driver.
 
 Do not use these abstract-level results for Direction/portfolio decisions until full text is obtained.
+
+## Round-7 update — SwiftMem strongest-baseline pressure
+
+PAPER-075 / SwiftMem removes additional candidate white space:
+- temporal query indexing;
+- semantic DAG-tag query routing;
+- semantic co-consolidation;
+- semantic-cluster-driven physical embedding layout;
+- fragmentation-triggered software reorganization.
+
+These mechanisms show that temporal/semantic memory metadata can already affect **software search scope and physical layout** without a new mobile OS/hardware interface.
+
+### H-PAM consequence
+H-PAM remains **KEEP / NARROW — NOT A DIRECTION**.
+
+Do not count the following as differentiated residual:
+- time-aware retrieval;
+- topic-aware retrieval;
+- memory clustering;
+- semantic locality;
+- periodic memory reorganization;
+- generic cache-locality optimization for related memory items.
+
+### Surviving systems residual
+The remaining candidate is no longer an index architecture.
+It is a runtime/mobile-execution question:
+> Do lifecycle-phase semantics alter **when and where** memory work should run on a phone under real coexistence constraints?
+
+Candidate unresolved interactions:
+- latency-critical foreground recall vs background consolidation/index maintenance;
+- raw-media ingest vs embedding/vector/graph update competition;
+- cross-representation state that must move together across CPU/NPU/storage tiers;
+- suspend/resume memory-state loss and rebuild cost;
+- lifecycle-phase urgency that changes heterogeneous placement or maintenance timing.
+
+### Evidence gate
+No promotion unless direct systems evidence shows at least one of these interactions:
+1. appears in real persistent-Agent traces;
+2. survives MUSE / LEANN / CD-ANN / MobiMem / AgeMem / SwiftMem-class software;
+3. produces target-phone SYSTEM_VALUE;
+4. maps to a reusable team-controlled software/runtime/compiler/CPU control point.
+
+### Stop rule
+If the next systems-facing search cannot establish such a runtime coupling, H-PAM should be merged/killed rather than extended with more memory-algorithm papers.
