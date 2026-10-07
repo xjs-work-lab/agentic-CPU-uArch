@@ -60,7 +60,7 @@ System-control/H-FIB search is converged and did not produce a standalone second
 **H-PAM — Persistent Agent Memory Execution Substrate** is the active structural frontier.
 
 Status:
-**ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+**KEEP / NARROW — ANALYSIS HYPOTHESIS / NOT A DIRECTION**
 
 Round-5 seed evidence now establishes:
 - persistent episodic/semantic/multimodal memory is a real Agent workload (M3-Agent);
@@ -68,15 +68,24 @@ Round-5 seed evidence now establishes:
 - capacity/index residency has a strong compute-for-storage baseline (LEANN);
 - dynamic insertion/growth has a strong segmented/on-demand ANN baseline (CD-ANN).
 
-Missing gate:
-> direct evidence that Agent-specific memory-lifecycle operation semantics create a recurring mobile systems residual beyond generic vector/index software.
+Round-6 gate result:
+- lifecycle-operation recurrence — **PASS**;
+- mobile Agent execution relevance — **PARTIAL PASS**;
+- distinct lower-level CPU/NPU/memory-system residual — **OPEN**.
 
-Round-6 priorities:
-1. MobiSys 2026 mobile-Agent memory-architecture benchmark;
-2. Agent-native memory systems with explicit store/update/consolidate/forget/retrieve operations;
-3. actual operation mix / duty cycle / concurrency;
-4. direct phone evidence;
-5. overlap audit against B-residual, C, R2, CG-01 and CG-07.
+Missing gate:
+> direct evidence that Agent-memory lifecycle semantics change CPU/NPU/data-placement or memory-maintenance decisions beyond MobiMem-style upper-layer software plus MUSE/LEANN/CD-ANN-class baselines.
+
+Round-6 results:
+1. MobiMem FULL_10Q — specialized memory semantics affect mobile Agent scheduling/replay/recovery, but upper-layer software captures large value;
+2. AgeMem FULL_10Q — independent ADD/UPDATE/DELETE/RETRIEVE/SUMMARY/FILTER recurrence confirmed;
+3. MobiSys 2026 memory-architecture benchmark — PENDING_FULLTEXT / excluded from decisions.
+
+Next priorities:
+1. systems-facing phone traces/profiling for Agent memory update/retrieve/consolidate/replay;
+2. operation-class-specific CPU/NPU/data-movement evidence;
+3. determine whether a lifecycle fact beyond API operation identity changes placement/maintenance policy;
+4. kill/merge H-PAM if no lower-level residual appears.
 
 Do not create a Direction before this gate survives.
 
@@ -87,8 +96,8 @@ Required progression:
 `STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
 ## Next
-Run Round-6 H-PAM falsification:
-- complete the direct mobile-Agent memory benchmark 10Q;
-- identify recurring Agent-memory lifecycle operations;
-- pressure-test against MUSE / LEANN / CD-ANN;
-- decide KEEP / NARROW / KILL before any Direction proposal.
+Run the next H-PAM systems-residual test:
+- prioritize direct phone/system measurements rather than more generic memory algorithms;
+- obtain the MobiSys Workshop full text if possible;
+- search for memory lifecycle facts that alter CPU/NPU/data placement beyond explicit API identity;
+- if this gate fails, merge/kill H-PAM rather than extending the hypothesis.
