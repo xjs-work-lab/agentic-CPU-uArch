@@ -2,9 +2,11 @@
 
 Roadmap management views.
 
-- current.md — canonical Differentiation Portfolio projection.
+- current.md — canonical Differentiation Portfolio projection from the pre-realignment evidence model.
 - product-evolution-map.md — canonical Product Evolution management view.
-- final-2027-2029.md — evidence-converged leadership roadmap and year-by-year gates.
-- 2027-execution-plan.md — shared target-phone measurement program and experiment sequencing.
+- architecture-opportunity-reset.md — **current Round-15 starting point** for public-evidence architecture/co-design opportunity discovery.
+- final-2027-2029.md — prior convergence snapshot; currently PROVISIONAL for hardware opportunity discovery.
+- 2027-execution-plan.md — future validation reference, not the current execution phase.
 
-Rule: product importance, differentiation and hardware readiness are separate axes.
+Current rule:
+separate product importance, research differentiation, architecture-hypothesis value and silicon-commitment readiness.

@@ -1,12 +1,20 @@
+> **Status correction — 2026-10-08**
+>
+> This document is retained as a **future validation reference only**.
+> The project currently has no owned target-phone experimental environment and therefore should not treat this plan as the immediate next phase.
+> Current next phase: public-evidence Architecture Opportunity Discovery / Round 15.
+>
+> The experiment definitions remain useful as future falsifiers if measurement capability becomes available.
+
 # 2027 Execution Plan — Target-Phone Discriminating Program
 
 Updated: 2026-10-07  
-State: READY  
+State: DEFERRED_FUTURE_VALIDATION_REFERENCE  
 Parent roadmap: final-2027-2029.md
 
 ## Objective
 
-2027 is not another broad literature-search year.
+Under an experiment-capable program, 2027 would be a measurement year. Under the current project premise, this plan is not executable now.
 
 The objective is to convert the remaining high-value uncertainties into measured target-phone decisions while reusing one instrumentation stack across multiple Directions.
 

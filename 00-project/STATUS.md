@@ -18,8 +18,11 @@ research_content_migrated: true
 evidence_rescue: COMPLETE
 evidence_depth_protocol: EDP_V1
 frontier_round14: COMPLETE
-portfolio_convergence: COMPLETE
-execution_plan_2027: READY
+portfolio_convergence: PROVISIONAL_REFRAME
+execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
+research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
+owned_experiment_environment: false
+next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -190,7 +193,7 @@ Patent direct-claim audit: **13 / 13 COMPLETE**.
 Current-roadmap paper-depth debt: **0**.
 Evidence Rescue: **COMPLETE**.
 
-Final portfolio convergence: **COMPLETE**.
+Final portfolio convergence: **PROVISIONAL / REFRAME REQUIRED**.
 
 Frozen management conclusion:
 - differentiated Primary Bet: **A only**;
@@ -207,8 +210,24 @@ No score, lane or maturity was changed merely to satisfy a portfolio quota.
 Leadership view:
 09-roadmap/final-2027-2029.md
 
-Next execution phase:
-run the 2027 discriminating experiment program before opening any new hardware/uArch candidate.
+Current research mode:
+**public-evidence strategic insight only; no owned target-phone experiment environment is assumed.**
+
+The previous 2027 discriminating experiment plan is retained as a **future validation reference**, not the current execution phase.
+
+Next research phase:
+**Round 15 — architecture opportunity discovery and cross-layer co-design reframing.**
+
+The goal is to identify:
+- structural Agentic workload changes;
+- user-experience changes;
+- unresolved cross-layer tensions;
+- academic mechanisms ahead of productization;
+- productized competitor mechanisms worth following;
+- plausible compiler/runtime/OS/SoC/uArch co-design opportunities.
+
+A hardware idea may enter **ARCHITECTURE_HYPOTHESIS** without target-phone experimental proof.
+Actual silicon/product commitment still requires the stricter hardware gate.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.
@@ -314,3 +333,24 @@ Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
 
 Those evidence-integrity gates are complete. Future portfolio changes must come from measured experiment results or materially new evidence, not from reopening already-closed broad novelty arguments.
+
+
+## Research-premise realignment — 2026-10-08
+
+The project is a **forward-looking public-evidence insight program**, not an internal device-validation program.
+
+### Discovery gate
+A candidate can be retained as an **ARCHITECTURE_HYPOTHESIS** when public evidence supports:
+1. an Agentic-era structural workload/user-experience change;
+2. a cross-layer control or data-movement tension;
+3. a technically plausible software/hardware co-design lever;
+4. a meaningful product or UX outcome;
+5. a prior-art/productization boundary showing what is already solved vs still open.
+
+This gate does **not** require owned phone measurements.
+
+### Commitment gate
+The existing strict gate remains valid only for future product/silicon commitment:
+STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE.
+
+Do not use the commitment gate to suppress early architecture opportunity discovery.
