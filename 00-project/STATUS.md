@@ -33,6 +33,9 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
 - Evidence Rescue Round 1 squash merge: `192e3fc816fd96d3112b1a0f94da916f8f869e33`
+- Evidence Rescue 1A PT-A Graph QA: **PASS** — run `37611820867`, job `112760599058`
+- Evidence Rescue 1A PT-A squash merge: `e6a83b36494ec9bcc044b3aec6441152efd132f1`
+- Evidence Rescue 1A PT-A work-branch cleanup: **PASS** — run `37611888348`
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
@@ -84,7 +87,7 @@ Two new FULL_10Q papers were added during Rescue-1A, so the current five-lane so
 
 After Rescue-1A:
 - remaining primary-lane paper debt: **5** — PAPER-013 / 015 / 043 / 044 / 050, all in A;
-- expected whole-current-ROADMAP paper-depth warnings: **17** — primary 5 + reserve-lane 12.
+- validated whole-current-ROADMAP paper-depth warnings: **17** — primary 5 + reserve-lane 12.
 
 ## Operating rule
 Next: **Rescue-1B Candidate A deep audit**.
