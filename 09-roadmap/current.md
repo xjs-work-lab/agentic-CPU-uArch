@@ -73,10 +73,28 @@ The reviewed public source set still lacks a direct commercial-phone experiment 
 Second differentiated Primary Bet remains **UNFILLED**.
 
 ## Current research frontier
-**NONE / UNASSIGNED.**
+**FRONTIER SEARCH PAUSED FOR EVIDENCE RESCUE.**
+
+## Evidence Rescue 1A — PT-A
+PT-A remains **PLATFORM_TRACK / 80.0 / SYSTEM_VALUE**, but deep reading strengthens its contract.
+
+The platform question is no longer merely “GUI vs CLI vs tools.”
+It is now:
+> **capability/authority-aware routing → fresh target/context-bound actuation → OutcomeReceipt → verification → bounded recovery.**
+
+Key corrections:
+- ClawMobile is real-phone runtime evidence, but its model inference is remote.
+- Beyond-GUI proves action-surface heterogeneity under ADB/benchmark capabilities, not unconditional retail-phone CLI entitlement.
+- HybridCUA shows naive addition of CLI can hurt; selective routing is a strong software baseline.
+- PhoneHarness and UIAnchor support mixed/verifiable execution but do not isolate verification as the sole cause of whole-system gains.
+- PAPER-101 Action Rebinding adds a context-integrity residual: an action may be delivered to a different foreground context than the one observed.
+- PAPER-102 VeriGUI confirms verification/recovery is software-realizable and causally valuable, further raising the baseline.
+
+New gate: `EXP-PTA-002`.
+No uArch promotion.
 
 ## Next
-Resume the frontier reset outside already-covered families. Do not reopen H-CAL unless direct target-phone evidence shows a material residual beyond LOCAL + MobiLoRA + strongest mobile-training/scheduling baselines that existing C/B/R2 software cannot represent.
+Complete **Rescue-1B for A** before resuming Frontier Round 14.
 
 
 ## Round 13 — Agent-flow heterogeneous SoC orchestration
