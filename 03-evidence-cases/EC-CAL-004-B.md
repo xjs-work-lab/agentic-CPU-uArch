@@ -5,15 +5,15 @@ record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
 target_id = "CLM-CAL-004"
-warrant = "MobiLoRA attaches LoRA identity and mobile app lifecycle state to KV-cache metadata, then applies cross-adapter delta encoding and context-aware retention/eviction for mobile serving."
-scope = "PAPER-095 ACL 2025 MobiLoRA"
-boundary = "Direct mobile LoRA-serving software evidence; does not cover in-place adapter gradient publication."
+warrant = "PAPER-104 extends software capture from static adapter identity/lifecycle to live foreground inference plus local adapter training/publication, with explicit version-aware KV correctness and cooperative admission."
+scope = "single consumer GPU, xLAM-7b-r, live Agent serving plus LoRA adaptation"
+boundary = "Not a commercial smartphone; does not satisfy H-CAL's target-phone reopen condition."
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "PAPER-095"
-locator = "CtxAttention, LoRA-associated prefix matching, delta KV encoding, application-state-aware cache management"
+ref_id = "PAPER-104"
+locator = "cooperative scheduler, adapter publish lifecycle, version-aware KV cache, tau-bench evaluation"
 +++
 
 # EC-CAL-004-B
 
-PAPER-095 → **SUPPORT** → CLM-CAL-004.
+`PAPER-104` → **SUPPORT** → `CLM-CAL-004`

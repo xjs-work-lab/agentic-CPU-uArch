@@ -28,9 +28,9 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 400 canonical nodes
-- 689 canonical semantic edges
-- 689 generated reverse edges
+- 408 canonical nodes
+- 702 canonical semantic edges
+- 702 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -137,8 +137,9 @@ T6–T8 are frontier signals only.
 Round 14-A seed triage is complete.
 
 MobiMem FULL_10Q: **COMPLETE**.
+LOCAL FULL_10Q: **COMPLETE**.
 
-Next: **FULL_10Q LOCAL → EcoAgent**, then decide whether T7 is a new Direction or merges into C/T5/PT-A.
+Next: **FULL_10Q EcoAgent**, then decide whether T7 is a new Direction or merges into C/T5/PT-A.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
