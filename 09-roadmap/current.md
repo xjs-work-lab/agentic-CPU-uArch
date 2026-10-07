@@ -53,8 +53,24 @@ H-FIB/system-control converged without a standalone Bet. H-PAM is killed as stan
 
 This is an evidence result, not a quota problem.
 
-## Current research frontier
-**No active second-Bet frontier is currently assigned.**
+## Current research frontier — H-CAL
+**H-CAL — Contiguous Agent Learning**  
+Status: **ANALYSIS HYPOTHESIS / NARROWED / NOT A DIRECTION**
+
+PAPER-089 exposes a genuinely Agent-native regime: live inference continues while feedback/judge/training work updates adapters and changes KV-cache validity.
+
+PAPER-091 establishes that sustained phone training has real battery/thermal/runtime cost.
+
+Strong generic baselines already capture much of mobile training:
+- FBLayout — layout/data movement;
+- MobileFineTuner — mobile-native memory/energy runtime;
+- MeSP — activation-memory reduction;
+- repaired phone backward kernel — major speed/energy recovery.
+
+### Surviving question
+> On a real smartphone, does **live Agent serving + repeated adaptation + versioned KV/model state** create a reusable residual beyond C, B-residual and R2 after strongest training/runtime baselines?
 
 ## Next
-Continue the frontier reset / coverage audit outside already-covered structural families. Only open another hypothesis when an uncovered structural workload family exposes a distinct smartphone CPU/system control variable.
+Run one targeted residual round for direct smartphone concurrent inference + local adaptation / online Agent learning.
+
+Promotion requires smartphone SYSTEM_VALUE plus software insufficiency. Kill/merge if the residual is reconstructible by C/B/R2/runtime software.

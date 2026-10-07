@@ -28,10 +28,10 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 
 ## Current graph
-- 335 canonical nodes
-- 538 canonical semantic edges
-- 538 generated reverse edges
-- projection refreshed after Frontier Round 10 proactive mobile gating / CG-07 integration
+- 349 canonical nodes
+- 552 canonical semantic edges
+- 552 generated reverse edges
+- projection refreshed after Frontier Round 11 Contiguous Agent Learning
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
@@ -50,7 +50,8 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - H-PAM — CLOSED / killed as standalone candidate
 - security / confidential execution — platform requirement + research radar
 - proactive / always-on intervention gating — covered inside CG-07; not standalone
-- current second-Bet frontier — NONE / UNASSIGNED; frontier reset ongoing
+- H-CAL — ACTIVE NARROW ANALYSIS HYPOTHESIS / NOT A DIRECTION
+- current second-Bet frontier — H-CAL residual test
 - uArch Primary Bet — none
 
 ## Hardware gate
@@ -58,3 +59,5 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 
 ## Operating rule
 Future research resumes from this repository. V1 remains frozen for provenance and historical reference.
+
+Current next step: test whether real smartphone live Agent serving + repeated local adaptation leaves a version/coherence/concurrency residual beyond generic mobile training and C/B-residual/R2.
