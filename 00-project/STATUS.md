@@ -16,6 +16,7 @@ cutover_state: COMPLETE
 research_content_migrated: true
 evidence_rescue: ACTIVE
 evidence_depth_protocol: EDP_V1
+frontier_round14: UNLOCKED
 ```
 
 ## Authority
@@ -27,11 +28,14 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 - 384 canonical nodes
 - 622 canonical semantic edges
 - 622 generated reverse edges
-- projection prepared for Evidence Rescue 1B A validation
+- projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
 - Evidence Rescue 1A PT-A Graph QA: **PASS** — run `37611820867`, job `112760599058`
 - Evidence Rescue 1A PT-A squash merge: `e6a83b36494ec9bcc044b3aec6441152efd132f1`
+- Evidence Rescue 1B A Graph QA: **PASS** — run `37617038459`, job `112777774022`
+- Evidence Rescue 1B A squash merge: `95cb25d3899353206c39c29ebed69ed3d324b4d9`
+- Evidence Rescue 1B A work-branch cleanup: **PASS** — run `37617300996`
 
 ## Portfolio invariant
 - **A — PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**; Rescue-1B keeps it provisionally but narrows differentiation to non-reconstructible DemandState / RequiredProgress information value
@@ -78,7 +82,7 @@ Material corrections:
 - PAPER-050: runtime can derive substantial dependency/effect legality, but untraceable/irreversible effects remain barriers.
 
 ## Evidence-depth debt
-After Rescue-1B, expected Graph-QA paper-depth warnings:
+After Rescue-1B, validated Graph-QA paper-depth warnings:
 - primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
 - current reserve lanes B-residual / R1 / R2: **12**
 - whole current ROADMAP: **12**
@@ -86,6 +90,8 @@ After Rescue-1B, expected Graph-QA paper-depth warnings:
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 
 ## Operating rule
-Frontier Round 14 stays paused until Rescue-1B Graph QA confirms the zero-warning state for the five primary lanes.
+**Frontier Round 14 is UNLOCKED.**
 
-If QA passes, resume Frontier Round 14; reserve-lane and patent audit remain mandatory before final portfolio convergence.
+The five primary active/platform lanes are paper-depth clean under EDP v1. Resume frontier discovery from uncovered structural workload regimes; do not reopen already-owned/closed families without contradictory evidence.
+
+Reserve-lane paper rescue and patent direct-claim audit remain mandatory before final portfolio convergence.
