@@ -7,7 +7,7 @@ from write_guard import assert_candidate_root
 
 ROOTS = [
     "01-evidence","02-claims","03-evidence-cases","04-actors",
-    "05-capabilities","06-directions","07-validation","08-decisions","09-roadmap"
+    "05-capabilities","06-trends","06-directions","07-validation","08-decisions","09-roadmap"
 ]
 
 def parse_frontmatter(path: Path, root: Path):
@@ -51,6 +51,10 @@ def canonical_edges(nodes):
         elif t=="CAPABILITY":
             for a in n.get("actor_links",[]): add(i,"ACTOR_LINK",a["actor_id"])
             for c in n.get("evidence_claims",[]): add(i,"EVIDENCED_BY_CLAIM",c)
+        elif t=="TREND":
+            for c in n.get("related_claims",[]): add(i,"TREND_EVIDENCE_CLAIM",c)
+            for c in n.get("related_capabilities",[]): add(i,"TREND_CAPABILITY_SIGNAL",c)
+            for d in n.get("direction_links",[]): add(i,"HAS_DIRECTION",d["direction_id"])
         elif t=="DIRECTION":
             for c in n.get("related_claims",[]): add(i,"RELATED_CLAIM",c)
             for c in n.get("related_capabilities",[]): add(i,"RELATED_CAPABILITY",c)
@@ -65,6 +69,7 @@ def canonical_edges(nodes):
             for e in n.get("trigger_experiments",[]): add(i,"TRIGGER_EXPERIMENT",e)
         elif t=="ROADMAP":
             for d in n.get("direction_ids",[]): add(i,"SCHEDULES",d)
+            for tr in n.get("trend_ids",[]): add(i,"SCHEDULES_TREND",tr)
     return edges
 
 REVERSE={
@@ -73,11 +78,14 @@ REVERSE={
 "HAS_PREMISE":"PREMISE_OF_CASE","SUPPORT":"SUPPORTED_BY_CASE",
 "REBUT":"REBUTTED_BY_CASE","SCOPE_LIMIT":"SCOPED_BY_CASE","UNDERCUT":"UNDERCUT_BY_CASE",
 "ACTOR_LINK":"HAS_CAPABILITY_LINK","EVIDENCED_BY_CLAIM":"EVIDENCES_CAPABILITY",
+"TREND_EVIDENCE_CLAIM":"SUPPORTS_TREND","TREND_CAPABILITY_SIGNAL":"SIGNALS_TREND",
+"HAS_DIRECTION":"PART_OF_TREND",
 "RELATED_CLAIM":"USED_BY_DIRECTION","RELATED_CAPABILITY":"USED_BY_DIRECTION",
 "RELATED_ACTOR":"USED_BY_DIRECTION","TESTS_FOR_DIRECTION":"HAS_EXPERIMENT",
 "TESTS_CLAIM":"TESTED_BY_EXPERIMENT","INPUT_SOURCE":"INPUT_TO_EXPERIMENT",
 "SUBJECT":"HAS_DECISION_EVENT","TRIGGER_CLAIM":"TRIGGERS_DECISION",
-"TRIGGER_EXPERIMENT":"TRIGGERS_DECISION","SCHEDULES":"SCHEDULED_BY"
+"TRIGGER_EXPERIMENT":"TRIGGERS_DECISION","SCHEDULES":"SCHEDULED_BY",
+"SCHEDULES_TREND":"TREND_SCHEDULED_BY"
 }
 
 def build_projection(root: Path):
@@ -92,12 +100,14 @@ def build_projection(root: Path):
     node_view=[]
     for n in nodes:
         v={"id":n["id"],"type":n["type"],"path":n["_path"]}
-        for k in ("record_state","status","claim_kind","lifecycle","direction_class","investment_lane","competitive_action","evidence_maturity"):
+        for k in ("record_state","status","claim_kind","lifecycle","direction_class","investment_lane","competitive_action","evidence_maturity","trend_maturity","product_posture","coverage_state","roadmap_kind"):
             if k in n: v[k]=n[k]
+        if "trend_ids" in n: v["trend_ids"]=n["trend_ids"]
+        if "direction_links" in n: v["direction_links"]=n["direction_links"]
         node_view.append(v)
     node_view.sort(key=lambda x:(x["type"],x["id"]))
     return {
-        "schema_version":"2.2",
+        "schema_version":"2.3",
         "authority":"GENERATED_NOT_AUTHORITY",
         "migration_id":"MIG-20261006-02",
         "nodes":node_view,

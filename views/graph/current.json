@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.2",
+  "schema_version": "2.3",
   "authority": "GENERATED_NOT_AUTHORITY",
   "migration_id": "MIG-20261006-02",
   "nodes": [
@@ -1916,7 +1916,25 @@
       "id": "ROADMAP-CURRENT",
       "type": "ROADMAP",
       "path": "09-roadmap/current.md",
-      "record_state": "CURRENT"
+      "record_state": "CURRENT",
+      "roadmap_kind": "DIFFERENTIATION_PORTFOLIO"
+    },
+    {
+      "id": "ROADMAP-PRODUCT-2027-2029",
+      "type": "ROADMAP",
+      "path": "09-roadmap/product-evolution-map.md",
+      "record_state": "CURRENT",
+      "roadmap_kind": "PRODUCT_EVOLUTION",
+      "trend_ids": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ]
     },
     {
       "id": "PAPER-003",
@@ -2517,6 +2535,139 @@
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-019/README.md",
       "record_state": "CURRENT"
+    },
+    {
+      "id": "T1",
+      "type": "TREND",
+      "path": "06-trends/T1-semantic-aware-progress-control/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "EMERGING_PRODUCT_TREND",
+      "product_posture": "ADAPT_AND_DIFFERENTIATE",
+      "coverage_state": "OWNED",
+      "direction_links": [
+        {
+          "direction_id": "A",
+          "differentiation_posture": "DIFFERENTIATED_BET"
+        },
+        {
+          "direction_id": "C",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "R1",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "R3",
+          "differentiation_posture": "FRONTIER_UNPROVEN"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "type": "TREND",
+      "path": "06-trends/T2-heterogeneous-agent-ai-execution/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "ESTABLISHED_PRODUCT_TREND",
+      "product_posture": "PRODUCTIZE",
+      "coverage_state": "OWNED",
+      "direction_links": [
+        {
+          "direction_id": "C",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "CG-06",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "type": "TREND",
+      "path": "06-trends/T3-verified-transactional-actuation/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "EMERGING_PRODUCT_TREND",
+      "product_posture": "PRODUCTIZE",
+      "coverage_state": "OWNED",
+      "direction_links": [
+        {
+          "direction_id": "PT-A",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "type": "TREND",
+      "path": "06-trends/T4-always-on-proactive-front-end/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "EMERGING_PRODUCT_TREND",
+      "product_posture": "BENCHMARK_AND_PREPARE",
+      "coverage_state": "OWNED",
+      "direction_links": [
+        {
+          "direction_id": "CG-07",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        }
+      ]
+    },
+    {
+      "id": "T5",
+      "type": "TREND",
+      "path": "06-trends/T5-agent-state-lifecycle-reuse-locality/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "EMERGING_PRODUCT_TREND",
+      "product_posture": "ADAPT_AND_DIFFERENTIATE",
+      "coverage_state": "PARTIALLY_OWNED",
+      "direction_links": [
+        {
+          "direction_id": "B-residual",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "CG-01",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "R2",
+          "differentiation_posture": "RESIDUAL_RESEARCH"
+        },
+        {
+          "direction_id": "R3",
+          "differentiation_posture": "FRONTIER_UNPROVEN"
+        }
+      ]
+    },
+    {
+      "id": "T6",
+      "type": "TREND",
+      "path": "06-trends/T6-local-programmable-agent-execution/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "FRONTIER_SIGNAL",
+      "product_posture": "WATCH",
+      "coverage_state": "FRONTIER_AUDIT",
+      "direction_links": []
+    },
+    {
+      "id": "T7",
+      "type": "TREND",
+      "path": "06-trends/T7-local-multi-agent-concurrency/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "FRONTIER_SIGNAL",
+      "product_posture": "WATCH",
+      "coverage_state": "ACTIVE_AUDIT",
+      "direction_links": []
+    },
+    {
+      "id": "T8",
+      "type": "TREND",
+      "path": "06-trends/T8-cross-device-agent-continuation/README.md",
+      "record_state": "CURRENT",
+      "trend_maturity": "FRONTIER_SIGNAL",
+      "product_posture": "WATCH",
+      "coverage_state": "FRONTIER_AUDIT",
+      "direction_links": []
     }
   ],
   "edges": [
@@ -2566,6 +2717,12 @@
       "source": "A",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "A",
+      "relation": "PART_OF_TREND",
+      "target": "T1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -2756,6 +2913,12 @@
     },
     {
       "source": "B-residual",
+      "relation": "PART_OF_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "B-residual",
       "relation": "RELATED_CLAIM",
       "target": "CLM-BR-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -2848,6 +3011,18 @@
       "source": "C",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-C-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
+      "relation": "PART_OF_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
+      "relation": "PART_OF_TREND",
+      "target": "T2",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -2966,6 +3141,12 @@
     },
     {
       "source": "CAP-ARM-C2-SME2-CPU-AI",
+      "relation": "SIGNALS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-ARM-C2-SME2-CPU-AI",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-06",
       "provenance": "GENERATED_REVERSE"
@@ -2984,6 +3165,18 @@
     },
     {
       "source": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
+      "relation": "SIGNALS_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
+      "relation": "SIGNALS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
       "provenance": "GENERATED_REVERSE"
@@ -2999,6 +3192,12 @@
       "relation": "EVIDENCED_BY_CLAIM",
       "target": "CLM-CG07-001",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "relation": "SIGNALS_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
@@ -3026,6 +3225,12 @@
     },
     {
       "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "SIGNALS_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-01",
       "provenance": "GENERATED_REVERSE"
@@ -3046,6 +3251,12 @@
       "source": "CG-01",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-CG01-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
+      "relation": "PART_OF_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3112,6 +3323,12 @@
       "source": "CG-06",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-CG06-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-06",
+      "relation": "PART_OF_TREND",
+      "target": "T2",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3188,6 +3405,12 @@
     },
     {
       "source": "CG-07",
+      "relation": "PART_OF_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-07",
       "relation": "RELATED_CAPABILITY",
       "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
       "provenance": "CANONICAL_SEMANTIC"
@@ -3248,6 +3471,12 @@
     },
     {
       "source": "CLM-A-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-A-001",
       "relation": "TESTED_BY_EXPERIMENT",
       "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
@@ -3274,6 +3503,12 @@
       "source": "CLM-AGENT-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-A-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3308,6 +3543,12 @@
     },
     {
       "source": "CLM-AGENT-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-002",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-001",
       "provenance": "GENERATED_REVERSE"
@@ -3334,6 +3575,12 @@
       "source": "CLM-AGENT-003",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-A-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-003",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3452,6 +3699,12 @@
     },
     {
       "source": "CLM-AGENT-008",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-008",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-006",
       "provenance": "GENERATED_REVERSE"
@@ -3530,6 +3783,12 @@
     },
     {
       "source": "CLM-BR-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-BR-001",
       "provenance": "GENERATED_REVERSE"
@@ -3550,6 +3809,12 @@
       "source": "CLM-BR-002",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-BR-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3806,6 +4071,12 @@
     },
     {
       "source": "CLM-C-008",
+      "relation": "SUPPORTS_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-008",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-006",
       "provenance": "GENERATED_REVERSE"
@@ -3832,6 +4103,12 @@
       "source": "CLM-C-009",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-C-012-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-009",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3968,6 +4245,12 @@
     },
     {
       "source": "CLM-CG01-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG01-001",
       "provenance": "GENERATED_REVERSE"
@@ -3988,6 +4271,12 @@
       "source": "CLM-CG01-002",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG01-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG01-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4058,6 +4347,12 @@
     },
     {
       "source": "CLM-CG06-EXP-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG06-EXP-001",
       "relation": "TESTED_BY_EXPERIMENT",
       "target": "EXP-CG06-001",
       "provenance": "GENERATED_REVERSE"
@@ -4082,6 +4377,12 @@
     },
     {
       "source": "CLM-CG07-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG07-001",
       "provenance": "GENERATED_REVERSE"
@@ -4100,6 +4401,12 @@
     },
     {
       "source": "CLM-CG07-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-002",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-07",
       "provenance": "GENERATED_REVERSE"
@@ -4108,6 +4415,12 @@
       "source": "CLM-CG07-003",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG07-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-003",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4130,6 +4443,12 @@
     },
     {
       "source": "CLM-CG07-004",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-004",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG07-001",
       "provenance": "GENERATED_REVERSE"
@@ -4144,6 +4463,12 @@
       "source": "CLM-CG07-005",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG07-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-005",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4166,6 +4491,12 @@
     },
     {
       "source": "CLM-CG07-006",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-006",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG07-002",
       "provenance": "GENERATED_REVERSE"
@@ -4180,6 +4511,12 @@
       "source": "CLM-CG07-007",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG07-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-007",
+      "relation": "SUPPORTS_TREND",
+      "target": "T4",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4214,6 +4551,12 @@
     },
     {
       "source": "CLM-CPU-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG06-001",
       "provenance": "GENERATED_REVERSE"
@@ -4244,6 +4587,12 @@
     },
     {
       "source": "CLM-CPU-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-002",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG06-001",
       "provenance": "GENERATED_REVERSE"
@@ -4268,6 +4617,12 @@
     },
     {
       "source": "CLM-CPU-003",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-003",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-CG06-001",
       "provenance": "GENERATED_REVERSE"
@@ -4288,6 +4643,12 @@
       "source": "CLM-CPU-004",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG06-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-004",
+      "relation": "SUPPORTS_TREND",
+      "target": "T2",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4556,6 +4917,12 @@
     },
     {
       "source": "CLM-PTA-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-PTA-001",
       "provenance": "GENERATED_REVERSE"
@@ -4604,6 +4971,12 @@
     },
     {
       "source": "CLM-PTA-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-002",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-PTA-001",
       "provenance": "GENERATED_REVERSE"
@@ -4634,6 +5007,12 @@
     },
     {
       "source": "CLM-PTA-003",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-003",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-PTA-001",
       "provenance": "GENERATED_REVERSE"
@@ -4658,6 +5037,12 @@
     },
     {
       "source": "CLM-PTA-004",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-004",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-PTA-001",
       "provenance": "GENERATED_REVERSE"
@@ -4676,6 +5061,12 @@
     },
     {
       "source": "CLM-PTA-005",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-005",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-FRONTIER-013",
       "provenance": "GENERATED_REVERSE"
@@ -4690,6 +5081,12 @@
       "source": "CLM-PTA-006",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-PTA-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-006",
+      "relation": "SUPPORTS_TREND",
+      "target": "T3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4886,6 +5283,12 @@
     },
     {
       "source": "CLM-R2-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R2-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-R2-001",
       "provenance": "GENERATED_REVERSE"
@@ -4906,6 +5309,12 @@
       "source": "CLM-R2-002",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-R2-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R2-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -9464,6 +9873,12 @@
     },
     {
       "source": "PT-A",
+      "relation": "PART_OF_TREND",
+      "target": "T3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PT-A",
       "relation": "RELATED_CLAIM",
       "target": "CLM-AGENT-006",
       "provenance": "CANONICAL_SEMANTIC"
@@ -9536,6 +9951,12 @@
     },
     {
       "source": "R1",
+      "relation": "PART_OF_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "R1",
       "relation": "RELATED_CLAIM",
       "target": "CLM-R1-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -9598,6 +10019,12 @@
       "source": "R2",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-R2-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "R2",
+      "relation": "PART_OF_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -9670,6 +10097,18 @@
       "source": "R3",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-R3-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "R3",
+      "relation": "PART_OF_TREND",
+      "target": "T1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "R3",
+      "relation": "PART_OF_TREND",
+      "target": "T5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -9803,6 +10242,390 @@
       "relation": "SCHEDULES",
       "target": "R3",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T1",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T2",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T3",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T4",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T5",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T6",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T7",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "ROADMAP-PRODUCT-2027-2029",
+      "relation": "SCHEDULES_TREND",
+      "target": "T8",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "HAS_DIRECTION",
+      "target": "A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "HAS_DIRECTION",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "HAS_DIRECTION",
+      "target": "R1",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "HAS_DIRECTION",
+      "target": "R3",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_CAPABILITY_SIGNAL",
+      "target": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-A-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-AGENT-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-AGENT-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-AGENT-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-AGENT-008",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-C-008",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T1",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T2",
+      "relation": "HAS_DIRECTION",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "HAS_DIRECTION",
+      "target": "CG-06",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_CAPABILITY_SIGNAL",
+      "target": "CAP-ARM-C2-SME2-CPU-AI",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_CAPABILITY_SIGNAL",
+      "target": "CAP-HUAWEI-GENERIC-RESOURCE-CONTROL",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-C-009",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG06-EXP-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CPU-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CPU-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CPU-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CPU-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T2",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T3",
+      "relation": "HAS_DIRECTION",
+      "target": "PT-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-PTA-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T3",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T4",
+      "relation": "HAS_DIRECTION",
+      "target": "CG-07",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_CAPABILITY_SIGNAL",
+      "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG07-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T4",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T5",
+      "relation": "HAS_DIRECTION",
+      "target": "B-residual",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "HAS_DIRECTION",
+      "target": "CG-01",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "HAS_DIRECTION",
+      "target": "R2",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "HAS_DIRECTION",
+      "target": "R3",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_CAPABILITY_SIGNAL",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-BR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-BR-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG01-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-CG01-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-R2-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-R2-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T6",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T7",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T8",
+      "relation": "TREND_SCHEDULED_BY",
+      "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "TOOL-005",
@@ -9986,8 +10809,8 @@
     }
   ],
   "counts": {
-    "nodes": 384,
-    "canonical_semantic_edges": 622,
-    "generated_reverse_edges": 622
+    "nodes": 393,
+    "canonical_semantic_edges": 678,
+    "generated_reverse_edges": 678
   }
 }

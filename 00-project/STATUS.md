@@ -5,6 +5,7 @@ Updated: 2026-10-07
 ```yaml
 migration_phase: CUTOVER_COMPLETE
 research_authority: V2_2
+graph_schema: 2.3
 authority_repository: xjs-work-lab/agentic-CPU-uArch
 historical_source_authority: V1_FROZEN
 historical_source_repository: xiejinsen/agentic-CPU-uArch
@@ -26,9 +27,9 @@ product_trend_framework: V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 384 canonical nodes
-- 622 canonical semantic edges
-- 622 generated reverse edges
+- 393 canonical nodes
+- 678 canonical semantic edges
+- 678 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -89,6 +90,15 @@ After Rescue-1B, validated Graph-QA paper-depth warnings:
 - whole current ROADMAP: **12**
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
+
+## Data-model 2.3
+Canonical **TREND** objects now separate product evolution from differentiated research.
+
+- Product Evolution Roadmap → TREND
+- Differentiation Portfolio → DIRECTION
+- TREND owns Direction classification through `direction_links`
+
+This is additive: research authority remains V2.2; existing evidence/history IDs are unchanged.
 
 ## Product-trend framework
 Round 14 now uses the two-axis rule:

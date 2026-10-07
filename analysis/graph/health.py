@@ -39,6 +39,9 @@ def validate(root: Path):
         return n
     support=defaultdict(list); just=defaultdict(list); actor_parent=defaultdict(list)
     used_sources=set()
+    allowed_trend_maturity={"ESTABLISHED_PRODUCT_TREND","EMERGING_PRODUCT_TREND","FRONTIER_SIGNAL","UNSUPPORTED"}
+    allowed_product_posture={"PRODUCTIZE","ADAPT_AND_DIFFERENTIATE","BENCHMARK_AND_PREPARE","WATCH","DROP_PRODUCT_ROUTE"}
+    allowed_diff={"DIFFERENTIATED_BET","RESIDUAL_RESEARCH","CROWDED_BUT_VALUABLE","FRONTIER_UNPROVEN","CLOSED_DIFFERENTIATION"}
     for n in nodes:
         t=n["type"]; i=n["id"]
         if t=="SOURCE":
@@ -73,6 +76,19 @@ def validate(root: Path):
             for c in n.get("evidence_claims",[]): req(c,"CLAIM",f"{i}.evidence_claims")
             leak={"competitive_action","investment_lane","strategic_priority"} & set(n)
             if leak: errors.append(f"CAPABILITY_STRATEGY_LEAK:{i}:{sorted(leak)}")
+        elif t=="TREND":
+            if n.get("trend_maturity") not in allowed_trend_maturity:
+                errors.append(f"TREND_BAD_MATURITY:{i}:{n.get('trend_maturity')}")
+            if n.get("product_posture") not in allowed_product_posture:
+                errors.append(f"TREND_BAD_PRODUCT_POSTURE:{i}:{n.get('product_posture')}")
+            for c in n.get("related_claims",[]): req(c,"CLAIM",f"{i}.related_claims")
+            for c in n.get("related_capabilities",[]): req(c,"CAPABILITY",f"{i}.related_capabilities")
+            for d in n.get("direction_links",[]):
+                req(d["direction_id"],"DIRECTION",f"{i}.direction_links")
+                if d.get("differentiation_posture") not in allowed_diff:
+                    errors.append(f"TREND_BAD_DIFFERENTIATION_POSTURE:{i}:{d.get('direction_id')}:{d.get('differentiation_posture')}")
+            if n.get("trend_maturity") in {"ESTABLISHED_PRODUCT_TREND","EMERGING_PRODUCT_TREND"} and not (n.get("related_claims") or n.get("related_capabilities")):
+                errors.append(f"TREND_MATURE_WITHOUT_EVIDENCE_LINK:{i}")
         elif t=="DIRECTION":
             for c in n.get("related_claims",[]): req(c,"CLAIM",f"{i}.related_claims")
             for c in n.get("related_capabilities",[]): req(c,"CAPABILITY",f"{i}.related_capabilities")
@@ -87,7 +103,13 @@ def validate(root: Path):
             for c in n.get("trigger_claims",[]): req(c,"CLAIM",f"{i}.trigger_claims")
             for e in n.get("trigger_experiments",[]): req(e,"EXPERIMENT",f"{i}.trigger_experiments")
         elif t=="ROADMAP":
+            kind=n.get("roadmap_kind")
+            if kind not in {"PRODUCT_EVOLUTION","DIFFERENTIATION_PORTFOLIO","INTEGRATED"}:
+                errors.append(f"ROADMAP_BAD_KIND:{i}:{kind}")
             for d in n.get("direction_ids",[]): req(d,"DIRECTION",f"{i}.direction_ids")
+            for tr in n.get("trend_ids",[]): req(tr,"TREND",f"{i}.trend_ids")
+            if kind=="PRODUCT_EVOLUTION" and not n.get("trend_ids"): errors.append(f"PRODUCT_ROADMAP_WITHOUT_TRENDS:{i}")
+            if kind=="DIFFERENTIATION_PORTFOLIO" and not n.get("direction_ids"): errors.append(f"DIFFERENTIATION_ROADMAP_WITHOUT_DIRECTIONS:{i}")
     jc=scc_cycles(just)
     if jc: errors.append(f"JUSTIFICATION_CYCLE:{jc}")
     ac=scc_cycles(actor_parent)
@@ -103,9 +125,6 @@ def validate(root: Path):
         if n["type"]=="SOURCE" and n.get("independence_assessment")=="UNKNOWN":
             warnings.append(f"INDEPENDENCE_UNKNOWN:{n['id']}")
 
-    # Evidence Depth Policy v1 — rescue-mode warnings.
-    # A paper is decision-critical here when it directly premises a supported claim used by
-    # a Direction scheduled in the current ROADMAP. During rescue mode this is warning-only.
     roadmap_dirs=set()
     for n in nodes:
         if n["type"]=="ROADMAP" and n.get("record_state")=="CURRENT":
@@ -142,6 +161,9 @@ def dependency_graph(nodes):
             dep[i].add(n["target_id"])
         elif t=="CAPABILITY":
             for c in n.get("evidence_claims",[]): dep[c].add(i)
+        elif t=="TREND":
+            for c in n.get("related_claims",[]): dep[c].add(i)
+            for c in n.get("related_capabilities",[]): dep[c].add(i)
         elif t=="DIRECTION":
             for c in n.get("related_claims",[]): dep[c].add(i)
             for c in n.get("related_capabilities",[]): dep[c].add(i)
@@ -153,6 +175,7 @@ def dependency_graph(nodes):
             for e in n.get("trigger_experiments",[]): dep[e].add(i)
         elif t=="ROADMAP":
             for d in n.get("direction_ids",[]): dep[d].add(i)
+            for tr in n.get("trend_ids",[]): dep[tr].add(i)
     return dep
 
 def impact(nodes,root_id):
