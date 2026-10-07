@@ -23,27 +23,23 @@ evidence_depth_protocol: EDP_V1
 
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
-Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
-
 ## Current graph
-- 383 canonical nodes
-- 610 canonical semantic edges
-- 610 generated reverse edges
-- projection prepared after Evidence Rescue 1A PT-A deep audit
+- 384 canonical nodes
+- 622 canonical semantic edges
+- 622 generated reverse edges
+- projection prepared for Evidence Rescue 1B A validation
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
-- Evidence Rescue Round 1 squash merge: `192e3fc816fd96d3112b1a0f94da916f8f869e33`
 - Evidence Rescue 1A PT-A Graph QA: **PASS** — run `37611820867`, job `112760599058`
 - Evidence Rescue 1A PT-A squash merge: `e6a83b36494ec9bcc044b3aec6441152efd132f1`
-- Evidence Rescue 1A PT-A work-branch cleanup: **PASS** — run `37611888348`
 
 ## Portfolio invariant
-- A — only differentiated Primary Bet
-- PT-A — Platform Track / 80.0 / SYSTEM_VALUE; Rescue-1A reframes core contract around capability/authority + fresh context binding + OutcomeReceipt + verification/recovery
-- C — Strategic Enabler / SYSTEM_VALUE
-- CG-06 — INVEST
-- CG-07 — EXPLORE
-- CG-01 — BENCHMARK
+- **A — PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**; Rescue-1B keeps it provisionally but narrows differentiation to non-reconstructible DemandState / RequiredProgress information value
+- **PT-A — PLATFORM_TRACK / 80.0 / SYSTEM_VALUE**
+- **C — STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE**
+- **CG-06 — INVEST / 86.5**
+- **CG-07 — EXPLORE / 75.0**
+- **CG-01 — BENCHMARK / 71.0**
 - B-residual — Conditional Reserve
 - R1 — Conditional Reserve
 - R2 — Conditional Reserve
@@ -55,43 +51,41 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 `STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
 ## Evidence Rescue state
-Frontier Round 14 remains **PAUSED**.
 
-### Rescue Round 1
-Re-read PAPER-009 / 041 / 051 / 052 and introduced EDP v1.
+### Rescue-0
+PAPER-009 / 041 / 051 / 052 re-read under EDP v1.
 
 ### Rescue-1A — PT-A
-Re-read under EDP v1:
-- PAPER-037 ClawMobile
-- PAPER-038 Beyond GUI
-- PAPER-039 HybridCUA
-- PAPER-040 PhoneHarness
-- PAPER-042 UIAnchor
+PAPER-037 / 038 / 039 / 040 / 042 re-read.
+PAPER-101 Action Rebinding and PAPER-102 VeriGUI added.
+PT-A remains PLATFORM_TRACK / 80.0 / SYSTEM_VALUE with a stronger context-bound actuation contract.
 
-Added decision-critical counter/baseline evidence:
-- PAPER-101 Action Rebinding / CCS 2026
-- PAPER-102 VeriGUI / ACL 2026
+### Rescue-1B — A
+PAPER-013 / 015 / 043 / 044 / 050 re-read under EDP v1.
 
-PT-A result:
-- lane **PLATFORM_TRACK unchanged**
-- score **80.0 unchanged**
-- maturity **SYSTEM_VALUE unchanged**
-- new residual: **observation→action context integrity**
-- new validation: `EXP-PTA-002`
-- no software-insufficiency pass
-- no hardware/uArch candidate
+Key decision:
+- A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**;
+- no maturity promotion;
+- no hardware/uArch promotion;
+- `CLM-A-001` is now explicitly a **conditional-information residual**;
+- `EXP-A-001` is strengthened into a matched-observability test.
 
-### Evidence-depth debt
-Original five-lane audit started with 33 unique papers and 14 missing depth metadata.
-Two new FULL_10Q papers were added during Rescue-1A, so the current five-lane source set is 35.
+Material corrections:
+- PAPER-013: speculative/cancel/commit state is largely runtime-visible and naturalistic streaming transfer can regress.
+- PAPER-015: effectful execution is gated behind proposal acceptance.
+- PAPER-043: venue corrected to **ICLR 2025**; synthetic/generated training vs real test boundary preserved.
+- PAPER-044: strong per-user/time-based long-history predictor baseline; observed help-seeking is a proxy, not intrinsic RequiredProgress.
+- PAPER-050: runtime can derive substantial dependency/effect legality, but untraceable/irreversible effects remain barriers.
 
-After Rescue-1A:
-- remaining primary-lane paper debt: **5** — PAPER-013 / 015 / 043 / 044 / 050, all in A;
-- validated whole-current-ROADMAP paper-depth warnings: **17** — primary 5 + reserve-lane 12.
+## Evidence-depth debt
+After Rescue-1B, expected Graph-QA paper-depth warnings:
+- primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
+- current reserve lanes B-residual / R1 / R2: **12**
+- whole current ROADMAP: **12**
+
+R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 
 ## Operating rule
-Next: **Rescue-1B Candidate A deep audit**.
+Frontier Round 14 stays paused until Rescue-1B Graph QA confirms the zero-warning state for the five primary lanes.
 
-Do not resume Frontier Round 14 until PAPER-013 / 015 / 043 / 044 / 050 are deep-read and the five-lane decision backtrace is rerun.
-
-Before final portfolio convergence, also clear reserve-lane paper debt and audit decision-critical patents.
+If QA passes, resume Frontier Round 14; reserve-lane and patent audit remain mandatory before final portfolio convergence.
