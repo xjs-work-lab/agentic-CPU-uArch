@@ -27,7 +27,7 @@ A trend can remain important even when its broad novelty is crowded.
 | T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | CG-07=RESIDUAL_RESEARCH | CG-07 |
 | T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | B-residual/CG-01/R2=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | B-residual, CG-01, R2, R3 |
 | T6 Local programmable Agent execution & sandboxed skills | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
-| T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
+| T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | C/B-residual/PT-A=RESIDUAL_RESEARCH | C, B-residual, PT-A |
 | T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
 
 ---
@@ -191,10 +191,17 @@ When several specialized local Agents share one phone/model/runtime, does the sy
 This could become a real product trend while still collapsing into C/B if all control variables are ordinary software-visible state.
 
 ### Current evidence state
-Initial scan finds stronger mobile/edge seeds than expected, including mobile multi-agent orchestration and state/memory systems. Direct smartphone SoC pressure and independent replication still require audit.
+Round 14-A deep-read MobiMem, LOCAL and EcoAgent.
+
+The architecture trend is credible, but the reviewed evidence decomposes into existing software/platform owners:
+- scheduling/future-consumer demand → C;
+- versioned state/KV/adapter lifecycle → T5/B-residual;
+- verification/recovery → PT-A.
+
+Direct smartphone-SoC local multi-Agent shared-resource residual remains unestablished.
 
 ### Round 14 action
-**AUDIT FIRST — highest frontier priority**
+**WATCH — standalone differentiated Bet closed; reopen only on target-phone residual evidence**
 
 ---
 

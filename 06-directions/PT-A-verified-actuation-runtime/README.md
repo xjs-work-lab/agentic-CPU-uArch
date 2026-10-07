@@ -8,7 +8,7 @@ investment_lane = "PLATFORM_TRACK"
 score_context = 80.0
 evidence_maturity = "SYSTEM_VALUE"
 maturity_scope = "mobile action-surface and verification/recovery value are established for evaluated systems; capability entitlement and context-bound action delivery are unresolved platform requirements; no differentiated CPU/uArch control point is established"
-related_claims = ["CLM-PTA-001", "CLM-PTA-002", "CLM-PTA-003", "CLM-PTA-004", "CLM-PTA-005", "CLM-PTA-006", "CLM-AGENT-006", "CLM-PTA-EXP-001", "CLM-PTA-EXP-002"]
+related_claims = ["CLM-PTA-001", "CLM-PTA-002", "CLM-PTA-003", "CLM-PTA-004", "CLM-PTA-005", "CLM-PTA-006", "CLM-PTA-007", "CLM-AGENT-006", "CLM-PTA-EXP-001", "CLM-PTA-EXP-002"]
 related_capabilities = []
 +++
 
@@ -31,6 +31,7 @@ More action surfaces without routing discipline can make an Agent worse, and ver
 - PAPER-102 gives causal software evidence that explicit action-effect verification improves recovery.
 - PAPER-101 supplies negative security evidence that observation→action context integrity is a distinct execution requirement.
 - PAPER-099 remains direct evidence that rollback capability changes the economics of speculative GUI work.
+- PAPER-105 / EcoAgent independently shows that explicit step expectations + post-action observation/verification + failure-triggered replanning can materially improve evaluated Android automation while reducing repeated cloud dependence.
 
 ## Why not a Primary Bet
 The generic mechanism surface is increasingly crowded:
@@ -49,7 +50,8 @@ PT-A must now beat:
 - VeriGUI-class model self-verification/recovery;
 - Cordon-style mediated effect/authority/lineage handling where applicable;
 - task-specific outcome verifiers;
-- a cheap fresh-app/window/target re-observation immediately before action.
+- a cheap fresh-app/window/target re-observation immediately before action;
+- EcoAgent-class local expectation verification + compact semantic feedback/replanning.
 
 A PT-A feature gets differentiated credit only for residual value beyond these.
 
