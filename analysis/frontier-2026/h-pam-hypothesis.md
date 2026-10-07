@@ -1,6 +1,6 @@
 # H-PAM — Persistent Agent Memory Execution Substrate
 
-Status: **ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+Status: **KEEP / NARROW — ANALYSIS HYPOTHESIS / NOT A DIRECTION**
 Opened: 2026-10-06
 
 ## Working hypothesis
@@ -123,3 +123,99 @@ STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-speci
 3. Agent memory systems with explicit update/consolidation/forget operations (AgeMem, MIRIX, LiCoMemory-class).
 4. Dynamic ANN/vector systems to establish strongest non-Agent baseline.
 5. Any real smartphone traces of memory ingestion/retrieval/index maintenance.
+
+## Round-6 update — MobiMem + AgeMem
+
+### Gate result
+- **Agent-memory lifecycle recurrence:** PASS
+- **Mobile Agent execution relevance:** PARTIAL PASS
+- **Distinct lower-level mobile systems residual:** OPEN
+- **Direction promotion:** NO
+- **Hardware/uArch promotion:** NO
+
+### What MobiMem adds
+MobiMem demonstrates in one mobile-Agent system that memory type/state can change execution semantics:
+- Profile Memory → specialized retrieval/update;
+- Experience Memory → reusable task templates + step-level dependency DAG;
+- Action Memory → replayability, stale validation, fallback/repair;
+- exception context → suspension/recovery + later template evolution.
+
+This is stronger than the Round-5 cross-paper bridge because Agent-memory semantics and execution services appear in the same system.
+
+### What AgeMem adds
+AgeMem independently exposes:
+- ADD;
+- UPDATE;
+- DELETE;
+- RETRIEVE;
+- SUMMARY;
+- FILTER
+
+as learned Agent policy actions.
+
+Its ACL evaluation shows RL changes the operation mix and improves task/memory quality.
+
+Therefore memory lifecycle actions recur across independent Agent-memory designs.
+
+### Why H-PAM still does not promote
+Both papers also strengthen the software baseline:
+
+**MobiMem**
+- template abstraction;
+- step-DAG scheduler;
+- action replay;
+- stale-action validation;
+- exception handling
+
+already consume memory semantics in upper-layer software.
+
+**AgeMem**
+- memory operation identity is explicit at the tool/API boundary.
+
+Therefore H-PAM cannot claim novelty from:
+- knowing that an operation is update/delete/retrieve;
+- exposing a memory-operation API;
+- replaying Agent actions;
+- DAG scheduling from experience templates;
+- ordinary stale-entry invalidation.
+
+### Surviving residual
+The remaining question is now:
+
+> Do recurring Agent-memory lifecycle facts **beyond ordinary API operation identity** materially change smartphone CPU/NPU/data-placement/memory-maintenance decisions after MobiMem-style upper-layer execution and MUSE/LEANN/CD-ANN-class data-structure software are exhausted?
+
+Candidate facts to pressure-test:
+- consolidation urgency / completion deadline;
+- semantic replacement dependency;
+- salience / confidence / age affecting residency;
+- foreground recall vs background maintenance criticality;
+- cross-representation coupling among raw media, vectors, graph state and action traces;
+- cost of losing/rebuilding a memory state across suspend/resume.
+
+These are hypotheses, not proposed ABI fields.
+
+### Strongest baseline update
+H-PAM must now beat:
+- MUSE mobile heterogeneous retrieval/update;
+- LEANN compute-for-storage;
+- CD-ANN segmented dynamic indexing;
+- MobiMem specialized memory + template/replay/scheduler/exception handling;
+- AgeMem explicit/learned memory-operation API;
+- ordinary vector/graph/RAG optimizations;
+- generic C resource controls.
+
+### Pending direct-mobile benchmark
+**Benchmarking Memory Architectures for Mobile Agents in Short-Term and Long-Term Applications — MobiSys Workshop 2026**
+
+Status:
+**PENDING_FULLTEXT / NOT DECISION-GRADE**
+
+Public metadata confirms peer-reviewed MobiSys Workshop publication and reports:
+- four memory architectures;
+- short-term + long-term mobile-Agent datasets;
+- multiple on-device model sizes;
+- structured graph often competitive;
+- 3B–7B quantized models can approach cloud reference in some long-term settings;
+- prompt size is a major latency driver.
+
+Do not use these abstract-level results for Direction/portfolio decisions until full text is obtained.
