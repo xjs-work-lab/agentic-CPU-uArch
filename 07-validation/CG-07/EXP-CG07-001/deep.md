@@ -149,3 +149,21 @@ Do not turn the vendor 40% claim into a measured model parameter.
 
 ---
 
+
+
+## V2.2 Frontier Round 10 update — proactive gating residual
+
+PAPER-087 ProactiveMobile and PAPER-088 PRPF change the strongest-baseline model without changing the CG-07 score.
+
+### New workload abstraction
+`context observation → intervene/no-intervene gate → accepted subset → heavy reasoner`
+
+Raw context-arrival rate is therefore not equivalent to heavy-reasoner duty cycle.
+
+### Architecture residual
+A dedicated low-power domain can only claim value on the residual after a strong lightweight gate. The key comparison is strongest CPU/shared-NPU/small-model front-end gate versus dedicated always-on front-end gate, with accepted-event handoff/wake cost and dedicated idle power included.
+
+### Decision
+**CG-07 remains EXPLORE / 75.0.**
+
+Workload relevance is strengthened, but architecture necessity is narrowed. The original V1 direct-event model above remains as provenance; current `model.py` adds the V2.2 post-gating residual model while retaining the legacy function.

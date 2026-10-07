@@ -4,54 +4,67 @@ type = "EXPERIMENT"
 record_state = "CURRENT"
 status = "SIMULATION_SUPPORT"
 execution_state = "READY_FOR_MEASURED_INPUTS"
-title = "CG-07 dedicated-vs-shared always-on energy break-even"
+title = "CG-07 post-gating dedicated-vs-shared front-end break-even"
 direction_ids = ["CG-07"]
 tests_claim_ids = ["CLM-CG07-EXP-001"]
-input_source_ids = ["VENDOR-019"]
+input_source_ids = ["VENDOR-019", "PAPER-087", "PAPER-088"]
 evidence_target = "SYSTEM_VALUE"
 +++
 
-# EXP-CG07-001 — Dedicated vs shared always-on break-even
+# EXP-CG07-001 — Post-gating dedicated vs shared front-end break-even
 
 ## Decision question
-When does a dedicated low-power AI domain beat waking/sharing a high-performance NPU after idle, wake, active duration, batching and real Agent duty cycle are counted?
+After a PRPF-class lightweight gate suppresses low-value/no-action context observations, when does a dedicated low-power Agent front end still beat the strongest shared-NPU / CPU / small-model front end on useful progress per energy while preserving foreground QoE and thermal limits?
+
+## Why the model changed
+The original Stage16A model treated each event as direct active compute.
+
+PAPER-087 + PAPER-088 show a stronger abstraction:
+
+`context observation → lightweight intervene/no-intervene gate → accepted subset → heavy reasoner`
+
+Therefore CG-07 must be decided on **post-gating residual economics**, not raw context-event frequency.
 
 ## Strong baseline
-- shared NPU with strong power-gating / DVFS;
+- PRPF-class intervention gating;
+- candidate-function compression;
+- shared NPU with strong power gating / DVFS;
+- CPU / small-model gate path;
 - batching / effective-wake reduction;
-- CPU / small-model path;
 - A semantic-progress control;
 - existing background scheduling.
 
-## Synthetic model status
-Stage16A synthetic self-check is complete.
+## V2.2 residual model
+```text
+DedicatedFrontEndEnergy =
+T × P_dedicated_idle
++ N_context × E_dedicated_gate_increment
++ N_context × p_accept × E_dedicated_handoff
 
-Reference example used only for model behavior:
-- dedicated idle: 20 mW
-- dedicated active: 200 mW
-- shared active: 700 mW
-- shared wake: 8 mJ
-- one wake/event
-- one-hour window
+BaselineFrontEndEnergy =
+N_context × E_baseline_gate
++ N_context × p_accept × E_baseline_handoff
+```
 
-Synthetic break-even examples:
-- 5 ms/event: ~6792 events/hour (~1.89/s)
-- 20 ms/event: ~3913/hour (~1.09/s)
-- 100 ms/event: ~1200/hour (~0.33/s)
+Common heavy-reasoner active energy can be excluded when both alternatives invoke the same heavy reasoner for the same accepted subset.
 
-Lowering dedicated idle from 20 mW to 5 mW moves the 20 ms / 8 mJ synthetic break-even from ~1.09/s to ~0.28/s.
+### Required measured inputs
+- context observations/hour;
+- acceptance/intervention rate after gating;
+- gate energy/latency on strongest CPU/shared-NPU front end;
+- dedicated-domain idle power;
+- dedicated gate active power + gate duration;
+- handoff/wake energy and latency for accepted observations;
+- heavy-reasoner duty cycle;
+- batching/residency policy;
+- battery / thermal / foreground QoE.
 
 ## Critical boundary
-These are **synthetic design-space examples**, not Dimensity 9600 Pro measurements.
+PAPER-088's reported −69.3% expected compute and −60.1% end-to-end latency are **not** phone energy measurements and are not inserted as device parameters.
 
-The MediaTek 40% vendor claim is not injected as measured input.
+All current numerical grids in `model.py` remain synthetic design-space probes.
 
 ## Promotion gate
-Dedicated domain must beat the strong shared-domain baseline on representative persistent-Agent workloads using measured:
-- event rate/duty cycle;
-- wake energy/latency;
-- idle/residency power;
-- active power;
-- battery/thermal/foreground QoE.
+CG-07 may advance only if measured representative smartphone traces show that the dedicated front end beats the strongest software-sparsified shared/CPU baseline after gate overhead, accepted-event handoff/wake, idle/residency, quality, battery, thermal and foreground QoE are counted.
 
-Exact V1 sections are preserved in [deep.md](deep.md); the exact model is preserved in [model.py](model.py).
+Historical V1 excerpts remain in [deep.md](deep.md).
