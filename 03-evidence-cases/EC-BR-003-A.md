@@ -14,14 +14,14 @@ ref_id = "PAPER-032"
 locator = "versioned execution + compatible inheritance"
 [[premises]]
 ref_kind = "SOURCE"
-ref_id = "PAPER-033"
+ref_id = "PAPER-104"
 locator = "version-aware KV validity"
 +++
 
 # EC-BR-003-A
 
 ## Inference
-`PAPER-032` **AND** `PAPER-033` → **SUPPORT** → `CLM-BR-003`
+`PAPER-032` **AND** `PAPER-104` → **SUPPORT** → `CLM-BR-003`
 
 ## Warrant
 These systems jointly occupy versioned authority/validity and compatible state preservation for Agent execution.

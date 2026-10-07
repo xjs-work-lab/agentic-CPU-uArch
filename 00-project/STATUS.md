@@ -26,6 +26,7 @@ next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
 round15a_progress: AO2_EVIDENCE_MAPPED_2_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
+source_identity_gate: ACTIVE
 ```
 
 ## Authority
@@ -427,3 +428,24 @@ only the lower execution/state residual remains credible — whether frequent sp
 Round 15A progress: **2 / 5 Opportunities evidence-mapped**.
 
 Next: **AO-3 Persistent Agent State / Context Fabric**.
+
+
+## Source Identity Gate — 2026-10-08
+Source dedup governance is now **ACTIVE**.
+
+Hard identity checks:
+- DOI;
+- arXiv work ID, version-insensitive;
+- patent publication number;
+- canonical primary URL.
+
+Historical alias rule:
+- PAPER-104 is canonical for LOCAL / arXiv 2608.15241;
+- PAPER-033 is retained as ALIAS only;
+- active evidence/experiment references were migrated to PAPER-104;
+- aliases cannot be used as active evidence inputs.
+
+QA now triggers on both pull requests and direct pushes to main.
+
+Policy: 00-project/source-identity-policy.md
+Validator: analysis/graph/source_identity.py

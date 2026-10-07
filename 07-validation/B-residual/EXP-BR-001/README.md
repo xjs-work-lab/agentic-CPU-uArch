@@ -7,7 +7,7 @@ execution_state = "READY_FOR_PHONE_INPUTS"
 title = "B-residual strong-baseline break-even / kill test"
 direction_ids = ["B-residual"]
 tests_claim_ids = ["CLM-BR-EXP-001"]
-input_source_ids = ["PAPER-028", "PAPER-029", "PAPER-030", "PAPER-031", "PAPER-032", "PAPER-033", "PAPER-034", "PAPER-035", "PATENT-032"]
+input_source_ids = ["PAPER-028", "PAPER-029", "PAPER-030", "PAPER-031", "PAPER-032", "PAPER-104", "PAPER-034", "PAPER-035", "PATENT-032"]
 evidence_target = "SYSTEM_VALUE"
 +++
 

@@ -2563,7 +2563,7 @@
       "id": "PAPER-033",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-033/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-034",
@@ -7162,18 +7162,6 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
-      "source": "PAPER-033",
-      "relation": "PREMISE_TO_CASE",
-      "target": "EC-BR-003-A",
-      "provenance": "DERIVED_DEPENDENCY"
-    },
-    {
-      "source": "PAPER-033",
-      "relation": "SOURCE_TO_EXPERIMENT",
-      "target": "EXP-BR-001",
-      "provenance": "DERIVED_DEPENDENCY"
-    },
-    {
       "source": "PAPER-034",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-BR-003-B",
@@ -7884,6 +7872,12 @@
     {
       "source": "PAPER-104",
       "relation": "PREMISE_TO_CASE",
+      "target": "EC-BR-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-104",
+      "relation": "PREMISE_TO_CASE",
       "target": "EC-CAL-004-C",
       "provenance": "DERIVED_DEPENDENCY"
     },
@@ -7897,6 +7891,12 @@
       "source": "PAPER-104",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-T7-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-104",
+      "relation": "SOURCE_TO_EXPERIMENT",
+      "target": "EXP-BR-001",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {

@@ -2,12 +2,13 @@
 id = "PAPER-033"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
 review_depth = "FULL_10Q_REUSED_FROM_PAPER_104"
 deep_review_protocol = "EDP_V1"
 deep_review_date = "2026-10-07"
 decision_critical = true
 decision_use = "B_RESIDUAL_VERSION_AWARE_KV_VALIDITY_BASELINE_DUPLICATE_PRIMARY_SOURCE"
+canonical_source_id = "PAPER-104"
 independence_assessment = "SAME_PRIMARY_SOURCE_AS_PAPER_104"
 title = "LOCAL: Enabling Learning On-device Contiguously for Agent LLMs"
 primary_url = "https://arxiv.org/abs/2608.15241"
@@ -25,7 +26,7 @@ https://arxiv.org/abs/2608.15241
 
 The decision-grade FULL_10Q review was completed under PAPER-104 on 2026-10-07.
 
-This historical source ID is retained for migration/evidence-graph fidelity and reuses that review rather than pretending to be an independent second paper.
+This historical source ID is retained only as an explicit alias for migration fidelity. Active Evidence Cases and Experiments must reference canonical PAPER-104; this alias must never count as independent evidence.
 
 ## B-residual impact
 LOCAL shows adapter/version-aware KV validity and staged refresh can be represented in software runtime state.

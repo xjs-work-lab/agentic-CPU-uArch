@@ -14,7 +14,7 @@ supersedes = []
 Versioned execution, version-aware validity and compatible-state inheritance are already active Agent-systems mechanisms, so those primitives alone are not B-residual novelty.
 
 ## Current interpretation
-PAPER-032 and PAPER-033 occupy versioned authority, version-aware KV validity and compatible-state inheritance.
+PAPER-032 and canonical PAPER-104 occupy versioned authority, version-aware KV validity and compatible-state inheritance. PAPER-033 is retained only as a historical alias of PAPER-104.
 
 ## Boundary
 Evidence is server/GPU/local-runtime oriented; smartphone S0/S1→S2/S3 transfer remains open.

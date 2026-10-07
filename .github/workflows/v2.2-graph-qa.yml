@@ -1,6 +1,25 @@
-name: V2.3 Graph QA
+name: V2.4 Graph + Source Identity QA
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '00-project/**'
+      - '01-evidence/**'
+      - '02-claims/**'
+      - '03-evidence-cases/**'
+      - '04-actors/**'
+      - '05-capabilities/**'
+      - '06-trends/**'
+      - '06-opportunities/**'
+      - '06-directions/**'
+      - '07-validation/**'
+      - '08-decisions/**'
+      - '09-roadmap/**'
+      - 'analysis/graph/**'
+      - 'views/graph/**'
+      - 'history/migrations/receipts/**'
+      - '.github/workflows/v2.2-graph-qa.yml'
   pull_request:
     paths:
       - '00-project/**'
@@ -37,5 +56,7 @@ jobs:
         run: python analysis/graph/write_guard.py .
       - name: Verify graph projection
         run: python analysis/graph/build_graph.py --check
+      - name: Verify source identity / dedup
+        run: python analysis/graph/source_identity.py --check
       - name: Run graph health
         run: python analysis/graph/health.py
