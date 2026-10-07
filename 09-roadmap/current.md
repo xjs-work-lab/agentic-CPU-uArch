@@ -114,7 +114,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 pressure test is next.**
+**ROUND 14 ACTIVE — T7 seed triage complete; FULL_10Q phase next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -139,10 +139,27 @@ No SYSTEM_VALUE or hardware/uArch promotion.
 Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
 The remaining **12** current-roadmap paper warnings are all in B-residual / R1 / R2.
 
-## Next
-**Round 14-A: T7 Local Multi-Agent Concurrency pressure test.**
+## T7 seed-triage result
+Initial seeds:
+- MobiMem
+- LOCAL
+- EcoAgent
 
-Deep-read the strongest mobile/system seeds, then decide whether T7 becomes a new Direction or is absorbed by C/T5.
+Current pressure:
+- MobiMem strongly supports Agent memory/replay/fine-grained mobile workflow productization, but mainly maps to C + T5/PT-A.
+- LOCAL shows genuine cross-agent model/KV/adapter state sharing, but only on a 24 GB single-GPU setup, not a phone.
+- EcoAgent validates mobile multi-Agent role decomposition, but not a distinct local shared-resource CPU control point.
+
+Therefore T7 remains a **product trend candidate**, not a new Direction.
+
+## Next
+FULL_10Q in order:
+1. MobiMem
+2. LOCAL
+3. EcoAgent
+
+Then issue an ownership/residual decision:
+NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL differentiated novelty.
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 
