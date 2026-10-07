@@ -1,150 +1,112 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+# PAPER-044 — ProAgentBench — EDP v1 FULL_10Q
 
-# PAPER-044 — ProAgentBench: Evaluating LLM Agents for Proactive Assistance with Real-World Data
+Re-reviewed: 2026-10-07
 
-## Source
-- Paper: https://arxiv.org/abs/2602.04482
-- Authors: Yuanbo Tang, Huaze Tang, Tingyu Cao, Lam Nguyen, Anping Zhang, Xinwen Cao, Chunkang Liu, Wenbo Ding, Yang Li
-- Venue/status: arXiv preprint, 2026
-- Public dataset: https://huggingface.co/datasets/qv9n2xk7m1z8pt4/ProAgentBench
-- Project relevance: A / strong B4 learned-history baseline / real workload timing prior
-- Priority: P0
+## Q1 — Problem + target mapping
+Proactive systems need to decide when to assist from real continuous behavior rather than isolated synthetic prompts.
 
-## Q1 — What problem is the paper solving, and how does it map to smartphones?
-Proactive Agents need two abilities:
-1. decide **when** the user needs assistance;
-2. infer **how** to assist.
+For A, this is a strong generic-history competitor to explicit DemandState.
 
-Prior proactive benchmarks rely heavily on synthetic/isolated tasks and often miss the behavioral history preceding a need.
+## Q2 — Novelty / new-regime relevance
+The benchmark contributes:
+- long continuous real-user sessions;
+- pre-assistance context;
+- When-to-Assist + How-to-Assist decomposition;
+- time-aware evaluation.
 
-ProAgentBench uses continuous real-world workflows, making it highly relevant to our question of whether demand can be inferred from generic history.
+This is not an A mechanism; it is a strong B4 source.
 
-It is primarily desktop/workstation data, so the transfer to smartphone CPU/system behavior remains unproven.
+## Q3 — Falsifiable hypothesis
+Real and longer behavioral history should improve proactive timing/content prediction relative to synthetic/short-context baselines.
 
-## Q2 — Is the problem/new mechanism actually new?
-Real continuous pre-assistance history is a major advance over synthetic isolated proactive examples.
+## Q4 — Research lineage / competing route
+Independent group from P043.
+It extends the proactive-prediction line from generated/human-labeled examples to real longitudinal sessions.
 
-For our project this is not an A mechanism.
-It is a **strong competing baseline source**:
-generic behavioral history can encode much of the information A might otherwise claim as privileged.
+## Q5 — Mechanism / control point
+Inputs:
+- screenshots/activity;
+- timestamps;
+- app/window metadata;
+- user history.
 
-## Q3 — What falsifiable hypothesis is being tested?
-Author hypothesis:
-long real behavioral history and real-world training improve proactive timing/content prediction more than short/synthetic context.
+Task:
+- binary When-to-Assist;
+- conditional How-to-Assist.
 
-Project hypothesis:
-if B4 can infer assistance demand accurately from ordinary history, explicit Agent DemandState may have less incremental value.
+This is a learned Agent-side predictor from observable user context.
 
-The falsifier for A is not high classifier accuracy alone; it is B4 capturing nearly all B5-to-B4 end-outcome headroom.
+## Q6 — Experiment design + quantitative results
+Dataset:
+- 17 participants in released dataset;
+- 28,528 events;
+- 7,222 LLM-related events (~25.3%);
+- 500+ hours;
+- 167,423 screenshots in released artifact;
+- student-heavy participant population.
 
-## Q4 — What is the research lineage / competing route?
-- synthetic proactive benchmarks;
-- THUNLP ProactiveAgent/ProactiveBench;
-- LLM/VLM prompt-based triggering;
-- RAG/KG/memory approaches;
-- real-world SFT/LoRA.
+Protocol:
+- isolate each user's history;
+- use time-based splits;
+- choose contextually similar negative moments rather than trivial inactivity.
 
-## Q5 — What is the key technical mechanism / control point?
-The benchmark decomposes:
-- **When to Assist** — binary timing prediction from historical observations/user context;
-- **How to Assist** — intent/content generation after the trigger.
+Fine-tuning comparison uses 741 real instances and an equal-size synthetic set.
 
-For our project, When-to-Assist is the relevant B4 proxy.
+LLaMA-3.1-8B-Instruct:
+- zero-shot When accuracy 57.3%, F1 66.7%;
+- synthetic SFT ~62.1% accuracy / 70.2% F1;
+- real-world SFT 74.0% accuracy / 78.5% F1;
+- How-to-Assist intention accuracy 34.8% synthetic vs 42.1% real.
 
-The control point is an Agent-side learned trigger, not CPU/uArch.
+Qwen3-VL-8B-Instruct:
+- zero-shot 51.7% accuracy / 66.1% F1;
+- synthetic SFT 54.8% / 67.8%;
+- real-world SFT 63.5% / 72.4%.
 
-## Q6 — How is the experiment designed?
-Reported dataset:
-- **28,000+ events**;
-- **500+ hours** of real user sessions;
-- burstiness **B=0.787**;
-- 17 participants in the released study.
+Context ablation tests ~10 s through 10 min.
+Longer history improves timing and intent metrics; the paper reports diminishing returns for intention accuracy beyond ~5 minutes.
 
-Context-window ablation tests:
-- 10 s;
-- 30 s;
-- 1 min;
-- 2 min;
-- 5 min;
-- 10 min.
+## Q7 — Artifact / reproducibility
+Public dataset is organized by participant and time.
 
-Longer history generally improves proactive prediction; benefits become small beyond roughly 5 minutes.
+Important boundary:
+the protocol is time-based within isolated user histories; it is not equivalent to leave-one-user-out generalization.
+Personal history can therefore be part of the strong baseline.
 
-Real-world vs synthetic training is compared at equal data scale.
+Released text annotations may be model-generated and can contain noise.
 
-Key reported When-to-Assist results:
+## Q8 — Evidence vs alternatives
+Demonstrated:
+- real long-history behavior materially improves assistance timing prediction;
+- synthetic data misses behavioral structure.
 
-### LLaMA-3.1-8B-Instruct
-- zero-shot accuracy: 57.3%, F1 66.7%;
-- SFT synthetic: 62.1%, F1 70.2%;
-- **SFT real-world: 74.0%, F1 78.5%**.
+Critical interpretation boundary:
+the benchmark's positive assistance triggers are anchored to observed user help-seeking / LLM-use events.
+That is a strong proxy for when the user sought AI help, but not direct ground truth for:
+- counterfactual optimal intervention time;
+- Agent internal RequiredProgress;
+- optional/speculative branch value.
 
-### Qwen3-VL-8B-Instruct
-- zero-shot accuracy: 51.7%, F1 66.1%;
-- SFT synthetic: 54.8%, F1 67.8%;
-- **SFT real-world: 63.5%, F1 72.4%**.
+## Q9 — Decision contribution
+This materially hardens CLM-AGENT-002 and B4-TX.
 
-## Q7 — What data/artifact/reproducibility support exists?
-Strong for workload characterization.
+A cannot claim:
+“history cannot infer demand.”
 
-Public participant JSON includes:
-- event identity;
-- start/end timestamp;
-- LLM-event label;
-- application/window;
-- event summary;
-- screenshot reference/timestamp.
+A can only claim residual value if explicit internal DemandState separates states that remain observationally similar under this kind of long-history/personalized baseline.
 
-Stage 15 directly parsed a small non-random set of public participants and confirmed:
-- large user/session variation in LLM-event fraction;
-- contiguous LLM-event bursts;
-- timestamped workflow structure.
+## Q10 — Next action
+KEEP P0.
 
-Data caveats:
-- event summaries are model-generated and may contain noise;
-- event durations can include long inactivity/session gaps;
-- wall-clock duration is not CPU/NPU active cost.
-
-## Q8 — Do the results actually support the hypothesis?
-Yes, for generic proactive prediction.
-
-**[FACT]** Real-world training materially improves When-to-Assist accuracy relative to zero-shot and synthetic training.
-
-**[FACT]** Longer history improves prediction.
-
-**[INFERENCE]** Our previous B4 can no longer be represented by a shallow recent-history predictor only.
-
-**Boundary:** When-to-Assist is not the same as REQUIRED/OPTIONAL/SPECULATIVE continuation demand and says nothing about Effect/Commit legality.
-
-## Q9 — What is the real contribution / technology control point for us?
-This paper materially **hardens Candidate A's competitor**.
-
-New requirement:
-B4 must permit:
-- long behavioral history;
-- real-world training;
-- learned timing prediction;
-- ordinary user/workload personalization where legal.
-
-A's surviving residual becomes narrower:
-
-> Does explicit Agent runtime knowledge of active goal closure, speculative branch status and effect/commit legality provide >=~5% useful-progress/end-outcome gain after a strong long-history generic predictor?
-
-This is a better and more defensible research question.
-
-## Q10 — What should we do next?
-- UPGRADE to P0 because it changes A's promotion gate.
-- Define B4-L2/L3 with ~5-minute history and real-world training.
-- Use public event timing only after sessionization/outlier handling.
-- Build participant/session holdouts.
-- Measure calibration and cost-weighted errors, not accuracy only.
-- Do not use LLM-event labels as DemandState.
-- Require real phone trace for CPU/NPU/energy and in-flight cancelability.
+EXP-A-001 should use:
+- user-personalized/time-based B4;
+- matched-observability pairs;
+- calibration and cost-weighted error;
+- real phone system outcome before SYSTEM_VALUE promotion.
 
 ## Decision footer
-- **Evidence maturity:** STRUCTURAL_SIGNAL / real-workload evidence for B4; not mobile SYSTEM_VALUE
-- **Decision impact:** HARDEN B4; KEEP A but raise proof bar
-- **Open questions:** smartphone transfer; cost weighting; DemandState residual after B4-L3
-- **Primary source:** https://arxiv.org/abs/2602.04482
-- **Dataset:** https://huggingface.co/datasets/qv9n2xk7m1z8pt4/ProAgentBench
+- Evidence maturity: STRUCTURAL_SIGNAL
+- Decision impact: HARDEN B4-TX; A residual becomes conditional-information test
+- Open questions: cross-user transfer; phone mapping; optimal-intervention vs observed-help trigger
+- Primary source: https://arxiv.org/abs/2602.04482
+- Dataset: https://huggingface.co/datasets/qv9n2xk7m1z8pt4/ProAgentBench

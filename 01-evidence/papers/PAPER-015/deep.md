@@ -1,96 +1,129 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+# PAPER-015 — PARE — EDP v1 FULL_10Q
 
-# PAPER-015 — Proactive Agent Research Environment (PARE)
+Re-reviewed: 2026-10-07
 
-## Source
-- Paper: https://arxiv.org/abs/2604.00842
-- Authors: Deepak Nathani, Cheng Zhang, Chang Huan, Jiaming Shan, Yinfei Yang, Alkesh Patel, Zhe Gan, William Yang Wang, Michael Saxon, Xin Eric Wang
-- Venue/status: arXiv preprint, 2026
-- Artifact: https://github.com/deepakn97/pare
-- Project relevance: W5 / M4 / C1 semantic ground truth
-- Priority: P0
+## Q1 — Problem + target mapping
+A proactive assistant must infer latent user goals, decide when to intervene, obtain approval and execute across apps.
 
-## Q1 — What problem is the paper solving, and how does it map to smartphones?
-Proactive assistants must decide when to observe, intervene and execute without explicit user prompts. PARE creates a controlled environment to evaluate such behavior.
+PARE builds a stateful simulated mobile-phone environment so this interaction can be evaluated in closed loop.
 
-It is a simulated stateful mobile-phone environment, not real phone CPU execution.
+A mapping:
+Demand/authorization state exists before execution and is not equivalent to ordinary task readiness.
 
-## Q2 — Is the problem/new mechanism actually new?
-Proactive user assistance and intervention timing are **Agentic-native** compared with ordinary request-response inference.
+## Q2 — Novelty / new-regime relevance
+PARE uses:
+- finite-state-machine apps;
+- active user simulation;
+- asymmetric user/assistant interfaces;
+- Observe-Execute proactive architecture.
 
-## Q3 — What falsifiable hypothesis is being tested?
-The benchmark enables testing whether Agents can correctly infer when action is warranted and whether proposed interventions are useful/safe.
+This is Agent-native proactive interaction semantics.
 
-For our project, a derived hypothesis is:
-Agent runtime can expose useful proactive/speculative/discardable labels unavailable to CPU traces alone.
+## Q3 — Falsifiable hypothesis
+A proactive assistant should improve user-goal completion while keeping proposal acceptance high; excessive proposal rate or premature proposals should hurt interaction quality.
 
-## Q4 — What is the research lineage / competing route?
-Related to proactive assistants, contextual agents, user simulation and event-driven agents.
+## Q4 — Research lineage / competing route
+UC Santa Barbara / Apple / University of Washington lineage; independent from P043/P044.
 
-## Q5 — What is the key technical mechanism / control point?
-Observe → decide/confirm → execute semantics with explicit proactive labels in a stateful environment.
+Competing routes:
+- static proactive benchmarks;
+- long-history demand classifiers;
+- direct mobile GUI agents.
 
-## Q6 — How is the experiment designed?
-143 benchmark scenarios in a simulated mobile-phone environment with stateful interactions and proactive actions.
+## Q5 — Mechanism / control point
+Assistant modes:
+1. Observe
+2. Awaiting confirmation
+3. Execute
 
-The main experiment uses:
-- GPT-5-mini as user simulator;
-- maximum 10 turns;
-- 1 user iteration / turn;
-- up to 5 Observe iterations and 10 Execute iterations;
-- same model for Observe and Execute.
+Observe:
+- read-only tools;
+- wait;
+- propose/send message.
 
-The paper reports Proposal Rate, Acceptance Rate and read-only actions, and Appendix analysis further splits proposal outcomes into:
-- direct accept;
-- reject;
-- gather more context;
-- truncated.
+If accepted:
+- transition to Execute with full flat API over scenario apps.
 
-For frontier models, direct proposal outcome examples are:
-- Claude 4.5 Sonnet: 72.1% accept / 7.8% reject / 17.8% gather / 2.3% truncated;
-- GPT-5: 64.1% accept / 7.4% reject / 23.4% gather / 5.1% truncated.
+If rejected:
+- return to Observe; executor is not invoked.
 
-These are model-behavior statistics under PARE, not workload invariants.
+Thus state-changing execution is structurally behind explicit user authorization.
 
-## Q7 — What data/artifact/reproducibility support exists?
-Strong for offline analysis: official public repository and benchmark environment.
+## Q6 — Experiment design + results
+Pare-Bench:
+- 143 scenarios;
+- communication/productivity/scheduling/lifestyle apps;
+- 7 evaluated LLMs;
+- 4 runs per scenario in the main setup;
+- GPT-5-mini user simulator in the reported trajectory analysis.
 
-## Q8 — Do the results actually support the hypothesis?
-PARE strongly supports the **semantic existence** of:
-- Observe / read-only state;
-- AwaitingConfirmation / not-yet-authorized state;
-- Execute / state-changing authorized state.
+Examples:
+Claude 4.5 Sonnet:
+- Success Rate 42.0% ±1.0
+- Proposal Rate 12.8% ±0.4
+- Acceptance Rate 78.2% ±0.8
+- ~20.2 read actions
 
-A Stage12E derived replay using paper-reported proposal/outcome rates finds that frontier-model proposals which are not immediately accepted occupy only about **3.6–10.1% of total turns**.
+GPT-5:
+- Success Rate 37.4% ±1.5
+- Proposal Rate 28.1% ±0.3
+- Acceptance Rate 70.2% ±1.0
+- ~20.6 read actions
 
-**[INFERENCE]** This is enough to validate the semantic distinction, but not enough by itself to prove large cross-layer system value.
+Proposal-outcome analysis:
+Claude:
+- direct accept 72.1%
+- reject 7.8%
+- gather context 17.8%
+- truncated 2.3%
 
-Boundary: PARE does not speculatively execute the effectful branch before approval and cannot establish mobile CPU timing, energy, jank or uArch effects.
+GPT-5:
+- direct accept 64.1%
+- reject 7.4%
+- gather context 23.4%
+- truncated 5.1%
 
-## Q9 — What is the real contribution / technology control point for us?
-PARE is a strong source for **semantic ground truth**:
-- proactive vs reactive;
-- read-only vs state-changing effects;
-- not-yet-authorized vs demanded execution;
-- explicit confirmation/commit boundary;
-- premature intervention / gather-context state.
+Gather-context outcomes often remain unresolved because of the 10-turn cap.
 
-This materially strengthens **DemandState + Effect/Commit Safety** as ASEC semantic candidates.
+## Q7 — Artifact / reproducibility
+Public PARE repository exists.
+Apps and proposal/acceptance mechanics are explicit and reproducible.
 
-However it also narrows the system claim:
-the semantic boundary is already enforced inside the Agent runtime in PARE. A phone-wide ASEC only adds value if lower layers have useful release/cancel/defer/progress actuators that cannot act safely without this information.
+External validity limits:
+- simulated user;
+- FSM apps;
+- assistant gets privileged flat APIs;
+- no real phone scheduler, energy, thermal or jank data.
 
-## Q10 — What should we do next?
-- Keep as Stage12 W5 / C1 P0.
-- Use its mode/proposal outcomes as semantic ground truth, not timing ground truth.
-- Include proposal-rate × outcome-rate bands in device-free replay.
-- Test whether affected work is expensive/frequent enough to clear C1 break-even.
-- Never promote simulated timing to SYSTEM_VALUE.
+## Q8 — Evidence vs alternatives
+Strongly demonstrates:
+- proactive demand is not simply “work exists”;
+- proposal timing and acceptance form real semantic states;
+- users may need more context before accepting a proposal.
+
+Does not demonstrate:
+- effectful branch speculation before approval;
+- frequency/cost of cancellable phone compute;
+- incremental value of exporting DemandState below the Agent runtime.
+
+## Q9 — Decision contribution
+Supports CLM-AGENT-001 as **semantic ground truth**, not system-value proof.
+
+It also strengthens B4:
+Observe/read-only and authorization gating are already explicit runtime states.
+
+Therefore A's residual must be incremental value from richer RequiredProgress/DemandState, not the existence of confirmation state itself.
+
+## Q10 — Next action
+KEEP P0.
+
+Use PARE as a source of semantic labels and premature-intervention cases.
+Do not use proposal fractions as phone compute prevalence.
+EXP-A-001 should test whether internal DemandState adds information beyond observed history + proposal/confirmation/runtime state.
 
 ## Decision footer
 - Evidence maturity: STRUCTURAL_SIGNAL
-- Decision impact: KEEP as semantic/workload source
-- Open questions: mapping to real-device timing
-- Primary source: paper above
-- Artifact: official repo above
+- Decision impact: KEEP / NARROW
+- Open questions: target-phone mapping; real-user prevalence; lower-layer actuator value
+- Primary source: https://arxiv.org/abs/2604.00842
+- Artifact: https://github.com/deepakn97/pare

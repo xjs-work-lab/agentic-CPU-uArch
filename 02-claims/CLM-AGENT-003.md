@@ -11,19 +11,24 @@ supersedes = []
 # CLM-AGENT-003
 
 ## Proposition
-A strong transactional Agent runtime can construct and enforce substantial Effect/Commit legality **when the relevant tool/effect path is mediated and observable and required policy/authority metadata are available**.
+A strong transactional Agent runtime can construct and enforce substantial Effect/Commit legality when the relevant tool/effect path is mediated and observable and required policy/authority metadata are available.
 
 ## Current interpretation
-Cordon and TomasuLLM provide concrete runtime mechanisms for transaction/effect isolation, validation and commit safety. They are alternative supporting routes, not jointly required proof.
+Cordon and TomasuLLM provide independent mechanisms:
+- transaction/lineage/shadow-state mediation;
+- COW speculative execution;
+- dependency tracing;
+- observation/effect validation;
+- in-order commit.
 
-Cordon specifically demonstrates task-level lineage, shadow state, staged external effects and authority-aware validation; it does not create universal semantic legality from runtime state alone.
+PAPER-013 further shows a simpler runtime can explicitly classify safe/unsafe tools and hold state-changing effects until commit.
 
 ## Boundary
-Opaque/bypassing tools, unobservable side effects and already-released external effects can fall outside complete containment. This claim must not be used to assume all legality is reconstructible in every Agent or smartphone system.
+TomasuLLM makes the limit concrete: calls whose dependencies/effects cannot be conservatively traced, or whose effects are irreversible, become speculation barriers.
 
-## Migration
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
+Opaque/bypassing tools, already-released external effects and unobservable side effects therefore remain outside universal runtime derivability.
+
+This Claim must not be used to imply all legality is reconstructible in every smartphone system.
 
 ## Evidence-depth audit
-EDP v1 revalidated 2026-10-07; unconditional derivability wording removed, decision unchanged.
+EDP v1 revalidated 2026-10-07.

@@ -3,38 +3,79 @@ id = "EXP-A-001"
 type = "EXPERIMENT"
 record_state = "CURRENT"
 status = "READY"
-title = "A strong-baseline DemandState residual test"
+title = "A matched-observability DemandState residual test"
 direction_ids = ["A"]
 tests_claim_ids = ["CLM-A-001"]
-input_source_ids = ["PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065", "PAPER-066", "PAPER-067", "PAPER-068"]
+input_source_ids = ["PAPER-013", "PAPER-015", "PAPER-041", "PAPER-043", "PAPER-044", "PAPER-050", "PAPER-056", "PAPER-058", "PAPER-060", "PAPER-063", "PAPER-064", "PAPER-065", "PAPER-066", "PAPER-067", "PAPER-068"]
 evidence_target = "SYSTEM_VALUE"
 +++
 
-# EXP-A-001 — A strong-baseline DemandState residual test
+# EXP-A-001 — Matched-observability DemandState residual
 
 ## Decision question
-Does B6-Demand / B6-Full retain >=~5% RequiredProgress/end-outcome value over B4-TX at matched foreground QoE with zero illegal cancellation?
+Does explicit Agent-internal DemandState / RequiredProgress retain >=~5% end-outcome value over B4-TX at matched foreground QoE with zero illegal cancellation?
 
-## Baseline
-B4-TX, including reconstructible upper-layer proxies for:
+## Why the test changed
+Rescue-1B shows that naive comparisons are insufficient:
+- history predicts proactive need;
+- runtime exposes speculative/commit state;
+- transaction systems derive substantial effect legality.
+
+The experiment must therefore test **conditional information value**, not merely show semantic-aware scheduling beats semantic-blind scheduling.
+
+## Baseline B4-TX
+Include, where available:
+- per-user long behavioral history and learned When-to-Assist prediction;
+- ordinary SLO/TUF/utility/deadline/slack;
 - program/control/data-flow and belief state;
-- task-level script lowering;
-- interaction criticality / dependency propagation;
-- effect/commit legality and rollback scope;
-- verification vulnerability / provisional work state;
-- Agent workflow topology, future invocation distance / STE and reuse identity;
-- ordinary quality/latency/cost SLOs and profile-derived resource demand;
-- user/app-history-derived background usefulness;
-- explicit TUF/utility curves and low-value abort.
+- script lowering and local typed execution;
+- interaction criticality and dependency propagation;
+- speculative active/cancelled/verified state;
+- runtime commit/authorization state;
+- Cordon/TomasuLLM-class effect/dependency legality;
+- rollback/discard scope;
+- workflow topology / STE / reuse state;
+- resource profiles and device state.
 
-The test must credit DemandState/RequiredProgress only for value not reproduced by these proxies.
+## Core design — matched observability
+Construct paired or grouped execution points where B4-TX observables are deliberately similar but the Agent-internal continuation value differs.
 
-A passing result must therefore show **semantic information value**, not merely that utility-aware scheduling is better than utility-oblivious scheduling.
+Examples:
+- same tool/model stage, one branch still required and one branch invalidated by a new goal update;
+- same slack/SLO/topology, one result lies on the surviving goal path and one does not;
+- same cache/reuse distance, one state belongs to a required continuation and one to an optional/speculative branch.
 
-## State
-READY / WAITING-FOR-DATA.
+B4-TX sees only permitted observable/runtime proxies.
+B6-Demand additionally receives the canonical internal DemandState/RequiredProgress label.
 
-## Boundary
-No new experiment has been executed during migration.
+## Evaluation
+Primary:
+- RequiredProgress completed before deadline / interaction boundary;
+- end-to-end task success;
+- foreground QoE/jank/latency;
+- energy and thermal budget;
+- illegal cancellation = 0.
 
-The frozen V1 engineering specification is preserved in [deep.md](deep.md).
+Secondary:
+- calibration;
+- cost-weighted false progress;
+- cancelled compute;
+- saved compute;
+- controller overhead;
+- extra metadata/IPC cost.
+
+## Split discipline
+For learned B4:
+- user/session/time-aware split;
+- no row-random leakage across repeated observation histories;
+- allow legal personalization as a strong baseline.
+
+## Falsifier
+DOWNGRADE/KILL differentiated A if B4-TX captures nearly all B6-Demand value and residual improvement is <~5% or disappears under stronger history/runtime features.
+
+## Promotion condition
+Only consider SYSTEM_VALUE after the residual appears on target-relevant phone traces/workloads, not device-free replay alone.
+
+## Hardware boundary
+Even a positive DemandState residual does not imply uArch.
+Next gate would be whether OS/runtime actuators are insufficient and whether the remaining cause is hardware-timed.

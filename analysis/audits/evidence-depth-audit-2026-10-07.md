@@ -3,92 +3,63 @@
 Date: 2026-10-07
 Audit mode: EDP v1 rescue
 
-## Baseline at Rescue start
-The five primary active/platform lanes A / PT-A / C / CG-06 / CG-07 were grounded by **33 unique paper Sources**.
+## Baseline
+At rescue start, A / PT-A / C / CG-06 / CG-07 were grounded by 33 unique paper Sources; 14 lacked current FULL_10Q depth metadata.
 
-At audit start:
-- 19 / 33 carried FULL_10Q-class metadata;
-- 14 / 33 lacked `review_depth`;
-- 13 / 14 were P0.
+Rescue-1A added two new FULL_10Q sources, bringing the current five-lane set to **35**.
 
 ## Rescue progress
+- Rescue-0: PAPER-009 / 041 / 051 / 052 — complete.
+- Rescue-1A PT-A: PAPER-037 / 038 / 039 / 040 / 042 — complete.
+- Rescue-1B A: PAPER-013 / 015 / 043 / 044 / 050 — complete.
 
-### Rescue-0 complete
-PAPER-009 / 041 / 051 / 052 revalidated.
+## Primary-lane paper-depth state
+After Rescue-1B source updates, **all current decision-critical paper Sources for A / PT-A / C / CG-06 / CG-07 carry EDP v1 FULL_10Q-class review metadata.**
 
-### Rescue-1A complete — PT-A
-PAPER-037 / 038 / 039 / 040 / 042 revalidated under EDP v1.
+Expected primary-lane warning count after Graph QA: **0**.
 
-Two new decision-critical FULL_10Q sources were added:
-- PAPER-101 — Action Rebinding / CCS 2026
-- PAPER-102 — VeriGUI / ACL 2026
-
-These additions expand the current five-lane paper set from 33 to **35**, but create no new depth debt because both enter as EDP v1 FULL_10Q.
-
-## Current primary-lane debt
-Only **5 papers** remain:
-- PAPER-013 — A
-- PAPER-015 — A
-- PAPER-043 — A
-- PAPER-044 — A
-- PAPER-050 — A
-
-PT-A now has **zero current paper-depth warnings**.
-
-## Whole current-ROADMAP debt
-Reserve-lane paper debt remains:
+## Reserve-lane paper debt
+Still pending:
 - PAPER-008 — R2
 - PAPER-028 / 029 / 030 / 031 / 032 / 033 / 034 / 035 — B-residual
 - PAPER-047 / 048 — R1
 - PAPER-049 — R2
 
-Expected warning state after Rescue-1A:
-- primary lanes: **5**
-- reserve lanes: **12**
-- whole current ROADMAP: **17**
+Expected current-ROADMAP paper-depth warnings after Rescue-1B: **12**.
 
-R3 remains patent-heavy and must be audited through the patent direct-claim gate separately.
+R3 is patent-heavy and requires the separate patent direct-claim gate.
 
-## Rescue-1A findings that materially change interpretation
+## Rescue-1B corrections
 
-### PAPER-037
-Real Pixel 9 runtime, but **remote model inference**. Do not treat as local-LLM compute/energy evidence.
+### PAPER-013 — Speculative Interaction Agents
+Speculative work and ready≠required semantics are real, but safe/unsafe, cancellation, dependency and commit state are explicitly runtime-managed.
+Naturalistic Human Instructions also show a negative transfer case where speculative streaming becomes slower and less accurate.
 
-### PAPER-038
-CLI/ADB strongly changes task reachability and steps, but benchmark/rooted-emulator/backend access can exceed retail-phone authority.
+### PAPER-015 — PARE
+Observe / Awaiting Confirmation / Execute provide direct proactive demand/authorization semantics.
+Effectful execution starts only after user acceptance; PARE does not prove pre-authorization effect speculation or phone system value.
 
-### PAPER-039
-More action surfaces are not automatically beneficial.
-Untrained GUI+CLI drops OSWorld accuracy from 38.8% to 18.4%; selective SFT/RL is required.
+### PAPER-043 — Proactive Agent
+Metadata corrected to **ICLR 2025**.
+The large 6,790-event Agent training set is generated/synthetic; the 233-event test set is real.
+The 66.47% F1 result coexists with substantial false-alarm pressure.
 
-### PAPER-040
-Mixed-action/trace-verifier harness is valuable, but headline 75.0% pass rate combines capabilities, routing, controller quality and verifier stack. Verification is not isolated causally.
+### PAPER-044 — ProAgentBench
+Real longitudinal history materially strengthens When-to-Assist prediction.
+The protocol isolates each user's history and uses time-based splits, so legal personalization belongs in B4-TX.
+Observed assistance/LLM-use triggers are still proxy ground truth, not intrinsic Agent RequiredProgress.
 
-### PAPER-042
-UIAnchor is strong peer-reviewed mobile system evidence, but current audited primary material does not support attributing its 75.5% latency / 52.4% energy improvements specifically to verification/recovery.
+### PAPER-050 — TomasuLLM
+COW sandboxing + dependency/effect tracing + commit validation derive substantial legality at runtime.
+Irreversible or untraceable effects become speculation barriers, preventing an invalid universal-derivability conclusion.
 
-### PAPER-101
-Adds decisive negative evidence: observation and action recipient can diverge. Recovery/confirmation alone can be insufficient.
+## A decision consequence
+A survives only as the hypothesis that **explicit Agent-internal DemandState / RequiredProgress contains decision-relevant information that is not reconstructible from long history, workflow/program state, SLO/utility, topology, verification/legality and reuse proxies.**
 
-### PAPER-102
-Adds causal evidence that action-effect verification training improves recovery, while raising the software baseline.
-
-## Current risk by lane
-
-| Lane | Current paper-depth risk |
-|---|---|
-| A | HIGH — five early sources remain |
-| PT-A | LOW for paper depth — Rescue-1A complete |
-| C | LOW |
-| CG-06 | MEDIUM for final target-phone residual, but paper-depth debt cleared |
-| CG-07 | LOW for papers; vendor audit pending |
-| B-residual | HIGH |
-| R1 | MEDIUM-HIGH |
-| R2 | MEDIUM-HIGH |
-| R3 | patent audit required |
+No source directly proves that residual.
 
 ## Next
-1. Rescue-1B: PAPER-013 / 015 / 043 / 044 / 050.
-2. Rerun five-lane decision backtrace.
-3. Then Rescue-2 reserves and patent evidence.
-4. Frontier Round 14 only after the five primary lanes are depth-clean.
+1. Validate Rescue-1B with Graph QA.
+2. Rerun/lock the five-lane decision backtrace.
+3. If clean, resume Frontier Round 14.
+4. Continue Rescue-2 reserve lanes and patent audit before final portfolio convergence.
