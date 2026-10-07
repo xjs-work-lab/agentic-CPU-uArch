@@ -40,6 +40,9 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Round 13 squash merge: `4e1515e8f09a8e288a343d220ba3c0ea17cd8e53`
 - Round 13 work-branch cleanup: **PASS** — run `37607556023`
+- Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
+- Evidence Rescue Round 1 squash merge: `192e3fc816fd96d3112b1a0f94da916f8f869e33`
+- Evidence Rescue Round 1 work-branch cleanup: **PASS** — run `37609721034`
 
 ## Portfolio invariant
 - A — only differentiated Primary Bet
