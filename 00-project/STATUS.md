@@ -67,13 +67,18 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 ## Evidence Rescue state
 Frontier Round 14 is **PAUSED** while current portfolio evidence is revalidated under EDP v1.
 
-Active-lane paper audit:
+Five primary-lane paper audit:
 - 33 unique paper Sources directly ground A / PT-A / C / CG-06 / CG-07;
 - 14 lacked review_depth metadata at audit start;
 - 13/14 were P0;
 - Rescue Round 1 re-reads PAPER-009 / 041 / 051 / 052;
 - no lane/score/maturity reversal from Round 1;
-- remaining active-lane paper debt after Round 1: 10.
+- remaining primary-lane paper debt after Round 1: **10**.
+
+Whole current-ROADMAP warning audit:
+- Graph QA follows all scheduled Directions, including B-residual / R1 / R2 / R3;
+- remaining decision-critical paper warnings after Round 1: **22**;
+- therefore **12 additional reserve-lane papers** require later rescue beyond the primary-lane 10.
 
 Method authority:
 - `00-project/evidence-depth-policy.md`
@@ -81,6 +86,8 @@ Method authority:
 - `analysis/audits/decision-backtrace-audit-2026-10-07.md`
 
 ## Operating rule
-Do not resume frontier expansion until current active-lane decision-critical paper debt is cleared and backtrace audit is rerun.
+Do not resume frontier expansion until the 10 primary-lane decision-critical paper warnings are cleared and active-lane backtrace is rerun.
 
-Historical Kill lanes are audited only after current active lanes are clean.
+Before final portfolio convergence, also clear current reserve-lane paper debt and audit decision-critical patent evidence.
+
+Historical Kill lanes are audited after current-roadmap evidence is clean.
