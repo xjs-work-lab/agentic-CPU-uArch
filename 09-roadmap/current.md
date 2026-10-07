@@ -8,7 +8,7 @@ scope = "ACTIVE_V2_2_RESEARCH_AUTHORITY"
 
 # Current Roadmap Projection
 
-Updated: 2026-10-06
+Updated: 2026-10-07
 
 ## Authority
 **V2.2 / xjs-work-lab/agentic-CPU-uArch is the active Research SSOT.**
@@ -57,52 +57,39 @@ Second differentiated Primary Bet: **UNFILLED**.
 System-control/H-FIB search is converged and did not produce a standalone second Bet.
 
 ## Current research frontier
-**H-PAM — Persistent Agent Memory Execution Substrate** is the active structural frontier.
+**No active second-Bet frontier is currently assigned.**
 
-Status:
-**KEEP / NARROW — ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+### H-PAM final decision
+**KILLED AS STANDALONE CANDIDATE / memory retained as workload.**
 
-Round-5 seed evidence now establishes:
-- persistent episodic/semantic/multimodal memory is a real Agent workload (M3-Agent);
-- dynamic semantic retrieval + continuous ingestion/index maintenance creates direct smartphone SoC pressure (MUSE);
-- capacity/index residency has a strong compute-for-storage baseline (LEANN);
-- dynamic insertion/growth has a strong segmented/on-demand ANN baseline (CD-ANN).
+Rounds 5–8 establish that persistent Agent memory is a real and important workload, but no distinct H-PAM-owned control abstraction survives the strongest public baselines:
+- MUSE — smartphone retrieval / insertion / index maintenance;
+- LEANN / CD-ANN — compact and dynamic indexing;
+- MobiMem / AgeMem — memory semantics consumed by Agent/runtime software;
+- SwiftMem — temporal/semantic routing + co-consolidation/layout;
+- SeeMon — semantic demand → adaptive sensing/resource activation prior art;
+- MMEdge — generic sensing/encoding pipeline coupling and modality-aware runtime control;
+- MemArena — search often relatively light; structured ingest may be expensive but maps to recognizable inference/index work.
 
-Round-6 gate result:
-- lifecycle-operation recurrence — **PASS**;
-- mobile Agent execution relevance — **PARTIAL PASS**;
-- distinct lower-level CPU/NPU/memory-system residual — **OPEN**.
+### Merge map
+- memory acquisition/background maintenance → **C workload scenario / experiments**;
+- verified replay/rollback/stale-action recovery → **PT-A**;
+- semantic invalidation/coherence → **B-residual**;
+- task-driving progress state → **A strongest baseline / B4-TX**;
+- locality/cache residual → **R2 / CG-01 only with direct phone PMU evidence**;
+- extractor/embedding heterogeneous execution → **existing heterogeneous inference/control baselines**.
 
-Missing gate:
-> direct evidence that Agent-memory lifecycle semantics change CPU/NPU/data-placement or memory-maintenance decisions beyond MobiMem-style upper-layer software plus MUSE/LEANN/CD-ANN-class baselines.
+### Current strategic gap
+Second differentiated Primary Bet remains **UNFILLED**.
 
-Round-6 results:
-1. MobiMem FULL_10Q — specialized memory semantics affect mobile Agent scheduling/replay/recovery, but upper-layer software captures large value;
-2. AgeMem FULL_10Q — independent ADD/UPDATE/DELETE/RETRIEVE/SUMMARY/FILTER recurrence confirmed;
-3. MobiSys 2026 memory-architecture benchmark — PENDING_FULLTEXT / excluded from decisions.
+This is an evidence result, not a quota problem. Do not promote an existing lane merely to fill the portfolio.
 
-Round-7 strongest-baseline update:
-- SwiftMem removes temporal/semantic query routing, semantic co-consolidation and locality-aware memory layout from H-PAM white space.
+### Next
+Perform the **frontier reset / coverage audit**.
 
-Next priorities:
-1. systems-facing phone traces/profiling for Agent memory update/retrieve/consolidate/replay;
-2. foreground recall vs background maintenance interference;
-3. cross-representation movement among raw media / vector / graph / action state;
-4. suspend/resume rebuild cost;
-5. lifecycle-phase-specific CPU/NPU/data-placement evidence;
-6. kill/merge H-PAM if no lower-level residual appears.
-
-Do not create a Direction before this gate survives.
-
-## Hardware boundary
-No silicon/ISA/uArch commitment is locked.
-
-Required progression:
-`STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
-
-## Next
-Run the next H-PAM systems-residual test:
-- prioritize direct phone/system measurements rather than more generic memory algorithms;
-- obtain the MobiSys Workshop full text if possible;
-- search for memory lifecycle facts that alter CPU/NPU/data placement beyond explicit API identity;
-- if this gate fails, merge/kill H-PAM rather than extending the hypothesis.
+Rules:
+- do not continue Agent-memory algorithm expansion;
+- do not reopen generic system-control ideas already killed by strongest baselines;
+- first identify uncovered structural workload families;
+- then select only the strongest seed(s) for FULL_10Q;
+- a valid result is that no second differentiated Bet is currently supported.
