@@ -5,7 +5,7 @@ lifecycle = "OPEN"
 as_of = "2026-10-06"
 coverage_quality = "AUTHORITY_SEED_FULL_10Q"
 scope = "2024-2026 frontier re-open for second differentiated Bet search across smartphone Agent workloads, runtime/OS control, heterogeneous execution, compiler and CPU/uArch"
-limitations = "Rounds 1-5 have completed decision-level 10Q review for their selected Sources. Generic system-control/utility-scheduling search is converged; persistent Agent memory is open only as H-PAM analysis hypothesis pending direct mobile-Agent operation-mix evidence."
+limitations = "Rounds 1-6 have completed decision-level 10Q review for their selected Sources. H-PAM passes lifecycle-operation recurrence but remains unpromoted because lower-level mobile CPU/NPU/memory-system residual evidence is still missing."
 +++
 
 # DR-FRONTIER-20261006
@@ -275,3 +275,40 @@ Before H-PAM can become a Direction:
 4. pressure-test against MUSE/LEANN/CD-ANN and ordinary HNSW/IVF/PQ;
 5. audit overlap with B-residual, C, R2, CG-01 and CG-07;
 6. require a distinct target-phone SYSTEM_VALUE path before any hardware discussion.
+
+## Round 6 — H-PAM recurrence and mobile-execution test
+
+Full 10Q completed:
+- PAPER-073 — MobiMem — arXiv 2025 preprint / P0
+- PAPER-074 — AgeMem — ACL 2026 Long Paper / P0
+
+Decision-grade result:
+- MobiMem directly shows Profile/Experience/Action memory states affecting mobile Agent retrieval, template instantiation, fine-grained scheduling, action replay/stale validation and exception recovery.
+- AgeMem independently exposes ADD / UPDATE / DELETE / RETRIEVE / SUMMARY / FILTER as learned Agent policy actions.
+- therefore **Agent-memory lifecycle operation recurrence = PASS**.
+
+Negative/strong-baseline result:
+- MobiMem already captures major value through software templates, AgentRR, DAG scheduling and exception handling.
+- AgeMem exposes operation identity explicitly at the tool/API boundary.
+
+Therefore:
+> H-PAM remains **KEEP / NARROW — ANALYSIS HYPOTHESIS / NOT A DIRECTION**.
+
+Still missing:
+- evidence that lifecycle semantics change CPU/NPU/data-placement or memory-maintenance decisions beyond upper-layer software;
+- direct phone memory-bandwidth / energy / thermal profiling tied to Agent-memory operation classes;
+- proof that ordinary API operation identity is insufficient.
+
+MobiSys Workshop 2026 mobile-Agent memory benchmark:
+- peer-reviewed publication metadata confirmed;
+- full text not yet available through a stable accessible path in this review;
+- remains **PENDING_FULLTEXT / NOT DECISION-GRADE**.
+
+Canonical synthesis:
+- analysis/frontier-2026/round6-h-pam-recurrence-2026-10-07.md
+- analysis/frontier-2026/h-pam-hypothesis.md
+
+Portfolio:
+- no lane/score changes;
+- no second Primary Bet;
+- no uArch promotion.
