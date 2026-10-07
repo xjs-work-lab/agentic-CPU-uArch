@@ -2787,7 +2787,7 @@
       "record_state": "CURRENT",
       "trend_maturity": "FRONTIER_SIGNAL",
       "product_posture": "WATCH",
-      "coverage_state": "FRONTIER_AUDIT",
+      "coverage_state": "SEED_TRIAGE_COMPLETE",
       "direction_links": []
     },
     {
