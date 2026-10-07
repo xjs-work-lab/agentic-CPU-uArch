@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — MobiMem + LOCAL FULL_10Q complete; EcoAgent next.**
+**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -182,12 +182,26 @@ H-CAL's software baseline is strengthened but its standalone KILL_DIFFERENTIATED
 
 No Trend maturity, portfolio lane, score or uArch promotion.
 
-## Next
-FULL_10Q:
-1. EcoAgent
+## EcoAgent FULL_10Q + T7 final decision
+PAPER-105 / EcoAgent is AAAI 2026 and independently strengthens T3/PT-A's closed-loop verified-actuation product pattern.
 
-Then issue an ownership/residual decision:
-NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL_DIFFERENTIATED_BET.
+Critical boundary:
+the device-side ShowUI/OS-Atlas/Qwen2-VL models execute on an RTX 3090 24 GB local server to simulate mobile inference; AndroidWorld uses a Pixel 6 / Android 13 emulator.
+
+Round 14-A T7 final:
+- **Product Trend:** FRONTIER_SIGNAL / WATCH retained;
+- **Differentiation:** KILL_DIFFERENTIATED_BET for a standalone T7 Bet/Direction;
+- **Ownership:** merge into C + T5/B-residual + PT-A;
+- **new Direction:** none;
+- **second differentiated Primary Bet:** still UNFILLED;
+- **uArch candidate:** none.
+
+This does not kill the product trend.
+
+## Next
+Round 14-B: **T6 Local programmable Agent execution & sandboxed skills**.
+
+T6 gets priority over T8 because it has a more direct chance of exposing CPU-visible interpreter/JIT/code-cache/sandbox/executable-lifetime behavior.
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 
