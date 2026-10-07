@@ -59,7 +59,7 @@ Proactive workload relevance is established, while PRPF-class gating raises the 
 No dedicated-domain promotion without post-gating phone power/thermal/QoE residual.
 
 ## Primary-lane audit result
-After Rescue-1B source review, all five primary active/platform lanes are **paper-depth clean under EDP v1**, subject to Graph-QA validation.
+Graph QA confirms all five primary active/platform lanes are **paper-depth clean under EDP v1**.
 
 Portfolio outcome:
 - no lane change;
@@ -73,5 +73,10 @@ Portfolio outcome:
 The full current ROADMAP is not yet depth-clean:
 12 reserve-lane paper warnings remain in B-residual / R1 / R2, and patent-heavy current claims require direct claim review.
 
+## Validation
+Rescue-1B Graph QA `37617038459` / job `112777774022`: **PASS**.
+Primary-lane EDP paper warnings: **0**.
+Whole-roadmap paper warnings: **12**, all in reserve lanes.
+
 ## Next
-If Graph QA confirms the expected warning state, Frontier Round 14 may resume while reserve/patent rescue continues before final convergence.
+**Frontier Round 14 may resume.** Reserve/patent rescue continues as a gate before final portfolio convergence.
