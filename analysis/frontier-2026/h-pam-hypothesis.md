@@ -1,6 +1,6 @@
 # H-PAM — Persistent Agent Memory Execution Substrate
 
-Status: **KEEP / NARROW — ANALYSIS HYPOTHESIS / NOT A DIRECTION**
+Status: **KILL AS STANDALONE CANDIDATE / MERGE WORKLOAD EVIDENCE — NOT A DIRECTION**
 Opened: 2026-10-06
 
 ## Working hypothesis
@@ -263,3 +263,59 @@ No promotion unless direct systems evidence shows at least one of these interact
 
 ### Stop rule
 If the next systems-facing search cannot establish such a runtime coupling, H-PAM should be merged/killed rather than extended with more memory-algorithm papers.
+## Round-8 final decision — standalone H-PAM closed
+
+Decision:
+**KILL H-PAM as an independent second-Bet / Direction candidate.**
+
+This does **not** kill persistent Agent memory as an important workload.
+
+### Why the standalone mechanism is closed
+Across Rounds 5–8, every broad control point was captured or strongly pressured:
+
+1. **Vector retrieval / insertion / index maintenance**
+   - MUSE: direct smartphone heterogeneous retrieval + continuous ingestion/index maintenance.
+   - LEANN / CD-ANN: strong storage/dynamic-index software baselines.
+
+2. **Agent memory operation semantics**
+   - MobiMem: Profile/Experience/Action memory drives replay/scheduling/recovery in upper-layer software.
+   - AgeMem: ADD/UPDATE/DELETE/RETRIEVE/SUMMARY/FILTER are explicit Agent policy/API actions.
+
+3. **Temporal/semantic index and layout**
+   - SwiftMem: temporal routing, semantic DAG-tag routing, co-consolidation and locality-aware layout are software-capturable.
+
+4. **Acquisition / modality selection**
+   - MobiSys 2026 demo: real phone acquisition has modality-specific cost/coverage trade-offs.
+   - SeeMon: semantic requirements → dynamic essential-sensor selection/resource control is established mobile-systems prior art.
+
+5. **Cross-stage multimodal coupling**
+   - MMEdge: sensing/encoding pipelining, adaptive modality configuration and cross-modal skipping are established on-device systems mechanisms.
+
+6. **Query vs ingest cost**
+   - MemArena: query-time search is usually modest relative to reader inference on the evaluated edge platform; structured ingest can be energy-heavy.
+   - that expensive ingest is still recognizable inference/index-maintenance work already addressed by MUSE/generic resource-control routes.
+
+### What remains valuable and where it goes
+- memory acquisition / background maintenance as a **workload scenario** → C / foreground-protection experiments;
+- expensive embedding/extractor inference and heterogeneous execution → existing heterogeneous inference/control baselines, including CG-06 where technically applicable;
+- verified replay, rollback, action staleness and recovery → PT-A;
+- semantic replacement / invalidation / derived-state correctness → B-residual;
+- execution progress/task-driving state → A strongest baseline / B4-TX;
+- cache/locality residual → R2 / CG-01 only if direct target-phone PMU evidence appears.
+
+### Exact thing killed
+Killed:
+> a standalone **Persistent Agent Memory Execution Substrate** whose differentiation comes from memory operation identity, modality identity, temporal/semantic indexing, acquisition selection, generic consolidation, cross-modal pipeline coupling, or generic foreground/background scheduling.
+
+Not killed:
+> the possibility that future direct phone evidence reveals a **non-reconstructible Agent-specific memory fact** with >=~5% end-outcome value after all current baselines.
+
+### Reopen condition
+Reopen only if new direct evidence shows all of:
+1. a recurring persistent-Agent memory fact not reconstructible from ordinary API operation type, modality, dependency, timing, confidence, resource state or application context;
+2. target-phone SYSTEM_VALUE;
+3. residual beyond MUSE / LEANN / CD-ANN / MobiMem / AgeMem / SwiftMem / SeeMon / MMEdge-class baselines;
+4. a distinct team-controlled runtime/compiler/CPU mechanism;
+5. a credible path to >=~5% user/end-outcome value at matched foreground QoE.
+
+Until then, memory remains a workload/evidence dimension, not a portfolio lane.
