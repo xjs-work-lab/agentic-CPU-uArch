@@ -13,11 +13,11 @@ Does dynamic Agent execution structure on commercial mobile SoCs create a new di
 - CLM-C-009
 - CLM-CPU-005
 - CLM-PTA-005
-- CLM-AGENT-009
-- EC-C-009-A
+- CLM-AGENT-012
+- EC-C-012-A
 - EC-CPU-005-A
 - EC-CPU-005-B
-- EC-PTA-005-A
+- EC-PTA-006-A
 - EC-AGENT-009-A
 - DEC-FRONTIER-013
 

@@ -6,7 +6,7 @@ subject_id = "ROADMAP-CURRENT"
 event_type = "UPGRADE_C_SYSTEM_VALUE_RAISE_BASELINES_NO_NEW_DIRECTION"
 effective_date = "2026-10-07"
 transaction_id = "TXN-20261007-FRONTIER-ROUND13-01"
-trigger_claims = ["CLM-C-009", "CLM-CPU-005", "CLM-PTA-005", "CLM-AGENT-009"]
+trigger_claims = ["CLM-C-009", "CLM-CPU-005", "CLM-PTA-005", "CLM-AGENT-012"]
 trigger_experiments = []
 +++
 

@@ -9,7 +9,7 @@ score_context = 82.5
 evidence_maturity = "SIMULATION_SUPPORT"
 maturity_scope = "device-free semantic/workload simulation; real target-system value not yet established"
 strongest_baseline = "B4-TX"
-related_claims = ["CLM-AGENT-001", "CLM-AGENT-002", "CLM-AGENT-003", "CLM-AGENT-004", "CLM-AGENT-005", "CLM-AGENT-006", "CLM-AGENT-007", "CLM-AGENT-008", "CLM-AGENT-009", "CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-MOBILE-003", "CLM-C-008", "CLM-A-001"]
+related_claims = ["CLM-AGENT-001", "CLM-AGENT-002", "CLM-AGENT-003", "CLM-AGENT-004", "CLM-AGENT-005", "CLM-AGENT-006", "CLM-AGENT-007", "CLM-AGENT-008", "CLM-AGENT-012", "CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-MOBILE-003", "CLM-C-008", "CLM-A-001"]
 related_capabilities = []
 +++
 
@@ -52,7 +52,7 @@ PAPER-065 / CLM-AGENT-007 shows that future state reuse can be reconstructed fro
 PAPER-066 / CLM-AGENT-008 shows that workflow structure + quality/latency/cost SLOs + resource profiles already enable strong Agent-aware cross-layer orchestration in cloud systems.
 PAPER-067 / CLM-MOBILE-003 shows personalized background-work usefulness can be inferred from app/user history and used for mobile suppression.
 PAPER-068 / CLM-C-008 shows explicit time/utility functions and low-value abort are foundational mobile-embedded scheduling prior art.
-PAPER-100 / CLM-AGENT-009 further shows that multiple fresh-observation-grounded GUI actions can execute under one higher-level VLM delegation, so step-wise expensive-model reasoning is not a credible strongest baseline.
+PAPER-100 / CLM-AGENT-012 further shows that multiple fresh-observation-grounded GUI actions can execute under one higher-level VLM delegation, so step-wise expensive-model reasoning is not a credible strongest baseline.
 
 A receives differentiated credit only for information/value that survives beyond this stronger B4-TX.
 
