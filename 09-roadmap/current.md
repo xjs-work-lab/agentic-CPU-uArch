@@ -90,10 +90,10 @@ Current product-trend families:
 - **T5** Agent state lifecycle, reuse & locality — B-residual / CG-01 / R2
 - **T6** Local programmable Agent execution & sandboxed skills — EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE; standalone differentiation closed; owned by C + B-residual/T5 + PT-A
 - **T7** Local multi-Agent concurrency & shared model/state — frontier audit
-- **T8** Cross-device Agent fabric & continuation — frontier audit
+- **T8** Cross-device Agent fabric & continuation — EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE; standalone differentiation closed; owned by C + B-residual/T5 + PT-A
 
 T1–T6 can remain important product programs even when broad novelty is crowded.
-T6 is an emerging Product Trend whose standalone differentiated candidate is closed; T7 remains WATCH/owned by existing lanes and T8 is the next frontier audit.
+T6 and T8 are emerging Product Trends with standalone differentiation closed; T7 remains FRONTIER_SIGNAL / WATCH and owned by existing lanes.
 
 Detailed view: `09-roadmap/product-evolution-map.md`.
 
@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 Round 14-B complete; T8 Round 14-C next.**
+**ROUND 14 COMPLETE — T7/T6/T8 frontier coverage is decision-complete.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -321,3 +321,30 @@ Only reopen standalone T6 differentiation with representative physical-phone evi
 
 ## Next
 **Round 14-C — T8 Cross-device Agent fabric & continuation.**
+
+
+## T8 Round 14-C final
+Evidence set:
+- PAPER-109 DevicesWorld — direct mobile/desktop/IoT cross-device workload signal;
+- PAPER-110 UFO³ — distributed DAG/protocol/recovery strongest orchestration baseline;
+- PAPER-111 — explicit Agent memory/config export-transfer-import-resume;
+- PAPER-112 EdgeFlow — peer-reviewed generic KV-state migration baseline;
+- VENDOR-021 Windows Resume — Android→Windows AppContext continuity platform baseline.
+
+Decision:
+- **EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE**
+- **KILL_DIFFERENTIATED_BET** for standalone T8
+- ownership = **C + B-residual/T5 + PT-A**
+- no T8-specific Direction
+- no second Primary Bet
+- no uArch candidate
+
+Reopen only with representative physical-phone evidence for in-flight Agent execution-state migration that remains material after normal task/RPC/checkpoint/KV/context transfer and existing C/T5/PT-A controls.
+
+## Round 14 closeout
+T6/T7/T8 frontier coverage is complete. No new differentiated Primary Bet survived.
+
+## Next
+**Reserve-lane evidence rescue: B-residual / R1 / R2.**
+
+The known current-roadmap debt is 12 decision-critical papers that still need FULL_10Q, followed by the separate R3/patent direct-claim audit before final portfolio convergence.

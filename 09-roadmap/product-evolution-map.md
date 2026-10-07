@@ -15,7 +15,7 @@ Purpose: separate likely product evolution from originality/whitespace.
 
 ## Executive view
 
-The current evidence supports **six product-relevant trend families**, while **two frontier families remain under Round 14 coverage audit**.
+The current evidence supports **seven product-relevant trend families**. T7 remains a frontier product signal under WATCH; Round 14 frontier differentiation coverage is complete.
 
 A trend can remain important even when its broad novelty is crowded.
 
@@ -28,7 +28,7 @@ A trend can remain important even when its broad novelty is crowded.
 | T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | B-residual/CG-01/R2=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | B-residual, CG-01, R2, R3 |
 | T6 Local programmable Agent execution & sandboxed skills | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | C/B-residual/PT-A=RESIDUAL_RESEARCH; standalone T6-specific Bet closed | C, B-residual, PT-A |
 | T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | C/B-residual/PT-A=RESIDUAL_RESEARCH | C, B-residual, PT-A |
-| T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
+| T8 Cross-device Agent fabric & continuation | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | C/B-residual/PT-A=RESIDUAL_RESEARCH; standalone T8-specific Bet closed | C, B-residual, PT-A |
 
 ---
 
@@ -265,11 +265,28 @@ Does phone↔PC↔watch↔edge continuation require persistent execution-state h
 Cross-device agents are emerging, but the risk of rebranding ordinary distributed orchestration is high.
 
 ### Current evidence state
-Cross-device orchestration/replanning seeds exist.
-CPU/uArch relevance is unproven.
+Round 14-C includes:
+- DevicesWorld — executable mobile/desktop/IoT cross-device Agent benchmark;
+- UFO³ — engineered distributed Agent DAG/protocol/recovery fabric;
+- explicit Agent memory/config migration across edge servers;
+- EdgeFlow + Windows Resume — strong generic state-transfer and product-continuity baselines.
 
-### Round 14 action
-**AUDIT AFTER T7/T6**
+The evidence confirms cross-device Agent continuation as a product trend but does not isolate a phone-specific CPU/uArch control point.
+
+### Product posture
+**BENCHMARK_AND_PREPARE**
+
+T8 is promoted to **EMERGING_PRODUCT_TREND**.
+
+### Differentiation action
+**KILL_DIFFERENTIATED_BET for a standalone T8-specific Direction.**
+
+Ownership:
+- C — distributed placement/scheduling/retry/migration;
+- B-residual/T5 — memory/context/KV/checkpoint state lifecycle;
+- PT-A — authority/target/postcondition/recovery.
+
+Reopen only if real phone experiments reveal in-flight Agent execution-state migration costs that remain after strongest generic state-transfer/platform baselines.
 
 ---
 
@@ -279,9 +296,10 @@ Current portfolio should not be read as:
 “only A is worth doing.”
 
 It should be read as:
-- **T1–T6 are meaningful product-evolution trends** with different maturity/originality levels.
+- **T1–T6 and T8 are meaningful product-evolution trends** with different maturity/originality levels.
 - **A is currently the only differentiated Primary Bet.**
 - C / PT-A / CG-06 / CG-07 / CG-01 can remain important product programs without being original Primary Bets.
-- T6 is an emerging Product Trend with standalone differentiation closed and residual ownership routed to C/B-residual/PT-A; T7 is WATCH/owned by existing lanes; T8 remains the next frontier candidate.
+- T6 and T8 are emerging Product Trends with standalone differentiation closed; T7 remains FRONTIER_SIGNAL / WATCH with existing-owner coverage.
+- Round 14 frontier differentiation coverage is complete.
 
 The final leadership roadmap should show both product importance and differentiation separately.

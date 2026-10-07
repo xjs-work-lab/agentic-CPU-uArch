@@ -15,7 +15,7 @@ Decision question: which 2027–2029 Agentic smartphone workload trends are alre
 | T5 State lifecycle/reuse/locality | B-residual + CG-01 + R2 + H-CAL lineage | MEDIUM-HIGH | fragmented residuals | PARTIALLY OWNED |
 | T6 Local programmable execution/sandbox | SkillDroid + Android AppFunctions + SandScope + SpecBox | HIGH product signal | standalone residual closed | **EMERGING_PRODUCT_TREND / KILL_DIFFERENTIATED_BET** |
 | T7 Local multi-Agent concurrency/shared state | C + T5/B-residual + PT-A | HIGH product signal | standalone residual closed | WATCH / KILL_DIFFERENTIATED_BET |
-| T8 Cross-device Agent fabric/continuation | partial PT-A/C overlap | UNKNOWN-MEDIUM | high generic-distributed-systems risk | AUDIT LATER |
+| T8 Cross-device Agent fabric/continuation | DevicesWorld + UFO³ + Agent migration + EdgeFlow/Windows Resume | HIGH product signal | standalone phone residual closed | **EMERGING_PRODUCT_TREND / KILL_DIFFERENTIATED_BET** |
 
 ## Round 14-A closeout and T6 handoff
 T7 pressure testing is complete:
@@ -76,18 +76,21 @@ Before promotion, require representative phone evidence showing:
 
 Otherwise keep T6 as WATCH or merge it into existing platform ownership rather than creating a new CPU/uArch Direction.
 
-## T8 pressure question
-Does cross-device continuation preserve Agent execution state in a way that changes phone-local resource control?
+## T8 pressure question — final result
+Round 14-C finds:
+- DevicesWorld confirms real cross-device Agent task/state/postcondition difficulty;
+- UFO³ establishes a strong distributed-DAG/protocol/recovery baseline;
+- Agent migration work transfers portable memory/config state across edge servers;
+- EdgeFlow demonstrates optimized generic KV-state migration;
+- Windows Resume productizes Android→Windows AppContext continuity.
 
-Early seeds show:
-- dynamic distributed task DAGs;
-- cross-device task assignment/replanning;
-- persistent sessions;
-- device-local vs global recovery scopes.
+Product trend: **EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE.**
 
-Before promotion, require evidence that the phone carries a continuation state whose migration/recovery cost is materially different from ordinary RPC/task offload.
+Standalone differentiation: **KILL_DIFFERENTIATED_BET.**
 
-Otherwise merge into distributed Agent platform architecture, not CPU roadmap.
+Ownership: C + B-residual/T5 + PT-A.
+
+Reopen only with physical-phone evidence for in-flight Agent execution-state migration beyond those baselines.
 
 ## Round 14 stage gate
 Do **not** add a new Direction merely because a frontier has papers.
@@ -137,3 +140,9 @@ T6 standalone differentiation is closed on current evidence.
 - no uArch candidate
 
 Next smallest step: **Round 14-C — T8 Cross-device Agent fabric & continuation**.
+
+
+## Round 14 final
+T6/T7/T8 frontier coverage is decision-complete.
+No second differentiated Primary Bet survived.
+Next: reserve-lane FULL_10Q rescue for B-residual/R1/R2, then patent direct-claim audit and final portfolio convergence.

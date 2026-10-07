@@ -17,7 +17,7 @@ cutover_state: COMPLETE
 research_content_migrated: true
 evidence_rescue: ACTIVE
 evidence_depth_protocol: EDP_V1
-frontier_round14: ACTIVE_T8
+frontier_round14: COMPLETE
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -28,9 +28,9 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 433 canonical nodes
-- 748 canonical semantic edges
-- 748 generated reverse edges
+- 447 canonical nodes
+- 769 canonical semantic edges
+- 769 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -128,8 +128,8 @@ Current trend map:
 - T7 Local multi-Agent concurrency & shared model/state
 - T8 Cross-device Agent fabric & continuation
 
-T1–T6 are now product-relevant/owned to different degrees.
-T7–T8 remain frontier signals.
+T1–T6 and T8 are now product-relevant/owned to different degrees.
+T7 remains FRONTIER_SIGNAL / WATCH, with standalone differentiation closed.
 
 ## Operating rule
 **Frontier Round 14 is ACTIVE.**
@@ -174,7 +174,21 @@ Why:
 - SpecBox shows sandbox lifecycle can dominate latency/resource use, but its server-side value is recovered with software-visible prewarm/prefetch/cache/shared-memory orchestration.
 - no reviewed target-phone source establishes a material dynamic-executable residual after AppFunctions + C + T5 + PT-A.
 
-Next frontier: **T8 Cross-device Agent fabric & continuation**.
+Round 14-C T8: **COMPLETE**.
+
+T8 final:
+- product trend = **EMERGING_PRODUCT_TREND / BENCHMARK_AND_PREPARE**;
+- standalone differentiated candidate = **KILL_DIFFERENTIATED_BET**;
+- no T8-specific Direction;
+- ownership = **C + B-residual/T5 + PT-A**;
+- second differentiated Primary Bet = **UNFILLED**;
+- uArch candidate = **none**.
+
+**Frontier Round 14 is COMPLETE.**
+
+No second differentiated Primary Bet emerged from T6/T7/T8. This is an evidence result, not a quota problem.
+
+Next program: **reserve-lane evidence rescue for B-residual / R1 / R2**, followed by the separate patent direct-claim audit before final portfolio convergence.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
