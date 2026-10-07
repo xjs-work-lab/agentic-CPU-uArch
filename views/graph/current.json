@@ -5685,6 +5685,30 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-009-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-010-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-SEC-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-SEC-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "DR-HUAWEI-CG06-BASELINE",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-HUAWEI-001-A",
@@ -6515,6 +6539,12 @@
     {
       "source": "EC-MEM-009-A",
       "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-009-A",
+      "relation": "HAS_PREMISE",
       "target": "PAPER-078",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -6522,6 +6552,12 @@
       "source": "EC-MEM-009-A",
       "relation": "SUPPORT",
       "target": "CLM-MOBILE-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-010-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -7085,6 +7121,12 @@
     {
       "source": "EC-SEC-002-A",
       "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-SEC-002-A",
+      "relation": "HAS_PREMISE",
       "target": "PAPER-084",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -7116,6 +7158,12 @@
       "source": "EC-SEC-002-C",
       "relation": "SUPPORT",
       "target": "CLM-SEC-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-SEC-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9137,7 +9185,7 @@
   ],
   "counts": {
     "nodes": 360,
-    "canonical_semantic_edges": 564,
-    "generated_reverse_edges": 564
+    "canonical_semantic_edges": 568,
+    "generated_reverse_edges": 568
   }
 }
