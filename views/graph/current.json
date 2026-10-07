@@ -980,12 +980,14 @@
     {
       "id": "DEC-H-CAL-002",
       "type": "DECISION_EVENT",
-      "path": "08-decisions/events/DEC-H-CAL-002.md"
+      "path": "08-decisions/events/DEC-H-CAL-002.md",
+      "kill_scope": "KILL_DIFFERENTIATED_BET"
     },
     {
       "id": "DEC-H-PAM-001",
       "type": "DECISION_EVENT",
-      "path": "08-decisions/events/DEC-H-PAM-001.md"
+      "path": "08-decisions/events/DEC-H-PAM-001.md",
+      "kill_scope": "KILL_DIFFERENTIATED_BET"
     },
     {
       "id": "DEC-PTA-001",
