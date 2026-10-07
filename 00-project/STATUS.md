@@ -474,3 +474,15 @@ GitHub QA identified pre-existing duplicate-source identity groups and the newly
 - VENDOR-022 → VENDOR-001 (Qualcomm Oryon Flex Cache)
 
 Active Evidence Case premises and Experiment source inputs were migrated to canonical IDs. History and older reviews remain preserved, with no duplicate treated as independent evidence. **AO-3 result and portfolio are unchanged.**
+
+
+## Source identity audit completion — 2026-10-08
+Strong-identity duplicates are canonicalized and guarded by QA.
+
+One cross-identifier soft duplicate identified by normalized-title review was also resolved:
+- AgentProg: PAPER-030 is canonical and now records both arXiv 2512.10371 and DOI 10.1145/3745756.3809245;
+- PAPER-056 is retained as a historical alias only;
+- active EC-A-005-A and EXP-A-001 references now use PAPER-030.
+
+Rule:
+same work is one evidence source even when discovered through arXiv and publisher DOI separately.

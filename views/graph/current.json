@@ -2804,7 +2804,7 @@
       "id": "PAPER-056",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-056/README.md",
-      "record_state": "CURRENT"
+      "record_state": "ALIAS"
     },
     {
       "id": "PAPER-057",
@@ -9187,7 +9187,7 @@
     {
       "source": "EC-A-005-A",
       "relation": "HAS_PREMISE",
-      "target": "PAPER-056",
+      "target": "PAPER-030",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -11545,6 +11545,12 @@
     {
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
+      "target": "PAPER-030",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
       "target": "PAPER-043",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -11558,12 +11564,6 @@
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
       "target": "PAPER-050",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
-      "source": "EXP-A-001",
-      "relation": "INPUT_SOURCE",
-      "target": "PAPER-056",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -12409,7 +12409,19 @@
     {
       "source": "PAPER-030",
       "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-030",
+      "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-BR-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-030",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-A-005-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -12746,18 +12758,6 @@
       "source": "PAPER-052",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-002-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "PAPER-056",
-      "relation": "INPUT_TO_EXPERIMENT",
-      "target": "EXP-A-001",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "PAPER-056",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-A-005-A",
       "provenance": "GENERATED_REVERSE"
     },
     {

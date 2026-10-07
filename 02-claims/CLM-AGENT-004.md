@@ -14,7 +14,7 @@ supersedes = []
 On evaluated long-horizon mobile GUI Agent benchmarks, explicitly representing program/control-flow state, persistent task variables and global belief state materially improves task-completion robustness compared with sliding-window, summarization and hierarchical-planning context baselines.
 
 ## Current interpretation
-PAPER-056 / AgentProg provides direct benchmark and ablation evidence that:
+PAPER-030 / AgentProg provides direct benchmark and ablation evidence that:
 - execution-tree-guided context pruning;
 - explicit variable persistence;
 - global belief-state tracking

@@ -62,6 +62,14 @@ Before assigning a new Source ID:
 5. only create a new Source ID after the identity gate is clear.
 
 ## Historical canonicalization
-PAPER-033 and PAPER-104 are the same arXiv work 2608.15241.
-PAPER-104 is canonical.
-PAPER-033 is retained as an alias only.
+
+Confirmed canonical groups after the first full identity audit:
+
+- Agent.xpu / arXiv 2506.24045: PAPER-113 canonical; PAPER-097 alias.
+- MobiMem / arXiv 2512.15784: PAPER-103 canonical; PAPER-073 alias.
+- Cordon / arXiv 2606.17573: PAPER-117 canonical; PAPER-041 alias.
+- LOCAL / arXiv 2608.15241: PAPER-104 canonical; PAPER-033 and PAPER-089 aliases.
+- Qualcomm Oryon Flex Cache official page: VENDOR-001 canonical; VENDOR-022 alias.
+- AgentProg / arXiv 2512.10371 / DOI 10.1145/3745756.3809245: PAPER-030 canonical; PAPER-056 alias.
+
+AgentProg demonstrates why normalized-title warnings remain part of the gate: the arXiv and publisher DOI routes can represent the same work without sharing a URL identity. Once confirmed, the canonical Source should record both identifiers so later discovery resolves directly.

@@ -2,7 +2,8 @@
 id = "PAPER-056"
 type = "SOURCE"
 source_type = "paper"
-record_state = "CURRENT"
+record_state = "ALIAS"
+canonical_source_id = "PAPER-030"
 review_depth = "FULL_10Q"
 decision_use = "DECISION_GRADE_WITH_SCOPE_BOUNDARY"
 independence_assessment = "UNKNOWN"
@@ -39,3 +40,9 @@ Do **not** use as:
 - proof that semantic state should be exposed directly to hardware.
 
 See [deep.md](deep.md) for the full Paper Insight 10Q.
+
+
+## Canonical identity
+PAPER-056 is a historical DOI-entry alias for canonical PAPER-030.
+Both represent the same AgentProg work.
+Active Evidence Cases and Experiments must reference PAPER-030.
