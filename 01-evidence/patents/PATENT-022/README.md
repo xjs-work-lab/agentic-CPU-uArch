@@ -17,4 +17,13 @@ venue = "US6295580B1 / US6629208B2"
 
 Frozen V1 uses this family as a generic process-associated cache-partitioning prior-art anchor.
 
-**Boundary:** registry-level evidence in this migration; no new claim review is inferred.
+**Boundary:** direct claim review completed 2026-10-07; generic process cache partitioning only, not Agent semantic selection.
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 1 directly covers dividing cache into partitions and assigning a partition indicator to each process such that refill placement follows the current process's partition.
+
+Safe conclusion:
+process-associated cache partitioning is direct claim-level prior art.

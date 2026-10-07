@@ -17,7 +17,7 @@ Direct CPU locality/context-switch relevance; generic, not Agent-specific.
 Very high. Warm-state restore/prefetch is long-standing architecture prior art.
 
 ## Q4 — What is the control point of the independent claims?
-**Partial claim review.** Verified mechanism:
+**Direct claim review — VERIFIED.** Mechanism:
 record execution/cache/translation footprint before switch → preload/restore relevant state when context returns.
 
 ## Q5 — What do dependent claims / embodiments add or narrow?
@@ -47,6 +47,6 @@ Residual:
 ## Decision footer
 - Prior-art pressure: Very High
 - Decision impact: KILL broad M3 restore primitive
-- Claim-review completeness: Partial
+- Claim-review completeness: Direct / VERIFIED
 - Open questions: exact claims; benefit/overhead on mobile
 - Primary patent source: link above

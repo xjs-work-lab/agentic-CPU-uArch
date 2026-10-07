@@ -18,4 +18,19 @@ publisher_actor_ids = ["ACT-QUALCOMM"]
 
 Frozen V1 uses this Qualcomm patent as a generic cache-demand-aware heterogeneous scheduling/migration prior-art anchor.
 
-**Boundary:** registry-level evidence in this migration; no new claim review is inferred.
+**Boundary:** direct claim review completed 2026-10-07; generic cache-demand-aware mobile scheduling only, not Agent semantic prediction.
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED / direct mobile relevance.**
+
+Claim 1 directly combines:
+- processor workload;
+- task cache demand associated with a shared cache;
+- a weighted decision/threshold;
+- migration across heterogeneous processor clusters.
+
+Dependent claim 23 explicitly includes smartphone/tablet portable devices.
+
+Safe conclusion:
+generic cache-demand-aware heterogeneous mobile task migration is direct claim-level prior art.

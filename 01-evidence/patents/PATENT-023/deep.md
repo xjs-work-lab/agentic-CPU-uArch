@@ -17,7 +17,7 @@ Direct CPU scheduling/cache relevance and especially important because it is Hua
 Cache-aware migration is mature and highly crowded.
 
 ## Q4 — What is the control point of the independent claims?
-**Partial claim review.** Verified project-relevant mechanism:
+**Direct claim review — VERIFIED.** Project-relevant mechanism:
 cache-miss/instruction/cache-behavior information + source/destination load/state → choose migration candidate/target.
 
 ## Q5 — What do dependent claims / embodiments add or narrow?
@@ -48,6 +48,6 @@ Residual:
 ## Decision footer
 - Prior-art pressure: Very High
 - Decision impact: KILL broad cache-aware migration; KEEP semantic-selection hypothesis
-- Claim-review completeness: Partial
+- Claim-review completeness: Direct / VERIFIED
 - Open questions: exact independent-claim scope
 - Primary patent source: link above

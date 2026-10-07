@@ -15,7 +15,7 @@ human_gate: APPROVED
 human_gate_date: 2026-10-06
 cutover_state: COMPLETE
 research_content_migrated: true
-evidence_rescue: ACTIVE
+evidence_rescue: COMPLETE
 evidence_depth_protocol: EDP_V1
 frontier_round14: COMPLETE
 product_trend_framework: V1
@@ -173,10 +173,22 @@ CLM-R1-004 remains **SUPPORTED**, but the evidence model is now explicitly:
 
 R1 remains **CONDITIONAL_RESERVE / 55.5 / SIMULATION_SUPPORT**; no score/maturity/uArch change.
 
-Patent audit inventory: **8 / 13 complete; 5 remain**.
+R2 patent audit complete:
+- PATENT-020 — claim 1 directly covers per-context branch-predictor state selection/restoration on context switch.
+- PATENT-021 — claims directly cover tracking cache access footprint and restoring TLB/SLB/I-cache/D-cache state on context return.
+- PATENT-022 — claim 1 directly covers process-associated cache partitioning through a partition indicator.
+- PATENT-023 — claim 1 directly covers cache-miss-ratio/MPKI-aware task migration between processor cores.
+- PATENT-024 — claim 1 directly covers cache-demand + processor-workload-driven migration across heterogeneous processor clusters in a portable computing device; dependent claim 23 explicitly includes smartphone/tablet.
 
-Remaining patents are all R2:
-PATENT-020 / PATENT-021 / PATENT-022 / PATENT-023 / PATENT-024.
+CLM-R2-004 and CLM-R2-005 remain **SUPPORTED** with direct claim-level provenance.
+
+R2 remains **CONDITIONAL_RESERVE / 54.5 / SIMULATION_SUPPORT**; no score/maturity/uArch change.
+
+Patent direct-claim audit: **13 / 13 COMPLETE**.
+Current-roadmap paper-depth debt: **0**.
+Evidence Rescue: **COMPLETE**.
+
+Next gate: **final portfolio convergence** — reconcile all rescued evidence, scores/lanes, product trends, Primary Bets / Strategic Reserves / Kill items and experiment gates into the final 2027–2029 roadmap without quota-filling.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.

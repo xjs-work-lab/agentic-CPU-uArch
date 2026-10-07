@@ -17,7 +17,7 @@ Direct CPU microarchitectural-state relevance; not Agent-specific.
 State preservation across context switches is mature. This family specifically covers predictor-state retention/restore.
 
 ## Q4 — What is the control point of the independent claims?
-**Partial claim review.** Verified mechanism:
+**Direct claim review — VERIFIED.** Mechanism:
 context-specific branch predictor state → swap/store on context switch → restore on return.
 
 ## Q5 — What do dependent claims / embodiments add or narrow?
@@ -47,6 +47,6 @@ Residual:
 ## Decision footer
 - Prior-art pressure: Very High
 - Decision impact: KILL broad predictor-retention idea
-- Claim-review completeness: Partial
+- Claim-review completeness: Direct / VERIFIED
 - Open questions: exact claim variants; phone cost
 - Primary patent source: link above

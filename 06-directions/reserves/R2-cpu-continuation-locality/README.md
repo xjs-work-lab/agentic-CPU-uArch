@@ -133,3 +133,73 @@ No score, lane, maturity or hardware change.
 ### Evidence-depth state
 R2 paper-depth debt: **0**.
 Current-roadmap paper-depth debt: **0**.
+
+
+## Patent direct-claim audit — 2026-10-07
+
+### PATENT-020 — VERIFIED
+Claim 1 directly binds branch-prediction state to process/context identity and loads state for a newly swapped-in context.
+
+Conclusion:
+generic context-specific branch-predictor state retention/restore is direct claim-level prior art.
+
+### PATENT-021 — VERIFIED
+Claims directly cover:
+- tracking an execution entity's cache access pattern before switch-out;
+- addresses/page/segment translation information;
+- TLB/SLB/cache access;
+- loading saved information on switch-in;
+- restoring TLB/SLB/I-cache/D-cache footprint.
+
+Conclusion:
+generic cache/TLB/translation warm-state restoration is direct claim-level prior art.
+
+### PATENT-022 — VERIFIED
+Claim 1 directly covers:
+- dividing cache into partitions;
+- assigning each process a partition indicator;
+- loading misses into the partition associated with the current process.
+
+Conclusion:
+generic process-associated cache partitioning is direct claim-level prior art.
+
+### PATENT-023 — VERIFIED
+Claim 1 directly covers:
+- source/destination core selection from load;
+- per-task cache misses and executed instructions;
+- cache-miss ratio/MPKI;
+- selecting the migrated task based on source/destination cache behavior.
+
+Conclusion:
+generic PMU/cache-aware task migration is direct claim-level prior art.
+
+### PATENT-024 — VERIFIED / MOBILE-RELEVANT
+Claim 1 directly covers:
+- heterogeneous processor clusters with different shared-cache/performance characteristics;
+- monitoring processor workload and task cache demand;
+- weighted decision;
+- task migration between clusters.
+
+Dependent claim 23 explicitly covers smartphone/tablet portable devices.
+
+Conclusion:
+generic cache-demand-aware heterogeneous mobile scheduling/migration is direct claim-level prior art.
+
+### R2 decision
+CLM-R2-004 and CLM-R2-005 remain SUPPORTED.
+
+The patents close broad novelty for:
+- microstate restore primitives;
+- cache partitioning;
+- PMU/cache-aware migration;
+- cache-demand-aware hetero-cluster placement.
+
+They do **not** close the surviving R2 residual:
+> whether future Agent continuation semantics contain predictive value beyond observed task/process identity, PMU/history, software affinity and generic shared/coherent-cache behavior on a representative phone.
+
+No score, lane, maturity or hardware change.
+
+### Evidence-integrity milestone
+Patent audit 13 / 13 complete.
+Paper-depth debt 0.
+Evidence Rescue COMPLETE.

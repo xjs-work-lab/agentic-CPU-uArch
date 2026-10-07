@@ -17,6 +17,17 @@ venue = "WO2021045811A1 / EP4025998B1"
 
 Generic per-context branch-predictor save/restore is established prior art.
 
-**Boundary:** partial claim review in V1; no legal/FTO conclusion. The narrow residual is semantic selection/value, not the restore primitive itself.
+**Boundary:** 2026-10-07 direct claim re-audit verifies the restore primitive. The narrow residual is semantic selection/value, not the restore primitive itself; no legal/FTO conclusion.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 1 directly covers a private branch-prediction memory containing state for a current context and, on a process/context switch, causing branch-prediction state associated with the new context to be loaded into that memory.
+
+Safe conclusion:
+generic context-specific branch-predictor state preservation/restoration is direct claim-level prior art.
+
+No Agent semantics or phone-specific value is claimed.

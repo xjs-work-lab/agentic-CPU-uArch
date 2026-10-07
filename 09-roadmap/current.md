@@ -449,6 +449,34 @@ PATENT-017 does not directly claim latest-start timing in its independent claims
 
 CLM-R1-004 remains supported at the broad mechanism-family level.
 
-Patent audit progress: **8 / 13 complete; 5 remain**.
+R2 direct-claim audit is complete.
 
-Next/final patent set: **R2 PATENT-020 / 021 / 022 / 023 / 024**.
+Verified direct-claim families:
+- branch-predictor context-state restore;
+- cache/TLB/translation-footprint restore;
+- process-associated cache partitioning;
+- MPKI/cache-aware task migration;
+- cache-demand-aware heterogeneous-cluster migration on portable devices/smartphones.
+
+CLM-R2-004 / CLM-R2-005 remain supported.
+
+**Patent audit progress: 13 / 13 COMPLETE.**
+**Current-roadmap paper-depth debt: 0.**
+**Evidence Rescue: COMPLETE.**
+
+No reserve lane was promoted:
+- B-residual 63.0 / CONDITIONAL_RESERVE;
+- R1 55.5 / CONDITIONAL_RESERVE;
+- R2 54.5 / CONDITIONAL_RESERVE;
+- R3 48.5 / BLOCKED.
+
+## Next
+**Final portfolio convergence.**
+
+The next pass must re-evaluate the complete evidence set and freeze:
+- 2–3 Primary Bets only if evidence supports them;
+- 2–3 Strategic Reserves;
+- explicit Kill / Do-Not-Invest;
+- 2027–2029 product-evolution map;
+- PoC / experiment gates and downgrade/kill criteria;
+- whether A remains the only differentiated Primary Bet.

@@ -17,6 +17,16 @@ venue = "US7634642B2"
 
 Generic cache/TLB/translation-footprint save/restore for fast context return is established prior art.
 
-**Boundary:** partial claim review in V1; no legal/FTO conclusion.
+**Boundary:** 2026-10-07 direct claim re-audit verifies cache/TLB/translation footprint restore; no legal/FTO conclusion.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 1 tracks/saves cache-access footprint before switch-out.
+Claims 8 and 11–13 directly cover loading saved information and restoring execution footprint including TLB, SLB, instruction-cache and data-cache state.
+
+Safe conclusion:
+generic context warm-state save/restore is direct claim-level prior art.

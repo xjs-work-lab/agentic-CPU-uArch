@@ -18,6 +18,19 @@ publisher_actor_ids = ["ACT-HUAWEI"]
 
 Huawei prior art covers cache/PMU/load-aware task migration and directly constrains any broad “cache-aware Agent migration” novelty claim.
 
-**Boundary:** partial claim review in V1; future Agent semantics may still add predictive information beyond observed history/PMU state.
+**Boundary:** direct claim review completed 2026-10-07; future Agent semantics may still add predictive information beyond observed history/PMU state.
 
 Exact frozen V1 10Q is preserved in [deep.md](deep.md).
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED.**
+
+Claim 1 directly uses:
+- core load to select source/destination;
+- per-task cache misses and executed instructions;
+- per-task/core cache-miss ratios;
+- those ratios to select the task to migrate.
+
+Safe conclusion:
+generic cache/PMU-aware migration is direct claim-level prior art.
