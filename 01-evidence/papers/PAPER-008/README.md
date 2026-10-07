@@ -3,22 +3,29 @@ id = "PAPER-008"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+decision_use = "R2_AGENTIC_CPU_LOCALITY_SIGNAL_AND_AGORA_SOFTWARE_BASELINE"
+independence_assessment = "ACADEMIC_PLUS_HYPERSCALER_PRODUCTION_AND_CONTROLLED_SERVER_STUDY"
 title = "Architectural Implications of Agentic AI Workflows"
-primary_url = "https://arxiv.org/html/2608.04458"
+primary_url = "https://arxiv.org/abs/2608.04458"
 priority = "P0"
 evidence_role = "Agentic server CPU locality/context-switch structural signal; indirect mobile transfer"
-origin_paths = ["03-academic/paper-10q/PAPER-008.md"]
-origin_blobs = ["a41d685e7f3e071c52c0720c66af98aac0f95b93"]
 authors = ["Jirong Yang", "Peizhe Liu", "Chaojie Zhang", "Jovan Stojkovic"]
 venue = "arXiv preprint · 2026"
 +++
 
 # PAPER-008 — Architectural Implications of Agentic AI Workflows
 
-- Direct Agentic CPU/system characterization shows context-switch growth and cache/branch locality pressure under concurrency.
-- V1 anchors: IPC ~1.2–1.6; backend stalls ~43–47%; L1D MPKI ~14–20; SWE-Agent involuntary context switches ~71/s→~660/s as concurrency rises 1→32.
-- Role-aware pooling/pinning can reduce tool CPU demand by up to ~46%.
-- **Boundary:** server/datacenter evidence; cannot establish smartphone R2 SYSTEM_VALUE.
+## 30-second read
+- Production Microsoft Azure study plus controlled open-source Agent-framework characterization.
+- Agent execution is fragmented, bursty and heterogeneous; orchestration/tools put CPU on the critical path.
+- Controlled study reports low IPC, high backend stalls and increasing context-switch/locality pressure with concurrency.
+- Agora demonstrates strong software recovery on commodity servers.
+- Role-aware pooling reduces tool CPU demand up to 46%, worst-case tool latency 13%, while retaining 99% serving throughput.
+- Strong R2 structural signal, but also strong software-sufficiency evidence.
+- No smartphone PMU/energy/thermal experiment.
 
-Exact frozen V1 interpretation is preserved in [deep.md](deep.md).
+See [deep.md](deep.md).

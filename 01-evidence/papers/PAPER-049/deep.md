@@ -1,83 +1,55 @@
-# PAPER-049 — Affinity Tailor: Dynamic Locality-Aware Scheduling at Scale
+# PAPER-049 — Affinity Tailor — FULL_10Q
 
-## Source
-- Paper: https://arxiv.org/abs/2604.27915
-- Authors: Jin Xin Ng, Ori Livneh, Richard O'Grady, Josh Don, Peng Ding, Samuel Grossman, Luis Otero, Chris Kennelly, David Lo, Carlos Villavieja
-- Affiliation: Google
-- Venue/status: arXiv preprint, 2026
-- Target: production Linux multicore scheduling
-- Project relevance: R2 strongest generic software locality baseline
-- Priority: P0
+## Q1 — Problem
+Work-conserving load balancing spreads threads across cores and destroys cache, branch-predictor and prefetcher locality; hard pinning preserves locality but strands idle capacity.
 
-## Q1 — Problem + target mapping
-Linux work-conserving load balancing spreads workloads across cores, causing loss of cache, branch-predictor and prefetcher locality.
+## Q2 — New-regime relevance
+This is generic multicore locality, not Agent-specific. That makes it a critical baseline for R2.
 
-This maps directly to the non-Agent-specific part of R2.
+## Q3 — Hypothesis
+Demand-sized, topologically compact soft affinity can preserve warm microarchitectural state while still allowing bursts onto other cores.
 
-## Q2 — Novelty / new-regime relevance
-Affinity Tailor provides **soft affinity**:
-- userspace estimates workload CPU demand;
-- assigns topologically compact preferred cores;
-- minimizes LLC-domain spread;
-- kernel treats the set as an affinity hint rather than a hard partition;
-- workload may burst outside the set when required.
+## Q4 — Baselines
+Google's heavily optimized Linux CFS-based production scheduler and hard/static partitioning concepts.
 
-The key idea is preserving locality without permanently stranding capacity.
+## Q5 — Mechanism
+- userspace estimates near-term CPU demand;
+- assigns per-cgroup Preferred Cores;
+- selects compact sets minimizing LLC-domain spread/interference;
+- kernel treats Preferred Cores as a soft affinity hint;
+- threads can escape when necessary to preserve utilization.
 
-## Q3 — Falsifiable hypothesis
-Dynamic, permeable preferred-core regions should retain microarchitectural warmth while preserving work-conservation better than ordinary CFS load balancing or hard cpusets.
-
-## Q4 — Research lineage / competing route
-For R2 this is a strong generic competing route.
-
-It shows that cache/branch/prefetcher locality can be captured with:
-- demand prediction;
-- topology;
-- soft affinity;
-- no Agent semantics;
-- no new CPU microarchitecture.
-
-## Q5 — Mechanism / control point
-Inputs:
-- online CPU demand;
-- hardware topology / LLC domains;
-- current placement.
-
-Actuator:
-- cgroup preferred-core soft affinity.
-
-No Agent semantic contract is required.
+No Agent semantic contract is needed.
 
 ## Q6 — Experiment
-Deployed across thousands of Google machines.
+Fleet deployment across thousands of Google machines and four server platforms over a week.
 
 Reported:
-- geomean per-CPU throughput +12% on chiplet systems;
-- +3% on non-chiplet systems over Linux CFS;
-- per-GB throughput +3–7%.
+- +12% geometric-mean per-CPU throughput on chiplet systems;
+- +3% on non-chiplet systems;
+- +3–7% per-GB throughput;
+- P99 thread scheduling latency increases by as much as 17% in evaluated platforms, yet application throughput improves.
 
-## Q7 — Artifact / reproducibility
-Public paper available.
-Production deployment is strong operational evidence, but exact production workloads/infrastructure are not reproducible as a phone experiment.
+The paper attributes gains to reduced cross-LLC/main-memory traffic and better cache/prefetcher locality.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** Generic locality-aware software scheduling can recover meaningful cache/branch/prefetcher value in production.
+## Q7 — Artifact / limitations
+Strong production operational evidence.
+Not a reproducible smartphone experiment.
+No Agent continuation trace, phone PMU, battery or thermal measurement.
 
-**[BOUNDARY]** Datacenter topology and scale differ substantially from smartphones.
+## Q8 — Evidence
+FACT: generic soft affinity can recover meaningful locality value in production.
+FACT: preserving locality may be worth some extra scheduler queueing latency.
+INFERENCE: R2 must beat topology-aware dynamic soft affinity, not default scheduler/hard pinning.
+NOT ESTABLISHED: Agent semantics provide additional placement value on phones.
 
-## Q9 — Project contribution
-Raises the R2 software-sufficiency baseline.
+## Q9 — Project decision
+Affinity Tailor materially strengthens B4-locality-software and narrows R2.
 
-R2 cannot compare against default scheduler or hard pinning.
-It must beat dynamic, soft, topology-aware affinity plus generic shared cache.
-
-## Q10 — Next action
-- KEEP as P0 R2 baseline/constraint evidence.
-- Do not promote Agent-specific locality without phone PMU residual.
-- Measure SoftwareLocalityCapture before any uArch design.
+## Q10 — Next
+EXP-R2-001 must measure residual phone cache/TLB/branch warmup after strong software affinity and generic shared/coherent-cache support.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for generic datacenter locality scheduling; STRUCTURAL_SIGNAL for mobile transfer
-- Decision impact: NARROW / DOWNGRADE R2
-- Open questions: smartphone transfer; Agent-specific residual
-- Primary source: https://arxiv.org/abs/2604.27915
+- SYSTEM_VALUE for generic datacenter locality scheduling
+- STRUCTURAL_SIGNAL for mobile transfer
+- no R2 promotion

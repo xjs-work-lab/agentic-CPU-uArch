@@ -87,8 +87,8 @@ Material corrections:
 ## Evidence-depth debt
 After Rescue-1B, validated Graph-QA paper-depth warnings:
 - primary A / PT-A / C / CG-06 / CG-07 lanes: **0**
-- current reserve lanes B-residual / R1 / R2: **2**
-- whole current ROADMAP: **2**
+- current reserve lanes B-residual / R1 / R2: **0**
+- whole current ROADMAP: **0**
 
 Reserve Rescue Batch 1 complete:
 - PAPER-030 AgentProg → FULL_10Q;
@@ -126,6 +126,20 @@ R1 remains **CONDITIONAL_RESERVE / 55.5 / SIMULATION_SUPPORT**:
 - no target-phone evidence transfers those windows into a post-ready CPU/system control interval with >=5% incremental value.
 
 No score/maturity/uArch change.
+
+Reserve Rescue R2 complete:
+- PAPER-008 Agentic AI architectural characterization / Agora → FULL_10Q;
+- PAPER-049 Affinity Tailor → FULL_10Q.
+
+R2 paper-depth debt is now **0**.
+
+R2 remains **CONDITIONAL_RESERVE / 54.5 / SIMULATION_SUPPORT**:
+- Agentic server execution clearly creates locality/context-switch pressure;
+- role-aware pooling/pinning already captures substantial value on commodity servers;
+- production soft-affinity scheduling further shows generic software can recover cache/branch/prefetcher locality at scale;
+- no target-phone PMU evidence establishes >=5% Agent-specific residual after strong software + generic shared/coherent-cache baselines.
+
+**Current-roadmap paper-depth debt is now 0.**
 
 R3 and other patent-heavy claims remain subject to a separate patent direct-claim audit.
 

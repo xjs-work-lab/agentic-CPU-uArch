@@ -140,7 +140,7 @@ No SYSTEM_VALUE or hardware/uArch promotion.
 
 ## Evidence-depth state
 Graph QA validates **0 paper-depth warnings** across A / PT-A / C / CG-06 / CG-07.
-The remaining **2** current-roadmap paper warnings are now only in R2. B-residual and R1 paper-depth debt are cleared.
+**Current-roadmap paper-depth warnings: 0.** B-residual, R1 and R2 decision-critical papers are now FULL_10Q or same-primary reused.
 
 Reserve Rescue Batch 1 removes four warnings:
 - PAPER-030 AgentProg — FULL_10Q;
@@ -355,7 +355,7 @@ T6/T7/T8 frontier coverage is complete. No new differentiated Primary Bet surviv
 ## Next
 **Reserve-lane evidence rescue: B-residual / R1 / R2.**
 
-The known current-roadmap paper-depth debt is now **2** decision-critical papers: R2 PAPER-008/049. After those, the separate R3/patent direct-claim audit remains before final portfolio convergence.
+The current-roadmap paper-depth debt is now **0**. The next evidence-integrity gate is the separate R3/patent direct-claim audit before final portfolio convergence.
 
 
 ## Reserve Rescue Batch 2 — B-residual complete
@@ -401,3 +401,30 @@ No uArch promotion.
 
 ## Next
 **R2 PAPER-008 / PAPER-049**.
+
+
+## Reserve Rescue — R2 complete
+
+FULL_10Q:
+- PAPER-008 Architectural Implications of Agentic AI Workflows
+- PAPER-049 Affinity Tailor
+
+Decision impact:
+- PAPER-008 establishes genuine Agentic server CPU locality/context-switch/burstiness pressure, but its own Agora software controls recover substantial value: role-aware pooling reduces tool CPU demand up to 46%, lowers worst-case tool latency 13%, and retains 99% of serving throughput.
+- PAPER-049 shows generic production locality control can preserve cache/branch/prefetcher warmth using demand-sized, topologically compact soft affinity. Google fleet deployment reports +12% per-CPU throughput on chiplet systems, +3% on non-chiplet systems and +3–7% per-GB throughput, despite P99 scheduling latency increasing up to 17%.
+
+Therefore R2 cannot use “Agent workflows lose locality” as hardware evidence.
+
+R2 survives only as:
+> after B4-locality-software + generic shared/coherent cache, do representative phone Agent continuations still incur repeatable CPU-local cache/TLB/branch warmup loss large enough to create >=~5% incremental end-outcome value?
+
+R2 remains 54.5 / CONDITIONAL_RESERVE / SIMULATION_SUPPORT.
+No uArch promotion.
+
+## Evidence-depth milestone
+**Current-roadmap paper-depth debt = 0.**
+
+This is a paper-depth milestone, not final portfolio convergence.
+
+## Next
+**Patent direct-claim audit**, with R3/patent-heavy claims first.

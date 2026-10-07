@@ -80,3 +80,56 @@ Requires `EXP-R2-001` target-phone evidence showing:
 Do not prototype an Agent cache/TLB/predictor structure before the phone PMU residual survives.
 
 Exact frozen V1 direction text is preserved in [deep.md](deep.md).
+
+
+## Reserve Rescue — 2026-10-07
+
+### PAPER-008 — Agentic architectural characterization / Agora
+The paper gives strong Agentic server structural evidence:
+- fragmented LLM/tool/orchestration execution repeatedly crosses CPU↔GPU boundaries;
+- CPU utilization is bursty and the CPU is on the critical path;
+- multiplexing Agent roles degrades microarchitectural locality.
+
+But the same paper provides a strong software sufficiency baseline:
+- role-aware core pools;
+- task pinning/affinity;
+- adaptive CPU harvesting;
+- Agent-aware GPU-state prefetch/consolidation.
+
+Reported role-aware pooling:
+- tool CPU demand down up to 46%;
+- worst-case tool latency down 13%;
+- 99% serving throughput retained.
+
+This is server evidence, not target-phone PMU SYSTEM_VALUE.
+
+### PAPER-049 — Affinity Tailor
+Google production deployment shows dynamic soft Preferred Cores can preserve spatial locality without hard partitioning:
+- online workload-demand estimate;
+- topologically compact preferred CPU set;
+- kernel soft-affinity enforcement with burst escape.
+
+Reported:
+- +12% geomean per-CPU throughput on chiplet systems;
+- +3% on non-chiplet systems;
+- +3–7% per-GB throughput;
+- P99 scheduling latency can increase up to 17%, yet aggregate application throughput still improves.
+
+The result raises B4-locality-software substantially.
+
+### Final R2 interpretation
+Generic software already controls:
+- role pools;
+- task/core affinity;
+- demand-sized preferred cores;
+- topology/LLC placement;
+- warm-domain reuse;
+- adaptive escape for load.
+
+R2 therefore survives only if target-phone PMU measurement shows an Agent-specific CPU-local microstate residual after those controls and generic shared/coherent-cache support.
+
+No score, lane, maturity or hardware change.
+
+### Evidence-depth state
+R2 paper-depth debt: **0**.
+Current-roadmap paper-depth debt: **0**.
