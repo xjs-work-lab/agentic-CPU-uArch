@@ -1,76 +1,74 @@
-# Graph Rules — Data Model 2.3
+# Graph Rules — Data Model 2.4
 
-```text
 SOURCE / DISCOVERY_RUN / upstream CLAIM / EXPERIMENT
-                         ↓
-                    EVIDENCE_CASE
-                         ↓
-         SUPPORT / REBUT / UNDERCUT / SCOPE_LIMIT
-                         ↓
-                       CLAIM
-                      /     \
-                     v       v
-                  TREND   DIRECTION
-                    |       |
-                    |   associated by
-                    |   direction_links
-                    v       v
-         PRODUCT_EVOLUTION  DIFFERENTIATION_PORTFOLIO
-                 ROADMAP       ROADMAP
-```
+→ EVIDENCE_CASE
+→ SUPPORT / REBUT / UNDERCUT / SCOPE_LIMIT
+→ CLAIM
+
+CLAIM → TREND → PRODUCT_EVOLUTION ROADMAP
+CLAIM → DIRECTION → DIFFERENTIATION_PORTFOLIO ROADMAP
+
+CPU/uArch Round-15 extension:
+CLAIM / TREND / CAPABILITY → ARCHITECTURE_OPPORTUNITY → DIRECTION
 
 ## SOURCE / EVIDENCE_CASE / CLAIM
-
-- **SOURCE** records provenance and source-grounded facts/claims. It is not the place for cross-source analyst synthesis.
-- **EVIDENCE_CASE** is the explicit inferential route from one or more premises to a target Claim, with a typed relation such as SUPPORT / REBUT / UNDERCUT / SCOPE_LIMIT plus warrant, scope and boundary.
-- **CLAIM** is the current proposition that can be supported, challenged, narrowed or falsified. Cross-paper support/rebut/undercut must be represented through Evidence Cases rather than living only in a long audit narrative.
+- SOURCE records provenance and source-grounded content.
+- EVIDENCE_CASE owns the inferential route, warrant, scope and boundary.
+- CLAIM is the proposition that can be supported, rebutted, undercut, narrowed or falsified.
 
 ## TREND
-A product-evolution thesis: what the 2027–2029 smartphone stack is likely to need, regardless of who invented the mechanism. TREND never means “our original research Bet.”
+A product-evolution thesis. Product relevance is independent of originality.
+
+## ARCHITECTURE_OPPORTUNITY
+A synthesis/search object for a bounded cross-layer architecture problem space.
+
+Opportunity claim roles:
+- PROBLEM_SIGNAL
+- PRODUCT_SIGNAL
+- MECHANISM
+- STRONG_BASELINE
+- PRIOR_ART_BOUNDARY
+- OPEN_GAP
+- ARCH_HYPOTHESIS
+
+Opportunity is not evidence and does not by itself justify investment or hardware.
 
 ## DIRECTION
-A research/investment route: where original or target-specific whitespace remains. Product importance alone never promotes a Trend into a Direction or Bet.
-
-TREND owns `direction_links`, each with:
-- `direction_id`
-- `differentiation_posture`
-
-This avoids duplicating trend membership across Direction files and allows one Direction to play different roles in different Trends.
+A research/investment route where differentiated or target-specific work may remain.
 
 ## ROADMAP
-- `PRODUCT_EVOLUTION` schedules TREND.
-- `DIFFERENTIATION_PORTFOLIO` schedules DIRECTION.
-- `INTEGRATED` may schedule both.
+- PRODUCT_EVOLUTION schedules TREND.
+- DIFFERENTIATION_PORTFOLIO schedules DIRECTION.
+- INTEGRATED may schedule both.
 
 ## Core invariant
-> **Prior art constrains novelty, not product relevance.**
+Prior art constrains novelty, not product relevance.
 
-A source may strengthen a Trend while narrowing a Direction.
+## Opportunity invariant
+Architecture opportunity discovery and silicon commitment are separate gates.
 
-Canonical Kill scopes:
-- `KILL_BROAD_NOVELTY`
-- `KILL_DIFFERENTIATED_BET`
-- `KILL_MECHANISM`
-- `KILL_ARCHITECTURE_NECESSITY`
-- `KILL_PRODUCT_ROUTE`
-- `KILL_WORDING_ONLY`
-
-`KILL_PRODUCT_ROUTE` is a Decision scope. `DROP_PRODUCT_ROUTE` is the corresponding Trend product posture after such a decision is supported.
+Public evidence may justify an ARCHITECTURE_OPPORTUNITY / ARCH_HYPOTHESIS.
+It does not automatically justify UARCH_CANDIDATE.
 
 ## Evidence-case rules
 - one Evidence Case = one inferential route;
 - multiple premises = AND;
 - multiple Cases = alternative routes;
-- no automatic probability aggregation.
+- no automatic probability aggregation;
+- strongest-baseline pressure should use REBUT / UNDERCUT / SCOPE_LIMIT where semantically correct rather than being hidden only in prose.
 
-Non-negotiable:
+## Projection rule
+views/graph/current.json is for navigation and includes generated reverse edges.
+views/graph/dependency.json is the single-direction dependency/inference projection for graph algorithms.
+
+## Non-negotiable
 - path != proof;
 - count != strength;
-- no edge != independence;
-- no edge != absence;
-- graph direction != causality;
 - centrality != authority;
+- no edge != absence;
 - Actor identity != Capability;
 - Capability != strategic action;
-- Trend != Direction;
+- Trend != Opportunity;
+- Opportunity != Direction;
+- Opportunity != silicon commitment;
 - product relevance != novelty.

@@ -10,6 +10,7 @@ on:
       - '04-actors/**'
       - '05-capabilities/**'
       - '06-trends/**'
+      - '06-opportunities/**'
       - '06-directions/**'
       - '07-validation/**'
       - '08-decisions/**'

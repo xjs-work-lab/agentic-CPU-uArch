@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.3",
+  "schema_version": "2.4",
   "authority": "GENERATED_NOT_AUTHORITY",
   "migration_id": "MIG-20261006-02",
   "nodes": [
@@ -26,6 +26,51 @@
       "type": "ACTOR",
       "path": "04-actors/companies/ACT-QUALCOMM/README.md",
       "record_state": "CURRENT"
+    },
+    {
+      "id": "AO-1",
+      "type": "ARCHITECTURE_OPPORTUNITY",
+      "path": "06-opportunities/AO-1-agent-execution-fabric/README.md",
+      "record_state": "CURRENT",
+      "coverage_state": "SEED_MAPPED",
+      "opportunity_stage": "DISCOVERY",
+      "priority_rank": 1
+    },
+    {
+      "id": "AO-2",
+      "type": "ARCHITECTURE_OPPORTUNITY",
+      "path": "06-opportunities/AO-2-revisable-transactional-execution/README.md",
+      "record_state": "CURRENT",
+      "coverage_state": "SEED_MAPPED",
+      "opportunity_stage": "DISCOVERY",
+      "priority_rank": 2
+    },
+    {
+      "id": "AO-3",
+      "type": "ARCHITECTURE_OPPORTUNITY",
+      "path": "06-opportunities/AO-3-persistent-agent-state-context-fabric/README.md",
+      "record_state": "CURRENT",
+      "coverage_state": "SEED_MAPPED",
+      "opportunity_stage": "DISCOVERY",
+      "priority_rank": 3
+    },
+    {
+      "id": "AO-4",
+      "type": "ARCHITECTURE_OPPORTUNITY",
+      "path": "06-opportunities/AO-4-always-on-proactive-front-end/README.md",
+      "record_state": "CURRENT",
+      "coverage_state": "SEED_MAPPED",
+      "opportunity_stage": "DISCOVERY",
+      "priority_rank": 5
+    },
+    {
+      "id": "AO-5",
+      "type": "ARCHITECTURE_OPPORTUNITY",
+      "path": "06-opportunities/AO-5-semantic-progress-qoe-control-plane/README.md",
+      "record_state": "CURRENT",
+      "coverage_state": "SEED_MAPPED",
+      "opportunity_stage": "DISCOVERY",
+      "priority_rank": 4
     },
     {
       "id": "CAP-ARM-C2-SME2-CPU-AI",
@@ -3207,8 +3252,20 @@
     },
     {
       "source": "A",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "A",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-ARM",
+      "relation": "ACTOR_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3267,6 +3324,12 @@
     },
     {
       "source": "ACT-MEDIATEK",
+      "relation": "ACTOR_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-MEDIATEK",
       "relation": "HAS_CAPABILITY_LINK",
       "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
       "provenance": "GENERATED_REVERSE"
@@ -3275,6 +3338,18 @@
       "source": "ACT-MEDIATEK",
       "relation": "PUBLISHES",
       "target": "VENDOR-019",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-QUALCOMM",
+      "relation": "ACTOR_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "ACT-QUALCOMM",
+      "relation": "ACTOR_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3294,6 +3369,276 @@
       "relation": "PUBLISHES",
       "target": "VENDOR-001",
       "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_ACTOR",
+      "target": "ACT-ARM",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_ACTOR",
+      "target": "ACT-QUALCOMM",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_CAPABILITY",
+      "target": "CAP-ARM-C2-SME2-CPU-AI",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_CAPABILITY",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "CG-06",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "R2",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_MECHANISM",
+      "target": "CLM-CPU-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
+      "target": "CLM-R2-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_STRONG_BASELINE",
+      "target": "CLM-R2-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T2",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-1",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T5",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "B-residual",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "PT-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_MECHANISM",
+      "target": "CLM-BR-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
+      "target": "CLM-AGENT-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_STRONG_BASELINE",
+      "target": "CLM-PTA-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T3",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-2",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T5",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_ACTOR",
+      "target": "ACT-QUALCOMM",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_CAPABILITY",
+      "target": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "B-residual",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "CG-01",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "R2",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_PRIOR_ART_BOUNDARY",
+      "target": "CLM-BR-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
+      "target": "CLM-BR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
+      "target": "CLM-R2-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_STRONG_BASELINE",
+      "target": "CLM-BR-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T5",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-3",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T8",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-4",
+      "relation": "OPPORTUNITY_ACTOR",
+      "target": "ACT-MEDIATEK",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-4",
+      "relation": "OPPORTUNITY_CAPABILITY",
+      "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-4",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "CG-07",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-4",
+      "relation": "OPPORTUNITY_PRODUCT_SIGNAL",
+      "target": "CLM-CG07-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-4",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T4",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "C",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_DIRECTION",
+      "target": "R1",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_MECHANISM",
+      "target": "CLM-C-008",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
+      "target": "CLM-AGENT-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_STRONG_BASELINE",
+      "target": "CLM-AGENT-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T1",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_TREND",
+      "target": "T3",
+      "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "B-residual",
@@ -3378,6 +3723,18 @@
       "relation": "RELATED_CLAIM",
       "target": "CLM-BR-EXP-001",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "B-residual",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "B-residual",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "B-residual",
@@ -3549,6 +3906,24 @@
     },
     {
       "source": "C",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "C",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
@@ -3558,6 +3933,12 @@
       "relation": "ACTOR_LINK",
       "target": "ACT-ARM",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-ARM-C2-SME2-CPU-AI",
+      "relation": "CAPABILITY_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "CAP-ARM-C2-SME2-CPU-AI",
@@ -3621,6 +4002,12 @@
     },
     {
       "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
+      "relation": "CAPABILITY_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
       "relation": "EVIDENCED_BY_CLAIM",
       "target": "CLM-CG07-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -3642,6 +4029,18 @@
       "relation": "ACTOR_LINK",
       "target": "ACT-QUALCOMM",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "CAPABILITY_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
+      "relation": "CAPABILITY_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "CAP-QUALCOMM-ORYON-FLEX-CACHE",
@@ -3729,6 +4128,18 @@
     },
     {
       "source": "CG-01",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-01",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
@@ -3810,6 +4221,12 @@
       "relation": "RELATED_CLAIM",
       "target": "CLM-HUAWEI-001",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "CG-06",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "CG-06",
@@ -3897,6 +4314,12 @@
     },
     {
       "source": "CG-07",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CG-07",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
@@ -3939,6 +4362,18 @@
     },
     {
       "source": "CLM-AGENT-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-A-001-A",
       "provenance": "GENERATED_REVERSE"
@@ -3965,6 +4400,12 @@
       "source": "CLM-AGENT-001",
       "relation": "USED_BY_DIRECTION",
       "target": "A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-002",
+      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
+      "target": "AO-5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4215,6 +4656,12 @@
     },
     {
       "source": "CLM-BR-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-BR-001-A",
       "provenance": "GENERATED_REVERSE"
@@ -4235,6 +4682,12 @@
       "source": "CLM-BR-001",
       "relation": "USED_BY_DIRECTION",
       "target": "B-residual",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-002",
+      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
+      "target": "AO-3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4265,6 +4718,12 @@
       "source": "CLM-BR-002",
       "relation": "USED_BY_DIRECTION",
       "target": "B-residual",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-003",
+      "relation": "MECHANISM_FOR_OPPORTUNITY",
+      "target": "AO-2",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4337,6 +4796,12 @@
       "source": "CLM-BR-006",
       "relation": "USED_BY_DIRECTION",
       "target": "B-residual",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-BR-007",
+      "relation": "PRIOR_ART_BOUNDARY_FOR_OPPORTUNITY",
+      "target": "AO-3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4505,6 +4970,12 @@
       "source": "CLM-C-007",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-C-008",
+      "relation": "MECHANISM_FOR_OPPORTUNITY",
+      "target": "AO-5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -4845,6 +5316,12 @@
     },
     {
       "source": "CLM-CG07-001",
+      "relation": "PRODUCT_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CG07-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-CG07-001-A",
       "provenance": "GENERATED_REVERSE"
@@ -5021,6 +5498,12 @@
       "source": "CLM-CG07-EXP-001",
       "relation": "USED_BY_DIRECTION",
       "target": "CG-07",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-CPU-001",
+      "relation": "MECHANISM_FOR_OPPORTUNITY",
+      "target": "AO-1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5475,6 +5958,12 @@
     },
     {
       "source": "CLM-PTA-003",
+      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-PTA-003",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-PTA-003-A",
       "provenance": "GENERATED_REVERSE"
@@ -5799,6 +6288,18 @@
     },
     {
       "source": "CLM-R2-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R2-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R2-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-R2-001-A",
       "provenance": "GENERATED_REVERSE"
@@ -5819,6 +6320,12 @@
       "source": "CLM-R2-001",
       "relation": "USED_BY_DIRECTION",
       "target": "R2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R2-002",
+      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
+      "target": "AO-1",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -11469,6 +11976,12 @@
     },
     {
       "source": "PT-A",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PT-A",
       "relation": "SCHEDULED_BY",
       "target": "ROADMAP-CURRENT",
       "provenance": "GENERATED_REVERSE"
@@ -11538,6 +12051,12 @@
       "relation": "RELATED_CLAIM",
       "target": "CLM-R1-EXP-001",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "R1",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "R1",
@@ -11616,6 +12135,18 @@
       "relation": "RELATED_CLAIM",
       "target": "CLM-R2-EXP-001",
       "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "R2",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "R2",
+      "relation": "ROUTE_FOR_OPPORTUNITY",
+      "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
     },
     {
       "source": "R2",
@@ -11835,6 +12366,12 @@
     },
     {
       "source": "T1",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T1",
       "relation": "HAS_DIRECTION",
       "target": "A",
       "provenance": "CANONICAL_SEMANTIC"
@@ -11907,6 +12444,12 @@
     },
     {
       "source": "T2",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T2",
       "relation": "HAS_DIRECTION",
       "target": "C",
       "provenance": "CANONICAL_SEMANTIC"
@@ -11973,6 +12516,18 @@
     },
     {
       "source": "T3",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T3",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T3",
       "relation": "HAS_DECISION_EVENT",
       "target": "DEC-T3-001",
       "provenance": "GENERATED_REVERSE"
@@ -12033,6 +12588,12 @@
     },
     {
       "source": "T4",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-4",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T4",
       "relation": "HAS_DIRECTION",
       "target": "CG-07",
       "provenance": "CANONICAL_SEMANTIC"
@@ -12089,6 +12650,24 @@
       "source": "T4",
       "relation": "TREND_SCHEDULED_BY",
       "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T5",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T5",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T5",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -12317,6 +12896,12 @@
       "source": "T7",
       "relation": "TREND_SCHEDULED_BY",
       "target": "ROADMAP-PRODUCT-2027-2029",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T8",
+      "relation": "CONTEXT_FOR_OPPORTUNITY",
+      "target": "AO-3",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -12573,8 +13158,8 @@
     }
   ],
   "counts": {
-    "nodes": 448,
-    "canonical_semantic_edges": 792,
-    "generated_reverse_edges": 792
+    "nodes": 453,
+    "canonical_semantic_edges": 837,
+    "generated_reverse_edges": 837
   }
 }

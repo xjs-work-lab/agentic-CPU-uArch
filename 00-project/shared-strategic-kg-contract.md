@@ -122,3 +122,23 @@ Product relevance never bypasses it.
 Do not introduce alternative strategic object types that duplicate TREND or DIRECTION semantics.
 Do not migrate mature canonical objects merely to make directory layouts match another repository.
 Semantic compatibility is more important than path compatibility.
+
+
+## CPU/uArch V2.4 Opportunity-discovery extension
+The shared mother model remains unchanged.
+
+CPU/uArch adds one domain-specific synthesis object:
+**ARCHITECTURE_OPPORTUNITY**.
+
+Purpose:
+bridge grounded Claims/Product Trends/Capabilities to an explicit architecture problem space before creating or promoting a differentiated Direction.
+
+This object does not duplicate TREND or DIRECTION:
+- TREND = future product/technology evolution;
+- ARCHITECTURE_OPPORTUNITY = why a cross-layer architecture problem may be worth deeper study;
+- DIRECTION = where the team may invest in differentiated research.
+
+The extension is:
+CLAIM / TREND / CAPABILITY → ARCHITECTURE_OPPORTUNITY → DIRECTION.
+
+A public-evidence Opportunity can exist before the stricter CPU/uArch silicon-commitment gate is satisfied.

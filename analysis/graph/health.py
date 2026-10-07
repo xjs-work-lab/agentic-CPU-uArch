@@ -3,7 +3,7 @@ import json
 from collections import defaultdict, deque
 from pathlib import Path
 from write_guard import assert_candidate_root
-from build_graph import load_nodes, build_projection
+from build_graph import load_nodes, build_projection, build_dependency_projection
 
 def scc_cycles(adj):
     index=0; stack=[]; on=set(); idx={}; low={}; cycles=[]
@@ -43,6 +43,9 @@ def validate(root: Path):
     allowed_product_posture={"PRODUCTIZE","ADAPT_AND_DIFFERENTIATE","BENCHMARK_AND_PREPARE","WATCH","DROP_PRODUCT_ROUTE"}
     allowed_diff={"DIFFERENTIATED_BET","RESIDUAL_RESEARCH","CROWDED_BUT_VALUABLE","FRONTIER_UNPROVEN","CLOSED_DIFFERENTIATION"}
     allowed_kill_scope={"KILL_BROAD_NOVELTY","KILL_DIFFERENTIATED_BET","KILL_MECHANISM","KILL_ARCHITECTURE_NECESSITY","KILL_PRODUCT_ROUTE","KILL_WORDING_ONLY"}
+    allowed_opportunity_roles={"PROBLEM_SIGNAL","PRODUCT_SIGNAL","MECHANISM","STRONG_BASELINE","PRIOR_ART_BOUNDARY","OPEN_GAP","ARCH_HYPOTHESIS"}
+    allowed_opportunity_stage={"DISCOVERY","ASSESSED","SHORTLISTED","CLOSED"}
+    allowed_opportunity_coverage={"SKELETON","SEED_MAPPED","EVIDENCE_MAPPED","ASSESSED","CLOSED"}
     for n in nodes:
         t=n["type"]; i=n["id"]
         if t=="SOURCE":
@@ -90,6 +93,24 @@ def validate(root: Path):
                     errors.append(f"TREND_BAD_DIFFERENTIATION_POSTURE:{i}:{d.get('direction_id')}:{d.get('differentiation_posture')}")
             if n.get("trend_maturity") in {"ESTABLISHED_PRODUCT_TREND","EMERGING_PRODUCT_TREND"} and not (n.get("related_claims") or n.get("related_capabilities")):
                 errors.append(f"TREND_MATURE_WITHOUT_EVIDENCE_LINK:{i}")
+        elif t=="ARCHITECTURE_OPPORTUNITY":
+            if n.get("opportunity_stage") not in allowed_opportunity_stage:
+                errors.append(f"OPPORTUNITY_BAD_STAGE:{i}:{n.get('opportunity_stage')}")
+            if n.get("coverage_state") not in allowed_opportunity_coverage:
+                errors.append(f"OPPORTUNITY_BAD_COVERAGE:{i}:{n.get('coverage_state')}")
+            links=n.get("claim_links",[])
+            if n.get("coverage_state")!="SKELETON" and not links:
+                errors.append(f"OPPORTUNITY_NO_CLAIM_LINKS:{i}")
+            for link in links:
+                req(link["claim_id"],"CLAIM",f"{i}.claim_links")
+                if link.get("role") not in allowed_opportunity_roles:
+                    errors.append(f"OPPORTUNITY_BAD_ROLE:{i}:{link.get('role')}")
+            for tr in n.get("related_trends",[]): req(tr,"TREND",f"{i}.related_trends")
+            for d in n.get("related_directions",[]): req(d,"DIRECTION",f"{i}.related_directions")
+            for c in n.get("related_capabilities",[]): req(c,"CAPABILITY",f"{i}.related_capabilities")
+            for a in n.get("related_actors",[]): req(a,"ACTOR",f"{i}.related_actors")
+            leak={"investment_lane","competitive_action"} & set(n)
+            if leak: errors.append(f"OPPORTUNITY_STRATEGY_LEAK:{i}:{sorted(leak)}")
         elif t=="DIRECTION":
             for c in n.get("related_claims",[]): req(c,"CLAIM",f"{i}.related_claims")
             for c in n.get("related_capabilities",[]): req(c,"CAPABILITY",f"{i}.related_capabilities")
@@ -152,7 +173,7 @@ def validate(root: Path):
             if not depth.startswith("FULL_10Q"):
                 warnings.append(f"DECISION_CRITICAL_PAPER_NOT_FULL_10Q:{sid}:{','.join(sorted(ds))}")
 
-    required={"A","CG-06","EXP-A-001","EXP-CG06-001","CLM-A-001","CLM-CG06-EXP-001","DR-HUAWEI-CG06-BASELINE"}
+    required={"A","CG-06","EXP-A-001","EXP-CG06-001","CLM-A-001","CLM-CG06-EXP-001","DR-HUAWEI-CG06-BASELINE","AO-1","AO-2","AO-3","AO-4","AO-5"}
     missing=sorted(required-set(by))
     if missing: errors.append(f"PILOT_REQUIRED_OBJECTS_MISSING:{missing}")
     if not (root/"history/migrations/receipts").is_dir(): errors.append("RECEIPT_DIRECTORY_MISSING")
@@ -170,6 +191,11 @@ def dependency_graph(nodes):
         elif t=="TREND":
             for c in n.get("related_claims",[]): dep[c].add(i)
             for c in n.get("related_capabilities",[]): dep[c].add(i)
+        elif t=="ARCHITECTURE_OPPORTUNITY":
+            for link in n.get("claim_links",[]): dep[link["claim_id"]].add(i)
+            for c in n.get("related_capabilities",[]): dep[c].add(i)
+            for tr in n.get("related_trends",[]): dep[tr].add(i)
+            for d in n.get("related_directions",[]): dep[i].add(d)
         elif t=="DIRECTION":
             for c in n.get("related_claims",[]): dep[c].add(i)
             for c in n.get("related_capabilities",[]): dep[c].add(i)
@@ -196,12 +222,16 @@ def main():
     root=Path(".").resolve(); assert_candidate_root(root)
     errors,warnings,nodes=validate(root)
     projection=build_projection(root)
+    dependency=build_dependency_projection(root)
     current=json.loads((root/"views/graph/current.json").read_text(encoding="utf-8"))
+    dep_current=json.loads((root/"views/graph/dependency.json").read_text(encoding="utf-8"))
     if current!=projection: errors.append("GRAPH_PROJECTION_NOT_DETERMINISTIC")
+    if dep_current!=dependency: errors.append("DEPENDENCY_PROJECTION_NOT_DETERMINISTIC")
     result={
       "status":"PASS" if not errors else "FAIL",
       "errors":errors,"warnings":warnings,
       "counts":projection["counts"],
+      "dependency_counts":dependency["counts"],
       "impact_PAPER_052":impact(nodes,"PAPER-052"),
       "impact_PAPER_009":impact(nodes,"PAPER-009")
     }

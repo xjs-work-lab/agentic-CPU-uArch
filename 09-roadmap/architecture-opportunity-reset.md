@@ -230,3 +230,14 @@ Reframe:
 5. AO-4 Always-On Proactive Front End
 
 This ranking is a Round-15 starting hypothesis, not final convergence.
+
+
+## V2.4 graph state
+AO-1..AO-5 are now canonical ARCHITECTURE_OPPORTUNITY nodes.
+
+The prose in this file remains the Round-15 starting synthesis.
+Detailed evidence roles move into the AO objects and their linked Claims/Evidence Cases.
+
+Round 15A completion requires each AO to expose:
+Problem Signal → Existing Mechanism → Strongest Baseline/Prior Art → Open Gap → Architecture Hypothesis,
+with important negative pressure represented through REBUT / UNDERCUT / SCOPE_LIMIT where appropriate.

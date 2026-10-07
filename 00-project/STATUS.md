@@ -5,7 +5,7 @@ Updated: 2026-10-07
 ```yaml
 migration_phase: CUTOVER_COMPLETE
 research_authority: V2_2
-graph_schema: 2.3
+graph_schema: 2.4
 authority_repository: xjs-work-lab/agentic-CPU-uArch
 historical_source_authority: V1_FROZEN
 historical_source_repository: xiejinsen/agentic-CPU-uArch
@@ -33,9 +33,11 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 448 canonical nodes
-- 792 canonical semantic edges
-- 792 generated reverse edges
+- 453 canonical nodes
+- 837 canonical semantic edges
+- 837 generated reverse edges
+- 787 derived single-direction dependency edges
+- V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -354,3 +356,22 @@ The existing strict gate remains valid only for future product/silicon commitmen
 STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE.
 
 Do not use the commitment gate to suppress early architecture opportunity discovery.
+
+
+## Data-model V2.4 — Opportunity layer
+Round 15 now uses a domain-specific canonical **ARCHITECTURE_OPPORTUNITY** synthesis object.
+
+The shared strategic core remains:
+SOURCE → EVIDENCE_CASE → CLAIM → TREND / DIRECTION → ROADMAP.
+
+CPU/uArch adds:
+CLAIM / TREND / CAPABILITY → ARCHITECTURE_OPPORTUNITY → DIRECTION.
+
+AO-1..AO-5 are canonical DISCOVERY / SEED_MAPPED nodes.
+They are not evidence and not portfolio commitments.
+
+Graph projections:
+- views/graph/current.json — bidirectional navigation projection;
+- views/graph/dependency.json — single-direction inference/dependency projection for graph algorithms.
+
+Round 15A must upgrade each AO from SEED_MAPPED to EVIDENCE_MAPPED using explicit claim roles and real SUPPORT / REBUT / UNDERCUT / SCOPE_LIMIT tension where decision-critical.
