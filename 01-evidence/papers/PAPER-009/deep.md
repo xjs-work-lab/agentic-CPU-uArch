@@ -1,69 +1,127 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+> Evidence Rescue Round 1 re-read under EDP v1 on 2026-10-07.
+> V1 provenance remains the frozen baseline; this page is the current mechanism-level interpretation.
 
-# PAPER-009 — When NPUs Are Not Always Faster: A Stage-Level Analysis of Mobile LLM Inference
+# PAPER-009 — When NPUs Are Not Always Faster
 
-## Source
-- Paper: https://arxiv.org/abs/2605.27435
-- Authors: Pu Li, Jiawen Qi, Qinyu Chen
-- Affiliation: Leiden University / LIACS
-- Venue/status: arXiv preprint, 2026
-- Target: Snapdragon 8 Gen 3 / Hexagon v75 / Android 15
-- Project relevance: M1 / M2
-- Priority: P0
+## Q1 — Problem + target mapping
+The paper asks why mobile NPU offload does not always translate into end-to-end LLM benefit.
 
-## Q1 — What problem is the paper solving, and how does it map to smartphones?
-The paper asks whether NPU offload is always beneficial for mobile LLM inference. It directly measures stage-level CPU/NPU trade-offs on a smartphone-class SoC.
+It directly targets a Snapdragon 8 Gen 3 smartphone with Hexagon v75 and decomposes Prefill and Decode rather than treating “LLM inference” as one homogeneous workload.
 
-## Q2 — Is the problem/new mechanism actually new?
-Heterogeneous placement is old; the new evidence is that **mobile LLM stage granularity and invocation overhead can reverse the expected winner**.
+Project mapping:
+- C: generic CPU↔NPU host/control-path cost;
+- CG-06: current-stack placement crossover evidence.
 
-Classification: Agentic-amplified / generic enabling.
+## Q2 — Novelty / new-regime relevance
+The contribution is a stage-aware benchmarking/decomposition methodology, not a new Agent mechanism.
 
-## Q3 — What falsifiable hypothesis is being tested?
-**Hypothesis:** optimal CPU/NPU placement depends on inference stage and operation granularity; maximal NPU offload can worsen latency/energy.
+Classification: **generic enabling / Agent-amplified**.
 
-## Q4 — What is the research lineage / competing route?
-Competes with “NPU-first” inference design and static offload policies. Complements CORE/PowerBench.
+The paper's novelty for this project is empirical:
+> current mobile CPU↔NPU placement economics are stage/operator/backend dependent.
 
-## Q5 — What is the key technical mechanism / control point?
-Stage-aware heterogeneous placement based on:
-- compute intensity;
-- invocation overhead;
+## Q3 — Falsifiable hypothesis
+If NPU compute throughput alone determines placement, more NPU offload should monotonically improve latency/energy.
+
+Observed falsification:
+- Prefill becomes slower on the evaluated NPU path;
+- Decode core matrix-vector work benefits from NPU, but end-to-end acceleration is much smaller;
+- full/greater offload can increase battery drain.
+
+## Q4 — Competing route / lineage
+Competing interpretations:
+1. NPU-first static offload;
+2. stage-aware CPU/NPU placement;
+3. improved NPU software/operator coverage that removes today's crossover;
+4. later systems such as llm.npu / ShadowNPU that reconstruct or repartition work to make NPU execution more competitive.
+
+Therefore PAPER-009 is **not** a final strongest baseline by itself.
+
+## Q5 — Mechanism / control point
+Mechanism chain:
+
+`LLM stage/operator shape → backend support + arithmetic intensity → dispatch/communication + quantization + compute + fallback → effective latency/energy`
+
+OPMASK isolates:
 - communication;
-- energy.
+- dynamic quantization;
+- NPU computation.
 
-## Q6 — How is the experiment designed?
-Direct mobile measurements on Snapdragon 8 Gen3/Hexagon v75.
+Important mechanisms:
+- Decode lightweight operators pay repeated CPU↔NPU invocation tax;
+- unsupported attention falls back to CPU and introduces synchronization/reordering/copy cost;
+- Prefill performance is affected by backend kernel maturity and 8 MiB VTCM tiling constraints;
+- Decode streaming GEMV can favor NPU scratchpad/DMA behavior.
+
+## Q6 — Experiment design + results
+Platform:
+- Snapdragon 8 Gen 3;
+- Hexagon v75;
+- 16 GB RAM;
+- Android 15;
+- llama.cpp tag b7588.
+
+Models:
+- Llama-3.2-3B;
+- Llama-3.1-8B;
+- Qwen3-4B;
+- Qwen3-8B;
+- Q4_0 quantization.
 
 Reported anchors:
-- prefill: 6-core CPU 1.27–1.62× faster than tested NPU setup;
-- decode: NPU 1.05–1.2× faster;
-- communication can be ~9.9–13.0% of decode;
-- lightweight op call overhead can be 8–22× actual op time;
-- more NPU offload can consume up to 51% more energy in tested cases.
+- Prefill NPU path: 1.27–1.62× slower than 6-core CPU;
+- Decode core MUL_MAT: NPU 1.55–1.67× lower latency;
+- Decode end-to-end benefit: only about 1.05–1.20×;
+- Decode communication: ~9.9–13.0% of NPU path;
+- lightweight-op call-usec: 8–22× op-usec;
+- fallback: roughly 1–1.5× penalty relative to native CPU execution for the cited path;
+- Llama-3.2-3B battery-drain experiment: greater/full NPU offload reported +22%, +32%, +51% across increasing prompt lengths.
 
-## Q7 — What data/artifact/reproducibility support exists?
-Primary preprint public. Artifact availability not currently verified.
+## Q7 — Data / artifact / reproducibility
+Strengths:
+- real smartphone;
+- four models;
+- operator and pipeline decomposition;
+- multiple offload configurations;
+- energy dimension.
 
-## Q8 — Do the results actually support the hypothesis?
-Yes for evaluated models/stages/device.
+Limits:
+- one Snapdragon/NPU generation;
+- one major runtime/backend lineage;
+- current Hexagon operator coverage/kernel quality is part of the causal result;
+- artifact status beyond public paper/thesis material remains not fully verified.
 
-Boundary: software/driver stack and NPU generation matter; results are not universal constants.
+## Q8 — Evidence vs alternative explanations
+### Demonstrated
+Current CPU/NPU crossover and boundary overhead are material on the tested stack.
 
-## Q9 — What is the real contribution / technology control point for us?
-Important warning for M1:
-> “Agent = send everything to NPU” is not a valid system strategy.
+### Not demonstrated
+- Prefill is intrinsically a CPU workload;
+- future/optimized NPUs will preserve the same crossover;
+- CPU wins specifically because of Agent semantics.
 
-CPU can be the better executor for certain short/control stages, reinforcing the need to distinguish planner/model compute from lightweight executor/control work.
+A major alternative explanation is **software/backend immaturity**, explicitly identified by the paper itself.
 
-## Q10 — What should we do next?
-- Keep as P0 heterogeneous-placement evidence.
-- Use stage/invocation overhead in M1 reframe.
-- Avoid assuming accelerator use is always optimal.
+## Q9 — Project decision contribution
+KEEP the following:
+> CPU↔NPU winner is not universally NPU-first; current stage/operator/implementation overhead can reverse the winner.
+
+REMOVE / avoid:
+> “short/control Agent stages are therefore naturally CPU-resident.”
+
+The paper's strongest direct CPU result is compute-intensive Prefill, not an Agent control-path workload.
+
+CG-06 must therefore use PAPER-009 only as crossover/dispatch/fallback evidence and still beat llm.npu/ShadowNPU/Agent.xpu/HeRo-class optimized heterogeneous baselines.
+
+## Q10 — Next action
+- KEEP as P0 decision-critical source.
+- Narrow CLM-CPU-001 boundary.
+- Retain CLM-C-001.
+- Do not promote architecture from PAPER-009.
+- In EXP-CG06-001, explicitly test whether crossover survives improved NPU operator coverage/fusion/persistent dispatch.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for evaluated mobile LLM stages
-- Decision impact: KEEP M1 heterogeneous executor question
-- Open questions: artifact; next-gen NPU transfer
-- Primary source: paper above
+- Evidence maturity: **SYSTEM_VALUE for the evaluated current mobile stack**
+- Decision impact: **NARROW wording; no lane/score change**
+- Open questions: next-gen NPU transfer, optimized backend transfer, sustained thermal behavior
+- Primary source: https://arxiv.org/abs/2605.27435

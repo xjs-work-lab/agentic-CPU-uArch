@@ -1,69 +1,117 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+> Evidence Rescue Round 1 re-read under EDP v1 on 2026-10-07.
+> V1 provenance remains the frozen baseline; this page is the current mechanism-level interpretation.
 
 # PAPER-041 — Cordon: Semantic Transactions for Tool-Using LLM Agents
 
-## Source
-- Paper: https://arxiv.org/abs/2606.17573
-- Authors: Zheng Chen, Hanqing Liu, Duling Xu, Dong Dong, Jialin Li, Bangzheng Pu, Jidong Zhai
-- Venue/status: arXiv preprint, 2026
-- Target: tool-using Agent runtimes
-- Project relevance: effect/commit/rollback; second-Bet audit
-- Priority: P0
+## Q1 — Problem + target mapping
+Per-tool RPC safety checks do not provide a task-scoped boundary for cross-step state/effect composition.
 
-## Q1 — Problem
-Per-tool RPC boundaries do not provide task-scoped commit, rollback, recovery or audit across multi-step Agent workflows with real side effects.
+Cordon asks whether an Agent task can be executed as one semantic transaction with commit/abort/recovery semantics.
 
-## Q2 — Novelty
-Cordon introduces semantic transactions spanning tool intents, result lineage, reversible state, staged external effects and audit metadata.
+Project mapping:
+- A strongest baseline for reconstructible/enforceable Effect/Commit legality;
+- PT-A substrate for explicit effects, validation and bounded recovery.
 
-## Q3 — Hypothesis
-A task-level transactional containment boundary can reduce irreversible-effect failures while preserving benign task completion.
+## Q2 — Novelty / new-regime relevance
+Cordon binds:
+- tool intents;
+- runtime-tracked result lineage;
+- shadow local state;
+- pending external effects;
+- delegated authority;
+- audit/recovery metadata.
+
+Classification: **Agent-native runtime containment**, but not smartphone-specific.
+
+## Q3 — Falsifiable hypothesis
+Cross-step validation at a task-level transaction boundary should catch correlated risks missed by point defenses while preserving benign task completion and practical recovery.
+
+The evaluation supports this within Cordon's mediated runtime boundary.
 
 ## Q4 — Competing route
-Directly pressures any broad project proposal around:
-> Agent transaction / effect-safe commit / rollback runtime.
+Compared conceptually/evaluatively against boundaries such as:
+- prompt/tool point checks;
+- sandbox/process isolation;
+- per-effect guards;
+- post-hoc recovery.
 
-## Q5 — Mechanism
+For this project it also competes with any claim that Effect/Commit legality must be supplied as irreducible Agent semantic state.
+
+## Q5 — Mechanism / control point
+Mechanism chain:
+
+`mediated tool call → task-scoped intent → lineage + authority + staged state/effect → composed validation → commit / abort / approval / audit-compensation`
+
+Key components:
 - transaction manager;
+- result lineage;
 - shadow state;
 - effect outbox;
-- lineage tracking;
-- validation before commit;
-- recovery metadata.
+- authority state;
+- recovery log.
 
-## Q6 — Experiment
-The paper reports adversarial/benign workflow evaluation and reduced irreversible-effect failures with modest overhead; exact normalized system numbers should be re-read before quantitative final-report comparison.
+Crucial boundary:
+Cordon **does not create policy or authority from nothing**.
+Its guarantees depend on relevant effects being mediated/observable and the required policy/authority/effect metadata being available.
 
-## Q7 — Artifact
-Artifact status not yet verified.
+## Q6 — Experiment design + results
+Evaluation includes:
+- 45 risk-bearing multi-tool workflows across nine defense-boundary categories × five transaction-level risk families;
+- five deterministic rollback trajectories;
+- τ-bench and Terminal-Bench benign sanity checks.
+
+Reported:
+- plain execution commits policy-violating effects in 45/45 constructed risk workflows;
+- strategy adapters intercept 14/45 before commit;
+- Cordon intercepts 45/45 before commit;
+- excluding approval wait, transaction-mediated execution reduces mean task time 24.6–27.9% in the reported risky-workflow setup, largely because unsafe chains terminate earlier;
+- token use falls 23.6–28.4%;
+- median rollback primitive latency 4.17 ms;
+- 15/15 resume checks pass;
+- transaction-control path accounts for roughly 22.2–23.4% of measured time in the cited breakdown.
+
+These numbers must not be interpreted as a universal “transactions are faster” claim.
+
+## Q7 — Data / artifact / reproducibility
+Strengths:
+- explicit risk taxonomy;
+- benign benchmarks plus adversarial workflows;
+- recovery tests;
+- detailed runtime cost decomposition.
+
+Limits:
+- risk suite is constructed rather than production trace distribution;
+- approval behavior materially affects wall time;
+- guarantees require tool/runtime mediation;
+- opaque external effects can only enter audit/compensation after the boundary is crossed.
 
 ## Q8 — Evidence vs hypothesis
-**[FACT]** transactional Agent execution is already a concrete systems research line.
+### Demonstrated
+A runtime can enforce substantial task-level commit discipline when it controls and observes the relevant effect path.
 
-## Q9 — Project contribution
-Stage 15C strengthens this paper's role.
+### Not demonstrated
+- universal semantic correctness;
+- universal derivability of effect legality;
+- complete rollback of already-observed external actions;
+- smartphone system value.
 
-Effect/Commit Safety remains required for Candidate A correctness, but Cordon demonstrates that a strong runtime can **construct and enforce** substantial effect/commit legality from:
-- task-scoped transaction state;
-- runtime lineage;
-- shadow state;
-- staged effect outboxes.
+## Q9 — Project decision contribution
+Previous wording “Effect/Commit legality can be runtime-derived” was too broad if read unconditionally.
 
-Therefore:
-> Effect/Commit should not automatically be counted as uniquely Agent-supplied semantic information.
+Correct baseline:
+> substantial Effect/Commit legality can be **constructed/enforced where mediation, observability, policy/authority and effect metadata exist**.
 
-The differentiated semantic burden shifts toward **DemandState / required-progress value**, while transaction-derived legality becomes part of the strongest B4-TX runtime baseline.
-
-Generic transactional Agent runtime still does not qualify as an independent second Bet.
+A's B4-TX remains strong, but only “where available.”
+Any semantic fact outside that mediated/observable boundary cannot be assumed reconstructible.
 
 ## Q10 — Next action
-- KEEP as P0 negative evidence.
-- Fold effect/commit semantics into A correctness/runtime requirements.
-- Do not open a separate transaction Bet unless phone-specific residual appears.
+- KEEP as P0 strongest runtime baseline.
+- Narrow CLM-AGENT-003.
+- Preserve A's differentiated question around RequiredProgress rather than generic transaction handling.
+- Use PT-A experiments to expose opaque/unmediated effect paths rather than assume complete rollback.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE/STRUCTURAL evidence for Agent runtime; phone transfer unproven
-- Decision impact: kill generic transactional-runtime second Bet
-- Open questions: smartphone-specific side-effect path
+- Evidence maturity: **SYSTEM_VALUE for Agent runtime containment; phone transfer unproven**
+- Decision impact: **NARROW strongest-baseline wording; no lane/score change**
+- Open questions: production workload mix, smartphone overhead, opaque tool/effect paths
 - Primary source: https://arxiv.org/abs/2606.17573

@@ -18,6 +18,8 @@ cutover_merge_commit: 68698fd4b4bc6767c480d200fd3483bdc32eaf1b
 post_cutover_verification: PASS
 cutover_branch_cleanup: PASS
 research_content_migrated: true
+evidence_rescue: ACTIVE
+evidence_depth_protocol: EDP_V1
 ```
 
 ## Authority
@@ -56,21 +58,29 @@ Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d3
 - security / confidential execution — platform requirement + research radar
 - proactive / always-on intervention gating — covered inside CG-07; not standalone
 - H-CAL — CLOSED / killed as standalone candidate; contiguous learning retained as workload/evaluation scenario
-- current second-Bet frontier — NONE / UNASSIGNED after Round 13; dynamic Agent orchestration is now an owned C/CG-06 baseline
+- current second-Bet frontier — NONE / UNASSIGNED after Round 13
 - uArch Primary Bet — none
 
 ## Hardware gate
 `STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE`
 
+## Evidence Rescue state
+Frontier Round 14 is **PAUSED** while current portfolio evidence is revalidated under EDP v1.
+
+Active-lane paper audit:
+- 33 unique paper Sources directly ground A / PT-A / C / CG-06 / CG-07;
+- 14 lacked review_depth metadata at audit start;
+- 13/14 were P0;
+- Rescue Round 1 re-reads PAPER-009 / 041 / 051 / 052;
+- no lane/score/maturity reversal from Round 1;
+- remaining active-lane paper debt after Round 1: 10.
+
+Method authority:
+- `00-project/evidence-depth-policy.md`
+- `analysis/audits/evidence-depth-audit-2026-10-07.md`
+- `analysis/audits/decision-backtrace-audit-2026-10-07.md`
+
 ## Operating rule
-Future research resumes from this repository. V1 remains frozen for provenance and historical reference.
+Do not resume frontier expansion until current active-lane decision-critical paper debt is cleared and backtrace audit is rerun.
 
-Current next step: resume frontier reset outside all closed/owned families; direct smartphone serving+learning evidence remains a reopen condition for H-CAL, not an active lane.
-
-
-## Round 13 decision
-- HeRo establishes direct commercial-phone Agent-aware heterogeneous orchestration SYSTEM_VALUE.
-- C evidence maturity upgrades to **SYSTEM_VALUE**; lane/score remain STRATEGIC_ENABLER / 72.0.
-- Agent.xpu + HeRo raise the C/CG-06 strongest software baseline.
-- MobileExplorer maps to PT-A; Jev-Mobile maps to A/PT-A baseline.
-- no new Direction, no second Primary Bet, no uArch candidate.
+Historical Kill lanes are audited only after current active lanes are clean.

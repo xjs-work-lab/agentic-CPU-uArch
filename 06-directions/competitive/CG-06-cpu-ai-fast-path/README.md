@@ -7,7 +7,7 @@ direction_class = "COMPETITIVE_GAP"
 competitive_action = "INVEST"
 score_context = 86.5
 evidence_maturity = "STRUCTURAL_SIGNAL"
-maturity_scope = "direct phone evidence supports stage/operator/numerical-role dependent heterogeneous execution; representative Agent crossover and Huawei target-system value remain unproven"
+maturity_scope = "direct phone evidence supports current-stack stage/operator/numerical-role dependent heterogeneous execution; representative Agent crossover, optimized target-phone NPU comparison and Huawei target-system value remain unproven"
 related_claims = ["CLM-CPU-001", "CLM-CPU-002", "CLM-CPU-003", "CLM-CPU-004", "CLM-CPU-005", "CLM-HUAWEI-001", "CLM-CG06-EXP-001"]
 related_capabilities = ["CAP-ARM-C2-SME2-CPU-AI"]
 +++
@@ -21,8 +21,8 @@ Strategic control point:
 **stage/operator/sub-operator placement + numerical precision role + dispatch/fallback/layout/state reuse across CPU and NPU paths.**
 
 ## Evidence synthesis
-- CLM-CPU-001: CPU↔NPU winner is workload-stage/operator dependent in direct phone evidence.
-- CLM-CPU-002: CPU matrix acceleration materially expands the CPU-local region under evaluated settings.
+- CLM-CPU-001: CPU↔NPU winner is workload-stage/operator/implementation dependent in direct phone evidence; PAPER-009 must not be read as an architecture-general “Prefill belongs on CPU” result.
+- CLM-CPU-002: CPU matrix acceleration materially expands the CPU-local region under evaluated settings; PAPER-052 is a CPU/runtime result and does not establish phone CPU>NPU superiority.
 - CLM-CPU-003: Arm publicly productizes CPU+SME2 for responsive Agentic/local AI.
 - CLM-CPU-004: strong NPU-centric co-design can reclaim CPU/GPU fallback work through prompt/tensor/block and sub-operator numerical-role decomposition.
 - CLM-HUAWEI-001: equivalent Huawei smartphone CPU matrix-AI fast path is not publicly established in the reviewed source set.
@@ -48,6 +48,7 @@ A strong NPU baseline must include, where applicable:
 - mixed precision / quantization-aware placement;
 - sparse residual CPU/GPU work;
 - graph bucketing / specialization;
+- persistent/batched dispatch and improved operator coverage;
 - out-of-order or pipelined cross-engine execution;
 - minimized CPU/GPU residual resource use;
 - dynamic flow/stage criticality and partial-DAG scheduling;
@@ -61,14 +62,16 @@ This strengthens the heterogeneous-control-point thesis while **narrowing the CP
 ## Boundary
 - Strategic gap / adaptation route, not global novelty.
 - Agent-specific value is not established by generic LLM/operator placement.
+- PAPER-009 crossover is current-stack evidence and may shrink as NPU software/operator coverage improves.
+- PAPER-052 proves strong existing-ISA CPU optimization, not phone CPU>NPU superiority or need for new matrix ISA.
 - No inference of Huawei internal absence.
 - No new ISA/uArch conclusion.
 - Exhaust existing compiler/runtime/ISA and optimized-NPU paths first.
 
 ## Next discriminating gate
 EXP-CG06-001 asks whether a representative CPU-fast-path region remains after both:
-1. all CPU-side matrix/layout/state optimizations;
-2. strong NPU-OPT/HETERO-OPT techniques including llm.npu/ShadowNPU plus Agent.xpu/HeRo-class dynamic flow/stage orchestration where applicable.
+1. all CPU-side matrix/layout/state optimizations, including SMEPilot-class placement/pipelining/layout reuse;
+2. strong NPU-OPT/HETERO-OPT techniques including improved dispatch/operator coverage, llm.npu/ShadowNPU plus Agent.xpu/HeRo-class dynamic flow/stage orchestration where applicable.
 
 ## Portfolio state
 No lane/score change:

@@ -1,95 +1,122 @@
-> V1 semantic source copied from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> The compact README owns the V2.2 Source metadata.
+> Evidence Rescue Round 1 re-read under EDP v1 on 2026-10-07.
+> V1 provenance remains the frozen baseline; this page is the current mechanism-level interpretation.
 
-# PAPER-051 — EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures
-
-## Source
-- Paper: https://arxiv.org/abs/2610.03394
-- Authors: Yuhai Long, Yuanxin Wei, Kai Wu, Jinhui Wei, Dan Huang, Jiangsu Du
-- Venue/status: arXiv 2026-10-02; ASPLOS 2027 proceedings metadata reported on paper page
-- Target: end-user edge multi-Agent LLM inference on CPU-GPU UMA
-- Hardware: Apple M4 SoC
-- Project relevance: C / M1 / R3 pressure; CPU matrix-extension and heterogeneous runtime route
-- Priority: P0
+# PAPER-051 — EdgeAgent
 
 ## Q1 — Problem + target mapping
-Concurrent multi-Agent inference on a single end-user device is fragmented by:
-- different drafting difficulty;
-- tool-induced stalls;
-- CPU/GPU shared-memory bandwidth contention;
-- graph-runtime constraints on zero-copy heterogeneous execution.
+Concurrent end-user Agent LLM inference on shared-memory CPU-GPU systems combines:
+- memory-bound decode contention;
+- varying speculative-drafting difficulty;
+- tool-induced stalls.
 
-This is directly relevant to the project's Agent system-control substrate, though the evaluated M4 platform is not a smartphone.
+Project mapping:
+- C system-control baseline;
+- proof that Agent-visible runtime state can add value above a stronger generic execution layer.
 
 ## Q2 — Novelty / new-regime relevance
-The paper co-designs:
-- UMA-aware CPU-GPU tensor execution;
-- SME-optimized CPU kernels;
-- Agent-aware speculative budget allocation;
-- stall-aware suspend/yield and slot redistribution.
+EdgeAgent combines two layers:
 
-The workload irregularity is Agent-amplified/native, while zero-copy UMA execution is a generic systems mechanism.
+### Generic / architecture-aware execution
+- SME CPU kernels;
+- asymmetric CPU/GPU layout;
+- zero-copy UMA tensor parallelism.
+
+### Agent-workload scheduling
+- HAL-based draft-budget allocation;
+- suspend-and-yield on tool stalls.
+
+Classification: **Agent-amplified systems workload**, not a new CPU-uArch primitive.
 
 ## Q3 — Falsifiable hypothesis
-Cross-layer Agent-state-aware scheduling plus architecture-aware CPU/GPU execution should outperform static/batched edge inference when multi-Agent requests are heterogeneous and frequently blocked by tools.
+If multi-Agent heterogeneity and stalls matter, then:
+1. stronger UMA-aware execution should beat ordinary Batch-SD;
+2. allocation based on live drafting productivity should add value;
+3. reclaiming stalled slots should reduce head-of-line blocking.
 
-## Q4 — Research lineage / competing route
-Strong competing/supporting route for:
-- C Efficient System-Control Substrate;
-- generic heterogeneous execution;
-- R3 semantic-to-hardware-interface speculation.
+The paper reports support for all three on Apple M4/M4 Pro-class systems.
 
-It does **not** require a new Agent-specific CPU microarchitecture.
+## Q4 — Competing route
+Important comparators/boundaries:
+- Batch-SD;
+- generic speculative decoding with uniform draft budget;
+- ordinary CPU/GPU co-execution;
+- later Murakkab / Agent.xpu / HeRo-class orchestration as stronger cross-system baselines.
 
-## Q5 — Key mechanism / control point
-Execution layer:
-- asymmetric CPU/GPU memory layouts;
-- zero-copy shared output buffers;
-- custom graph barriers;
-- SME micro-kernels.
+HAL is a runtime proxy from observed acceptance behavior, not an irreducible Agent semantic signal.
 
-Scheduling layer:
-- Historical Accepted Length as drafting-difficulty proxy;
-- dynamic draft budget;
-- tool-stall detection;
-- cooperative suspend/yield;
-- redistribute vacated slots.
+## Q5 — Mechanism / control point
+Mechanism chain:
 
-## Q6 — Experiment
-Reported on Apple M4:
-- UMA-aware execution alone: 1.29x over batched speculative decoding;
-- full system: up to 1.77x under extreme tool-use stall settings.
+`task drafting difficulty → accepted-token history (HAL) → draft-slot allocation → bandwidth efficiency`
 
-The paper also reports CPU/GPU UMA bandwidth contention can erase co-run benefit on large memory-bound matrices.
+and
 
-## Q7 — Artifact / reproducibility
-Public arXiv paper available.
-Code artifact was not verified in this round.
+`tool call stall → scheduler-visible blocked state → suspend/yield → slot backfill → makespan`
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** Cross-layer edge multi-Agent orchestration can create material end-to-end value on an end-user UMA platform.
+Execution chain:
 
-**[BOUNDARY]**
-- Apple M4 is not a Huawei smartphone;
-- part of the gain comes from generic UMA/SME/compiler/runtime engineering;
-- it does not prove a new CPU-uArch feature is necessary.
+`UMA + matrix/vector phase structure → SME/GPU asymmetric layout + zero-copy TP → reduced data movement / higher utilization`
 
-## Q9 — Decision contribution
-Strengthens Candidate C from a mostly instrumentation/substrate hypothesis toward a **second-Bet watch**, but does not promote it.
+## Q6 — Experiment design + results
+The paper evaluates Apple M4 and M4 Pro-class UMA systems.
 
-It also changes the CPU-role thesis:
-> future Agent CPUs may combine orchestration/control with selective local AI compute, rather than acting only as a control plane.
+A pre-experiment uses DeepSeek-R1-Distill-Llama-8B and contrasts deliberate reasoning with predictable structured generation.
 
-R3 remains blocked because the demonstrated value is achievable with runtime scheduling + existing SME/UMA mechanisms.
+Key reported decomposition:
+- optimized SME kernels + zero-copy TP: up to **1.29×** over Batch-SD;
+- HAL scheduling: additional **1.05–1.17×** over the corresponding UMA-aware configuration;
+- offline packing under 5% of makespan in the cited ablation;
+- synthetic tool stalls are injected log-uniformly in [1,10] s and [1,100] s ranges;
+- extreme [1,100] s, N=4 cited case: Batch-SD 213.1 s vs EdgeAgent 120.6 s, **1.77×**.
+
+The 1.77× result is not equivalent to the isolated HAL increment.
+
+## Q7 — Data / artifact / reproducibility
+Strengths:
+- accepted ASPLOS 2027 metadata on the primary paper page;
+- mechanism-level ablation;
+- two Apple SoC classes;
+- explicit mixed Agent workload behavior.
+
+Limits:
+- no commercial smartphone;
+- no NPU;
+- synthetic stall distributions;
+- speculative-decoding benefit depends on draft/target behavior and acceptance dynamics;
+- energy/thermal transfer to handset not established.
+
+## Q8 — Evidence vs alternative explanations
+### Demonstrated
+Agent-workload-visible states can improve scheduling above a stronger generic execution layer.
+
+### Alternative explanation / boundary
+Much of the value is explainable through generic scheduler-visible state:
+- accepted-token history;
+- blocked/tool-stall status;
+- fixed hardware slot capacity.
+
+This is valuable C baseline evidence but weak evidence for non-reconstructible Agent semantics.
+
+## Q9 — Project decision contribution
+KEEP CLM-C-002 and CLM-C-004 with stronger wording discipline.
+
+Do not combine:
+- 1.29× generic execution gain;
+- 1.05–1.17× HAL increment;
+- 1.77× extreme-stall full-system gain
+
+into one “Agent-aware speedup” number.
+
+C remains Strategic Enabler. Direct-phone SYSTEM_VALUE now comes primarily from PAPER-098 HeRo, not from transfer of EdgeAgent.
 
 ## Q10 — Next action
-- KEEP as P0.
-- Include in Portfolio Re-score 3.0 for C.
-- Add strong cross-layer runtime baseline before any semantic-hardware proposal.
-- Benchmark phone-transfer conditions: UMA/shared memory, tool stalls, concurrent Agent count, CPU matrix capability.
+- KEEP as P0 baseline.
+- Use HAL/blocked state as reconstructible G2 signals.
+- Require A/C experiments to beat these proxies.
+- Do not derive phone energy/thermal or uArch conclusions from EdgeAgent.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE on edge Apple M4; smartphone transfer not yet established
-- Decision impact: strengthen C; no R3/uArch promotion
-- Open questions: phone transfer, energy/thermal, NPU comparison, generic-vs-Agent contribution
+- Evidence maturity: **SYSTEM_VALUE on Apple end-user UMA; smartphone transfer not established**
+- Decision impact: **clarify decomposition; no lane/score change**
+- Open questions: real phone stalls, NPU coexistence, energy/thermal
 - Primary source: https://arxiv.org/abs/2610.03394
