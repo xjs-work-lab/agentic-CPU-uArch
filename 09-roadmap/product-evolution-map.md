@@ -1,3 +1,12 @@
++++
+id = "ROADMAP-PRODUCT-2027-2029"
+type = "ROADMAP"
+record_state = "CURRENT"
+roadmap_kind = "PRODUCT_EVOLUTION"
+trend_ids = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8"]
+scope = "2027_2029_SMARTPHONE_AGENTIC_PRODUCT_EVOLUTION"
++++
+
 # 2027–2029 Agentic Smartphone Product Evolution Map
 
 Date: 2026-10-07

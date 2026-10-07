@@ -1,4 +1,4 @@
-name: V2.2 Graph QA
+name: V2.3 Graph QA
 
 on:
   pull_request:
@@ -9,6 +9,7 @@ on:
       - '03-evidence-cases/**'
       - '04-actors/**'
       - '05-capabilities/**'
+      - '06-trends/**'
       - '06-directions/**'
       - '07-validation/**'
       - '08-decisions/**'

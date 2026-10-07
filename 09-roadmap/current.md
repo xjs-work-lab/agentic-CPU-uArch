@@ -2,6 +2,7 @@
 id = "ROADMAP-CURRENT"
 type = "ROADMAP"
 record_state = "CURRENT"
+roadmap_kind = "DIFFERENTIATION_PORTFOLIO"
 direction_ids = ["A", "PT-A", "C", "CG-06", "CG-07", "CG-01", "B-residual", "R1", "R2", "R3"]
 scope = "ACTIVE_V2_2_RESEARCH_AUTHORITY"
 +++
