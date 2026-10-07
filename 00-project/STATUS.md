@@ -19,6 +19,7 @@ evidence_rescue: COMPLETE
 evidence_depth_protocol: EDP_V1
 frontier_round14: COMPLETE
 portfolio_convergence: COMPLETE
+execution_plan_2027: READY
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -263,7 +264,7 @@ T7 Round 14-A final:
 - ownership = C + T5/B-residual + PT-A;
 - no new Direction / no uArch candidate.
 
-Round 14-B T6 seed triage: **COMPLETE / NOT DECISION-COMPLETE**.
+Round 14-B T6: **COMPLETE / DECISION-COMPLETE**.
 
 Initial pressure set:
 - **SkillDroid** — direct mobile GUI evidence that successful LLM trajectories can be compiled into typed, executable interaction programs and replayed without per-step LLM inference.
@@ -305,9 +306,11 @@ T8 final:
 
 No second differentiated Primary Bet emerged from T6/T7/T8. This is an evidence result, not a quota problem.
 
-Next program: **reserve-lane evidence rescue for B-residual / R1 / R2**, followed by the separate patent direct-claim audit before final portfolio convergence.
+Reserve-lane evidence rescue and patent direct-claim audit: **COMPLETE**.
+
+Next program: **2027 discriminating experiment execution** using the shared instrumentation and wave plan in 09-roadmap/2027-execution-plan.md.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.
 
-Reserve-lane paper rescue and patent direct-claim audit remain mandatory before final portfolio convergence.
+Those evidence-integrity gates are complete. Future portfolio changes must come from measured experiment results or materially new evidence, not from reopening already-closed broad novelty arguments.
