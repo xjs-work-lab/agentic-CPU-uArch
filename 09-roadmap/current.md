@@ -72,30 +72,37 @@ The reviewed public source set still lacks a direct commercial-phone experiment 
 ## Current strategic gap
 Second differentiated Primary Bet remains **UNFILLED**.
 
+
 ## Current research frontier
-**FRONTIER SEARCH PAUSED FOR EVIDENCE RESCUE.**
+**FRONTIER SEARCH PAUSED PENDING RESCUE-1B QA.**
 
-## Evidence Rescue 1A — PT-A
-PT-A remains **PLATFORM_TRACK / 80.0 / SYSTEM_VALUE**, but deep reading strengthens its contract.
+## Evidence Rescue 1B — A
+A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
 
-The platform question is no longer merely “GUI vs CLI vs tools.”
-It is now:
-> **capability/authority-aware routing → fresh target/context-bound actuation → OutcomeReceipt → verification → bounded recovery.**
+Its differentiated core is now deliberately narrow:
 
-Key corrections:
-- ClawMobile is real-phone runtime evidence, but its model inference is remote.
-- Beyond-GUI proves action-surface heterogeneity under ADB/benchmark capabilities, not unconditional retail-phone CLI entitlement.
-- HybridCUA shows naive addition of CLI can hurt; selective routing is a strong software baseline.
-- PhoneHarness and UIAnchor support mixed/verifiable execution but do not isolate verification as the sole cause of whole-system gains.
-- PAPER-101 Action Rebinding adds a context-integrity residual: an action may be delivered to a different foreground context than the one observed.
-- PAPER-102 VeriGUI confirms verification/recovery is software-realizable and causally valuable, further raising the baseline.
+> **Does explicit Agent-internal DemandState / RequiredProgress contain end-outcome-relevant information that a strongest long-history + runtime-state + utility/SLO + topology + legality baseline cannot reconstruct?**
 
-New gate: `EXP-PTA-002`.
-No uArch promotion.
+Deep-read corrections:
+- PAPER-013 shows speculative/cancel/commit state is substantially runtime-visible and has negative transfer on naturalistic streaming instructions.
+- PAPER-015 establishes proactive demand/authorization states, but effectful execution is already confirmation-gated.
+- PAPER-043 is ICLR 2025 and shows behavioral history is learnable while false alarms remain substantial.
+- PAPER-044 strengthens B4-TX with real, per-user, time-based long-history prediction.
+- PAPER-050 strengthens runtime-derived Effect/Commit legality while exposing irreversibility/traceability barriers.
+
+`EXP-A-001` is now a matched-observability residual test.
+If B4-TX reproduces nearly all B6-Demand value, A must be downgraded or killed as differentiated research.
+
+No SYSTEM_VALUE or hardware/uArch promotion.
+
+## Evidence-depth state
+Pending QA, the five primary lanes are expected to have **0 paper-depth warnings**.
+The remaining **12** current-roadmap paper warnings are in B-residual / R1 / R2.
 
 ## Next
-Complete **Rescue-1B for A** before resuming Frontier Round 14.
-
+Run Rescue-1B Graph QA and primary-lane backtrace validation.
+If clean, unlock Frontier Round 14.
+Reserve-lane/patent rescue remains required before final portfolio convergence.
 
 ## Round 13 — Agent-flow heterogeneous SoC orchestration
 
