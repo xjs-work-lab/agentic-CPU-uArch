@@ -18,6 +18,7 @@ research_content_migrated: true
 evidence_rescue: COMPLETE
 evidence_depth_protocol: EDP_V1
 frontier_round14: COMPLETE
+portfolio_convergence: COMPLETE
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -28,9 +29,9 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 447 canonical nodes
-- 769 canonical semantic edges
-- 769 generated reverse edges
+- 448 canonical nodes
+- 792 canonical semantic edges
+- 792 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -188,7 +189,25 @@ Patent direct-claim audit: **13 / 13 COMPLETE**.
 Current-roadmap paper-depth debt: **0**.
 Evidence Rescue: **COMPLETE**.
 
-Next gate: **final portfolio convergence** — reconcile all rescued evidence, scores/lanes, product trends, Primary Bets / Strategic Reserves / Kill items and experiment gates into the final 2027–2029 roadmap without quota-filling.
+Final portfolio convergence: **COMPLETE**.
+
+Frozen management conclusion:
+- differentiated Primary Bet: **A only**;
+- second differentiated Primary Bet: **intentionally UNFILLED**;
+- competitive/product investment: **CG-06 INVEST**;
+- platform must-build tracks: **PT-A PLATFORM_TRACK + C STRATEGIC_ENABLER**;
+- measured competitive options: **CG-07 EXPLORE + CG-01 BENCHMARK**;
+- Strategic Reserves: **B-residual + R1 + R2**;
+- hardware semantic-hint route: **R3 BLOCKED**;
+- uArch Primary Bet: **none**.
+
+No score, lane or maturity was changed merely to satisfy a portfolio quota.
+
+Leadership view:
+09-roadmap/final-2027-2029.md
+
+Next execution phase:
+run the 2027 discriminating experiment program before opening any new hardware/uArch candidate.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.

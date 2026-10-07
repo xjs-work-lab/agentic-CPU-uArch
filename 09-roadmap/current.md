@@ -480,3 +480,56 @@ The next pass must re-evaluate the complete evidence set and freeze:
 - 2027–2029 product-evolution map;
 - PoC / experiment gates and downgrade/kill criteria;
 - whether A remains the only differentiated Primary Bet.
+
+
+# Final Portfolio Convergence — 2026-10-07
+
+**CONVERGED / NO QUOTA FILLING.**
+
+Canonical score/lane state is frozen unchanged after:
+- decision-critical paper debt → 0;
+- patent direct-claim audit → 13/13 complete;
+- Round 14 frontier coverage → complete.
+
+## Differentiated research
+**A is the only Primary Bet.**
+
+A remains provisional:
+- 82.5;
+- SIMULATION_SUPPORT;
+- decisive gate = EXP-A-001.
+
+If B4-TX captures nearly all B6-Demand value or residual is <~5%, A must be downgraded or killed rather than protected by portfolio quota.
+
+Second differentiated Primary Bet remains intentionally **UNFILLED**.
+
+## Product / platform commitments that are not differentiated Primary Bets
+- **CG-06 — INVEST / 86.5:** execute the CPU↔NPU fast-path crossover program; do not mislabel competitor-gap adaptation as global novelty.
+- **PT-A — PLATFORM_TRACK / 80.0 / SYSTEM_VALUE:** build verified, authority-aware, context-bound Agent actuation contracts.
+- **C — STRATEGIC_ENABLER / 72.0 / SYSTEM_VALUE:** build the software/runtime orchestration substrate; only A→C residual may later earn differentiated credit.
+- **CG-07 — EXPLORE / 75.0:** dedicated always-on domain remains measurement-gated.
+- **CG-01 — BENCHMARK / 71.0:** Flex Cache/shared-cache handoff remains competitor benchmark/adaptation, not a generic-cache novelty claim.
+
+## Strategic Reserves
+Keep exactly three measurement reserves:
+- **B-residual — 63.0:** semantic→physical state coherence residual;
+- **R1 — 55.5:** post-ready semantic timing residual;
+- **R2 — 54.5:** CPU continuation-locality residual.
+
+Each reserve requires representative phone evidence and >=~5% incremental value over its strongest baseline.
+
+## Do-Not-Invest / Kill discipline
+- **R3:** no semantic-hint/uArch program while parent gates remain blocked.
+- T6/T7/T8 standalone differentiated Bets: closed; product trends remain.
+- H-CAL and H-PAM standalone Bets: closed.
+- broad persistent-state fabric, broad Ready≠Release novelty and broad generic locality hardware: do not reopen without residual evidence.
+- no new ISA/cache/TLB/predictor structure from workload relevance or prior-art whitespace alone.
+
+## 2027–2029 management view
+See **09-roadmap/final-2027-2029.md**.
+
+## Next execution phase
+2027 is primarily a discriminating-measurement year:
+EXP-A-001, EXP-CG06-001, EXP-PTA-001/002, EXP-C-001, EXP-CG07-001, EXP-CG01-001, EXP-BR-001, EXP-R1-001 and EXP-R2-001.
+
+R3/EXP-R3-001 remains blocked until a parent path reaches SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause.
