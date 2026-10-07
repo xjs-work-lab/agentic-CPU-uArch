@@ -55,10 +55,10 @@ Explicit approval:
 - post-cutover verification: **PASS**
 
 ## Current graph
-- 312 canonical nodes
-- 510 canonical semantic edges
-- 510 generated reverse edges
-- projection refreshed after Frontier Round 8 H-PAM final closure
+- 330 canonical nodes
+- 526 canonical semantic edges
+- 526 generated reverse edges
+- projection refreshed after Frontier Round 9 confidential Agent isolation coverage
 - last full cutover QA hard errors: 0
 
 ## Portfolio invariant
@@ -75,7 +75,8 @@ Explicit approval:
 - second differentiated Primary Bet — intentionally unfilled
 - system-control second-Bet search — converged / no standalone Bet found
 - H-PAM — CLOSED / killed as standalone candidate; persistent Agent memory retained as workload/evidence dimension
-- current second-Bet frontier — NONE / UNASSIGNED; frontier reset required
+- current second-Bet frontier — NONE / UNASSIGNED; frontier reset ongoing
+- security / confidential execution — covered as platform requirement + research radar; not a Direction/hypothesis
 - uArch Primary Bet — none
 
 ## Hardware gate
