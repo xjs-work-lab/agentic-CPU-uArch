@@ -1,6 +1,6 @@
 # H-CAL — Contiguous Agent Learning
 
-Status: **ANALYSIS HYPOTHESIS / NARROWED / NOT A DIRECTION**
+Status: **CLOSED / KILLED AS STANDALONE CANDIDATE**
 
 Updated: 2026-10-07
 
@@ -53,3 +53,25 @@ Kill H-CAL as standalone if adaptation can be deferred/offloaded, generic traini
 
 ## Next
 Run one targeted residual search for direct mobile evidence of concurrent inference + local adaptation / online Agent learning / adapter-version churn. Do not broaden back into generic training literature unless it challenges the strongest baseline.
+
+
+## Round 12 final decision
+
+**H-CAL is closed as a standalone second-Bet / Direction candidate.**
+
+The final challenge adds:
+- PAPER-094 K-Merge: evolving adapter collections are explicitly software-managed under storage constraints;
+- PAPER-095 MobiLoRA: LoRA identity, shared semantic context and mobile application lifecycle are already software-visible KV management inputs;
+- PAPER-096 ZeroLock: training dependency and activation lifetime are partly algorithm choices rather than fixed hardware constraints.
+
+### Merge map
+- foreground/background learning admission, energy and thermal budget → C;
+- adapter-version publication / stale KV correctness → B-residual;
+- cache residency/locality → R2 / CG-01 only after direct target-phone residual;
+- training kernels/layout/backward optimization → generic platform/compiler work;
+- continual personalization → workload/evaluation scenario.
+
+### Reopen rule
+Only direct target-phone evidence of live Agent serving + repeated local adaptation may reopen H-CAL, and only if a material residual survives LOCAL + MobiLoRA + strongest mobile-training/scheduling baselines and cannot be represented by C/B/R2.
+
+This closure does not claim contiguous learning is unimportant. It says the reviewed evidence does not justify a distinct H-CAL-owned CPU/system/uArch lane.

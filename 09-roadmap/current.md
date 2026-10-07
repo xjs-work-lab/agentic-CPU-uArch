@@ -53,24 +53,27 @@ H-FIB/system-control converged without a standalone Bet. H-PAM is killed as stan
 
 This is an evidence result, not a quota problem.
 
-## Current research frontier — H-CAL
-**H-CAL — Contiguous Agent Learning**  
-Status: **ANALYSIS HYPOTHESIS / NARROWED / NOT A DIRECTION**
+## H-CAL final decision
+**H-CAL — Contiguous Agent Learning: CLOSED / KILLED AS STANDALONE CANDIDATE.**
 
-PAPER-089 exposes a genuinely Agent-native regime: live inference continues while feedback/judge/training work updates adapters and changes KV-cache validity.
+Round 12 adds:
+- PAPER-094 K-Merge — adapter lifecycle/merge is software-managed;
+- PAPER-095 MobiLoRA — LoRA identity, mobile app lifecycle and KV retention/reuse are strong software-visible signals;
+- PAPER-096 ZeroLock — training update dependency and activation lifetime can be changed algorithmically, including in an Android prototype.
 
-PAPER-091 establishes that sustained phone training has real battery/thermal/runtime cost.
+The remaining workload is merged into existing ownership:
+- update timing / foreground protection / thermal budget → **C**;
+- adapter publication / stale-KV correctness → **B-residual**;
+- cache locality/residency → **R2 / CG-01** only with direct phone residual;
+- backward kernels/layout/training runtime → generic platform/compiler optimization.
 
-Strong generic baselines already capture much of mobile training:
-- FBLayout — layout/data movement;
-- MobileFineTuner — mobile-native memory/energy runtime;
-- MeSP — activation-memory reduction;
-- repaired phone backward kernel — major speed/energy recovery.
+The reviewed public source set still lacks a direct commercial-phone experiment combining live Agent serving with repeated local adaptation. That is a **reopen condition**, not evidence for promotion.
 
-### Surviving question
-> On a real smartphone, does **live Agent serving + repeated adaptation + versioned KV/model state** create a reusable residual beyond C, B-residual and R2 after strongest training/runtime baselines?
+## Current strategic gap
+Second differentiated Primary Bet remains **UNFILLED**.
+
+## Current research frontier
+**NONE / UNASSIGNED.**
 
 ## Next
-Run one targeted residual round for direct smartphone concurrent inference + local adaptation / online Agent learning.
-
-Promotion requires smartphone SYSTEM_VALUE plus software insufficiency. Kill/merge if the residual is reconstructible by C/B/R2/runtime software.
+Resume the frontier reset outside already-covered families. Do not reopen H-CAL unless direct target-phone evidence shows a material residual beyond LOCAL + MobiLoRA + strongest mobile-training/scheduling baselines that existing C/B/R2 software cannot represent.
