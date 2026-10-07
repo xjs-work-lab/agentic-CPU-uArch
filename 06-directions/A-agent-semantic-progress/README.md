@@ -28,7 +28,7 @@ Can explicit DemandState preserve >=~5% RequiredProgress/end-outcome value over 
 B4-TX includes all information and transformations a strong software/runtime stack can already reconstruct or enforce, including:
 - long-history demand prediction;
 - ordinary QoS/dependency/device state;
-- transaction/sandbox/lineage-derived Effect/Commit legality where available;
+- transaction/sandbox/lineage-derived Effect/Commit legality **where tools/effects are mediated and observable and required policy/authority metadata exist**;
 - explicit program/control-flow position where the Agent runtime exposes it;
 - persistent task variables / data-flow state;
 - environment/belief state and step-specific history where reconstructible;
@@ -44,6 +44,7 @@ B4-TX includes all information and transformations a strong software/runtime sta
 - personalized app/user-history background-usefulness proxies;
 - explicit time/utility functions, utility-density/energy-aware ordering and low-value/infeasible-work abort where supplied by the application.
 
+PAPER-041 / CLM-AGENT-003 is now explicitly bounded: semantic transactions can strongly construct/enforce commit discipline inside a mediated/observable effect path, but do not make all semantic legality runtime-derivable.
 PAPER-056 / CLM-AGENT-004 shows semantic execution-state information can have material value in software.
 PAPER-058 / CLM-AGENT-005 further shows stable mobile-GUI task semantics can be compiled into executable scripts and reusable static state, sharply reducing on-device step-wise inference overhead.
 PAPER-060 / CLM-MOBILE-002 shows that generic mobile interaction semantics can already be lowered into scheduler-visible VIP/dependency state with measurable phone QoE value.

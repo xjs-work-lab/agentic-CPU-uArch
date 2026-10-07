@@ -102,6 +102,31 @@ def validate(root: Path):
             warnings.append(f"UNCONNECTED_SOURCE:{n['id']}")
         if n["type"]=="SOURCE" and n.get("independence_assessment")=="UNKNOWN":
             warnings.append(f"INDEPENDENCE_UNKNOWN:{n['id']}")
+
+    # Evidence Depth Policy v1 — rescue-mode warnings.
+    # A paper is decision-critical here when it directly premises a supported claim used by
+    # a Direction scheduled in the current ROADMAP. During rescue mode this is warning-only.
+    roadmap_dirs=set()
+    for n in nodes:
+        if n["type"]=="ROADMAP" and n.get("record_state")=="CURRENT":
+            roadmap_dirs.update(n.get("direction_ids",[]))
+    critical_source_dirs=defaultdict(set)
+    for d in sorted(roadmap_dirs):
+        dn=by.get(d)
+        if not dn or dn.get("type")!="DIRECTION":
+            continue
+        for c in dn.get("related_claims",[]):
+            for ec in support.get(c,[]):
+                for p in ec.get("premises",[]):
+                    if p.get("ref_kind")=="SOURCE":
+                        critical_source_dirs[p["ref_id"]].add(d)
+    for sid,ds in sorted(critical_source_dirs.items()):
+        src=by.get(sid,{})
+        if src.get("source_type")=="paper" and src.get("priority") in {"P0","P1"}:
+            depth=str(src.get("review_depth",""))
+            if not depth.startswith("FULL_10Q"):
+                warnings.append(f"DECISION_CRITICAL_PAPER_NOT_FULL_10Q:{sid}:{','.join(sorted(ds))}")
+
     required={"A","CG-06","EXP-A-001","EXP-CG06-001","CLM-A-001","CLM-CG06-EXP-001","DR-HUAWEI-CG06-BASELINE"}
     missing=sorted(required-set(by))
     if missing: errors.append(f"PILOT_REQUIRED_OBJECTS_MISSING:{missing}")

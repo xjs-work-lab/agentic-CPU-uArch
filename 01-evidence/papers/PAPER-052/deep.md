@@ -1,104 +1,130 @@
-> V1 semantic source copied/repacked from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> Do not reinterpret this page as V2.2 metadata authority; the compact README owns the Source object.
+> Evidence Rescue Round 1 re-read under EDP v1 on 2026-10-07.
+> V1 provenance remains the frozen baseline; this page is the current mechanism-level interpretation.
 
-# PAPER-052 — SMEPilot: Characterizing and Optimizing LLM Inference with Scalable Matrix Extensions
-
-## Source
-- Paper: https://arxiv.org/abs/2606.16332
-- Authors: Feiyang Chen, Haibo Chen
-- Affiliation: IPADS, Shanghai Jiao Tong University
-- Venue/status: arXiv preprint, 2026-06-15
-- Target: LLM inference on SME-enabled CPUs
-- Evaluated platforms include MediaTek Dimensity 9500 phone, Apple M4 Pro, and KunPeng 920 server
-- Project relevance: CPU-resident Agent AI fast path; LLVM/runtime/operator placement; competitor-gap CG-06
-- Priority: P0
+# PAPER-052 — SMEPilot
 
 ## Q1 — Problem + target mapping
-Modern CPUs increasingly include matrix extensions, but LLM operators differ in arithmetic intensity, vector behavior, layout needs and memory pressure. Blindly using matrix units is not optimal.
+SME-enabled CPUs contain both ordinary vector cores and matrix-extension resources, but LLM operators vary sharply in arithmetic intensity, shape and layout requirements.
 
-This maps directly to a possible smartphone CPU role beyond orchestration:
-> low-latency / small-shape AI execution on CPU matrix extensions.
+Project mapping:
+- CG-06 CPU-local AI feasibility;
+- LLVM/runtime/operator placement;
+- CPU-side strongest baseline before proposing new ISA/uArch.
 
 ## Q2 — Novelty / new-regime relevance
-SMEPilot is not an Agent-specific architecture.
-It is a runtime for choosing:
+SMEPilot is not Agent-specific.
+
+It introduces a CPU-internal heterogeneous execution engine choosing:
 - CPU-only;
 - SME-only;
 - cooperative SME+CPU
 
-per operator/shape, while retaining packed layout state.
+per operator shape.
 
-For this project it is primarily **competitive/adaptation evidence**, not global Agent novelty.
+Classification: **generic enabling / competitive baseline**.
 
 ## Q3 — Falsifiable hypothesis
-Phase/operator-aware placement between ordinary CPU cores and SME should outperform one-size-fits-all CPU execution for LLM inference.
+A roofline/shape-aware runtime coordinating SME and CPU vector cores should outperform conventional CPU inference that treats matrix extensions as a simple replacement kernel.
 
-## Q4 — Research lineage / competing route
-Competes with:
-- NPU-first inference;
-- GPU offload;
-- conventional vector CPU inference;
-- static SME-only execution.
+The ablation supports this on evaluated SME platforms.
 
-It raises the bar for any thesis that the CPU should only orchestrate AI engines rather than execute AI stages.
+## Q4 — Competing route
+Relevant competing routes:
+- llama.cpp CPU baseline;
+- GPU inference;
+- NPU-first / CPU-NPU heterogeneous systems;
+- static SME-only kernels.
+
+Critical project boundary:
+SMEPilot does not directly evaluate phone CPU vs NPU.
 
 ## Q5 — Mechanism / control point
-- roofline-guided placement;
-- tile-level work partitioning;
-- SME matrix phases + CPU vector phases;
-- inter-phase pipelining;
-- layout-state reuse to avoid repeated packing.
+Mechanism chain:
 
-This is highly compatible with compiler/runtime expertise.
+`operator shape + arithmetic intensity → roofline placement → CPU / SME / cooperative execution`
 
-## Q6 — Experiment
-Across Llama-3.2-3B, Qwen3-4B and Qwen3-30BA3B on phone/PC/server platforms, the paper reports up to **3.94x** end-to-end improvement.
+Three implementation gaps:
+1. **spatial utilization** → tile-level CPU+SME partition;
+2. **temporal bubbles** → pipeline SME matrix work with CPU vector/softmax phases;
+3. **layout compatibility** → layout becomes runtime state; static weights pack off-path and reusable activations/KV state use producer-side packed layout.
 
-Important comparison:
-the same logical operator may prefer CPU, SME or mixed execution depending on phase and shape.
+## Q6 — Experiment design + results
+Platforms:
+- Apple M4 Pro CPU;
+- MediaTek Dimensity 9500 smartphone SoC;
+- KunPeng 920 server CPU.
 
-## Q7 — Artifact / reproducibility
-Public arXiv paper available.
-SMEPilot's own research artifact/code is still not established in the current source set.
+Models:
+- Llama-3.2-3B;
+- Qwen3-4B;
+- Qwen3-30B-A3B, with 4-bit weights for the large MoE configuration.
 
-Independent engineering reproducibility is now stronger:
-- TOOL-012 PyTorch/ExecuTorch reported SME2 speedups on a vivo X300 smartphone for SqueezeSAM;
-- TOOL-013 Arm SME2 ExecuTorch Profiling Kit provides a public SME2-on/off Android/macOS profiling workflow with ETDump CSV/operator breakdown generation.
+Workloads include long-context processing, QA and long generation.
 
-PyTorch/ExecuTorch reported:
-- INT8 556 ms -> 304 ms (1.83x);
-- FP16 1163 ms -> 298 ms (3.90x).
+Baseline:
+- llama.cpp default CPU backend.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** CPU matrix extensions can materially change the feasible region for on-device AI.
+Reported across evaluated configurations:
+- up to **3.94×** end-to-end speedup;
+- removing tile partition increases GEMM latency **1.46×**;
+- removing attention pipeline increases prefill-attention latency **2.07×**;
+- naive on-path packing increases cited decode GEMV latency **0.52 ms → 1.71 ms**.
 
-**[BOUNDARY]**
-SMEPilot is LLM inference, not an end-to-end Agent benchmark; the up-to number is not a universal speedup.
+Power:
+- measured on Apple M4 Pro / Qwen3-4B / Ruler-4K;
+- energy **482.813 J → 233.931 J**, about **0.485×** baseline.
 
-## Q9 — Decision contribution
-Creates a new strategic-gap candidate:
+GPU comparison:
+- Apple M4 Pro only;
+- SMEPilot reaches roughly **0.72–0.96×** GPU performance in the reported comparison.
 
-> **CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path**
+## Q7 — Data / artifact / reproducibility
+Strengths:
+- phone + PC + server platforms;
+- dense + MoE models;
+- explicit ablations;
+- real SME/SME2 implementations using KleidiAI/ACLE.
 
-This should not be framed as globally novel.
-It is retained because:
-- Arm is productizing SME2 explicitly for mobile Agentic AI;
-- real phone measurements show large CPU inference acceleration;
-- equivalent Huawei smartphone CPU matrix-AI capability is not publicly established in the current source set;
-- CPU/compiler/runtime is within the team's controllable scope.
+Limits:
+- energy measured only on M4 Pro;
+- no direct smartphone NPU baseline;
+- no Agent workload;
+- sustained phone thermal behavior not established;
+- headline “up to” speedup must not be assigned to every device/workload.
 
-It also corrects the project thesis from “CPU mainly control substrate” to a **dual-role CPU**:
-1. orchestration/system control;
-2. selective latency-critical/local AI execution where CPU startup/data-locality/shape economics win.
+## Q8 — Evidence vs alternative explanations
+### Demonstrated
+CPU matrix extensions plus runtime/layout co-design can materially improve CPU LLM inference.
+
+### Not demonstrated
+- CPU wins over smartphone NPU;
+- Agent fast path is CPU-resident;
+- new ISA beyond existing SME is needed.
+
+Indeed, the paper is evidence that **software/runtime exploitation of existing ISA is a strong baseline**.
+
+## Q9 — Project decision contribution
+KEEP CLM-CPU-002:
+> existing CPU matrix acceleration can materially expand the CPU-local AI region.
+
+NARROW interpretation:
+CG-06 is not justified by SMEPilot alone.
+Its competitive-gap case depends on combined evidence and the future crossover experiment.
+
+The key positive opportunity is partly compiler/runtime:
+- operator placement;
+- tile partition;
+- phase pipelining;
+- persistent layout state.
 
 ## Q10 — Next action
 - KEEP as P0.
-- Add CG-06 to competitive-gap map.
-- Do not propose new matrix ISA before checking Huawei public capability and existing Arm/Qualcomm/MediaTek prior art.
-- Design a strongest-baseline phone experiment versus NPU offload including launch/transfer/sync/energy/thermal/QoE.
+- Treat SMEPilot-class optimization as a mandatory CPU baseline.
+- Require optimized NPU/HETERO comparison on the same target phone.
+- Do not propose new matrix ISA until existing SME-class software capture is exhausted.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for SME-enabled CPU inference; STRUCTURAL_SIGNAL for Agent fast-path transfer
-- Decision impact: new Adaptation/Differentiation candidate; refine CPU-role thesis
-- Open questions: Huawei phone capability; exact Agent stage mix; CPU-vs-NPU crossover
+- Evidence maturity: **SYSTEM_VALUE for CPU inference; STRUCTURAL_SIGNAL for Agent transfer**
+- Decision impact: **narrow CPU-vs-NPU interpretation; no lane/score change**
+- Open questions: target-phone CPU/NPU crossover, phone energy/thermal, Agent stage mix
 - Primary source: https://arxiv.org/abs/2606.16332

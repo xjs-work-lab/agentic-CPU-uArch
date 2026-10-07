@@ -8,29 +8,24 @@ title = "EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Age
 primary_url = "https://arxiv.org/abs/2610.03394"
 priority = "P0"
 evidence_role = "C system-control evidence: generic UMA/SME optimization plus incremental Agent-aware scheduling"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
 origin_paths = ["03-academic/paper-10q/PAPER-051.md", "analysis/stage16a/public_evidence/README.md", "analysis/stage16a/results/pass2-public-evidence-summary.md"]
 origin_blobs = ["4fae7a001ce8c3aaeceabc85205eadf2950afc6d", "21c60cd65c7148b97792a62e7570100ff5657f1e", "0e505a7589f0f6469836d1a9f0cfa6add8d69b43"]
 authors = ["Yuhai Long", "Yuanxin Wei", "Kai Wu", "Jinhui Wei", "Dan Huang", "Jiangsu Du"]
-venue = "arXiv 2026-10-02; ASPLOS 2027 proceedings metadata reported on paper page"
+venue = "ASPLOS 2027 / arXiv 2026-10-02"
 +++
 
-# PAPER-051 — EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures
+# PAPER-051 — EdgeAgent
 
 ## 30-second read
-- **Why it matters:** Separates substantial generic heterogeneous-execution gains from an additional Agent-aware scheduling increment on an end-user multi-Agent edge platform.
-- **What it establishes:** Generic cross-layer execution optimization can be material; Agent-aware stall/scheduling logic can add further value beyond that stronger execution layer in the evaluated M4 setting.
-- **Boundary:** Apple M4/M4 Pro-class edge system, not a Huawei smartphone; does not prove a new CPU-uArch feature is required.
-- **Primary source:** https://arxiv.org/abs/2610.03394
+- EdgeAgent combines a generic UMA-aware execution layer with Agent-workload scheduling on Apple M4/M4 Pro-class hardware.
+- UMA-aware SME kernels + zero-copy tensor parallelism contribute up to 1.29× over Batch-SD in the reported ablation.
+- HAL-based draft-budget scheduling adds about 1.05–1.17× over the corresponding UMA-aware configuration.
+- Under synthetic log-uniform tool stalls up to [1,100] s, suspend-and-yield contributes to a headline 1.77× makespan improvement in the extreme reported case.
+- Boundary: Apple CPU-GPU UMA, synthetic stall injection, no smartphone/NPU transfer proof.
+- Primary source: https://arxiv.org/abs/2610.03394
 
-## Quantitative anchors preserved from V1 Stage16A
-- Generic/cross-layer UMA-aware SME + zero-copy execution: up to **1.29x** over Batch-SD.
-- Agent-aware HAL scheduling on top of that stronger configuration: **1.05–1.17x** additional speedup.
-- V1 normalized equivalent time-reduction range for that incremental factor: approximately **4.76–14.53%**.
-
-These numbers remain scoped to the evaluated Apple M4/M4 Pro-class EdgeAgent setting.
-
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN`.
+See [deep.md](deep.md) for EDP v1 FULL_10Q.
