@@ -882,6 +882,11 @@
       "path": "08-decisions/events/DEC-A-006.md"
     },
     {
+      "id": "DEC-A-007",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-A-007.md"
+    },
+    {
       "id": "DEC-BR-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-BR-001.md"
@@ -2553,6 +2558,12 @@
     },
     {
       "source": "A",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-A-007",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "A",
       "relation": "HAS_EXPERIMENT",
       "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
@@ -3249,6 +3260,12 @@
     },
     {
       "source": "CLM-A-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-007",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-A-001",
       "relation": "USED_BY_DIRECTION",
       "target": "A",
       "provenance": "GENERATED_REVERSE"
@@ -3263,6 +3280,12 @@
       "source": "CLM-AGENT-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-007",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -3291,6 +3314,12 @@
     },
     {
       "source": "CLM-AGENT-002",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-007",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-002",
       "relation": "USED_BY_DIRECTION",
       "target": "A",
       "provenance": "GENERATED_REVERSE"
@@ -3311,6 +3340,12 @@
       "source": "CLM-AGENT-003",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AGENT-003",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-007",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5313,6 +5348,42 @@
     },
     {
       "source": "DEC-A-006",
+      "relation": "TRIGGER_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
+      "relation": "SUBJECT",
+      "target": "A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-A-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-AGENT-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-AGENT-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-AGENT-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-A-007",
       "relation": "TRIGGER_EXPERIMENT",
       "target": "EXP-A-001",
       "provenance": "CANONICAL_SEMANTIC"
@@ -7690,6 +7761,42 @@
     {
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
+      "target": "PAPER-013",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-015",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-041",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-043",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-044",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
+      "target": "PAPER-050",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "INPUT_SOURCE",
       "target": "PAPER-056",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -7769,6 +7876,12 @@
       "source": "EXP-A-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-A-006",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EXP-A-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-A-007",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8385,8 +8498,20 @@
     },
     {
       "source": "PAPER-013",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-013",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-A-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-015",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8583,6 +8708,12 @@
     },
     {
       "source": "PAPER-041",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-041",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-A-003-A",
       "provenance": "GENERATED_REVERSE"
@@ -8619,8 +8750,20 @@
     },
     {
       "source": "PAPER-043",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-043",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-A-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-044",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8663,6 +8806,12 @@
       "source": "PAPER-049",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-R2-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-050",
+      "relation": "INPUT_TO_EXPERIMENT",
+      "target": "EXP-A-001",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -9837,8 +9986,8 @@
     }
   ],
   "counts": {
-    "nodes": 383,
-    "canonical_semantic_edges": 610,
-    "generated_reverse_edges": 610
+    "nodes": 384,
+    "canonical_semantic_edges": 622,
+    "generated_reverse_edges": 622
   }
 }
