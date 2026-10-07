@@ -29,8 +29,8 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
 - 408 canonical nodes
-- 702 canonical semantic edges
-- 702 generated reverse edges
+- 703 canonical semantic edges
+- 703 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
