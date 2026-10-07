@@ -876,6 +876,22 @@
       "claim_kind": "SOURCE_CLAIM"
     },
     {
+      "id": "CLM-T6-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T6-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-T6-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T6-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-T7-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-T7-001.md",
@@ -1941,6 +1957,18 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-T6-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T6-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-T6-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T6-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-T7-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-T7-001-A.md",
@@ -2531,6 +2559,12 @@
       "id": "PAPER-105",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-105/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-106",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-106/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -5886,6 +5920,30 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CLM-T6-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T6-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T6",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T6-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T6-002",
+      "relation": "SUPPORTS_TREND",
+      "target": "T6",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "CLM-T7-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-T7-001-A",
@@ -8634,6 +8692,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-T6-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-106",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T6-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-106",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T6-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T6-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-T7-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-103",
@@ -10236,6 +10318,18 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-106",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T6-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-106",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T6-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -11203,6 +11297,18 @@
     },
     {
       "source": "T6",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T6-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T6",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T6-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T6",
       "relation": "TREND_SCHEDULED_BY",
       "target": "ROADMAP-PRODUCT-2027-2029",
       "provenance": "GENERATED_REVERSE"
@@ -11455,8 +11561,8 @@
     }
   ],
   "counts": {
-    "nodes": 415,
-    "canonical_semantic_edges": 719,
-    "generated_reverse_edges": 719
+    "nodes": 420,
+    "canonical_semantic_edges": 725,
+    "generated_reverse_edges": 725
   }
 }

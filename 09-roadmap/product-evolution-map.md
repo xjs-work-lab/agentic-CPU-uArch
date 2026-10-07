@@ -169,16 +169,24 @@ Potentially changes:
 - code/data lifetime.
 
 ### Current evidence state
-Round 14-B seed triage finds a stronger product/runtime signal than the initial scan:
-- **SkillDroid** compiles successful Android GUI trajectories into parameterized executable interaction programs and replays them without per-step LLM calls;
-- **Android AppFunctions** provides an Android 16+ platform/Jetpack path for privileged Agents to discover and execute type-safe, sandboxed app functions locally;
-- **MCP-SandboxScan** demonstrates a WASM/WASI isolation baseline for untrusted Agent tools;
-- **SpecBox** demonstrates that sandbox lifecycle can create material latency/memory tradeoffs in a server setting.
+Round 14-B now includes **PAPER-106 / SkillDroid FULL_10Q**.
 
-The missing evidence is still decisive: no reviewed source yet shows a representative phone where Agent-generated/frequently changing executable code creates material interpreter/JIT/code-cache/sandbox-transition cost that survives ordinary software/runtime baselines.
+SkillDroid establishes a concrete mobile-Agent product pattern:
+- a successful LLM-guided GUI trajectory can become a persistent parameterized action program;
+- replay can bypass per-step LLM reasoning;
+- versioning/recompilation plus verification/fallback make the artifact operational rather than textual memory.
+
+Critical boundary:
+- the "compiled" object is a structured GUI-action template stored in SQLite, not native code/WASM/JIT output;
+- experiments run on a Windows 11 host driving a Pixel 9a/API 35 emulator through ADB;
+- no target-phone CPU/energy/thermal/code-cache/interpreter/JIT residual is measured.
+
+Other baselines remain Android AppFunctions, MCP-SandboxScan and SpecBox.
+
+The missing evidence is still decisive: no reviewed source yet shows a representative phone where dynamic executable artifacts create material interpreter/JIT/code-cache/sandbox-transition cost after native Android function/action execution and existing C/T5/PT-A controls.
 
 ### Round 14 action
-**AUDIT — seed triage complete; deep-read / residual test next**
+**AUDIT — SkillDroid deep-read complete; Android AppFunctions strongest-baseline card next**
 
 ---
 

@@ -117,7 +117,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 Round 14-B seed triage complete; deep-read next.**
+**ROUND 14 ACTIVE — T7 Round 14-A complete; T6 SkillDroid FULL_10Q complete; Android AppFunctions baseline next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -218,13 +218,34 @@ The surviving residual question is deliberately narrow:
 
 > On a representative phone, do frequently created or changing Agent-executable artifacts create material compile/validate/load/instantiate/interpreter/JIT/code-cache/sandbox-transition costs, with a control variable that cannot be reduced to ordinary AppFunction invocation, workflow scheduling (C), state/version lifecycle (T5) or authority/verification (PT-A)?
 
+## SkillDroid FULL_10Q
+PAPER-106 strengthens T6's **product signal** but narrows the differentiated CPU/uArch case.
+
+What survives:
+- successful LLM-guided Android GUI trajectories can be materialized into persistent parameterized action programs;
+- a controlled same-stack baseline shows higher success and lower LLM-call demand with skill reuse;
+- pure replay can execute without an LLM call and the skill library can be versioned/recompiled after failures.
+
+What does **not** survive:
+- "compile" does not mean native code generation, WASM, bytecode/JIT or a new instruction-stream regime;
+- experiments run on a Windows 11 host driving a Pixel 9a/API 35 emulator through ADB;
+- the paper notes ~100 ms ADB action latency versus ~4 ms for native AccessibilityService performAction();
+- no physical-phone CPU, energy, thermal, code-cache, JIT/interpreter or foreground-QoE residual is measured.
+
+Ownership pressure after FULL_10Q:
+- versioned executable procedural state / reuse → **T5**;
+- verification, fallback and execution provenance → **PT-A**;
+- execution/warm-cold/resource policy → **C**.
+
+Therefore T6 remains **FRONTIER_SIGNAL / WATCH** with no new Direction, no score/lane change and no uArch candidate.
+
 ## Next
-1. **FULL_10Q SkillDroid** — strongest direct mobile seed.
-2. **Deep vendor card: Android AppFunctions** — strongest current Android product baseline for local typed Agent tools.
-3. Pressure-test with **MCP-SandboxScan** and **SpecBox** only to the depth needed to define strongest software/runtime baselines.
+1. **Deep vendor card: Android AppFunctions** — strongest current Android product baseline for local typed Agent tools.
+2. Compare SkillDroid-style procedural artifacts against native AppFunctions/Accessibility execution.
+3. Deep-read **MCP-SandboxScan** and **SpecBox** only if needed to define strongest isolation/lifecycle baselines.
 4. Then decide: NEW DIRECTION / MERGE INTO C-T5-PT-A / WATCH / KILL_DIFFERENTIATED_BET.
 
-No Trend maturity, lane, score or uArch change at seed-triage stage.
+No Trend maturity, lane, score or uArch change after SkillDroid FULL_10Q.
 
 Reserve-lane/patent audit remains required before final portfolio convergence.
 

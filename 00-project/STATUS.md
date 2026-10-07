@@ -28,9 +28,9 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 415 canonical nodes
-- 719 canonical semantic edges
-- 719 generated reverse edges
+- 420 canonical nodes
+- 725 canonical semantic edges
+- 725 generated reverse edges
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
 - Evidence Rescue Round 1 Graph QA: **PASS** — run `37609685036`, job `112753634718`
@@ -154,14 +154,19 @@ Initial pressure set:
 - **MCP-SandboxScan** — WASM/WASI runtime-isolation baseline for untrusted Agent tools; strong sandbox evidence but non-mobile.
 - **SpecBox** — strong sandbox-lifecycle latency/memory baseline; high-concurrency server setting, not phone evidence.
 
+SkillDroid FULL_10Q: **COMPLETE**.
+
 Current T6 result:
 - trend = **FRONTIER_SIGNAL / WATCH unchanged**;
+- PAPER-106 strengthens the product signal that repeated mobile Agent behavior can become a persistent executable procedural skill;
+- PAPER-106 simultaneously narrows CPU/uArch interpretation because its "compiled" artifact is a typed GUI-action template, not native/JIT/WASM code;
+- evaluation = Windows 11 host + Pixel 9a/API 35 emulator + ADB, not a physical phone;
 - new Direction = **none**;
 - second differentiated Primary Bet = **UNFILLED**;
 - uArch candidate = **none**;
 - direct phone CPU/JIT/code-cache/sandbox-transition residual = **not established**.
 
-Next: **FULL_10Q SkillDroid first**, then an official Android AppFunctions deep vendor card, followed by the strongest sandbox/runtime baselines needed to test whether any T6 residual survives C + T5 + PT-A ownership.
+Next: **Android AppFunctions deep vendor card**, then pressure-test only the sandbox/runtime baselines needed to decide whether any T6 residual survives C + T5 + PT-A + native Android function/action execution.
 
 Do not create a new Direction until the frontier survives:
 product relevance → smartphone/mobile evidence → ownership check → strongest baseline → residual test.

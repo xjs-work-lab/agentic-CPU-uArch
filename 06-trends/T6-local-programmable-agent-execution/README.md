@@ -8,7 +8,7 @@ scope = "SMARTPHONE_AGENTIC_CPU_SYSTEM_UARCH"
 trend_maturity = "FRONTIER_SIGNAL"
 product_posture = "WATCH"
 coverage_state = "SEED_TRIAGE_COMPLETE"
-related_claims = []
+related_claims = ["CLM-T6-001", "CLM-T6-002"]
 related_capabilities = []
 direction_links = []
 +++
@@ -69,3 +69,29 @@ T6 becomes a Direction only if target-phone evidence shows all of the following:
 
 ## Next
 FULL_10Q SkillDroid first; then deep-read the Android AppFunctions product baseline and only the sandbox papers needed to pressure-test the residual.
+
+
+## SkillDroid FULL_10Q — PAPER-106
+SkillDroid converts successful LLM-guided mobile GUI trajectories into persistent **parameterized interaction programs** with typed slots, weighted UI locators, state descriptors, verification/fallback and versioned recompilation.
+
+In its controlled 150-round Android-emulator evaluation, SkillDroid reports 85.3% success versus 62.0% for the same Layer-1 stack without skills, while mean LLM calls fall from 11.3 to 5.8. Pure replay accounts for 35/150 rounds with zero LLM calls.
+
+### Critical boundary
+"Compile" means a structured GUI-action template persisted in SQLite and replayed through DroidRun/ADB. It does **not** establish native machine-code generation, WASM/bytecode, interpreter/JIT tiering, code-cache churn, executable-page management or phone sandbox-transition cost.
+
+All experiments run on a Windows 11 host driving a Pixel 9a/API 35 Android emulator via ADB. The paper reports ~100 ms per ADB action and notes native Android AccessibilityService performAction() can be ~4 ms.
+
+### Decision
+- Trend maturity: **FRONTIER_SIGNAL unchanged**
+- Product posture: **WATCH unchanged**
+- New Direction: **none**
+- Second differentiated Primary Bet: **unfilled**
+- uArch candidate: **none**
+
+Current ownership pressure:
+- skill state/version/reuse → T5;
+- verification/fallback/provenance → PT-A;
+- execution/resource policy → C.
+
+## Next
+Deep-read Android AppFunctions as the strongest current native Android product baseline, then test whether any dynamic executable-artifact residual remains.
