@@ -4298,12 +4298,6 @@
     },
     {
       "source": "AO-4",
-      "relation": "OPPORTUNITY_PRODUCT_SIGNAL",
-      "target": "CLM-CG07-001",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
-      "source": "AO-4",
       "relation": "OPPORTUNITY_STRONG_BASELINE",
       "target": "CLM-AO4-004",
       "provenance": "CANONICAL_SEMANTIC"
@@ -6580,12 +6574,6 @@
       "source": "CLM-CG07-001",
       "relation": "EVIDENCES_CAPABILITY",
       "target": "CAP-MEDIATEK-DEDICATED-AO-AI-DOMAIN",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "CLM-CG07-001",
-      "relation": "PRODUCT_SIGNAL_FOR_OPPORTUNITY",
-      "target": "AO-4",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15801,7 +15789,7 @@
   ],
   "counts": {
     "nodes": 540,
-    "canonical_semantic_edges": 1009,
-    "generated_reverse_edges": 1009
+    "canonical_semantic_edges": 1008,
+    "generated_reverse_edges": 1008
   }
 }

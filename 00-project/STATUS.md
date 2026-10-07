@@ -36,9 +36,9 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
 - 540 canonical nodes
-- 1009 canonical semantic edges
-- 1009 generated reverse edges
-- 955 derived single-direction dependency edges
+- 1008 canonical semantic edges
+- 1008 generated reverse edges
+- 954 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`

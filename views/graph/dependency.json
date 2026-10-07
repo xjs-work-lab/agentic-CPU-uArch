@@ -4899,12 +4899,6 @@
     },
     {
       "source": "CLM-CG07-001",
-      "relation": "CLAIM_TO_OPPORTUNITY_PRODUCT",
-      "target": "AO-4",
-      "provenance": "DERIVED_DEPENDENCY"
-    },
-    {
-      "source": "CLM-CG07-001",
       "relation": "CLAIM_TO_TREND",
       "target": "T4",
       "provenance": "DERIVED_DEPENDENCY"
@@ -9424,6 +9418,6 @@
   ],
   "counts": {
     "nodes": 540,
-    "dependency_edges": 955
+    "dependency_edges": 954
   }
 }
