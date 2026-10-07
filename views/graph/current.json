@@ -990,7 +990,7 @@
       "record_state": "CURRENT",
       "direction_class": "COMPETITIVE_GAP",
       "competitive_action": "EXPLORE",
-      "evidence_maturity": "PRODUCT_SIGNAL_PLUS_SYNTHETIC_MODEL"
+      "evidence_maturity": "PRODUCT_SIGNAL_PLUS_AGENT_WORKLOAD_PLUS_SOFTWARE_BASELINE_PLUS_SYNTHETIC_MODEL"
     },
     {
       "id": "PT-A",
@@ -2158,6 +2158,18 @@
       "id": "PAPER-086",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-086/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-087",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-087/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-088",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-088/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -5673,6 +5685,30 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-009-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-MEM-010-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-SEC-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "DR-FRONTIER-20261006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-SEC-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "DR-HUAWEI-CG06-BASELINE",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-HUAWEI-001-A",
@@ -6503,6 +6539,12 @@
     {
       "source": "EC-MEM-009-A",
       "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-009-A",
+      "relation": "HAS_PREMISE",
       "target": "PAPER-078",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -6510,6 +6552,12 @@
       "source": "EC-MEM-009-A",
       "relation": "SUPPORT",
       "target": "CLM-MOBILE-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-MEM-010-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -7073,6 +7121,12 @@
     {
       "source": "EC-SEC-002-A",
       "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-SEC-002-A",
+      "relation": "HAS_PREMISE",
       "target": "PAPER-084",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -7104,6 +7158,12 @@
       "source": "EC-SEC-002-C",
       "relation": "SUPPORT",
       "target": "CLM-SEC-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-SEC-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "DR-FRONTIER-20261006",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9124,8 +9184,8 @@
     }
   ],
   "counts": {
-    "nodes": 358,
-    "canonical_semantic_edges": 564,
-    "generated_reverse_edges": 564
+    "nodes": 360,
+    "canonical_semantic_edges": 568,
+    "generated_reverse_edges": 568
   }
 }

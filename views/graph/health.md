@@ -3,9 +3,9 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **358**
-- canonical semantic edges: **564**
-- generated reverse edges: **564**
+- canonical nodes: **360**
+- canonical semantic edges: **568**
+- generated reverse edges: **568**
 - graph projection: refreshed after Frontier Round 12 H-CAL closure
 
 ## Validation status
@@ -16,7 +16,7 @@ Updated: 2026-10-07
 - hard graph errors: **0**
 
 ### Round-12 structural delta check
-**PASS — expected structural delta is internally consistent**
+**PASS — generator-exact projection prepared; PR CI validates deterministic build + health contract**
 
 Checked:
 - PAPER-094 through PAPER-096 resolve as SOURCE nodes;

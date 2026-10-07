@@ -28,9 +28,9 @@ Repository: `xjs-work-lab/agentic-CPU-uArch`
 Frozen historical source: `xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d`
 
 ## Current graph
-- 358 canonical nodes
-- 564 canonical semantic edges
-- 564 generated reverse edges
+- 360 canonical nodes
+- 568 canonical semantic edges
+- 568 generated reverse edges
 - projection refreshed after Frontier Round 12 H-CAL closure
 - last full cutover QA hard errors: 0
 

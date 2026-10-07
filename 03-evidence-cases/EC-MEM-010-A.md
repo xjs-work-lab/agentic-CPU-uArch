@@ -12,6 +12,10 @@ boundary = "Mechanism prior-art boundary; not a smartphone persistent-memory rep
 ref_kind = "SOURCE"
 ref_id = "PAPER-079"
 locator = "Pipelined sensing/encoding, adaptive configuration, speculative skipping and system evaluation"
+[[premises]]
+ref_kind = "DISCOVERY_RUN"
+ref_id = "DR-FRONTIER-20261006"
+locator = "DR-FRONTIER-20261006 Round 8 MMEdge prior-art coverage and H-PAM final systems-residual decision"
 +++
 
 # EC-MEM-010-A
