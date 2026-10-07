@@ -23,7 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
 next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
-round15a_progress: AO3_EVIDENCE_MAPPED_3_OF_5
+round15a_progress: AO4_EVIDENCE_MAPPED_4_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 source_identity_gate: ACTIVE
@@ -35,10 +35,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 515 canonical nodes
-- 960 canonical semantic edges
-- 960 generated reverse edges
-- 908 derived single-direction dependency edges
+- 540 canonical nodes
+- 1009 canonical semantic edges
+- 1009 generated reverse edges
+- 955 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -486,3 +486,18 @@ One cross-identifier soft duplicate identified by normalized-title review was al
 
 Rule:
 same work is one evidence source even when discovered through arXiv and publisher DOI separately.
+
+## Round 15A — AO-4 Evidence Closure (2026-10-08)
+AO-4 Always-On Proactive Personal-Agent Front End: **EVIDENCE_MAPPED / KEEP / SOFTWARE-PRESSURED CROSS-LAYER HYPOTHESIS**.
+
+- Reused existing FULL_10Q PAPER-087 ProactiveMobile, PAPER-088 PRPF, VENDOR-019 MediaTek; cross-checked first-hand ProactiveMobile CVPR/arXiv and PRPF method, evaluation, ablations and limitations.
+- Added distinct deep official Sources VENDOR-024 AOSP CHRE, VENDOR-025 Qualcomm Sensing Hub, VENDOR-026 Apple 2017 AOP two-pass detection after URL source-dedup preflight.
+- Seven explicit claim roles CLM-AO4-001..007 and fifteen Evidence Cases contain genuine UNDERCUT and SCOPE_LIMIT pressure.
+- **Key boundary:** CHRE/AP offload and two-stage wake are established prior art; PRPF-class gating substantially suppresses heavy reasoning in GPU benchmarks but is neither real-phone joules/day evidence nor enough to prove dedicated silicon.
+- Retained context→intent→reason adaptive escalation and bounded permission/state handoff as **OPEN** cross-layer hypothesis, not a new CPU ISA or uArch candidate.
+- CG-07 stays EXPLORE / 75.0; C generic orchestration; no new Direction, bet, score or hardware investment.
+- Round 15A progress: **4 / 5 opportunities EVIDENCE_MAPPED**.
+- Next: **AO-5 Semantic Progress / QoE Control Plane**, then AO1–AO5 cross-opportunity synthesis.
+
+Deep audit: analysis/opportunities/AO-4-evidence-skeleton-2026-10-08.md
+Transaction: history/research-transactions/TXN-20261008-ROUND15A-AO4-01.md
