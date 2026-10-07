@@ -25,3 +25,22 @@ venue = "CN121960775A · 2026"
 - transform: `STRUCTURAL_REPACK`
 - detailed V1 interpretation is preserved in [deep.md](deep.md).
 - source independence remains `UNKNOWN`.
+
+
+## 2026-10-07 direct-claim re-audit
+**VERIFIED for CLM-BR-004 boundary use.**
+
+Current public claim 1 directly includes:
+- semantic-similarity retrieval from a two-layer historical-result / reasoning-process cache;
+- identity, time-window and service-version-consistency validity arbitration;
+- semantic demand-satisfaction grading;
+- historical reasoning reuse/correction;
+- cache and memory updates marked with the current business version.
+
+Safe conclusion:
+**semantic/version-aware Agent result/reasoning-cache validity is crowded at claim level.**
+
+Boundary:
+the claim does not directly cover smartphone S2/S3 derived physical artifacts, NPU/DRAM/UFS lineage, or certified cross-tier preservation.
+
+No FTO/legal conclusion is made.

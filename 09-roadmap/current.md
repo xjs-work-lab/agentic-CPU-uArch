@@ -431,9 +431,17 @@ This is a paper-depth milestone, not final portfolio convergence.
 
 R3 core set PATENT-028/029/030 is complete and confirms the broad prior-art boundary without changing R3's blocked state.
 
-Remaining direct-claim set: **10 patents**:
-- B-residual: PATENT-032;
-- R1: PATENT-005 / 017 / 018 / 019;
-- R2: PATENT-020 / 021 / 022 / 023 / 024.
+B-residual direct-claim audit is now complete.
 
-Next: **PATENT-032** because it is the only patent premise directly constraining B-residual's semantic/version-aware invalidation claim.
+PATENT-032 verifies the narrow claim-level boundary:
+- semantic retrieval over Agent result/reasoning caches;
+- identity/time-window/service-version validity arbitration;
+- semantic demand-satisfaction grading;
+- historical reasoning reuse/correction;
+- cache/memory update.
+
+It does **not** claim smartphone S2/S3 derived physical-state lineage.
+
+Patent audit progress: **4 / 13 complete; 9 remain**.
+
+Next: **R1 PATENT-005 / 017 / 018 / 019**.

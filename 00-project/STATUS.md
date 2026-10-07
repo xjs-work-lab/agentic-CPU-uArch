@@ -153,7 +153,18 @@ R3 result:
 - these patents do **not** establish that Agent-native DemandState/Effect-Commit semantics, a target-phone D1 residual, or a compact D2 CPU/uArch hint are already claimed or technically sufficient;
 - R3 remains **BLOCKED / 48.5 / NOT_EVALUABLE** because its parent SYSTEM_VALUE/software-insufficiency gates remain unmet.
 
-Patent audit inventory: **3 / 13 complete; 10 remain** across B-residual, R1 and R2.
+Patent audit inventory: **4 / 13 complete; 9 remain**.
+
+B-residual patent audit complete:
+- PATENT-032 current claim 1 directly verifies Agent dialogue/result/reasoning cache validity gated by identity, time window and service-version consistency, followed by semantic demand-satisfaction grading and reasoning reuse/correction.
+- CLM-BR-004 remains **SUPPORTED**.
+- Boundary confirmed: the claim does not extend to smartphone NPU/DRAM/UFS or other S2/S3 derived physical-artifact lineage/preservation.
+
+B-residual remains **CONDITIONAL_RESERVE / 63.0 / SIMULATION_SUPPORT**; no score/maturity/uArch change.
+
+Remaining patents:
+- R1: PATENT-005 / 017 / 018 / 019;
+- R2: PATENT-020 / 021 / 022 / 023 / 024.
 
 ## Shared strategic-model harmonization
 CPU/uArch now explicitly conforms to the shared strategic knowledge-graph mother model used across research domains.

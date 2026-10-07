@@ -91,3 +91,29 @@ No score, lane, maturity or hardware change.
 
 ### Evidence-depth state
 B-residual paper-depth debt: **0**.
+
+
+## Patent direct-claim audit — PATENT-032 — 2026-10-07
+
+Current public claim 1 directly verifies:
+- semantic-similarity retrieval from historical-result and reasoning-process caches;
+- multi-factor validity arbitration including identity, time window and service-version consistency;
+- only records passing all validity factors are treated as valid;
+- semantic grading of whether historical answers fully/partially/do not satisfy current demand;
+- historical reasoning reuse/correction when fresh generation is needed;
+- cache/memory updates with current business version.
+
+### Safe prior-art conclusion
+**CLM-BR-004 remains SUPPORTED:**
+broad semantic/version-aware Agent result/reasoning-cache validity and version-sensitive invalidation are claim-level prior art.
+
+### Boundary
+PATENT-032 does not directly claim:
+- derived NPU/DRAM/UFS physical artifacts;
+- phone S0/S1→S2/S3 dependency lineage;
+- certified partial inheritance of physical runtime artifacts across tiers;
+- a CPU/uArch state-coherence mechanism.
+
+Therefore the narrow target-phone B-residual remains open as a measurement hypothesis.
+
+No score, lane, maturity or hardware change.
