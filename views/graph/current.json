@@ -3213,12 +3213,6 @@
       "record_state": "CURRENT"
     },
     {
-      "id": "VENDOR-022",
-      "type": "SOURCE",
-      "path": "01-evidence/vendors/VENDOR-022/README.md",
-      "record_state": "CURRENT"
-    },
-    {
       "id": "VENDOR-023",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-023/README.md",
@@ -3654,12 +3648,6 @@
       "source": "ACT-QUALCOMM",
       "relation": "PUBLISHES",
       "target": "VENDOR-001",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "ACT-QUALCOMM",
-      "relation": "PUBLISHES",
-      "target": "VENDOR-022",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -9065,6 +9053,12 @@
     {
       "source": "EC-AO1-004-A",
       "relation": "HAS_PREMISE",
+      "target": "VENDOR-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO1-004-A",
+      "relation": "HAS_PREMISE",
       "target": "VENDOR-017",
       "provenance": "CANONICAL_SEMANTIC"
     },
@@ -9072,12 +9066,6 @@
       "source": "EC-AO1-004-A",
       "relation": "HAS_PREMISE",
       "target": "VENDOR-019",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
-      "source": "EC-AO1-004-A",
-      "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -9095,7 +9083,7 @@
     {
       "source": "EC-AO1-004-B",
       "relation": "HAS_PREMISE",
-      "target": "VENDOR-022",
+      "target": "VENDOR-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -14177,6 +14165,18 @@
     {
       "source": "VENDOR-001",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO1-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO1-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-CG01-001-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -14319,24 +14319,6 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO1-004-A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_OF_CASE",
-      "target": "EC-AO1-004-B",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PUBLISHED_BY",
-      "target": "ACT-QUALCOMM",
-      "provenance": "CANONICAL_SEMANTIC"
-    },
-    {
       "source": "VENDOR-023",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO1-004-A",
@@ -14356,8 +14338,8 @@
     }
   ],
   "counts": {
-    "nodes": 496,
-    "canonical_semantic_edges": 913,
-    "generated_reverse_edges": 913
+    "nodes": 495,
+    "canonical_semantic_edges": 912,
+    "generated_reverse_edges": 912
   }
 }

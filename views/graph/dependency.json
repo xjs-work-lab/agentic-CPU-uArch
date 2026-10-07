@@ -3214,12 +3214,6 @@
       "record_state": "CURRENT"
     },
     {
-      "id": "VENDOR-022",
-      "type": "SOURCE",
-      "path": "01-evidence/vendors/VENDOR-022/README.md",
-      "record_state": "CURRENT"
-    },
-    {
       "id": "VENDOR-023",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-023/README.md",
@@ -8424,6 +8418,18 @@
     {
       "source": "VENDOR-001",
       "relation": "PREMISE_TO_CASE",
+      "target": "EC-AO1-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-AO1-004-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "VENDOR-001",
+      "relation": "PREMISE_TO_CASE",
       "target": "EC-CG01-001-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
@@ -8542,18 +8548,6 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_TO_CASE",
-      "target": "EC-AO1-004-A",
-      "provenance": "DERIVED_DEPENDENCY"
-    },
-    {
-      "source": "VENDOR-022",
-      "relation": "PREMISE_TO_CASE",
-      "target": "EC-AO1-004-B",
-      "provenance": "DERIVED_DEPENDENCY"
-    },
-    {
       "source": "VENDOR-023",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO1-004-A",
@@ -8567,7 +8561,7 @@
     }
   ],
   "counts": {
-    "nodes": 496,
+    "nodes": 495,
     "dependency_edges": 861
   }
 }
