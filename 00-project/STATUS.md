@@ -23,7 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
 next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
-round15a_progress: AO1_EVIDENCE_MAPPED_1_OF_5
+round15a_progress: AO2_EVIDENCE_MAPPED_2_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 ```
@@ -34,10 +34,10 @@ shared_semantic_contract: STRATEGIC_KG_CORE_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 476 canonical nodes
-- 878 canonical semantic edges
-- 878 generated reverse edges
-- 826 derived single-direction dependency edges
+- 496 canonical nodes
+- 913 canonical semantic edges
+- 913 generated reverse edges
+- 861 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -404,3 +404,26 @@ cross-xPU execution/state/control fabric under mixed-criticality Agent flows.
 Round 15A progress: **1 / 5 Opportunities evidence-mapped**.
 
 Next: **AO-2 Revisable / Transactional Agent Execution**.
+
+## Round 15A — AO-2 Evidence Closure
+AO-2 Revisable / Transactional Agent Execution: **EVIDENCE_MAPPED / KEEP / HIGH-INTEREST ACADEMIC-LEAD OPPORTUNITY**.
+
+New FULL_10Q anchors:
+- PAPER-116 Speculative Actions;
+- PAPER-117 Cordon;
+- PAPER-118 Atomix.
+
+New direct-claim patent anchor:
+- PATENT-033 CN120704926A — multi-Agent prepare/commit/rollback/snapshot/state-migration claims reviewed directly.
+
+Key narrowing:
+- broad Agent transaction / commit / rollback is not whitespace;
+- versioned authority, effect staging, progress-frontier settlement and compatible-state inheritance are already software/runtime mechanisms;
+- current public mobile product signal for a distinct Agent-transaction hardware architecture is weak/not established.
+
+Surviving opportunity:
+only the lower execution/state residual remains credible — whether frequent speculative/revised local xPU work makes cancellation, invalidation, selective inheritance and reclamation expensive below runtime control.
+
+Round 15A progress: **2 / 5 Opportunities evidence-mapped**.
+
+Next: **AO-3 Persistent Agent State / Context Fabric**.
