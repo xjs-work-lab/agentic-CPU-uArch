@@ -11,14 +11,20 @@ supersedes = []
 # CLM-PTA-003
 
 ## Proposition
-Broad hybrid action routing plus generic verification/transaction handling is already a crowded mechanism space, so PT-A should be treated as a Platform Track rather than differentiated Primary Bet.
+Broad hybrid action routing plus generic verification/recovery is already a crowded software/runtime mechanism space, so PT-A should remain a Platform Track rather than a differentiated Primary Bet.
 
 ## Current interpretation
-The current public evidence occupies deterministic hybrid routing, learned GUI/CLI orchestration, side-effect verification, pre/post verification and transaction-safe execution.
+Public evidence now occupies:
+- deterministic structured-first routing;
+- learned GUI↔CLI orchestration;
+- mixed CLI/GUI/MCP harnesses;
+- semantic transaction/commit handling;
+- model-internal action-effect verification and recovery.
+
+PAPER-039 is especially important: simply exposing CLI to the base model degrades accuracy, while SFT/RL restores value. The control point is selective routing under capability/feedback, not tool count.
 
 ## Boundary
-This does not reduce platform importance; it constrains novelty claims.
+PAPER-101 reveals an under-addressed **context-integrity/action-binding** problem at the Agent/OS execution boundary. This is a real residual, but current evidence supports treating it as platform/security work, not as a new Primary Bet or CPU/uArch mechanism.
 
-## Migration
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
+## Evidence-depth audit
+EDP v1 revalidated 2026-10-07.

@@ -1,58 +1,84 @@
-> V1 semantic source copied from frozen baseline `960abb4ef50f050da3c6784d30826053d42e5c5d`.
-> The compact README owns the V2.2 Source metadata.
+# PAPER-042 — UIAnchor — EDP v1 FULL_10Q
 
-# PAPER-042 — UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents
+Re-reviewed: 2026-10-07
 
-## Source
-- Paper: https://doi.org/10.1145/3832008
-- Authors: Wentao Zhou, Sicong Liu, Zimu Zhou, Yimeng Duan, Yongyan Cai
-- Venue/status: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2026
-- Target: mobile GUI Agents
-- Project relevance: pre/post action verification, recovery
-- Priority: P0
+## Q1 — Problem + target mapping
+Service-composed mobile workflows are long, cross-app and dynamic. The authors' failure analysis identifies two recurrent bottlenecks:
+1. missing/misreading actionable UI elements;
+2. acting without verifying target correctness or outcome.
 
-## Q1 — Problem
-Mobile service-composed workflows fail because Agents miss/misread UI targets and execute actions without verifying target correctness or outcomes.
+PT-A mapping: mobile actuation verification/recovery.
 
-## Q2 — Novelty
-UIAnchor adds both perception anchoring and execution anchoring:
-- pre-action verification;
+## Q2 — Novelty / new-regime relevance
+UIAnchor “anchors” both perception and execution:
+- two-stage high-recall/context-aware UI parser;
+- meta-controller for pre-action verification;
 - post-action outcome perception;
-- per-step state tracking;
+- step-state tracking;
 - targeted recovery.
 
-## Q3 — Hypothesis
-Explicit verification around each action can improve long-horizon cross-app mobile automation reliability.
+Classification: Agent-native mobile GUI reliability system.
 
-## Q4 — Competing route
-Directly pressures a second Bet based on generic:
-> post-action verification / recovery loop.
+## Q3 — Falsifiable hypothesis
+Improving both UI perception and execution anchoring should improve long-horizon mobile task success relative to strong GUI-agent baselines.
 
-## Q5 — Mechanism
-A modular meta-controller verifies target/state before action, observes outcome after action, tracks per-step state and invokes targeted recovery.
+The reported full-system results support this.
 
-## Q6 — Experiment
-Reported:
-- on L4 tasks, +31.5% success over GPT-4o and +16.6% over Mobile-Agent-v3;
-- edge/cloud assisted operation around ~2 s/step;
-- up to 75.5% per-step latency reduction and 52.4% energy reduction.
+## Q4 — Lineage / competing route
+Peer-reviewed PACM IMWUT / UbiComp 2026.
+Independent author group relative to ClawMobile / PhoneHarness / VeriGUI.
 
-## Q7 — Artifact
-Artifact status not yet verified.
+Strong neighboring route: model-internal action-effect verification such as VeriGUI.
 
-## Q8 — Evidence vs hypothesis
-**[FACT]** execution verification and recovery are direct mobile-system value.
+## Q5 — Mechanism / control point
+Observed/parsed UI → candidate target → pre-action validation → execute → post-action outcome perception → state update → targeted recovery if mismatch.
 
-## Q9 — Project contribution
-This establishes verification/recovery as a good mobile-Agent engineering direction but weakens novelty of a generic “verified actuation runtime” Bet.
+This is still a software/meta-controller mechanism.
+
+## Q6 — Experiment + quantitative anchors
+The paper defines L1–L5 task complexity by horizon, cross-app scope and UI granularity.
+
+On L4:
+- 20–30 steps;
+- multi-app;
+- targets <100×100 px;
+- whole UIAnchor system improves success by 31.5% over GPT-4o and 16.6% over Mobile-Agent-v3.
+
+With edge/cloud assistance:
+- ~2 s per step;
+- reported per-step latency reduction up to 75.5%;
+- energy reduction 52.4%.
+
+## Q7 — Reproducibility / evidence-access boundary
+Peer-reviewed primary ACM page and UbiComp program metadata are verified.
+
+EDP v1 limitation:
+the accessible primary evidence in this audit does not expose enough component-level ablation detail to attribute the headline success/latency/energy numbers specifically to verification/recovery rather than the combined parser + controller + edge/cloud system.
+
+Those component contributions remain **Unknown / Not yet verified**.
+
+## Q8 — Evidence vs alternative explanations
+Demonstrated:
+the complete system containing explicit verification/recovery is strong on evaluated mobile GUI tasks.
+
+Not established by currently verified evidence:
+- isolated causal gain of pre/post verification;
+- isolated energy cost/benefit of verification;
+- retail-phone-only execution without edge/cloud assistance.
+
+## Q9 — Decision contribution
+KEEP as direct mobile system evidence, but narrow EC-PTA-002-A:
+> UIAnchor establishes that execution anchoring is part of a high-performing mobile system, not that verification alone caused all reported gains.
+
+Causal verification evidence should instead be supplemented by PAPER-102 / VeriGUI.
 
 ## Q10 — Next action
-- KEEP as P0 mobile reliability evidence.
-- Put explicit verification/recovery into Platform Track baseline.
-- Any differentiated proposal must expose a lower/system control point unavailable to runtime-only verification.
+KEEP P0.
+Do not reuse 75.5% latency or 52.4% energy as “verification savings.”
+Seek the full ablation/artifact before final quantitative report.
 
 ## Decision footer
-- Evidence maturity: SYSTEM_VALUE for evaluated mobile workflows
-- Decision impact: supports Platform Track; narrows verified-actuation Bet
-- Open questions: OS-level receipts vs runtime re-observation; phone energy accounting
+- Evidence maturity: SYSTEM_VALUE for full mobile system
+- Decision impact: KEEP; narrow causal attribution
+- Open questions: component ablation, device/edge breakdown, verifier overhead
 - Primary source: https://doi.org/10.1145/3832008

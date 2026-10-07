@@ -4,21 +4,24 @@ type = "CLAIM"
 record_state = "CURRENT"
 claim_kind = "OBSERVATION"
 status = "SUPPORTED"
-scope = "mobile action-surface value"
+scope = "mobile action-surface capability and reachability"
 supersedes = []
 +++
 
 # CLM-PTA-001
 
 ## Proposition
-Action modality materially changes mobile Agent task success, step count and reachable state; GUI-only is not a universal execution substrate.
+Action-surface capability materially changes mobile Agent task reachability, success and interaction cost; GUI-only is not a universal execution substrate.
 
 ## Current interpretation
-Direct mobile evidence from CLI and mixed-action systems establishes modality-sensitive outcome differences.
+PAPER-038, PAPER-040 and PAPER-037 show complementary structured/GUI/tool execution paths across mobile benchmarks and a real-phone runtime.
+
+The stable conclusion is **capability heterogeneity**, not “CLI is universally better.”
 
 ## Boundary
-Does not imply one universal routing policy is optimal.
+PAPER-038 and much of PAPER-040 use ADB/emulator/host-proxy capabilities that may exceed a retail app's normal authority. Product transfer therefore requires an explicit capability/entitlement model.
 
-## Migration
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
+No universal routing policy is implied.
+
+## Evidence-depth audit
+EDP v1 revalidated 2026-10-07.

@@ -3,27 +3,25 @@ id = "PAPER-042"
 type = "SOURCE"
 source_type = "paper"
 record_state = "CURRENT"
-independence_assessment = "UNKNOWN"
+independence_assessment = "INDEPENDENT_GROUP"
 title = "UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents"
 primary_url = "https://doi.org/10.1145/3832008"
 priority = "P0"
-evidence_role = "direct mobile pre/post verification + targeted recovery evidence"
-origin_paths = ["03-academic/paper-10q/PAPER-042.md"]
-origin_blobs = ["960b66b7dbe6b7874952ffb0040b7fc4a732a3ff"]
-authors = ["Wentao Zhou", "Sicong Liu", "Zimu Zhou", "Yimeng Duan", "Yongyan Cai"]
-venue = "PACM IMWUT · 2026"
+evidence_role = "mobile GUI execution anchoring / verification / recovery system evidence"
+review_depth = "FULL_10Q"
+deep_review_protocol = "EDP_V1"
+deep_review_date = "2026-10-07"
+decision_critical = true
+authors = ["Wentao Zhou", "Sicong Liu", "Zimu Zhou", "Yimeng Duan", "Yongyan Cai", "Weiye Wu", "Teng Li", "Daqing Zhang", "Zhiwen Yu"]
+venue = "PACM IMWUT 2026 / UbiComp 2026"
 +++
 
-# PAPER-042 — UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents
+# PAPER-042 — UIAnchor
 
 ## 30-second read
-- **Why it matters:** Shows explicit verification/recovery has direct mobile-system value even within GUI-heavy workflows.
-- **What it establishes:** Pre/post action verification and targeted recovery materially improve evaluated mobile automation reliability.
-- **Boundary:** Runtime/platform mechanism; does not establish a unique lower CPU/uArch control point.
-- **Primary source:** https://doi.org/10.1145/3832008
+- Peer-reviewed mobile GUI-agent system combining a high-recall UI parser with pre-action verification, post-action outcome perception, state tracking and targeted recovery.
+- On L4 tasks the complete system reports +31.5% success over GPT-4o and +16.6% over Mobile-Agent-v3.
+- Critical EDP boundary: the currently verified primary evidence does **not isolate verification/recovery from the parser and edge/cloud design**, so whole-system latency/energy gains must not be credited solely to verification.
+- Primary source: https://doi.org/10.1145/3832008
 
-## Migration fidelity
-- V1 baseline: `960abb4ef50f050da3c6784d30826053d42e5c5d`
-- Transform: `STRUCTURAL_REPACK`
-- Detailed V1 interpretation is preserved in [deep.md](deep.md).
-- Source independence remains `UNKNOWN`.
+See [deep.md](deep.md) for EDP v1 FULL_10Q; unavailable component-level details are marked Unknown rather than inferred.

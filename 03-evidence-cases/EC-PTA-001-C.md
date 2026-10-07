@@ -5,22 +5,14 @@ record_state = "CURRENT"
 relation = "SUPPORT"
 target_kind = "CLAIM"
 target_id = "CLM-PTA-001"
-warrant = "ClawMobile independently demonstrates practical heterogeneous smartphone action backends and a reliability/latency tradeoff."
-scope = "smartphone-native heterogeneous actuation"
-boundary = "Small evaluated task set."
+warrant = "ClawMobile demonstrates practical heterogeneous actuation on a real Pixel 9 using deterministic backends plus semantic UI control."
+scope = "real-phone heterogeneous actuation"
+boundary = "Six-task evaluation; model inference is remote and DroidRun comparator deployment is asymmetric."
 [[premises]]
 ref_kind = "SOURCE"
 ref_id = "PAPER-037"
-locator = "Pixel 9 heterogeneous backend execution"
+locator = "Pixel 9 evaluation and runtime architecture"
 +++
 
 # EC-PTA-001-C
-
-## Inference
-`PAPER-037` → **SUPPORT** → `CLM-PTA-001`
-
-## Warrant
-ClawMobile independently demonstrates practical heterogeneous smartphone action backends and a reliability/latency tradeoff.
-
-## Boundary
-Small evaluated task set.
+PAPER-037 → SUPPORT → CLM-PTA-001.
