@@ -20,7 +20,7 @@ Do not use one axis as a proxy for the other.
 
 ## Axis A — Product evolution posture
 
-Use exactly one primary posture:
+Use exactly one primary posture token. Secondary implementation activities may be described in prose, but must not be expressed as a second posture token:
 
 ### PRODUCTIZE
 Evidence is strong enough that the capability should be treated as part of the likely future product stack.
@@ -106,7 +106,7 @@ Every Kill/Narrow decision must say exactly what is killed:
 - **KILL_PRODUCT_ROUTE** — the product capability itself is not worth pursuing.
 - **KILL_WORDING_ONLY** — claim language is too strong.
 
-Unless explicitly marked **KILL_PRODUCT_ROUTE**, a research Kill must not be read as “do not build this capability.”
+Unless the canonical `kill_scope` is **KILL_PRODUCT_ROUTE**, a research Kill must not be read as “do not build this capability.”
 
 ---
 
@@ -148,7 +148,7 @@ The final roadmap must expose both layers:
 ### Layer 1 — Product Evolution Map
 What the future smartphone CPU/SoC/system stack should gain, regardless of originality.
 
-### Layer 2 — Differentiation Map
+### Layer 2 — Differentiation Portfolio
 Where the team should:
 - make an original Bet;
 - extend/adapt prior work;
