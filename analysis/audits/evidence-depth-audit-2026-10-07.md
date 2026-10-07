@@ -16,7 +16,7 @@ Rescue-1A added two new FULL_10Q sources, bringing the current five-lane set to 
 ## Primary-lane paper-depth state
 After Rescue-1B source updates, **all current decision-critical paper Sources for A / PT-A / C / CG-06 / CG-07 carry EDP v1 FULL_10Q-class review metadata.**
 
-Expected primary-lane warning count after Graph QA: **0**.
+Graph QA validates the primary-lane warning count at **0**.
 
 ## Reserve-lane paper debt
 Still pending:
@@ -25,7 +25,7 @@ Still pending:
 - PAPER-047 / 048 — R1
 - PAPER-049 — R2
 
-Expected current-ROADMAP paper-depth warnings after Rescue-1B: **12**.
+Validated current-ROADMAP paper-depth warnings after Rescue-1B: **12**.
 
 R3 is patent-heavy and requires the separate patent direct-claim gate.
 
@@ -58,8 +58,14 @@ A survives only as the hypothesis that **explicit Agent-internal DemandState / R
 
 No source directly proves that residual.
 
+## Validation
+Rescue-1B Graph QA: **PASS** — run `37617038459`, job `112777774022`.
+
+Validated warning state:
+- A / PT-A / C / CG-06 / CG-07: **0**
+- B-residual / R1 / R2: **12**
+- whole current ROADMAP paper warnings: **12**
+
 ## Next
-1. Validate Rescue-1B with Graph QA.
-2. Rerun/lock the five-lane decision backtrace.
-3. If clean, resume Frontier Round 14.
-4. Continue Rescue-2 reserve lanes and patent audit before final portfolio convergence.
+1. Resume Frontier Round 14 from uncovered structural workload regimes.
+2. Continue Rescue-2 reserve lanes and patent audit before final portfolio convergence.
