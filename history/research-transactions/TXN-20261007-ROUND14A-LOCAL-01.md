@@ -14,7 +14,7 @@ Question: Does LOCAL expose a distinct multi-Agent shared-state control point be
 ## Evidence cases
 - EC-T5-002-A
 - EC-T7-002-A
-- EC-CAL-004-B
+- EC-CAL-004-C
 
 ## Decisions
 - T5 strengthened, maturity/posture unchanged
