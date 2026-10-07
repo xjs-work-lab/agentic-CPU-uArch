@@ -12,6 +12,10 @@ boundary = "Prior-art existence of control abstraction; modern Agent workload ma
 ref_kind = "SOURCE"
 ref_id = "PAPER-078"
 locator = "CMQ translation, shared/incremental evaluation, ESS selection and energy/throughput experiments"
+[[premises]]
+ref_kind = "DISCOVERY_RUN"
+ref_id = "DR-FRONTIER-20261006"
+locator = "DR-FRONTIER-20261006 Round 8 SeeMon prior-art coverage and H-PAM final systems-residual decision"
 +++
 
 # EC-MEM-009-A
