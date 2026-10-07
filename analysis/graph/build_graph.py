@@ -121,6 +121,16 @@ def main():
     if args.check:
         if not out.exists() or out.read_text(encoding="utf-8") != rendered:
             print("FAIL: generated graph projection differs")
+            if out.exists():
+                import difflib
+                actual = out.read_text(encoding="utf-8")
+                diff = difflib.unified_diff(
+                    actual.splitlines(True),
+                    rendered.splitlines(True),
+                    fromfile="views/graph/current.json",
+                    tofile="generated/current.json",
+                )
+                print("".join(diff)[:120000])
             return 1
         print(f"PASS: graph projection deterministic ({projection['counts']})")
         return 0
