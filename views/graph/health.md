@@ -3,10 +3,10 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **374**
-- canonical semantic edges: **587**
-- generated reverse edges: **587**
-- graph projection: prepared for Frontier Round 13 Agent-flow heterogeneous SoC orchestration
+- canonical nodes: **383**
+- canonical semantic edges: **610**
+- generated reverse edges: **610**
+- graph projection: validated after Evidence Rescue 1A PT-A deep audit
 
 ## Round-13 full PR Graph QA
 **PASS**
@@ -55,3 +55,33 @@ EDP warning state after Round 1:
 
 Round 1 makes no graph-semantic node/edge change and no portfolio lane/score/maturity change.
 It narrows canonical claim wording and introduces warning-only evidence-depth enforcement.
+
+
+## Evidence Rescue 1A — PT-A
+**PASS**
+- PR: #16
+- final Graph QA run: `37611820867`
+- job: `112760599058`
+- validated head: `d091b6d142edfe1fbb6eb87ffefd08ccc9e951d7`
+- squash merge: `e6a83b36494ec9bcc044b3aec6441152efd132f1`
+- work-branch cleanup: PASS / run `37611888348`
+- deterministic projection: PASS
+- graph hard errors: 0
+- current projection: **383 nodes / 610 canonical edges / 610 reverse edges**
+
+### Structural delta
+- PAPER-101 Action Rebinding added as negative/context-integrity evidence.
+- PAPER-102 VeriGUI added as strongest software verification/recovery baseline.
+- CLM-PTA-006 adds the observation→action context-integrity claim.
+- CLM-PTA-EXP-002 + EXP-PTA-002 create the fresh-context action-binding residual test.
+- DEC-PTA-RESCUE-001 records PT-A REFRAME with no lane/score/maturity change.
+- PAPER-037/038/039/040/042 are EDP v1 FULL_10Q revalidated.
+
+### EDP warning state
+- primary-lane paper warnings: **5**, all in A.
+- reserve-lane paper warnings: **12**.
+- whole current ROADMAP: **17**.
+
+### QA correction note
+The first PR QA run (`37611716486`) failed deterministic projection because the updated EC-PTA-003-B added PAPER-102 as a canonical premise but the manually refreshed projection initially omitted that edge.
+The canonical Evidence Case was correct; the projection was repaired, regenerated and then passed.
