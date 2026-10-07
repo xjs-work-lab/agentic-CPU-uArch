@@ -4,11 +4,21 @@ Date: 2026-10-07
 Question: Are current portfolio conclusions vulnerable to shallow understanding of decision-critical evidence?
 
 ## Scope
-Current A / PT-A / C / CG-06 / CG-07 paper evidence.
+Primary audit: A / PT-A / C / CG-06 / CG-07 paper evidence.
+QA warning scope: every Direction scheduled by the current ROADMAP.
 
 ## Audit result
-33 unique paper Sources directly ground the five lanes.
-14 lacked review_depth metadata at audit start; 13 were P0.
+Primary five lanes:
+- 33 unique paper Sources;
+- 14 lacked review_depth metadata at audit start;
+- 13 were P0.
+
+After Round-1 rescue:
+- 10 primary-lane paper warnings remain.
+
+Whole current ROADMAP:
+- Graph QA reports 22 decision-critical paper warnings after Round 1;
+- 12 are additional current reserve-lane papers in B-residual / R1 / R2.
 
 ## Sources re-read under EDP v1
 - PAPER-009
@@ -27,9 +37,12 @@ No lane, score or maturity change.
 
 ## Research-process change
 - EDP v1 policy created.
-- active-lane evidence-depth registry created.
-- Graph QA gains decision-critical paper depth warnings during rescue mode.
+- evidence-depth registry created.
+- Graph QA gains warning-only decision-critical paper-depth checks during rescue mode.
+- Graph QA run 37609526876 passes and exposes the broader 22-paper current-roadmap backlog.
 
 ## Next
-Rescue PT-A PAPER-037/038/039/040/042, then remaining early A sources.
-Frontier Round 14 remains paused until active-lane evidence-depth debt is cleared.
+1. Rescue PT-A PAPER-037/038/039/040/042.
+2. Rescue A PAPER-013/015/043/044/050.
+3. Rerun active-lane backtrace before Frontier Round 14.
+4. Then rescue B-residual / R1 / R2 and audit patent-heavy lanes before final portfolio convergence.
