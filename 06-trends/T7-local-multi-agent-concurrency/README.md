@@ -8,7 +8,7 @@ scope = "SMARTPHONE_AGENTIC_CPU_SYSTEM_UARCH"
 trend_maturity = "FRONTIER_SIGNAL"
 product_posture = "WATCH"
 coverage_state = "ACTIVE_AUDIT"
-related_claims = []
+related_claims = ["CLM-T7-001"]
 related_capabilities = []
 direction_links = []
 +++
@@ -22,3 +22,6 @@ T7 asks whether multiple local Agents sharing models, KV, adapters, memory and d
 A paper or product may strengthen this Trend while simultaneously narrowing the novelty of one or more linked Directions.
 
 > **Prior art constrains novelty, not product relevance.**
+
+## Round 14-A / MobiMem pressure
+PAPER-103 confirms a multi-role mobile Agent architecture but does not isolate multi-Agent identity as a new physical/system control point. Its measured gains are attributable to software-visible DAG scheduling, reusable state and replay validity. T7 therefore remains FRONTIER_SIGNAL / WATCH pending LOCAL and EcoAgent FULL_10Q.

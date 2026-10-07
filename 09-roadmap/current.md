@@ -115,7 +115,7 @@ Possible outcomes:
 No product trend is killed merely because prior art exists.
 
 ## Current research frontier
-**ROUND 14 ACTIVE — T7 seed triage complete; FULL_10Q phase next.**
+**ROUND 14 ACTIVE — MobiMem FULL_10Q complete; LOCAL next.**
 
 ## Evidence Rescue 1B — A
 A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT**, with no promotion.
@@ -153,11 +153,22 @@ Current pressure:
 
 Therefore T7 remains a **product trend candidate**, not a new Direction.
 
+## MobiMem FULL_10Q
+PAPER-103 materially strengthens **T5 product relevance** but does not establish a standalone T7 control point.
+
+Key corrections:
+- Snapdragon 8 Elite Action Memory result is CPU-only;
+- highest 77.3% action reuse uses human-crafted templates;
+- Experience Memory + AgentRR, not the full MobiMem stack, are claimed as deployed in a flagship smartphone;
+- MobiMem/AgentRR shares the IPADS-SJTU MobiAgent lineage;
+- fine-grained multi-app speedup is explained by explicit step-DAG dependencies.
+
+No Trend maturity, portfolio lane, score or uArch promotion.
+
 ## Next
 FULL_10Q in order:
-1. MobiMem
-2. LOCAL
-3. EcoAgent
+1. LOCAL
+2. EcoAgent
 
 Then issue an ownership/residual decision:
 NEW DIRECTION / MERGE INTO C / MERGE INTO T5-B-PT-A / WATCH / KILL differentiated novelty.

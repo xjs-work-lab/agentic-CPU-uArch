@@ -852,6 +852,22 @@
       "claim_kind": "BOUNDARY"
     },
     {
+      "id": "CLM-T5-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T5-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "SOURCE_CLAIM"
+    },
+    {
+      "id": "CLM-T7-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-T7-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "DEC-A-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-A-001.md"
@@ -1000,6 +1016,16 @@
       "id": "DEC-R3-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-R3-001.md"
+    },
+    {
+      "id": "DEC-T5-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-T5-001.md"
+    },
+    {
+      "id": "DEC-T7-001",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-T7-001.md"
     },
     {
       "id": "A",
@@ -1836,6 +1862,18 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-T5-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T5-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-T7-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-T7-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EXP-A-001",
       "type": "EXPERIMENT",
       "path": "07-validation/A/EXP-A-001/README.md",
@@ -2390,6 +2428,12 @@
       "id": "PAPER-102",
       "type": "SOURCE",
       "path": "01-evidence/papers/PAPER-102/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-103",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-103/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -5636,6 +5680,48 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CLM-T5-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T5-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T5-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T5-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T5-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T5-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T7-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T7-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-T7-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T7-001",
+      "relation": "SUPPORTS_TREND",
+      "target": "T7",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-T7-001",
+      "relation": "TRIGGERS_DECISION",
+      "target": "DEC-T7-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "DEC-A-001",
       "relation": "SUBJECT",
       "target": "A",
@@ -6509,6 +6595,36 @@
       "source": "DEC-R3-001",
       "relation": "TRIGGER_EXPERIMENT",
       "target": "EXP-R3-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T5-001",
+      "relation": "SUBJECT",
+      "target": "T5",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T5-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T7-001",
+      "relation": "SUBJECT",
+      "target": "T7",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T7-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "DEC-T7-001",
+      "relation": "TRIGGER_CLAIM",
+      "target": "CLM-T7-001",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -8168,6 +8284,30 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-T5-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-103",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T5-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T7-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-103",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-T7-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-T7-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
       "target": "PAPER-013",
@@ -9692,6 +9832,18 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-103",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T5-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-103",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-T7-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-005",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
@@ -10539,6 +10691,12 @@
     },
     {
       "source": "T5",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-T5-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T5",
       "relation": "HAS_DIRECTION",
       "target": "B-residual",
       "provenance": "CANONICAL_SEMANTIC"
@@ -10605,6 +10763,12 @@
     },
     {
       "source": "T5",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "T5",
       "relation": "TREND_SCHEDULED_BY",
       "target": "ROADMAP-PRODUCT-2027-2029",
       "provenance": "GENERATED_REVERSE"
@@ -10614,6 +10778,18 @@
       "relation": "TREND_SCHEDULED_BY",
       "target": "ROADMAP-PRODUCT-2027-2029",
       "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T7",
+      "relation": "HAS_DECISION_EVENT",
+      "target": "DEC-T7-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "T7",
+      "relation": "TREND_EVIDENCE_CLAIM",
+      "target": "CLM-T7-001",
+      "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "T7",
@@ -10809,8 +10985,8 @@
     }
   ],
   "counts": {
-    "nodes": 393,
-    "canonical_semantic_edges": 678,
-    "generated_reverse_edges": 678
+    "nodes": 400,
+    "canonical_semantic_edges": 689,
+    "generated_reverse_edges": 689
   }
 }
