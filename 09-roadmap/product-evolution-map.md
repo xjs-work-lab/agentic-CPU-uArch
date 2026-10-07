@@ -19,16 +19,16 @@ The current evidence supports **five product-relevant trend families already rep
 
 A trend can remain important even when its broad novelty is crowded.
 
-| Trend | Product maturity | Product posture | Differentiation posture | Current owners |
+| Trend | Product maturity | Product posture | Linked Direction posture(s) | Canonical Direction links |
 |---|---|---|---|---|
-| T1 Semantic-aware progress & resource control | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | DIFFERENTIATED_BET + RESIDUAL_RESEARCH | A, C |
-| T2 Heterogeneous Agent AI execution continuum | ESTABLISHED_PRODUCT_TREND | PRODUCTIZE / ADAPT_AND_DIFFERENTIATE | CROWDED_BUT_VALUABLE + RESIDUAL_RESEARCH | C, CG-06 |
-| T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | CROWDED_BUT_VALUABLE + RESIDUAL_RESEARCH | PT-A |
-| T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | FRONTIER_UNPROVEN / RESIDUAL_RESEARCH | CG-07 |
-| T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE / BENCHMARK | RESIDUAL_RESEARCH | B-residual, CG-01, R2, H-CAL lineage |
-| T6 Local programmable Agent execution & sandboxed skills | FRONTIER_SIGNAL | WATCH | FRONTIER_UNPROVEN | unassigned |
-| T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH → audit for upgrade | FRONTIER_UNPROVEN | partially overlaps C/B |
-| T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | FRONTIER_UNPROVEN | partially overlaps PT-A/C |
+| T1 Semantic-aware progress & resource control | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | A=DIFFERENTIATED_BET; C/R1=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | A, C, R1, R3 |
+| T2 Heterogeneous Agent AI execution continuum | ESTABLISHED_PRODUCT_TREND | PRODUCTIZE | C/CG-06=RESIDUAL_RESEARCH | C, CG-06 |
+| T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | PT-A=RESIDUAL_RESEARCH | PT-A |
+| T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | CG-07=RESIDUAL_RESEARCH | CG-07 |
+| T5 Agent state lifecycle, reuse & locality | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | B-residual/CG-01/R2=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | B-residual, CG-01, R2, R3 |
+| T6 Local programmable Agent execution & sandboxed skills | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
+| T7 Local multi-Agent concurrency & shared model/state | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
+| T8 Cross-device Agent fabric & continuation | FRONTIER_SIGNAL | WATCH | — (no Direction yet) | — |
 
 ---
 
@@ -37,7 +37,7 @@ A trend can remain important even when its broad novelty is crowded.
 ### Product thesis
 Future Agent systems increasingly expose work whose value depends on goal survival, user demand, confirmation, utility and progress state rather than simple runnable/not-runnable status.
 
-### Product action
+### Product posture
 **ADAPT_AND_DIFFERENTIATE**
 
 Prepare runtime/OS contracts and measurement infrastructure even before any hardware conclusion.
@@ -58,8 +58,10 @@ It does not remove the product need for semantic-aware control.
 Agent workloads will not map cleanly to one engine.
 CPU, GPU and NPU roles vary by phase, operator, precision role, shape, responsiveness target and implementation quality.
 
-### Product action
-**PRODUCTIZE + ADAPT_AND_DIFFERENTIATE**
+### Product posture
+**PRODUCTIZE**
+
+Target-specific adaptation and differentiation remain valuable implementation/research activities, but they do not create a second Product posture token.
 
 Product roadmap should explicitly include:
 - CPU-resident latency-critical AI path;
@@ -82,7 +84,7 @@ Whitespace is in target-specific crossover, low-overhead orchestration and CPU r
 ### Product thesis
 Real agents need bounded execution, explicit authority/capability, target/context integrity, effect observability, verification and recovery.
 
-### Product action
+### Product posture
 **PRODUCTIZE**
 
 This is a likely future platform capability even if broad academic novelty is already crowded.
@@ -103,7 +105,7 @@ No CPU/uArch implication today.
 ### Product thesis
 Persistent/proactive agents create a recurring “observe → gate → intervene or remain silent” workload that may justify a low-power front end.
 
-### Product action
+### Product posture
 **BENCHMARK_AND_PREPARE**
 
 Prepare:
@@ -131,8 +133,10 @@ Agent execution creates persistent and reusable state across:
 - cross-task shared prefixes;
 - rollback/provisional artifacts.
 
-### Product action
-**ADAPT_AND_DIFFERENTIATE + BENCHMARK**
+### Product posture
+**ADAPT_AND_DIFFERENTIATE**
+
+Benchmarking remains an implementation activity for this Trend, not a second Product posture token.
 
 Treat state lifecycle as a product trend even though several broad cache/state ideas are mature prior art.
 
