@@ -3,10 +3,10 @@
 Updated: 2026-10-07
 
 ## Current projection
-- canonical nodes: **349**
-- canonical semantic edges: **552**
-- generated reverse edges: **552**
-- graph projection: refreshed after Frontier Round 11 Contiguous Agent Learning
+- canonical nodes: **358**
+- canonical semantic edges: **564**
+- generated reverse edges: **564**
+- graph projection: refreshed after Frontier Round 12 H-CAL closure
 
 ## Validation status
 ### Last full CI / cutover QA
@@ -15,22 +15,22 @@ Updated: 2026-10-07
 - job: `112322303675`
 - hard graph errors: **0**
 
-### Round-11 structural delta check
+### Round-12 structural delta check
 **PASS — expected structural delta is internally consistent**
 
 Checked:
-- PAPER-089 through PAPER-093 resolve as SOURCE nodes;
-- CLM-CAL-001 / 002 / 003 are grounded;
-- five EC-CAL cases connect all five new sources;
-- DEC-H-CAL-001 records the roadmap-level hypothesis decision;
+- PAPER-094 through PAPER-096 resolve as SOURCE nodes;
+- CLM-CAL-004 / 005 are grounded;
+- three new EC-CAL cases connect all Round-12 sources;
+- DEC-H-CAL-002 records the roadmap-level closure decision;
 - no H-CAL DIRECTION node exists;
 - generated reverse edges are refreshed.
 
 ## Research-state boundary
-Graph health does not make H-CAL a Direction, change portfolio scores, establish CPU/uArch insufficiency, or turn generic mobile training into Agent-specific differentiation.
+Graph health does not create a new Direction, change portfolio scores, establish CPU/uArch insufficiency, or claim that contiguous learning is unimportant.
 
 Current state:
-- training workload SYSTEM_VALUE — direct phone evidence exists;
-- generic software capture — strong;
-- Agent-specific version/coherence/concurrency residual — open;
-- H-CAL — narrow analysis hypothesis only.
+- H-CAL — CLOSED / killed as standalone candidate;
+- contiguous Agent learning — retained as workload/evaluation scenario;
+- second differentiated Primary Bet — unfilled;
+- next frontier — unassigned.
