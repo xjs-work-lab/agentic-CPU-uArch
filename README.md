@@ -28,9 +28,9 @@ should be maintained here.
 The V1 repository remains frozen historical provenance and is not deleted or rewritten.
 
 ## Current graph
-- **312 canonical nodes**
-- **510 canonical semantic edges**
-- **510 generated reverse edges**
+- **330 canonical nodes**
+- **526 canonical semantic edges**
+- **526 generated reverse edges**
 
 ## Current portfolio
 
@@ -64,7 +64,10 @@ Closed structural frontier:
 **H-PAM — Persistent Agent Memory Execution Substrate — KILLED AS STANDALONE CANDIDATE; memory retained as workload/evidence dimension**
 
 Current second-Bet frontier:
-**UNASSIGNED — frontier reset / coverage audit required**
+**UNASSIGNED — frontier reset / coverage audit ongoing**
+
+Confidential execution / Agent isolation:
+**COVERED AS PLATFORM REQUIREMENT + RESEARCH RADAR — NOT A DIRECTION/HYPOTHESIS**
 
 uArch Primary Bet:
 **NONE**
