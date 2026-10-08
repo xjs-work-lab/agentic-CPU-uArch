@@ -2,6 +2,8 @@
 
 日期：2026-10-08。**v1 用户明确退回**（箭头乱、逻辑不易理解）；本次 V2 为待用户审阅的新作品，不自动宣布视觉通过。旧样仍保留为失败案例：[问题定位与修正合同](page-08-hero-design-correction-v2-2026-10-08.md)、[v1 QA](page-08-round15k-visual-pilot-status.md)。
 
+> **2026-10-08 后续评审**：用户反馈 V2 视觉基本可接受，但五个阶段的相互配合、技术文字和论文公式不足。当前版本不再作为正式文案，下一版采用 [V3 公式与输入—判断—输出合同](page-08-round15k-v3-technical-explanation-formulas-2026-10-08.md)。
+
 ## 主要修改
 
 - **论文锚点**：[HeRo, Algorithm 1（第 5 页）](https://arxiv.org/pdf/2603.01661)、§4.2 和 Figure 4(a)–(d) 的图注/方法文字。V2 是**依据论文算法的方法简化重绘**，而不是 Figure 4 原图或原系统部署截图。已核对原文 Methods/Algorithm；因外部 PDF 图像截图服务失败，未宣称 Figure 4 原图逐元素视觉对照完成。
