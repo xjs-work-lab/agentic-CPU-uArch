@@ -1305,6 +1305,30 @@
       "claim_kind": "INFERENCE"
     },
     {
+      "id": "CLM-XAO-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-XAO-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-XAO-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "DEC-A-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-A-001.md"
@@ -2050,6 +2074,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-AO5-004-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-004-C.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-AO5-005-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-AO5-005-A.md",
@@ -2077,6 +2107,12 @@
       "id": "EC-AO5-006-C",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-AO5-006-C.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-006-D",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-006-D.md",
       "record_state": "CURRENT"
     },
     {
@@ -2815,6 +2851,42 @@
       "id": "EC-T8-004-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-T8-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-003-B.md",
       "record_state": "CURRENT"
     },
     {
@@ -5668,6 +5740,18 @@
     },
     {
       "source": "CLM-AO1-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO1-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO1-006",
       "relation": "SCOPED_BY_CASE",
       "target": "EC-AO1-006-B",
       "provenance": "GENERATED_REVERSE"
@@ -5740,6 +5824,12 @@
     },
     {
       "source": "CLM-AO2-003",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO2-003",
       "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
       "target": "AO-2",
       "provenance": "GENERATED_REVERSE"
@@ -5790,6 +5880,12 @@
       "source": "CLM-AO2-006",
       "relation": "OPEN_GAP_FOR_OPPORTUNITY",
       "target": "AO-2",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO2-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5922,6 +6018,12 @@
       "source": "CLM-AO3-006",
       "relation": "OPEN_GAP_FOR_OPPORTUNITY",
       "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO3-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -6088,6 +6190,12 @@
     },
     {
       "source": "CLM-AO4-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO4-006",
       "relation": "SCOPED_BY_CASE",
       "target": "EC-AO4-006-C",
       "provenance": "GENERATED_REVERSE"
@@ -6207,6 +6315,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CLM-AO5-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-004-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "CLM-AO5-005",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO5-006-A",
@@ -6240,6 +6354,12 @@
       "source": "CLM-AO5-006",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO5-007-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8520,6 +8640,36 @@
       "source": "CLM-T8-004",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-T8-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-001",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-XAO-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-XAO-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-XAO-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-003",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-XAO-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-XAO-003-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -10995,6 +11145,18 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-AO5-004-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-C",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-AO5-005-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-068",
@@ -11061,6 +11223,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "EC-AO5-006-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-AO5-006-D",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "EC-AO5-006-B",
       "relation": "HAS_PREMISE",
       "target": "PAPER-044",
@@ -11100,6 +11268,18 @@
       "source": "EC-AO5-006-C",
       "relation": "SCOPE_LIMIT",
       "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-D",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-D",
+      "relation": "UNDERCUT",
+      "target": "EC-AO5-006-A",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -12777,6 +12957,144 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-XAO-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO1-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO2-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO3-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-XAO-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO2-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-104",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-023",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-001-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-XAO-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO1-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO4-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-XAO-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-XAO-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-XAO-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-088",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-024",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-002-B",
+      "relation": "UNDERCUT",
+      "target": "EC-XAO-002-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-XAO-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-120",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-XAO-003-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-XAO-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EXP-A-001",
       "relation": "INPUT_SOURCE",
       "target": "PAPER-013",
@@ -14427,6 +14745,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-088",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-090",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CAL-003-A",
@@ -14640,6 +14964,12 @@
       "source": "PAPER-104",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-T7-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-104",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -14871,6 +15201,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-120",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO5-003-B",
@@ -14892,6 +15228,42 @@
       "source": "PAPER-120",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO5-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-D",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-003-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -16498,6 +16870,12 @@
     },
     {
       "source": "VENDOR-023",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-023",
       "relation": "PUBLISHED_BY",
       "target": "ACT-QUALCOMM",
       "provenance": "CANONICAL_SEMANTIC"
@@ -16524,6 +16902,12 @@
       "source": "VENDOR-024",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO4-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-024",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-XAO-002-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -16564,8 +16948,8 @@
     }
   ],
   "counts": {
-    "nodes": 565,
-    "canonical_semantic_edges": 1059,
-    "generated_reverse_edges": 1059
+    "nodes": 576,
+    "canonical_semantic_edges": 1085,
+    "generated_reverse_edges": 1085
   }
 }

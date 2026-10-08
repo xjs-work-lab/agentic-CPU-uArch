@@ -22,7 +22,7 @@ portfolio_convergence: PROVISIONAL_REFRAME
 execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
-next_program: ROUND15B_CROSS_OPPORTUNITY_SYNTHESIS
+next_program: ROUND15C_PUBLIC_ARCHITECTURE_PRESSURE_AND_ROADMAP
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -35,10 +35,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 565 canonical nodes
-- 1059 canonical semantic edges
-- 1059 generated reverse edges
-- 1005 derived single-direction dependency edges
+- 576 canonical nodes
+- 1085 canonical semantic edges
+- 1085 generated reverse edges
+- 1031 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -517,3 +517,17 @@ AO-5 Semantic Progress / QoE Control Plane: **EVIDENCE_MAPPED / KEEP-NARROW / co
 
 Canonical synthesis: analysis/opportunities/AO-5-evidence-skeleton-2026-10-08.md
 Transaction: history/research-transactions/TXN-20261008-ROUND15A-AO5-01.md
+
+## Round 15B — Cross-AO architecture opportunity synthesis (2026-10-08)
+
+**PROVISIONAL SYNTHESIS / NO PORTFOLIO CHANGE.** PAPER-121 ProgRouter now FULL_10Q, original arXiv Sections 2–5, Appendix D/E reviewed; energy is GPU-board-based, software-ledger progress is already observable, no phone CPU-uArch promotion.
+
+AO1+AO2+AO3 form an interdependent **execution/state lifecycle theme F** (do not conflate legal authorization with physical state validity). AO4 is **proactive always-on admission theme P**. AO5 is **Agent progress/QoE information-and-policy theme V** that feeds software decisions and only conditionally affects lower-level control. Three themes are NOT three investment bets.
+
+Cross-AO graph reasoning: CLM-XAO-001..003 and EC-XAO-001-A/B, 002-A/B, 003-A/B. AO5 strongest baseline also receives EC-AO5-004-C and EC-AO5-006-D UNDERCUT.
+
+No new Source ID, patent novelty conclusion, silicon feature, Differentiated Direction, Investment Lane or score change. The 2027–29 roadmap still requires refitting to these themes.
+
+**Anti-drift round-end SSOT:** `00-project/final-questions-status.md` records final goal, FQ1..FQ7 progress and next gates and must be updated/reported every research round.
+
+Next: **Round15C** public target-mobile cross-xPU mechanism pressure and 2027–29 layer/year roadmap.

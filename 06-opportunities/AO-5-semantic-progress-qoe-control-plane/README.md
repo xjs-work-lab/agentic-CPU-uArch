@@ -51,8 +51,10 @@ Reject a claimed AO-5 'incremental information' improvement if:
 - the only benefit is a better software policy on the same observed features;
 - it worsens user task success, foreground responsiveness or action legality.
 
-### High-priority literature debt
-[PAPER-121 ProgRouter](../../../01-evidence/papers/PAPER-121/screen.md) describes progress-aware model routing in its public abstract and is extremely relevant competing work. **Review_depth=METADATA_ONLY**: the original full method, quantitative tables, ablations and limitations were not accessible in this round. It is not a decision-grade Evidence Case premise; deep-read before **final** cross-AO convergence.
+### Round 15B literature closure and strengthened baseline
+[PAPER-121 ProgRouter](../../../01-evidence/papers/PAPER-121/deep.md) is now **FULL_10Q**, with original Sections 2–5, GPU-energy measurement Appendix D and progress/route ablations Appendix E reviewed. Its coordinator maintains a ledger of goals, steps and intermediate outputs; a structured path and a **semantic path derived from the coordinator's own state summary** predict next-model progress gain. On HumanEval+ (4800 J per-task-stream cap), full model 93.0% pass, structured-only 90.9%/4400J, semantic-only 87.2%/4784J; the 2.1 percentage-point difference is **not** a matched-energy causal proof of private state value.
+
+The two new Evidence Cases **EC-AO5-004-C (SUPPORT)** and **EC-AO5-006-D (UNDERCUT)** bring ledger-derived progress and next-model progress-prediction into the strong B4-TX baseline. **AO-5 remains KEEP/NARROW**, no new hardware conclusion.
 
 ## Decision
 AO-5 **KEEP / NARROW / EVIDENCE_MAPPED**. A remains **PRIMARY_BET / 82.5 / SIMULATION_SUPPORT** *as an existing provisional portfolio decision*, not as a newly validated claim. C is generic orchestration baseline; R1 remains conditional reserve. No new Direction, maturity/score adjustment, silicon/ISA/uArch commitment or proposed experiment execution.

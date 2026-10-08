@@ -1306,6 +1306,30 @@
       "claim_kind": "INFERENCE"
     },
     {
+      "id": "CLM-XAO-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-XAO-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-XAO-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-XAO-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "DEC-A-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-A-001.md"
@@ -2051,6 +2075,12 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-AO5-004-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-004-C.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-AO5-005-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-AO5-005-A.md",
@@ -2078,6 +2108,12 @@
       "id": "EC-AO5-006-C",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-AO5-006-C.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-006-D",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-006-D.md",
       "record_state": "CURRENT"
     },
     {
@@ -2816,6 +2852,42 @@
       "id": "EC-T8-004-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-T8-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-XAO-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-XAO-003-B.md",
       "record_state": "CURRENT"
     },
     {
@@ -4354,6 +4426,18 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "CLM-AO1-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-AO1-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "CLM-AO1-007",
       "relation": "CLAIM_TO_OPPORTUNITY_HYPOTHESIS",
       "target": "AO-1",
@@ -4396,6 +4480,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "CLM-AO2-003",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "CLM-AO2-004",
       "relation": "CLAIM_TO_OPPORTUNITY_PRIOR_ART",
       "target": "AO-2",
@@ -4423,6 +4513,12 @@
       "source": "CLM-AO2-006",
       "relation": "CLAIM_TO_OPPORTUNITY_GAP",
       "target": "AO-2",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-AO2-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -4495,6 +4591,12 @@
       "source": "CLM-AO3-006",
       "relation": "CLAIM_TO_OPPORTUNITY_GAP",
       "target": "AO-3",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-AO3-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -4582,6 +4684,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "CLM-AO4-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "CLM-AO4-007",
       "relation": "CLAIM_TO_OPPORTUNITY_HYPOTHESIS",
       "target": "AO-4",
@@ -4651,6 +4759,12 @@
       "source": "CLM-AO5-006",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO5-007-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -6940,6 +7054,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "EC-AO5-004-C",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-AO5-004",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "EC-AO5-005-A",
       "relation": "CASE_SUPPORTS",
       "target": "CLM-AO5-005",
@@ -6967,6 +7087,12 @@
       "source": "EC-AO5-006-C",
       "relation": "CASE_SCOPE_LIMITS",
       "target": "CLM-AO5-006",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-AO5-006-D",
+      "relation": "CASE_UNDERCUTS",
+      "target": "EC-AO5-006-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -7705,6 +7831,42 @@
       "source": "EC-T8-004-A",
       "relation": "CASE_SUPPORTS",
       "target": "CLM-T8-004",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-001-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-XAO-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-001-B",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-XAO-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-002-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-XAO-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-002-B",
+      "relation": "CASE_UNDERCUTS",
+      "target": "EC-XAO-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-003-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-XAO-003",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-XAO-003-B",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-XAO-003",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -8783,6 +8945,12 @@
     },
     {
       "source": "PAPER-088",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-088",
       "relation": "SOURCE_TO_EXPERIMENT",
       "target": "EXP-CG07-001",
       "provenance": "DERIVED_DEPENDENCY"
@@ -8995,6 +9163,12 @@
       "source": "PAPER-104",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-T7-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-104",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9232,6 +9406,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "PAPER-119",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-003-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "PAPER-120",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO5-003-B",
@@ -9253,6 +9433,42 @@
       "source": "PAPER-120",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO5-006-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-003-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-AO5-004-C",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-AO5-006-D",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-003-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9832,6 +10048,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "VENDOR-023",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "VENDOR-024",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO4-003-B",
@@ -9853,6 +10075,12 @@
       "source": "VENDOR-024",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO4-006-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "VENDOR-024",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-XAO-002-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9887,7 +10115,7 @@
     }
   ],
   "counts": {
-    "nodes": 565,
-    "dependency_edges": 1005
+    "nodes": 576,
+    "dependency_edges": 1031
   }
 }
