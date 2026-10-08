@@ -2,6 +2,8 @@
 
 日期：2026-10-08。基于用户对 [V2](page-08-round15k-v2-redesign-pilot-status.md) 的反馈：**视觉基本可以，但五阶段之间的合作逻辑及技术文字不足，希望结合论文的重要数学公式解释**。本文件为当前**第 8 页正式制作文案 / 机制规格**；V2 作为历史草图保留，不应继续作为逐字内容源。正文共 15 页规划不变。
 
+> **更新入口（2026-10-08）**：用户要求主标题和流程标题改为结论陈述句，并统一 PU/xPU。请用 [V4 标题与术语合同](page-08-round15k-v4-titles-and-xpu-terminology-2026-10-08.md) 的显示文案；本文件继续保留技术推导、变量和公式细节。
+
 ## 一、来源、声明、页面职责
 
 **原始论文**：Maoliang Li 等，*HeRo: Adaptive Orchestration of Agentic RAG on Heterogeneous Mobile SoC*, DAC 2026, [arXiv:2603.01661](https://arxiv.org/pdf/2603.01661)，第 3.1–3.2、4.1–4.2 节，Eq.1–5、Figure 4 和 Algorithm 1、Table 3。
