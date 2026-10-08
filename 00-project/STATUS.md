@@ -26,7 +26,7 @@ execution_plan_2027: HISTORICAL_NONOPERATIVE_EXPERIMENT_ARCHIVE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: POST15G_REPORT_DELIVERED_PUBLIC_SOURCE_UPDATE_ON_REQUEST
+next_program: POST15H_LEADERSHIP_PACK_DELIVERED_USER_TRIGGERED_ONLY
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -34,6 +34,7 @@ source_identity_gate: ACTIVE
 round_end_reporting_contract: COMPILER_STYLE_GOAL_FQ7_COVERAGE_DRIFT_V1
 management_final_report: 09-roadmap/management-final-public-evidence-2027-2029.md
 source_claim_audit: analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md
+leadership_decision_pack: 09-roadmap/leadership-decision-pack/README.md
 ```
 
 ## Authority
@@ -601,3 +602,14 @@ Next Round15G final public source/link/claim audit and management report closing
 - **Formal portfolio unchanged:** CG-06/PT-A/C prioritized engineering/platform, zero independent differentiated Primary Bets, A/B-residual/R2 conditional reserves, R1 Watch, R3 Blocked, CG07 Explore, CG01 Follow.
 - FQ1,2,3,5,6,7 closed for bounded public-source leadership decision; FQ4 software+compiler path answered but no publicly demonstrated new Agent-only CPU-uArch necessity. Final status is a decision with explicit uncertainty ceiling, not hardware innovation declaration.
 - No new Source/Claim/EC nodes and no experiment, test, PoC, simulation, or automated monitoring. Future task only on user's new request.
+
+## Round15H — technical leadership decision pack completed (2026-10-08)
+
+Communication-only follow-up to completed Round15G research: no additional evidence objects, changed scores, altered lanes or hardware claims. [Decision pack](../09-roadmap/leadership-decision-pack/README.md) is the new stakeholder-facing short entry; [Round15G full report](../09-roadmap/management-final-public-evidence-2027-2029.md) and [DEC-PORTFOLIO-002](../08-decisions/events/DEC-PORTFOLIO-002.md) remain authoritative.
+
+- Five-minute one-page executive summary, [CPU+LLVM / Runtime / OS ownership table](../09-roadmap/leadership-decision-pack/technical-matrix.md), [14 technically skeptical questions](../09-roadmap/leadership-decision-pack/technical-qa.md), [nine-slide academic presentation outline](../09-roadmap/leadership-decision-pack/slide-outline.md).
+- Four document links audited: **58 relative links checked, 0 missing**, alongside normal graph/identity GitHub CI.
+- Actual organization owner, funding, PM execution dates, permission to modify SoC IP and chip plans were **not** supplied, hence no made-up organizational commitments.
+- No experimental work, phone testing, PoC, simulation or research Source additions.
+- Formal directions **unchanged**: engineering CG-06 INVEST/PT-A PLATFORM_TRACK/C STRATEGIC_ENABLER, **0 differentiated Primary Bets**, core A/B-residual/R2 reserves, R1 WATCH/R3 BLOCKED, CG-07 EXPLORE/CG-01 BENCHMARK.
+- Next work **only on explicit user request**: convert to a polished slide or document artifact if asked, or incorporate genuinely consequential fresh publicly published research.

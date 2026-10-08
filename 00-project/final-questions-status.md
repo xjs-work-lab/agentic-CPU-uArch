@@ -2,7 +2,7 @@
 
 Updated: 2026-10-08
 Research authority: xjs-work-lab/agentic-CPU-uArch (V2.2 research SSOT / V2.4 graph)
-Next: POST15G_REPORT_DELIVERED_PUBLIC_SOURCE_UPDATE_ON_REQUEST
+Next: POST15H_LEADERSHIP_PACK_READY_USER_REQUEST_ONLY
 Purpose: anti-drift one-page dashboard. Update at the **end of every meaningful research round** and summarize succinctly in user reply.
 
 ## Goal Lock (immutable in intent)
@@ -104,3 +104,16 @@ Critical: Round-end reporting tracks **cumulative research progress toward the f
 - **Area coverage:** Agent UX ADEQUATE; CPU LLVM/SME ABI and compiler ADEQUATE; distinct CPU-uArch novel device causal GAP; trusted runtime ADEQUATE; OS/NPU/QoE ADEQUATE with AOSP deployment caveat; cross-xPU derived state PARTIAL; LP assistance-adjusted energy PARTIAL.
 - **Anti-drift:** smartphone, 2027–29, CPU/LLVM/SoC ownership, public sources and uncertainty explicit, no experiments/PoC or padding bets. **Goal-aligned.**
 - Next only if requested: transform existing management report into leaders' preferred presentation or update primary evidence when new public publications warrant; no background task initiated.
+
+## Round15H — decision communication readiness, cumulative FQ1–FQ7 review (2026-10-08)
+
+- **FQ1 ADEQUATE/CLOSED**: Four structural smartphone Agent changes ranked; unchanged this round; not OEM roadmap certainty.
+- **FQ2 ADEQUATE**: 5 AO coverage, official vendor/patent original claims and P0 academic deepreads from 15G; **no new SOURCE objects or claims**, vendor/academic independence preserved.
+- **FQ3 CLOSED**: F execution-state, P proactive admission and V semantic progress/QoE now each have discussion framing; these three **themes are not hardware Primary Bets**.
+- **FQ4 COMPILER/RUNTIME ADEQUATE; SILICON-CAUSE GAP**: C1–C3 CPU LLVM-owned work, C4 Compiler+Runtime ownership, C5 OS/Runtime ownership exposed explicitly; no unproven hardware gain promoted.
+- **FQ5 CLOSED as-of this public evidence**: three priority engineering/platform paths CG-06, PT-A, C; zero independent differentiated Primary Bets; conditional reserves A/B-residual/R2; R1 WATCH, R3 BLOCKED. No changes.
+- **FQ6 CLOSED management deliverable and meeting pack**: 2027/28/29 technical owner matrix plus five-minute narrative and nine-slide content outline; corporate personnel/budgets/approvals unknown.
+- **FQ7 ADEQUATE**: 14 challenged questions with strongest original public sources, scope warnings and prior 15G source access audit. No new experimental requirement.
+- **Technology coverage**: Agent UX ADEQUATE; LLVM/AArch64/SME2 technical mechanisms ADEQUATE; new Agent-only uArch GAP; PT-A/Runtime ADEQUATE; OS/xPU resource/QoE ADEQUATE with deployment caveats; CPU-NPU physical coherence PARTIAL; LP admission/battery PARTIAL.
+- **Anti-drift**: smartphone 2027–29 technology decisions, CPU/LLVM prioritized, product relevance separate from novelty and physical cause, no self-run tests/PoCs, no fabricated Bet quota or leadership budget approval.
+- **Research state**: current bounded public-source insight report remains decision-ready; Round15H supplies usable presentation/QA structure, **not new empirical research**. No recurring monitoring or other asynchronous follow-up created.

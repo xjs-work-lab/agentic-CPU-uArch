@@ -1,10 +1,14 @@
 # Agentic CPU-uArch — 2027–2029 手机 Agentic AI 技术洞察 SSOT
 
-> 研究权威：xjs-work-lab/agentic-CPU-uArch · V2.2 Research SSOT / Graph V2.4 · 2026-10-08 · **Round15G 公开资料研究交付版本**。
+> 研究权威：xjs-work-lab/agentic-CPU-uArch · V2.2 Research SSOT / Graph V2.4 · 2026-10-08 · **Round15H 技术领导决策包已交付；Round15G 公开研究结论仍为权威**。
 >
 > **硬性约束：仅研究公开论文、专利、厂商技术资料和已发表第三方实验结果。没有项目自有实验、手机测试、仿真、PoC，也不以其作为结论完成门槛。**
 
 ## 当前有效入口（按推荐阅读顺序）
+
+**技术领导快速阅读：** [Round15H 决策包](09-roadmap/leadership-decision-pack/README.md)（五分钟摘要、技术责任矩阵、14 个质询、9 页汇报内容提纲）。该包没有新增研究 Source、改变现行投资组合或假定内部预算已获批。
+
+
 
 1. **[管理层技术洞察与 2027–2029 路线图](09-roadmap/management-final-public-evidence-2027-2029.md)** — 4 个负载变化、F/P/V 主线、投资/储备/Kill、逐年架构路线。
 2. **[当前正式投资组合](09-roadmap/current.md)** — 唯一有效的 Direction 投资 SSOT；决策事件 [DEC-PORTFOLIO-002](08-decisions/events/DEC-PORTFOLIO-002.md)。

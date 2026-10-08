@@ -1,6 +1,7 @@
 # 09-roadmap — entrypoint
 
-**Current authority (Round15G final management version, 2026-10-08):**
+**Current authority (Round15H discussion package on Round15G evidence, 2026-10-08):**
+- **[leadership-decision-pack/README.md](leadership-decision-pack/README.md)** — five-minute leadership decision brief and 3 linked owner/FAQ/slide-outline documents; **not a PowerPoint file**. 15G primary evidence remains the underlying scientific authority.
 - **[management-final-public-evidence-2027-2029.md](management-final-public-evidence-2027-2029.md)** — finished leadership strategic insight: final goal, four workload changes, F/P/V, technical bets/reserves/Kill, 2027–29 layers and limitations.
 - [Round15G primary evidence/SSOT audit](../analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md) — URL access, independence and entrypoint corrections.
 - [round15f-leadership-technical-brief-2027-2029.md](round15f-leadership-technical-brief-2027-2029.md) — latest evidence-bounded CPU/LLVM management synthesis.
