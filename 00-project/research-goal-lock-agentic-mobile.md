@@ -5,13 +5,14 @@ State: CURRENT
 
 ## Research environment
 
-This project assumes:
-- no owned target-phone experimental platform;
-- no privileged internal competitor data;
-- no ability to validate claims through new silicon or device experiments;
-- conclusions must be built from public papers, patents, vendor/official material, artifacts, benchmarks and cross-source technical inference.
+This project operates under a **strict public-source-only, no-experiment constraint**:
+- no new device tests, lab benchmarks, code execution/reproduction experiments, simulations, or PoC validation conducted by this research;
+- no owned target-phone test platform and no privileged competitor/internal test data;
+- findings use publicly accessible **primary** papers (deep-read Methods/Results/Limitations), published experimental findings **reported by their authors**, patents with direct claim review where material, standards, official vendor white papers, product technical documentation, public artifacts and independent public analyses;
+- public third-party measurements may be analysed **as reported evidence**, with experiment setup and transportability bounds explicit; their replication or new local measurement is **not** assumed;
+- if a claim would need new test data, give a bounded, transparent public-evidence judgment (**SUPPORTED / INFERENCE / HYPOTHESIS / NOT_PUBLICLY_ESTABLISHED**), not a promise to test it.
 
-This is intentional.
+This is an **operating rule through the final 2027–2029 leadership report**, not a temporary resource shortage.
 
 ## Original decision goal
 
@@ -77,14 +78,14 @@ Output states:
 - RESEARCH RESERVE;
 - CLOSED / CROWDED.
 
-No owned experiment is required.
+**No new experiment is permitted within this research workflow.** A decision-ready Gate-A foresight recommendation may use convergent public materials and clearly labelled inference without calling for any local verification.
 
 ### Gate B — Product/Silicon Commitment
-Used only if experimental capability later exists.
+**Out of scope for this public-source-only project.** Preserve this as an explanatory boundary for eventual product/silicon commitment, not as a required next step or future task assigned to this research.
 
 STRUCTURAL_SIGNAL → SYSTEM_VALUE → SOFTWARE_INSUFFICIENCY → hardware-specific cause → UARCH_CANDIDATE.
 
-Gate B must not be used to kill Gate-A exploration.
+**Gate B is not performed here.** Its unresolved conditions cannot be used to declare that an evidence-supported Gate-A architecture hypothesis has no research value.
 
 ## Evidence interpretation
 
@@ -111,11 +112,19 @@ A leadership-grade 2027–2029 map containing:
 - software vs hardware design levers;
 - probable 3-year evolution;
 - confidence and evidence boundaries;
-- future validation questions, not fabricated experiments.
+- explicit public-evidence sufficiency/uncertainty and **external/publicly verifiable evidence still required** where relevant, but no proposed execution of experiments as part of this project.
 
 ## Anti-drift rule
 
-If the research next step becomes impossible without owned hardware, stop and ask:
-> Can this uncertainty instead be bounded through public evidence, mechanism comparison, simulation results from literature, patents or industry architecture signals?
+If an attractive conclusion seems to depend on doing an experiment, **do not schedule, propose to execute or rely on that experiment**. Instead ask:
+> What can primary public papers, patent claims, vendor technical documents, published third-party evaluations and comparative mechanism analysis establish, and what remains unknowable?
 
-Only unresolved commitment-level questions should remain experiment-gated.
+Answer the public-evidence strategic question to the strongest supported extent and state the ceiling of confidence. Do not turn future Gate-B verification into a blocking prerequisite for the final report.
+
+## Evidence conclusion labels
+- **PUBLICLY_DEMONSTRATED:** published experiment/standard/official source directly establishes a bounded fact; cite exact sections, experiment tables or claims.
+- **CROSS_SOURCE_INFERENCE:** technically defensible comparative inference; state competing software explanations.
+- **ARCHITECTURE_HYPOTHESIS:** plausible differentiated cross-layer opportunity, not publicly verified necessity.
+- **NOT_PUBLICLY_ESTABLISHED:** insufficient or non-transferable evidence; do not invent a metric, causal claim or competitor architecture.
+
+The final recommendation can still rank FOLLOW / PRIMARY_BET / RESERVE / KILL using these labels and its uncertainty profile. No local tests are required to complete it.

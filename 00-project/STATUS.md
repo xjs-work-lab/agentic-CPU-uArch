@@ -21,6 +21,7 @@ frontier_round14: COMPLETE
 portfolio_convergence: PROVISIONAL_REFRAME
 execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
+study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
 next_program: ROUND15C_PUBLIC_ARCHITECTURE_PRESSURE_AND_ROADMAP
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
@@ -531,3 +532,11 @@ No new Source ID, patent novelty conclusion, silicon feature, Differentiated Dir
 **Anti-drift round-end SSOT:** `00-project/final-questions-status.md` records final goal, FQ1..FQ7 progress and next gates and must be updated/reported every research round.
 
 Next: **Round15C** public target-mobile cross-xPU mechanism pressure and 2027–29 layer/year roadmap.
+
+## Hard research execution boundary — user reaffirmed 2026-10-08
+
+The project must finish an evidence-based 2027–2029 Agentic mobile CPU/SoC strategic insight and roadmap using **public papers, patents, technical whitepapers, product/vendor documentation, and published third-party evaluations only**. **Do not execute or require any new device testing, lab experiments, PoC runs, local simulation or benchmark reproduction.** Published author experiments can be deeply audited and discussed with their original setup/limitations.
+
+Gate A (public strategic opportunity judgment) is deliverable without direct measurement. Gate B hardware/product proof is outside scope. `EXP-*` are inherited historical contingency reference files, not project work to execute or complete. Missing public evidence calls for bounded, conditional conclusions, **not** postponement of the research goal or invented confirmation.
+
+Canonical contract: `00-project/research-goal-lock-agentic-mobile.md`; end-of-round anti-drift tracker: `00-project/final-questions-status.md`.
