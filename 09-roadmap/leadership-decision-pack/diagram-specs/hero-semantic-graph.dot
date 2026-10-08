@@ -1,0 +1,22 @@
+digraph HeRo {
+  graph [rankdir=LR, fontname="Noto Sans CJK SC", splines=ortho, nodesep=.42, ranksep=.7, bgcolor=white];
+  node [shape=box, style="rounded,filled", fillcolor="#ECF5FE", color="#94C6EE", fontname="Noto Sans CJK SC"];
+  edge [fontname="Noto Sans CJK SC", color="#3988D9", fontsize=10];
+  req [label="Agentic RAG 请求"];
+  dag [label="部分可见的任务 DAG"];
+  shape [label="shape / 阶段分区"];
+  priority [label="动态 criticality"];
+  bandwidth [label="共享 DRAM 约束"];
+  offline [label="离线代价剖析"];
+  sched [label="在线阶段映射与调度",fillcolor="#DDF4F5"];
+  cpu [label="CPU 候选阶段"];
+  gpu [label="GPU 候选阶段"];
+  npu [label="NPU 候选阶段"];
+  feedback [label="完成 / 资源反馈"];
+  req -> dag; dag -> shape; dag -> priority; offline -> shape; offline -> bandwidth;
+  shape -> sched; priority -> sched; bandwidth -> sched;
+  sched -> cpu [label="候选分派"]; sched -> gpu; sched -> npu;
+  cpu -> feedback; gpu -> feedback; npu -> feedback;
+  feedback -> dag [style=dashed, constraint=false, label="就绪 DAG 更新"];
+  feedback -> bandwidth [style=dashed, constraint=false, label="资源变化"];
+}
