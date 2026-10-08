@@ -2,6 +2,11 @@
 
 本目录用于存放**独立页面的制图规格**。原始 15 页蓝图、领导结论和完整内容合同不被本轮替换；仅对发现的问题做小范围纠正，避免一份巨型 Markdown 需要散点修改。
 
+## 图形语言选型与制作规范
+
+- [多语言制图规范](diagram-authoring-policy-v1-2026-10-08.md)：按技术内容选 Mermaid、PlantUML、Graphviz/DOT、Direct SVG、Excalidraw、SmartArt 或真实数据图；语义合同优先于工具样式。
+- [15 页逐页选型表](page-visual-language-routing.md)：逐页推荐逻辑源、实际画法和不可越界条件。
+
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
 - [第 5 页 — ShadowNPU 方法及与 llm.npu 的分离](page-05-npu-software-path.md)
