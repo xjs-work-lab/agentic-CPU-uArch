@@ -13,6 +13,7 @@
 - [第 6 页 — vivo X300 SME2 官方原始数据](page-06-sme2-x300-data.md)
 - [第 6 页 Round15K 高保真样板与初步验收记录](page-06-round15k-visual-pilot-status.md)：单页 PNG/PPTX 已在会话交付，待用户视觉审阅
 - [第 7 页 — SMEPilot 分配/流水/布局](page-07-smepilot-method.md)
+- [第 8 页 Round15K V2 重绘试制与箭头 QA](page-08-round15k-v2-redesign-pilot-status.md)：旧版已退回；新版 5 步单向主路径，4 条箭头，待用户评审。
 - [第 8 页设计纠错 v2 — 从 HeRo Algorithm 1 重建可读主流程](page-08-hero-design-correction-v2-2026-10-08.md)：当前正式制图输入；前一版 PPT 已判定不通过。
 - [第 8 页 — HeRo 动态 DAG 调度（旧机制摘要）](page-08-hero-runtime.md)
 - [第 8 页 Round15K 高保真样板、数据与 QA 记录](page-08-round15k-visual-pilot-status.md) · [Graphviz DOT 逻辑源](hero-semantic-graph.dot)
