@@ -1,6 +1,8 @@
 # 09-roadmap — entrypoint
 
-**Current authority (Round15F, 2026-10-08):**
+**Current authority (Round15G final management version, 2026-10-08):**
+- **[management-final-public-evidence-2027-2029.md](management-final-public-evidence-2027-2029.md)** — finished leadership strategic insight: final goal, four workload changes, F/P/V, technical bets/reserves/Kill, 2027–29 layers and limitations.
+- [Round15G primary evidence/SSOT audit](../analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md) — URL access, independence and entrypoint corrections.
 - [round15f-leadership-technical-brief-2027-2029.md](round15f-leadership-technical-brief-2027-2029.md) — latest evidence-bounded CPU/LLVM management synthesis.
 - [current.md](current.md) — **formal portfolio after A downgrade**: 3 priority investments, 0 independent differentiated Primary Bets, core Reserves A/B-residual/R2, R1 WATCH, R3 BLOCKED.
 - [round15e-integrated-public-roadmap-2027-2029.md](round15e-integrated-public-roadmap-2027-2029.md) — public-evidence-only 2027/28/29 year × technology layer roadmap.

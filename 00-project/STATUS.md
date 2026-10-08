@@ -1,5 +1,8 @@
 # Research Authority Status
 
+> **CURRENT AUTHORITY (Round15G, 2026-10-08):** [最新管理报告](../09-roadmap/management-final-public-evidence-2027-2029.md) · [正式组合](../09-roadmap/current.md) · [证据与入口审计](../analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md). **A 当前是 CONDITIONAL_RESERVE，绝非 PRIMARY_BET；R1 是 WATCH；0 独立差异化 CPU-uArch Primary Bets。** 本文件后续大量 Rescue/EXP/Old Portfolio 段落均为按时间保留的历史记录，不能覆盖当前投资和零实验约束。
+
+
 Updated: 2026-10-08
 
 ```yaml
@@ -23,12 +26,14 @@ execution_plan_2027: HISTORICAL_NONOPERATIVE_EXPERIMENT_ARCHIVE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: ROUND15G_FINAL_SOURCE_AUDIT_AND_REPORT_CLOSURE
+next_program: POST15G_REPORT_DELIVERED_PUBLIC_SOURCE_UPDATE_ON_REQUEST
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 source_identity_gate: ACTIVE
 round_end_reporting_contract: COMPILER_STYLE_GOAL_FQ7_COVERAGE_DRIFT_V1
+management_final_report: 09-roadmap/management-final-public-evidence-2027-2029.md
+source_claim_audit: analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md
 ```
 
 ## Authority
@@ -586,3 +591,13 @@ Adopted the compiler optimization insight project's fixed goal → final questio
 Five original official LLVM/MLIR/Arm software Source IDs TOOL-014..018, existing TOOL-012 phone SME2 results **reused, not duplicated**. Four Claims and 8 EvidenceCases with scope limits and an explicit undercut; synthesis `analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md`; latest leadership technical brief in `09-roadmap/round15f-leadership-technical-brief-2027-2029.md`.
 CG-06 INVEST unchanged; strong NPU counterpressure checked in PAPER-009/059/057/098; no claim CPU universally beats NPU or Agent requires a new ISA. 0 new Primary Bets; three core reserves unchanged. No experiment/benchmark/PoC.
 Next Round15G final public source/link/claim audit and management report closing.
+
+
+## Round15G — final public-source strategic report delivered (2026-10-08)
+
+- Latest leadership report: \`09-roadmap/management-final-public-evidence-2027-2029.md\`.
+- Original source and SSOT entry audit: \`analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md\`: 22 decision/entrypoint markdown files, 84 local relative links, 0 broken targets; scoped public original URL access classification with JS/direct-fetch/section-indexed caveats.
+- Root README stale historical A PRIMARY_BET 82.5 / graph 515 corrected; archived final roadmap points to latest report; present investment portfolio remains DEC-PORTFOLIO-002.
+- **Formal portfolio unchanged:** CG-06/PT-A/C prioritized engineering/platform, zero independent differentiated Primary Bets, A/B-residual/R2 conditional reserves, R1 Watch, R3 Blocked, CG07 Explore, CG01 Follow.
+- FQ1,2,3,5,6,7 closed for bounded public-source leadership decision; FQ4 software+compiler path answered but no publicly demonstrated new Agent-only CPU-uArch necessity. Final status is a decision with explicit uncertainty ceiling, not hardware innovation declaration.
+- No new Source/Claim/EC nodes and no experiment, test, PoC, simulation, or automated monitoring. Future task only on user's new request.

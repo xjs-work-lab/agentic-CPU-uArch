@@ -13,6 +13,8 @@ Date: 2026-10-07
 State: Round 14 trend reset v1
 Purpose: separate likely product evolution from originality/whitespace.
 
+> **Round15G authority note:** Product Trend posture below is NOT an active Direction investment lane. The current portfolio has 0 differentiated Primary Bets, A reserve, R1 Watch. Always read [Formal Portfolio](current.md) and [Leadership Report](management-final-public-evidence-2027-2029.md) before treating older T1–T8 prose as an investment commitment.
+
 ## Executive view
 
 The current evidence supports **seven product-relevant trend families**. T7 remains a frontier product signal under WATCH; Round 14 frontier differentiation coverage is complete.
