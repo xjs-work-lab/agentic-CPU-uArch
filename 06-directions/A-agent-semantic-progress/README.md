@@ -3,15 +3,34 @@ id = "A"
 type = "DIRECTION"
 record_state = "CURRENT"
 title = "Agent Semantic Progress Control"
-direction_class = "DIFFERENTIATED_RESEARCH"
-investment_lane = "PRIMARY_BET"
-score_context = 82.5
-evidence_maturity = "SIMULATION_SUPPORT"
-maturity_scope = "EDP-v1 depth-clean for current primary-lane paper evidence; explicit DemandState/RequiredProgress residual remains unproven on a real target phone"
+direction_class = "STRATEGIC_RESERVE"
+investment_lane = "CONDITIONAL_RESERVE"
+historical_score_context = 82.5
+score_context_status = "RETIRED_HISTORICAL_NOT_CURRENT_ALLOCATION_SCORE"
+evidence_maturity = "HYPOTHESIS_OPEN"
+historical_evidence_maturity = "SIMULATION_SUPPORT"
+maturity_scope = "strong software baseline demonstrated in public papers; Agent-private RequiredProgress conditional-information increment not publicly established; neither phone value nor hardware cause established"
 strongest_baseline = "B4-TX"
 related_claims = ["CLM-AGENT-001", "CLM-AGENT-002", "CLM-AGENT-003", "CLM-AGENT-004", "CLM-AGENT-005", "CLM-AGENT-006", "CLM-AGENT-007", "CLM-AGENT-008", "CLM-AGENT-012", "CLM-MOBILE-001", "CLM-MOBILE-002", "CLM-MOBILE-003", "CLM-C-008", "CLM-A-001"]
 related_capabilities = []
 +++
+
+# A — Agent Semantic Progress Control
+
+**CURRENT DECISION / Round15E (2026-10-08): CONDITIONAL_RESERVE / HYPOTHESIS_OPEN.**
+
+A is **formally downgraded** from the prior provisional `PRIMARY_BET / 82.5 / SIMULATION_SUPPORT`. The number **82.5 is historical**, preserved as `historical_score_context`, **not** a present investment score or probability. Evidence has not disproven the information hypothesis; it does not meet the public-evidence standard for a leadership-grade differentiated Primary Bet.
+
+**Strict residual**: after the full B4-TX observable history, workflow ledger/goal, verification, task-utility, permission/commit, OS priority and resource-state inputs, does *actually non-reconstructible* private `RequiredProgress / DemandState` change safe optimal action enough to be strategically valuable? **PUBLIC STATUS: NOT ESTABLISHED.**
+
+**Evidence supporting downgrade:** [LAS PAPER-119](../../01-evidence/papers/PAPER-119/deep.md), [SMetric PAPER-120](../../01-evidence/papers/PAPER-120/deep.md), [ProgRouter PAPER-121](../../01-evidence/papers/PAPER-121/deep.md) make workflow progress and budget routing largely software observable; [ProAgentBench PAPER-044](../../01-evidence/papers/PAPER-044/deep.md) hardens learned personal history; [Apple VENDOR-032](../../01-evidence/vendors/VENDOR-032/deep.md) provides managed stateful sessions; [PATENT-032](../../01-evidence/patents/PATENT-032/claims-round15d.md) crowds broad Agent semantic demand/cache controls without claiming the same private information.
+
+**Keep** as bounded theory/academic+industry intelligence in the top strategic research reserve group; **no new CPU-uArch/ISA**, no local experiment or PoC required. Re-open a differentiated Primary Bet only from **published, comparable, scope-matched original evidence** demonstrating genuine incremental *private* information over the best observable baseline and a controllable team-specific value path.
+
+**Decision authority:** [DEC-A-008](../../08-decisions/events/DEC-A-008.md) and [DEC-PORTFOLIO-002](../../08-decisions/events/DEC-PORTFOLIO-002.md). Below is retained historical pre-cutover rationale; earlier `EXP-A-001` instructions are **archive-only, not an active research task**.
+
+## Historical decision record (not current)
+
 
 # A — Agent Semantic Progress Control
 
@@ -91,3 +110,5 @@ No lane/score/maturity change:
 - PRIMARY_BET;
 - 82.5;
 - SIMULATION_SUPPORT.
+
+

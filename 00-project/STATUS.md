@@ -18,12 +18,12 @@ research_content_migrated: true
 evidence_rescue: COMPLETE
 evidence_depth_protocol: EDP_V1
 frontier_round14: COMPLETE
-portfolio_convergence: PROVISIONAL_REFRAME
-execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
+portfolio_convergence: ROUND15E_PUBLIC_ONLY_FORMAL_CUTOVER
+execution_plan_2027: HISTORICAL_NONOPERATIVE_EXPERIMENT_ARCHIVE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: ROUND15E_PORTFOLIO_FORMAL_RECONCILIATION
+next_program: ROUND15F_LEADERSHIP_SYNTHESIS_AND_CPU_COMPILER_FOCUS
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -37,10 +37,10 @@ round_end_reporting_contract: COMPILER_STYLE_GOAL_FQ7_COVERAGE_DRIFT_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 608 canonical nodes
-- 1144 canonical semantic edges
-- 1144 generated reverse edges
-- 1090 derived single-direction dependency edges
+- 615 canonical nodes
+- 1169 canonical semantic edges
+- 1169 generated reverse edges
+- 1115 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -569,3 +569,15 @@ Next: Round15E formal reconciled portfolio SSOT and management-ready final answe
 
 ## Round-end reporting alignment (2026-10-08)
 Adopted the compiler optimization insight project's fixed goal → final questions → cumulative progress/status → technology-area coverage → anti-drift check → next step format, retaining CPU-uArch's seven final questions and public-sources-only/no-experiment scope. Canonical template: `00-project/round-end-reporting-contract.md`. This change is reporting governance only, not an additional research round or portfolio decision.
+
+## Round15E — canonical portfolio cutover (2026-10-08)
+
+**Current:** evidence-limited, public-only formal investment decisions, `DEC-PORTFOLIO-002`.
+
+- Exactly 3 priority engineering/platform directions CG-06 INVEST, PT-A PLATFORM_TRACK, C STRATEGIC_ENABLER. These are implementation and platform strategy, not 'new differentiated uArch Primary Bets'.
+- **0 supported independent differentiated Primary Bets** currently; A **formally** downgraded to CONDITIONAL_RESERVE/HYPOTHESIS_OPEN via DEC-A-008; the historical 82.5 and SIMULATION_SUPPORT label archived, not used as present probability or new score.
+- Exactly 3 **core** strategic research Reserves A/B-residual/R2. R1 downgraded to WATCH by DEC-R1-002, reflecting better priority for CPU architecture relevant R2 amid low directly published phone evidence. R3 BLOCKED; CG-07 and CG-01 unchanged.
+- Evidence chain: `CLM-R15E-001` with its EVIDENCE_CASE SUPPORT/SCOPE_LIMIT anchors. Original source identities reused (PAPER-119/121/044, VENDOR-027/032, PATENT-032) — no duplicate.
+- Current roadmap authority `09-roadmap/current.md` and `09-roadmap/round15e-integrated-public-roadmap-2027-2029.md`; older experiment plans remain historical and nonoperative.
+- FQ1–7 and technical area cumulative coverage updated. No research experiments, tests, PoC or local simulation.
+- Next Round15F leadership synthesis plus CPU/LLVM public-primary source pressure / final source links audit.

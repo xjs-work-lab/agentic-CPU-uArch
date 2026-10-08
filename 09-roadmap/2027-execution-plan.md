@@ -1,3 +1,5 @@
+> **HISTORICAL / INOPERATIVE — HARD USER CONSTRAINT 2026-10-08:** This entire experiment/instrumentation program is *not* part of the study, regardless of capability or future availability. **DO NOT execute, schedule or treat EXP tasks as prerequisite to the 2027–29 strategic conclusion.** The active plan is [Round15E public-only roadmap](round15e-integrated-public-roadmap-2027-2029.md). Other headings below preserve historical rationale only.
+
 > **Status correction — 2026-10-08**
 >
 > This document is retained as a **future validation reference only**.

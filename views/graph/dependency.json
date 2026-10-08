@@ -1106,6 +1106,14 @@
       "claim_kind": "HYPOTHESIS"
     },
     {
+      "id": "CLM-R15E-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15E-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-R2-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-R2-001.md",
@@ -1429,6 +1437,12 @@
       "path": "08-decisions/events/DEC-A-007.md"
     },
     {
+      "id": "DEC-A-008",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-A-008.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "DEC-BR-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-BR-001.md"
@@ -1521,6 +1535,12 @@
       "path": "08-decisions/events/DEC-PORTFOLIO-001.md"
     },
     {
+      "id": "DEC-PORTFOLIO-002",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-PORTFOLIO-002.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "DEC-PTA-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-PTA-001.md"
@@ -1539,6 +1559,12 @@
       "id": "DEC-R1-001",
       "type": "DECISION_EVENT",
       "path": "08-decisions/events/DEC-R1-001.md"
+    },
+    {
+      "id": "DEC-R1-002",
+      "type": "DECISION_EVENT",
+      "path": "08-decisions/events/DEC-R1-002.md",
+      "record_state": "CURRENT"
     },
     {
       "id": "DEC-R2-001",
@@ -1603,9 +1629,9 @@
       "type": "DIRECTION",
       "path": "06-directions/A-agent-semantic-progress/README.md",
       "record_state": "CURRENT",
-      "direction_class": "DIFFERENTIATED_RESEARCH",
-      "investment_lane": "PRIMARY_BET",
-      "evidence_maturity": "SIMULATION_SUPPORT"
+      "direction_class": "STRATEGIC_RESERVE",
+      "investment_lane": "CONDITIONAL_RESERVE",
+      "evidence_maturity": "HYPOTHESIS_OPEN"
     },
     {
       "id": "B-residual",
@@ -1667,7 +1693,7 @@
       "path": "06-directions/reserves/R1-post-ready-continuation-timing/README.md",
       "record_state": "CURRENT",
       "direction_class": "STRATEGIC_RESERVE",
-      "investment_lane": "CONDITIONAL_RESERVE",
+      "investment_lane": "WATCH",
       "evidence_maturity": "SIMULATION_SUPPORT"
     },
     {
@@ -2784,6 +2810,24 @@
       "id": "EC-R15D-004-B",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-R15D-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15E-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15E-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15E-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15E-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15E-001-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15E-001-C.md",
       "record_state": "CURRENT"
     },
     {
@@ -3972,7 +4016,7 @@
       "direction_links": [
         {
           "direction_id": "A",
-          "differentiation_posture": "DIFFERENTIATED_BET"
+          "differentiation_posture": "RESIDUAL_RESEARCH"
         },
         {
           "direction_id": "C",
@@ -4360,6 +4404,12 @@
     {
       "source": "CLM-A-001",
       "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-A-008",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-A-001",
+      "relation": "CLAIM_TO_DECISION",
       "target": "DEC-PORTFOLIO-001",
       "provenance": "DERIVED_DEPENDENCY"
     },
@@ -4379,6 +4429,12 @@
       "source": "CLM-A-001",
       "relation": "CLAIM_TO_TREND",
       "target": "T1",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-A-001",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-C",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -6045,6 +6101,12 @@
     },
     {
       "source": "CLM-R1-004",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-R1-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R1-004",
       "relation": "CLAIM_TO_DIRECTION",
       "target": "R1",
       "provenance": "DERIVED_DEPENDENCY"
@@ -6123,8 +6185,62 @@
     },
     {
       "source": "CLM-R15C-004",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-PORTFOLIO-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15C-004",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-R15D-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15C-004",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-C",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-A-008",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-PORTFOLIO-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-R1-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15E-001",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-A-008",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15E-001",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-PORTFOLIO-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "CLM-R15E-001",
+      "relation": "CLAIM_TO_DECISION",
+      "target": "DEC-R1-002",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -6614,6 +6730,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "DEC-A-008",
+      "relation": "DECISION_TO_SUBJECT",
+      "target": "A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "DEC-BR-001",
       "relation": "DECISION_TO_SUBJECT",
       "target": "B-residual",
@@ -6722,6 +6844,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "DEC-PORTFOLIO-002",
+      "relation": "DECISION_TO_SUBJECT",
+      "target": "ROADMAP-CURRENT",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "DEC-PTA-001",
       "relation": "DECISION_TO_SUBJECT",
       "target": "PT-A",
@@ -6741,6 +6869,12 @@
     },
     {
       "source": "DEC-R1-001",
+      "relation": "DECISION_TO_SUBJECT",
+      "target": "R1",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "DEC-R1-002",
       "relation": "DECISION_TO_SUBJECT",
       "target": "R1",
       "provenance": "DERIVED_DEPENDENCY"
@@ -7958,6 +8092,24 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "EC-R15E-001-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15E-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15E-001-B",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15E-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15E-001-C",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-R15E-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "EC-R2-001-A",
       "relation": "CASE_SUPPORTS",
       "target": "CLM-R2-001",
@@ -8825,6 +8977,12 @@
       "source": "PAPER-044",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-AO5-006-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-044",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9772,6 +9930,12 @@
     {
       "source": "PAPER-119",
       "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_TO_CASE",
       "target": "EC-XAO-003-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
@@ -9821,6 +9985,18 @@
       "source": "PAPER-121",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-R15D-003-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-C",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -10037,6 +10213,12 @@
       "source": "PATENT-032",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-R15D-004-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PATENT-032",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -10568,6 +10750,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "VENDOR-028",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-R15C-002-A",
@@ -10652,6 +10840,12 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "VENDOR-032",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15E-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "VENDOR-033",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-R15D-002-A",
@@ -10677,7 +10871,7 @@
     }
   ],
   "counts": {
-    "nodes": 608,
-    "dependency_edges": 1090
+    "nodes": 615,
+    "dependency_edges": 1115
   }
 }

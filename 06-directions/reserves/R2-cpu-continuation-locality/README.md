@@ -13,6 +13,8 @@ related_claims = ["CLM-R2-001", "CLM-R2-002", "CLM-R2-003", "CLM-R2-004", "CLM-R
 related_capabilities = ["CAP-QUALCOMM-ORYON-FLEX-CACHE"]
 +++
 
+> **Round15E public-only portfolio boundary:** This direction remains one of three **core CONDITIONAL_RESERVES** together with A and B-residual. Previously specified target-phone EXP/PMU/PoC procedures below are **archival falsifier descriptions**, not project work. The study will make only bounded judgments from published research, official engineering documentation and patents. Historical numeric score is not an empirical probability.
+
 # R2 — CPU Continuation Locality
 
 ## 30-second decision

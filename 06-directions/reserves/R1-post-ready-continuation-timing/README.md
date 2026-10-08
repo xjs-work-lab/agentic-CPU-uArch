@@ -4,14 +4,17 @@ type = "DIRECTION"
 record_state = "CURRENT"
 title = "Post-ready Continuation Timing"
 direction_class = "STRATEGIC_RESERVE"
-investment_lane = "CONDITIONAL_RESERVE"
-score_context = 55.5
+investment_lane = "WATCH"
+historical_score_context = 55.5
+score_context_status = "RETIRED_HISTORICAL_NOT_CURRENT_ALLOCATION_SCORE"
 evidence_maturity = "SIMULATION_SUPPORT"
 maturity_scope = "broad novelty killed; strong generic release baseline and device-free break-even established; target-phone >=5% semantic residual not established"
 strongest_baseline = "B4-release"
 related_claims = ["CLM-R1-001", "CLM-R1-002", "CLM-R1-003", "CLM-R1-004", "CLM-R1-005", "CLM-R1-006", "CLM-R1-007", "CLM-R1-EXP-001"]
 related_capabilities = []
 +++
+
+> **CURRENT Round15E decision:** `WATCH`, **not a core Strategic Reserve**. Post-ready semantic timing retains a narrowly framed hypothesis, but generic ready/release/utility software and lack of direct phone Agent-specific value make it lower priority than A, B-residual and CPU continuation locality. Historical 55.5 is not an active confidence score. The archived EXP-R1-001 is not to be executed; use published evidence only. [DEC-R1-002](../../../08-decisions/events/DEC-R1-002.md).
 
 # R1 — Post-ready Continuation Timing
 

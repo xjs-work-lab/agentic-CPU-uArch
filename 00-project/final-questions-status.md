@@ -2,7 +2,7 @@
 
 Updated: 2026-10-08
 Research authority: xjs-work-lab/agentic-CPU-uArch (V2.2 research SSOT / V2.4 graph)
-Next: ROUND15E_PORTFOLIO_FORMAL_RECONCILIATION
+Next: ROUND15F_LEADERSHIP_SYNTHESIS_AND_CPU_COMPILER_FOCUS
 Purpose: anti-drift one-page dashboard. Update at the **end of every meaningful research round** and summarize succinctly in user reply.
 
 ## Goal Lock (immutable in intent)
@@ -15,21 +15,23 @@ Leadership deliverable = **3–5 structural workload changes + 3–5 architectur
 Gate-A public-evidence architecture discovery is the project's decision standard. Gate-B experimental product/silicon proof is **out of scope**, a descriptive caveat only.
 
 ## Seven final questions — progress audit
-| ID | Must answer before closing | Status as of Round 15D | Current answer / unresolved gap |
+| ID | Must answer before closing | Status as of Round 15E | Current answer / unresolved gap |
 |---|---|---|---|
-| FQ1 | **What 3–5 workload/user-experience shifts matter in 2027–29?** | FOUR SHIFTS + CROSS-OEM SUPPORT | Persistent sessions/tool use (Apple), proactive local help (Google), Agent UI/action evolution (Samsung), heterogeneous CPU/NPU (Google/Samsung) publicly reported; 2027–29 penetration remains conditional. |
-| FQ2 | **What do academic/industry leaders already implement, and what is mature prior art?** | MAPPED + 3 PATENT CLAIM RE-AUDITS + 3 OEM SOURCES | Independent/dependent claims PATENT-024/032/033 re-read, Apple Foundation Models VENDOR-032, Pixel10 VENDOR-033, Samsung S26 VENDOR-034 reviewed; vendor launch is not independent benchmark and Snapdragon S26 not separate Samsung silicon. |
-| FQ3 | **Where are 3–5 genuinely useful *cross-layer* architecture themes and overlaps?** | PROVISIONAL THREE THEMES RE-STRESSED | Theme F AO1/2/3 execution-state, P AO4 proactive LP admission, V AO5 QoE/info. AOSP NPU Manager directly crowds several formerly tempting AO1/AO2 generic control points. Three themes remain not three investment bets. |
-| FQ4 | **Which tensions survive strong software baselines; is any CPU/SoC/uArch lever justified from PUBLIC evidence?** | NARROWED BY PATENT+OS+FRAMEWORK / NO SILICON COMMITMENT | Old CPU-cluster cache-demand migration, current-demand Agent reasoning cache validity and Agent transaction rollback patents directly crowd broad novelty; Android17, Apple sessions and QNN already cover resource/state interfaces. Agent-private cross-xPU lifetime hypothetical only. |
-| FQ5 | **Which 2–3 PRIMARY BETs, 2–3 STRATEGIC RESERVES and Kill/Do-not-invest items should leadership choose?** | PRE-DECISION LEADERSHIP PRIORITY MATRIX READY | PT-A / CG-06 / C highest confidence engineering/platform; A remains canonical provisional PRIMARY_BET/82.5 but only CONDITIONAL differentiation in public evidence; CG-07 follow, B/R1/R2 reserve, R3 blocked. Second Bet unfilled; no silent score cutover. |
-| FQ6 | **What is the staged 2027 / 2028 / 2029 CPU–LLVM–OS–SoC roadmap?** | PUBLIC YEAR-LAYER ROADMAP + PRIORITY MATRIX | Public-only 15C year×LLVM/runtime/OS/CPU-NPU/LP roadmap plus `09-roadmap/round15d-leadership-portfolio-provisional-2027-2029.md`. Main remaining: reconcile canonical A Bet/score evidence and finalize management wording. |
-| FQ7 | **Which PUBLIC evidence distinguishes competing hypotheses and warrants FOLLOW/BET/RESERVE/KILL?** | CLAIMS-LEVEL + SOURCE-INDEPENDENCE AUDITED | Independent/dependent patent claims and Apple/Google/Samsung official disclosure checks plus negative/undercut Cases. Remaining A hidden-info and cross-xPU cost issues labelled NOT_PUBLICLY_ESTABLISHED; no experiment proposed. |
+| FQ1 | **What 3–5 workload/user-experience shifts matter in 2027–29?** | ADEQUATE — RANKED FOUR SHIFTS | Ranked persistent safe workflows, repeated CPU↔NPU stages, revisable state and proactive LP admission; cross-OEM product evidence and published phone/system sources. 2027–29 prevalence and specific SoC economics remain conditional. |
+| FQ2 | **What do academic/industry leaders already implement, and what is mature prior art?** | ADEQUATE FOR BOUNDED STRATEGY | 5/5 AO evidence mapped; three direct patent claim audits; Apple, Google, Samsung official products; ProgRouter/LAS full deep reads, Android NPU Manager/QNN. Direct multi-vendor Agent system energy evidence remains incomplete. |
+| FQ3 | **Where are 3–5 genuinely useful *cross-layer* architecture themes and overlaps?** | ADEQUATE — 3 THEMES WITH OWNERSHIP | F execution/state, P proactive LP admission, V progress/QoE software information; user-effect authority separate from memory validity. Not three hardware Bets. |
+| FQ4 | **Which tensions survive strong software baselines; is any CPU/SoC/uArch lever justified from PUBLIC evidence?** | PARTIAL / HW-CAUSE GAP | Documented Android17 NPU work lifetime, QNN sharing, prior-art caching/transaction and software baselines cover broad control; no public matched phone evidence proves a private Agent semantic CPU/uArch lever. Current leadership decision is NO special Agent ISA/silicon bet. |
+| FQ5 | **Which 2–3 PRIMARY BETs, 2–3 STRATEGIC RESERVES and Kill/Do-not-invest items should leadership choose?** | CLOSED FOR 2026-10-08 PUBLIC EVIDENCE PORTFOLIO | DEC-PORTFOLIO-002 formally commits 3 P0 technology investments CG-06/PT-A/C, **0 independent differentiated Primary Bets**, core reserves A/B-residual/R2; R1 WATCH, CG-07 Explore, CG-01 external benchmark, R3 Blocked. A 82.5 retired historical (DEC-A-008), no new score. |
+| FQ6 | **What is the staged 2027 / 2028 / 2029 CPU–LLVM–OS–SoC roadmap?** | ADEQUATE INTEGRATED DRAFT | New `09-roadmap/round15e-integrated-public-roadmap-2027-2029.md` merges 4 structural shifts, F/P/V themes, 2027/28/29 by CPU/uArch, LLVM, runtime, OS/NPU, memory, LP SoC and formal portfolio. Leadership narrative and comparison polish remain. |
+| FQ7 | **Which PUBLIC evidence distinguishes competing hypotheses and warrants FOLLOW/BET/RESERVE/KILL?** | ADEQUATE PUBLIC DECISION RULES | Formal reserve/downgrade from deep original software progress paper ablations and official NPU/API/prior art, with SUPPORT+SCOPE_LIMIT. A private info and cross-xPU physical value remain explicitly unknown; no experiment needed or proposed. |
 
-## Persistent portfolio invariants
-- A PRIMARY_BET 82.5 / SIMULATION_SUPPORT: **unproven** hidden DemandState/RequiredProgress residual, not generic progress scheduler.
-- PT-A PLATFORM_TRACK; C STRATEGIC_ENABLER; CG-06 INVEST; CG-07 EXPLORE; CG-01 BENCHMARK.
-- B-residual, R1, R2 conditional reserves; R3 BLOCKED; second differentiated Primary Bet UNFILLED; no uArch Primary Bet.
-- AOs remain opportunity *research objects*; 5/5 EVIDENCE_MAPPED ≠ 5 investments; three themes ≠ three Primary Bets.
+## Persistent portfolio invariants — Round15E formal cutover
+- **CG-06 INVEST, PT-A PLATFORM_TRACK, C STRATEGIC_ENABLER** = three actionable priority engineering/platform investments with original published phone/product evidence, not differentiated CPU-ISA Primary Bets.
+- **0 evidence-qualified new independent differentiated PRIMARY_BETs** at this as-of date. Never fill to 2–3 by renaming existing enabling/platform work.
+- **A formally downgraded PRIMARY_BET→CONDITIONAL_RESERVE**, historical 82.5 retired from current allocation ranking, `HYPOTHESIS_OPEN`; prior A Decision Events preserved as historic.
+- Three core strategic reserves = **A, B-residual, R2**. **R1 WATCH**, not core reserve; **CG-07 EXPLORE**, **CG-01 BENCHMARK**, **R3 BLOCKED**.
+- Product Trends T1–T8 may remain important despite lack of standalone differentiated novel processor mechanisms; 3 F/P/V research themes are not 3 financial bets.
+- No experiment, phone instrumentation, simulation or PoC in this public-evidence-only project.
 
 ## Round-end reporting contract (every future round)
 **Adopt the companion compiler-optimization insight project's cumulative goal-review sequence; retain CPU-uArch's own seven questions.** Exact template and status semantics: [round-end-reporting-contract.md](round-end-reporting-contract.md).
@@ -67,3 +69,14 @@ Critical: Round-end reporting tracks **cumulative research progress toward the f
 - FQ6 2027–2029 public roadmap and initial leadership portfolio pre-decision created.
 - FQ7 claim-vs-product-vs-phone measurement classes separate. No tests/experiments.
 - Next Round15E formal SSOT portfolio reconciliation and management-ready final 7 questions; still only public sources.
+
+## Round15E formal closeout status and technology coverage (2026-10-08)
+- FQ1 ADEQUATE in scope: ranked four shifts; dates not vendor product promises.
+- FQ2 ADEQUATE for literature/vendor/patent prior-art baseline, remaining phone long-agent multi-vendor quantitative limitations.
+- FQ3 ADEQUATE: F/P/V three architecture study themes, separated from core investments.
+- FQ4 PARTIAL / GAP: strongest software/OS sufficiency clear for generic primitives; no publicly demonstrated distinctive CPU/SoC Agent-specific state primitive.
+- FQ5 CLOSED at 2026-10-08 public-evidence level: three core engineering investments; zero new differentiated Primary Bets; three core Reserves; R1 WATCH; explicit Kill.
+- FQ6 ADEQUATE integrated 2027/28/29 public-only year/layer draft, leadership narrative refinement next.
+- FQ7 ADEQUATE for public-sources strategic decision rules, with explicit knowledge boundaries and no experiment obligation.
+- Technical coverage: UX/Agent workloads ADEQUATE; LLVM/AArch64 PARTIAL (more original compiler/backend implementation literature comparison); CPU core/uArch PARTIAL (no Agent-specific published mobile benefit); runtime/actuation ADEQUATE; OS resource control ADEQUATE (API not universal retail deployment); CPU–NPU/shared-state PARTIAL; low-power admission PARTIAL (daily-energy+helpfulness tradeoff absent).
+- Next Round15F: review decision-critical CPU+LLVM portable fast-path original technical detail, finalize management-facing integrated roadmap, audit links and contradictions; strictly public sources only.

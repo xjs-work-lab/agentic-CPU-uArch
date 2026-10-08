@@ -21,7 +21,7 @@ A trend can remain important even when its broad novelty is crowded.
 
 | Trend | Product maturity | Product posture | Linked Direction posture(s) | Canonical Direction links |
 |---|---|---|---|---|
-| T1 Semantic-aware progress & resource control | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | A=DIFFERENTIATED_BET; C/R1=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | A, C, R1, R3 |
+| T1 Semantic-aware progress & resource control | EMERGING_PRODUCT_TREND | ADAPT_AND_DIFFERENTIATE | A=RESIDUAL_RESEARCH; C/R1=RESIDUAL_RESEARCH; R3=FRONTIER_UNPROVEN | A, C, R1, R3 |
 | T2 Heterogeneous Agent AI execution continuum | ESTABLISHED_PRODUCT_TREND | PRODUCTIZE | C/CG-06=RESIDUAL_RESEARCH | C, CG-06 |
 | T3 Verified / transactional Agent actuation | EMERGING_PRODUCT_TREND | PRODUCTIZE | PT-A=RESIDUAL_RESEARCH | PT-A |
 | T4 Always-on proactive Agent front-end | EMERGING_PRODUCT_TREND | BENCHMARK_AND_PREPARE | CG-07=RESIDUAL_RESEARCH | CG-07 |
@@ -43,7 +43,7 @@ Future Agent systems increasingly expose work whose value depends on goal surviv
 Prepare runtime/OS contracts and measurement infrastructure even before any hardware conclusion.
 
 ### Research boundary
-A remains the differentiated Bet only for **non-reconstructible DemandState / RequiredProgress**.
+A is now a **conditional research reserve**, not an active differentiated Bet. Its only surviving hypothesis is **non-reconstructible DemandState / RequiredProgress**, not yet shown beyond best software.
 C owns the software/system-control substrate.
 
 ### What prior art changes

@@ -13,6 +13,8 @@ related_claims = ["CLM-BR-001", "CLM-BR-002", "CLM-BR-003", "CLM-BR-004", "CLM-B
 related_capabilities = []
 +++
 
+> **Round15E public-only portfolio boundary:** This direction remains one of three **core CONDITIONAL_RESERVES** together with A and R2. Previously specified target-phone EXP/PMU/PoC procedures below are **archival falsifier descriptions**, not project work. The study will make only bounded judgments from published research, official engineering documentation and patents. Historical numeric score is not an empirical probability.
+
 # B-residual — Mobile Agent Semantic-to-Physical State Coherence
 
 ## 30-second decision
