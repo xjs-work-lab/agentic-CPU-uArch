@@ -1,5 +1,7 @@
 # Round15H — 技术领导决策包（五分钟版）
 
+> **新的内容制作入口（Round15I V4 设计阶段）：[逐页内容—逻辑—证据—视觉设计蓝图（15 页+4 附录）](content-storyboard-v1-2026-10-08.md)**。该蓝图**先于**任何新版 PNG/PPT 制作，作为逐页审稿和设计关口；以下 Round15H 决策包仍提供研究事实和管理决策输入。
+
 **2026-10-08 · v1 · 公开来源限定的战略建议，并非内部预算申请的既成事实。**
 
 研究权威：[Round15G 完整洞察](../management-final-public-evidence-2027-2029.md)；投资状态权威：[Current Portfolio](../current.md) 与 [DEC-PORTFOLIO-002](../../08-decisions/events/DEC-PORTFOLIO-002.md)。

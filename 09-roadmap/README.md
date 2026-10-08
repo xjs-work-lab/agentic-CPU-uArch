@@ -1,6 +1,7 @@
 # 09-roadmap — entrypoint
 
 **Current authority (Round15H discussion package on Round15G evidence, 2026-10-08):**
+- **[逐页内容—逻辑—证据—视觉设计蓝图](leadership-decision-pack/content-storyboard-v1-2026-10-08.md)** — 15 页主线+4 附录，设计阶段稿；先做因果链/来源/图形责任，再做 PNG/PPT。
 - **[leadership-decision-pack/README.md](leadership-decision-pack/README.md)** — five-minute leadership decision brief and 3 linked owner/FAQ/slide-outline documents; **not a PowerPoint file**. 15G primary evidence remains the underlying scientific authority.
 - **[management-final-public-evidence-2027-2029.md](management-final-public-evidence-2027-2029.md)** — finished leadership strategic insight: final goal, four workload changes, F/P/V, technical bets/reserves/Kill, 2027–29 layers and limitations.
 - [Round15G primary evidence/SSOT audit](../analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md) — URL access, independence and entrypoint corrections.
