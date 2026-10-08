@@ -77,3 +77,11 @@ ShadowNPU §5 Table 6/Fig. 11/Table 8。**三个指标不是一个实验：**
 - `/mnt/data/round15k_shadownpu_v2/make_slide05_v2.js`
 
 基础程序 QA：1 页；1920×1080 PNG；53 个 PowerPoint 原生可编辑形状/文字对象及 1 张装饰图片；S1→S2、S2→S3 两条独立水平箭头；正确包含两个原论文超链接、基线、分工术语和数值。**尚未**通过用户最终阅读审查或真实 Microsoft PowerPoint 环境字体/超链接测试。
+
+## 用户定版反馈 — 第 5 页视觉样板（2026-10-08）
+
+用户明确选择 **ShadowNPU V3 原始 PPT 布局，仅将绿色/橙黄色改为蓝色系的 blueonly 版本**，回复“ok，维持这版吧”。以本版作为第 5 页后续制作与全套 PPT 的**当前认可视觉基准**：**保持版式、框图位置、箭头、芯片插画、原有图标、文字与论文链接；只用深蓝/中蓝/浅蓝/透明度做视觉层次，不重新设计**。该认可针对当前页面视觉/内容版本，不等于真实 PowerPoint 跨设备兼容性已终验或论文每一原图的独立复核完成。
+
+- 对话文件：`/mnt/data/round15k_shadownpu_v3_blueonly/slide05_shadownpu_v3_blueonly_editable.pptx`
+- PPT 同源预览：`/mnt/data/round15k_shadownpu_v3_blueonly/slide05_shadownpu_v3_blueonly_preview.png`
+- 上述是当前会话中的文件路径，**未确认作为二进制附件归档至 GitHub**；本记录不提供虚构的 GitHub 下载 URL。
