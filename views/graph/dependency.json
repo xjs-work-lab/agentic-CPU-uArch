@@ -1046,32 +1046,32 @@
       "type": "CLAIM",
       "path": "02-claims/CLM-R15C-001.md",
       "record_state": "CURRENT",
-      "claim_kind": "OBSERVATION",
-      "status": "SUPPORTED"
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
     },
     {
       "id": "CLM-R15C-002",
       "type": "CLAIM",
       "path": "02-claims/CLM-R15C-002.md",
       "record_state": "CURRENT",
-      "claim_kind": "OBSERVATION",
-      "status": "SUPPORTED"
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
     },
     {
       "id": "CLM-R15C-003",
       "type": "CLAIM",
       "path": "02-claims/CLM-R15C-003.md",
       "record_state": "CURRENT",
-      "claim_kind": "OBSERVATION",
-      "status": "SUPPORTED"
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
     },
     {
       "id": "CLM-R15C-004",
       "type": "CLAIM",
       "path": "02-claims/CLM-R15C-004.md",
       "record_state": "CURRENT",
-      "claim_kind": "HYPOTHESIS",
-      "status": "OPEN"
+      "status": "OPEN",
+      "claim_kind": "HYPOTHESIS"
     },
     {
       "id": "CLM-R2-001",
