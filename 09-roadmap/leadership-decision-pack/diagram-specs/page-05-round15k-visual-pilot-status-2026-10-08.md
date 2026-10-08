@@ -8,7 +8,7 @@
 
 ## 核心消息与正式内容
 
-**页面标题**：ShadowNPU 让 NPU 快速找出重要 Token，CPU/GPU 只精算少量内容，减少 Attention 回退开销。
+**V3 修订后的当前页面标题**：ShadowNPU 让 NPU 筛选重要 Token，CPU/GPU 只精算关键部分，从而减少 Attention 对通用处理器的依赖。此标题已由用户反馈指出为不可省略的技术收益。V1 本节原页面标题只作历史记录。
 
 **一行背景**：Token 是模型处理的文字片段；Attention 计算它们之间的关联权重；整段 Attention 直接使用低精度 INT8 容易损伤数值准确率，因而已有 NPU-centric 框架往往回退到 CPU/GPU。
 
