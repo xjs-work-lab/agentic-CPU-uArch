@@ -22,6 +22,7 @@
 
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
+- [第 4 页 Round15M V3 · CPU Fallback 概念解释与两类开销](page-04-round15m-v3-cpu-fallback-explained-2026-10-08.md)：纯蓝色可编辑 PPTX/PNG 已在会话制作，待用户审阅。
 - [第 4 页 Round15M 可编辑纯蓝色 PPT 样板与量化 QA](page-04-round15m-editable-pilot-2026-10-08.md)：三栏同模型实测，待用户审阅。
 - [第 5 页 — ShadowNPU 方法及与 llm.npu 的分离](page-05-npu-software-path.md)
 - [第 5 页 Round15K ShadowNPU 双论文分离式技术机制 PPT 样板及 QA](page-05-round15k-visual-pilot-status-2026-10-08.md)：16:9 PNG/PPTX 已在当前会话制作，待用户审阅。
