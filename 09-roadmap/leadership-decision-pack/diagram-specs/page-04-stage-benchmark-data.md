@@ -1,3 +1,5 @@
+> **2026-10-08 领导汇报标题修订：** 第 4 页展示的数据不只用于证明“NPU 在单次 Decode 算子更快，汇总收益较小”，还要自然导出工程判断：**优化 CPU 回退与跨处理器通信，才能把单次计算优势更好地转化为实际收益**。最新文字与 PPT 状态见 [Round15M V2 样板记录](page-04-round15m-editable-pilot-2026-10-08.md)。注意研究测量是 Decode 聚合算子耗时，不是 Agent 完整 E2E 墙钟时间。
+
 # 第 4 页：Snapdragon CPU/NPU 实测的可视化数据合同（原文复核）
 
 **原文**：[When NPUs Are Not Always Faster](https://arxiv.org/pdf/2605.27435) §III–IV，Table II–V、Fig. 2–3。设备 Snapdragon 8 Gen 3 / Hexagon v75 / Android 15 / llama.cpp tag b7588 / 6 CPU threads / 四款 Q4_0 模型。结果不应外推 2029 最强 NPU 栈。
