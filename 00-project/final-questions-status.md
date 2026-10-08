@@ -32,12 +32,17 @@ Gate-A public-evidence architecture discovery is the project's decision standard
 - AOs remain opportunity *research objects*; 5/5 EVIDENCE_MAPPED ≠ 5 investments; three themes ≠ three Primary Bets.
 
 ## Round-end reporting contract (every future round)
-1. **This round:** exact source-deepread, graph/QA and conclusion delta.
-2. **Goal check:** final goal in one sentence + FQ1…FQ7 statuses (compact table).
-3. **Portfolio:** which keep/upgrade/downgrade/kill changes; or explicitly none.
-4. **What's missing and next smallest round:** public-literature/patent/whitepaper gap only. **Never schedule or suggest conducting a new experiment or PoC** as part of this project.
-5. **SSOT commit / QA:** exact SHA, validation result, unresolved blockers.
+**Adopt the companion compiler-optimization insight project's cumulative goal-review sequence; retain CPU-uArch's own seven questions.** Exact template and status semantics: [round-end-reporting-contract.md](round-end-reporting-contract.md).
 
+In every user-visible research-round closing use this fixed order:
+1. **最终项目目标** — 2027–2029 smartphone Agentic workload → LLVM/CPU/OS/SoC strategy; public sources only; no new tests or experiments.
+2. **最终必须回答的七个问题** — one **累计进展** table with FQ1–FQ7, progress/results so far, ADEQUATE/PARTIAL/GAP/CLOSED (and PROVISIONAL when needed), outstanding public-source/decision gaps.
+3. **主要技术领域累计覆盖** — workload/UX, LLVM/AArch64, CPU core/cache/uArch, agent/runtime/permissions, OS/CPU↔NPU/GPU/memory, always-on low-power; each area has a status and one important evidence gap.
+4. **防跑偏检查** — original decision goal, target phone, software-vs-hardware split, product relevance/novelty, no-experiment constraint, unfilled Bet quota and canonical-portfolio fidelity.
+5. **下一步及其必要性** — the next smallest *public-research-only* stage, linked to the specific unanswered FQ and potential investment conclusion.
+6. **本轮实际增量与仓库/QA** — concise primary sources deeply checked, inference/portfolio delta, identity dedup and latest commit/CI. May appear briefly before the fixed recap, but must not replace it.
+
+Critical: Round-end reporting tracks **cumulative research progress toward the final management answer**, not merely the number of files or papers added. Never describe an unexecuted experiment as an intended task.
 ## Public-only decision rule (persistent)
 - Progress means **new primary-source verification, original-method deep reading, patent claim checks, source identity dedup, counterevidence and reasoned synthesis** — not equipment trials.
 - Each final claim should declare **published fact / cross-source inference / hypothesis / unsupported-by-public-evidence**; vendor claims do not become verified phone-system results merely by citation.

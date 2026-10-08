@@ -28,6 +28,7 @@ round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 source_identity_gate: ACTIVE
+round_end_reporting_contract: COMPILER_STYLE_GOAL_FQ7_COVERAGE_DRIFT_V1
 ```
 
 ## Authority
@@ -565,3 +566,6 @@ Research result: **PRE_DECISION_PORTFOLIO_MATRIX_READY**.
 - No tests, experiments, PoC, data instrumentation or simulation; strict public-source-only policy remains in force.
 
 Next: Round15E formal reconciled portfolio SSOT and management-ready final answers without false confidence.
+
+## Round-end reporting alignment (2026-10-08)
+Adopted the compiler optimization insight project's fixed goal → final questions → cumulative progress/status → technology-area coverage → anti-drift check → next step format, retaining CPU-uArch's seven final questions and public-sources-only/no-experiment scope. Canonical template: `00-project/round-end-reporting-contract.md`. This change is reporting governance only, not an additional research round or portfolio decision.
