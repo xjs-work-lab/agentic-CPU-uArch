@@ -1,5 +1,9 @@
 # Round15K 第 5 页 ShadowNPU / llm.npu：可编辑 PPT 试制与领导可读性检查
 
+> **Round15L 用户反馈后最新状态：此文件的第 5 页 V1 原型内容已被 [V2 生产合同](page-05-round15k-v2-leadership-readable-and-benchmark-contract-2026-10-08.md) 与新 PNG/PPTX 取代。V1 未解释 llm.npu 适用范围、未让 Graph Bucketing / Pipeline 显性绑定步骤、未给性能数据明确 C/G-Full 基线；不得作为最终 PPT 页面，也不得将旧最高值称为整机能耗。**
+
+
+
 日期：2026-10-08。**状态：V1 样板已制作并进行文件 QA，待用户实际视觉与内容验收**。不把生成成功等同最终通过。继承已基本获认可的 [第 6 页 SME2 数据页](page-06-round15k-visual-pilot-status.md)、[第 8 页 HeRo V6 叙事要求](leadership-readability-gate-v1-2026-10-08.md) 的浅蓝学术风格，具体图形布局按第 5 页自身机制确定。
 
 ## 核心消息与正式内容
