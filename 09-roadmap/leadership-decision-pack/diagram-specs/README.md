@@ -10,6 +10,7 @@
 ## 面向非专业领导的叙事验收规范
 
 - [领导可读性 Gate：10 秒理解结论、30 秒理解机制](leadership-readability-gate-v1-2026-10-08.md)
+- [HeRo 第 8 页 V6 实物制作、PPTX/PNG 文件与基础 QA 记录](page-08-round15k-v6-pilot-qa-2026-10-08.md)：最新单页样板已生成，待用户对领导可读性审阅。
 - [HeRo 第 8 页 V6：逐卡解释与公式分层内容合同](page-08-round15k-v6-leadership-readable-copy-2026-10-08.md)：V6 正式文案输入，保留 V5 视觉样式；V6 PPTX 尚未制作。
 
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
