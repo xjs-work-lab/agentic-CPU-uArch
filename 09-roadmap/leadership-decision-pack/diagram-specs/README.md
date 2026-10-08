@@ -11,6 +11,7 @@
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
 - [第 5 页 — ShadowNPU 方法及与 llm.npu 的分离](page-05-npu-software-path.md)
 - [第 6 页 — vivo X300 SME2 官方原始数据](page-06-sme2-x300-data.md)
+- [第 6 页 Round15K 高保真样板与初步验收记录](page-06-round15k-visual-pilot-status.md)：单页 PNG/PPTX 已在会话交付，待用户视觉审阅
 - [第 7 页 — SMEPilot 分配/流水/布局](page-07-smepilot-method.md)
 - [第 8 页 — HeRo 动态 DAG 调度](page-08-hero-runtime.md)
 - [第 9 页 — LLVM/CPU、GPU/NPU、Runtime 所有权](page-09-compiler-runtime-ownership.md)
