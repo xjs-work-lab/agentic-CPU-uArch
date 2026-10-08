@@ -23,7 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: ROUND15D_PUBLIC_EVIDENCE_STRATEGIC_CONVERGENCE
+next_program: ROUND15E_PORTFOLIO_FORMAL_RECONCILIATION
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -36,10 +36,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 593 canonical nodes
-- 1110 canonical semantic edges
-- 1110 generated reverse edges
-- 1056 derived single-direction dependency edges
+- 608 canonical nodes
+- 1144 canonical semantic edges
+- 1144 generated reverse edges
+- 1090 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -552,3 +552,16 @@ Canonical contract: `00-project/research-goal-lock-agentic-mobile.md`; end-of-ro
 - Three provisional themes F/P/V remain, four workload shifts shortlisted, existing investment lanes/scores unchanged, no hardware candidate promoted.
 - End-state and FQ1..FQ7 updated in `00-project/final-questions-status.md`. **No experiments, hardware testing, PoC or simulation planned**.
 - Next Round15D: patent/control claim pressure and public evidence leadership portfolio shortlist.
+
+## Round15D — patent claims + vendor/OEM product convergence + leadership pre-decision (2026-10-08)
+
+Research result: **PRE_DECISION_PORTFOLIO_MATRIX_READY**.
+- Re-audited PATENT-024, PATENT-032, PATENT-033 original independent/dependent claims; no duplicate Source IDs and no FTO/legal conclusions.
+- Added VENDOR-032 Apple Foundation Models sessions/tools, VENDOR-033 Google Pixel10 Tensor G5/Gemini Nano proactive assistance, VENDOR-034 Samsung Galaxy S26 Agentic AI announcement. OEM Samsung/Snapdragon evidence not counted twice as independent silicon.
+- Research claims CLM-R15D-001..004 and Evidence Cases EC-R15D-001-A/B, 002-A/B, 003-A/B, 004-A/B include SUPPORT/UNDERCUT/SCOPE_LIMIT. No experimental results created.
+- Technical prioritization from published evidence: PT-A verified action substrate + CG-06 CPU/LLVM fast paths + C software QoE/OS resources are strongest P0 actionable; A remains **conditional differentiated hypothesis** while canonical A PRIMARY_BET 82.5 stays a provisional legacy score/lane **not formally changed**; B/R1/R2 reserves, CG07 product-follow, R3 Blocked. 2nd primary Bet unfilled.
+- Historical patents cover generic cache-demand task migration, Agent dialogue-demand/version cache and software Agent transaction recovery, **not** the conjectured physical CPU↔NPU Agent version coherence.
+- Reports: `analysis/opportunities/round15d-prior-art-vendor-portfolio-2026-10-08.md` and `09-roadmap/round15d-leadership-portfolio-provisional-2027-2029.md`. Seven FQs refreshed.
+- No tests, experiments, PoC, data instrumentation or simulation; strict public-source-only policy remains in force.
+
+Next: Round15E formal reconciled portfolio SSOT and management-ready final answers without false confidence.

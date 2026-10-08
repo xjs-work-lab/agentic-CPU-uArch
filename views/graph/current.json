@@ -1073,6 +1073,38 @@
       "claim_kind": "HYPOTHESIS"
     },
     {
+      "id": "CLM-R15D-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15D-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15D-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15D-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15D-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15D-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-R15D-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15D-004.md",
+      "record_state": "CURRENT",
+      "status": "OPEN",
+      "claim_kind": "HYPOTHESIS"
+    },
+    {
       "id": "CLM-R2-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-R2-001.md",
@@ -2706,6 +2738,54 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-R15D-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-003-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15D-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15D-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-R2-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-R2-001-A.md",
@@ -3860,6 +3940,24 @@
       "id": "VENDOR-031",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-031/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-032",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-032/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-033",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-033/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-034",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-034/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -6001,6 +6099,12 @@
     {
       "source": "CLM-AO2-006",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO2-006",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-XAO-001-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -6140,6 +6244,12 @@
       "source": "CLM-AO3-006",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-R15C-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO3-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8142,6 +8252,12 @@
     },
     {
       "source": "CLM-R15C-004",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-004",
       "relation": "SCOPED_BY_CASE",
       "target": "EC-R15C-004-C",
       "provenance": "GENERATED_REVERSE"
@@ -8150,6 +8266,42 @@
       "source": "CLM-R15C-004",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-R15C-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-001",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15D-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15D-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15D-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15D-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15D-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15D-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15D-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -8816,6 +8968,12 @@
       "source": "CLM-T8-004",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-T8-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-XAO-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -12743,6 +12901,222 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-R15D-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-024",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-033",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15D-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-024",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-033",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-001-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15D-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-033",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-034",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15D-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-R15D-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-R15D-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-031",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-002-B",
+      "relation": "UNDERCUT",
+      "target": "EC-R15D-002-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-XAO-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-009",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15D-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-121",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-033",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-034",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-003-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15D-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO2-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO3-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-R15C-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15D-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-R15D-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-R15D-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PATENT-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-032",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15D-004-B",
+      "relation": "UNDERCUT",
+      "target": "EC-R15D-004-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-R2-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-008",
@@ -14249,6 +14623,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-009",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-013",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-A-001",
@@ -15589,6 +15969,12 @@
     {
       "source": "PAPER-121",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-121",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-XAO-002-B",
       "provenance": "GENERATED_REVERSE"
     },
@@ -15727,6 +16113,18 @@
     {
       "source": "PATENT-024",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-024",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-024",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-R2-005-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -15785,9 +16183,45 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PATENT-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PATENT-033",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO2-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-033",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PATENT-033",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-001-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -17303,6 +17737,24 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "VENDOR-028",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-R15C-002-A",
@@ -17355,11 +17807,65 @@
       "relation": "PREMISE_OF_CASE",
       "target": "EC-R15C-004-C",
       "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-031",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-032",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-033",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-033",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-034",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-034",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15D-003-B",
+      "provenance": "GENERATED_REVERSE"
     }
   ],
   "counts": {
-    "nodes": 593,
-    "canonical_semantic_edges": 1110,
-    "generated_reverse_edges": 1110
+    "nodes": 608,
+    "canonical_semantic_edges": 1144,
+    "generated_reverse_edges": 1144
   }
 }

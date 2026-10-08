@@ -24,3 +24,6 @@ venue = "CN120704926A"
 - Does not claim LLM semantic lineage, resource frontiers, mobile xPU queue semantics or CPU/uArch support.
 
 See deep.md.
+## Round 15D direct-claim scope refinement
+
+See [claims-round15d.md](claims-round15d.md) for independently re-read claim 1 and material dependent/other independent claims, explicit semantic vs physical-scoping and application-vs-granted caveats.

@@ -34,3 +34,7 @@ Dependent claim 23 explicitly includes smartphone/tablet portable devices.
 
 Safe conclusion:
 generic cache-demand-aware heterogeneous mobile task migration is direct claim-level prior art.
+
+## Round 15D direct-claim scope refinement
+
+See [claims-round15d.md](claims-round15d.md) for independently re-read claim 1 and material dependent/other independent claims, explicit semantic vs physical-scoping and application-vs-granted caveats.

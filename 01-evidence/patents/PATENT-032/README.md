@@ -44,3 +44,7 @@ Boundary:
 the claim does not directly cover smartphone S2/S3 derived physical artifacts, NPU/DRAM/UFS lineage, or certified cross-tier preservation.
 
 No FTO/legal conclusion is made.
+
+## Round 15D direct-claim scope refinement
+
+See [claims-round15d.md](claims-round15d.md) for independently re-read claim 1 and material dependent/other independent claims, explicit semantic vs physical-scoping and application-vs-granted caveats.
