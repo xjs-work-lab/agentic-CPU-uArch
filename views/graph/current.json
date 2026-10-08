@@ -1113,6 +1113,38 @@
       "claim_kind": "INFERENCE"
     },
     {
+      "id": "CLM-R15F-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-R2-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-R2-001.md",
@@ -2830,6 +2862,54 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-R15F-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-003-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-R2-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-R2-001-A.md",
@@ -3876,6 +3956,36 @@
       "id": "TOOL-013",
       "type": "SOURCE",
       "path": "01-evidence/tools/TOOL-013/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-014",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-014/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-015",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-015/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-016",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-016/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-017",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-017/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-018",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-018/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -8442,6 +8552,48 @@
       "source": "CLM-R15E-001",
       "relation": "TRIGGERS_DECISION",
       "target": "DEC-R1-002",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-001",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15F-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15F-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-002",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15F-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-003",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15F-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15F-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15F-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13407,6 +13559,210 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-R15F-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-052",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-012",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15F-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-052",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-012",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-001-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15F-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-014",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-015",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-016",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-017",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-018",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15F-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-014",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-016",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-002-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15F-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-009",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-057",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-059",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-098",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15F-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-057",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-098",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-003-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15F-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-098",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-012",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-014",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-015",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-016",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15F-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-R15F-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-R15F-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-057",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-059",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "TOOL-016",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15F-004-B",
+      "relation": "UNDERCUT",
+      "target": "EC-R15F-004-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-R2-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-008",
@@ -14919,6 +15275,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-009",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-013",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-A-001",
@@ -15399,6 +15761,18 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-052",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-052",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-057",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
@@ -15408,6 +15782,24 @@
       "source": "PAPER-057",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15432,6 +15824,18 @@
       "source": "PAPER-059",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15816,6 +16220,24 @@
       "source": "PAPER-098",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CPU-005-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -17703,9 +18125,93 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "TOOL-012",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-012",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-012",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "TOOL-013",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-015",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-015",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-017",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "TOOL-018",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15F-002-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -18208,8 +18714,8 @@
     }
   ],
   "counts": {
-    "nodes": 615,
-    "canonical_semantic_edges": 1169,
-    "generated_reverse_edges": 1169
+    "nodes": 632,
+    "canonical_semantic_edges": 1202,
+    "generated_reverse_edges": 1202
   }
 }

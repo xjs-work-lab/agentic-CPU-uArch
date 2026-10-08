@@ -14,6 +14,10 @@ related_capabilities = ["CAP-ARM-C2-SME2-CPU-AI"]
 
 # CG-06 — CPU-Resident Latency-Critical Agent AI Fast Path
 
+## Round15F current technical supplement — existing ISA/compiler first
+**INVEST / score and lane unchanged.** Five controllable work packages C1–C5 (LLVM MLIR lowering, SME/ZA ABI call boundaries, KleidiAI kernel/packing layouts, optimized NPU-residual placement, Agent runtime QoE) described in [technical analysis](../../../analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md).
+Official LLVM/MLIR/Arm documented codegen/kernel support and TOOL-012 Vivo X300 smartphone inference prove capability, not Agent-specific ISA. Any historical EXP-CG06-001 tasks below are archival references **not an activity** of this public-only study.
+
 ## 30-second decision
 **INVEST / 86.5 / Adaptation + Differentiation**
 

@@ -2,7 +2,7 @@
 
 Updated: 2026-10-08
 Research authority: xjs-work-lab/agentic-CPU-uArch (V2.2 research SSOT / V2.4 graph)
-Next: ROUND15F_LEADERSHIP_SYNTHESIS_AND_CPU_COMPILER_FOCUS
+Next: ROUND15G_FINAL_SOURCE_AUDIT_AND_REPORT_CLOSURE
 Purpose: anti-drift one-page dashboard. Update at the **end of every meaningful research round** and summarize succinctly in user reply.
 
 ## Goal Lock (immutable in intent)
@@ -15,14 +15,14 @@ Leadership deliverable = **3–5 structural workload changes + 3–5 architectur
 Gate-A public-evidence architecture discovery is the project's decision standard. Gate-B experimental product/silicon proof is **out of scope**, a descriptive caveat only.
 
 ## Seven final questions — progress audit
-| ID | Must answer before closing | Status as of Round 15E | Current answer / unresolved gap |
+| ID | Must answer before closing | Status as of Round 15F | Current answer / unresolved gap |
 |---|---|---|---|
 | FQ1 | **What 3–5 workload/user-experience shifts matter in 2027–29?** | ADEQUATE — RANKED FOUR SHIFTS | Ranked persistent safe workflows, repeated CPU↔NPU stages, revisable state and proactive LP admission; cross-OEM product evidence and published phone/system sources. 2027–29 prevalence and specific SoC economics remain conditional. |
 | FQ2 | **What do academic/industry leaders already implement, and what is mature prior art?** | ADEQUATE FOR BOUNDED STRATEGY | 5/5 AO evidence mapped; three direct patent claim audits; Apple, Google, Samsung official products; ProgRouter/LAS full deep reads, Android NPU Manager/QNN. Direct multi-vendor Agent system energy evidence remains incomplete. |
 | FQ3 | **Where are 3–5 genuinely useful *cross-layer* architecture themes and overlaps?** | ADEQUATE — 3 THEMES WITH OWNERSHIP | F execution/state, P proactive LP admission, V progress/QoE software information; user-effect authority separate from memory validity. Not three hardware Bets. |
-| FQ4 | **Which tensions survive strong software baselines; is any CPU/SoC/uArch lever justified from PUBLIC evidence?** | PARTIAL / HW-CAUSE GAP | Documented Android17 NPU work lifetime, QNN sharing, prior-art caching/transaction and software baselines cover broad control; no public matched phone evidence proves a private Agent semantic CPU/uArch lever. Current leadership decision is NO special Agent ISA/silicon bet. |
+| FQ4 | **Which tensions survive strong software baselines; is any CPU/SoC/uArch lever justified from PUBLIC evidence?** | COMPILER ADEQUATE / HARDWARE GAP | Existing AArch64 SME ABI, MLIR ArmSME/Linalg, vectorization and KleidiAI plus vivo phone SME2 reveal concrete compiler/microkernel paths; optimized NPU/mobile Agent runtime software baseline remains strong. Novel Agent CPU hardware causal value unestablished. |
 | FQ5 | **Which 2–3 PRIMARY BETs, 2–3 STRATEGIC RESERVES and Kill/Do-not-invest items should leadership choose?** | CLOSED FOR 2026-10-08 PUBLIC EVIDENCE PORTFOLIO | DEC-PORTFOLIO-002 formally commits 3 P0 technology investments CG-06/PT-A/C, **0 independent differentiated Primary Bets**, core reserves A/B-residual/R2; R1 WATCH, CG-07 Explore, CG-01 external benchmark, R3 Blocked. A 82.5 retired historical (DEC-A-008), no new score. |
-| FQ6 | **What is the staged 2027 / 2028 / 2029 CPU–LLVM–OS–SoC roadmap?** | ADEQUATE INTEGRATED DRAFT | New `09-roadmap/round15e-integrated-public-roadmap-2027-2029.md` merges 4 structural shifts, F/P/V themes, 2027/28/29 by CPU/uArch, LLVM, runtime, OS/NPU, memory, LP SoC and formal portfolio. Leadership narrative and comparison polish remain. |
+| FQ6 | **What is the staged 2027 / 2028 / 2029 CPU–LLVM–OS–SoC roadmap?** | ADEQUATE + OWNER-SPECIFIC CG06 LEVERS | 15E year/layer roadmap now complemented by 15F technical brief and C1–C5 compiler/ABI/kernel/CPU-NPU partition/runtime ownership. Management source link audit still to close. |
 | FQ7 | **Which PUBLIC evidence distinguishes competing hypotheses and warrants FOLLOW/BET/RESERVE/KILL?** | ADEQUATE PUBLIC DECISION RULES | Formal reserve/downgrade from deep original software progress paper ablations and official NPU/API/prior art, with SUPPORT+SCOPE_LIMIT. A private info and cross-xPU physical value remain explicitly unknown; no experiment needed or proposed. |
 
 ## Persistent portfolio invariants — Round15E formal cutover
@@ -80,3 +80,14 @@ Critical: Round-end reporting tracks **cumulative research progress toward the f
 - FQ7 ADEQUATE for public-sources strategic decision rules, with explicit knowledge boundaries and no experiment obligation.
 - Technical coverage: UX/Agent workloads ADEQUATE; LLVM/AArch64 PARTIAL (more original compiler/backend implementation literature comparison); CPU core/uArch PARTIAL (no Agent-specific published mobile benefit); runtime/actuation ADEQUATE; OS resource control ADEQUATE (API not universal retail deployment); CPU–NPU/shared-state PARTIAL; low-power admission PARTIAL (daily-energy+helpfulness tradeoff absent).
 - Next Round15F: review decision-critical CPU+LLVM portable fast-path original technical detail, finalize management-facing integrated roadmap, audit links and contradictions; strictly public sources only.
+
+## Round15F cumulative progress and coverage (2026-10-08)
+- FQ1 ADEQUATE — four ranked workload/UX shifts; not asserted universal rollout.
+- FQ2 ADEQUATE — 5 AO mapped plus direct original CPU/NPU papers and five new official compiler/kernel documentation sources (TOOL-014..018).
+- FQ3 ADEQUATE — themes F/P/V separated from three priority investments.
+- FQ4 **COMPILER/RUNTIME ADEQUATE; new CPU/uArch silicon GAP** — CPU SME2 on smartphone beneficial in a non-Agent vision task, MLIR/LLVM ABI/kernel implementation levers mapped, optimized NPU competes strongly.
+- FQ5 CLOSED within dated public evidence — CG-06/PT-A/C investment, zero differentiated Primary Bets, A/B/R2 reserves, R1 Watch and R3 Blocked; **no lane/score change this round**.
+- FQ6 ADEQUATE, more concrete CPU/LLVM C1–C5 component-and-year ownership and leadership brief.
+- FQ7 ADEQUATE bounded sourcing, original academic and vendor lineages not counted as independent replications.
+- Technology coverage: Agent UX ADEQUATE; LLVM/AArch64 compiler **ADEQUATE for technical mechanism map**; CPU uArch **PARTIAL (no novel hardware proof)**; PT-A/runtime ADEQUATE; OS/QoE ADEQUATE; shared CPU/NPU states PARTIAL; always-on low power PARTIAL.
+- Round15G: original source link and decision claim consistency audit, leadership-ready final report, **not experiments**.

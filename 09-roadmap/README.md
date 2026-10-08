@@ -1,6 +1,7 @@
 # 09-roadmap — entrypoint
 
-**Current authority (Round15E, 2026-10-08):**
+**Current authority (Round15F, 2026-10-08):**
+- [round15f-leadership-technical-brief-2027-2029.md](round15f-leadership-technical-brief-2027-2029.md) — latest evidence-bounded CPU/LLVM management synthesis.
 - [current.md](current.md) — **formal portfolio after A downgrade**: 3 priority investments, 0 independent differentiated Primary Bets, core Reserves A/B-residual/R2, R1 WATCH, R3 BLOCKED.
 - [round15e-integrated-public-roadmap-2027-2029.md](round15e-integrated-public-roadmap-2027-2029.md) — public-evidence-only 2027/28/29 year × technology layer roadmap.
 - [product-evolution-map.md](product-evolution-map.md) — product Trend T1–T8 distinct from technical uniqueness and investment decisions.

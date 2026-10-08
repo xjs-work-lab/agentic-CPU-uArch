@@ -23,7 +23,7 @@ execution_plan_2027: HISTORICAL_NONOPERATIVE_EXPERIMENT_ARCHIVE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: ROUND15F_LEADERSHIP_SYNTHESIS_AND_CPU_COMPILER_FOCUS
+next_program: ROUND15G_FINAL_SOURCE_AUDIT_AND_REPORT_CLOSURE
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -37,10 +37,10 @@ round_end_reporting_contract: COMPILER_STYLE_GOAL_FQ7_COVERAGE_DRIFT_V1
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 615 canonical nodes
-- 1169 canonical semantic edges
-- 1169 generated reverse edges
-- 1115 derived single-direction dependency edges
+- 632 canonical nodes
+- 1202 canonical semantic edges
+- 1202 generated reverse edges
+- 1148 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -581,3 +581,8 @@ Adopted the compiler optimization insight project's fixed goal → final questio
 - Current roadmap authority `09-roadmap/current.md` and `09-roadmap/round15e-integrated-public-roadmap-2027-2029.md`; older experiment plans remain historical and nonoperative.
 - FQ1–7 and technical area cumulative coverage updated. No research experiments, tests, PoC or local simulation.
 - Next Round15F leadership synthesis plus CPU/LLVM public-primary source pressure / final source links audit.
+
+## Round15F — public CPU LLVM and optimized NPU source audit (2026-10-08)
+Five original official LLVM/MLIR/Arm software Source IDs TOOL-014..018, existing TOOL-012 phone SME2 results **reused, not duplicated**. Four Claims and 8 EvidenceCases with scope limits and an explicit undercut; synthesis `analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md`; latest leadership technical brief in `09-roadmap/round15f-leadership-technical-brief-2027-2029.md`.
+CG-06 INVEST unchanged; strong NPU counterpressure checked in PAPER-009/059/057/098; no claim CPU universally beats NPU or Agent requires a new ISA. 0 new Primary Bets; three core reserves unchanged. No experiment/benchmark/PoC.
+Next Round15G final public source/link/claim audit and management report closing.

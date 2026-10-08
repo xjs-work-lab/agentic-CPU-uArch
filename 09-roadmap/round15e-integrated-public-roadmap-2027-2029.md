@@ -3,6 +3,8 @@
 Current: 2026-10-08. Public-evidence-only, **zero owned experiments/test/PoC/simulation**.
 Authoritative portfolio [current.md](current.md); decision [DEC-PORTFOLIO-002](../08-decisions/events/DEC-PORTFOLIO-002.md); [three-theme cross-AO model](../analysis/opportunities/round15b-cross-opportunity-synthesis-2026-10-08.md).
 
+Round15F compiler implementation details: [CPU/LLVM source-and-ownership table](../analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md) and [leadership brief](round15f-leadership-technical-brief-2027-2029.md). Canonical portfolio unchanged.
+
 ## Leadership decision in 30 seconds
 **BUILD/INVEST three engineering/platform capacities, keep three differentiated research reserves, and approve no new Agent-only CPU-uArch or silicon bet today.** This is a deliberate foresight result based on technical/public evidence, not avoidance of an experimental gate.
 

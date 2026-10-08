@@ -1114,6 +1114,38 @@
       "claim_kind": "INFERENCE"
     },
     {
+      "id": "CLM-R15F-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-R15F-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15F-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
       "id": "CLM-R2-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-R2-001.md",
@@ -2831,6 +2863,54 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-R15F-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-003-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15F-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15F-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-R2-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-R2-001-A.md",
@@ -3877,6 +3957,36 @@
       "id": "TOOL-013",
       "type": "SOURCE",
       "path": "01-evidence/tools/TOOL-013/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-014",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-014/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-015",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-015/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-016",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-016/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-017",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-017/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "TOOL-018",
+      "type": "SOURCE",
+      "path": "01-evidence/tools/TOOL-018/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -8110,6 +8220,54 @@
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
+      "source": "EC-R15F-001-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15F-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-001-B",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-R15F-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-002-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15F-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-002-B",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-R15F-002",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-003-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15F-003",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-003-B",
+      "relation": "CASE_SCOPE_LIMITS",
+      "target": "CLM-R15F-003",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-004-A",
+      "relation": "CASE_SUPPORTS",
+      "target": "CLM-R15F-004",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "EC-R15F-004-B",
+      "relation": "CASE_UNDERCUTS",
+      "target": "EC-R15F-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
       "source": "EC-R2-001-A",
       "relation": "CASE_SUPPORTS",
       "target": "CLM-R2-001",
@@ -8621,6 +8779,12 @@
     },
     {
       "source": "PAPER-009",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-009",
       "relation": "SOURCE_TO_EXPERIMENT",
       "target": "EXP-C-001",
       "provenance": "DERIVED_DEPENDENCY"
@@ -9107,6 +9271,18 @@
     },
     {
       "source": "PAPER-052",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-001-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-052",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-052",
       "relation": "SOURCE_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
       "provenance": "DERIVED_DEPENDENCY"
@@ -9115,6 +9291,24 @@
       "source": "PAPER-057",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-CG06-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-057",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9139,6 +9333,18 @@
       "source": "PAPER-059",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-CG06-004-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-059",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-B",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -9529,6 +9735,24 @@
       "source": "PAPER-098",
       "relation": "PREMISE_TO_CASE",
       "target": "EC-CPU-005-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-003-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "PAPER-098",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -10415,6 +10639,24 @@
     },
     {
       "source": "TOOL-012",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-001-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-012",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-001-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-012",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-012",
       "relation": "SOURCE_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
       "provenance": "DERIVED_DEPENDENCY"
@@ -10423,6 +10665,72 @@
       "source": "TOOL-013",
       "relation": "SOURCE_TO_EXPERIMENT",
       "target": "EXP-CG06-001",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-014",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-015",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-015",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-016",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-004-B",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-017",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-A",
+      "provenance": "DERIVED_DEPENDENCY"
+    },
+    {
+      "source": "TOOL-018",
+      "relation": "PREMISE_TO_CASE",
+      "target": "EC-R15F-002-A",
       "provenance": "DERIVED_DEPENDENCY"
     },
     {
@@ -10871,7 +11179,7 @@
     }
   ],
   "counts": {
-    "nodes": 615,
-    "dependency_edges": 1115
+    "nodes": 632,
+    "dependency_edges": 1148
   }
 }
