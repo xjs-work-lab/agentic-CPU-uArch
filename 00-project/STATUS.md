@@ -22,8 +22,8 @@ portfolio_convergence: PROVISIONAL_REFRAME
 execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 owned_experiment_environment: false
-next_program: ROUND15_ARCHITECTURE_OPPORTUNITY_DISCOVERY
-round15a_progress: AO4_EVIDENCE_MAPPED_4_OF_5
+next_program: ROUND15B_CROSS_OPPORTUNITY_SYNTHESIS
+round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
 source_identity_gate: ACTIVE
@@ -35,10 +35,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 540 canonical nodes
-- 1008 canonical semantic edges
-- 1008 generated reverse edges
-- 954 derived single-direction dependency edges
+- 565 canonical nodes
+- 1059 canonical semantic edges
+- 1059 generated reverse edges
+- 1005 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -501,3 +501,19 @@ AO-4 Always-On Proactive Personal-Agent Front End: **EVIDENCE_MAPPED / KEEP / SO
 
 Deep audit: analysis/opportunities/AO-4-evidence-skeleton-2026-10-08.md
 Transaction: history/research-transactions/TXN-20261008-ROUND15A-AO4-01.md
+
+## Round 15A — AO-5 Evidence Closure (2026-10-08)
+
+AO-5 Semantic Progress / QoE Control Plane: **EVIDENCE_MAPPED / KEEP-NARROW / conditional-information residual only**.
+
+- Added PAPER-119 LAS ACL 2026 and PAPER-120 SMetric as FULL_10Q, including original methods, tables, experimental design, counterfactual/ablation checks and transfer boundaries.
+- Added PAPER-121 ProgRouter as **METADATA_ONLY deepread debt**, not a source of decision-grade Evidence Cases; full text was not retrievable in this round.
+- Reused prior deep-reviewed PAPER-013/015/043/044/047/048/050/068 and official platform/vendor baselines.
+- CLM-AO5-001..007 now map seven roles; 15 evidence cases include an explicit UNDERCUT and multiple SCOPE_LIMITS against unearned differentiated/hardware claims.
+- LAS and SMetric show that runtime-visible validation/artifact history/session signals can already give real *software/server* value; prior ReUA documents graded utility scheduling. None prove target-phone Agent-private RequiredProgress residual.
+- AO-5 retains only the conditional information question **given complete B4-TX**. A stays PRIMARY_BET / 82.5 / SIMULATION_SUPPORT **as prior provisional state**, not newly verified. C/R1 and all portfolio lanes remain unchanged.
+- **Round 15A: 5 / 5 ARCHITECTURE_OPPORTUNITY objects EVIDENCE_MAPPED.** This is evidence skeleton closure, **not** AO1…5 final cross-synthesis.
+- **Next Round 15B:** full-read ProgRouter and any decision-critical late papers; AO1…5 overlap, inferential bridge, duplicates/contradictions; 2027–2029 co-design/product roadmap and portfolio convergence.
+
+Canonical synthesis: analysis/opportunities/AO-5-evidence-skeleton-2026-10-08.md
+Transaction: history/research-transactions/TXN-20261008-ROUND15A-AO5-01.md

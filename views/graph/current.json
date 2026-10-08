@@ -68,7 +68,7 @@
       "type": "ARCHITECTURE_OPPORTUNITY",
       "path": "06-opportunities/AO-5-semantic-progress-qoe-control-plane/README.md",
       "record_state": "CURRENT",
-      "coverage_state": "SEED_MAPPED",
+      "coverage_state": "EVIDENCE_MAPPED",
       "opportunity_stage": "DISCOVERY",
       "priority_rank": 4
     },
@@ -420,6 +420,62 @@
       "id": "CLM-AO4-007",
       "type": "CLAIM",
       "path": "02-claims/CLM-AO4-007.md",
+      "record_state": "CURRENT",
+      "status": "OPEN",
+      "claim_kind": "HYPOTHESIS"
+    },
+    {
+      "id": "CLM-AO5-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-001.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AO5-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-002.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AO5-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-003.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AO5-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-004.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AO5-005",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-005.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "OBSERVATION"
+    },
+    {
+      "id": "CLM-AO5-006",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-006.md",
+      "record_state": "CURRENT",
+      "status": "SUPPORTED",
+      "claim_kind": "INFERENCE"
+    },
+    {
+      "id": "CLM-AO5-007",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-AO5-007.md",
       "record_state": "CURRENT",
       "status": "OPEN",
       "claim_kind": "HYPOTHESIS"
@@ -1946,6 +2002,96 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-AO5-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-003-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-003-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-005-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-005-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-005-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-005-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-006-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-006-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-006-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-006-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-006-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-006-C.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-007-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-007-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-AO5-007-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-AO5-007-B.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-BR-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-BR-001-A.md",
@@ -3325,6 +3471,24 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "PAPER-119",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-119/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-120",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-120/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "PAPER-121",
+      "type": "SOURCE",
+      "path": "01-evidence/papers/PAPER-121/README.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "PATENT-005",
       "type": "SOURCE",
       "path": "01-evidence/patents/PATENT-005/README.md",
@@ -4310,6 +4474,12 @@
     },
     {
       "source": "AO-5",
+      "relation": "OPPORTUNITY_ARCH_HYPOTHESIS",
+      "target": "CLM-AO5-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
       "relation": "OPPORTUNITY_DIRECTION",
       "target": "A",
       "provenance": "CANONICAL_SEMANTIC"
@@ -4329,19 +4499,37 @@
     {
       "source": "AO-5",
       "relation": "OPPORTUNITY_MECHANISM",
-      "target": "CLM-C-008",
+      "target": "CLM-AO5-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_OPEN_GAP",
+      "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_PRIOR_ART_BOUNDARY",
+      "target": "CLM-AO5-005",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "AO-5",
       "relation": "OPPORTUNITY_PROBLEM_SIGNAL",
-      "target": "CLM-AGENT-001",
+      "target": "CLM-AO5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "AO-5",
+      "relation": "OPPORTUNITY_PRODUCT_SIGNAL",
+      "target": "CLM-AO5-002",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
       "source": "AO-5",
       "relation": "OPPORTUNITY_STRONG_BASELINE",
-      "target": "CLM-AGENT-002",
+      "target": "CLM-AO5-004",
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
@@ -5084,12 +5272,6 @@
     },
     {
       "source": "CLM-AGENT-001",
-      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
-      "target": "AO-5",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "CLM-AGENT-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-A-001-A",
       "provenance": "GENERATED_REVERSE"
@@ -5116,12 +5298,6 @@
       "source": "CLM-AGENT-001",
       "relation": "USED_BY_DIRECTION",
       "target": "A",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "CLM-AGENT-002",
-      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
-      "target": "AO-5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -5941,6 +6117,162 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "CLM-AO5-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-001",
+      "relation": "PROBLEM_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-001",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-AO5-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-002",
+      "relation": "PRODUCT_SIGNAL_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-002",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-AO5-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-003",
+      "relation": "MECHANISM_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-004",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-004",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-007-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-004",
+      "relation": "STRONG_BASELINE_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-005",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-005",
+      "relation": "PRIOR_ART_BOUNDARY_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-005",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-005",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-005-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "OPEN_GAP_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-007-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-AO5-006-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-006",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-006-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-007",
+      "relation": "ARCH_HYPOTHESIS_FOR_OPPORTUNITY",
+      "target": "AO-5",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-007",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-AO5-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO5-007",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-AO5-007-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "CLM-BR-001",
       "relation": "SUPPORTED_BY_CASE",
       "target": "EC-BR-001-A",
@@ -6232,12 +6564,6 @@
       "source": "CLM-C-007",
       "relation": "USED_BY_DIRECTION",
       "target": "C",
-      "provenance": "GENERATED_REVERSE"
-    },
-    {
-      "source": "CLM-C-008",
-      "relation": "MECHANISM_FOR_OPPORTUNITY",
-      "target": "AO-5",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -10531,6 +10857,294 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-AO5-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-013",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-015",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-050",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-001-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-AO5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-019",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-023",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-002-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-AO5-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-003-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-120",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-003-B",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-044",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-047",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-050",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-068",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-120",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-004-B",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-068",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-047",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-120",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-005-B",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-A",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-AO5-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-AO5-006-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-044",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-B",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-120",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-B",
+      "relation": "UNDERCUT",
+      "target": "EC-AO5-006-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-048",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-068",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-006-C",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-047",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-A",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-119",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-005",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-A",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-AO5-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-B",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-B",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO5-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-AO5-007-B",
+      "relation": "SUPPORT",
+      "target": "CLM-AO5-007",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-BR-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-030",
@@ -12997,6 +13611,12 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-013",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-015",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-A-001",
@@ -13006,6 +13626,12 @@
       "source": "PAPER-015",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-A-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-015",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-001-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13309,9 +13935,39 @@
       "provenance": "GENERATED_REVERSE"
     },
     {
+      "source": "PAPER-044",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-044",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
       "source": "PAPER-047",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-047",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-047",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-005-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-047",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-007-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13324,6 +13980,12 @@
       "source": "PAPER-048",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-R1-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-048",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-C",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13360,6 +14022,18 @@
       "source": "PAPER-050",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-A-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-050",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-050",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -13552,6 +14226,24 @@
       "source": "PAPER-068",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-C-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-068",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-068",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-068",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-C",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -14146,6 +14838,60 @@
       "source": "PAPER-118",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO2-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-005-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-119",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-003-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-005-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-120",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-006-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15567,6 +16313,18 @@
     {
       "source": "VENDOR-005",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-005",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-007-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-005",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-R1-003-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -15580,6 +16338,12 @@
       "source": "VENDOR-006",
       "relation": "INPUT_TO_EXPERIMENT",
       "target": "EXP-C-001",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-002-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15646,6 +16410,12 @@
       "source": "VENDOR-019",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO4-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-019",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-002-B",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -15722,6 +16492,12 @@
     },
     {
       "source": "VENDOR-023",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-AO5-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-023",
       "relation": "PUBLISHED_BY",
       "target": "ACT-QUALCOMM",
       "provenance": "CANONICAL_SEMANTIC"
@@ -15788,8 +16564,8 @@
     }
   ],
   "counts": {
-    "nodes": 540,
-    "canonical_semantic_edges": 1008,
-    "generated_reverse_edges": 1008
+    "nodes": 565,
+    "canonical_semantic_edges": 1059,
+    "generated_reverse_edges": 1059
   }
 }
