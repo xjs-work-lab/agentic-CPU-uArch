@@ -1,5 +1,7 @@
 # 技术领导汇报《逐页内容—逻辑—证据—视觉设计蓝图》v1.0
 
+> **Round15L 领导可读性优先（2026-10-08）：** 原蓝图保留研究事实与逐页结构，但正式制图前请依据 [15 页逐页领导可读性审计](diagram-specs/round15l-all-15-pages-leadership-readability-audit-2026-10-08.md) 改写标题、每段话、术语与实验基线。第 5 页最新 [ShadowNPU V2 内容合同](diagram-specs/page-05-round15k-v2-leadership-readable-and-benchmark-contract-2026-10-08.md) 优先于本文件的旧描述。这是已完成的审稿建议，**不等于 15 页都已正式重制或通过审查**。
+
 日期：2026-10-08 · 设计阶段，不是 PPT、PNG 或新增技术研究。基于已完成的 Round15G 公开证据报告、Round15H 决策包、Round15F CPU/LLVM 原始机制卡。
 
 > **最重要的制作纪律：先把技术故事讲完整，再决定图是什么样；先让页内证据与因果关系成立，再画图和排版；最后才考虑配色、图标和动画。**
