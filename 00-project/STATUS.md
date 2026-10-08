@@ -23,7 +23,7 @@ execution_plan_2027: DEFERRED_FUTURE_VALIDATION_REFERENCE
 research_mode: PUBLIC_EVIDENCE_STRATEGIC_INSIGHT
 study_execution_policy: PUBLIC_SOURCES_ONLY_NO_NEW_EXPERIMENTS
 owned_experiment_environment: false
-next_program: ROUND15C_PUBLIC_ARCHITECTURE_PRESSURE_AND_ROADMAP
+next_program: ROUND15D_PUBLIC_EVIDENCE_STRATEGIC_CONVERGENCE
 round15a_progress: AO5_EVIDENCE_MAPPED_5_OF_5
 product_trend_framework: V1
 shared_semantic_contract: STRATEGIC_KG_CORE_V1
@@ -36,10 +36,10 @@ source_identity_gate: ACTIVE
 Repository: `xjs-work-lab/agentic-CPU-uArch`
 
 ## Current graph
-- 576 canonical nodes
-- 1085 canonical semantic edges
-- 1085 generated reverse edges
-- 1031 derived single-direction dependency edges
+- 593 canonical nodes
+- 1110 canonical semantic edges
+- 1110 generated reverse edges
+- 1056 derived single-direction dependency edges
 - V2.4 Opportunity-layer additive upgrade active
 - projection validated after Evidence Rescue 1B A deep audit
 - Round 13 Graph QA: **PASS** — run `37607500340`, job `112746473467`
@@ -540,3 +540,15 @@ The project must finish an evidence-based 2027–2029 Agentic mobile CPU/SoC str
 Gate A (public strategic opportunity judgment) is deliverable without direct measurement. Gate B hardware/product proof is outside scope. `EXP-*` are inherited historical contingency reference files, not project work to execute or complete. Missing public evidence calls for bounded, conditional conclusions, **not** postponement of the research goal or invented confirmation.
 
 Canonical contract: `00-project/research-goal-lock-agentic-mobile.md`; end-of-round anti-drift tracker: `00-project/final-questions-status.md`.
+
+## Round 15C — public Android17/QAIRT pressure and no-experiment roadmap (2026-10-08)
+
+**Stage: PUBLIC_PLATFORM_BASELINE_AUDITED / 2027–29 ROADMAP PROVISIONAL**.
+
+- New official source cards VENDOR-027 Android17 NPU Manager, VENDOR-028 AOSP NN HAL burst, VENDOR-029 Qualcomm QNN shared buffers (**SECTION_REVIEW**, manual full-page inaccessible), VENDOR-030 NNAPI NDK migration, VENDOR-031 Android AICore. Prior PAPER-009 original FULL_10Q reused; no duplicate source.
+- Four Claims CLM-R15C-001..004 (004 OPEN) and eight Evidence Cases including UNDERCUT and SCOPE_LIMIT pressure established.
+- AO1+AO2+AO3 software/OS base strengthens materially: NPU resource admission, model unload, preemption/cancel/status, memory resource lifetime and fast dispatch already documented; do not invent Agent NPU scheduler/zero-copy novelty.
+- Public-only roadmap authority: `09-roadmap/round15c-public-source-roadmap-2027-2029.md`. Old `09-roadmap/final-2027-2029.md` marked historical, **no EXP instructions operative**.
+- Three provisional themes F/P/V remain, four workload shifts shortlisted, existing investment lanes/scores unchanged, no hardware candidate promoted.
+- End-state and FQ1..FQ7 updated in `00-project/final-questions-status.md`. **No experiments, hardware testing, PoC or simulation planned**.
+- Next Round15D: patent/control claim pressure and public evidence leadership portfolio shortlist.

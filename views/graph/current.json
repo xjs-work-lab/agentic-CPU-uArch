@@ -1041,6 +1041,38 @@
       "claim_kind": "HYPOTHESIS"
     },
     {
+      "id": "CLM-R15C-001",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15C-001.md",
+      "record_state": "CURRENT",
+      "claim_kind": "OBSERVATION",
+      "status": "SUPPORTED"
+    },
+    {
+      "id": "CLM-R15C-002",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15C-002.md",
+      "record_state": "CURRENT",
+      "claim_kind": "OBSERVATION",
+      "status": "SUPPORTED"
+    },
+    {
+      "id": "CLM-R15C-003",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15C-003.md",
+      "record_state": "CURRENT",
+      "claim_kind": "OBSERVATION",
+      "status": "SUPPORTED"
+    },
+    {
+      "id": "CLM-R15C-004",
+      "type": "CLAIM",
+      "path": "02-claims/CLM-R15C-004.md",
+      "record_state": "CURRENT",
+      "claim_kind": "HYPOTHESIS",
+      "status": "OPEN"
+    },
+    {
       "id": "CLM-R2-001",
       "type": "CLAIM",
       "path": "02-claims/CLM-R2-001.md",
@@ -2626,6 +2658,54 @@
       "record_state": "CURRENT"
     },
     {
+      "id": "EC-R15C-001-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-001-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-001-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-001-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-002-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-002-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-002-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-002-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-003-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-003-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-004-A",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-004-A.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-004-B",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-004-B.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "EC-R15C-004-C",
+      "type": "EVIDENCE_CASE",
+      "path": "03-evidence-cases/EC-R15C-004-C.md",
+      "record_state": "CURRENT"
+    },
+    {
       "id": "EC-R2-001-A",
       "type": "EVIDENCE_CASE",
       "path": "03-evidence-cases/EC-R2-001-A.md",
@@ -3750,6 +3830,36 @@
       "id": "VENDOR-026",
       "type": "SOURCE",
       "path": "01-evidence/vendors/VENDOR-026/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-027",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-027/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-028",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-028/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-029",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-029/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-030",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-030/README.md",
+      "record_state": "CURRENT"
+    },
+    {
+      "id": "VENDOR-031",
+      "type": "SOURCE",
+      "path": "01-evidence/vendors/VENDOR-031/README.md",
       "record_state": "CURRENT"
     },
     {
@@ -5885,6 +5995,12 @@
     {
       "source": "CLM-AO2-006",
       "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO2-006",
+      "relation": "PREMISE_OF_CASE",
       "target": "EC-XAO-001-A",
       "provenance": "GENERATED_REVERSE"
     },
@@ -6018,6 +6134,12 @@
       "source": "CLM-AO3-006",
       "relation": "OPEN_GAP_FOR_OPPORTUNITY",
       "target": "AO-3",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-AO3-006",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -7974,6 +8096,60 @@
       "source": "CLM-R1-EXP-001",
       "relation": "USED_BY_DIRECTION",
       "target": "R1",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-001",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-001",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15C-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-001",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15C-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-002",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-002",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15C-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-002",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15C-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-003",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15C-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-004",
+      "relation": "SCOPED_BY_CASE",
+      "target": "EC-R15C-004-C",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "CLM-R15C-004",
+      "relation": "SUPPORTED_BY_CASE",
+      "target": "EC-R15C-004-A",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -12411,6 +12587,162 @@
       "provenance": "CANONICAL_SEMANTIC"
     },
     {
+      "source": "EC-R15C-001-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-001-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15C-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO2-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-001-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-001-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15C-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-028",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-029",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15C-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-029",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-030",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-002-B",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15C-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-030",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-003-A",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-031",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-003-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15C-003",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-AO3-006",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-R15C-001",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-A",
+      "relation": "HAS_PREMISE",
+      "target": "CLM-R15C-002",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-A",
+      "relation": "SUPPORT",
+      "target": "CLM-R15C-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-A",
+      "relation": "UNDERCUT_BY_CASE",
+      "target": "EC-R15C-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "EC-R15C-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-027",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-028",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-B",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-029",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-B",
+      "relation": "UNDERCUT",
+      "target": "EC-R15C-004-A",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-C",
+      "relation": "HAS_PREMISE",
+      "target": "PAPER-009",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-C",
+      "relation": "HAS_PREMISE",
+      "target": "VENDOR-031",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
+      "source": "EC-R15C-004-C",
+      "relation": "SCOPE_LIMIT",
+      "target": "CLM-R15C-004",
+      "provenance": "CANONICAL_SEMANTIC"
+    },
+    {
       "source": "EC-R2-001-A",
       "relation": "HAS_PREMISE",
       "target": "PAPER-008",
@@ -13908,6 +14240,12 @@
       "source": "PAPER-009",
       "relation": "PREMISE_OF_CASE",
       "target": "EC-CG06-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "PAPER-009",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-C",
       "provenance": "GENERATED_REVERSE"
     },
     {
@@ -16945,11 +17283,83 @@
       "relation": "PREMISE_OF_CASE",
       "target": "EC-AO4-007-A",
       "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-001-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-001-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-027",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-028",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-028",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-029",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-002-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-029",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-029",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-030",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-002-B",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-030",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-031",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-003-A",
+      "provenance": "GENERATED_REVERSE"
+    },
+    {
+      "source": "VENDOR-031",
+      "relation": "PREMISE_OF_CASE",
+      "target": "EC-R15C-004-C",
+      "provenance": "GENERATED_REVERSE"
     }
   ],
   "counts": {
-    "nodes": 576,
-    "canonical_semantic_edges": 1085,
-    "generated_reverse_edges": 1085
+    "nodes": 593,
+    "canonical_semantic_edges": 1110,
+    "generated_reverse_edges": 1110
   }
 }
