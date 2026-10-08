@@ -7,6 +7,11 @@
 - [多语言制图规范](diagram-authoring-policy-v1-2026-10-08.md)：按技术内容选 Mermaid、PlantUML、Graphviz/DOT、Direct SVG、Excalidraw、SmartArt 或真实数据图；语义合同优先于工具样式。
 - [15 页逐页选型表](page-visual-language-routing.md)：逐页推荐逻辑源、实际画法和不可越界条件。
 
+## 面向非专业领导的叙事验收规范
+
+- [领导可读性 Gate：10 秒理解结论、30 秒理解机制](leadership-readability-gate-v1-2026-10-08.md)
+- [HeRo 第 8 页 V6：逐卡解释与公式分层内容合同](page-08-round15k-v6-leadership-readable-copy-2026-10-08.md)：V6 正式文案输入，保留 V5 视觉样式；V6 PPTX 尚未制作。
+
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
 - [第 5 页 — ShadowNPU 方法及与 llm.npu 的分离](page-05-npu-software-path.md)
