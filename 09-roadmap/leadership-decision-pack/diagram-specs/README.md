@@ -16,6 +16,7 @@
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
 - [第 5 页 — ShadowNPU 方法及与 llm.npu 的分离](page-05-npu-software-path.md)
+- [第 5 页 Round15K ShadowNPU 双论文分离式技术机制 PPT 样板及 QA](page-05-round15k-visual-pilot-status-2026-10-08.md)：16:9 PNG/PPTX 已在当前会话制作，待用户审阅。
 - [第 6 页 — vivo X300 SME2 官方原始数据](page-06-sme2-x300-data.md)
 - [第 6 页 Round15K 高保真样板与初步验收记录](page-06-round15k-visual-pilot-status.md)：单页 PNG/PPTX 已在会话交付，待用户视觉审阅
 - [第 7 页 — SMEPilot 分配/流水/布局](page-07-smepilot-method.md)
