@@ -30,6 +30,7 @@
 - [第 6 页 — vivo X300 SME2 官方原始数据](page-06-sme2-x300-data.md)
 - [第 6 页 Round15K 高保真样板与初步验收记录](page-06-round15k-visual-pilot-status.md)：单页 PNG/PPTX 已在会话交付，待用户视觉审阅
 - [第 7 页 — SMEPilot 分配/流水/布局](page-07-smepilot-method.md)
+- [第 7 页 Round15N V2 — SME 属于 CPU ISA 扩展的架构层级修正版](page-07-round15n-v2-cpu-isa-hierarchy-pilot-2026-10-08.md)：已重制 PPTX/PNG；经基础 QA，待用户审阅。
 - [第 7 页 Round15N SMEPilot 纯蓝色可编辑样板及实验口径 QA](page-07-round15n-smepilot-editable-pilot-2026-10-08.md)：PPTX/PNG 已交付会话，待用户视觉审核。
 - [第 8 页 Round15K V5 · 五卡片边界修正与 batch/token 术语澄清](page-08-round15k-v5-layout-and-workload-terms-2026-10-08.md)：当前最新待审版本，V4 有右侧溢出问题。
 - [第 8 页 Round15K V4 · 结论式标题与 xPU 术语定义](page-08-round15k-v4-titles-and-xpu-terminology-2026-10-08.md)：当前最新样板，保留 V3 公式和五阶段。待用户视觉审阅。
