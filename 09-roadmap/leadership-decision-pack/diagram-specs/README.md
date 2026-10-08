@@ -21,6 +21,7 @@
 - [HeRo 第 8 页 V6：逐卡解释与公式分层内容合同](page-08-round15k-v6-leadership-readable-copy-2026-10-08.md)：V6 正式文案输入，保留 V5 视觉样式；V6 PPTX 尚未制作。
 
 - [15 页统一页码与页眉规范](slide-page-number-and-header-contract-v1-2026-10-08.md)：正文页码统一 `01 / 15` 至 `15 / 15`，固定页眉位置、字体和蓝色系统；最终合并前逐页验收。
+- [Round15P：正文第 1–3 页纯蓝色可编辑 PPT 样板与 QA](round15p-slides-01-03-blue-editable-pilot-2026-10-08.md)：已完成 3 页同源 PPTX/PNG，待用户审阅。
 - [Round15J 审计报告](validation-round15j-2026-10-08.md)：11 图静态结构检查、论文证据和未通过 Gate
 - [第 4 页 — Snapdragon 三种对照口径](page-04-stage-benchmark-data.md)
 - [第 4 页 Round15M V3 · CPU Fallback 概念解释与两类开销](page-04-round15m-v3-cpu-fallback-explained-2026-10-08.md)：纯蓝色可编辑 PPTX/PNG 已在会话制作，待用户审阅。
