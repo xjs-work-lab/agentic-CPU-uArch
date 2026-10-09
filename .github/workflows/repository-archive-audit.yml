@@ -4,15 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'analysis/graph/repository_archive_audit.py'
-      - '.github/workflows/repository-archive-audit.yml'
-      - 'README.md'
-      - 'CONTINUE-HERE.md'
-      - '00-project/**'
-      - '09-roadmap/**'
-      - '01-evidence/README.md'
-      - '07-validation/README.md'
+  pull_request:
 
 permissions:
   contents: read
@@ -27,12 +19,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Enumerate entire checked-out repository and validate all local Markdown links
+      - name: Enumerate all files and validate every local Markdown link
         run: |
           python analysis/graph/repository_archive_audit.py \
             --json archive-tree-audit.json \
-            --markdown archive-tree-audit.md
-      - name: Upload complete audit results
+            --markdown archive-tree-audit.md \
+            --strict-links
+      - name: Upload full audit results (including on errors)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: complete-repository-archive-audit
