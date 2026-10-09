@@ -1,3 +1,7 @@
+## Round16C：已完成全17页“内容解释在前、逐来源解读在后”的备注升级（2026-10-09）
+
+- [**Round16C｜17页备注已写入可编辑 PPTX + 全量零视觉变化 QA**](round16c-17-page-speaker-notes-implemented-and-zero-visual-delta-2026-10-09.md)：以 Round16B 为底稿，实际重写全部17页 PowerPoint Speaker Notes，每页先讲解原始画面的工作机制、箭头、数值与因果，再逐份说明研究/官方来源的观点、论据、支撑判断和适用限制。合计 **30,143 字符、47 个逐来源条目**。OOXML 103成员中仅17页 notes XML变更，其他86成员字节一致；LibreOffice导出17页PDF且投影文本与旧版完全一致。**Round16C 已交付可编辑 PPTX和独立 Markdown 备注审核稿，目前待用户审阅/Windows Office终验**；二进制产物在会话空间，不在GitHub仓。原 [Round16C 结构合同](round16c-speaker-notes-explanation-first-and-source-evidence-contract-2026-10-09.md) 现已落实，而非仅停留在设计。
+
 ## Round16C：讲者备注先逐图解释、后逐来源核证（2026-10-09）
 
 - [**Round16C｜17 页备注优先详细技术讲解、然后独立说明每份证据**](round16c-speaker-notes-explanation-first-and-source-evidence-contract-2026-10-09.md)：用户要求备注不能只有文献清单或证据边界；必须先详细讲清本页所有主要图形、箭头、数字、结论和因果关系，再逐份解释论文/官方来源的出处、主要观点、论据、支撑了什么及其局限。经当前 Round16B PPTX审阅，还发现封面/目录注释有旧“前两页不计页码”说法、正文前几页讲解以英文为主，以及部分页来源优先。**此记录是写作规范与审计，尚未实际修改17页PPT备注**；后续从Round16B源PPT仅改Notes XML，确保全部投影文字和箭头原样不变。
