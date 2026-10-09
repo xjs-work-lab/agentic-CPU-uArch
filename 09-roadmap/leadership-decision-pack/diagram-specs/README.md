@@ -56,3 +56,5 @@
 - [正式组合](../../current.md)
 
 优先级：现行研究 SSOT > 已经核对的独立 page 制图规格 > 结构审计 v1 > 最早故事板 > 生成的 PNG。Image Generator 的视觉样稿不得反向成为技术事实权威。
+
+- [第 9 页 Round15R：CPU/LLVM 编译路径与 Runtime/OS 责任分工样板](page-09-round15r-cpu-llvm-runtime-ownership-pilot-2026-10-09.md)：可编辑 PPTX/PNG 已制作并完成基础 QA，待用户审阅。
