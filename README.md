@@ -1,44 +1,95 @@
-# Agentic CPU-uArch — 2027–2029 手机 Agentic AI 技术洞察 SSOT
+# Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
-> **全仓文件与位置二次复核（2026-10-09）**：[完整扫描、29个相对链接修复、旧入口清理与分类审计](analysis/audits/repository-wide-archive-and-currentness-audit-2026-10-09.md)。研究资料与最终备注已在GitHub归档，**最终可编辑PPTX二进制仍只存ChatGPT Library、尚未上传GitHub Release**；不得将“Library已归档”表述成“GitHub已有PPTX”。
+本项目研究 **Agentic AI（智能体 AI）在未来三年将如何改变手机的工作负载，以及 CPU 微架构、LLVM 编译器、操作系统和异构计算系统应该怎样演进**。目标不是单纯汇总论文，而是基于可追溯的公开证据，回答团队**应优先投入什么、保留哪些长期研究方向、哪些新增硬件方案目前不值得立项**，形成面向 2027—2029 年的技术路线和领导汇报材料。
 
-> **2026-10-09 正式结题验收：公开资料范围内研究已 CLOSED_WITH_BOUNDARIES；不再主动开展宽泛新增调研。** [未来新聊天恢复入口](CONTINUE-HERE.md) · [正式结题和归档验收](00-project/final-research-archive-acceptance-2026-10-09.md) · [最终17页PPT/备注归档](09-roadmap/leadership-decision-pack/archive/README.md)。最终PPTX已在ChatGPT Library长期保存，GitHub保留研究SSOT和17页备注原文。Windows Office/投影使用体验仍待实际确认。
-
-> 研究权威：xjs-work-lab/agentic-CPU-uArch · V2.2 Research SSOT / Graph V2.4 · 2026-10-08 · **Round15H 技术领导决策包已交付；Round15G 公开研究结论仍为权威**。
+> **当前状态｜2026-10-09：公开证据研究已结题，转入按需更新。** 七个最终决策问题均已获得有明确证据边界的答案；研究结论、来源、决策记录和 17 页汇报的备注全文已归档。**最终 PPTX、PDF 和交付包已保存到 ChatGPT Library，尚未上传为 GitHub Release 资产**。研究结题不等于所有技术假设已被实验完全证明。
 >
-> **硬性约束：仅研究公开论文、专利、厂商技术资料和已发表第三方实验结果。没有项目自有实验、手机测试、仿真、PoC，也不以其作为结论完成门槛。**
+> **从这里继续：** [新窗口/新成员恢复入口](CONTINUE-HERE.md) · [正式结题验收](00-project/final-research-archive-acceptance-2026-10-09.md) · [正式研究报告](09-roadmap/management-final-public-evidence-2027-2029.md) · [最终汇报归档](09-roadmap/leadership-decision-pack/archive/README.md)
 
-## 当前有效入口（按推荐阅读顺序）
+## 一、项目目标与研究边界
 
-**技术领导快速阅读：** [Round15H 决策包](09-roadmap/leadership-decision-pack/README.md)（五分钟摘要、技术责任矩阵、14 个质询、9 页汇报内容提纲）。该包没有新增研究 Source、改变现行投资组合或假定内部预算已获批。
+**核心问题：** 2027—2029 年，智能手机从“单次 AI 请求”走向“持续、多阶段、可执行操作的 Agent 工作流”后，哪些 CPU/系统能力会真正影响性能、能耗、响应体验和可靠性？现有软硬件技术已经解决了什么，什么问题还有值得投入的增量价值？
 
+研究范围包括：
 
+- **目标平台：** 智能手机为主；平板仅在能够解释手机技术方向时作为辅助。重点关注 AArch64 移动 CPU。
+- **技术层次：** CPU 核心与微架构、存储/缓存、LLVM/MLIR 与现有 ISA、CPU↔GPU↔NPU 协同、运行时与操作系统、低功耗及可信 Agent 工具操作。
+- **决策输出：** 重要负载变化、业界与学术界现有方案、最强替代基线、工程优先方向、条件研究储备、暂不投资事项，以及 2027/2028/2029 分阶段技术路线。
+- **证据要求：** 优先原始论文、权威会议与学者、专利权利要求、官方技术文档和已公开发表的实验；区分**来源已证明的事实、跨来源推断、待证实假设和无法支持的主张**。
 
-1. **[管理层技术洞察与 2027–2029 路线图](09-roadmap/management-final-public-evidence-2027-2029.md)** — 4 个负载变化、F/P/V 主线、投资/储备/Kill、逐年架构路线。
-2. **[当前正式投资组合](09-roadmap/current.md)** — 唯一有效的 Direction 投资 SSOT；决策事件 [DEC-PORTFOLIO-002](08-decisions/events/DEC-PORTFOLIO-002.md)。
-3. **[最终七问与技术覆盖累计状态](00-project/final-questions-status.md)** — 每轮回顾目标与进度的权威文件。
-4. **[最终原始链接、独立性和冲突审计](analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md)** — 审查分级和不可迁移边界。
-5. **[CPU/LLVM/SME2 技术机制深读与强 NPU 反证](analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md)**。
-6. [项目当前状态与历史记录](00-project/STATUS.md) · [研究目标约束](00-project/research-goal-lock-agentic-mobile.md) · [当前研究图谱](views/graph/current.json)。
+**研究硬约束：仅使用公开资料。** 本项目没有进行，也不安排自行真机测试、仿真、性能测量或 PoC。公开资料无法回答的硬件问题会记录为证据边界，不会用虚构实验结果或强行凑满投资名额来填补。
 
-## 正式投资快照 — 截至 2026-10-08
+## 二、当前进展：研究已结题，交付归档基本完成
 
-| 决策类型 | 当前方向 | 重要限制 |
+| 工作阶段 | 当前进展 | 权威入口 |
 |---|---|---|
-| **优先工程 / 平台投入 3 项** | CG-06 CPU/LLVM 异构快路径；PT-A 可信 Agent 动作；C 异构资源/QoE 软件系统 | 不能算成 3 个原创 CPU 硬件 Primary Bets |
-| **独立差异化 Primary Bets：0** | 不强行填足期望的 2–3 个名额 | 没有足够独立公开证据证明 Agent 专用 CPU-uArch 新增价值 |
-| **核心战略研究储备 3 项** | A 私有 RequiredProgress；B-residual 派生物理状态有效性；R2 CPU continuation locality | 机会仍是假设，不等于新硅片项目 |
-| **Follow / Explore / Watch** | CG-07 低功耗 Agent、CG-01 Flex Cache、R1 post-ready timing | 已有通用技术/产品路径 |
-| **Kill / Blocked** | R3 Agent 语义 ISA；普通缓存/调度/事务/零拷贝机制的新颖性主张 | Kill 精确投资主张，不否认相关平台功能有价值 |
+| 研究目标与最终问题定义 | **完成**：已建立七个决策问题与跨层技术范围 | [七问与累计研究状态](00-project/final-questions-status.md) |
+| 文献、专利、官方资料与已有能力对照 | **完成当前决策所需范围**：关键原始来源、成熟软件基线、反证及独立性已审计 | [原始证据目录](01-evidence/README.md) · [关键来源审计](analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md) |
+| 技术机会辨析及方向收敛 | **完成**：区分可实施工程、条件储备和缺乏证据的新硬件主张 | [现行技术组合](09-roadmap/current.md) |
+| 2027—2029 技术路线与研究报告 | **完成**：分年度、分技术层形成有边界建议 | [最终管理技术洞察报告](09-roadmap/management-final-public-evidence-2027-2029.md) |
+| 领导汇报材料 | **完成制作**：17 页可编辑 PPT，17 页详细讲者备注；仍待 Windows PowerPoint/实际投影使用体验确认 | [汇报成品归档索引](09-roadmap/leadership-decision-pack/archive/README.md) |
+| 研究仓库归档与质量检查 | **通过结构性验收**：已修复历史失效链接、澄清新旧文档及关键入口；不代表全网资料今日均已重新验证 | [全仓归档审计](analysis/audits/repository-wide-archive-and-currentness-audit-2026-10-09.md) |
 
-**决策修正已正式完成：** A 在 2026-10-07 旧方案中列为 PRIMARY_BET/82.5，已由 [DEC-A-008](08-decisions/events/DEC-A-008.md) 更改为 **CONDITIONAL_RESERVE / HYPOTHESIS_OPEN**。82.5 仅历史评分，不是当前项目成功概率或预算排名。历史 [旧“最终路线图”](09-roadmap/final-2027-2029.md) 和 [2027 实验规划](09-roadmap/2027-execution-plan.md) 完全归档，所有 EXP 指令不再生效。
+**结题判定：** 七问已达到公开资料能够支持的技术管理决策深度；其中“新增 Agent 专用 CPU 硬件是否具有不可被现有软硬件吸收的独特收益”仍缺乏直接充分证据。**这是明确的结论边界，不是本轮必须执行实验的遗留任务。** 详见[正式结题验收](00-project/final-research-archive-acceptance-2026-10-09.md)。
 
-## 研究领域和数据管理
+## 三、目前最重要的技术洞察
 
-范围：手机优先，2027–2029，Agent 体验、LLVM/AArch64、Runtime/OS、CPU↔GPU↔NPU、Cache/内存/SoC、低功耗。结论区分公开直接事实、交叉来源推断、尚未确证的架构假设。
+### 1. 手机 Agent 工作负载出现四类值得关注的变化
 
-**上轮已验证图谱基数（Round15F）：632 规范节点、1,202 正向语义边、1,202 反向边、1,148 依赖边。** Round15G 只完成报告与一致性审计，没有人为添加无价值证据节点。
+1. **持续会话与可信行动：** Agent 跨应用调用工具，不仅要完成推理，还要检查权限、操作对象、真实效果和异常恢复。
+2. **CPU/NPU/GPU 多阶段反复执行：** 模型计算、工具调用与数据处理交替出现，真实收益取决于算子覆盖、数据搬运、回退、调度及前台体验，而非单个加速器峰值性能。
+3. **可修改、可撤销的状态生命周期：** 工具结果、缓存和派生数据可能失效；先比较软件版本化、事务与资源管理能力，再讨论是否存在不可替代的物理机制。
+4. **主动感知与低功耗决策：** 系统不只需要“能运行模型”，还要判断何时值得唤醒、执行或不行动，并考虑隐私、电池与打扰成本。
 
-原始 SOURCE 按 DOI/arXiv/专利公开号/同族/原始 URL 去重，不能把同组论文或 OEM 对相同 SoC 的宣传当成独立复现。重要 Direction 变更必须有 Decision Event。轮末汇报遵循 [固定研究轮末协议](00-project/round-end-reporting-contract.md)。
+这些负载变化被归纳为**执行与状态生命周期、主动低功耗准入、语义进度与体验质量**三类跨层研究主题；它们**不等于三个新的 CPU 硅片项目**。
 
-历史 V1 冻结版本：xiejinsen/agentic-CPU-uArch@960abb4ef50f050da3c6784d30826053d42e5c5d；迁移 MIG-20261006-02、批准日期 2026-10-06；主分支为唯一长期权威。
+### 2. 当前技术组合：三项工程优先、三项条件储备、零项新增硬件主押注
+
+| 类型 | 技术方向 | 当前判断 |
+|---|---|---|
+| **优先工程 ①** | CPU/LLVM 现有 AArch64/SME2 能力、微内核、数据布局与 CPU/NPU 分阶段快速路径（CG-06） | 利用现有 ISA 与强异构后端开展工程优化；不能宣称 CPU 对所有 Agent 推理天然更快 |
+| **优先工程 ②** | 可信 Agent 工具执行、权限/目标确认、真实效果核验与有界恢复（PT-A） | 主要属于 Agent 平台、运行时及 OS 的工程合同，不是专用 CPU 指令 |
+| **优先工程 ③** | CPU/GPU/NPU 异构资源管理、关键路径与前台体验优化（C） | 优先对照已有运行时、系统调度与平台接口 |
+| **条件研究储备 3 项** | Agent 私有进度信息（A）；跨引擎派生状态的物理有效性（B-residual）；CPU 续执行局部性（R2） | 保留为待新公开证据支持的问题，**不代表已批准设计或量产** |
+| **新增差异化 CPU 硬件主押注：0 项** | Agent 专用新 ISA/缓存/预测器/状态原语等 | 当前公开资料不足以证明相对于强软件与现有硬件基线的新增必要性 |
+| **跟进或不启动** | 低功耗 Agent、通用缓存等持续跟进；无依据的 Agent 语义硬件新颖性主张暂不立项 | “不投入独有硬件”不等于放弃有价值的软件功能 |
+
+**重要历史纠正：** A 曾在旧方案中被列为硬件主押注，现已正式降级为**条件研究储备**。以 [当前技术组合](09-roadmap/current.md)和[正式决策事件](08-decisions/events/DEC-A-008.md)为准，不能引用旧版本的评分作为今天的立项依据。
+
+## 四、关键资料入口（按阅读需求）
+
+| 你想了解什么 | 建议从哪里读 |
+|---|---|
+| **新聊天或新成员如何接手** | [CONTINUE-HERE：当前状态、权威文档与恢复规则](CONTINUE-HERE.md) |
+| **研究最后得出了什么，为什么** | [2027—2029 年正式技术洞察报告](09-roadmap/management-final-public-evidence-2027-2029.md) |
+| **现在建议投入、储备和停止什么** | [唯一生效的技术组合](09-roadmap/current.md) · [正式决策事件目录](08-decisions/README.md) |
+| **七个问题是否都回答了** | [七问研究进展](00-project/final-questions-status.md) · [结题验收](00-project/final-research-archive-acceptance-2026-10-09.md) |
+| **具体来源、论文机制及证据局限** | [论文/专利/厂商/工具资料库](01-evidence/README.md) · [来源与独立性审计](analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md) |
+| **CPU/LLVM 与 SME 等技术细节** | [CPU/LLVM 技术机制与最强 NPU 反证](analysis/engineering/round15f-cpu-llvm-compiler-pressure-2026-10-08.md) |
+| **PPT、全部备注及制作历史** | [最终 PPT 归档索引](09-roadmap/leadership-decision-pack/archive/README.md) · [17 页备注原文](09-roadmap/leadership-decision-pack/archive/round16c-17-page-speaker-notes-2026-10-09.md) · [历史设计与 QA](09-roadmap/leadership-decision-pack/diagram-specs/README.md) |
+| **仓库结构、质量及历史记录** | [项目治理](00-project/README.md) · [全仓文件与链接审计](analysis/audits/repository-wide-archive-and-currentness-audit-2026-10-09.md) · [研究历史](history/README.md) |
+
+### 数据与目录怎样组织
+
+本仓不是单篇研究报告，而是可追溯的技术研究资料库：
+
+`01-evidence` **原始证据** → `02-claims` **技术主张** → `03-evidence-cases` **支持、反证与边界** → `06-trends / 06-opportunities / 06-directions` **趋势、机会与方向** → `08-decisions` **决策事件** → `09-roadmap` **现行路线与汇报**。
+
+人员机构与已有能力分别保存在 `04-actors`、`05-capabilities`；`views/graph` 是衍生关系图，不替代上述权威对象。旧迁移过程和历史研究轮次保留在 `00-project`、`history` 等位置，但不能覆盖当前已生效的方向决策。
+
+## 五、最终 PPT 保存在哪里？
+
+**最新版本为 17 页可编辑演讲版，逐页备注遵循“先解释 PPT 内容，再逐条解读来源及论据”。**
+
+- **GitHub 已归档：** [全部 17 页备注文字](09-roadmap/leadership-decision-pack/archive/round16c-17-page-speaker-notes-2026-10-09.md)、[交付清单与文件哈希](09-roadmap/leadership-decision-pack/archive/README.md)、逐页设计与质量检查记录。
+- **ChatGPT Library 已保存：** `/Research-Archives/Agentic-CPU-uArch/2026-10-09/`，包含最终可编辑 PPTX、完整交付 ZIP、备注稿与校验清单。
+- **GitHub 尚待补充：** 将 PPTX、PDF 与完整交付包作为版本化 GitHub Release 资产上传。**在真实 Release 链接出现前，不应声称 PPT 二进制已归档到 GitHub。**
+- **使用前仍需确认：** Windows PowerPoint 字体、讲者备注显示与实际投影效果；它们不影响本轮研究结题状态。
+
+## 六、后续如何维护
+
+**默认不再进行宽泛新增研究。** 只有出现足以改变技术判断的**新公开原始证据**，或者发现关键来源、归属、数字或引用错误时，才针对受影响的问题重新审查，更新对应的证据、主张、方向与决策事件，再同步管理报告及 PPT。
+
+研究结论属于截至 **2026 年 10 月 9 日**的公开证据判断，并非已获批准的组织预算、产品量产承诺或对 2029 年行业格局的确定预测。
+
+> **研究资料仓库：** 当前唯一权威为 `xjs-work-lab/agentic-CPU-uArch` 的 `main` 分支；旧仓 `xiejinsen/agentic-CPU-uArch` 及旧版实验/路线图只保留历史追溯意义。通用研究与洞察汇报 Skill 已单独归档在 [skills-lab](https://github.com/xjs-work-lab/skills-lab)，不属于本研究事实的权威来源。
