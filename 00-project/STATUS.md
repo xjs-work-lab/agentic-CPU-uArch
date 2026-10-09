@@ -1,5 +1,7 @@
 # Research Authority Status
 
+> **CURRENT 2026-10-09 CLOSED_WITH_BOUNDARIES**：当前公开证据技术洞察研究已正式结题，结题和最终交付归档见 [正式验收](final-research-archive-acceptance-2026-10-09.md) / [恢复入口](../CONTINUE-HERE.md)。现行3项优先工程、3项条件研究储备、**0项已证实的新增Agent-only CPU-uArch hardware Primary Bets**，以 [09-roadmap/current.md](../09-roadmap/current.md)为唯一权威。以下现存 Round15G、历史 Rescue、过时A PRIMARY_BET/82.5或EXP指令是历史记录，不能重置结论。**不做自有实验、不再宽泛添加研究材料**；PPT二进制存于ChatGPT Library，备注全文已入GitHub。Windows Office/投影尚未实测。
+
 > **CURRENT AUTHORITY (Round15G, 2026-10-08):** [最新管理报告](../09-roadmap/management-final-public-evidence-2027-2029.md) · [正式组合](../09-roadmap/current.md) · [证据与入口审计](../analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md). **A 当前是 CONDITIONAL_RESERVE，绝非 PRIMARY_BET；R1 是 WATCH；0 独立差异化 CPU-uArch Primary Bets。** 本文件后续大量 Rescue/EXP/Old Portfolio 段落均为按时间保留的历史记录，不能覆盖当前投资和零实验约束。
 
 
