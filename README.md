@@ -1,5 +1,7 @@
 # Agentic CPU-uArch — 2027–2029 手机 Agentic AI 技术洞察 SSOT
 
+> **全仓文件与位置二次复核（2026-10-09）**：[完整扫描、29个相对链接修复、旧入口清理与分类审计](analysis/audits/repository-wide-archive-and-currentness-audit-2026-10-09.md)。研究资料与最终备注已在GitHub归档，**最终可编辑PPTX二进制仍只存ChatGPT Library、尚未上传GitHub Release**；不得将“Library已归档”表述成“GitHub已有PPTX”。
+
 > **2026-10-09 正式结题验收：公开资料范围内研究已 CLOSED_WITH_BOUNDARIES；不再主动开展宽泛新增调研。** [未来新聊天恢复入口](CONTINUE-HERE.md) · [正式结题和归档验收](00-project/final-research-archive-acceptance-2026-10-09.md) · [最终17页PPT/备注归档](09-roadmap/leadership-decision-pack/archive/README.md)。最终PPTX已在ChatGPT Library长期保存，GitHub保留研究SSOT和17页备注原文。Windows Office/投影使用体验仍待实际确认。
 
 > 研究权威：xjs-work-lab/agentic-CPU-uArch · V2.2 Research SSOT / Graph V2.4 · 2026-10-08 · **Round15H 技术领导决策包已交付；Round15G 公开研究结论仍为权威**。
