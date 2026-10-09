@@ -1,3 +1,10 @@
+## 研究方法与 PPT 制作经验已沉淀为通用 Skill 草案（2026-10-09）
+
+本项目公开来源洞察与17页技术领导汇报的可复用经验已整理到**独立技能仓** [xjs-work-lab/skills-lab](https://github.com/xjs-work-lab/skills-lab)，不在 CPU-uArch 仓复制另一本通用方法论，以免漂移：
+- [Academic Insight v0.7.1 比较审计](https://github.com/xjs-work-lab/skills-lab/blob/main/research/academic-insight/REVIEW_2026-10-09.md)；[v0.8.x 增量升级草案](https://github.com/xjs-work-lab/skills-lab/blob/main/research/academic-insight/PROPOSED_V0_8_ADDENDUM.md)，**没有更新已安装插件**。
+- [Technical Insight Presentation v0.1.0 技术洞察汇报 Skill](https://github.com/xjs-work-lab/skills-lab/blob/main/presentation/technical-insight-presentation/SKILL.md)，将叙事设计→逐页详细合同→可编辑图表→第一部分内容讲解、第二部分逐来源备注→视觉/箭头/页码一致性→零文字漂移 QA 模块化。此为待跨领域验证草案，并不声称已安装成可调用插件。
+
+原始论文、实测数字与当前研究结论仍以本仓 SSOT 为准；经验方法转移不改变 CPU-uArch 研究决策或现有 Round16C 可编辑PPT 版本。
 ## Round16C：已完成全17页“内容解释在前、逐来源解读在后”的备注升级（2026-10-09）
 
 - [**Round16C｜17页备注已写入可编辑 PPTX + 全量零视觉变化 QA**](round16c-17-page-speaker-notes-implemented-and-zero-visual-delta-2026-10-09.md)：以 Round16B 为底稿，实际重写全部17页 PowerPoint Speaker Notes，每页先讲解原始画面的工作机制、箭头、数值与因果，再逐份说明研究/官方来源的观点、论据、支撑判断和适用限制。合计 **30,143 字符、47 个逐来源条目**。OOXML 103成员中仅17页 notes XML变更，其他86成员字节一致；LibreOffice导出17页PDF且投影文本与旧版完全一致。**Round16C 已交付可编辑 PPTX和独立 Markdown 备注审核稿，目前待用户审阅/Windows Office终验**；二进制产物在会话空间，不在GitHub仓。原 [Round16C 结构合同](round16c-speaker-notes-explanation-first-and-source-evidence-contract-2026-10-09.md) 现已落实，而非仅停留在设计。
