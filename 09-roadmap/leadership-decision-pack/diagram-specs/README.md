@@ -1,3 +1,5 @@
+> **最终研究结题与PPT归档验收已经完成（2026-10-09）**：[研究结题记录](../../../00-project/final-research-archive-acceptance-2026-10-09.md) · [最新17页PPT文件/Library归档和哈希](../archive/README.md) · [全部17页备注原文](../archive/round16c-17-page-speaker-notes-2026-10-09.md)。下方按时间保留的“尚未更新插件”“候选草案”“单页未审”等是旧记录，以日期和此入口为准。
+
 ## Skills 归档/ChatGPT 插件发布状态更新（2026-10-09）
 
 本项目总结的通用方法已在 [skills-lab](https://github.com/xjs-work-lab/skills-lab)正式归档，且已实际执行 **ChatGPT 私有插件发布**，详见 [两个插件的版本与发布记录](https://github.com/xjs-work-lab/skills-lab/blob/main/PLUGIN_RELEASES_2026-10-09.md)：
