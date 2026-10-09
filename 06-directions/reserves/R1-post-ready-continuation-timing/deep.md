@@ -230,7 +230,7 @@ M2 remains **KEEP, narrow**, but C1 TemporalFlexibility stays a conditional exte
 ## Stage 15 R1 strong-baseline kill test
 
 Detailed experiment:
-[stage15-r1-timing-kill-test.md](../07-experiments/stage15-r1-timing-kill-test.md)
+[R1历史验证记录（V1保留，仅供证据追溯）](../../../07-validation/R1/EXP-R1-001/deep.md)
 
 ### New prior-art / system pressure
 
