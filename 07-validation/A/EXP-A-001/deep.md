@@ -693,7 +693,7 @@ The first real-phone trace must also measure:
 - true pre-commit cancelability.
 
 Canonical minimal trace:
-[stage15-minimum-target-device-trace.md](stage15-minimum-target-device-trace.md)
+历史记录所指的 `stage15-minimum-target-device-trace.md` 未在当前V2.2仓库单独归档；本研究不执行新的手机trace，现行禁测边界与结题判断见[最终研究归档验收](../../../00-project/final-research-archive-acceptance-2026-10-09.md)。
 
 
 ### Stage 15C baseline hardening — B4-TX
