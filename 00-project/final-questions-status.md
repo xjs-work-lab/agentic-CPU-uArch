@@ -1,8 +1,10 @@
 # Final Goal and Question-State Tracker — Agentic Mobile CPU-uArch
 
-Updated: 2026-10-08
+> **2026-10-09 研究结题更新：七个最终研究问题均已获得公开证据范围内的有边界决策答案。** 当前正式验收见 [final-research-archive-acceptance-2026-10-09.md](final-research-archive-acceptance-2026-10-09.md)。FQ4 新增硬件物理必要性的直接证据仍缺乏，但属于已披露科学边界，不是要求本研究做自有实验的未完成任务。**本文件旧 Round15G/H 和“Next”均为历史进展快照**；当前默认停止泛化新增研究，有新决策性公开证据才重启有界更新。最新成果与交付文件位置见 [CONTINUE-HERE](../CONTINUE-HERE.md)。
+
+Updated: 2026-10-09 (closure addendum; historical rounds preserved)
 Research authority: xjs-work-lab/agentic-CPU-uArch (V2.2 research SSOT / V2.4 graph)
-Next: POST15H_LEADERSHIP_PACK_READY_USER_REQUEST_ONLY
+Next: RESEARCH_CLOSED_PUBLIC_ONLY_REOPEN_ON_MATERIAL_EVIDENCE
 Purpose: anti-drift one-page dashboard. Update at the **end of every meaningful research round** and summarize succinctly in user reply.
 
 ## Goal Lock (immutable in intent)
