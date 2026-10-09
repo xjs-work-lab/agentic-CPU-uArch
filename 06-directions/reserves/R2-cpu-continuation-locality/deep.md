@@ -327,7 +327,7 @@ Server Agent evidence shows locality disruption, but also shows pooling/pinning 
 ## Stage 14 Candidate B differentiation audit
 
 Detailed audit:
-[stage14-candidate-b-differentiation-audit.md](stage14-candidate-b-differentiation-audit.md)
+历史文件 `stage14-candidate-b-differentiation-audit.md` 未在当前仓单独收录；请以[Round15E现行技术组合核对](../../../analysis/opportunities/round15e-formal-portfolio-reconciliation-2026-10-08.md)为后续**现行决策**参考，而不是把它视作Stage14原文的直接替代。
 
 ### What changed
 
@@ -422,7 +422,7 @@ Kill B-residual if:
 ## Stage 15 B-residual strong-baseline kill test
 
 Detailed experiment:
-[stage15-b-residual-kill-test.md](../07-experiments/stage15-b-residual-kill-test.md)
+[B-residual 历史验证记录（V1保留，非当前任务）](../../../07-validation/B-residual/EXP-BR-001/deep.md)
 
 ### Baseline correction
 
@@ -482,7 +482,7 @@ No CPU-uArch promotion.
 ## Stage 15 R2 strong-software-baseline kill test
 
 Detailed experiment:
-[stage15-r2-locality-kill-test.md](../07-experiments/stage15-r2-locality-kill-test.md)
+[R2历史验证记录（V1保留，非当前任务）](../../../07-validation/R2/EXP-R2-001/deep.md)
 
 ### Baseline strengthened again
 
