@@ -73,3 +73,12 @@ QA明确不覆盖：在用户Windows PowerPoint里开文件后的中文字体替
 - ChatGPT Library 通过 `files.list` 再读确认 **ZIP/PPTX/Notes/Manifest四个文件全部存在**，大小与本地交付一致；即不再仅依赖当前聊天的临时附件。
 - 最终ZIP完整性检查通过，包含8项交付文件；所有源文件的SHA-256重新计算均与manifest一致；ZIP SHA-256=`02431e8295cf8f7faa4178d02f399553dc2007bb20e8c62d5456f390f891a493`。
 - **验收结论：公开证据技术研究与文档/成品长期归档 PASS。** GitHub不含PPTX二进制属于已明确的仓储分工，不代表丢失；真实Windows Office/现场投影仅是后续使用前的体验检查，保持 `NOT_TESTED`。
+
+
+## 八、结题后扩展的全仓验收补充（2026-10-09）
+
+此前本文件的“成品归档PASS”是指**ChatGPT Library持久归档PASS**和GitHub来源/备注/索引PASS，**不是**GitHub主分支已有PPTX二进制。扩大核对范围后确认GitHub **0个.pptx/.pdf/.zip**；最终PPT二进制尚未上传到GitHub Release。这项属于`OPEN_GITHUB_BINARY_RELEASE`，不阻断公开证据研究结题，但影响GitHub一站式自足交付。
+
+真正全仓重新检出了1055个文件，其中1042个Markdown内容参与本地引用检查；首次发现29个失效相对链接和4个过时主要入口，经修复后GitHub Actions 全树扫描 **615个相对链接、0个失效、0个过时主要入口、0个必需文件缺失**；详见[全仓实测审计报告](../analysis/audits/repository-wide-archive-and-currentness-audit-2026-10-09.md)。此扫描无法证明每篇学术论文今日科学内容最新或所有外部URL在线可用。
+
+因此最终分离结论为：**RESEARCH_CLOSED_WITH_BOUNDARIES**（不变）；**GITHUB_RESEARCH_SSOT_ARCHIVE_PASS**；**LIBRARY_DELIVERABLE_ARCHIVE_PASS**；**GITHUB_PPTX_BINARY_RELEASE_OPEN**；**WINDOWS_POWERPOINT_PROJECTION_NOT_TESTED**。
