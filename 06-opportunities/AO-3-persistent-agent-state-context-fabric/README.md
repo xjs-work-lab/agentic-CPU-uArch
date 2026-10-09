@@ -30,11 +30,11 @@ related_actors = ["ACT-QUALCOMM"]
 Not a standalone new-cache thesis and **not** a silicon candidate. The surviving question is whether logical Agent state and derived physical state need a more economical, version-aware, cross-engine *lifetime and handoff* contract than existing generic cache + runtime policies.
 
 ### Problem and mechanism
-- **CLM-AO3-001**: [MobiMem / PAPER-103](../../../01-evidence/papers/PAPER-103/deep.md) shows profile/experience/action persistence, valid replay and CPU-only Snapdragon software benefits. [LOCAL / PAPER-104](../../../01-evidence/papers/PAPER-104/deep.md) exposes KV/adapter/version lifecycle and future-consumer demand on one 24 GB GPU.
+- **CLM-AO3-001**: [MobiMem / PAPER-103](../../01-evidence/papers/PAPER-103/deep.md) shows profile/experience/action persistence, valid replay and CPU-only Snapdragon software benefits. [LOCAL / PAPER-104](../../01-evidence/papers/PAPER-104/deep.md) exposes KV/adapter/version lifecycle and future-consumer demand on one 24 GB GPU.
 - **CLM-AO3-002**: LOCAL, Versioned Execution and Invalidation Contracts support explicit version/provenance/dependency validity and selective reuse.
 
 ### Product signal
-- **CLM-AO3-004**: [Qualcomm Oryon Flex Cache / VENDOR-001](../../../01-evidence/vendors/VENDOR-001/deep.md) is heterogeneous **CPU-core** cache sharing. [Hexagon Agentic NPU / VENDOR-023](../../../01-evidence/vendors/VENDOR-023/deep.md) increases **NPU-local** shared-memory capacity. They are separate pools, **not** public proof of a unified CPU↔NPU Agent-state coherence design.
+- **CLM-AO3-004**: [Qualcomm Oryon Flex Cache / VENDOR-001](../../01-evidence/vendors/VENDOR-001/deep.md) is heterogeneous **CPU-core** cache sharing. [Hexagon Agentic NPU / VENDOR-023](../../01-evidence/vendors/VENDOR-023/deep.md) increases **NPU-local** shared-memory capacity. They are separate pools, **not** public proof of a unified CPU↔NPU Agent-state coherence design.
 
 ### Software / prior-art pressure
 - **CLM-AO3-003**: MobiMem validated replay; PBKV/CacheScout software reuse prediction; PLACEMEM state capsules; Invalidation Contracts and LOCAL version checks comprise the strong baseline. The sources span non-comparable setups and do not form a single implementation.
