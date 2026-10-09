@@ -31,7 +31,7 @@
 
 **来源**：[Li, Qi, Chen, *When NPUs Are Not Always Faster: A Stage-Level Analysis of Mobile LLM Inference* (2026)](https://arxiv.org/html/2605.27435)，§II-A / III / IV-B–D，Tables III–V。
 
-本轮原生 PPTX 使用 [V2 JS](../../../leadership-decision-pack/diagram-specs/page-04-round15m-editable-pilot-2026-10-08.md) 的排版思路与当前已认可的纯蓝色芯片装饰素材，新增文案、两分支解读和实验解释；图内文字、技术数据和卡片为 PowerPoint 原生可编辑元素，一张芯片插画保留为独立图片。
+本轮原生 PPTX 使用 [V2 JS](page-04-round15m-editable-pilot-2026-10-08.md) 的排版思路与当前已认可的纯蓝色芯片装饰素材，新增文案、两分支解读和实验解释；图内文字、技术数据和卡片为 PowerPoint 原生可编辑元素，一张芯片插画保留为独立图片。
 
 **会话交付产物（未提交二进制到 Github）：**
 - `/mnt/data/round15m_slide04_v3/slide04_snapdragon_cpu_npu_v3_editable.pptx`
