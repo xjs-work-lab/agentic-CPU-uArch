@@ -1,3 +1,12 @@
+## Skills 归档/ChatGPT 插件发布状态更新（2026-10-09）
+
+本项目总结的通用方法已在 [skills-lab](https://github.com/xjs-work-lab/skills-lab)正式归档，且已实际执行 **ChatGPT 私有插件发布**，详见 [两个插件的版本与发布记录](https://github.com/xjs-work-lab/skills-lab/blob/main/PLUGIN_RELEASES_2026-10-09.md)：
+
+- [Academic Insight v0.8.0](https://chatgpt.com/plugins/plugins_6abe1edc35d88191863eee29d3ae6b0f)：已更新同一个用户私有插件，保留0.7.1核心并新增v0.8兼容增强模块；
+- [Technical Insight Presentation v0.1.1](https://chatgpt.com/plugins/plugins_6ac8e41bf6ac8191a5b33fd81a37246c)：已创建独立用户私有插件；其正式术语为“最小变更与内容保真”。
+
+GitHub 源技能和已发布插件源文件的精确快照分层保存。**当前会话中的 Skill 列表未自动刷新**，尚待用户在插件入口打开并于新聊天中确认实际调用；插件注册成功不能等同该会话已加载。研究结果/现有17页PPT的内容不因技能发布自动改变。
+
 ## 研究方法与 PPT 制作经验已沉淀为通用 Skill 草案（2026-10-09）
 
 本项目公开来源洞察与17页技术领导汇报的可复用经验已整理到**独立技能仓** [xjs-work-lab/skills-lab](https://github.com/xjs-work-lab/skills-lab)，不在 CPU-uArch 仓复制另一本通用方法论，以免漂移：
