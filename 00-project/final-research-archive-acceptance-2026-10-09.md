@@ -64,3 +64,12 @@ QA明确不覆盖：在用户Windows PowerPoint里开文件后的中文字体替
 **OPEN, NON-BLOCKING — Windows PowerPoint/会议室投影人工终验；未来公开资料可能带来证据变化。**
 
 本结题文件是正式研究阶段记录。后续任何新的主题或新公开材料构成 **增量研究**，不能反向把当时已充分回答的管理技术问题无故重置成“未完成”。
+
+
+## 七、最终读回验证（2026-10-09）
+
+- GitHub 最新研究入口、`CONTINUE-HERE.md`、本结题文件、七问累计状态、`STATUS.md`、当前组合、管理报告、原始证据审计、领导汇报入口、17页归档索引和全备注原文 **共11个关键路径全部重新 fetch 成功**。
+- GitHub 保存的 `round16c-17-page-speaker-notes-2026-10-09.md` 和原PPT导出的备注Markdown **全文逐字相同**，共17个物理页节、17个“页面内容详细讲解”和17个“来源逐条解读”。
+- ChatGPT Library 通过 `files.list` 再读确认 **ZIP/PPTX/Notes/Manifest四个文件全部存在**，大小与本地交付一致；即不再仅依赖当前聊天的临时附件。
+- 最终ZIP完整性检查通过，包含8项交付文件；所有源文件的SHA-256重新计算均与manifest一致；ZIP SHA-256=`02431e8295cf8f7faa4178d02f399553dc2007bb20e8c62d5456f390f891a493`。
+- **验收结论：公开证据技术研究与文档/成品长期归档 PASS。** GitHub不含PPTX二进制属于已明确的仓储分工，不代表丢失；真实Windows Office/现场投影仅是后续使用前的体验检查，保持 `NOT_TESTED`。
