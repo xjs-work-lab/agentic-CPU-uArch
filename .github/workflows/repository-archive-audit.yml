@@ -1,0 +1,42 @@
+name: Complete Repository Archive Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'analysis/graph/repository_archive_audit.py'
+      - '.github/workflows/repository-archive-audit.yml'
+      - 'README.md'
+      - 'CONTINUE-HERE.md'
+      - '00-project/**'
+      - '09-roadmap/**'
+      - '01-evidence/README.md'
+      - '07-validation/README.md'
+
+permissions:
+  contents: read
+
+jobs:
+  audit-all-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Enumerate entire checked-out repository and validate all local Markdown links
+        run: |
+          python analysis/graph/repository_archive_audit.py \
+            --json archive-tree-audit.json \
+            --markdown archive-tree-audit.md
+      - name: Upload complete audit results
+        uses: actions/upload-artifact@v4
+        with:
+          name: complete-repository-archive-audit
+          path: |
+            archive-tree-audit.json
+            archive-tree-audit.md
+          retention-days: 30
