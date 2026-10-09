@@ -1,5 +1,11 @@
 # 技术领导 PPT 图形规范 — 经过原文复核的模块化制作入口
 
+## Round15Q：封面与目录、原图/程序绘图标准（2026-10-09）
+
+- [封面与目录、四章讲述结构](round15q-cover-agenda-and-chapter-map-2026-10-09.md)：实际制作两页可编辑样板；拟采用 2 张未编号前置页 + 15 张独立编号正文。
+- [Python 图表与论文原始 Figure 的选型、裁剪和来源审计](figure-authoring-and-paper-figure-contract-v1-2026-10-09.md)：程序化实数绘图/原文 Figure/概念重绘的不同适用条件。
+
+
 ## Round15L 领导可读性重审（15 页）
 
 - [Round15L 15 页领导可读性审计与逐页改稿方向](round15l-all-15-pages-leadership-readability-audit-2026-10-08.md)：把“标题讲结论、术语需解释、配套技术对准节点、论文基线可见”推广至 15 页。
