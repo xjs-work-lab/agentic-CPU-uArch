@@ -2,6 +2,7 @@
 
 ## Round15Q：封面与目录、原图/程序绘图标准（2026-10-09）
 
+- [**当前封面/目录 V2 和全套技术语言禁用词规范**](leadership-technical-wording-v2-2026-10-09.md)：删除“投资”类展示措辞，封面写清楚具体研发动作，目录仅保留四章名称及页码；前三页可编辑样板已同步替换相关展示文本。
 - [封面与目录、四章讲述结构](round15q-cover-agenda-and-chapter-map-2026-10-09.md)：实际制作两页可编辑样板；拟采用 2 张未编号前置页 + 15 张独立编号正文。
 - [Python 图表与论文原始 Figure 的选型、裁剪和来源审计](figure-authoring-and-paper-figure-contract-v1-2026-10-09.md)：程序化实数绘图/原文 Figure/概念重绘的不同适用条件。
 
