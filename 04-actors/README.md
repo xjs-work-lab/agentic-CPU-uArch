@@ -1,3 +1,5 @@
-# 04-actors
+# 04-actors — 人员、机构与组织身份
 
-Organizations, companies, labs, teams and people. Actor owns identity only. Wave 0 contains no migrated Actors.
+此处存放研究对象的机构、公司、团队与人物身份；当前已实际包含 Actor 记录，并非 Wave 0 空仓。**机构权威性、学术排名和公司资历是检索/归属上下文，不能直接充当具体技术收益证明。**
+
+证据及结论分别由[原始来源](../01-evidence/README.md)和[当前决策](../09-roadmap/current.md)维护。研究结题后本目录不因 PPT 发布而调整来源作者/归属。
