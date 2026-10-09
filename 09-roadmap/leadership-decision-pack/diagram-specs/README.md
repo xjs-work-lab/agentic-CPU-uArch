@@ -60,3 +60,4 @@
 - [第 9 页 Round15R：CPU/LLVM 编译路径与 Runtime/OS 责任分工样板](page-09-round15r-cpu-llvm-runtime-ownership-pilot-2026-10-09.md)：可编辑 PPTX/PNG 已制作并完成基础 QA，待用户审阅。
 
 - [第 10 页 Round15S：工具真实效果与跨引擎派生状态有效性样板](page-10-round15s-tool-effect-derived-state-pilot-2026-10-09.md)：可编辑 PPTX/PNG 已完成基础 QA，待用户审阅。
+- [第 11 页 Round15T：主动 Agent 低功耗事件初筛与分级唤醒](page-11-round15t-proactive-agent-lowpower-pilot-2026-10-09.md)：可编辑 PPTX/PNG 已制作、证据边界已审核，待用户审阅。
