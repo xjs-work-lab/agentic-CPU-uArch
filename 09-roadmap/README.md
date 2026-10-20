@@ -7,9 +7,10 @@
 ## 最短有效阅读路径
 
 1. [当前正式组合](current.md)：三项可执行工程/平台方向，三项条件研究储备，零项有足够公开证据支持的新增Agent专属CPU-uArch Primary Bet。
-2. [2027–2029管理层技术洞察](management-final-public-evidence-2027-2029.md)：证据支撑、软件/硬件责任划分和跨年技术主线。
-3. [最终17页汇报正式归档](leadership-decision-pack/archive/README.md)：最后一版PPT、讲者备注、交付ZIP、版本与校验值。**PPTX二进制未提交本GitHub，持久归档在ChatGPT Library**。
-4. [历史研究与PPT设计过程](leadership-decision-pack/diagram-specs/README.md)：各轮设计与QA证据，不能替代现行交付。
+2. [2027–2029管理层技术洞察](management-final-public-evidence-2027-2029.md)：短版管理决策报告。
+3. **[本地 Agent 生成 PPT 专用的详细研究终稿](agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)**：自包含长文，详细解释研究问题、核心论文/数据/基线、技术公式、证据边界、正式方向和建议的逐页叙事结构；综合稿日期为2026-10-20，证据结题边界仍是2026-10-09。
+4. [最终17页汇报正式归档](leadership-decision-pack/archive/README.md)：讲者备注、交付索引、版本与校验值。**PPTX二进制未提交本GitHub，持久归档在ChatGPT Library**。
+5. [历史研究与PPT设计过程](leadership-decision-pack/diagram-specs/README.md)：各轮设计与QA证据，不能替代现行交付。
 
 ## 历史索引（仅供追溯）
 
