@@ -13,11 +13,12 @@
 
 1. [2026-10-09 正式结题和全部归档验收](00-project/final-research-archive-acceptance-2026-10-09.md)
 2. [当前正式技术方向/证据门槛](09-roadmap/current.md)
-3. [最终管理层洞察报告 2027–2029](09-roadmap/management-final-public-evidence-2027-2029.md)
-4. [七个决策问题的累计答案和研究限制](00-project/final-questions-status.md)
-5. [原始出处与重点证据审计](analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md)
-6. [决策事件：组合切换](08-decisions/events/DEC-PORTFOLIO-002.md)；[A正式降级](08-decisions/events/DEC-A-008.md)
-7. [最新 17 页领导汇报和演讲者备注的归档清单](09-roadmap/leadership-decision-pack/diagram-specs/round16c-17-page-speaker-notes-implemented-and-zero-visual-delta-2026-10-09.md)；[完整17页讲者备注原文](09-roadmap/leadership-decision-pack/archive/round16c-17-page-speaker-notes-2026-10-09.md)
+3. [正式管理层洞察报告 2027–2029](09-roadmap/management-final-public-evidence-2027-2029.md)
+4. **[本地 Agent 生成 PPT 专用的详细研究终稿（自包含 Markdown）](09-roadmap/agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)** — 含核心论文/数值/基线、公式、证据边界与逐页叙事建议；综合稿更新于2026-10-20，未声称新增公开检索。
+5. [七个决策问题的累计答案和研究限制](00-project/final-questions-status.md)
+6. [原始出处与重点证据审计](analysis/audits/round15g-final-source-and-ssot-audit-2026-10-08.md)
+7. [决策事件：组合切换](08-decisions/events/DEC-PORTFOLIO-002.md)；[A正式降级](08-decisions/events/DEC-A-008.md)
+8. [最新 17 页领导汇报和演讲者备注的归档清单](09-roadmap/leadership-decision-pack/diagram-specs/round16c-17-page-speaker-notes-implemented-and-zero-visual-delta-2026-10-09.md)；[完整17页讲者备注原文](09-roadmap/leadership-decision-pack/archive/round16c-17-page-speaker-notes-2026-10-09.md)
 
 ## 3. 最终交付文件不丢失
 
