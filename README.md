@@ -4,7 +4,7 @@
 
 > **当前状态｜2026-10-09：公开证据研究已结题，转入按需更新。** 七个最终决策问题均已获得有明确证据边界的答案；研究结论、来源、决策记录和 17 页汇报的备注全文已归档。**最终 PPTX、PDF 和交付包已保存到 ChatGPT Library，尚未上传为 GitHub Release 资产**。研究结题不等于所有技术假设已被实验完全证明。
 >
-> **从这里继续：** [新窗口/新成员恢复入口](CONTINUE-HERE.md) · [正式结题验收](00-project/final-research-archive-acceptance-2026-10-09.md) · [正式研究报告](09-roadmap/management-final-public-evidence-2027-2029.md) · [最终汇报归档](09-roadmap/leadership-decision-pack/archive/README.md)
+> **从这里继续：** [新窗口/新成员恢复入口](CONTINUE-HERE.md) · [正式结题验收](00-project/final-research-archive-acceptance-2026-10-09.md) · [正式研究报告](09-roadmap/management-final-public-evidence-2027-2029.md) · **[本地 Agent 生成 PPT 专用的详细研究终稿（自包含 Markdown）](09-roadmap/agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)** · [最终汇报归档](09-roadmap/leadership-decision-pack/archive/README.md)
 
 ## 一、项目目标与研究边界
 
