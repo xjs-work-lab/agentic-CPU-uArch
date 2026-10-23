@@ -40,7 +40,7 @@
 | S16 | CONTENT-READY | **已修文案**：「目前不成立」改为「尚无足够证据支持」，不暗示科学上已证伪 | 事实、推断、假设与证据缺口不能画成简单「从弱到强」可信分数 |
 | S17 | CONTENT-READY | 与 S03 现行决策保持一致，研究重开仅限新公开原始证据 | 结尾行动不能写成已批准预算、实验或流片 |
 
-**逐页审稿统计：** 11 页 CONTENT-READY（S01–S04、S11–S14、S16–S17 及 S12 已计入），6 页 READY-WITH-CHECKPOINT（S05–S10 中的 S05、S06、S07、S08、S09、S10，外加 S15；按本表实际为 7 页）。**统计以逐行状态为准**，不得用手填数字覆盖表格。全 17 页均未经过真实 image/PPT 验收。
+**逐页审稿统计：** 10 页 CONTENT-READY（S01–S04、S11–S14、S16–S17），7 页 READY-WITH-CHECKPOINT（S05–S10、S15）。上述状态仅针对仓内材料和内容合同，17 页均未经过实际 image/PPT 验收。
 
 ## 3. 已修复的问题（代码和证据不变，仅明确表达）
 
@@ -69,7 +69,7 @@
 - N7 工具操作（基于生成的已授权动作）
 - N8 结果/外部效果验证（OS/应用/Agent Runtime）
 - N9 状态记录与决定继续/结束（Runtime）
-- R1 CPU/R2 GPU/R3 NPU 作为**可选执行资源池**，不是 N3–N8 的硬编码归属。
+- CPU/GPU/NPU 作为**可选执行资源池**，不是 N3–N8 的硬编码归属。
 - B1 共享 DRAM 带宽/前台 QoE 作为约束边，不是 DAG 任务节点。
 
 **边集合**：
@@ -92,14 +92,14 @@
 
 ### 4.2 S06 CPU/NPU 比较 — 区间只讲它所测量的事
 
-- 主图 A：**Prefill 阶段**，强调「该 Snapdragon 软件栈被测 NPU 路径更慢」与基线为 6 核 CPU；展示 \`1.27–1.62× slower\` 不能翻转方向。
-- 主图 B：**Decode 中 MUL_MAT 单算子**，强调 NPU 更低延迟，\`1.55–1.67× lower latency\`；明确与**完整 Decode**分离。
+- 主图 A：**Prefill 阶段**，强调「该 Snapdragon 软件栈被测 NPU 路径更慢」与基线为 6 核 CPU；展示 `1.27–1.62× slower` 不能翻转方向。
+- 主图 B：**Decode 中 MUL_MAT 单算子**，强调 NPU 更低延迟，`1.55–1.67× lower latency`；明确与**完整 Decode**分离。
 - 右侧解释区：启动/同步/布局复制/CPU fallback/DRAM 争用可抵销局部算子改进，不把概念时间拆分强行做成一个由论文精确实测的瀑布图。
 - 若有原论文图的精确图号/轴/单位和逐配置数据，可在下一轮升级为**原生可编辑精准图表**；当前只批准带文字/区间的概念对照图。
 
 ### 4.3 S08 CPU/SME2 — 嵌套而不是并列
 
-\`\`\`text
+```text
 Mobile SoC
 ├── CPU cluster
 │   └── AArch64 CPU core
@@ -110,7 +110,7 @@ Mobile SoC
 ├── GPU
 ├── NPU
 └── Shared DRAM
-\`\`\`
+```
 
 - SME/SME2 不是 standalone xPU；CPU 具体执行单元并行/复用等微架构细节如无正式来源，不画未证实内部 datapath。
 - 面板 A（PAPER-052）：tile 划分、向量/softmax 与矩阵处理流水、离线 packing 的机制；最多展示指定论文最高 3.94×，明确 CPU 基线与不同平台。
@@ -157,4 +157,4 @@ Mobile SoC
 - 正文画布/本地 Profile/真实字体能力；
 - 概念图候选、actual accepted-slide、reconstruction、备注写入及 Windows PowerPoint 渲染。
 
-**建议下一个 Gate：** 编制 [07-work-mode-handoff.md](../07-work-mode-handoff.md) 时，提供最低 token 的一次性 Preflight 检查清单；本地环境只导出配置事实，然后返回聊天窗口完成 S03/S05/S08/S15 的正式 substantive image 设计。若不读本地配置，也可以先生成 concept_only 图供选择视觉方向，但其后可能需要重新适配画布。
+**建议下一个 Gate：** 编制 `07-work-mode-handoff.md` 时，提供最低 token 的一次性 Preflight 检查清单；本地环境只导出配置事实，然后返回聊天窗口完成 S03/S05/S08/S15 的正式 substantive image 设计。若不读本地配置，也可以先生成 concept_only 图供选择视觉方向，但其后可能需要重新适配画布。
