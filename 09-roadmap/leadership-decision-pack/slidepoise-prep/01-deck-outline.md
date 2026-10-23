@@ -2,7 +2,7 @@
 
 > 状态：DRAFT v0.1｜2026-10-23｜**供聊天窗口内容审计，尚未批准生成整套图片或最终 PPT**。  
 > 目标交付：17 页、16:9、中文、面向技术领导的可编辑 PowerPoint；封面和目录都计入 17 页。  
-> 使用说明：这是 **Deck Narrative Contract**，不是 SlidePoise 自身的 \`work/deck-outline.json\`。进入本地执行阶段时，应按 SlidePoise 当前安装版本的 schema 编译，不得凭空模拟其 schema。
+> 使用说明：这是 **Deck Narrative Contract**，不是 SlidePoise 自身的 `work/deck-outline.json`。进入本地执行阶段时，应按 SlidePoise 当前安装版本的 schema 编译，不得凭空模拟其 schema。
 
 ## 0. 权威性与版本基线
 
@@ -35,7 +35,7 @@
 
 ## 3. 章节与逐页叙事总表
 
-> \`S01\` 等是稳定的制作 slide ID；\`01/17\` 是实际物理页码。目录不生成额外分隔页。
+> `S01` 等是稳定的制作 slide ID；`01/17` 是实际物理页码。目录不生成额外分隔页。
 
 | Slide ID | 页码 | 面向领导的结论式标题 | 该页在论证中的作用 | 推荐主图/主证据 |
 |---|---:|---|---|---|
@@ -102,4 +102,4 @@
 
 ## 7. 后续交付约定
 
-聊天窗口阶段继续形成：\`03-evidence-map.md\`、\`04-risk-boundaries.md\`、按页图像 brief/候选/批准版本记录与 \`07-work-mode-handoff.md\`。本地 Work 模式仅负责在 SlidePoise 的既定重建路径内进行 OpenCV 测量、语义对象映射、原生 PPT 建构、渲染修复与最终可编辑交付。不得以单张整页 PNG 冒充原生可编辑 PPT。
+聊天窗口阶段继续形成：`03-evidence-map.md`、`04-risk-boundaries.md`、按页图像 brief/候选/批准版本记录与 `07-work-mode-handoff.md`。本地 Work 模式仅负责在 SlidePoise 的既定重建路径内进行 OpenCV 测量、语义对象映射、原生 PPT 建构、渲染修复与最终可编辑交付。不得以单张整页 PNG 冒充原生可编辑 PPT。
