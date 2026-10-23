@@ -64,7 +64,7 @@
 
 ### 4.2 证据数字上图前必须有的六元组
 
-\`\`\`yaml
+```yaml
 measurement:
   source_id: PAPER-009
   original_url: https://arxiv.org/abs/2605.27435
@@ -74,9 +74,9 @@ measurement:
   exact_baseline_and_setting: "as specified by paper"
   aggregation: "configuration range, not universal average"
   source_figure_or_table: "UNVERIFIED_FOR_THIS_PPT"
-\`\`\`
+```
 
-上面只是标注规范示例，不代表已核原始图号。若 \`source_figure_or_table\` 未检查，不能自动生成声称忠实复制该原图的图表；可使用有边界的陈述和概念图。
+上面只是标注规范示例，不代表已核原始图号。若 `source_figure_or_table` 未检查，不能自动生成声称忠实复制该原图的图表；可使用有边界的陈述和概念图。
 
 ## 5. 既有仓库内容的可信度边界
 
@@ -94,7 +94,7 @@ measurement:
 - [ ] 事实只归于当前决策，不能夸大为厂商与公司已批准计划。
 
 ### S05｜动态 DAG
-- [ ] 每一主要箭头有 \`from\`/\`to\` 与含义，节点可追踪。
+- [ ] 每一主要箭头有 `from`/`to` 与含义，节点可追踪。
 - [ ] 并行与条件分支清楚；没有画得很像但实际上断开的连线。
 - [ ] 对 CPU/NPU/GPU 不作超出论文/概念条件的绝对资源绑定。
 - [ ] 论文原图/概念自绘的身份明确。
@@ -119,6 +119,6 @@ measurement:
 | G2 视觉概念 | 聊天窗口设计/技术复审 | 候选图、画布参数、图像版本、语义/箭头审核 | 仅重做问题页，不整套重来 |
 | G3 SlidePoise 重建 | 本地 Work、独立渲染审查 | semantic map、measurement overlay、native PPTX、rendered PNG、QA、备注回读 | 修正具体 native 对象、重新渲染，保留缺陷原因 |
 
-任何涉及 SlidePoise \`accepted-slide.png\` 的声明都要求已读到本机实际 Profile/frame/content canvas。未取得这一预检时聊天窗口候选只能叫 \`concept_only\`，不能向本地 Work 模式宣称构建输入已合规。
+任何涉及 SlidePoise `accepted-slide.png` 的声明都要求已读到本机实际 Profile/frame/content canvas。未取得这一预检时聊天窗口候选只能叫 `concept_only`，不能向本地 Work 模式宣称构建输入已合规。
 
 **最终拒收原则**：来源错、关系错、不可编辑、渲染错、备注错，五类中的任意一类未解决都不能标记成品通过。字体、对齐、空白和舒适度由实际阅读画面评估，不能用「没有文字溢出」当作设计完成。
