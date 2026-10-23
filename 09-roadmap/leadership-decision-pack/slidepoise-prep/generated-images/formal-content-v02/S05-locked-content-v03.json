@@ -1,0 +1,109 @@
+{
+  "schema_version": "s05-native-content-obligations-v03",
+  "slide_id": "S05",
+  "status": "technical_copy_frozen_png_not_accepted",
+  "master_canvas": {
+    "full_slide_px": [
+      2048,
+      1152
+    ],
+    "substantive_px": [
+      2048,
+      1070
+    ],
+    "offset_y_px": 41,
+    "header_px": 41,
+    "footer_px": 41
+  },
+  "content": {
+    "title": "动态 Agent 工作流让调度从算子扩展为有依赖的执行阶段",
+    "subtitle": "Agent 任务的下一步会根据中间结果变化；调度需要联合考虑阶段依赖、执行成本与前台体验。",
+    "diagram_title": "动态任务 DAG（概念示意）",
+    "constraint_title": "阶段放置取决于四类约束",
+    "constraints": [
+      "DAG 依赖与关键路径",
+      "CPU / GPU / NPU 的后端能力",
+      "启动、同步、搬运与回退开销",
+      "共享 DRAM 与前台 QoE"
+    ],
+    "iteration_title": "在线调度不是一次性分配",
+    "iteration_stages": [
+      "部分 DAG 可见",
+      "阶段成本评估",
+      "异构资源放置",
+      "执行与监测",
+      "新阶段出现后调整"
+    ],
+    "takeaway": "优先改进 Runtime/OS 与现有 CPU/NPU 协同，不凭单个 NPU 算子的局部表现推断端到端收益。",
+    "citation": "HeRo（动态 Agentic RAG 阶段 DAG，2026）；SERENO（OSDI 2026，共享 DRAM 与前台 QoE）。",
+    "limitation": "本页为概念示意；没有展示可比的手机性能测量。"
+  },
+  "diagram_contract_path": "generated-images/formal-content-v02/S05-edge-contract-v02.json",
+  "roles": [
+    {
+      "role": "CPU",
+      "copy": "控制、调度、轻量运算与必要回退",
+      "constraint": "不表示 CPU 只执行控制逻辑"
+    },
+    {
+      "role": "GPU",
+      "copy": "条件适配的并行计算与模型阶段",
+      "constraint": "不硬绑定某一 DAG 节点"
+    },
+    {
+      "role": "NPU",
+      "copy": "支持且总成本合适的 AI 算子/模型阶段",
+      "constraint": "不表示所有 Decode/Attention/MLP 更快"
+    }
+  ],
+  "source_cards": [
+    "01-evidence/papers/PAPER-098/deep.md",
+    "01-evidence/papers/PAPER-003/deep.md"
+  ],
+  "banned_numbers": [
+    "3.3×",
+    "2.5×",
+    "2.9×",
+    "1.5–3×",
+    "1.5–3.0×",
+    "20–40%",
+    "30–50%",
+    "30–70%",
+    "40–60%",
+    "20–30%",
+    "10–20%",
+    "~30%"
+  ],
+  "banned_meanings": [
+    "NPU always faster",
+    "NPU all attention",
+    "Decode entire path has single-op acceleration",
+    "all stages permanently mapped to one engine",
+    "uniform zero-copy across backends",
+    "HeRo sample diagram claimed as original Figure"
+  ],
+  "visual_reference_only": [
+    "S05 ImageGen candidate A",
+    "S05 ImageGen candidate B",
+    "S05 ImageGen correction attempt C"
+  ],
+  "production": {
+    "work_can_change": [
+      "coordinates",
+      "native connectors routing",
+      "font metrics/linebreaks",
+      "consistent blue visual assets",
+      "native editing structure"
+    ],
+    "work_cannot_change": [
+      "source evidence",
+      "exact performance measurements",
+      "fixed stage hardware mappings",
+      "claim conclusion",
+      "scientific data",
+      "node/edge semantics"
+    ],
+    "imagegen_target_status": "rejected_through_attempt_C",
+    "native_pptx_status": "not_started"
+  }
+}
