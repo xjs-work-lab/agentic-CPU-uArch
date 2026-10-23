@@ -1,0 +1,396 @@
+{
+  "name": "Academic CPU Insight",
+  "purpose": "Editable Chinese scientific-technical leadership slides on mobile AArch64 CPU, LLVM, heterogeneous SoCs and evidence-constrained 2027–2029 Agentic AI.",
+  "library_sets": {
+    "icons": [
+      "remix-icon",
+      "mdi"
+    ],
+    "components": [],
+    "visual_references": []
+  },
+  "library_items": {},
+  "style_agency": {
+    "palette": "specified",
+    "typography": "specified",
+    "density": "specified",
+    "icon_treatment": "agent_decides_within_profile"
+  },
+  "design_overrides": {
+    "frame": {
+      "header": {
+        "font_family": "Microsoft YaHei",
+        "text_color": "#173753",
+        "secondary_text_color": "#58738A",
+        "rule_color": "#C9DBEA",
+        "accent_color": "#2473B6"
+      },
+      "footer": {
+        "font_family": "Microsoft YaHei",
+        "text_color": "#58738A",
+        "secondary_text_color": "#58738A",
+        "rule_color": "#C9DBEA"
+      }
+    },
+    "title": {
+      "font_family": "Microsoft YaHei",
+      "color": "#102C55"
+    },
+    "style": {
+      "background": "#FFFFFF",
+      "display_font": "Microsoft YaHei",
+      "body_font": "Microsoft YaHei",
+      "density": "information_rich",
+      "accent_colors": [
+        "#102C55",
+        "#174478",
+        "#2473B6",
+        "#418FCF",
+        "#7DAED7",
+        "#C9E2F3",
+        "#E7F2FD"
+      ],
+      "neutral_colors": [
+        "#FFFFFF",
+        "#F7F9FD",
+        "#EDF4FA",
+        "#DCE9F4",
+        "#C9DBEA",
+        "#58738A",
+        "#173753",
+        "#102C55"
+      ],
+      "visual_language": "Chinese academic technical decision presentation: blue monochrome hierarchy, precise CPU/ISA and CPU-NPU schematics, source-labelled plots, visible uncertainty, clear directed edges, restrained line icons and native PowerPoint shapes. Do not invent CPU modules, measurements, comparisons or hardware commitments.",
+      "whitespace": "Evidence rich with systematic title, diagram and citation spacing. Never create empty decoration or tiny labels solely to fill a template."
+    },
+    "semantic_style_tokens": {
+      "accent_badge": {
+        "fill": "#2473B6",
+        "text_color": "#FFFFFF",
+        "font_weight": "bold"
+      },
+      "muted_panel": {
+        "fill": "#F7F9FD",
+        "text_color": "#173753"
+      },
+      "primary_text": {
+        "color": "#173753"
+      },
+      "secondary_text": {
+        "color": "#58738A"
+      },
+      "data_highlight": {
+        "text_color": "#2473B6",
+        "font_family": "Microsoft YaHei",
+        "font_weight": "bold"
+      },
+      "call_to_action": {
+        "text_color": "#2473B6",
+        "font_family": "Microsoft YaHei",
+        "font_weight": "bold"
+      },
+      "icon_surface_blue_lightest": {
+        "fill": "#E7F2FD",
+        "glyph_color": "#102C55",
+        "border": "none"
+      },
+      "theme_light_background": {
+        "fill": "#F7F9FD",
+        "text_color": "#173753"
+      },
+      "evidence_confirmed": {
+        "fill": "#E7F2FD",
+        "text_color": "#102C55"
+      },
+      "evidence_open": {
+        "fill": "#F7F9FD",
+        "text_color": "#58738A"
+      }
+    },
+    "text_reconstruction": {
+      "text_style_policies": {
+        "default": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.5
+        },
+        "slide_title": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1,
+          "font_weight": "bold"
+        },
+        "subtitle": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "section_number": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1
+        },
+        "heading_large": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "body": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.5
+        },
+        "heading": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "body_standard": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.5
+        },
+        "heading_compact": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "body_compact": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.5
+        },
+        "label": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1,
+          "font_weight": "bold"
+        },
+        "emphasis_label": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1,
+          "font_weight": "bold"
+        },
+        "introduction": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "quote": {
+          "font_family": "Microsoft YaHei",
+          "color": "#173753",
+          "line_spacing": 1.2
+        },
+        "quote_label": {
+          "font_family": "Microsoft YaHei",
+          "color": "#58738A",
+          "line_spacing": 1.2,
+          "font_weight": "bold"
+        },
+        "large_data_number": {
+          "font_family": "Microsoft YaHei",
+          "color": "#2473B6",
+          "line_spacing": 1
+        },
+        "call_to_action": {
+          "font_family": "Microsoft YaHei",
+          "color": "#2473B6",
+          "line_spacing": 1,
+          "font_weight": "bold"
+        }
+      }
+    },
+    "connectors": {
+      "stroke": {
+        "color": "#2473B6"
+      }
+    },
+    "data_visualization": {
+      "default_level": 1,
+      "default_series_colors": [
+        "#102C55",
+        "#174478",
+        "#2473B6",
+        "#418FCF",
+        "#7DAED7",
+        "#C9E2F3",
+        "#A9BBCB",
+        "#D3DEE9"
+      ],
+      "key_data_color": "#2473B6",
+      "chart_title_font": "Microsoft YaHei",
+      "data_font": "Microsoft YaHei",
+      "allow_gradient_in_default_level": false,
+      "gridline_color": "#C9DBEA"
+    }
+  },
+  "hard_rules": {
+    "color_system": {
+      "core": {
+        "navy": "#102C55",
+        "blue": "#2473B6",
+        "white": "#FFFFFF",
+        "ink": "#173753"
+      },
+      "blue_tints": [
+        "#174478",
+        "#2473B6",
+        "#418FCF",
+        "#7DAED7",
+        "#C9E2F3",
+        "#E7F2FD"
+      ],
+      "neutral_colors": [
+        "#FFFFFF",
+        "#F7F9FD",
+        "#EDF4FA",
+        "#C9DBEA",
+        "#58738A",
+        "#173753"
+      ],
+      "rules": [
+        "Navy and a single blue family carry authored hierarchy; use whites and cold greys for neutral fields.",
+        "Do not use orange or unrelated accent palettes for slides; warning states use text, outline and labels rather than an unlabelled color.",
+        "Information state must not be encoded solely by color. Pair color with label or line treatment.",
+        "Text remains high contrast; diagrams and citations must be readable on a projector."
+      ]
+    },
+    "typography": {
+      "powerpoint_serif": "Microsoft YaHei",
+      "powerpoint_sans": "Microsoft YaHei",
+      "headline_and_quote_font": "Microsoft YaHei",
+      "subheadline_body_intro_label_and_data_font": "Microsoft YaHei",
+      "allowed_weights": [
+        "regular",
+        "bold"
+      ],
+      "italics_allowed": false,
+      "tracking_allowed": false,
+      "rules": [
+        "Use a Chinese-capable sans font for all text roles; verify local availability and Office substitutions before final release.",
+        "One shared conclusion-title role across content slides; prefer native PowerPoint text, not texture-baked generated words.",
+        "Source labels and device/baseline limitations must remain legible."
+      ]
+    },
+    "data_visualization": {
+      "default_powerpoint_level": 1,
+      "level_1_palette": [
+        "#102C55",
+        "#174478",
+        "#2473B6",
+        "#418FCF",
+        "#7DAED7",
+        "#C9E2F3",
+        "#E7F2FD",
+        "#A9BBCB",
+        "#D3DEE9"
+      ],
+      "chart_title_font": "Microsoft YaHei",
+      "data_and_category_font": "Microsoft YaHei",
+      "large_number_font": "Microsoft YaHei",
+      "key_data_color": "#2473B6",
+      "rules": [
+        "Use solid blue and cold-grey native chart series; no decorative gradients in quantitative plots.",
+        "Include model, device, baseline and statistic scope for each source-derived data number.",
+        "Never combine incompatible devices, models, environments or relative denominators into a common rank chart."
+      ]
+    },
+    "icons": {
+      "unified_icon_pictogram_use": true,
+      "asset_policy": "Use neutral line Remix Icon or MDI assets of coherent stroke weight. Do not use consulting-branded orange icons or unsupported unofficial processor logos.",
+      "allowed_surface_colors": [
+        "#FFFFFF",
+        "#F7F9FD",
+        "#E7F2FD"
+      ],
+      "proxy_treatments": [
+        {
+          "id": "navy_line",
+          "glyph": "#102C55",
+          "allowed_surface_colors": [
+            "#FFFFFF",
+            "#F7F9FD",
+            "#E7F2FD"
+          ]
+        },
+        {
+          "id": "blue_line",
+          "glyph": "#2473B6",
+          "allowed_surface_colors": [
+            "#FFFFFF",
+            "#F7F9FD",
+            "#E7F2FD"
+          ]
+        }
+      ],
+      "avoid": [
+        "false 3D chips",
+        "decorative icon circles",
+        "unverified vendor logos",
+        "mixed filled and outlined icon glyphs in one peer group"
+      ]
+    },
+    "geometry": [
+      "Align related elements on an intentional grid; never treat arrow endpoints as approximate.",
+      "SME/SME2 is a CPU ISA feature and must be inside the CPU core hierarchy when depicted.",
+      "DAG and tool-execution arrows have explicit source, target and relation type.",
+      "Keep a clear source/citation area and do not let reference lines collide with content."
+    ],
+    "composition": [
+      "Use an explanatory main visual, not generic equal cards by default.",
+      "Conclusion title must be readable without knowing project notation.",
+      "Separate priority engineering tracks from conditional research reserves and unsupported new silicon bets.",
+      "Labels for assumptions and limitations are substantive content, not optional decoration."
+    ],
+    "reconstruction": [
+      "Native PowerPoint text, shapes, chart objects and connectors take priority.",
+      "Inherited master header/footer and slide numbers are outside generated substantive content.",
+      "Use the packaged SlidePoise semantic-map, OpenCV measurement and reconstruction workflow; do not paste one full-slide image.",
+      "Review actual PowerPoint rendering, not just code or source SVG."
+    ]
+  },
+  "reasoning_principles": [
+    "Start from the audience question and the one belief, understanding, or decision the slide should create.",
+    "Treat the slide as an argument unit, not a container for topics.",
+    "Distinguish claim, evidence, context, qualification, and recommendation when those roles exist.",
+    "Preserve sequence, comparison, hierarchy, causality, dependency, contribution, and parallelism when supported by the content.",
+    "Do not invent completeness, causality, or evidence that the source material does not support.",
+    "Use MECE only as a diagnostic when the content is intended to be a complete decomposition."
+  ],
+  "visual_principles": [
+    "Use one disciplined blue science/engineering visual system across slides; vary diagram layouts by explanatory job.",
+    "Explicitly show control-flow, data-flow and conditional arrows with legend and direction.",
+    "Put quantitative evidence on the same page as its device, baseline and evaluation boundary.",
+    "Prefer native directed DAGs, CPU nested architecture schematics, small multiples and roadmap matrices to decorative hardware imagery.",
+    "Information dense but readable for technical leadership without deep Agent background."
+  ],
+  "writing_principles": [
+    "Write Chinese conclusion-led slide titles, not questions or one-word topics.",
+    "Introduce specialized terms before relying on them, and keep research-internal codes in speaker notes.",
+    "Discuss source boundaries and counterpressure when they change the decision."
+  ],
+  "review_questions": [
+    "Can a technical leader state the takeaway and evidence from this slide alone?",
+    "Are AArch64/SME2/CPU/NPU/Runtime shown in correct levels?",
+    "Do experimental devices, units, statistics and baselines match evidence cards?",
+    "Is the slide's blue palette consistent with all resolved native objects, icon colors, text policies, charts and master frame?",
+    "Does every arrow connect the correct source and destination and have an explainable meaning?",
+    "Are all substantial PowerPoint objects native and editable where reasonable?",
+    "Are source limitations and unsupported claims visible and preserved in speaker notes?"
+  ],
+  "anti_patterns": [
+    "orange/Georgia leftovers from the source Consulting profile",
+    "no-name CPU/NPU acceleration numbers or invented bar-chart data",
+    "SME as standalone compute engine next to CPU",
+    "substituting generic accelerator/PIM/storage topics for the formally approved three conditional research questions",
+    "equal cards hiding real hierarchy",
+    "arrows overlapping or connecting the wrong objects",
+    "entire-slide raster PNG passed as editable PowerPoint"
+  ]
+}
