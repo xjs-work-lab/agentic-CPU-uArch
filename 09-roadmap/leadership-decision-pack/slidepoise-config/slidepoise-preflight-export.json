@@ -1,0 +1,119 @@
+{
+  "source": "local_slidepoise_run_resolve",
+  "timestamp_utc": "2026-10-23T10:37:35.973701+00:00",
+  "profile_id": "academic-cpu-insight",
+  "profile_revision": "c330fa78476cd5d74298edb608b3fcedde4b90c6f8175905316588b95ea779d6",
+  "profile_schema_version": "1.0.0",
+  "design": {
+    "full_slide_px": [
+      2048,
+      1152
+    ],
+    "frame": {
+      "header": {
+        "enabled": true,
+        "height_px": 41,
+        "font_family": "Microsoft YaHei",
+        "font_size_px": 13,
+        "text_color": "#173753",
+        "rule_color": "#C9DBEA",
+        "left_text": "",
+        "right_text": ""
+      },
+      "footer": {
+        "enabled": true,
+        "height_px": 41,
+        "font_family": "Microsoft YaHei",
+        "font_size_px": 12,
+        "text_color": "#58738A",
+        "rule_color": "#C9DBEA",
+        "left_text": "",
+        "center_text": "",
+        "slide_number": {
+          "enabled": true,
+          "implementation": "native_slide_number_field_on_master",
+          "format": "{slide_number}"
+        }
+      }
+    },
+    "style": {
+      "background": "#FFFFFF",
+      "display_font": "Microsoft YaHei",
+      "body_font": "Microsoft YaHei",
+      "density": "information_rich",
+      "accent_colors": [
+        "#102C55",
+        "#174478",
+        "#2473B6",
+        "#418FCF",
+        "#7DAED7",
+        "#C9E2F3",
+        "#E7F2FD"
+      ],
+      "neutral_colors": [
+        "#FFFFFF",
+        "#F7F9FD",
+        "#EDF4FA",
+        "#DCE9F4",
+        "#C9DBEA",
+        "#58738A",
+        "#173753",
+        "#102C55"
+      ]
+    },
+    "title": {
+      "font_family": "Microsoft YaHei",
+      "nominal_size_px": 76,
+      "color": "#102C55",
+      "anchor_px": [
+        64,
+        48
+      ],
+      "max_width_px": 1860
+    },
+    "connectors": {
+      "allowed_families": [
+        "direct_flow",
+        "orthogonal_dependency",
+        "merge_split",
+        "grouping_bracket",
+        "grouping_brace",
+        "annotation_leader"
+      ],
+      "stroke": {
+        "color": "#2473B6",
+        "width_px": 3,
+        "dash": "solid",
+        "line_cap": "round",
+        "line_join": "round"
+      },
+      "arrowhead": {
+        "type": "triangle",
+        "powerpoint_size": "med",
+        "minimum_visible_endpoint_px": 18,
+        "minimum_clear_segment_px": 16,
+        "length_px": 14,
+        "width_px": 12
+      },
+      "routing": {
+        "minimum_clearance_px": 12,
+        "maximum_ordinary_bends": 2,
+        "grouping_brace_depth_px": 34,
+        "grouping_bracket_depth_px": 22,
+        "grouping_brace_preset_depth_factor": 1.7
+      }
+    }
+  },
+  "derived": {
+    "generation_region_px": [
+      2048,
+      1070
+    ],
+    "generation_offset_y_px": 41,
+    "generation_aspect_ratio": 1.914019,
+    "header_height_px": 41,
+    "footer_height_px": 41
+  },
+  "speaker_notes_write_readback": "NOT_TESTED",
+  "note": "Sanitized environment/design summary only. The actual resolved-config.json stays in the local run."
+}
