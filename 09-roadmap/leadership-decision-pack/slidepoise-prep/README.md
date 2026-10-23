@@ -1,6 +1,6 @@
 # SlidePoise PPT 前置设计区（中文）
 
-> **2026-10-23｜DRAFT v0.1｜尚未进入图像生成和可编辑 PPT 构建。**
+> **2026-10-23｜G1 内容归档已完成；G2 实际 16:9 尺寸的 SVG 视觉候选已入库；尚未生成 SlidePoise 正式 accepted-slide.png 或原生 PPTX。**
 > 本目录用于在聊天窗口形成可审计的技术内容、图形约束、图像候选与 GitHub 归档，再将被批准的输入交给本地 SlidePoise 执行 native PPT reconstruction。
 
 ## 当前已完成
@@ -13,22 +13,30 @@
 | [04-risk-boundaries.md](04-risk-boundaries.md) | P0/P1/P2 拒收条件、16 条高风险表达与图形防误用规则 | 已归档 v0.1 |
 | [05-visual-spec.md](05-visual-spec.md) | 学术技术风格、SlidePoise 正文画布、原生对象与全过程 QA | DRAFT v0.1 |
 | [06-sample-slides-manifest.md](06-sample-slides-manifest.md) | 四张真实 SVG 矢量概念图、Git blob SHA、技术审查与未完成的真实渲染检查 | 四图 CONCEPT_ONLY，已归档 |
+| [09-frame-and-content-region-contract.md](09-frame-and-content-region-contract.md) | 来自本机解析配置的 2048×1152 全页、41/1070/41 分层及母版职责 | 已核实本地尺寸；母版 PPTX 未验收 |
+| [10-formal-content-region-samples.md](10-formal-content-region-samples.md) | 四张新版 2048×1070 正文矢量设计 + 四张完整 16:9 页壳组合预览；Git blob 与 SHA-256 | 真尺寸候选完成，视觉渲染待验 |
+| [S05 语义连线合同](generated-images/formal-content-v02/S05-edge-contract-v02.json) | 10 个节点、13 条语义边和条件性分支，用于未来原生 PPT 箭头重建 | 已冻结为参考结构 |
+| [蓝色母版建议 run overrides](profile-blue/academic-cpu-run-session-overrides.proposal.json) | 页眉、页脚短标签与原生页码开关；与本机实际设置区别记录 | 仅建议，尚未在本地应用 |
+| [Round04 真尺寸静态审计](qa/round04-verified-canvas-static-design-audit-2026-10-23.md) | 实际画布、8 张 SVG 结构、关键数据/连线与未完成 G2/G3 | 静态通过，真实渲染待验 |
+| [本机已解析的安全画布摘要](../slidepoise-config/slidepoise-preflight-export.json) | 正式 `academic-cpu-insight`、2048×1152 全页及 2048×1070 正文尺寸 | GitHub 已读取并确认 |
 | [07-work-mode-handoff.md](07-work-mode-handoff.md) | 本地最小预检、四页 SlidePoise 重建、备注验证、17 页交付门槛 | Handoff v0.1 |
-| [08-profile-adaptation-contract.md](08-profile-adaptation-contract.md) | 用户已上传 Consulting Profile 的冲突分析、独立蓝色科研风 Profile 设计及终端配置流程 | 草案已归档 / 本地未应用 |
-| [Academic CPU Profile JSON 补丁](profile-blue/academic-cpu-insight.profile-update.json) | 机器可读的蓝色 Profile 字段 payload，使用 CLI update 并需本机验证 | 候选配置 / 未激活 |
-| [Windows CMD 一键配置脚本](scripts/configure-slidepoise.py) | 针对 CLI 未加 PATH 与长 JSON 参数问题，自动应用蓝色 Profile、创建/复用 run 并导出脱敏画布摘要 | 已归档，等待本机实际运行 |
+| [08-profile-adaptation-contract.md](08-profile-adaptation-contract.md) | 从 Consulting 迁移到蓝色学术 Profile 的历史执行合同 | 本地已成功应用；记录供审计 |
+| [Academic CPU Profile JSON 补丁](profile-blue/academic-cpu-insight.profile-update.json) | 蓝色 Profile 修订内容；对应用户本地运行的配置 | 已应用，用户 preflight 验证 |
+| [Windows CMD 一键配置脚本](scripts/configure-slidepoise.py) | 蓝色 Profile、正式 run、安全画布摘要生成 | 用户已执行成功 |
 | [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
 | [Round03 样页概念图审计](qa/round03-visual-concept-audit-2026-10-23.md) | 首轮 ImageGen 候选 P0 拒收、四张 SVG 关系和数值审查及遗留验收项 | 源码审查完成，真实渲染待验 |
-| [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 仅采集真实 Profile/画布/字体/备注能力，避免在 Work 模式重新探索 | 待用户本地执行 |
-| [2026-10-23 实际上传配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 已核 doctor/profile；发现内置 Consulting 橙色/Georgia 与蓝色中文研究风冲突，resolved canvas 尚缺 | 部分预检通过 / 正式出图未放行 |
+| [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 最初的本地执行检查清单 | doctor/profile/解析画布已完成，Notes 待测 |
+| [2026-10-23 最初配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 历史审计：当时只有 doctor/profile，尚缺 run resolve | 已被新上传 preflight 结果补齐 |
 
-## Round04 配置对齐现状（2026-10-23）
+## 最新状态（2026-10-23，优先阅读）
 
-- 已从 [slidepoise-config/doctor.json](../slidepoise-config/doctor.json) 与 [profile-show.json](../slidepoise-config/profile-show.json) 核实本地上传配置：Codex、Python、PptxGenJS、LibreOffice、Poppler 均在 doctor 列表中，激活 Profile 为 `consulting`。
-- 已确认 `consulting` 原生风格约束为橙色/Georgia/Arial，与项目蓝色科研风相冲突；为避免生成/重建漂移，不通过图片 prompt 粗暴覆盖，也不直接改内置 Consulting。
-- 已准备可机器读取的 [蓝色学术 Profile 更新 payload](profile-blue/academic-cpu-insight.profile-update.json) 和 [终端执行合同](08-profile-adaptation-contract.md)，**但尚未在用户本地创建或运行**。
-- 原上传数据尚无 `resolved-config.json`；实际 `design.full_slide_px`、frame 高度和 `derived.generation_region_px` 仍未获知，因此四张 SVG 维持 `concept_only`，正式图片仍不能放行。
-- 下一步普通终端创建并核验独立 Profile、解析正式 run、上传脱敏后的 resolved config；然后聊天窗口使用实际画布做正式样页图与视觉审计。
+- **画布真值已获证实**：用户上传的 [slidepoise-preflight-export.json](../slidepoise-config/slidepoise-preflight-export.json) 显示 `academic-cpu-insight` 已实际应用，全页 **2048×1152 16:9**，header/footer 各 41px，正文 **2048×1070**，全页 y 偏移 41px。
+- **新一轮成果**：四张重新排版的 [正文 SVG + 16:9 整页示意](10-formal-content-region-samples.md) 已保存；[09 母版合同](09-frame-and-content-region-contract.md) 区分动态结论标题、引用区、共享 frame 与 PowerPoint 原生页码，未拉伸旧 1600×900。
+- **内容真实性**：S03 正式三工程/三储备/0 硬件主押注，S05 有向 DAG，S08 CPU 内 SME2 与来源绑定的手机测量，S15 技术层×三年路线。源级静态审核记录在 [Round04 QA](qa/round04-verified-canvas-static-design-audit-2026-10-23.md)。
+- **尚未完成**：真实全分辨率图形渲染与人工目视、SlidePoise packaged image-generation request、`accepted-slide.png`、真实 PowerPoint 原生重建、母版/页码/Notes 验证。因此目前**不能把这四张 SVG 标为正式交付 PPT 页面**。
+- **下一步**：四页目标图真实渲染/冷读复核 → SlidePoise 官方管线生成并验收四页原生 PPTX → 扩展其余 13 页；不要重新要求用户做已经完成的本地 profile/canvas 预检。
+
+## 历史过程记录（以下 Round03/02 只反映当时阶段，不覆盖最新状态）
 
 ## Round03 已完成与下一步
 
@@ -48,4 +56,4 @@
 - [Agentic CPU 详细研究终稿（2026-10-20）](../../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)提供内容基础；实际结论以 [current.md](../../current.md) 和正式决策事件为准。
 - [2026-10-09 旧版 17 页备注](../archive/round16c-17-page-speaker-notes-2026-10-09.md)的页序与 2026-10-20 综合稿存在差异，只能按主题重新映射，**不可直接按页码粘贴**。
 - 当前公开资料范围内有三项工程/平台优先、三项条件研究、零项得到充分公开证据支持的新增专用 CPU 硬件主押注。不能把任何储备方向说成已经批准的硅片设计。
-- 本目录文本已归档到 GitHub；**不代表 PNG、Speaker Notes、PPTX/PDF 已生成或上传**。
+- 本目录文本及 8 张真实 SVG 矢量设计/预览已归档到 GitHub；**不代表正式 PNG、Speaker Notes、PPTX/PDF 已生成或上传**。
