@@ -28,6 +28,14 @@
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 最初的本地执行检查清单 | doctor/profile/解析画布已完成，Notes 待测 |
 | [2026-10-23 最初配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 历史审计：当时只有 doctor/profile，尚缺 run resolve | 已被新上传 preflight 结果补齐 |
 
+## Round05 S05 图像内容审计（本轮最新关口）
+
+- 用户认可两张 Image2.5 视觉版式，但**认可视觉不等于认可技术内容**。两张 S05 均含无来源算子加速/端到端效益；第三次尝试修图仍生成 40–60% 等无证据统计，全部 `REJECT_TECHNICAL_P0`。
+- [Round05 审计报告](qa/round05-s05-imagegen-content-audit-2026-10-23.md)逐项说明哪些可保留、哪些必须删除。
+- [S05 文案、DAG、备注与 native 重建锁定合同](11-s05-approved-copy-and-reconstruction-contract.md) 为 **S05 页面科学内容的唯一权威**，并有 [机器可读文案与禁用数字](generated-images/formal-content-v02/S05-locked-content-v03.json) 及 [机器可读 DAG 边合同](generated-images/formal-content-v02/S05-edge-contract-v02.json)。
+- **工作阶段规则**：Image2.5 只可产生视觉候选，未经本轮合规审稿不能标 `accepted-slide.png`；Work 负责原生可编辑重建，不能从有问题 PNG 重新编造技术内容，见 [07 Work Handoff](07-work-mode-handoff.md)。
+- 目前还没有通过技术+视觉双审核的 S05 Image2.5 PNG。**不能虚报已生成/上传正式 PNG。**
+
 ## 最新状态（2026-10-23，优先阅读）
 
 - **画布真值已获证实**：用户上传的 [slidepoise-preflight-export.json](../slidepoise-config/slidepoise-preflight-export.json) 显示 `academic-cpu-insight` 已实际应用，全页 **2048×1152 16:9**，header/footer 各 41px，正文 **2048×1070**，全页 y 偏移 41px。
