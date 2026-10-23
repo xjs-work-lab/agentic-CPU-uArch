@@ -3,6 +3,18 @@
 > **当前状态：BLUE_PROFILE_AND_16_9_CANVAS_VERIFIED / VECTOR_CONTENT_CANDIDATES_WRITTEN / VISUAL_RENDER_PENDING**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## S05 追加 P0 内容约束（2026-10-23，优先级高于 PNG 中的文字）
+
+本轮审计发现 S05 的三次 Image2.5 视觉候选均存在**不受证据支持的加速/能耗/带宽比率**，以及将 Decode/Attention/MLP 绝对绑定 NPU 的倾向，**三张均技术拒收**。用户认可的是蓝白配色和分栏，不是数字。
+
+必须读取：
+- `11-s05-approved-copy-and-reconstruction-contract.md`：**最终逐字投影内容/禁止数据/每条箭头/来源/六项 Speaker Notes 必讲点**
+- `generated-images/formal-content-v02/S05-locked-content-v03.json`：机器可读不可变文案与禁用数值
+- `generated-images/formal-content-v02/S05-edge-contract-v02.json`：所有节点和 13 条有向边的语义
+- `qa/round05-s05-imagegen-content-audit-2026-10-23.md`：三轮图片候选拒收的原因
+
+**执行纪律**：未出现独立审定 `accepted-slide.png` 前，不能选择上述 Image2.5 候选进行 native reconstruction。Work 可参考候选配色/版式，但**禁止**复刻其中的柱状图、百分比、无根据的总吞吐/延迟收益和错误硬件映射。先用锁定内容合同完成 S05 目标图的 G2 事实/视觉审核，再使用 SlidePoise packaged 流程重建。PowerPoint 中所有节点、箭头、标题、数据等优先 native 可编辑；不能以“PNG 给了什么字”覆盖文字合同。
+
 ## 本轮最新生效配置：2026-10-23（覆盖下方历史预检阻断）
 
 - 从 GitHub 实际读取已上传的 slidepoise-config/slidepoise-preflight-export.json。独立蓝色 Profile academic-cpu-insight **已在本地成功应用**；不需要再安装、创建或重复预检。
