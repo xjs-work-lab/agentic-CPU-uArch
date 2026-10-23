@@ -3,14 +3,14 @@
 > DRAFT｜2026-10-23｜尚未批准图像生成。与 [01 叙事大纲](01-deck-outline.md)共同定义每一页的内容范围。  
 > 本合同服务于**先内容批准、后生成构图、再走 SlidePoise 原生重建**；不是 PowerPoint 对象坐标表。  
 > 来源优先：[2026-10-20 全量研究终稿](../../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md) → 冲突时以 [current.md](../../current.md) 与正式决策事件为准。  
-> 每张页的 \`Slide ID\` 稳定，页码随编排顺序变化。投影上不要出现让领导无从理解的项目过程编码；证据 IDs 保存在设计/备注内。
+> 每张页的 `Slide ID` 稳定，页码随编排顺序变化。投影上不要出现让领导无从理解的项目过程编码；证据 IDs 保存在设计/备注内。
 
 ## 每页统一交付的字段
 
 - **读者结论 / 内容**：必须实际讲出该页的论证，不以章节名占位。
 - **因果与结构关系**：说明节点、边、嵌套、比较对象、主次；箭头必须可逐条解释。
 - **画面文字与布局责任**：哪些必须投影可见；哪类信息进入引用区或讲者备注。
-- **证据与限制**：逐页预绑定原始来源，后续在 \`03-evidence-map.md\` 作数字级核验。
+- **证据与限制**：逐页预绑定原始来源，后续在 `03-evidence-map.md` 作数字级核验。
 - **讲者备注**：先解释实际画面上的图、数字、术语、关系；再逐条解释每一来源的具体论据、支撑与不支持范围。
 - **拒收条件**：一旦触发，不因外观漂亮而放行；包括内容错误、箭头不清、错把图像当实测、实际 PPT 不可编辑等。
 
@@ -279,7 +279,7 @@
 
 ## 单页设计审批示例
 
-\`\`\`yaml
+```yaml
 slide_id: S08
 contract_version: v0.1
 source: detailed-research-summary-2026-10-20
@@ -292,6 +292,6 @@ native_reconstruction: not_started
 blocking_issues:
   - SME2 must be inside CPU execution hierarchy
   - Separate SMEPilot M4 Pro evidence from vivo X300 phone evidence
-\`\`\`
+```
 
 只在真实产生对应文件/证据后更新状态；「图片已选中」不等于「PPT 已编辑重建成功」，「内容已批准」不等于「数据已全部复核」。
