@@ -33,7 +33,7 @@
 - S03 是领导决策分层页：**3 项工程/平台优先、3 项条件研究储备、0 项有充分公开证据支持的新 Agent 专用 CPU 硬件主押注**。自然语言说明了每项做什么与重开硬件讨论的证据门槛。
 - 本轮已真实生成正文 PNG（2048×1070）和完整 16:9 预览（2048×1152），检查了 57 个文字对象，未发现画布外越界；PNG/ZIP 已做实际渲染与完整性检查。
 - **[S03 内容锁定与 native 重建合同](14-s03-approved-copy-and-reconstruction-contract.md)**、**[Round09 审计报告](qa/round09-s03-decision-portfolio-audit-2026-10-23.md)**、**[Speaker Notes](notes/S03-speaker-notes-2026-10-23.md)**、**[Work handoff](S03-work-handoff-v01.md)**、**[PNG/ZIP 哈希清单](generated-images/formal-content-v02/S03-controlled-png-v01.manifest.json)** 已归档。
-- [S03 完整素材 ZIP](sandbox:/mnt/data/S03-controlled-source-and-PNG-v01.zip) 包含正文 PNG、整页预览、SVG、QA、Notes、handoff、构建脚本及四个装饰图标；该 ZIP 在聊天附件交付。
+- S03 完整素材 ZIP 包含正文 PNG、整页预览、SVG、QA、Notes、handoff、构建脚本及四个装饰图标；该 ZIP 通过当前聊天附件交付，**不是 GitHub 文件链接**。
 - **GitHub 当前只保存文本合同、审计、Notes、handoff 和 manifest；PNG、SVG 与 ZIP 二进制尚未提交 GitHub**。不把哈希登记误写成二进制入库。
 - S03 当前状态：`CONTENT_AND_RENDER_CANDIDATE / USER_VISUAL_SIGNOFF_PENDING`。还没开始 SlidePoise 原生 PPTX 试制。
 
