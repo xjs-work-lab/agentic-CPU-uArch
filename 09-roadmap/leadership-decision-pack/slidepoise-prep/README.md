@@ -28,6 +28,14 @@
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 最初的本地执行检查清单 | doctor/profile/解析画布已完成，Notes 待测 |
 | [2026-10-23 最初配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 历史审计：当时只有 doctor/profile，尚缺 run resolve | 已被新上传 preflight 结果补齐 |
 
+## Round08 S15 技术路线目标 PNG 已生成（2026-10-23）
+
+- 已在本次对话中真正生成 **S15 正文 PNG 2048×1070** 和 **标准 16:9 全页预览 2048×1152**，并附有 SVG、5 个 Image2.5 装饰图标、构图脚本、QA 与完整讲者备注的 ZIP。
+- Image2.5 首张全页草图含未经证实的 2029 硬件/规模化研发里程碑，**P0 拒收**；仅使用它生成的 5 个无文字图标，最终 5 技术层×3 年路线以研究终稿和 current.md 的真实合同重绘。
+- **[S15 技术内容与 Work 原生重建合同](13-s15-roadmap-content-and-reconstruction-contract.md)**、**[Round08 视觉/事实 QA](qa/round08-s15-image2p5-and-roadmap-audit-2026-10-23.md)**、**[PNG/SVG/ZIP 哈希清单](generated-images/formal-content-v02/S15-controlled-png-v01.manifest.json)** 和 **[演讲者备注](notes/S15-speaker-notes-2026-10-23.md)** 均已写入 GitHub。
+- 已实物渲染/目视检查，65 个受控文本对象无画布外溢，且未产生非法加速数字或“2029 硬件必定交付”结论。**等待最终用户视觉确认与 SlidePoise native PPTX 验收**。
+- PNG/ZIP 二进制可在当前聊天下载；**本轮 GitHub 归档的是文本合同、QA 和哈希清单，还未真正把 PNG/ZIP 二进制推送到 GitHub**，请勿写成已存仓。
+
 ## Round07 S08 SME2 目标图与手机数据审查
 
 - 本次对话已真实生成 **S08 正文 2048×1070 PNG** 与 **16:9 整页 2048×1152 预览 PNG**。Image2.5 的蓝色芯片插画只承担审美素材，CPU/SME2 层级与 vivo X300 的实验数字由受控矢量内容生成。
