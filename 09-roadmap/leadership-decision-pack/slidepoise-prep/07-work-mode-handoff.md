@@ -3,6 +3,14 @@
 > **当前状态：BLUE_PROFILE_AND_16_9_CANVAS_VERIFIED / VECTOR_CONTENT_CANDIDATES_WRITTEN / VISUAL_RENDER_PENDING**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## S08 已有真实内容区 PNG 与源数据锁定合同（2026-10-23）
+
+- 正文 PNG `S08-controlled-content-v01.png`，2048×1070；完整版预览 `S08-16x9-frame-preview-v01.png`，2048×1152。用户可从本轮聊天下载，**GitHub 目前只有 manifest 和 QA 合同，没有 PNG 二进制**。
+- 必须一起读取 `12-s08-approved-copy-and-reconstruction-contract.md`、`generated-images/formal-content-v02/S08-controlled-png-v01.manifest.json`、`qa/round07-s08-image2p5-and-measurement-audit-2026-10-23.md`。
+- Image2.5 的科技芯片插画是可保留的**复杂视觉资产**，其他主标题、实验图表、横轴、CPU 嵌套结构、数据说明必须 PPT native 重建，不能整页 PNG 当“可编辑”。
+- 原始数据为 vivo X300/SqueezeSAM/1 CPU 核/Normal mode、INT8 555.8→304.1ms、FP16 1163.0→298.2ms；同一 0–1200ms 横轴；SME2 后数据移动占 41.4%/39.9%。严禁将 SME 当独立 NPU、将 Apple M4 Pro 能耗当手机数据、将 SqueezeSAM 当 Agent 端到端。
+- Work 不要重新做科研或自行编造测试；先验证正式 packaged image target→semantic map→native PPTX→Windows/LibreOffice 实际渲染、中文字体与 Notes 写读回。
+
 ## S05 追加 P0 内容约束（2026-10-23，优先级高于 PNG 中的文字）
 
 本轮审计发现 S05 的三次 Image2.5 视觉候选均存在**不受证据支持的加速/能耗/带宽比率**，以及将 Decode/Attention/MLP 绝对绑定 NPU 的倾向，**三张均技术拒收**。用户认可的是蓝白配色和分栏，不是数字。
