@@ -1,0 +1,31 @@
+{
+  "python": "3.12.14",
+  "node": "C:\\Program Files\\nodejs\\node.EXE",
+  "npm": "C:\\Program Files\\nodejs\\npm.CMD",
+  "codex": true,
+  "codex_skill_dir": "C:\\Users\\User\\.codex\\skills",
+  "agents": {
+    "codex": {
+      "detected": true,
+      "skill_dir": "C:\\Users\\User\\.codex\\skills"
+    },
+    "claude": {
+      "detected": false,
+      "skill_dir": "C:\\Users\\User\\.claude\\skills"
+    },
+    "qoder": {
+      "detected": false,
+      "skill_dir": "C:\\Users\\User\\.qoder\\skills"
+    }
+  },
+  "image_generation": "Discovered by the Agent from tools available in the current conversation",
+  "node_runtime": "C:\\Users\\User\\.slidepoise\\node\\node_modules",
+  "preview_tools": {
+    "office": "C:\\Program Files\\LibreOffice\\program\\soffice.exe",
+    "pdftoppm": "C:\\Users\\User\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.EXE"
+  },
+  "pptxgenjs": true,
+  "framework_home": "C:\\Users\\User\\.slidepoise",
+  "active_profile": "consulting",
+  "profiles": 4
+}
