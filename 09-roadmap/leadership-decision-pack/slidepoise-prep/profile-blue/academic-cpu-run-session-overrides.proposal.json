@@ -1,0 +1,19 @@
+{
+  "profile": "academic-cpu-insight",
+  "density": "information_rich",
+  "header": {
+    "enabled": true,
+    "height_px": 41,
+    "left_text": "Agentic CPU µArch Insight",
+    "right_text": "2027–2029 · 公开证据"
+  },
+  "footer": {
+    "enabled": true,
+    "height_px": 41,
+    "left_text": "技术路线研判 · 公开资料",
+    "center_text": "",
+    "slide_number": {
+      "enabled": true
+    }
+  }
+}
