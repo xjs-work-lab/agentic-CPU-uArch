@@ -1,0 +1,74 @@
+{
+  "schema_version": "s03-controlled-png-v01",
+  "slide_id": "S03",
+  "date": "2026-10-23",
+  "status": "CONTENT_AND_RENDER_CANDIDATE_USER_VISUAL_SIGNOFF_PENDING",
+  "decision_state": {
+    "priority_engineering_platform": 3,
+    "conditional_reserves": 3,
+    "evidence_supported_agent_cpu_hardware_primary_bets": 0
+  },
+  "assets": [
+    {
+      "filename": "S03-controlled-content-v01.png",
+      "bytes": 412424,
+      "sha256": "e7fbc7446e5ffd1c183e9d5cad9825b2aa7125e5d688cd79653b44e2b904c944",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    },
+    {
+      "filename": "S03-16x9-frame-preview-v01.png",
+      "bytes": 420093,
+      "sha256": "36e802e194b2b0e2dc3ffa3d734749bd927c8f91791851b73f944b60b2efc588",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    },
+    {
+      "filename": "S03-controlled-content-v01.svg",
+      "bytes": 83224,
+      "sha256": "2b1d601b7a31bc77392ff84172e3590d35f50c02770cab9ed28192ba471ae863",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    },
+    {
+      "filename": "S03-render-QA-v01.json",
+      "bytes": 984,
+      "sha256": "0316f305387f2ada8cb9ab110a692eaa7a7b6813840717691b43885c9423c095",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    },
+    {
+      "filename": "S03-speaker-notes-v01.md",
+      "bytes": 2670,
+      "sha256": "ef6fd9d2660f31e4eb8e7b2be89b9380db5977b450ebea4f77abc3d96cfe9e81",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    },
+    {
+      "filename": "S03-work-handoff-v01.md",
+      "bytes": 1399,
+      "sha256": "87a9ff125ce40e2aca2874b01480a76931ffe9668937b5d56ba6fc429724db1b",
+      "downloadable_in_chat": true,
+      "binary_in_github": false
+    }
+  ],
+  "package": {
+    "filename": "S03-controlled-source-and-PNG-v01.zip",
+    "bytes": 902837,
+    "sha256": "d9793b232bdb8c06e37d293dc2950a6a498e1ceb00b77fe8f85424c51dc16e16",
+    "zip_crc_verified": true,
+    "includes_manifest": true
+  },
+  "source_contracts": [
+    "02-slide-contracts.md#S03",
+    "03-evidence-map.md#S03",
+    "09-roadmap/current.md",
+    "08-decisions/events/DEC-PORTFOLIO-002.md",
+    "08-decisions/events/DEC-A-008.md"
+  ],
+  "visual_source": "Four previously reviewed Image2.5 decorative icon crops from S15; all visible technical text/data rebuilt deterministically; full-slide generative drafts are not accepted sources.",
+  "github_binary_uploaded": false,
+  "qa_file": "qa/round09-s03-decision-portfolio-audit-2026-10-23.md",
+  "notes_file": "notes/S03-speaker-notes-2026-10-23.md",
+  "handoff_file": "S03-work-handoff-v01.md"
+}
