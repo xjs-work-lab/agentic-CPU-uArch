@@ -3,6 +3,14 @@
 > **当前状态：PREPARATION_DONE_FOR_CONCEPTS / FORMAL_GENERATION_BLOCKED_ON_LOCAL_PREFLIGHT**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## 重要：2026-10-23 本地配置核验后补充的阻断门槛
+
+- 用户已将 `slidepoise-config/doctor.json` 和 `profile-show.json` 上传 GitHub。已确认当前激活 `consulting` 为橙色/Georgia/Arial 的**指定硬规则**，与我们已认可的蓝色中文研究视觉基线冲突。
+- 进入正式图片生成或 native reconstruction **必须优先使用独立 Profile `academic-cpu-insight`**；其设计补丁见 `08-profile-adaptation-contract.md` 与 `profile-blue/academic-cpu-insight.profile-update.json`。补丁目前只是 GitHub 候选文件，**未在用户本机安装/运行**。
+- `doctor` / `profile show` **不足以确认 substantive canvas**。要在选用独立 Profile 后获取真实 `run resolve` 的 `resolved-config.json`，核查 full-slide、header/footer 和 `derived.generation_region_px`，再决定图片尺寸。参考证据见 `qa/slidepoise-preflight-snapshot-2026-10-23.md`。
+- 本地最小检查任务可以在普通终端完成，无需消耗 Work 令牌。只有完成 Profile / resolved canvas 核验才允许把当前 SVG 从 `concept_only` 推向正式图片 target 阶段。
+- 如尚未做完这一步，**严禁以默认 Consulting Profile 先做四页再改色**，否则图像/Native PPT 样式会形成两套权威。
+
 ## 一、执行目标
 
 用本地已安装的 **SlidePoise packaged workflow**，将基于 Agentic CPU 微架构研究的 **17 页中文学术型技术汇报**制作为真正可编辑的 16:9 PPTX，附带详细 Speaker Notes，并渲染、审核、保存归档。
