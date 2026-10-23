@@ -1,0 +1,65 @@
+{
+  "schema_version": "s05-controlled-png-v04",
+  "slide_id": "S05",
+  "date": "2026-10-23",
+  "status": "CONTENT_AND_RENDERED_VECTOR_SAFE_CANDIDATE_USER_VISUAL_ACCEPTANCE_PENDING",
+  "provenance": {
+    "image2_5": "Used only as visual reference for blue-and-white infographic styling; all Chinese text, nodes, arrows, performance claims and labels were independently rebuilt from approved content contracts.",
+    "not_source_image": "Not a pixel-edit of an Image2.5 PNG; deterministic SVG->PNG construction to prevent model-invented claims.",
+    "evidence": [
+      "PAPER-098 HeRo",
+      "PAPER-003 SERENO"
+    ],
+    "copy_contract": "11-s05-approved-copy-and-reconstruction-contract.md",
+    "semantic_edges": "generated-images/formal-content-v02/S05-edge-contract-v02.json",
+    "local_preflight": "../slidepoise-config/slidepoise-preflight-export.json"
+  },
+  "files": [
+    {
+      "name": "S05-controlled-content-v04.png",
+      "size_px": [
+        2048,
+        1070
+      ],
+      "sha256": "289df22c044c3a74e82f767fe9f52d0deaabb926b4b9bb7026b883e9f1e6547c",
+      "present_in_chat_artifact": true,
+      "present_in_github": false
+    },
+    {
+      "name": "S05-16x9-frame-preview-v04.png",
+      "size_px": [
+        2048,
+        1152
+      ],
+      "sha256": "b4c04de83c084f4b48e52ead5dcedc74c12f112a2d7934fa3c7e4012684fc39a",
+      "present_in_chat_artifact": true,
+      "present_in_github": false
+    },
+    {
+      "name": "S05-controlled-content-v04.svg",
+      "sha256": "a4897c92d621c46d4b0e340a502ae073c9b1d2efc898a776a871fe5f5ff1e87f",
+      "present_in_chat_artifact": true,
+      "present_in_github": false
+    },
+    {
+      "name": "S05-controlled-source-and-PNG-v04.zip",
+      "present_in_chat_artifact": true,
+      "present_in_github": false
+    }
+  ],
+  "qa": {
+    "nodes": 10,
+    "edges": 13,
+    "banned_measurements_present": 0,
+    "mandatory_text_missing": 0,
+    "text_bounds_estimate": 0,
+    "svg_to_png_rendered_and_inspected": true,
+    "pixel_dimensions_verified": true,
+    "needs": [
+      "User visual signoff",
+      "SlidePoise packaged generation request/accepted input",
+      "Native editable PPTX and speaker notes reconstruction/render audit"
+    ],
+    "policy": "Do not change claim semantics; never promote based on file existence alone."
+  }
+}
