@@ -13,10 +13,11 @@
 | [04-risk-boundaries.md](04-risk-boundaries.md) | P0/P1/P2 拒收条件、16 条高风险表达与图形防误用规则 | 已归档 v0.1 |
 | [05-visual-spec.md](05-visual-spec.md) | 学术技术风格、SlidePoise 正文画布、原生对象与全过程 QA | DRAFT v0.1 |
 | [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
+| [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 仅采集真实 Profile/画布/字体/备注能力，避免在 Work 模式重新探索 | 待用户本地执行 |
 
 ## 后续计划（未完成，不要误认已有文件）
 
-1. 在本地一次性导出 SlidePoise doctor、实际 Profile、frame/content canvas、中文字体与 Speaker Notes 支持情况；存为可审计的预检记录。**画布未确认之前，聊天图像只能标记 concept_only。**
+1. 根据 [最小本地预检](qa/slidepoise-local-preflight-minimal.md)，一次性导出 doctor、实际 Profile、frame/content canvas、中文字体与 Speaker Notes 支持情况；存为可审计的预检记录。**画布未确认之前，聊天图像只能标记 concept_only。**
 2. 聊天窗口生成 S03/S05/S08/S15 四页视觉候选，逐张审查并将 PNG、manifest、精确尺寸/哈希及已知缺陷保存到 GitHub。
 3. 编写 `07-work-mode-handoff.md`；本地严格按 SlidePoise 原生重建路径制作小样、渲染审计并完成 17 页可编辑 PPTX。
 
