@@ -1,8 +1,18 @@
 # 07｜SlidePoise 本地 Work 模式执行交接（Handoff v0.1）
 
-> **当前状态：PREPARATION_DONE_FOR_CONCEPTS / FORMAL_GENERATION_BLOCKED_ON_LOCAL_PREFLIGHT**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
+> **当前状态：BLUE_PROFILE_AND_16_9_CANVAS_VERIFIED / VECTOR_CONTENT_CANDIDATES_WRITTEN / VISUAL_RENDER_PENDING**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## 本轮最新生效配置：2026-10-23（覆盖下方历史预检阻断）
+
+- 从 GitHub 实际读取已上传的 slidepoise-config/slidepoise-preflight-export.json。独立蓝色 Profile academic-cpu-insight **已在本地成功应用**；不需要再安装、创建或重复预检。
+- **完整 PPT 页面 2048×1152，精确 16:9**；header 41px、footer 41px；正式 substantive canvas 2048×1070，y 偏移 41px。
+- 09-frame-and-content-region-contract.md 锁定母版职责；10-formal-content-region-samples.md 保存四张 2048×1070 正文 SVG 和对应的 2048×1152 整页母版组合预览。八张 SVG 已静态检查，**未经真正 SVG/PNG 目视或 PowerPoint 渲染**。
+- 本地已有 agentic-cpu-sample-df86e8 run。建议 frame 静态文案的 session override 在 profile-blue/academic-cpu-run-session-overrides.proposal.json，**尚未应用到 run**。
+- 原生页码目前配置为 {slide_number}，组合示意中的 NN/17 为视觉参考，不代表已验证的 PowerPoint 字段。
+- 下一个 Work 最小任务应是四张样页的真实渲染/内容审核及 packaged SlidePoise 重建试点（优先 S05），验证 native 对象、master、页码和 speaker notes，而不是重做 doctor。
+
+## 以下为当时配置未完成时期的历史记录（不再是当前阻断状态）
 ## 重要：2026-10-23 本地配置核验后补充的阻断门槛
 
 - 用户已将 `slidepoise-config/doctor.json` 和 `profile-show.json` 上传 GitHub。已确认当前激活 `consulting` 为橙色/Georgia/Arial 的**指定硬规则**，与我们已认可的蓝色中文研究视觉基线冲突。
@@ -53,7 +63,7 @@
 3. \`generated-images/S08-sme2-concept-v01.svg\`
 4. \`generated-images/S15-roadmap-concept-v01.svg\`
 
-## 三、启动先跑极简 preflight（不要重新安装）
+## 三、旧版 preflight 步骤（已完成，禁止无故重复执行）
 
 1. 运行 \`slidepoise doctor\`、\`slidepoise profile show\`。使用本地实际可用 CLI，**不用再次执行 setup**。
 2. 从实际 Profile + run overrides 确认完整幻灯片尺寸、header/footer 是否启用及尺寸、**substantive canvas 宽高与比例**、中文/拉丁字体、图像生成服务与 preview 能力。
