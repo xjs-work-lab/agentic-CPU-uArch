@@ -16,6 +16,7 @@
 | [07-work-mode-handoff.md](07-work-mode-handoff.md) | 本地最小预检、四页 SlidePoise 重建、备注验证、17 页交付门槛 | Handoff v0.1 |
 | [08-profile-adaptation-contract.md](08-profile-adaptation-contract.md) | 用户已上传 Consulting Profile 的冲突分析、独立蓝色科研风 Profile 设计及终端配置流程 | 草案已归档 / 本地未应用 |
 | [Academic CPU Profile JSON 补丁](profile-blue/academic-cpu-insight.profile-update.json) | 机器可读的蓝色 Profile 字段 payload，使用 CLI update 并需本机验证 | 候选配置 / 未激活 |
+| [Windows CMD 一键配置脚本](scripts/configure-slidepoise.py) | 针对 CLI 未加 PATH 与长 JSON 参数问题，自动应用蓝色 Profile、创建/复用 run 并导出脱敏画布摘要 | 已归档，等待本机实际运行 |
 | [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
 | [Round03 样页概念图审计](qa/round03-visual-concept-audit-2026-10-23.md) | 首轮 ImageGen 候选 P0 拒收、四张 SVG 关系和数值审查及遗留验收项 | 源码审查完成，真实渲染待验 |
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 仅采集真实 Profile/画布/字体/备注能力，避免在 Work 模式重新探索 | 待用户本地执行 |
