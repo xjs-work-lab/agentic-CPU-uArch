@@ -3,6 +3,15 @@
 > **当前状态：BLUE_PROFILE_AND_16_9_CANVAS_VERIFIED / VECTOR_CONTENT_CANDIDATES_WRITTEN / VISUAL_RENDER_PENDING**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## S03 已有总体判断页目标 PNG 与锁定内容（2026-10-23）
+
+- 正文 PNG：`S03-controlled-content-v01.png`（2048×1070）；整页预览：`S03-16x9-frame-preview-v01.png`（2048×1152）。完整 ZIP 当前由聊天附件交付，含 PNG、SVG、QA、Notes、handoff 与构建脚本。
+- 必须先读 `14-s03-approved-copy-and-reconstruction-contract.md`、`qa/round09-s03-decision-portfolio-audit-2026-10-23.md`、`generated-images/formal-content-v02/S03-controlled-png-v01.manifest.json` 和 `notes/S03-speaker-notes-2026-10-23.md`。
+- 视觉语义锁定：实色蓝 = 三项优先工程/平台；浅蓝虚线 = 三项条件研究；大号 0 = 当前无证据充分的新硬件主押注，**不是永久否定 CPU 硬件价值**。
+- 正式状态来源是 `current.md`、`DEC-PORTFOLIO-002`、`DEC-A-008`。A 已降为条件储备；旧 82.5 分不再是当前评分。不要在可见页面新增内部方向 ID 或旧分数。
+- **GitHub 只存 S03 文本合同/QA/Notes/handoff/manifest；PNG、SVG、ZIP 二进制尚未提交 GitHub**，聊天 ZIP 是本轮可用素材。
+- 用户视觉确认后，将 S03、S05、S08、S15 一起进入四页 SlidePoise native reconstruction 试制；必须检查对象可编辑、16:9 母版、字体、页码和 Speaker Notes 写入/读回。
+
 ## S15 已有目标 PNG / 五层三年锁定路线（2026-10-23）
 
 - 正文 PNG：`S15-controlled-content-v01.png`，2048×1070；整页 16:9 示意 PNG：`S15-16x9-frame-preview-v01.png`，2048×1152。当前聊天 ZIP 含二者+SVG+五个 Image2.5 图标+QA 脚本+完整 Notes；GitHub 目前仅存文本/哈希记录，不要误判二进制已存仓。
