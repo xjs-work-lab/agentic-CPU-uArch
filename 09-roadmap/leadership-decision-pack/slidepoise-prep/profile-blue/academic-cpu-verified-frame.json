@@ -1,0 +1,98 @@
+{
+  "schema": "agentic-slidepoise-frame-contract-v1",
+  "source": "09-roadmap/leadership-decision-pack/slidepoise-config/slidepoise-preflight-export.json",
+  "source_blob_sha": "c12eee44d8bc4f07635902ec955c4b96d77d2999",
+  "profile": "academic-cpu-insight",
+  "profile_revision": "c330fa78476cd5d74298edb608b3fcedde4b90c6f8175905316588b95ea779d6",
+  "slide_full_px": [
+    2048,
+    1152
+  ],
+  "slide_aspect_ratio": "16:9",
+  "frame": {
+    "header": {
+      "enabled": true,
+      "height_px": 41,
+      "location_px": [
+        0,
+        0,
+        2048,
+        41
+      ],
+      "actual_text": "",
+      "proposed_left": "Agentic CPU µArch Insight",
+      "proposed_right": "2027–2029 · 公开证据"
+    },
+    "footer": {
+      "enabled": true,
+      "height_px": 41,
+      "location_px": [
+        0,
+        1111,
+        2048,
+        41
+      ],
+      "actual_text": "",
+      "proposed_left": "技术路线研判 · 公开资料",
+      "numbering": {
+        "enabled": true,
+        "currently_verified_format": "{slide_number}",
+        "desired_but_unverified": "03 / 17"
+      }
+    }
+  },
+  "content": {
+    "canvas_px": [
+      2048,
+      1070
+    ],
+    "offset_y_px": 41,
+    "aspect_ratio": 1.914019,
+    "proposed_regions_px": {
+      "title": [
+        84,
+        56,
+        1880,
+        112
+      ],
+      "context": [
+        84,
+        169,
+        1880,
+        59
+      ],
+      "main": [
+        64,
+        246,
+        1920,
+        690
+      ],
+      "citation": [
+        84,
+        960,
+        1880,
+        70
+      ]
+    }
+  },
+  "palette": {
+    "navy": "#102C55",
+    "dark": "#174478",
+    "blue": "#2473B6",
+    "light": "#E7F2FD",
+    "background": "#FFFFFF",
+    "ink": "#173753",
+    "muted": "#58738A",
+    "rule": "#C9DBEA"
+  },
+  "fonts": {
+    "primary": "Microsoft YaHei",
+    "local_installed_not_verified": true
+  },
+  "status": {
+    "preflight_loaded": true,
+    "frame_template_not_rendered": true,
+    "speaker_notes_not_tested": true,
+    "substantive_svgs_visual_qa": "pending"
+  }
+}
