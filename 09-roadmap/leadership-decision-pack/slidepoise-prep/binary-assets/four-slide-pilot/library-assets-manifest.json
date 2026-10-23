@@ -151,5 +151,17 @@
       "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S15-controlled-source-and-PNG-v01.zip",
       "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S15-controlled-source-and-PNG-v01.zip"
     }
-  ]
+  ],
+  "single_bundle": {
+    "name": "Agentic_CPU_4Slide_Work_Input_2026-10-23.zip",
+    "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/Agentic_CPU_4Slide_Work_Input_2026-10-23.zip",
+    "bytes": 8905228,
+    "sha256": "84970ea9d7f382162cb5a0ed6c4dc6b82727095698971b545ffeb98094dd1176",
+    "contents": "4 substantive PNG + 4 full 16:9 previews + 4 source ZIP + README.md + manifest.json",
+    "archive_entries": 14,
+    "library_persisted": true,
+    "materialized_sha256_verified": true,
+    "zip_crc_ok": true,
+    "github_binary_committed": false
+  }
 }
