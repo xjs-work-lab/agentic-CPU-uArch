@@ -1,0 +1,155 @@
+{
+  "schema_version": "agentic-cpu-four-slide-binary-assets-v1",
+  "status": "LIBRARY_PERSISTED_AND_LIST_VERIFIED__GITHUB_BINARY_PENDING",
+  "date": "2026-10-23",
+  "library_folder": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot",
+  "repo_archive_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/",
+  "notes": [
+    "All 12 physical files uploaded to the user's ChatGPT Library and independently verified by Files list.",
+    "Work must retrieve actual binary files via Library (or user attachment), not sandbox paths or reconstructed text.",
+    "This manifest is a metadata record; not proof that binaries exist in GitHub.",
+    "Only the *_controlled-content*.png files are valid substantive image targets (2048x1070); full previews are master reference (2048x1152)."
+  ],
+  "assets": [
+    {
+      "name": "S03-controlled-content-v01.png",
+      "slide": "S03",
+      "role": "content_png",
+      "size_bytes": 412424,
+      "sha256": "e7fbc7446e5ffd1c183e9d5cad9825b2aa7125e5d688cd79653b44e2b904c944",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S03-controlled-content-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S03-controlled-content-v01.png",
+      "dimensions_px": [
+        2048,
+        1070
+      ]
+    },
+    {
+      "name": "S05-controlled-content-v04.png",
+      "slide": "S05",
+      "role": "content_png",
+      "size_bytes": 349976,
+      "sha256": "289df22c044c3a74e82f767fe9f52d0deaabb926b4b9bb7026b883e9f1e6547c",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S05-controlled-content-v04.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S05-controlled-content-v04.png",
+      "dimensions_px": [
+        2048,
+        1070
+      ]
+    },
+    {
+      "name": "S08-controlled-content-v01.png",
+      "slide": "S08",
+      "role": "content_png",
+      "size_bytes": 463858,
+      "sha256": "5b2037f02c2974791c684c5c1cf4002aca4818cd257f0e2b77e3ee01d0067070",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S08-controlled-content-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S08-controlled-content-v01.png",
+      "dimensions_px": [
+        2048,
+        1070
+      ]
+    },
+    {
+      "name": "S15-controlled-content-v01.png",
+      "slide": "S15",
+      "role": "content_png",
+      "size_bytes": 405655,
+      "sha256": "8a1fce17bb9f8bfe8fb181a464b3e676d32a85862b6b3ddc9fc49d3bd2bead7e",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S15-controlled-content-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S15-controlled-content-v01.png",
+      "dimensions_px": [
+        2048,
+        1070
+      ]
+    },
+    {
+      "name": "S03-16x9-frame-preview-v01.png",
+      "slide": "S03",
+      "role": "full_preview_png",
+      "size_bytes": 420093,
+      "sha256": "36e802e194b2b0e2dc3ffa3d734749bd927c8f91791851b73f944b60b2efc588",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S03-16x9-frame-preview-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S03-16x9-frame-preview-v01.png",
+      "dimensions_px": [
+        2048,
+        1152
+      ]
+    },
+    {
+      "name": "S05-16x9-frame-preview-v04.png",
+      "slide": "S05",
+      "role": "full_preview_png",
+      "size_bytes": 355503,
+      "sha256": "b4c04de83c084f4b48e52ead5dcedc74c12f112a2d7934fa3c7e4012684fc39a",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S05-16x9-frame-preview-v04.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S05-16x9-frame-preview-v04.png",
+      "dimensions_px": [
+        2048,
+        1152
+      ]
+    },
+    {
+      "name": "S08-16x9-frame-preview-v01.png",
+      "slide": "S08",
+      "role": "full_preview_png",
+      "size_bytes": 469262,
+      "sha256": "2c8eda5f37be4f278ccebbd43d543c1e21ff9bc205219da72e710bab65be44bd",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S08-16x9-frame-preview-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S08-16x9-frame-preview-v01.png",
+      "dimensions_px": [
+        2048,
+        1152
+      ]
+    },
+    {
+      "name": "S15-16x9-frame-preview-v01.png",
+      "slide": "S15",
+      "role": "full_preview_png",
+      "size_bytes": 413602,
+      "sha256": "6c0e67dd234c7a2a907e72dd832913b37a9dab1bb850110e01aa83d0b3727f87",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S15-16x9-frame-preview-v01.png",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S15-16x9-frame-preview-v01.png",
+      "dimensions_px": [
+        2048,
+        1152
+      ]
+    },
+    {
+      "name": "S03-controlled-source-and-PNG-v01.zip",
+      "slide": "S03",
+      "role": "source_zip",
+      "size_bytes": 902836,
+      "sha256": "589839ea628aa6b3de64cc914eea972e3d6a9c64066ae1510f8c141336a180ca",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S03-controlled-source-and-PNG-v01.zip",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S03-controlled-source-and-PNG-v01.zip"
+    },
+    {
+      "name": "S05-controlled-source-and-PNG-v04.zip",
+      "slide": "S05",
+      "role": "source_zip",
+      "size_bytes": 697555,
+      "sha256": "00c0b302854fe29edcc4ca70ec4168f589264bfb2dfa48c65f163970bac1439f",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S05-controlled-source-and-PNG-v04.zip",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S05-controlled-source-and-PNG-v04.zip"
+    },
+    {
+      "name": "S08-controlled-source-and-PNG-v01.zip",
+      "slide": "S08",
+      "role": "source_zip",
+      "size_bytes": 3193637,
+      "sha256": "fdda09cdebb97d2fb22325b811c4f1b6b4ac2ca77b7790b8aafe8e3f3efb127a",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S08-controlled-source-and-PNG-v01.zip",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S08-controlled-source-and-PNG-v01.zip"
+    },
+    {
+      "name": "S15-controlled-source-and-PNG-v01.zip",
+      "slide": "S15",
+      "role": "source_zip",
+      "size_bytes": 893740,
+      "sha256": "c35fae64b9789b397905a5b5186165637a884e87c83009d053129cda93ed21a9",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/four-slide-pilot/S15-controlled-source-and-PNG-v01.zip",
+      "github_target": "09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/S15-controlled-source-and-PNG-v01.zip"
+    }
+  ]
+}
