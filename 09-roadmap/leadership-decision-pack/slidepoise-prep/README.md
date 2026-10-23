@@ -1,5 +1,15 @@
 # SlidePoise PPT 前置设计区（中文）
 
+## 一次附加即可开始 Work：四页真实图片总包（2026-10-23）
+
+**已实际保存并从 Library 下载回读校验：** `Agentic_CPU_4Slide_Work_Input_2026-10-23.zip`，约 8.9 MB，内部14项：四张正文PNG、四张16:9预览PNG、四份源码ZIP，以及README和manifest。SHA-256：`84970ea9d7f382162cb5a0ed6c4dc6b82727095698971b545ffeb98094dd1176`；ZIP CRC通过。
+
+**唯一可直接取的持久位置：** ChatGPT Library `/Agentic-CPU-uArch/slidepoise/four-slide-pilot/Agentic_CPU_4Slide_Work_Input_2026-10-23.zip`。
+
+Work 若能直接访问 Library，用这个文件名检索并取得真实ZIP。若 Work 无法检索，请用户在 Work 的“附加文件/Library”选择**这一个ZIP**并附加即可；不用再找四张不同的PNG，更不要重新设计。解压后取 `content_png/` 四张作为SlidePoise 2048×1070正文目标。`frame_previews_16x9/` 只对照，不得当正文输入。
+
+本包目前 **Library 已归档且真实字节哈希回读成功**；**Github 仍仅有文本索引，尚未包含 PNG/ZIP 二进制文件**。待 Work 从 Library 取得后提交 GitHub 并真正校验。
+
 > **2026-10-23｜G1 内容归档已完成；G2 实际 16:9 尺寸的 SVG 视觉候选已入库；尚未生成 SlidePoise 正式 accepted-slide.png 或原生 PPTX。**
 > 本目录用于在聊天窗口形成可审计的技术内容、图形约束、图像候选与 GitHub 归档，再将被批准的输入交给本地 SlidePoise 执行 native PPT reconstruction。
 
