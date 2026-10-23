@@ -99,8 +99,8 @@
     },
     {
       "path": "S08-controlled-source-and-PNG-v01.zip",
-      "sha256": "f13e586b99ab1811ef50f3e6936b0c23859521e94c9c4cb0184beb175350a645",
-      "bytes": 1272664,
+      "sha256": "fdda09cdebb97d2fb22325b811c4f1b6b4ac2ca77b7790b8aafe8e3f3efb127a",
+      "bytes": 3193637,
       "in_conversation": true,
       "in_github": false
     }
@@ -119,5 +119,16 @@
     "native_powerpoint_editability_not_tested": true,
     "speaker_notes_not_inserted": true
   },
-  "github_binary_archive": "NOT_YET_UPLOADED"
+  "github_binary_archive": "NOT_YET_UPLOADED",
+  "full_archive_includes": [
+    "S08-controlled-content-v01.png",
+    "S08-16x9-frame-preview-v01.png",
+    "S08-controlled-content-v01.svg",
+    "S08-image2.5-tech-illustration-crop-v01.png",
+    "S08-image2.5-full-art-v01.png",
+    "S08-render-QA-v01.json",
+    "build_s08_controlled.py",
+    "qa_s08.py"
+  ],
+  "full_archive_integrity_verified": true
 }
