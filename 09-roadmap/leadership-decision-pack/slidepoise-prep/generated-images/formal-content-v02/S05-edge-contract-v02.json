@@ -1,0 +1,187 @@
+{
+  "schema_version": "agentic-stage-dag-concept-v02",
+  "slide_id": "S05",
+  "status": "vector_reference_only_not_source_paper_figure",
+  "purpose": "Formalize semantic dependencies for native PowerPoint connector reconstruction",
+  "source_scope": [
+    "PAPER-098 HeRo",
+    "PAPER-003 SERENO as shared-memory/QoE context"
+  ],
+  "nodes": [
+    {
+      "id": "N1",
+      "label": "用户目标",
+      "role": "agent_request"
+    },
+    {
+      "id": "N2",
+      "label": "任务规划",
+      "role": "runtime_planner"
+    },
+    {
+      "id": "N3",
+      "label": "查询重写",
+      "role": "optional_stage"
+    },
+    {
+      "id": "N4a",
+      "label": "检索 A",
+      "role": "parallel_candidate"
+    },
+    {
+      "id": "N4b",
+      "label": "检索 B",
+      "role": "conditional_parallel_candidate"
+    },
+    {
+      "id": "N5",
+      "label": "聚合/重排",
+      "role": "result_aggregation"
+    },
+    {
+      "id": "N6",
+      "label": "推理/生成",
+      "role": "stage_heterogeneous_execution"
+    },
+    {
+      "id": "N7",
+      "label": "工具操作",
+      "role": "authorized_optional_tool_action"
+    },
+    {
+      "id": "N8",
+      "label": "实际结果验证",
+      "role": "validation_not_api_success_only"
+    },
+    {
+      "id": "N9",
+      "label": "状态更新",
+      "role": "feedback_or_end"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "from": "N1",
+      "to": "N2",
+      "edge_role": "control_request",
+      "conditional": false
+    },
+    {
+      "id": "E02",
+      "from": "N2",
+      "to": "N3",
+      "edge_role": "conditional_stage_expansion",
+      "conditional": true,
+      "condition": "Query rewrite helps current request"
+    },
+    {
+      "id": "E03",
+      "from": "N2",
+      "to": "N4a",
+      "edge_role": "conditional_direct_retrieval",
+      "conditional": true,
+      "condition": "No rewrite required",
+      "render_style": "dashed"
+    },
+    {
+      "id": "E04",
+      "from": "N3",
+      "to": "N4a",
+      "edge_role": "data_dependency",
+      "conditional": true
+    },
+    {
+      "id": "E05",
+      "from": "N3",
+      "to": "N4b",
+      "edge_role": "parallel_data_request",
+      "conditional": true
+    },
+    {
+      "id": "E06",
+      "from": "N4a",
+      "to": "N5",
+      "edge_role": "result_dependency",
+      "conditional": false
+    },
+    {
+      "id": "E07",
+      "from": "N4b",
+      "to": "N5",
+      "edge_role": "result_dependency",
+      "conditional": true,
+      "condition": "N4b branch was activated"
+    },
+    {
+      "id": "E08",
+      "from": "N5",
+      "to": "N6",
+      "edge_role": "input_dependency",
+      "conditional": false
+    },
+    {
+      "id": "E09",
+      "from": "N6",
+      "to": "N7",
+      "edge_role": "conditional_authorized_tool_action",
+      "conditional": true
+    },
+    {
+      "id": "E10",
+      "from": "N6",
+      "to": "N8",
+      "edge_role": "conditional_direct_verification",
+      "conditional": true,
+      "condition": "No external tool action needed",
+      "render_style": "dashed"
+    },
+    {
+      "id": "E11",
+      "from": "N7",
+      "to": "N8",
+      "edge_role": "actual_external_effect_check",
+      "conditional": true
+    },
+    {
+      "id": "E12",
+      "from": "N8",
+      "to": "N9",
+      "edge_role": "verified_state_update",
+      "conditional": false
+    },
+    {
+      "id": "E13",
+      "from": "N9",
+      "to": "N2",
+      "edge_role": "conditional_feedback",
+      "conditional": true,
+      "condition": "Continue/replan required",
+      "render_style": "dashed"
+    }
+  ],
+  "non_dag_constraints": [
+    {
+      "source": "CPU/GPU/NPU resource pool",
+      "target": "Runtime stage placement",
+      "role": "capability and switching-cost constraint"
+    },
+    {
+      "source": "shared DRAM / foreground QoE",
+      "target": "Runtime stage placement",
+      "role": "contention constraint"
+    }
+  ],
+  "constraints": [
+    "Conceptual workflow. Do not label as an exact HeRo original figure.",
+    "Only N4b if activated; N5 may proceed when required upstream retrieval results are available.",
+    "Do not depict fixed hardware NPU ownership for any stage.",
+    "Tools are optional; API success does not imply external outcome success."
+  ],
+  "render_qa": [
+    "No arrows passing through text or node boxes",
+    "Control/optional lines marked separately from data dependencies",
+    "Path termini must align with source/target nodes",
+    "Different arrow roles must be in native PowerPoint semantic map"
+  ]
+}
