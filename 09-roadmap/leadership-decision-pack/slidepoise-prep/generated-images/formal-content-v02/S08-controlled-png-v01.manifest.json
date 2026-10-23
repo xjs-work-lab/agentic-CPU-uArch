@@ -1,0 +1,123 @@
+{
+  "schema_version": "s08-controlled-image-v01",
+  "slide_id": "S08",
+  "date": "2026-10-23",
+  "status": "SOURCE_BOUNDED_RENDERED_VISUAL_CANDIDATE_USER_SIGNOFF_PENDING",
+  "style_origin": "Image2.5 visual asset for decorative CPU chip illustration; exact native-style typography, hierarchy and chart redrawn deterministically",
+  "full_slide_px": [
+    2048,
+    1152
+  ],
+  "substantive_px": [
+    2048,
+    1070
+  ],
+  "master_frame_px": {
+    "header": 41,
+    "footer": 41
+  },
+  "profile": "academic-cpu-insight",
+  "content_contract": "02-slide-contracts.md#s08",
+  "source_links": [
+    "https://pytorch.org/blog/accelerating-on-device-ml-inference-with-executorch-and-arm-sme2/",
+    "https://arxiv.org/abs/2606.16332",
+    "https://llvm.org/docs/AArch64SME.html"
+  ],
+  "source_mapping": {
+    "cpu_sme_isa_role": "PAPER-052 + LLVM AArch64 SME official",
+    "phone_measurements": "TOOL-012 PyTorch/Arm first-party blog",
+    "phone": "vivo X300",
+    "model": "SqueezeSAM interactive image segmentation",
+    "cpu_cores": 1,
+    "performance_mode": "Normal / default mobile power",
+    "framework": "ExecuTorch / XNNPACK / KleidiAI",
+    "metric": "model-only end-to-end inference latency, ms",
+    "data_ms": {
+      "INT8": {
+        "SME2_off": 555.8,
+        "SME2_on": 304.1,
+        "ratio": 1.83
+      },
+      "FP16": {
+        "SME2_off": 1163,
+        "SME2_on": 298.2,
+        "ratio": 3.9
+      }
+    },
+    "plot_scale_ms": [
+      0,
+      1200
+    ],
+    "data_movement_share_after_SME2": {
+      "INT8_percent": 41.4,
+      "FP16_percent": 39.9
+    },
+    "limitations": [
+      "Not an Agent workload",
+      "Not phone energy measurement",
+      "Not direct CPU-vs-NPU benchmark",
+      "Apple M4 Pro SMEPilot energy measurements not shown",
+      "Image2.5 illustration is imaginative, not an Arm architecture block diagram"
+    ]
+  },
+  "files": [
+    {
+      "path": "S08-controlled-content-v01.png",
+      "sha256": "5b2037f02c2974791c684c5c1cf4002aca4818cd257f0e2b77e3ee01d0067070",
+      "bytes": 463858,
+      "size_px": [
+        2048,
+        1070
+      ],
+      "in_conversation": true,
+      "in_github": false
+    },
+    {
+      "path": "S08-16x9-frame-preview-v01.png",
+      "sha256": "2c8eda5f37be4f278ccebbd43d543c1e21ff9bc205219da72e710bab65be44bd",
+      "bytes": 469262,
+      "size_px": [
+        2048,
+        1152
+      ],
+      "in_conversation": true,
+      "in_github": false
+    },
+    {
+      "path": "S08-controlled-content-v01.svg",
+      "sha256": "8e152c13ae48311f4aa58c758419606d72612ff02f362d47d26cf4deba173329",
+      "bytes": 246109,
+      "in_conversation": true,
+      "in_github": false
+    },
+    {
+      "path": "S08-image2.5-tech-illustration-crop-v01.png",
+      "sha256": "3d79249e93add7ab7e0dd5142f10d9ee117820721685f434529f0b25a1d28a50",
+      "bytes": 172450,
+      "in_conversation": true,
+      "in_github": false
+    },
+    {
+      "path": "S08-controlled-source-and-PNG-v01.zip",
+      "sha256": "f13e586b99ab1811ef50f3e6936b0c23859521e94c9c4cb0184beb175350a645",
+      "bytes": 1272664,
+      "in_conversation": true,
+      "in_github": false
+    }
+  ],
+  "checks": {
+    "png_rendered": true,
+    "full_preview_rendered": true,
+    "xml_valid": true,
+    "text_objects": 55,
+    "text_bounds_issues": 0,
+    "forbidden_comparisons": 0,
+    "scales_sharing_one_absolute_ms_axis": true,
+    "visual_inspected": true,
+    "windows_font_render_pending": true,
+    "user_visual_signoff_pending": true,
+    "native_powerpoint_editability_not_tested": true,
+    "speaker_notes_not_inserted": true
+  },
+  "github_binary_archive": "NOT_YET_UPLOADED"
+}
