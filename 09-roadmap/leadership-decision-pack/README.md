@@ -1,5 +1,8 @@
 # Round15H — 技术领导决策包（五分钟版）
 
+> **2026-10-23 SlidePoise 新版前置设计（DRAFT，仅规划，非已完成 PPT）：** [SlidePoise 前置设计区](slidepoise-prep/README.md) · [17页叙事大纲](slidepoise-prep/01-deck-outline.md) · [17页逐页内容合同](slidepoise-prep/02-slide-contracts.md) · [视觉与质量规范](slidepoise-prep/05-visual-spec.md)。该批新稿以 2026-10-20 全量综合稿为内容基础；此处原有 Round15/16 汇报保留为历史交付，不得按页码直接复制其备注。
+
+
 > **2026-10-09 正式交付索引（CURRENT）**：17页可编辑、含完整Notes的最终PPTX已归档至ChatGPT Library，详见[最终成品存储与SHA-256](archive/README.md)和[完整17页备注GitHub原文](archive/round16c-17-page-speaker-notes-2026-10-09.md)。[研究结题验收](../../00-project/final-research-archive-acceptance-2026-10-09.md)已通过。**下方Round15H/15I/15J以及“设计阶段”“尚未完成”均属 historical 制作过程，不是现在的制作任务或最近版本。**
 
 > **2026-10-09 最新交付版本说明（替代下方旧Round15H“最新设计阶段”等历史描述）**：完整17页可编辑PPT已做完，最终版本Round16C已经写入全17页“先解释页面、再逐来源核证”的演讲者备注。技术洞察正式结题见 [最终研究与归档验收](../../00-project/final-research-archive-acceptance-2026-10-09.md)；[成品长期存储、哈希与全备注原文入口](archive/README.md)。下方Round15H九页初纲、早期“尚未完成高保真PPT”等仅作历史过程保留，不再代表当前交付状态。
