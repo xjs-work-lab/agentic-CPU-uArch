@@ -12,6 +12,14 @@
 - **GitHub 只存 S03 文本合同/QA/Notes/handoff/manifest；PNG、SVG、ZIP 二进制尚未提交 GitHub**，聊天 ZIP 是本轮可用素材。
 - 用户视觉确认后，将 S03、S05、S08、S15 一起进入四页 SlidePoise native reconstruction 试制；必须检查对象可编辑、16:9 母版、字体、页码和 Speaker Notes 写入/读回。
 
+## 最新（2026-10-23）：四页实物 PNG/ZIP 已补存到 ChatGPT Library，替代临时 sandbox
+
+- 必须优先读取 [真实二进制获取与迁移说明](15-library-binary-handoff-and-github-archive.md)与 [SHA-256 Manifest](binary-assets/four-slide-pilot/library-assets-manifest.json)。
+- ChatGPT Library 路径是 `/Agentic-CPU-uArch/slidepoise/four-slide-pilot/`，共12个真实文件，分别是四张正文 PNG、四张 full 16:9 preview 和四份源码 ZIP。已经在 Library list 核实12/12，并实际还原测试 S03 PNG 与 S08 ZIP 的哈希。
+- Work 如果能使用 Library，请按此路径取得 PNG/ZIP 实际字节；如果 Work UI 或工具权限不能列 Library，须请求用户通过附件菜单从 Library 选择四 ZIP 附加给当前 Work 对话。**不得使用另一会话的 /mnt/data，亦不得据文本 manifest 伪造图片已存在。**
+- 文件取得后先校验尺寸/哈希，然后将实际 PNG/ZIP 文件推送到 GitHub 固定目录 `09-roadmap/leadership-decision-pack/slidepoise-prep/binary-assets/four-slide-pilot/`，read-back 后再更改 GitHub 二进制状态。
+- 四张正文 2048×1070 是可用于 SlidePoise 的内容区 PNG，2048×1152 的 16:9 preview 只作为母版/视觉对照。然后仅试制四页原生对象/Notes/母版，并进行渲染比较。
+- 本最新规定**覆盖**本文件下方历史描述“仅聊天临时附件可用”的旧状态。
 ## S15 已有目标 PNG / 五层三年锁定路线（2026-10-23）
 
 - 正文 PNG：`S15-controlled-content-v01.png`，2048×1070；整页 16:9 示意 PNG：`S15-16x9-frame-preview-v01.png`，2048×1152。当前聊天 ZIP 含二者+SVG+五个 Image2.5 图标+QA 脚本+完整 Notes；GitHub 目前仅存文本/哈希记录，不要误判二进制已存仓。
