@@ -28,6 +28,14 @@
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 最初的本地执行检查清单 | doctor/profile/解析画布已完成，Notes 待测 |
 | [2026-10-23 最初配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 历史审计：当时只有 doctor/profile，尚缺 run resolve | 已被新上传 preflight 结果补齐 |
 
+## Round07 S08 SME2 目标图与手机数据审查
+
+- 本次对话已真实生成 **S08 正文 2048×1070 PNG** 与 **16:9 整页 2048×1152 预览 PNG**。Image2.5 的蓝色芯片插画只承担审美素材，CPU/SME2 层级与 vivo X300 的实验数字由受控矢量内容生成。
+- **[S08 技术/文本/原生重建合同](12-s08-approved-copy-and-reconstruction-contract.md)**：明确 INT8 555.8→304.1ms、FP16 1163.0→298.2ms、数据移动 41.4%/39.9%、单核 Normal mode、SqueezeSAM 视觉任务与不能外推的范围。
+- **[Round07 实际 PNG/实验审计](qa/round07-s08-image2p5-and-measurement-audit-2026-10-23.md)** + **[S08 哈希与素材清单](generated-images/formal-content-v02/S08-controlled-png-v01.manifest.json)** 已入库，55 个图中文字对象未检测到越界，CPU/SME2 结构正确；仍待用户最终视觉签收。
+- 与 S05 同样：**本次连接尚未把 PNG 二进制真正提交至 GitHub**；现有的真实文件从当前对话附件下载，后续可把 ZIP 一并交给本地 Work。没有 `accepted-slide.png` 或 native PPTX，不虚报。
+- 下一张候选为 **S15：2027–2029 分层技术路线**。优先采用本轮的 Image2.5 视觉素材 + 受控文字/图表混合路径，不允许模型自由添加路线日期、研发承诺或数据。
+
 ## Round06 S05 受控原始 PNG 已生成（2026-10-23）
 
 - **本轮有真实 PNG 文件，不再只是 SVG 视觉规范**：`S05-controlled-content-v04.png`（2048×1070 正文）、`S05-16x9-frame-preview-v04.png`（2048×1152 完整 16:9 示意）。
