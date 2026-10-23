@@ -1,6 +1,6 @@
 # 05｜SlidePoise 技术研究 PPT 视觉与可编辑重建规范（v0.1）
 
-> DRAFT｜2026-10-23｜为 Agentic CPU 微架构技术领导汇报服务。此文件定义视觉判断原则、页面角色、图形关系和重建 QA；**不是 SlidePoise 的已安装 Profile JSON，也不表示本地环境已通过 doctor 或已生成任何图片**。  
+> DRAFT｜2026-10-23｜为 Agentic CPU 微架构技术领导汇报服务。此文件定义视觉判断原则、页面角色、图形关系和重建 QA；**不是可代替本机 Profile JSON 的运行配置；当前本地 Profile/画布已被证实，正式 SlidePoise ImageGen target 和 PowerPoint 渲染仍未完成**。  
 > SlidePoise 官方依据：[Skill](https://github.com/henryhyw/slidepoise/blob/main/slidepoise/SKILL.md)、[Deck orchestration](https://github.com/henryhyw/slidepoise/blob/main/slidepoise/references/deck-orchestration.md)、[Reconstruction](https://github.com/henryhyw/slidepoise/blob/main/slidepoise/references/reconstruction.md)、[Workflow](https://github.com/henryhyw/slidepoise/blob/main/slidepoise/references/workflow.md)。
 
 ## A. 视觉意图：研究型、精确、有解释力
@@ -13,6 +13,14 @@
 - **元素形态**：短而完整的结论标题；源于实际关系的节点/矩阵/箭头；细线型 icon；克制圆角；少量必要阴影；不要大块渐变抢走主图视觉权重。
 
 ## B. 共享框架与正文画布——重要的 SlidePoise 硬约束
+
+### 2026-10-23 本机实测配置更新（当前设计以此为准）
+
+- 用户已上传实际运行的 [SlidePoise preflight](../slidepoise-config/slidepoise-preflight-export.json)：Profile academic-cpu-insight、全页 **2048×1152（16:9）**、header/footer 各 **41px**、substantive content **2048×1070**、全页起点偏移 y=41。
+- 四张新正文 SVG 和整页 16:9 母版组合预览已归档在 [10-formal-content-region-samples.md](10-formal-content-region-samples.md)，旧 1600×900 版本只作历史参考，不得拉伸。
+- 本规范下方某些较早表述中的“待导出本地配置”是历史背景；实际尺寸已获证实。仍未完成的是 **真实图像渲染目视、accepted-slide.png、native PPTX、Notes 回读**。
+- Header/footer 的实际 left/right 文案当前为空；预览中的母版标签来自 [建议 run override](profile-blue/academic-cpu-run-session-overrides.proposal.json)，不是本机已应用设置。
+
 
 **SlidePoise 官方要求：图像生成对象是实质内容区，不是整张 PowerPoint 页面。** 完整 16:9 幻灯片的共享页眉、页脚、页码等在 PowerPoint 的 inherited frame 中生成；图片生成画布高宽必须在读取实际已选 Profile/运行时配置后，扣除已启用页眉/页脚高度计算，不能默认 16:9 原图直接铺满。
 
