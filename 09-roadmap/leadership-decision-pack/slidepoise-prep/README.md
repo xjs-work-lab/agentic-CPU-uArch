@@ -14,9 +14,20 @@
 | [05-visual-spec.md](05-visual-spec.md) | 学术技术风格、SlidePoise 正文画布、原生对象与全过程 QA | DRAFT v0.1 |
 | [06-sample-slides-manifest.md](06-sample-slides-manifest.md) | 四张真实 SVG 矢量概念图、Git blob SHA、技术审查与未完成的真实渲染检查 | 四图 CONCEPT_ONLY，已归档 |
 | [07-work-mode-handoff.md](07-work-mode-handoff.md) | 本地最小预检、四页 SlidePoise 重建、备注验证、17 页交付门槛 | Handoff v0.1 |
+| [08-profile-adaptation-contract.md](08-profile-adaptation-contract.md) | 用户已上传 Consulting Profile 的冲突分析、独立蓝色科研风 Profile 设计及终端配置流程 | 草案已归档 / 本地未应用 |
+| [Academic CPU Profile JSON 补丁](profile-blue/academic-cpu-insight.profile-update.json) | 机器可读的蓝色 Profile 字段 payload，使用 CLI update 并需本机验证 | 候选配置 / 未激活 |
 | [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
 | [Round03 样页概念图审计](qa/round03-visual-concept-audit-2026-10-23.md) | 首轮 ImageGen 候选 P0 拒收、四张 SVG 关系和数值审查及遗留验收项 | 源码审查完成，真实渲染待验 |
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 仅采集真实 Profile/画布/字体/备注能力，避免在 Work 模式重新探索 | 待用户本地执行 |
+| [2026-10-23 实际上传配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 已核 doctor/profile；发现内置 Consulting 橙色/Georgia 与蓝色中文研究风冲突，resolved canvas 尚缺 | 部分预检通过 / 正式出图未放行 |
+
+## Round04 配置对齐现状（2026-10-23）
+
+- 已从 [slidepoise-config/doctor.json](../slidepoise-config/doctor.json) 与 [profile-show.json](../slidepoise-config/profile-show.json) 核实本地上传配置：Codex、Python、PptxGenJS、LibreOffice、Poppler 均在 doctor 列表中，激活 Profile 为 `consulting`。
+- 已确认 `consulting` 原生风格约束为橙色/Georgia/Arial，与项目蓝色科研风相冲突；为避免生成/重建漂移，不通过图片 prompt 粗暴覆盖，也不直接改内置 Consulting。
+- 已准备可机器读取的 [蓝色学术 Profile 更新 payload](profile-blue/academic-cpu-insight.profile-update.json) 和 [终端执行合同](08-profile-adaptation-contract.md)，**但尚未在用户本地创建或运行**。
+- 原上传数据尚无 `resolved-config.json`；实际 `design.full_slide_px`、frame 高度和 `derived.generation_region_px` 仍未获知，因此四张 SVG 维持 `concept_only`，正式图片仍不能放行。
+- 下一步普通终端创建并核验独立 Profile、解析正式 run、上传脱敏后的 resolved config；然后聊天窗口使用实际画布做正式样页图与视觉审计。
 
 ## Round03 已完成与下一步
 
