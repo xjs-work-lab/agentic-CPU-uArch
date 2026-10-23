@@ -70,7 +70,7 @@
     },
     {
       "filename": "S15-controlled-source-and-PNG-v01.zip",
-      "sha256": "08eb5d8a0e0251fc50528d4ebea358d075b0febdf0df879bb6106a607f4a2724",
+      "sha256": "c35fae64b9789b397905a5b5186165637a884e87c83009d053129cda93ed21a9",
       "binary_in_github": false,
       "download_in_chat": true
     }
@@ -86,7 +86,8 @@
     "image2_5_original_rejected_not_in_work_zip": true,
     "visual_user_approval_pending": true,
     "native_powerpoint_editability_not_tested": true,
-    "speaker_notes_not_embedded": true
+    "speaker_notes_not_embedded": true,
+    "zip_is_reproducible_from_included_icons": true
   },
   "handoff": "See 13-s15-roadmap-content-and-reconstruction-contract.md. The accepted input for SlidePoise is content PNG only after G2 user approval; master/notes require actual native PowerPoint checks."
 }
