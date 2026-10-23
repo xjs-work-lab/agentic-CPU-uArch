@@ -1,5 +1,15 @@
 # 四页 SlidePoise 试制：真实图片的持久存储及交接修复（2026-10-23）
 
+## 一次附加即可开始 Work：四页真实图片总包（2026-10-23）
+
+**已实际保存并从 Library 下载回读校验：** `Agentic_CPU_4Slide_Work_Input_2026-10-23.zip`，约 8.9 MB，内部14项：四张正文PNG、四张16:9预览PNG、四份源码ZIP，以及README和manifest。SHA-256：`84970ea9d7f382162cb5a0ed6c4dc6b82727095698971b545ffeb98094dd1176`；ZIP CRC通过。
+
+**唯一可直接取的持久位置：** ChatGPT Library `/Agentic-CPU-uArch/slidepoise/four-slide-pilot/Agentic_CPU_4Slide_Work_Input_2026-10-23.zip`。
+
+Work 若能直接访问 Library，用这个文件名检索并取得真实ZIP。若 Work 无法检索，请用户在 Work 的“附加文件/Library”选择**这一个ZIP**并附加即可；不用再找四张不同的PNG，更不要重新设计。解压后取 `content_png/` 四张作为SlidePoise 2048×1070正文目标。`frame_previews_16x9/` 只对照，不得当正文输入。
+
+本包目前 **Library 已归档且真实字节哈希回读成功**；**Github 仍仅有文本索引，尚未包含 PNG/ZIP 二进制文件**。待 Work 从 Library 取得后提交 GitHub 并真正校验。
+
 > **当前事实：12 个实际二进制文件已在用户 ChatGPT Library 持久保存，并在上传后重新 list 核实。GitHub 本仓仅存本清单；PNG/ZIP 二进制尚未真正提交到 GitHub。**  
 > 此记录修复此前错误地让 Work 读取其他会话 `/mnt/data/` 临时路径的交接缺陷。**用户已确认 S03、S05、S08、S15 四张预览的视觉方向，Work 应立即推进四页原生 PPTX 试制，而非重新设计。**
 
