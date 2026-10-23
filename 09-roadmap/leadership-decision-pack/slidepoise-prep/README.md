@@ -9,15 +9,22 @@
 |---|---|---|
 | [01-deck-outline.md](01-deck-outline.md) | 17 页叙事顺序、中心主张、上下页论证关系与冻结门槛 | DRAFT v0.1 |
 | [02-slide-contracts.md](02-slide-contracts.md) | S01–S17 逐页内容、机制、图形、证据与拒收条件 | DRAFT v0.1 |
+| [03-evidence-map.md](03-evidence-map.md) | S01–S17 的论文、设备/模型/基线/数值、证据等级和待核原图 | 仓内证据交叉核对 v0.1 |
+| [04-risk-boundaries.md](04-risk-boundaries.md) | P0/P1/P2 拒收条件、16 条高风险表达与图形防误用规则 | 已归档 v0.1 |
 | [05-visual-spec.md](05-visual-spec.md) | 学术技术风格、SlidePoise 正文画布、原生对象与全过程 QA | DRAFT v0.1 |
+| [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
 
 ## 后续计划（未完成，不要误认已有文件）
 
-1. `03-evidence-map.md`：关键实验数字、论文、设备/模型/基线、结论、反证逐页对应。
-2. `04-risk-boundaries.md`：高危错讲、错误数据混比、历史失效决策和图形禁区。
-3. 在本地一次性导出 SlidePoise doctor、实际 Profile、frame/content canvas、中文字体与 Speaker Notes 支持情况；存为可审计的预检记录。**画布未确认之前，聊天图像只能标记 concept_only。**
-4. 聊天窗口生成 S03/S05/S08/S15 四页视觉候选，逐张审查并将 PNG、manifest、精确尺寸/哈希及已知缺陷保存到 GitHub。
-5. 编写 `07-work-mode-handoff.md`；本地严格按 SlidePoise 原生重建路径制作小样、渲染审计并完成 17 页可编辑 PPTX。
+1. 在本地一次性导出 SlidePoise doctor、实际 Profile、frame/content canvas、中文字体与 Speaker Notes 支持情况；存为可审计的预检记录。**画布未确认之前，聊天图像只能标记 concept_only。**
+2. 聊天窗口生成 S03/S05/S08/S15 四页视觉候选，逐张审查并将 PNG、manifest、精确尺寸/哈希及已知缺陷保存到 GitHub。
+3. 编写 `07-work-mode-handoff.md`；本地严格按 SlidePoise 原生重建路径制作小样、渲染审计并完成 17 页可编辑 PPTX。
+
+## Round02 审计摘要
+
+- **内容合同**：S01–S17 共 17 页；10 页可进入概念图设计，7 页有原始图表/接口/复杂关系的额外检查点。它们均非最终 PPT 验收状态。
+- **实际修订**：S03 工程与平台的区分、S06 不同测试配置的措辞、S10 Android AppFunctions 来源审查状态、S16「证据不足≠科学否定」。
+- **未完成**：本地 SlidePoise Profile/frame/content canvas 快照、精准论文原图/表复核、图片与哈希、Speaker Notes/PPTX 渲染。当前不得标记任何 `accepted-slide.png`。
 
 ## 事实来源与重要边界
 
