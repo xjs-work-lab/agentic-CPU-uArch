@@ -1,0 +1,92 @@
+{
+  "schema_version": "s15-image2p5-controlled-v01",
+  "slide_id": "S15",
+  "date": "2026-10-23",
+  "status": "TECHNICAL_AND_RENDER_CHECKED_USER_VISUAL_SIGNOFF_PENDING",
+  "source_contracts": [
+    "02-slide-contracts.md (S15)",
+    "03-evidence-map.md (S15)",
+    "04-risk-boundaries.md (S15)",
+    "09-roadmap/agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md §13",
+    "09-roadmap/current.md"
+  ],
+  "config": {
+    "profile": "academic-cpu-insight",
+    "full_slide_px": [
+      2048,
+      1152
+    ],
+    "substantive_px": [
+      2048,
+      1070
+    ],
+    "header_px": 41,
+    "footer_px": 41
+  },
+  "image2_5_role": "Style reference and five isolated decorative row icons only. Image2.5's standalone full-slide draft was rejected because its 2029 hardware/product timetable was not supported. No unreviewed generative text/data were used.",
+  "content": {
+    "title": "2027—2029：先夯实现有 ISA 与软件，再按证据评估新硬件",
+    "rows": [
+      "CPU / LLVM",
+      "Runtime / OS",
+      "Agent 可信动作",
+      "内存 / 派生状态",
+      "主动低功耗"
+    ],
+    "years": [
+      "2027",
+      "2028",
+      "2029"
+    ],
+    "year_meanings": [
+      "建立可移植工程基础",
+      "建立跨层协作合同",
+      "持续工程 + 条件性研究"
+    ],
+    "claim_boundary": "2029 has no approved new CPU hardware design, chip tape-out or product milestone."
+  },
+  "assets": [
+    {
+      "filename": "S15-controlled-content-v01.png",
+      "width": 2048,
+      "height": 1070,
+      "sha256": "8a1fce17bb9f8bfe8fb181a464b3e676d32a85862b6b3ddc9fc49d3bd2bead7e",
+      "binary_in_github": false,
+      "download_in_chat": true
+    },
+    {
+      "filename": "S15-16x9-frame-preview-v01.png",
+      "width": 2048,
+      "height": 1152,
+      "sha256": "6c0e67dd234c7a2a907e72dd832913b37a9dab1bb850110e01aa83d0b3727f87",
+      "binary_in_github": false,
+      "download_in_chat": true
+    },
+    {
+      "filename": "S15-controlled-content-v01.svg",
+      "sha256": "015a1d64e1698087e60032d9f348c355e3f605be882a7ef152c07efe4938cdd5",
+      "binary_in_github": false,
+      "download_in_chat": true
+    },
+    {
+      "filename": "S15-controlled-source-and-PNG-v01.zip",
+      "sha256": "08eb5d8a0e0251fc50528d4ebea358d075b0febdf0df879bb6106a607f4a2724",
+      "binary_in_github": false,
+      "download_in_chat": true
+    }
+  ],
+  "qa": {
+    "source_evidence_cross_checked": true,
+    "true_image_rendering": true,
+    "text_objects": 65,
+    "text_boundary_errors": 0,
+    "unverified_measured_gains_on_slide": 0,
+    "xml_structure_checked": true,
+    "zip_integrity_passed": true,
+    "image2_5_original_rejected_not_in_work_zip": true,
+    "visual_user_approval_pending": true,
+    "native_powerpoint_editability_not_tested": true,
+    "speaker_notes_not_embedded": true
+  },
+  "handoff": "See 13-s15-roadmap-content-and-reconstruction-contract.md. The accepted input for SlidePoise is content PNG only after G2 user approval; master/notes require actual native PowerPoint checks."
+}
