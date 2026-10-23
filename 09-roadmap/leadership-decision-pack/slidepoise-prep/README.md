@@ -37,6 +37,13 @@
 - **GitHub 当前只保存文本合同、审计、Notes、handoff 和 manifest；PNG、SVG 与 ZIP 二进制尚未提交 GitHub**。不把哈希登记误写成二进制入库。
 - S03 当前状态：`CONTENT_AND_RENDER_CANDIDATE / USER_VISUAL_SIGNOFF_PENDING`。还没开始 SlidePoise 原生 PPTX 试制。
 
+## 当前有效的四页 PNG 二进制交接（2026-10-23）
+
+- **四页素材已经永久保存到 ChatGPT Library**，路径：`/Agentic-CPU-uArch/slidepoise/four-slide-pilot/`，含 S03/S05/S08/S15 各一张 2048×1070 正文 PNG、各一张 2048×1152 全页预览 PNG、各一份完整源 ZIP：12/12 上传成功，上传后独立 list 验证。
+- 抽取 S03 正文 PNG 和 S08 ZIP 从 Library 回写为原始字节并执行 SHA-256，和原图值一致。
+- 当前唯一可执行的取图说明：[四页 Library 二进制交接](15-library-binary-handoff-and-github-archive.md)；具体 [文件名、字节数、SHA-256 manifest](binary-assets/four-slide-pilot/library-assets-manifest.json)。Work 应优先检索 Library，若访问不到，由用户在 Work 中从 Library 附加四个 ZIP。
+- 注意区分状态：**ChatGPT Library 中的真实二进制已存好**，但 **GitHub 仓库中还没有这十二个二进制文件**。只有 Work 真正提交并 GitHub read-back 后才可写 GitHub PNG 归档完成。
+- 当前阶段：视觉已获用户认可的四页可做 native PPTX 试制，16:9 全页、上下 frame 各 41px、正文 2048×1070；尚未在 Work 制成 PPTX。
 ## Round08 S15 技术路线目标 PNG 已生成（2026-10-23）
 
 - 已在本次对话中真正生成 **S15 正文 PNG 2048×1070** 和 **标准 16:9 全页预览 2048×1152**，并附有 SVG、5 个 Image2.5 装饰图标、构图脚本、QA 与完整讲者备注的 ZIP。
