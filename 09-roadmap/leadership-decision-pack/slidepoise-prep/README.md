@@ -28,6 +28,14 @@
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 最初的本地执行检查清单 | doctor/profile/解析画布已完成，Notes 待测 |
 | [2026-10-23 最初配置审计](qa/slidepoise-preflight-snapshot-2026-10-23.md) | 历史审计：当时只有 doctor/profile，尚缺 run resolve | 已被新上传 preflight 结果补齐 |
 
+## Round06 S05 受控原始 PNG 已生成（2026-10-23）
+
+- **本轮有真实 PNG 文件，不再只是 SVG 视觉规范**：`S05-controlled-content-v04.png`（2048×1070 正文）、`S05-16x9-frame-preview-v04.png`（2048×1152 完整 16:9 示意）。
+- 依据 [S05 内容锁定合同](11-s05-approved-copy-and-reconstruction-contract.md) 与 [S05 DAG 边合同](generated-images/formal-content-v02/S05-edge-contract-v02.json)，重新绘制了 10 个节点、13 条有向边；实际渲染后进行了技术事实与视觉布局检查；没有无依据的加速/节能/带宽图。
+- PNG 保留用户认可的 Image2.5 蓝白视觉体系，但**主要文字、节点与箭头由程序受控准确排版**，并非图片模型自由生成的新技术数据。
+- [Round06 实物 PNG 质量审计](qa/round06-s05-png-content-control-render-2026-10-23.md)和 [含 SHA-256 的 PNG Manifest](generated-images/formal-content-v02/S05-controlled-png-v04.manifest.json) 已写入 GitHub。**二进制 PNG 当前以聊天可下载附件交付，尚未真正上传 GitHub**；本仓本轮仅已归档 QA 文本及 Manifest，绝不将 PNG 状态冒称为 GitHub 已有文件。
+- 当前候选状态：`content_safe + rendered_preview_reviewed + user_visual_signoff_pending`；还不是本地 SlidePoise `accepted-slide.png`，也不是可编辑 PPTX。
+
 ## Round05 S05 图像内容审计（本轮最新关口）
 
 - 用户认可两张 Image2.5 视觉版式，但**认可视觉不等于认可技术内容**。两张 S05 均含无来源算子加速/端到端效益；第三次尝试修图仍生成 40–60% 等无证据统计，全部 `REJECT_TECHNICAL_P0`。
