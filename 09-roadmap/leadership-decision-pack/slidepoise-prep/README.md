@@ -12,14 +12,18 @@
 | [03-evidence-map.md](03-evidence-map.md) | S01–S17 的论文、设备/模型/基线/数值、证据等级和待核原图 | 仓内证据交叉核对 v0.1 |
 | [04-risk-boundaries.md](04-risk-boundaries.md) | P0/P1/P2 拒收条件、16 条高风险表达与图形防误用规则 | 已归档 v0.1 |
 | [05-visual-spec.md](05-visual-spec.md) | 学术技术风格、SlidePoise 正文画布、原生对象与全过程 QA | DRAFT v0.1 |
+| [06-sample-slides-manifest.md](06-sample-slides-manifest.md) | 四张真实 SVG 矢量概念图、Git blob SHA、技术审查与未完成的真实渲染检查 | 四图 CONCEPT_ONLY，已归档 |
+| [07-work-mode-handoff.md](07-work-mode-handoff.md) | 本地最小预检、四页 SlidePoise 重建、备注验证、17 页交付门槛 | Handoff v0.1 |
 | [Round02 内容/证据审计](qa/round02-content-evidence-audit-2026-10-23.md) | 17 页逐页审稿、已修问题、4 张高风险样页的可执行关系图合同 | 仓内审稿完成，实物制图待验 |
+| [Round03 样页概念图审计](qa/round03-visual-concept-audit-2026-10-23.md) | 首轮 ImageGen 候选 P0 拒收、四张 SVG 关系和数值审查及遗留验收项 | 源码审查完成，真实渲染待验 |
 | [SlidePoise 最小本地预检](qa/slidepoise-local-preflight-minimal.md) | 仅采集真实 Profile/画布/字体/备注能力，避免在 Work 模式重新探索 | 待用户本地执行 |
 
-## 后续计划（未完成，不要误认已有文件）
+## Round03 已完成与下一步
 
-1. 根据 [最小本地预检](qa/slidepoise-local-preflight-minimal.md)，一次性导出 doctor、实际 Profile、frame/content canvas、中文字体与 Speaker Notes 支持情况；存为可审计的预检记录。**画布未确认之前，聊天图像只能标记 concept_only。**
-2. 聊天窗口生成 S03/S05/S08/S15 四页视觉候选，逐张审查并将 PNG、manifest、精确尺寸/哈希及已知缺陷保存到 GitHub。
-3. 编写 `07-work-mode-handoff.md`；本地严格按 SlidePoise 原生重建路径制作小样、渲染审计并完成 17 页可编辑 PPTX。
+- 已在 [generated-images/](generated-images/) 真实提交 S03、S05、S08、S15 四张 **1600×900 SVG 矢量概念样页**；图中内容、关系和来源分别绑定到研究合同，不是泛化 ImageGen 四宫格图。
+- 第一轮自动图片存在 P0 内容错误，已拒收；后续 SVG 设计改为严格受控，并记录在 [Round03 QA](qa/round03-visual-concept-audit-2026-10-23.md)。
+- 完成 SVG 的 XML 标签/属性、必需技术内容、文件路径和 Git blob SHA 检查，**没有进行本地完整渲染**，因此还不能声称图像视觉验收通过。
+- 接下来：按 [最小本地预检](qa/slidepoise-local-preflight-minimal.md) 在**普通本地终端**取得 SlidePoise frame/substantive canvas/Profile 参数；然后聊天窗口继续正式比例 target image 设计及视觉核验；通过后按 [Work Handoff](07-work-mode-handoff.md) 做真正的 editable PPTX reconstruction。
 
 ## Round02 审计摘要
 
