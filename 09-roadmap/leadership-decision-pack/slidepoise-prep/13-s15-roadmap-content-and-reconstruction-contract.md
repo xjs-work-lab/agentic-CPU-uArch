@@ -1,7 +1,7 @@
 # 13｜S15 技术路线目标图、来源边界与 PowerPoint 原生重建合同（2026-10-23）
 
 > **当前为真实 PNG 候选，内容/渲染核查完成，待用户最终视觉确认；不是 SlidePoise packaged `accepted-slide.png`，也不是已经生成的可编辑 PPTX。** 
-> 文件 hash：见 [S15 Manifest](generated-images/formal-content-v02/S15-controlled-png-v01.manifest.json)；源：[综合终稿第十三章](../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)、[current.md](../current.md)、[02 内容合同](02-slide-contracts.md)、[03 证据映射](03-evidence-map.md)。
+> 文件 hash：见 [S15 Manifest](generated-images/formal-content-v02/S15-controlled-png-v01.manifest.json)；源：[综合终稿第十三章](../../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)、[current.md](../../current.md)、[02 内容合同](02-slide-contracts.md)、[03 证据映射](03-evidence-map.md)。
 
 ## 一、本页不可改的结论
 
@@ -47,7 +47,7 @@
 3. 每个“2029 条件研究”标签应使用空心/虚线与明确文字；“持续工程”不应一起变为虚线未知态。Agent 可信动作没有预定硬件的子行，应标作“评价”而不是“条件硬件”。
 4. 页脚短标签、页码及母版分隔线由 SlidePoise 原生 inherited frame 构造。内容 PNG 内**没有**公共页码；整页预览只是布局参考。
 5. 每页 Speaker Notes 必须写入真实 PowerPoint 备注并读回。详细文本另见本页的 Notes 文件；**不能仅仅在聊天中写一段备注就声称嵌入 PPTX**。
-6. 历史研究内部编码、早期评分和“已批准投资/流片计划”等文字不放进投影页面；研究方向状态采用当前 [DEC-PORTFOLIO-002](../../08-decisions/events/DEC-PORTFOLIO-002.md) 和 [DEC-A-008](../../08-decisions/events/DEC-A-008.md)。
+6. 历史研究内部编码、早期评分和“已批准投资/流片计划”等文字不放进投影页面；研究方向状态采用当前 [DEC-PORTFOLIO-002](../../../08-decisions/events/DEC-PORTFOLIO-002.md) 和 [DEC-A-008](../../../08-decisions/events/DEC-A-008.md)。
 
 ## 六、质量与发布状态
 
