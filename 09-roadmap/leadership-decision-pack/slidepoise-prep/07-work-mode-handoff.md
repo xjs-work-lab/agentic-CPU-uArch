@@ -1,0 +1,113 @@
+# 07｜SlidePoise 本地 Work 模式执行交接（Handoff v0.1）
+
+> **当前状态：PREPARATION_DONE_FOR_CONCEPTS / FORMAL_GENERATION_BLOCKED_ON_LOCAL_PREFLIGHT**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
+> **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
+
+## 一、执行目标
+
+用本地已安装的 **SlidePoise packaged workflow**，将基于 Agentic CPU 微架构研究的 **17 页中文学术型技术汇报**制作为真正可编辑的 16:9 PPTX，附带详细 Speaker Notes，并渲染、审核、保存归档。
+
+用户希望把**论证、视觉和证据审稿**尽可能留在 ChatGPT 聊天阶段，**Work 模式只承担必须本地执行的有限确定性任务**：解析环境→实际内容画布与资源→SlidePoise 官方的生成/语义映射/测量/重建→真实 PPT 渲染与修复→备注写入/回读验证→文件交付/归档。
+
+**不允许**：
+- 从头做新一轮全网 Agentic 微架构研究或主动推翻当前正式决策；
+- 把旧版 17 页备注按旧页码直接贴到新版 PPT；
+- 擅自改变已审定论文数值、设备、基线或 NPU/CPU 关系；
+- 用 17 张整页 PNG 假装生成 17 张可编辑 PPT；
+- 在 SlidePoise 需要正式 substantive canvas 的地方直接喂入含页眉页脚的完整 1600×900 概念 SVG；
+- 跳过 packaged SlidePoise reconstruction invariant，私下用 python-pptx/PptxGenJS 仿造流程。
+
+## 二、唯一前置资料入口
+
+仓库：\`xjs-work-lab/agentic-CPU-uArch\`，分支 \`main\`。
+
+**源研究**：
+- \`09-roadmap/agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md\`
+- \`09-roadmap/current.md\`
+- \`08-decisions/events/DEC-PORTFOLIO-002.md\`
+- \`08-decisions/events/DEC-A-008.md\`
+- \`09-roadmap/management-final-public-evidence-2027-2029.md\`
+
+**PPT 前置设计**：\`09-roadmap/leadership-decision-pack/slidepoise-prep/\`
+- \`01-deck-outline.md\`：17 页稳定 S01–S17 顺序和叙事衔接
+- \`02-slide-contracts.md\`：每页技术事实、内容、图形与拒收规则
+- \`03-evidence-map.md\`：设备/论文/数字/基线/证据等级与不能外推内容
+- \`04-risk-boundaries.md\`：16 个全局 P0/P1 关键技术禁区
+- \`05-visual-spec.md\`：蓝色学术技术风格、图表、中文排版、引用、母版及 native 重建
+- \`06-sample-slides-manifest.md\`：GitHub 中四张已存在的 SVG、真实路径和 blob SHA
+- \`qa/round02-content-evidence-audit-2026-10-23.md\`
+- \`qa/round03-visual-concept-audit-2026-10-23.md\`
+- \`qa/slidepoise-local-preflight-minimal.md\`
+
+**已存在的四张矢量概念设计（只能作设计参考，非重建输入目标）**：
+1. \`generated-images/S03-overview-concept-v01.svg\`
+2. \`generated-images/S05-dag-concept-v01.svg\`
+3. \`generated-images/S08-sme2-concept-v01.svg\`
+4. \`generated-images/S15-roadmap-concept-v01.svg\`
+
+## 三、启动先跑极简 preflight（不要重新安装）
+
+1. 运行 \`slidepoise doctor\`、\`slidepoise profile show\`。使用本地实际可用 CLI，**不用再次执行 setup**。
+2. 从实际 Profile + run overrides 确认完整幻灯片尺寸、header/footer 是否启用及尺寸、**substantive canvas 宽高与比例**、中文/拉丁字体、图像生成服务与 preview 能力。
+3. 依本地版本读取 SlidePoise 官方 \`SKILL.md\`、\`references/deck-orchestration.md\`、\`workflow.md\`、\`reconstruction.md\`、\`human-approval.md\`。不要复制本文件成为替代品。
+4. 以一页最小 PPTX 测试 Speaker Notes 写入与回读。若 packaged runtime 不提供此能力，只能在**不绕开其可编辑场景生成逻辑**的情况下采取独立、有记录的 notes 注入步骤，之后验收 PPTX 打开与 Notes 对应正确；未验证前报告阻断条件。
+5. 将非敏感 preflight 结果（含所用 Profile ID、真实画布比例、preview 环境）存入 \`qa/slidepoise-preflight-snapshot-YYYY-MM-DD.md\`；不能把 \`TO_BE_CAPTURED\` 当实测。
+
+**低 token 建议**：首次 Work 任务只做这一小段 preflight/notes 支持检查；把快照返回聊天窗口，再继续正式图片生成与审计。如果 user 已确认聊天窗口图片已按正式 substantive canvas 生成，则从交接包直接消费，但仍要核校合同与尺寸。
+
+## 四、四张高风险样页的顺序
+
+先跑 **S03 → S05 → S08 → S15**，每页执行同一条正式 SlidePoise 管线：
+
+1. 消费逐页内容合同/证据与视觉规范；
+2. 从真实 Profile、frame、视觉参考和意图**编译官方 generation request**（不能单独随手重写一个“差不多”的 prompt 代替）；
+3. 生成/筛选仅覆盖**正文实质内容区**的 target image，检查文本、数字、连接方向并冻结 \`accepted-slide.png\`；
+4. 独立编写必须保留的 \`content_obligations\`；
+5. \`semantic-map.json\`、\`reconstruction-handoff.json\`、OpenCV 几何 evidence/overlay、reconstruction contract、native constructor scene；
+6. 用 packaged \`slidepoise_runtime.py\` 组装和 render-preview；
+7. 两种检查：**盲读真实幻灯片**（能否独立理解技术）与**原图/来源对比**（是否漏数值、失去布局、错连线或改变技术解释）；
+8. 修正后重新 render，不以“程序执行成功”冒充人眼视觉验收。
+
+**四页高风险硬限制**：
+- S03：**三项工程/平台，三项条件储备，0 项证据充分的新 Agent 专用硬件**；不把 PIM/AI 加速器等未授权方向写进三储备。
+- S05：关键有向边、可选查询拆分、并行检索、工具调用跳过、验证反馈和 CPU/GPU/NPU 资源池须表达正确；不是固定 CPU 硬件流程。
+- S08：**SME2 属 CPU 内部 ISA 能力**；vivo X300 的 SqueezeSAM CPU 路径 INT8 555.8→304.1 ms、FP16 1163.0→298.2 ms；Apple M4 Pro 的研究不能伪装成手机能耗测试。
+- S15：2027–2029 是规划建议，2029 新硬件只在有新增外部证据后才能评估；不要产生虚假量产承诺。
+
+## 五、样页验收之后，再做其余 13 页
+
+- 总共 17 页，含封面 01/17、目录 02/17、结尾 17/17；
+- 最终中文结论式标题，非术语罗列、非问句、非研究内部编号；
+- 每页主张与来源严格对应，引用不压正文；
+- 主要文本、数值、表格、流程节点与箭头优先原生 PowerPoint，可编辑；
+- 每页**完整讲者备注**：先解释画面/观点/机制，再逐条交代来源、论据、支持什么/不支持什么；旧版 17 页 Notes 只按主题重新映射；
+- 全套单一视觉系统，保留不同叙事页的差异化构图；用真实页面照片/PNG 做交叉页校准；
+- 不把不同设备/模型/基线的倍数放在同一无条件可比坐标轴。
+
+## 六、版本交付与审计闭环
+
+### 必交付
+- 最终 \`.pptx\`（可编辑）
+- \`.pdf\` 预览、每页 PNG 或同等逐页渲染截图
+- 逐页 Notes（PPTX 内确实存在）及可供复核的 Notes Markdown
+- 图片/版权/引用来源清单
+- 17 页 QA 清单与 P0/P1 缺陷修复闭环
+- 前置 SVG 与最终 PPT 设计的关键差异说明
+- GitHub 存档入口与真实文件路径/版本/哈希
+
+### 发布底线
+\`pptx_exists\`、\`rendered_preview_inspected\`、\`native_content_verified\`、\`notes_written_and_read_back\`、\`sources_covered\` 和 \`no_unresolved_P0_P1\` 必须逐项满足，否则标记 \`NOT_ACCEPTED\`。不能因为目录里有 PPTX 就宣布已验收。
+
+## 七、推荐复制到 Work 模式的最短执行提示
+
+> 仓库 \`xjs-work-lab/agentic-CPU-uArch\`，读取 \`09-roadmap/leadership-decision-pack/slidepoise-prep/07-work-mode-handoff.md\` 及其 README 索引。我的本地 SlidePoise 已安装。**本轮只做最小预检**：doctor/profile/run 的 frame 与 substantive canvas 信息、中文字体/预览环境，以及一页 Speaker Notes 写入/回读可行性检查。不要重做研究，不要批量出图或生成全套 PPT。将非敏感配置与真正测试结果记录进 GitHub 的 QA 快照，并明确告知哪些条件阻断聊天窗口正式出图。
+
+收到本地真实预检后，才用聊天窗口确定的样页方案生成正式 target，并启动后续四页重建任务。除非用户随后明确授权，不在一次 Work 任务中擅自从四页跳到 17 页。
+
+## 八、研究主张变化的处理
+
+- 只改美术/箭头位置时，保持原投影文案与 evidence map；
+- 只改 Notes 时，不动投影内容；
+- 真正需要改数据或技术结论时，先追溯 current.md/正式 decision/原证据卡，经过内容合同审批后再失效相应 downstream target；
+- 保留原有视觉 SVG 与被拒版本的 QA 记录，不默默覆写历史；
+- 前置资产文件夹与正式 deck output 目录保持分离，避免同名文件盖掉权威内容。
