@@ -2,7 +2,7 @@
 
 > **状态：DRAFT/SECONDARY_REPO_AUDIT，2026-10-23**。依据 GitHub 中已归档的研究终稿、现行决策及原始来源深读卡逐项核对；**本轮不是重新下载所有论文 PDF、重复原始表格逐格验算或重新检查全部外部网站**。不能将 REPO-CHECKED 写成 LIVE-PRIMARY-REVERIFIED。  
 > 对应制作合同：[01 叙事大纲](01-deck-outline.md) / [02 逐页合同](02-slide-contracts.md) / [05 视觉规范](05-visual-spec.md)。  
-> 唯一完整内容基线：[2026-10-20 综合终稿](../../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)，源文件 blob SHA \`4fd19b49353bd927472df08c0cb76de65d5b81ea\`。  
+> 唯一完整内容基线：[2026-10-20 综合终稿](../../agentic-cpu-uarch-detailed-research-summary-cn-2026-10-20.md)，源文件 blob SHA `4fd19b49353bd927472df08c0cb76de65d5b81ea`。  
 > 正式技术路线权威：[current.md](../../current.md)、[DEC-PORTFOLIO-002](../../../08-decisions/events/DEC-PORTFOLIO-002.md)、[DEC-A-008](../../../08-decisions/events/DEC-A-008.md)。研究审计截点 2026-10-09。  
 > **禁止**将「研究内部已核对来源卡」误称为「2026-10-23 今日重新核对原始图的所有坐标/数字」。
 
@@ -21,9 +21,9 @@
 
 - 区分 **手机/SoC**、**Apple M4 Pro 非手机平台**、**云端/服务器软件 Agent 基准**、**官方 API 说明**。这些不是一个测量样本池。
 - 区分 Prefill、Decode、单个 MUL_MAT/GEMV/GEMM 算子、完整模型、Agent 端到端工作流、前台 QoE、能耗、吞吐。
-- 标注某个值是「最大」「平均」「某配置消融案例」；不同实验的 \`×\` 不能相乘、加总或做无条件横向排名。
+- 标注某个值是「最大」「平均」「某配置消融案例」；不同实验的 `×` 不能相乘、加总或做无条件横向排名。
 - 只在设备/模型/基线可比且完全核对原始数据时构造定量交叉论文图；否则做机制对照，用明确的定性箭头。
-- PPT 页底采用人类可读的来源短引（论文名称、作者/机构、年份、URL/DOI 视版式）；内部 \`PAPER-XXX\` 等编号保存在本表/备注，不应强迫领导猜标签。
+- PPT 页底采用人类可读的来源短引（论文名称、作者/机构、年份、URL/DOI 视版式）；内部 `PAPER-XXX` 等编号保存在本表/备注，不应强迫领导猜标签。
 - 旧版 17 页备注只作主题素材，**新 S01–S17 的讲者备注必须按此映射重编**；不得按旧页码粘贴。
 
 ## 1. 可复用关键原始资料的精确锚点
@@ -82,7 +82,7 @@
 ### S05 动态有向阶段图（高风险样页）
 - **主张级别** F-DIRECT（HeRo 动态依赖问题）+ I-SYNTH（抽象图）。
 - **来源**：PAPER-098 的 Agentic RAG 任务重写、分解、检索/重排、阶段亲和与部分未来依赖；PAPER-003 佐证 DRAM 影响前台体验。
-- **建议图关系**：\`intent → planner → {rewrite? / parallel retrieval} → rerank → generate/tool → verify → update\`；其中 \`{...}\` 为可选/并行示意；箭头 role 必须写为 data_dependency / control_request / conditional_feedback 中的一个。
+- **建议图关系**：`intent → planner → {rewrite? / parallel retrieval} → rerank → generate/tool → verify → update`；其中 `{...}` 为可选/并行示意；箭头 role 必须写为 data_dependency / control_request / conditional_feedback 中的一个。
 - **实测数据**：不必在此页放 HeRo 消融值（留给 S09）；如出现，注明 Redmi K80/OnePlus 13、论文案例与非通用平均值。
 - **不能推出**：示意 DAG 是 HeRo 原始实现所有节点的精确副本；每一资源亲和性固定或由 CPU 硅片直接决定。
 - **备注责任**：走通关键路径与分支，解释调度粒度为何从算子扩展到工作流阶段。
@@ -91,7 +91,7 @@
 - **主张级别** F-DIRECT + I-SYNTH。
 - **来源**：PAPER-009 手机原始实证（Snapdragon 8 Gen 3 / Hexagon v75）。
 - **数据锁定**：
-  - Prefill **被测 NPU 路径较 6 核 CPU 慢约 1.27–1.62×**；该 \`×\` 的主谓方向必须保留，不可写成「NPU 快 1.27×」。
+  - Prefill **被测 NPU 路径较 6 核 CPU 慢约 1.27–1.62×**；该 `×` 的主谓方向必须保留，不可写成「NPU 快 1.27×」。
   - Decode 的 **MUL_MAT 单算子**由 NPU 执行时 **延迟低约 1.55–1.67×**；不等于 Decode 总时间或完整 Agent 工作流加速。
   - 通信 **约占其 NPU 路径 9.9–13.0%**；是总路径分母相关结果，不是把 9.9% 直接从某个值减掉。
 - **概念公式**：阶段成本 = 计算/启动/同步/搬运/回退/争用等分项，仅为分析框架，实际成本可重叠，不是纸上按项相加的实测。
@@ -114,7 +114,7 @@
   - **vivo X300 手机 / SqueezeSAM 视觉分割 / 单 CPU 核 / ExecuTorch + XNNPACK + KleidiAI**：INT8 555.8 → 304.1 ms；FP16 1163.0 → 298.2 ms。来源为第一方官方报告，不是 Agent 推理，也不是 CPU/NPU 直接对照。
   - 数据搬运约占 SME2 特定单核 INT8/FP16 路径 **41.4% / 39.9%**，如图中概括「约 40%」须保留模型/路径限定。
   - **SMEPilot**：最高端到端加速 3.94×（llama.cpp CPU 基线，跨多评估平台）；Apple M4 Pro 某配置 482.813→233.931 J **属于非手机平台**，不要在手机能耗页引用。
-- **结构不可变规则**：\`SoC ├ CPU(core: scalar/SIMD + SME/SME2) └ NPU/GPU\`；不允许 \`CPU / SME / NPU\` 三处理器平级。
+- **结构不可变规则**：`SoC ├ CPU(core: scalar/SIMD + SME/SME2) └ NPU/GPU`；不允许 `CPU / SME / NPU` 三处理器平级。
 - **图表准入**：允许两个独立、注明平台的研究面板；数字源自 PDF/官方文档，不是图像生成产物。
 - **备注责任**：CPU 内的 SME 指令、ZA/PSTATE.SM/ABI、tile/pipeline、packing、现有 ISA 工程价值与可移植边界。
 
@@ -209,7 +209,7 @@
 - **IMG-06 S10**：OutcomeReceipt 是本项目建议的接口表达，不能标注为 Apple/Android 已公开统一对象类型；Android AppFunctions 的具体 API 主张尚需补查官方卡。
 - **IMG-07 S15**：画路线前核每一技术层年度位置，条件性项不得采用实体已落地样式。
 
-**进入精确制图的规则**：\`numeric_text_checked\` ≠ \`source_figure_verified\`；二者分别记录状态。不能把生成图模型自带的文字/数字作为数据来源。
+**进入精确制图的规则**：`numeric_text_checked` ≠ `source_figure_verified`；二者分别记录状态。不能把生成图模型自带的文字/数字作为数据来源。
 
 ## 5. 来源变更和审计记录
 
