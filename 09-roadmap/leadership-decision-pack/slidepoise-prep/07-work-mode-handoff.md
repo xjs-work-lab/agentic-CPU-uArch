@@ -3,6 +3,14 @@
 > **当前状态：BLUE_PROFILE_AND_16_9_CANVAS_VERIFIED / VECTOR_CONTENT_CANDIDATES_WRITTEN / VISUAL_RENDER_PENDING**。本交接用于未来用户主动切换 Work 模式时直接复制执行，避免从头阅读全部研究或重做视觉。  
 > **注意**：2026-10-23 GitHub 保存的四个 SVG 是 \`concept_only\`，不是 \`accepted-slide.png\`，没有执行实际渲染，也不代表可编辑 PPTX 已生成。
 
+## S15 已有目标 PNG / 五层三年锁定路线（2026-10-23）
+
+- 正文 PNG：`S15-controlled-content-v01.png`，2048×1070；整页 16:9 示意 PNG：`S15-16x9-frame-preview-v01.png`，2048×1152。当前聊天 ZIP 含二者+SVG+五个 Image2.5 图标+QA 脚本+完整 Notes；GitHub 目前仅存文本/哈希记录，不要误判二进制已存仓。
+- 必须读取 `13-s15-roadmap-content-and-reconstruction-contract.md`、`qa/round08-s15-image2p5-and-roadmap-audit-2026-10-23.md`、`generated-images/formal-content-v02/S15-controlled-png-v01.manifest.json` 及 `notes/S15-speaker-notes-2026-10-23.md`。
+- Image2.5 原始全页草图含 P0 不实的新硬件里程碑，**已拒收且被排除出 Work ZIP**。五个图标可作图片资产，但所有 Matrix/文字/年份/条件性状态必须 PowerPoint 原生可编辑对象，不能按原始草图 OCR/临摹。
+- 2027 工程基础；2028 跨层接口；2029 持续工程＋条件研究，**非既定预算/团队排期/流片/量产时间表**。五条路线：CPU/LLVM、Runtime/OS、Agent 可信动作、内存/派生状态、主动低功耗。
+- 在本地 packaged SlidePoise 流程中依真实 `academic-cpu-insight` 生成区接受目标 PNG、语义图/布局测量、原生 PPTX 重建、16:9/中文字体/页码渲染及 S15 speaker notes 写入回读；不得以图片好看代替对象可编辑性验收。
+
 ## S08 已有真实内容区 PNG 与源数据锁定合同（2026-10-23）
 
 - 正文 PNG `S08-controlled-content-v01.png`，2048×1070；完整版预览 `S08-16x9-frame-preview-v01.png`，2048×1152。用户可从本轮聊天下载，**GitHub 目前只有 manifest 和 QA 合同，没有 PNG 二进制**。
