@@ -1,0 +1,123 @@
+{
+  "schema_version": "round11-g1-copy-lock-and-2-visual-candidates-v1",
+  "audit_date": "2026-10-26",
+  "canonical_locks_prefix": "content-lock-round11/",
+  "user_approved_existing": [
+    "S03",
+    "S05",
+    "S08",
+    "S15"
+  ],
+  "slides": [
+    {
+      "slide": "S01",
+      "g1": "PASS",
+      "g2": "PENDING",
+      "source": "current.md + VENDOR-032",
+      "issue": "封面简化，非芯片真实布线"
+    },
+    {
+      "slide": "S02",
+      "g1": "PASS",
+      "g2": "VISUAL_CANDIDATE",
+      "source": "01-deck-outline.md",
+      "issue": "页码锁定 03–05/06–09/10–14/15–17"
+    },
+    {
+      "slide": "S04",
+      "g1": "PASS",
+      "g2": "PENDING",
+      "source": "PAPER-098 + PAPER-044 + VENDOR-032",
+      "issue": "补齐四类负载及低功耗准入的条件性"
+    },
+    {
+      "slide": "S06",
+      "g1": "PASS_WITH_ABSOLUTE_BAR_HOLD",
+      "g2": "VISUAL_CANDIDATE",
+      "source": "PAPER-009 + arXiv official abstract",
+      "issue": "删除未核绝对柱、区分路径成本9.9–13%与加速"
+    },
+    {
+      "slide": "S07",
+      "g1": "PASS",
+      "g2": "PENDING",
+      "source": "PAPER-059 + PAPER-057",
+      "issue": "llm.npu/ShadowNPU 机制及研究谱系"
+    },
+    {
+      "slide": "S09",
+      "g1": "PASS",
+      "g2": "PENDING",
+      "source": "PAPER-098 + PAPER-003",
+      "issue": "HeRo vs SERENO并行互补，不叠加数字"
+    },
+    {
+      "slide": "S10",
+      "g1": "PASS_WITH_PLATFORM_BOUNDARY",
+      "g2": "PENDING",
+      "source": "VENDOR-032 + PATENT-033 + PT-A",
+      "issue": "OutcomeReceipt为建议接口而非现存标准"
+    },
+    {
+      "slide": "S11",
+      "g1": "PASS",
+      "g2": "PENDING",
+      "source": "PAPER-119 + PAPER-121 + PAPER-044 + DEC-A-008",
+      "issue": "可观察软件强基线与未证实私有进度分离"
+    }
+  ],
+  "image_outputs": {
+    "S02": {
+      "content_filename": "S02-round11-v01-content.png",
+      "content_pixels": [
+        2048,
+        1070
+      ],
+      "content_sha256": "7357dba4101a2ec67a6d40fdfc5c1627d9af6ae5c83dc58217c824da52446a3d",
+      "preview_filename": "S02-round11-v01-preview.png",
+      "preview_pixels": [
+        2048,
+        1152
+      ],
+      "preview_sha256": "4cccd147cd6a6c9590e85a24ba57e1b80730849d224bf143b3c97746661ad12d",
+      "text_objects": 50,
+      "off_canvas_text": 0,
+      "source_svg_sha256": "60f1e87aed37974eb1a63edde7f2bfdef9069310c020d91d8ddd1678867152ab"
+    },
+    "S06": {
+      "content_filename": "S06-round11-v01-content.png",
+      "content_pixels": [
+        2048,
+        1070
+      ],
+      "content_sha256": "cee6eabbeb77a65a20657e2f7f503da9238ea2f153d78ec48a494626246ca52a",
+      "preview_filename": "S06-round11-v01-preview.png",
+      "preview_pixels": [
+        2048,
+        1152
+      ],
+      "preview_sha256": "cd18719c1ac30b76008465c39d508819c85d91cf1a3e47e213e7724bd05f34b9",
+      "text_objects": 34,
+      "off_canvas_text": 0,
+      "source_svg_sha256": "316c465be4b0ab64896934ce5cac074644df5f521e7ad134e5cc2ce1e0c2cb85"
+    }
+  },
+  "zip": {
+    "name": "Agentic_CPU_Round11_S02_S06_Controlled_Candidates.zip",
+    "sha256": "670466c408acbfa527734955b10f64ade982a980e648784968a611b844b2c6ec",
+    "bytes": 948827,
+    "crc_pass": true,
+    "contains": [
+      "2x content PNG",
+      "2x full 16:9 preview PNG",
+      "4x SVG",
+      "source build script",
+      "QA JSON"
+    ]
+  },
+  "library_folder": "/Agentic-CPU-uArch/slidepoise/round11-g1-content-corrections/",
+  "library_saved_and_list_verified": true,
+  "not_in_github_binaries": true,
+  "G2_for_two": "content-correct rendered visual candidates, awaiting user visual signoff",
+  "G3_native_pptx": "NOT_STARTED"
+}
