@@ -1,5 +1,14 @@
 # 07｜SlidePoise 本地 Work 模式执行交接（Handoff v0.1）
 
+## Round11（2026-10-26）：首批八页内容修订完成；S02/S06 真尺寸修订图待视觉审核
+
+- **G1：本轮 8/8 已锁定新的投影文案与主题化 Speaker Notes**，页码 S01/S02/S04/S06/S07/S09/S10/S11。技术事实与当前正式决策不矛盾，但 G1 不等于历史八张 Image2.5 草图已合格。
+- [Round11 逐页审计与证据纠正](qa/round11-g1-eight-slide-copy-and-s02-s06-visual-review-2026-10-26.md) · [文件哈希与状态 manifest](qa/round11-eight-slide-content-lock-and-two-png.manifest.json)。逐页固定内容在 [content-lock-round11/](content-lock-round11/)。
+- **G2：只有 S02 与 S06 已制作新版 2048×1070 正文 PNG、2048×1152 整页16:9预览，已真实渲染与测量文本（分别50/34对象、超出画布0），但仍待使用者视觉批准**。S06 的通信9.9–13%正确标为被测NPU路径开销占比；所有未经核实的绝对柱形已撤除。
+- **真实文件**：四张 PNG + SVG/脚本/QA ZIP 已存入 ChatGPT Library `/Agentic-CPU-uArch/slidepoise/round11-g1-content-corrections/` 并列举确认；**GitHub目前仅有文件哈希/技术文字，不是PNG二进制仓**。
+- **其余6张新图未制作**，旧8张候选继续隔离，不能用旧图进入 SlidePoise；已通过的 S03/S05/S08/S15 四页不改；没有做PPTX。
+
+
 ## Round10：新生成的八张候选图内容审计（2026-10-26）
 
 - **最新结论：8 张 Image2.5 草稿，没有一张通过正式 G1/G2 内容验收；S01、S04 待修(P1)，S02、S06、S07、S09、S10、S11 均有 P0 问题，应技术重做。**
