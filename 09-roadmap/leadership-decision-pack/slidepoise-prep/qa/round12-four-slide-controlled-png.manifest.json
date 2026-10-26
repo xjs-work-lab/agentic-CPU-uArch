@@ -1,0 +1,170 @@
+{
+  "schema_version": "agentic-cpu-round12-four-page-g1g2-v1",
+  "date": "2026-10-26",
+  "status": "G1_CONTRACT_CHECKED_G2_RENDERED_CANDIDATE_USER_APPROVAL_PENDING",
+  "current_slide_ids": [
+    "S07",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "s02_s06": "Already user-approved; untouched.",
+  "existing_user_approved_pilot_pages": [
+    "S03",
+    "S05",
+    "S08",
+    "S15"
+  ],
+  "full_slide_size": [
+    2048,
+    1152
+  ],
+  "content_area": [
+    2048,
+    1070
+  ],
+  "header_footer": [
+    41,
+    41
+  ],
+  "font_for_render": "Noto Sans CJK SC; Microsoft YaHei is local Work native font target, not tested here",
+  "library_folder": "/Agentic-CPU-uArch/slidepoise/round12-four-visual-candidates",
+  "library_files_list_verified": 9,
+  "zip": {
+    "name": "Agentic_CPU_Round12_S07_S09_S10_S11_Review.zip",
+    "bytes": 2592668,
+    "sha256": "e0ceb4fb4f8b62692445df181a69449c727c9c13f3731e348ad7db9bae100817",
+    "archive_entries": 21,
+    "crc": "PASS",
+    "library_readback_sha256": "PASS"
+  },
+  "github_binary_committed": false,
+  "native_powerpoint_built": false,
+  "image2_5_original_concept_montage_used_as": "STYLE_ONLY_NOT_CONTENT; generated montage rejected due to wrong page labels/technical content and excluded from ZIP",
+  "slides": [
+    {
+      "id": "S07",
+      "raw_content": {
+        "filename": "S07-round12-v01-content.png",
+        "sha256": "8dce94ac479da0123a34630bd7b06f3d735699b65e0cd647f701162e6cf2b46e",
+        "bytes": 236824,
+        "pixels": [
+          2048,
+          1070
+        ]
+      },
+      "full_16x9_preview": {
+        "filename": "S07-round12-v01-preview.png",
+        "sha256": "2cc6387401173f002c1bc584b3fe6c643327385a424d48c8068cd1b734311431",
+        "bytes": 249862,
+        "pixels": [
+          2048,
+          1152
+        ]
+      },
+      "source_svg": "S07-round12-v01-content.svg",
+      "speaker_notes": "S07-speaker-notes-round12.md",
+      "github_projection_contract": "content-lock-round11/S07-approved-projection-copy-2026-10-26.md",
+      "github_speaker_notes": "notes/S07-speaker-notes-2026-10-26.md",
+      "text_objects_measured": 28,
+      "text_objects_off_canvas": 0,
+      "quantitative_claims_not_source_matched": 0,
+      "g1": "PASS",
+      "g2": "RENDERED_VISUAL_PENDING_USER_SIGNOFF",
+      "review_summary": "2机制链（llm.npu/ShadowNPU），数值留在Speaker Notes；不是两个独立复现"
+    },
+    {
+      "id": "S09",
+      "raw_content": {
+        "filename": "S09-round12-v01-content.png",
+        "sha256": "d838c4f1dee87760fae73e8521503ab2a9ce6a90418573e69d672586632367c9",
+        "bytes": 242756,
+        "pixels": [
+          2048,
+          1070
+        ]
+      },
+      "full_16x9_preview": {
+        "filename": "S09-round12-v01-preview.png",
+        "sha256": "aa4c9cf5e3952da1bf387037506ae76a5daaf736dd48d80c896dcec53e88063b",
+        "bytes": 255705,
+        "pixels": [
+          2048,
+          1152
+        ]
+      },
+      "source_svg": "S09-round12-v01-content.svg",
+      "speaker_notes": "S09-speaker-notes-round12.md",
+      "github_projection_contract": "content-lock-round11/S09-approved-projection-copy-2026-10-26.md",
+      "github_speaker_notes": "notes/S09-speaker-notes-2026-10-26.md",
+      "text_objects_measured": 27,
+      "text_objects_off_canvas": 0,
+      "quantitative_claims_not_source_matched": 0,
+      "g1": "PASS",
+      "g2": "RENDERED_VISUAL_PENDING_USER_SIGNOFF",
+      "review_summary": "HeRo / SERENO 两条不同系统目标，不混淆任务延迟与前台 QoE"
+    },
+    {
+      "id": "S10",
+      "raw_content": {
+        "filename": "S10-round12-v01-content.png",
+        "sha256": "0ac2b4e13c8de8ddbd694fb63e74cce31283ca55b2bb265d7b8d1dd77926b98b",
+        "bytes": 227639,
+        "pixels": [
+          2048,
+          1070
+        ]
+      },
+      "full_16x9_preview": {
+        "filename": "S10-round12-v01-preview.png",
+        "sha256": "b8e5e8f273b65e5fd28bb3a515b5ed963b883692f457b2674fd42924ded42997",
+        "bytes": 240399,
+        "pixels": [
+          2048,
+          1152
+        ]
+      },
+      "source_svg": "S10-round12-v01-content.svg",
+      "speaker_notes": "S10-speaker-notes-round12.md",
+      "github_projection_contract": "content-lock-round11/S10-approved-projection-copy-2026-10-26.md",
+      "github_speaker_notes": "notes/S10-speaker-notes-2026-10-26.md",
+      "text_objects_measured": 23,
+      "text_objects_off_canvas": 0,
+      "quantitative_claims_not_source_matched": 0,
+      "g1": "PASS",
+      "g2": "RENDERED_VISUAL_PENDING_USER_SIGNOFF",
+      "review_summary": "真实结果核验后才分成功/恢复支路，效果回执为建议接口非标准"
+    },
+    {
+      "id": "S11",
+      "raw_content": {
+        "filename": "S11-round12-v01-content.png",
+        "sha256": "e8c76474d165786cc401485fc80321380b8fc36ce847021e612fc041e7c75621",
+        "bytes": 242055,
+        "pixels": [
+          2048,
+          1070
+        ]
+      },
+      "full_16x9_preview": {
+        "filename": "S11-round12-v01-preview.png",
+        "sha256": "2154db1d698f2ebb7056e32629a8a51ba404205b81abd6bde075a6df70f1d074",
+        "bytes": 254322,
+        "pixels": [
+          2048,
+          1152
+        ]
+      },
+      "source_svg": "S11-round12-v01-content.svg",
+      "speaker_notes": "S11-speaker-notes-round12.md",
+      "github_projection_contract": "content-lock-round11/S11-approved-projection-copy-2026-10-26.md",
+      "github_speaker_notes": "notes/S11-speaker-notes-2026-10-26.md",
+      "text_objects_measured": 25,
+      "text_objects_off_canvas": 0,
+      "quantitative_claims_not_source_matched": 0,
+      "g1": "PASS",
+      "g2": "RENDERED_VISUAL_PENDING_USER_SIGNOFF",
+      "review_summary": "软件 Ledger 强基线 vs 虚线私有 RequiredProgress 假说，无未经证实硬件发现"
+    }
+  ]
+}
