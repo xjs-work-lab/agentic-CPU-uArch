@@ -1,5 +1,18 @@
 # SlidePoise PPT 前置设计区（中文）
 
+## 2026-10-27 最终生效版本 v2：17页 PNG/Notes 完整移交，S12/S16 已修订
+
+**本节优先级高于所有下方历史 Round 记录。** 用户已认可 S01–S17 的17页视觉，S12的 F/P/V 三主题和 S16的四级证据图例已按 Image2.5 修改且视觉签收；15张其它页的正文、预览、来源和Notes的原始SHA一致。**不再使用原 `Agentic_CPU_17Slides_PNG_Work_Input_2026-10-27.zip` 旧版。**
+
+- **[最新 v2 唯一有效 Work 交接](18-final17-v2-image-assets-and-work-handoff-2026-10-27.md)** · **[v2 实物 ZIP SHA、路径与17页页序 manifest](qa/final17-v2-library-binary-manifest-2026-10-27.json)**。
+- **Library 中真实 ZIP 已上传、再下载回读 CRC+SHA成功：** `/Agentic-CPU-uArch/slidepoise/final17-v2-2026-10-27/`。
+- **Work 应只附加：** `Agentic_CPU_17Slides_PNG_Work_Input_v2_2026-10-27.zip`（67,794,110字节，55项）；全源备份包 `Agentic_CPU_17Slides_Full_Source_v2_2026-10-27.zip`（88,886,731字节，77项）；另有 v2 总览图。
+- ZIP 含17张2048×1070正文、17张2048×1152完整16:9预览、17篇依现行页序写的Speaker Notes、manifest/QA和17页总览；**G2视觉已由用户认可，内容主题覆盖17/17，但不冒称原论文图表全部现场重新核验**。
+- **Work 的职责**：仅在本地 SlidePoise 用最终PNG为视觉目标重建**真实原生可编辑PPTX**（母版独立、正文和主要箭头/图表可编辑）；逐页渲染、页码顺序、中文和注释、Notes真实写读回。聊天阶段**未创建 PPTX**。
+- GitHub 本轮存入QA、版本与哈希交接文档；**ZIP/PNG真实二进制在Library，尚未直接提交GitHub**。
+
+
+
 ## **2026-10-27：17页最终视觉素材已完整归并，二进制已持久化（优先于下方历史状态）**
 
 - **17/17 页最终图片顺序已固定**（S01封面、S02目录均计数）。真实生成 **17 张正文 2048×1070 PNG、17 张完整 16:9 预览 2048×1152、17份讲者备注、17张原图备份、17页缩略总览、SHA-256 manifest及逐页QA**。视觉上全部为用户在聊天窗口认可的版本。
