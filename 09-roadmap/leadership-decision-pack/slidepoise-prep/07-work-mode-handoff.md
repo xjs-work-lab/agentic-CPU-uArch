@@ -1,5 +1,13 @@
 # 07｜SlidePoise 本地 Work 模式执行交接（Handoff v0.1）
 
+## 当前强制 G2 阻断（2026-10-26）：Round12 四页视觉已明确拒收
+
+**S07、S09、S10、S11 的 2048×1070 PNG 及 16:9 预览**虽无明确技术内容 P0 数据错误，但用户指出视觉像简单矩形流水线，已明确拒绝其设计。GitHub [Round12 manifest](qa/round12-four-slide-controlled-png.manifest.json)把四张 `g2` 标为 `REJECTED_VISUAL_BY_USER`。**Work/SlidePoise 一律不能拿这些 Round12 PNG 当 accepted-slide.png。**
+
+设计整改规范：[16-round13-image2p5-visual-redesign-contract.md](16-round13-image2p5-visual-redesign-contract.md)。新图需要按四页各自的因果/几何重新做 Image2.5 分页艺术构图，保留 G1 合同文字，再过 G2 视觉+事实审查。此前 S02/S03/S05/S06/S08/S15 用户认可页不改。
+
+
+
 ## Round12（2026-10-26）：S07 / S09 / S10 / S11 真尺寸技术修订候选已生成
 
 - **本轮四页的 G1 技术内容按 Round11 锁定文案复核，4/4 已生成受控 2048×1070 正文 PNG + 2048×1152（16:9）整页预览，G2 仍待用户最终视觉签收。** S02/S06 已经用户视觉确认，不重做。
