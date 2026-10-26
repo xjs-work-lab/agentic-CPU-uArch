@@ -1,5 +1,15 @@
 # SlidePoise PPT 前置设计区（中文）
 
+## Round10：新生成的八张候选图内容审计（2026-10-26）
+
+- **最新结论：8 张 Image2.5 草稿，没有一张通过正式 G1/G2 内容验收；S01、S04 待修(P1)，S02、S06、S07、S09、S10、S11 均有 P0 问题，应技术重做。**
+- 最严重：**S06 将 9.9–13.0% 的 NPU 通信开销占比写成端到端时延改善**，同时画出未按来源逐表核验的绝对性能柱。
+- **页序错位**：S07 漏掉 llm.npu/ShadowNPU，S09 没有 HeRo/SERENO，S10 被内存状态治理取代，S11 被可信工具闭环取代。S02 目录页码映射同样错误。
+- [逐页证据/语义/修订审计](qa/round10-batch1-imagegen-content-audit-2026-10-26.md) · [8 张候选图 SHA-256/停用标志](qa/round10-batch1-rejected-imagegen-manifest.json)。
+- 8 张 **1735×906 候选图** 真实保存并 list 核验到 ChatGPT Library：`/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/`。这是保留视觉参考的隔离区，**不是**已获审定的 2048×1070 正文 PNG；GitHub 尚未保存这些 PNG 字节。
+- 禁止交给 Work 直接重建；应先按 [02 合同](02-slide-contracts.md)、[03 证据](03-evidence-map.md)、[04 风险](04-risk-boundaries.md)修正内容，按每页 G1→G2 验收后重新制图，补 Speaker Notes 和16:9预览。S03/S05/S08/S15 已通过的四页不受本次隔离影响。
+
+
 ## 一次附加即可开始 Work：四页真实图片总包（2026-10-23）
 
 **已实际保存并从 Library 下载回读校验：** `Agentic_CPU_4Slide_Work_Input_2026-10-23.zip`，约 8.9 MB，内部14项：四张正文PNG、四张16:9预览PNG、四份源码ZIP，以及README和manifest。SHA-256：`84970ea9d7f382162cb5a0ed6c4dc6b82727095698971b545ffeb98094dd1176`；ZIP CRC通过。
