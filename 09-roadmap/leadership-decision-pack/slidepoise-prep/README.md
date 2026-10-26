@@ -1,5 +1,16 @@
 # SlidePoise PPT 前置设计区（中文）
 
+## **2026-10-27：17页最终视觉素材已完整归并，二进制已持久化（优先于下方历史状态）**
+
+- **17/17 页最终图片顺序已固定**（S01封面、S02目录均计数）。真实生成 **17 张正文 2048×1070 PNG、17 张完整 16:9 预览 2048×1152、17份讲者备注、17张原图备份、17页缩略总览、SHA-256 manifest及逐页QA**。视觉上全部为用户在聊天窗口认可的版本。
+- **[查看最终交付和 Work 交接](17-final-visual-asset-package-and-work-handoff-2026-10-27.md)**：含每页实际源文件名、页序、状态、两个ZIP完整 SHA-256、可提取的 Library 位置及 SlidePoise 工作约束。
+- **两份真实 ZIP 已上传并从 ChatGPT Library 回读 SHA-256/CRC：** `/Agentic-CPU-uArch/slidepoise/final17-2026-10-27/`。Work输入包 `Agentic_CPU_17Slides_PNG_Work_Input_2026-10-27.zip`（67,100,508 字节），全源包 `Agentic_CPU_17Slides_Full_Source_2026-10-27.zip`（89,604,648 字节）；总览 `17-slide-contact-sheet.png` 也有单独文件。
+- **内容关口不是17/17全通过**：S12 图面未完整覆盖低功耗准入、语义进度与QoE（P1内容阻断）；S16 缺少四级证据类型的明确投影标签（P1待补）；技术完全就绪为15/17，其余可在用户认可视觉的基础上定点修正，而非全套重做。
+- **仓库归档真实范围**：GitHub 本次保存此元数据、准入判断与交接文档；**PNG/ZIP二进制在 Library，尚未真实提交GitHub**。本次没有生成PPTX。不得以 GitHub SHA/manifest 文本替代真实图片文件。
+- **SlidePoise**：后续 Work 从 Library 获得以上一个ZIP，检验实际字节；使用 `01-substantive-2048x1070/Sxx-content.png` 作为正文目标，`02-full-16x9-2048x1152/` 仅作母版/视觉参考，真正PowerPoint对象编辑性、页码、Speaker Notes写入回读由 Work 另行检验。
+
+
+
 ## 最新纠偏（2026-10-26）：S07/S09/S10/S11 四页用户视觉拒收
 
 **技术内容 G1 保留；视觉 G2 判定 REJECTED_BY_USER。** 用户指出这四张技术页面过度依赖浅蓝矩形、文字和单向箭头，像普通 PPT 流水线；确认**实际这四张并不是 Image2.5 分页设计**，而是程序化 SVG→PNG，Image2.5 仅提供过被否决的蒙太奇视觉参考，不能继续把它称为“高质量 Image2.5 视觉稿”。
