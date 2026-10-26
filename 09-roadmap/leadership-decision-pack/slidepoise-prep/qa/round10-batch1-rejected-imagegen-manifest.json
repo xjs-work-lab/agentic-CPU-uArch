@@ -1,0 +1,115 @@
+{
+  "schema_version": "round10-batch1-imagegen-quarantine-v1",
+  "date": "2026-10-26",
+  "authoritative_content": "02-slide-contracts.md + 03-evidence-map.md + 09-roadmap/current.md + DEC-PORTFOLIO-002 + DEC-A-008",
+  "audit": "qa/round10-batch1-imagegen-content-audit-2026-10-26.md",
+  "total": 8,
+  "approved": 0,
+  "hold_p1": 2,
+  "reject_p0": 6,
+  "original_source": "image2.5 outputs in ChatGPT conversation",
+  "library_folder": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/",
+  "verified_library_list_count": 8,
+  "github_binary_uploaded": false,
+  "content_png_2048x1070_accepted_count": 0,
+  "full_preview_2048x1152_accepted_count": 0,
+  "speaker_notes_produced_count": 0,
+  "assets": [
+    {
+      "slide": "S01",
+      "filename": "移动端_agent_cpu_架构演进洞察.png",
+      "bytes": 1714508,
+      "sha256": "153ee2f55159da69dc4702f01712fb774b789a2031124c9b564c57774f502c12",
+      "width": 1735,
+      "height": 906,
+      "status": "HOLD_P1",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/移动端_agent_cpu_架构演进洞察.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S02",
+      "filename": "四大问题与证据驱动报告主线.png",
+      "bytes": 1680176,
+      "sha256": "4f8d235e92a48de90c65766e7fdbcad23f1655e766c7a9a92065d2339f72953d",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/四大问题与证据驱动报告主线.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S04",
+      "filename": "agentic工作流与cpu新职责.png",
+      "bytes": 1593315,
+      "sha256": "1b3096973059b934c52799e9bba691e9f14eead476c6580ca8e1fc31666d8377",
+      "width": 1735,
+      "height": 906,
+      "status": "HOLD_P1",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/agentic工作流与cpu新职责.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S06",
+      "filename": "npu性能与端到端收益分析.png",
+      "bytes": 1621624,
+      "sha256": "08ee03347dc94a35f636e1a619ddf38204a8eac2862aef7c8a5d41ece0ef65f9",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/npu性能与端到端收益分析.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S07",
+      "filename": "cpu与npu协同决策架构.png",
+      "bytes": 1566507,
+      "sha256": "73c9b366bdefa51f47be00e561e66330d881f6041921f40a20f7d0d2caadf449",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/cpu与npu协同决策架构.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S09",
+      "filename": "强软件基线与残余硬件证据决策图.png",
+      "bytes": 1704093,
+      "sha256": "594826912c48c1bc1e84f999d84c7cc3887ee7f4df10ed472047d2c4477c400c",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/强软件基线与残余硬件证据决策图.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S10",
+      "filename": "agent状态治理与生命周期管理.png",
+      "bytes": 1676790,
+      "sha256": "2458a0118ee348d24260e0a86b39a54ebd6f8740fea5b877cd02579a24dd2dc6",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/agent状态治理与生命周期管理.png",
+      "permit_as_slidepoise_input": false
+    },
+    {
+      "slide": "S11",
+      "filename": "可信动作闭环流程图.png",
+      "bytes": 1542106,
+      "sha256": "bc0a33ff606e1e3f349690a265fb10844d2d9d39c23097d8a0188cf084024801",
+      "width": 1735,
+      "height": 906,
+      "status": "REJECT_P0",
+      "library_path": "/Agentic-CPU-uArch/slidepoise/round10-rejected-visual-candidates/可信动作闭环流程图.png",
+      "permit_as_slidepoise_input": false
+    }
+  ],
+  "next_actions": [
+    "Correct S06 source metric and remove unsourced absolute bars",
+    "Fix S02 true four chapter/page index",
+    "Rewrite S07/S09/S10/S11 to match locked slides",
+    "Complete S04 four changes and simplify S01",
+    "Create controlled 2048x1070 pages only after G1; generate 2048x1152 frame previews; attach theme-based speaker notes and per-slide QA",
+    "Do not modify S03/S05/S08/S15 user-approved examples"
+  ]
+}
