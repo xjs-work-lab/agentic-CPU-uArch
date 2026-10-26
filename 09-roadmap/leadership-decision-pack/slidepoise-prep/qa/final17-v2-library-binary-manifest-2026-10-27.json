@@ -1,0 +1,190 @@
+{
+  "schema_version": "final17_v2_binary_handoff_2026-10-27",
+  "status": "17_VISUAL_USER_APPROVED_17_CONTRACT_TOPIC_COVERAGE_REVIEWED_NO_PPTX",
+  "library_dir": "/Agentic-CPU-uArch/slidepoise/final17-v2-2026-10-27",
+  "repo": "xjs-work-lab/agentic-CPU-uArch",
+  "contract_root": "09-roadmap/leadership-decision-pack/slidepoise-prep/",
+  "files": [
+    {
+      "name": "Agentic_CPU_17Slides_PNG_Work_Input_v2_2026-10-27.zip",
+      "bytes": 67794110,
+      "sha256": "73a3549038f37aa143652d3a0054119db248119e47bbe52386782ac3bd5b3256",
+      "zip_entries": 55,
+      "library_uploaded": true,
+      "library_readback_verified": true,
+      "zip_crc_pass": true,
+      "github_binary_committed": false
+    },
+    {
+      "name": "Agentic_CPU_17Slides_Full_Source_v2_2026-10-27.zip",
+      "bytes": 88886731,
+      "sha256": "b9a343d90460467631984cd590da13776523364d0cd46b0af3e78e8b2bca3c0b",
+      "zip_entries": 77,
+      "library_uploaded": true,
+      "library_readback_verified": true,
+      "zip_crc_pass": true,
+      "github_binary_committed": false
+    },
+    {
+      "name": "17-slide-contact-sheet-v2.png",
+      "bytes": 6471510,
+      "library_uploaded": true,
+      "github_binary_committed": false
+    }
+  ],
+  "slides": [
+    {
+      "id": "S01",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S01-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S01-preview.png",
+      "notes_filename": "04-speaker-notes/S01-speaker-notes.md"
+    },
+    {
+      "id": "S02",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S02-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S02-preview.png",
+      "notes_filename": "04-speaker-notes/S02-speaker-notes.md"
+    },
+    {
+      "id": "S03",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S03-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S03-preview.png",
+      "notes_filename": "04-speaker-notes/S03-speaker-notes.md"
+    },
+    {
+      "id": "S04",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S04-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S04-preview.png",
+      "notes_filename": "04-speaker-notes/S04-speaker-notes.md"
+    },
+    {
+      "id": "S05",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S05-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S05-preview.png",
+      "notes_filename": "04-speaker-notes/S05-speaker-notes.md"
+    },
+    {
+      "id": "S06",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S06-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S06-preview.png",
+      "notes_filename": "04-speaker-notes/S06-speaker-notes.md"
+    },
+    {
+      "id": "S07",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S07-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S07-preview.png",
+      "notes_filename": "04-speaker-notes/S07-speaker-notes.md"
+    },
+    {
+      "id": "S08",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S08-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S08-preview.png",
+      "notes_filename": "04-speaker-notes/S08-speaker-notes.md"
+    },
+    {
+      "id": "S09",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S09-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S09-preview.png",
+      "notes_filename": "04-speaker-notes/S09-speaker-notes.md"
+    },
+    {
+      "id": "S10",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S10-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S10-preview.png",
+      "notes_filename": "04-speaker-notes/S10-speaker-notes.md"
+    },
+    {
+      "id": "S11",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S11-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S11-preview.png",
+      "notes_filename": "04-speaker-notes/S11-speaker-notes.md"
+    },
+    {
+      "id": "S12",
+      "version": "Image2.5_REVISED_USER_APPROVED_v2",
+      "content_filename": "01-substantive-2048x1070/S12-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S12-preview.png",
+      "notes_filename": "04-speaker-notes/S12-speaker-notes.md"
+    },
+    {
+      "id": "S13",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S13-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S13-preview.png",
+      "notes_filename": "04-speaker-notes/S13-speaker-notes.md"
+    },
+    {
+      "id": "S14",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S14-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S14-preview.png",
+      "notes_filename": "04-speaker-notes/S14-speaker-notes.md"
+    },
+    {
+      "id": "S15",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S15-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S15-preview.png",
+      "notes_filename": "04-speaker-notes/S15-speaker-notes.md"
+    },
+    {
+      "id": "S16",
+      "version": "Image2.5_REVISED_USER_APPROVED_v2",
+      "content_filename": "01-substantive-2048x1070/S16-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S16-preview.png",
+      "notes_filename": "04-speaker-notes/S16-speaker-notes.md"
+    },
+    {
+      "id": "S17",
+      "version": "UNCHANGED_SHA256_FROM_v1",
+      "content_filename": "01-substantive-2048x1070/S17-content.png",
+      "preview_filename": "02-full-16x9-2048x1152/S17-preview.png",
+      "notes_filename": "04-speaker-notes/S17-speaker-notes.md"
+    }
+  ],
+  "modified_pages": [
+    "S12",
+    "S16"
+  ],
+  "untouched_page_count": 15,
+  "unchanged_substantive_preview_original_notes_sha_verified": true,
+  "updated_hashes": {
+    "S12": {
+      "substantive_sha256": "0df6ccacf57026be4be1d8566a1095d3af3a9a0f6d2242512eaed2aacd56e3b4",
+      "source_sha256": "b9365b77ec68100b8accf093b21b3fe5ca3490bf55212e8439eee8b56b1fcac1"
+    },
+    "S16": {
+      "substantive_sha256": "ad46abf293b9d6eda83de8e1d05c92144aebc309c10fe50aa662829bd7d3959b",
+      "source_sha256": "f41752c31ae8a140378e235910becb620e50d299be1810a4e8104c584fc332fc"
+    }
+  },
+  "real_original_manifest_in_zip": "05-QA/manifest.json",
+  "actual_content_count": 17,
+  "actual_preview_count": 17,
+  "actual_notes_count": 17,
+  "full_slide_px": [
+    2048,
+    1152
+  ],
+  "substantive_px": [
+    2048,
+    1070
+  ],
+  "header_footer_px": [
+    41,
+    41
+  ],
+  "slideshow_native_pptx_created": false,
+  "supersedes": "17-final-visual-asset-package-and-work-handoff-2026-10-27.md"
+}
