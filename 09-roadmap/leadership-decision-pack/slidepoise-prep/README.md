@@ -1,5 +1,15 @@
 # SlidePoise PPT 前置设计区（中文）
 
+## Round12（2026-10-26）：S07 / S09 / S10 / S11 真尺寸技术修订候选已生成
+
+- **本轮四页的 G1 技术内容按 Round11 锁定文案复核，4/4 已生成受控 2048×1070 正文 PNG + 2048×1152（16:9）整页预览，G2 仍待用户最终视觉签收。** S02/S06 已经用户视觉确认，不重做。
+- 原有 Image2.5 全页稿因错误页码/科学机制而拒收，只用于蓝白技术视觉风格参考；**全部正式技术文字、数字范围与箭头均按合同重新绘制**，没有使用模型自行编造的加速柱形。
+- [Round12 内容与渲染审计](qa/round12-s07-s09-s10-s11-content-and-render-audit-2026-10-26.md) · [四页 PNG/SVG/ZIP 哈希清单](qa/round12-four-slide-controlled-png.manifest.json)。讲者备注：[S07](notes/S07-speaker-notes-2026-10-26.md)、[S09](notes/S09-speaker-notes-2026-10-26.md)、[S10](notes/S10-speaker-notes-2026-10-26.md)、[S11](notes/S11-speaker-notes-2026-10-26.md)。
+- **已实际持久化实物**：ChatGPT Library `/Agentic-CPU-uArch/slidepoise/round12-four-visual-candidates/`，含四正文 PNG、四整页 PNG、一完整 ZIP，总计9项。ZIP 为 `Agentic_CPU_Round12_S07_S09_S10_S11_Review.zip`（SHA-256 `e0ceb4fb4f8b62692445df181a69449c727c9c13f3731e348ad7db9bae100817`），经 Library 下载回读一致、CRC 通过。Work 无法读取Library时由用户附加**这一份ZIP**，不要引用其他会话临时沙盒路径。
+- **GitHub 状态明确**：技术 QA、manifest 和 Notes 已存；四张 PNG、预览和 ZIP 二进制尚未直传 GitHub。当前不生成原生可编辑 PPTX，未做 PowerPoint Notes 写读回。
+- 这批完成视觉审核后，第一批八页仅剩 **S01、S04** 未出修订版 PNG；S03/S05/S08/S15 既有已审核试制不要重做。
+
+
 ## Round11（2026-10-26）：首批八页内容修订完成；S02/S06 真尺寸修订图待视觉审核
 
 - **G1：本轮 8/8 已锁定新的投影文案与主题化 Speaker Notes**，页码 S01/S02/S04/S06/S07/S09/S10/S11。技术事实与当前正式决策不矛盾，但 G1 不等于历史八张 Image2.5 草图已合格。
