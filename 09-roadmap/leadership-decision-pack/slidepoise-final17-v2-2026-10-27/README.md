@@ -1,6 +1,12 @@
 # 17 页 v2 可编辑 PowerPoint
 
-本目录是 2026-10-27 v2 视觉稿的 SlidePoise 可编辑重建归档，页序 S01–S17。
+本目录是 2026-10-27 v2 视觉稿的 SlidePoise 可编辑重建归档，页序 S01–S17。**推荐使用视觉修订版**：它补回了首次重建中遗漏的说明图标、关系箭头与条件研究配色。
+
+- [推荐：视觉修订版可编辑 PPTX](Agentic-CPU-17-slide-editable-v2-visual-revision.pptx)
+- [视觉修订版 17 页总览](preview-visual-revision/contact-sheet.png)；逐页 PNG 为 `preview-visual-revision/slide-001.png` 至 `slide-017.png`
+- [视觉修订版 QA](VISUAL-REVISION-QA.md) · [逐页备注与编辑性检查](visual-revision-editability-and-notes-check.json) · [文本审计](visual-revision-text-audit.json)
+
+以下是首次重建版，保留供对照：
 
 - [可编辑 PPTX](Agentic-CPU-17-slide-editable-v2-final.pptx)
 - [17 页总览](preview/contact-sheet.png)；逐页 PNG 为 `preview/slide-001.png` 至 `slide-017.png`

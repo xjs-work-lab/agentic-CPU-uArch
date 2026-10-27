@@ -1,0 +1,145 @@
+{
+  "pptx_sha256": "c61c0009bac362c6422a3e1704be5b7be715674b46a820e6632b305eb99b31e1",
+  "slide_count": 17,
+  "aspect_ratio": "16:9",
+  "preview_png_count": 17,
+  "notes_readback_count": 17,
+  "slides": [
+    {
+      "slide": "S01",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 18,
+      "native_nonpicture_objects": 30,
+      "independent_picture_objects": 2,
+      "largest_picture_page_fraction": 0.1917
+    },
+    {
+      "slide": "S02",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 51,
+      "native_nonpicture_objects": 68,
+      "independent_picture_objects": 0,
+      "largest_picture_page_fraction": 0
+    },
+    {
+      "slide": "S03",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 58,
+      "native_nonpicture_objects": 316,
+      "independent_picture_objects": 6,
+      "largest_picture_page_fraction": 0.0016
+    },
+    {
+      "slide": "S04",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 89,
+      "native_nonpicture_objects": 130,
+      "independent_picture_objects": 1,
+      "largest_picture_page_fraction": 0.0024
+    },
+    {
+      "slide": "S05",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 61,
+      "native_nonpicture_objects": 117,
+      "independent_picture_objects": 0,
+      "largest_picture_page_fraction": 0
+    },
+    {
+      "slide": "S06",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 35,
+      "native_nonpicture_objects": 43,
+      "independent_picture_objects": 0,
+      "largest_picture_page_fraction": 0
+    },
+    {
+      "slide": "S07",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 87,
+      "native_nonpicture_objects": 229,
+      "independent_picture_objects": 6,
+      "largest_picture_page_fraction": 0.0187
+    },
+    {
+      "slide": "S08",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 56,
+      "native_nonpicture_objects": 98,
+      "independent_picture_objects": 1,
+      "largest_picture_page_fraction": 0.0323
+    },
+    {
+      "slide": "S09",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 86,
+      "native_nonpicture_objects": 130,
+      "independent_picture_objects": 8,
+      "largest_picture_page_fraction": 0.0015
+    },
+    {
+      "slide": "S10",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 75,
+      "native_nonpicture_objects": 108,
+      "independent_picture_objects": 10,
+      "largest_picture_page_fraction": 0.0031
+    },
+    {
+      "slide": "S11",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 74,
+      "native_nonpicture_objects": 211,
+      "independent_picture_objects": 16,
+      "largest_picture_page_fraction": 0.0035
+    },
+    {
+      "slide": "S12",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 132,
+      "native_nonpicture_objects": 189,
+      "independent_picture_objects": 43,
+      "largest_picture_page_fraction": 0.0027
+    },
+    {
+      "slide": "S13",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 78,
+      "native_nonpicture_objects": 265,
+      "independent_picture_objects": 12,
+      "largest_picture_page_fraction": 0.0056
+    },
+    {
+      "slide": "S14",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 95,
+      "native_nonpicture_objects": 225,
+      "independent_picture_objects": 12,
+      "largest_picture_page_fraction": 0.0035
+    },
+    {
+      "slide": "S15",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 68,
+      "native_nonpicture_objects": 161,
+      "independent_picture_objects": 5,
+      "largest_picture_page_fraction": 0.0023
+    },
+    {
+      "slide": "S16",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 87,
+      "native_nonpicture_objects": 131,
+      "independent_picture_objects": 18,
+      "largest_picture_page_fraction": 0.0059
+    },
+    {
+      "slide": "S17",
+      "notes_exact_content_read_back": true,
+      "native_text_objects": 56,
+      "native_nonpicture_objects": 275,
+      "independent_picture_objects": 10,
+      "largest_picture_page_fraction": 0.0037
+    }
+  ]
+}
