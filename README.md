@@ -2,7 +2,7 @@
 
 > **研究更新进行中｜2026-11-09（PPT 暂时冻结）**
 >
-> - 已完成仓库质量盘点、EdgePace/Tandem 全文复核、Ripple 跨平台反证、4篇遗漏/补充论文深读，以及 Android NPU Manager / Qualcomm QAIRT 2.48 基线更新。
+> - 已完成仓库质量盘点、EdgePace/Tandem 全文复核、Ripple 跨平台反证、4篇遗漏/补充论文深读 + 1篇相邻 UMA CPU–GPU 调度论文（Ripple），以及 Android NPU Manager / Qualcomm QAIRT 2.48 基线更新。
 > - 初步方向影响：**C、CG-06 增强；B-residual 收窄；A 保持条件储备；PT-A、R2 本批无直接变化。** 尚未修改正式投资组合或历史决策。
 > - 重要边界：Ripple 是 DGX Spark UMA CPU-GPU 研究，不是手机实证；PAPER-124 使用 GENIE 2.39.0，不能把其能耗最优配置当成 QAIRT 2.48 最新基线。
 > - 研究入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md) · [比较与反证矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md) · [仓库质量审计](analysis/research-refresh-2026-11-09/repository-quality-audit-2026-11-09.md)。
