@@ -1,6 +1,8 @@
 # CONTINUE HERE — Agentic CPU-uArch 研究结题后的恢复入口
 
-**状态更新：2026-10-09 | PUBLIC_EVIDENCE_RESEARCH_CLOSED_WITH_BOUNDARIES（公开证据范围内研究结题）**
+**状态更新：2026-11-09 | TARGETED_RESEARCH_REFRESH_IN_PROGRESS（定向研究更新进行中）**
+
+> 2026-10-09 的公开证据研究结题仍是历史基线；2026-11-09 因发现新原始论文与官方 QAIRT 2.48 机制，已按决策相关性重新开启**有限范围更新**。不推翻旧决策、不重做 PPT；先完成 Runtime/Agent/移动 NPU 交叉验证，再进入 CPU/LLVM/微架构与产业信息复核。当前第一批材料见 [Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)。
 
 这是未来换聊天窗口、继续验证或遇到新原始证据时的**最短正确恢复路径**。不要按老消息标题“Next Round”等历史字样重启宽泛研究，也不要把过时 Primary Bet 历史评分误当现行决策。
 
@@ -31,9 +33,19 @@ PPT SHA-256：`6d7bb7a19d62c0353f2cbebd9651fed4cb19e874543b39b7063e42cf63f187d5`
 
 **不要声称PPTX二进制已在GitHub**；GitHub有完整研究来源、Notes原文、发布路径和哈希，文件实体在Library。Windows PowerPoint和实际投影的最终使用体验尚未实测；不影响本项目公开证据研究结题结论。
 
-## 4. 状态和下一轮启动门槛
+## 4. 当前研究更新状态（2026-11-09）
 
-- **默认状态：研究结题，停止宽泛新增论文/专利/方向的循环。**
+**当前阶段：第一批 Runtime/Agent/移动 NPU 交叉研究已完成，第二批 CPU/LLVM/微架构/厂商披露待推进。**
+
+- 第一批新增并深读/复核 EdgePace、Tandem、Ripple、Is Your NPU Ready for LLMs、Compiler Fusion Power Bursts、sd.npu、MemGUI-Bench；另核对 Android 17 NPU Manager/CTS 与 Qualcomm QAIRT 2.48。
+- 初步影响：C、CG-06 增强；B-residual 收窄；A 保持条件储备；PT-A、R2 本批无直接变化。
+- 这些是 dated research-refresh findings，**尚未修改** 09-roadmap/current.md、正式投资组合或历史 Decision Events。
+- 下一批重点：AArch64/SME2/LLVM、手机 CPU/cache/interconnect、CPU decode 与 CPU/NPU phase-aware dispatch、Arm/Qualcomm/MediaTek/Apple/Samsung 官方披露；重新评估 CG-06 和 R2。
+- 不修改任何 PPT/PPTX。是否重做最终汇报待研究更新结束后再决定。
+
+## 5. 状态和下一轮启动门槛
+
+- **研究结题仍是默认基线；仅在存在可能改变决策的新证据时进行有边界的定向更新。**
 - 若需更新：必须有新公开原创实验、论文重大更正、官方ISA/LLVM/OS/NPU机制变更，或发现现有关键来源/结论错误，且能明确指出可能改变哪条 FQ 和技术决策。
 - 先确认新材料所证明的精确事实、限制、强替代基线、独立性；然后更新 canonical Source/Claim/Direction，必要时新增 Decision Event，再同步管理报告/PPT、备注与档案。
 - 不能从历史 `00-project/STATUS.md` 中部未被更新的旧 `A PRIMARY_BET/82.5` 行恢复旧决策；顶部 CURRENT AUTHORITY 和 [current.md](09-roadmap/current.md) 才是权威。
