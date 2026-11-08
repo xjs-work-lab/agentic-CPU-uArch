@@ -37,3 +37,8 @@
 ## 下一批
 
 转向CPU微架构、AArch64/SME2/LLVM、手机SoC CPU/cache/interconnect/内存和厂商披露，重点重新评估CG-06与R2。完成前不更新正式投资组合，不重做PPT。
+
+## 新增的 Qualcomm baseline 修正
+
+官方 QAIRT 2.48（文档更新 2026-09-03）已为 Hexagon V79+ 提供 LLM Decode 专用性能档位，按 decode 的 memory-bound 特征降低 HMX、分档配置 DDR/HVX/CENG，并提供 CPU/HTP/RPC latency 控制。PAPER-124 使用的 GENIE 版本是 2.39.0，因此它的能耗最优配置不是当前最新的 Qualcomm vendor baseline。详见 [VENDOR-027 dated supplement](VENDOR-027-android-npu-manager-qairt-update-2026-11-09.md) 和 [PAPER-124 baseline correction](PAPER-124-Is-Your-NPU-Ready-2026-07-06.md)。
+
