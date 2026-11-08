@@ -148,3 +148,12 @@ PAPER-124 and PAPER-125 are not necessarily first published after October 8; the
 - PT-A and R2: no direct change in this batch.
 
 No historical decision or PPT file was changed.
+
+
+## 10. New post-closure adjacent paper: PAPER-128 Ripple
+
+Ripple (arXiv:2611.01067, 2026-10-31; Jiadong Zhang and Xiaosong Ma, MBZUAI) is a full-text-reviewed adjacent result. It targets DGX Spark/GB10 UMA CPU–GPU co-scheduling, not phones or NPUs. It explicitly evaluates SERENO's Balanced/UI-First policies on this different topology. At one representative 1.5× deadline setting, Ripple reports 7.00 LLM tokens/s at 0.78% worst CPU deadline-miss rate, while SERENO UI-First reports 7.25 tokens/s at 66.95% DMR and SERENO Balanced 9.53 tokens/s at 99.85% DMR. The paper explains that phone NPU bandwidth relinquished to the CPU is a different topology from DGX Spark GPU bandwidth that the CPU cannot absorb.
+
+This is **not evidence that SERENO fails on its target phone workloads**. It is evidence that a generic “foreground-first” or time-slicing policy cannot be transferred across UMA topologies without modeling who can absorb released bandwidth, which jobs have deadlines, and whether accelerator work is pausable at the chosen granularity.
+
+PAPER-128 strengthens C as a platform-specific scheduling discipline, but it does not create direct phone NPU or CPU-uArch evidence. Its implementation uses SGLang hooks, layer grants, CPU completion feedback, GPU-byte budgets and CUDA green contexts; it does not propose a new CPU ISA.
