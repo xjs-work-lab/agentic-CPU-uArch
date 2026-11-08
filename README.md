@@ -1,5 +1,8 @@
 # Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
+> **Research Refresh 补充（2026-11-09）：** 新增 PAPER-128 Ripple（arXiv 2026-10-31），对 DGX Spark UMA CPU–GPU deadline scheduling 与 SERENO 做了直接比较。该结果不是手机实证，不能据此否定 SERENO 在手机上的结果；它强调调度策略必须按 CPU/NPU 与 CPU/GPU 的内存拓扑分别设计。详见 [PAPER-128](analysis/research-refresh-2026-11-09/PAPER-128-Ripple-2026-10-31.md) 和 [比较矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
+
+
 > **2026-11-09 Research Refresh — 第一批独立研究与反证已写入 GitHub（不涉及 PPT）：** 新增 EdgePace/Tandem 全文交叉核验、4篇高价值补充/遗漏原始论文（PAPER-124–127）、Android 17 NPU Manager/CTS 与 Qualcomm QAIRT 控制边界。初步结论：C、CG-06增强；B-residual收窄；A保持条件储备；PT-A/R2本批无直接变化。尚未更新正式投资组合。入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)，[独立研究与反证矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
 
 
