@@ -134,3 +134,12 @@ The public MIT fork was inspected through its GitHub API and raw source. The hos
 The host also handles restore failures: retries at 10 ms and 40 ms, then marks the power state faulty and refuses new op batches/aborts rather than submitting work into an unknown NPU power state. The 2026-10-03 artifact commit reports fault-injection tests on Snapdragon 8 Elite and identical outputs/log-probabilities across 61 prompts before fault injection.
 
 This source audit raises confidence that Tandem's idle-power mechanism is implemented, not merely described. It remains a Qualcomm Hexagon-specific runtime implementation, not a generic Android API or universal hardware primitive. See [Tandem code artifact audit](Tandem-code-artifact-audit-2026-11-09.md) and the source links there.
+
+
+## 10. QAIRT 2.48 is a newer Qualcomm baseline than PAPER-124 used
+
+The official QAIRT HTP backend page is dated 2026-09-03 and documents LLM-decode performance profiles as new in version 2.48. These are supported on Hexagon V79+ (including the V79/V81 generations used in the PAPER-124 phone set). The profiles distinguish memory-bound decode from compute-bound prefill: they reduce HMX clocks during decode while scaling DDR, HVX and CENG settings by performance tier; the SDK also exposes CPU/HTP performance infrastructure and RPC control-latency configuration.
+
+PAPER-124's own framework table identifies GENIE 2.39.0. Therefore its measured 20 µs polling / 65,535 µs NPU sleep / low CPU-frequency configuration is not a comparison against the newer QAIRT 2.48 decode profiles. The paper remains valuable for phase split, CPU decode, host energy and framework gaps, but its “best practice” energy savings should be treated as a **2.39-era baseline** until compared with 2.48's LLM-decode modes.
+
+This strengthens the need to keep the Qualcomm vendor baseline current, while narrowing generic HMX/DDR decode power tuning as a novel research claim. It does not show that QAIRT 2.48 automatically schedules Agent semantic progress or cross-app deadlines.
