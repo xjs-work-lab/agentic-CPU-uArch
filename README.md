@@ -1,5 +1,8 @@
 # Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
+> **2026-11-09 Research Refresh — 第一批独立研究与反证已写入 GitHub（不涉及 PPT）：** 新增 EdgePace/Tandem 全文交叉核验、4篇高价值补充/遗漏原始论文（PAPER-124–127）、Android 17 NPU Manager/CTS 与 Qualcomm QAIRT 控制边界。初步结论：C、CG-06增强；B-residual收窄；A保持条件储备；PT-A/R2本批无直接变化。尚未更新正式投资组合。入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)，[独立研究与反证矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
+
+
 > **2026-11-09 研究更新进行中（不涉及PPT重做）：** 项目已启动新一轮公开证据复核。先审查仓库质量与当前性，再更新学术/产业证据及方向判断。最新入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)。本轮新增 EdgePace（arXiv:2610.37307）与 Tandem（arXiv:2610.26660）两项直接手机相关原始证据，初步影响 C/CG-06/B-residual；尚未完成全部检索，不改变现行正式投资组合，PPT 暂时冻结。
 
 
