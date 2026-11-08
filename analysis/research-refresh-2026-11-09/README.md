@@ -32,7 +32,7 @@
 - Tandem是独立作者团队、公开llama.cpp fork，并以llama.cpp最快NPU配置为主要基线；其主要结果是Qwen3.5 hybrid GUI Agent与OnePlus 13T/15特定环境。其DMA cache-coherence问题通过OS cache clean/invalidate处理，是B-residual的重要软件边界案例。
 - AOSP Android 17 NPU Manager和Qualcomm QAIRT已公开部分priority、admission、work lifecycle、power-vote控制，但没有Agent语义进度/utility/freshness接口，也不代表所有OEM都实现相同能力。
 - PAPER-124、PAPER-125、PAPER-126、PAPER-127均为本轮发现的高价值遗漏/补充证据；其中PAPER-124的POMACS出版状态需再从ACM publisher record核实。
-- 本批共读了种子论文及4篇额外原始全文；Consensus 独立筛查报告是20篇摘要级筛查，不将摘要筛查等同于全文深读。
+- 本批共读了2篇种子论文及5篇额外原始全文；Consensus 独立筛查报告是20篇摘要级筛查，不将摘要筛查等同于全文深读。
 
 ## 下一批
 
