@@ -12,6 +12,8 @@
 - [PAPER-125 Compiler Fusion Power Bursts](PAPER-125-Compiler-Fusion-Power-Bursts-2026-07-17.md)
 - [PAPER-126 sd.npu](PAPER-126-sd-npu-2025-12-17.md)
 - [PAPER-127 MemGUI-Bench](PAPER-127-MemGUI-Bench-2026-02.md)
+- [PAPER-128 Ripple — DGX Spark UMA CPU-GPU deadline scheduler](PAPER-128-Ripple-2026-10-31.md)
+- [EdgePace/Tandem 全文二次核验（设备、基线、PMU开销、DMA cache coherence）](PAPER-122-123-crosscheck-2026-11-09.md)
 - [EdgePace/Tandem/Android/QNN/既有工作比较、研究谱系与反证矩阵](comparison-lineage-counterevidence-2026-11-09.md)
 - [VENDOR-027 Android NPU Manager / Qualcomm QAIRT 更新](VENDOR-027-android-npu-manager-qairt-update-2026-11-09.md)
 
