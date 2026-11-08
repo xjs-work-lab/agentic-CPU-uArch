@@ -17,3 +17,8 @@ evidence_role = "P0 / direct AO1+AO2+AO3 strongest OS-level scheduling and cance
 Direct official source: https://source.android.com/docs/core/perf/npu-manager
 
 Review status: **FULL_10Q**. See [deep.md](deep.md) for source mechanism, implementation boundary, prior-art role and target transfer limits.
+
+
+## 2026-11-09 dated supplement
+
+See [Android NPU Manager / Qualcomm QAIRT update](../../analysis/research-refresh-2026-11-09/VENDOR-027-android-npu-manager-qairt-update-2026-11-09.md) for the current CTS Mobly test boundary, device-specific race-test configuration, and Qualcomm QAIRT manual/automatic HTP performance-vote controls. This supplement does not overwrite the 2026-10-08 FULL_10Q snapshot.
