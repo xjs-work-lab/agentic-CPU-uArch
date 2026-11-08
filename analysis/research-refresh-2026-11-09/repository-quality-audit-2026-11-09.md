@@ -112,3 +112,39 @@ This is a preliminary Phase 1/early discovery assessment, not final November por
 - Do not overwrite October decision events or the October 8 current portfolio.
 - Do not conduct local tests, experiments, simulations or PoCs.
 - Do not claim exhaustive coverage of every paper, patent or OEM.
+
+
+## 9. Second-pass discovery: high-value prior art missing from the October closure
+
+The targeted independent search found four additional sources not present in the current paper inventory by arXiv ID/title search. Two predate the October 8 closure and therefore represent **coverage omissions**, not new post-closure publications. One cross-layer source has a manuscript DOI/venue metadata that needs publisher confirmation.
+
+### Newly reviewed source additions
+
+| Provisional refresh ID | Source | Date/status | Why it matters | Why it does not create a hardware bet |
+|---|---|---|---|---|
+| PAPER-124 | Is Your NPU Ready for LLMs? (arXiv:2607.05475) | arXiv v1 2026-07-06; manuscript lists POMACS 10(3), DOI 10.1145/3857370; publisher status pending | Four Qualcomm phones, five frameworks, CPU/GPU/NPU; CPU decode often leads NPU; host polling/sleep/affinity/DVFS change energy materially | Isolated inference only; no foreground Agent loop; no CPU ISA proposal |
+| PAPER-125 | Mitigating Compiler Fusion-Induced Power Bursts (arXiv:2607.16555) | Preprint 2026-07-17 | Shows NPU compiler fusion can create transient current/voltage risk; graph-level PAPR barriers can mitigate selected cases | One Snapdragon 8 Gen 3, two vision backbones; no CPU uArch change; transfer law not calibrated |
+| PAPER-126 | sd.npu (arXiv:2510.15312) | Full-text version 2025-12-17 | Three commercial phones and tasks including UI automation; progressive graph switching and NPU-tailored speculative decoding already address NPU-only mobile RAG | Runtime/graph/speculation techniques; not evidence of hidden hardware state |
+| PAPER-127 | MemGUI-Bench (arXiv:2602.06075) | Preprint 2026-02 | Quantifies short/long-term GUI-agent memory deficits across 128 tasks/26 apps/11 agents | Benchmark and agent-memory result, not CPU/OS private-state evidence |
+
+### Important correction to the research freshness narrative
+
+PAPER-124 and PAPER-125 are not necessarily first published after October 8; their arXiv first-post dates are July 2026. They were missing from the previous evidence inventory, so their discovery is a repository coverage correction. EdgePace and Tandem are genuinely new after the October 8 portfolio decision (October 19 and October 27, respectively). PAPER-126 and PAPER-127 are older prior-art additions.
+
+### Updated source-depth and independence cautions
+
+- The Consensus research agent screened 20 papers at abstract level and produced a cited synthesis. It is a discovery/triage layer only; it is not treated as 20 full-text reviews.
+- EdgePace and Tandem full texts were separately retrieved and reviewed. EdgePace's PMU read-overhead numbers are reported on Jetson Orin Nano Super, not OnePlus 13.
+- Tandem is a separate research group and has a public llama.cpp fork. Its specific DMA cache-coherence bug is handled with OS cache clean/invalidate, not a new CPU hardware primitive.
+- AOSP Android 17 NPU Manager and its CTS tests were checked directly. The CTS priority test is race-based and device-tuned; it is not an Agent freshness/QoE guarantee.
+- Qualcomm QAIRT public docs expose manual/automatic HTP performance-control strategy and performance-vote release. This is software-visible runtime control, but not proof of generic per-sublayer inference preemption.
+
+### Updated preliminary direction status
+
+- C: STRENGTHEN.
+- CG-06: STRENGTHEN, especially phase-aware CPU decode, CPU-side accelerator orchestration and compiler/backend quality.
+- B-residual: NARROW to physical cross-engine validity/coherence gaps that software cannot cheaply reconstruct; ordinary recurrent-state reuse and selected DMA cache maintenance already have software solutions.
+- A: KEEP CONDITIONAL / NARROW; GUI memory deficits do not prove private hardware RequiredProgress.
+- PT-A and R2: no direct change in this batch.
+
+No historical decision or PPT file was changed.
