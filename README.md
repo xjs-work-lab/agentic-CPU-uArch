@@ -1,15 +1,12 @@
 # Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
-> **Qualcomm baseline freshness correction (2026-11-09):** QAIRT 2.48 官方 HTP 文档已包含 Hexagon V79+ 的 LLM Decode 专用 perf profiles、CPU/HTP perf infrastructure 和 RPC control-latency 配置；PAPER-124 的 GENIE 基线为 2.39.0。其能耗优化结果不能直接视为当前最新 Qualcomm 基线。详见 [VENDOR-027 QAIRT 2.48 补充](analysis/research-refresh-2026-11-09/VENDOR-027-android-npu-manager-qairt-update-2026-11-09.md)。
-
-
-> **Research Refresh 补充（2026-11-09）：** 新增 PAPER-128 Ripple（arXiv 2026-10-31），对 DGX Spark UMA CPU–GPU deadline scheduling 与 SERENO 做了直接比较。该结果不是手机实证，不能据此否定 SERENO 在手机上的结果；它强调调度策略必须按 CPU/NPU 与 CPU/GPU 的内存拓扑分别设计。详见 [PAPER-128](analysis/research-refresh-2026-11-09/PAPER-128-Ripple-2026-10-31.md) 和 [比较矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
-
-
-> **2026-11-09 Research Refresh — 第一批独立研究与反证已写入 GitHub（不涉及 PPT）：** 新增 EdgePace/Tandem 全文交叉核验、4篇高价值补充/遗漏原始论文（PAPER-124–127）、Android 17 NPU Manager/CTS 与 Qualcomm QAIRT 控制边界。初步结论：C、CG-06增强；B-residual收窄；A保持条件储备；PT-A/R2本批无直接变化。尚未更新正式投资组合。入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)，[独立研究与反证矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
-
-
-> **2026-11-09 研究更新进行中（不涉及PPT重做）：** 项目已启动新一轮公开证据复核。先审查仓库质量与当前性，再更新学术/产业证据及方向判断。最新入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)。本轮新增 EdgePace（arXiv:2610.37307）与 Tandem（arXiv:2610.26660）两项直接手机相关原始证据，初步影响 C/CG-06/B-residual；尚未完成全部检索，不改变现行正式投资组合，PPT 暂时冻结。
+> **研究更新进行中｜2026-11-09（PPT 暂时冻结）**
+>
+> - 已完成仓库质量盘点、EdgePace/Tandem 全文复核、Ripple 跨平台反证、4篇遗漏/补充论文深读，以及 Android NPU Manager / Qualcomm QAIRT 2.48 基线更新。
+> - 初步方向影响：**C、CG-06 增强；B-residual 收窄；A 保持条件储备；PT-A、R2 本批无直接变化。** 尚未修改正式投资组合或历史决策。
+> - 重要边界：Ripple 是 DGX Spark UMA CPU-GPU 研究，不是手机实证；PAPER-124 使用 GENIE 2.39.0，不能把其能耗最优配置当成 QAIRT 2.48 最新基线。
+> - 研究入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md) · [比较与反证矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md) · [仓库质量审计](analysis/research-refresh-2026-11-09/repository-quality-audit-2026-11-09.md)。
+> - 下一批：CPU 微架构、AArch64/SME2/LLVM、手机 SoC CPU/cache/interconnect 和厂商披露。研究完成前不决定是否重做 PPT。
 
 
 > **2026-10-27 交付更新：** [17 页 v2 可编辑 PowerPoint 与逐页预览](09-roadmap/leadership-decision-pack/slidepoise-final17-v2-2026-10-27/README.md) 已完成；含 17 份 Speaker Notes 的回读记录和 QA。下文的 2026-10-09 状态保留为历史研究结题快照。
