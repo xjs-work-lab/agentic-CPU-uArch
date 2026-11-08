@@ -1,5 +1,8 @@
 # Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
+> **2026-11-09 研究更新进行中（不涉及PPT重做）：** 项目已启动新一轮公开证据复核。先审查仓库质量与当前性，再更新学术/产业证据及方向判断。最新入口：[Research Refresh 2026-11-09](analysis/research-refresh-2026-11-09/README.md)。本轮新增 EdgePace（arXiv:2610.37307）与 Tandem（arXiv:2610.26660）两项直接手机相关原始证据，初步影响 C/CG-06/B-residual；尚未完成全部检索，不改变现行正式投资组合，PPT 暂时冻结。
+
+
 > **2026-10-27 交付更新：** [17 页 v2 可编辑 PowerPoint 与逐页预览](09-roadmap/leadership-decision-pack/slidepoise-final17-v2-2026-10-27/README.md) 已完成；含 17 份 Speaker Notes 的回读记录和 QA。下文的 2026-10-09 状态保留为历史研究结题快照。
 
 本项目研究 **Agentic AI（智能体 AI）在未来三年将如何改变手机的工作负载，以及 CPU 微架构、LLVM 编译器、操作系统和异构计算系统应该怎样演进**。目标不是单纯汇总论文，而是基于可追溯的公开证据，回答团队**应优先投入什么、保留哪些长期研究方向、哪些新增硬件方案目前不值得立项**，形成面向 2027—2029 年的技术路线和领导汇报材料。
