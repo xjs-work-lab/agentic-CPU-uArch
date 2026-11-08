@@ -83,3 +83,12 @@ The paper's energy-oriented configuration uses a 20 µs polling interval, 65,535
 ## Evidence footer
 
 Original arXiv full text read. The DOI and POMACS metadata are present in the manuscript, but publisher status and PowerBench artifact availability remain unverified in this review. Confidence: high for the reported test setup and within-paper results; medium for transfer to other vendors and full Agent workloads.
+
+
+## 2026-11-09 baseline-currentness correction
+
+The paper's framework table lists Qualcomm GENIE **2.39.0**. Qualcomm's official QAIRT HTP documentation, updated 2026-09-03, now identifies LLM Decode performance modes as new in QAIRT **2.48** and supported on Hexagon V79+ (including the V79/V81 phones in this paper). These modes explicitly reduce HMX frequency for memory-bound decode while scaling DDR/HVX/CENG; the same SDK also exposes CPU/HTP performance infrastructure and RPC control-latency configuration.
+
+Official reference: https://docs.qualcomm.com/bundle/publicresource/topics/80-63442-10/htp_backend.html
+
+Therefore the paper's best-practice configuration and 53.6–54.8% estimated energy reduction should be read as measured against its 2.39-era framework/runtime baseline, not as the latest available Qualcomm profile. The result remains important, but a current comparison needs QAIRT 2.48 decode profiles as an additional baseline. This is a baseline-freshness issue, not evidence that the newer profiles automatically solve Agent-level scheduling.
