@@ -157,3 +157,14 @@ Ripple (arXiv:2611.01067, 2026-10-31; Jiadong Zhang and Xiaosong Ma, MBZUAI) is 
 This is **not evidence that SERENO fails on its target phone workloads**. It is evidence that a generic “foreground-first” or time-slicing policy cannot be transferred across UMA topologies without modeling who can absorb released bandwidth, which jobs have deadlines, and whether accelerator work is pausable at the chosen granularity.
 
 PAPER-128 strengthens C as a platform-specific scheduling discipline, but it does not create direct phone NPU or CPU-uArch evidence. Its implementation uses SGLang hooks, layer grants, CPU completion feedback, GPU-byte budgets and CUDA green contexts; it does not propose a new CPU ISA.
+
+
+## 11. Qualcomm QAIRT 2.48 — vendor baseline freshness issue
+
+The official HTP backend documentation is updated 2026-09-03 and marks LLM Decode performance profiles as new in version 2.48, supported on Hexagon V79+ (V79/V81/V85/V89). These profiles decouple HMX frequency from DDR/HVX/CENG settings for memory-bound decode, and the SDK exposes CPU/HTP performance infrastructure and RPC control-latency settings.
+
+PAPER-124's framework table records GENIE 2.39.0. Its measured polling/sleep/DVFS energy best-practice therefore predates the documented 2.48 decode profile family. The source remains valuable, but the current Qualcomm comparison baseline must include 2.48 profiles before its energy recommendations are treated as up-to-date. This is a notable repository currentness gap because the QAIRT documentation update predates the October 8 closure, yet was not explicitly captured in the previous VENDOR-027 review.
+
+Official source: https://docs.qualcomm.com/bundle/publicresource/topics/80-63442-10/htp_backend.html
+
+No new hardware/ISA conclusion follows; this makes the CG-06 software/runtime baseline more demanding and more specific.
