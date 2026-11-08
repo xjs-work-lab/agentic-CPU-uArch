@@ -125,3 +125,12 @@ At 2× slack, Ripple reaches 8.44 tokens/s at 0.08% DMR in that mix. A non-adapt
 - **When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge**, arXiv:2608.19557 (2026-08-20). The initial abstract indicates that a strong heuristic beats many baselines under stationary load and an LLM control plane adds value mainly under non-stationarity. This is an MEC/edge-server study, not a phone SoC study. Retain for the later Runtime/OS scheduling batch; do not infer from the abstract alone.
 - **Ripple** itself is an adjacent UMA CPU-GPU system, not a phone NPU system. Its full-text card is [PAPER-128](PAPER-128-Ripple-2026-10-31.md).
 
+
+
+## 9. Tandem artifact verification (source-level, not just README claims)
+
+The public MIT fork was inspected through its GitHub API and raw source. The host backend sets a default 3,000 ms idle threshold, checks request/response sequence counters before relaxing, and restores votes before submitting the next batch. DSP-side code removes explicit bus bandwidth vote, powers HMX down, resets DCVS/protected bus/DDR performance settings, then replays saved requests on wake and waits for clock readback (bounded at 2 ms). The model stays resident; the NPU power/performance votes are relaxed.
+
+The host also handles restore failures: retries at 10 ms and 40 ms, then marks the power state faulty and refuses new op batches/aborts rather than submitting work into an unknown NPU power state. The 2026-10-03 artifact commit reports fault-injection tests on Snapdragon 8 Elite and identical outputs/log-probabilities across 61 prompts before fault injection.
+
+This source audit raises confidence that Tandem's idle-power mechanism is implemented, not merely described. It remains a Qualcomm Hexagon-specific runtime implementation, not a generic Android API or universal hardware primitive. See [Tandem code artifact audit](Tandem-code-artifact-audit-2026-11-09.md) and the source links there.
