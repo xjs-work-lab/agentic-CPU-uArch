@@ -41,3 +41,33 @@ Tandem's own implementation is a concrete demonstration of runtime-managed idle 
 - **Still unproven:** identical availability across all OEM Android 17 devices, fine-grained subgraph preemption support across vendor backends, and any incremental CPU-uArch/ISA value.
 
 **Decision impact:** reinforces C's software/platform baseline; narrows any claim that NPU priority, lifecycle, cancellation or power-vote release is novel hardware territory. No formal portfolio change.
+
+
+## Important QAIRT 2.48 finding — phase-specific LLM decode performance profiles
+
+Official HTP backend documentation: https://docs.qualcomm.com/bundle/publicresource/topics/80-63442-10/htp_backend.html  
+The page states **Updated: 2026-09-03**, QAIRT SDK 80-63442-10, API version 5.50.0, and identifies the LLM Decode performance modes as **new in version 2.48**.
+
+The documented modes include:
+- llm_decode_burst
+- llm_decode_sustained_high_performance
+- llm_decode_high_performance
+- llm_decode_balanced / low_balanced / default
+- llm_decode_high_power_saver / power_saver / low_power_saver / extreme_power_saver
+
+The docs state these modes are supported on Hexagon V79 and newer (V79, V81, V85, V89). They explicitly distinguish prefill/encode (compute-bound, HMX-heavy) from decode (memory-bandwidth-bound, narrow GEMV). The decode profiles reduce HMX frequency aggressively while scaling DDR bus, HVX core and CENG by performance tier; DDR Perf Mode is enabled only for the highest decode burst profile. The documentation also describes per-stage INIT / INFERENCE / DE-INIT application and lower votes after stage completion.
+
+The same QAIRT docs expose QNN HTP Performance Infrastructure APIs to control CPU and HTP system settings, including DCVS/clock/voltage votes and RPC control latency. The docs recommend >0 and <200 µs for latency-critical applications, versus default 0 µs when no special latency setting is needed. They also document explicit power-config creation, setting and removal APIs.
+
+### Why this matters to PAPER-124
+
+PAPER-124's framework table identifies Qualcomm GENIE version **2.39.0**, whereas the current public QAIRT docs describe 2.48 LLM-decode profiles. The PAPER-124 experiments therefore do **not** establish performance/energy results against these newer decode profiles. The paper's 20 µs polling / 65,535 µs sleep / low-CPU-frequency policy is a useful measurement result, but it should not be treated as the current strongest Qualcomm vendor baseline until compared with QAIRT 2.48's phase-specific profiles and RPC control-latency options.
+
+This is a key **baseline-freshness gap**, not proof that QAIRT 2.48 solves all scheduling. The profiles are selectable backend performance configurations; the application still needs to choose an appropriate profile for the current phase and workload. The documentation does not show automatic semantic Agent scheduling, output freshness, cross-app deadlines or full GUI action progress.
+
+### Updated project interpretation
+
+- The vendor stack already exposes more phase-aware decode power policy than the October 8 summary recorded.
+- This narrows the novelty of generic "lower HMX, keep DDR/HVX appropriate" power tuning as a new research contribution.
+- A remaining CG-06 opportunity is to measure and coordinate CPU-side dispatch/polling/affinity, phase transitions, model/backend selection and Agent foreground QoE **against the latest QAIRT profiles**, not against older defaults alone.
+- No new CPU ISA or microarchitecture feature follows from this documentation.
