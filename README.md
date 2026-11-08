@@ -1,5 +1,8 @@
 # Agentic CPU-uArch：2027—2029 年手机 Agentic AI 技术洞察
 
+> **Qualcomm baseline freshness correction (2026-11-09):** QAIRT 2.48 官方 HTP 文档已包含 Hexagon V79+ 的 LLM Decode 专用 perf profiles、CPU/HTP perf infrastructure 和 RPC control-latency 配置；PAPER-124 的 GENIE 基线为 2.39.0。其能耗优化结果不能直接视为当前最新 Qualcomm 基线。详见 [VENDOR-027 QAIRT 2.48 补充](analysis/research-refresh-2026-11-09/VENDOR-027-android-npu-manager-qairt-update-2026-11-09.md)。
+
+
 > **Research Refresh 补充（2026-11-09）：** 新增 PAPER-128 Ripple（arXiv 2026-10-31），对 DGX Spark UMA CPU–GPU deadline scheduling 与 SERENO 做了直接比较。该结果不是手机实证，不能据此否定 SERENO 在手机上的结果；它强调调度策略必须按 CPU/NPU 与 CPU/GPU 的内存拓扑分别设计。详见 [PAPER-128](analysis/research-refresh-2026-11-09/PAPER-128-Ripple-2026-10-31.md) 和 [比较矩阵](analysis/research-refresh-2026-11-09/comparison-lineage-counterevidence-2026-11-09.md)。
 
 
