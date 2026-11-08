@@ -97,3 +97,31 @@ Move to CPU microarchitecture, compiler and vendor-platform developments:
 4. Search explicitly for results that would strengthen or refute R2 and any new CPU hardware direction.
 
 No PPT/PPTX files are modified in this refresh.
+
+
+## 7. New post-closure adjacent UMA evidence: PAPER-128 Ripple (2026-10-31)
+
+**Original:** https://arxiv.org/abs/2611.01067  
+**Authors:** Jiadong Zhang, Xiaosong Ma (MBZUAI).  
+**Platform:** DGX Spark / GB10 UMA (20-core Arm CPU: 10 Cortex-X925 + 10 Cortex-A725; 48-SM Blackwell GPU; 128 GB LPDDR5X).  
+**Status:** arXiv preprint; not a phone or NPU evaluation.
+
+Ripple is a particularly useful counterexample because it explicitly evaluates SERENO's Balanced and UI-First policies on a *different* UMA topology. It uses layer-level pausable GPU grants, model-derived memory-byte volume, CPU completion/deadline feedback and an online interference model to budget GPU work; it also narrows LLM decode to 8/16 of 48 SMs.
+
+At the Robotic1 + Qwen3-8B + Qwen3-VL-30B-A3B mix with 1.5× CPU deadline slack:
+- Ripple: 7.00 LLM tokens/s, worst CPU deadline-miss rate 0.78%.
+- SERENO UI-First: 7.25 tokens/s, 66.95% worst CPU DMR.
+- SERENO Balanced: 9.53 tokens/s, 99.85% worst CPU DMR.
+- SiGAMMA: 6.16 tokens/s, 21.50% DMR.
+
+At 2× slack, Ripple reaches 8.44 tokens/s at 0.08% DMR in that mix. A non-adaptive Ripple variant suffers 60.4–67.0% KDNN DMR under injected CPU memory-reader perturbations, while the adaptive controller holds the observed DMR near 0.6–1.0%.
+
+**Interpretation must remain platform-specific:** the authors explicitly explain why this does not rebut SERENO on its target phones. On a phone, the bandwidth relinquished by the NPU can largely be consumed by foreground CPU work; on DGX Spark, CPU cannot absorb all GPU bandwidth, and many CPU/GPU jobs have independent deadlines. Ripple therefore shows that the scheduling policy must match topology and deadline model. It is not a mobile-phone benchmark and cannot be used to claim SERENO fails on phones.
+
+**Why it matters to the refresh:** EdgePace and Ripple independently converge on fine-grained accelerator admission/yield plus deadline-aware protection, but use different signals (PMU demand/stall counters vs model-derived GPU byte volume + CPU completion feedback) and different platforms (phone/Jetson vs DGX Spark). This strengthens the general systems case for C while warning against one universal scheduler. It does not support a new CPU ISA or mobile CPU-uArch feature.
+
+## 8. Adjacent watchlist (not yet promoted to a full-text source card)
+
+- **When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge**, arXiv:2608.19557 (2026-08-20). The initial abstract indicates that a strong heuristic beats many baselines under stationary load and an LLM control plane adds value mainly under non-stationarity. This is an MEC/edge-server study, not a phone SoC study. Retain for the later Runtime/OS scheduling batch; do not infer from the abstract alone.
+- **Ripple** itself is an adjacent UMA CPU-GPU system, not a phone NPU system. Its full-text card is [PAPER-128](PAPER-128-Ripple-2026-10-31.md).
+
